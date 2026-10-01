@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": 1790826675.7146509,
+ "generated_at": 1790826687.5103421,
  "generated_label": "2026-09-30 23:51 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
@@ -335,9 +335,9 @@
    "limit": 0,
    "shards": 16,
    "shards_done": 0,
-   "shards_running": 7,
-   "shards_failed": 1,
-   "shards_queued": 8,
+   "shards_running": 8,
+   "shards_failed": 4,
+   "shards_queued": 4,
    "status": "failed",
    "created_at": 1790826557.3572626,
    "git_commit": "b1c9c863f9",
@@ -493,32 +493,32 @@
    "runs": 4,
    "limit": 0,
    "shards": 16,
-   "shards_done": 2,
-   "shards_running": 14,
+   "shards_done": 3,
+   "shards_running": 13,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790826553.2625344,
    "git_commit": "b1c9c863f9",
    "snapshot": "1995725ebf33",
-   "tokens_generated": 492336,
-   "tokens_scored": 4862,
-   "gpu_hours": 0.0386,
-   "load_hours": 0.0184,
-   "tasks": 20,
-   "records": 80,
+   "tokens_generated": 783821,
+   "tokens_scored": 7828,
+   "gpu_hours": 0.064,
+   "load_hours": 0.0269,
+   "tasks": 31,
+   "records": 124,
    "success_rate": 1.0,
-   "mean_bits": 49.968594,
-   "median_bits": 50.899919,
-   "mean_forced_bits": 47.843594,
-   "mean_forced_tokens": 60.775,
-   "mean_select_blocks": 1.0625,
-   "mean_free_blocks": 1.3625,
-   "mean_tokens": 89.05,
-   "fallback_rate": 0.6625,
-   "mean_restarts": 0.1,
+   "mean_bits": 48.858677,
+   "median_bits": 49.994069,
+   "mean_forced_bits": 46.649,
+   "mean_forced_tokens": 63.129032,
+   "mean_select_blocks": 1.104839,
+   "mean_free_blocks": 1.564516,
+   "mean_tokens": 94.870968,
+   "fallback_rate": 0.629032,
+   "mean_restarts": 0.104839,
    "ends": {
-    "success": 80
+    "success": 124
    }
   },
   {
@@ -1902,10 +1902,10 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 90,
+   "pending": 87,
    "running": 79,
-   "done": 76,
-   "failed": 66
+   "done": 77,
+   "failed": 69
   },
   "nodes": [
    {
@@ -1928,7 +1928,7 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 1.1,
+    "age_s": 0.8,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s14",
      "he-free256-qwen3-1.7b-base-s13",
@@ -1967,9 +1967,9 @@
      "he-free256-qwen3-1.7b-base-s1",
      "he-free256-qwen3-1.7b-base-s12",
      "he-free256-smollm2-135m-s1",
-     "he-mc1-qwen3-1.7b-base-s1",
      "he-mc1-qwen3-1.7b-base-s13",
-     "he-mc1-qwen3-1.7b-base-s8"
+     "he-mc1-qwen3-1.7b-base-s8",
+     "he-mc1-smollm2-135m-s10"
     ]
    },
    {
@@ -1992,7 +1992,7 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 0.7,
+    "age_s": 0.4,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s2",
      "he-free256-qwen3-0.6b-base-s4",
@@ -2024,7 +2024,7 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 1.0,
+    "age_s": 0.7,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s1",
      "he-free256-qwen3-0.6b-base-s5",
@@ -2056,13 +2056,13 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 1.1,
+    "age_s": 0.8,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s0",
      "he-free256-qwen3-0.6b-base-s3",
      "he-free256-qwen3-1.7b-base-s5",
      "he-mc1-qwen3-1.7b-base-s3",
-     "he-mc1-smollm2-135m-s3",
+     "he-mc1-smollm2-135m-s11",
      "mb-free32-qwen3-0.6b-base-s3",
      "mb-free32-qwen3-0.6b-base-s6",
      "mb-free32-qwen3-1.7b-base-s5"
@@ -2096,8 +2096,8 @@
      "he-free256-qwen3-1.7b-base-s2",
      "he-free256-qwen3-1.7b-base-s8",
      "he-mc1-qwen3-1.7b-base-s14",
-     "he-mc1-smollm2-135m-s1",
-     "he-mc1-smollm2-135m-s5"
+     "he-mc1-smollm2-135m-s5",
+     "he-mc1-smollm2-135m-s9"
     ]
    },
    {
@@ -2120,7 +2120,7 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 0.9,
+    "age_s": 0.7,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s15",
      "he-mc1-smollm2-135m-s7",
@@ -2160,8 +2160,8 @@
      "he-free256-qwen3-1.7b-base-s14",
      "he-free256-qwen3-1.7b-base-s3",
      "he-mc1-qwen3-1.7b-base-s6",
-     "he-mc1-smollm2-135m-s2",
-     "he-mc1-smollm2-135m-s6"
+     "he-mc1-smollm2-135m-s6",
+     "he-mc1-smollm2-135m-s8"
     ]
    },
    {
@@ -2184,7 +2184,7 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 1.0,
+    "age_s": 0.7,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s12",
      "he-free256-qwen3-1.7b-base-s7",
@@ -2215,7 +2215,7 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 1.2,
+    "age_s": 1.0,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s13",
      "he-free256-qwen3-1.7b-base-s11",
@@ -2232,6 +2232,6 @@
  "study_b": {
   "status": "pending"
  },
- "content_digest": "b26945b8ac009c716736bce5bb9407931aac673da07893963221c0eef84acdf7",
+ "content_digest": "8cecc2c3815e6aef0ed4cba24f1527fd7a92255198be0920e732d065d2a689fa",
  "has_progress_png": false
 }
