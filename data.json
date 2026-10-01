@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790881375.7843127,
- "generated_label": "2026-10-01 15:02 EDT",
+ "generated_at": 1790882283.4917688,
+ "generated_label": "2026-10-01 15:18 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -11177,8 +11177,8 @@
   },
   "queue": {
    "pending": 512,
-   "running": 75,
-   "done": 2170,
+   "running": 76,
+   "done": 2189,
    "failed": 553
   },
   "nodes": [
@@ -11286,8 +11286,8 @@
     "cells": [
      "busy",
      "busy",
-     "busy",
      "warm",
+     "busy",
      "busy",
      "busy",
      "warm",
@@ -11304,7 +11304,7 @@
      "he-v14q-qwen3-8b-base-s3-r3",
      "he-v14q-smollm2-135m-s14-r3",
      "he-v14q-smollm2-135m-s7-r3",
-     "hinteval-1790879134649"
+     "hinteval-1790882003868"
     ]
    },
    {
@@ -11756,5 +11756,5 @@
   ],
   "note": "Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
  },
- "content_digest": "9d6b9456c5c0b1ede92e2c4e7b897cfd702e2ebc24e8927763aa658bc56442f6"
+ "content_digest": "c5254a4d177c22f0ae78d3615fc649f5fe47748f924e1b12b4bc6e7fd7e92086"
 }
