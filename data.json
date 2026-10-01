@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790886815.9188488,
- "generated_label": "2026-10-01 16:33 EDT",
+ "generated_at": 1790887725.7650895,
+ "generated_label": "2026-10-01 16:48 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -4291,10 +4291,10 @@
    "limit": 0,
    "shards": 16,
    "shards_done": 0,
-   "shards_running": 0,
+   "shards_running": 3,
    "shards_failed": 0,
-   "shards_queued": 16,
-   "status": "queued",
+   "shards_queued": 13,
+   "status": "running",
    "created_at": 1790884550.1533358,
    "git_commit": "f7b1c8b501",
    "snapshot": "915579d60b19",
@@ -4327,31 +4327,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 0,
-   "shards_running": 0,
+   "shards_done": 7,
+   "shards_running": 9,
    "shards_failed": 0,
-   "shards_queued": 16,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "running",
    "created_at": 1790884548.5330377,
    "git_commit": "f7b1c8b501",
    "snapshot": "915579d60b19",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 8188354,
+   "tokens_scored": 7242,
+   "gpu_hours": 0.4926,
+   "load_hours": 0.0956,
+   "tasks": 72,
+   "records": 144,
+   "success_rate": 1.0,
+   "mean_bits": 18.946097,
+   "median_bits": 6.5,
+   "mean_forced_bits": 13.788723,
+   "mean_forced_tokens": 11.673611,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 72.777778,
+   "fallback_rate": 0.145833,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 144
+   }
   },
   {
    "name": "he-v14q-h2-smollm2-135m",
@@ -4375,10 +4377,10 @@
    "limit": 0,
    "shards": 16,
    "shards_done": 0,
-   "shards_running": 0,
+   "shards_running": 16,
    "shards_failed": 0,
-   "shards_queued": 16,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "running",
    "created_at": 1790884424.6927812,
    "git_commit": "73b9b016e3",
    "snapshot": "025667d9d60b",
@@ -4422,62 +4424,13 @@
    "limit": 0,
    "shards": 16,
    "shards_done": 0,
-   "shards_running": 11,
+   "shards_running": 16,
    "shards_failed": 0,
-   "shards_queued": 5,
+   "shards_queued": 0,
    "status": "running",
    "created_at": 1790884423.0961146,
    "git_commit": "73b9b016e3",
    "snapshot": "025667d9d60b",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
-  },
-  {
-   "name": "cc-v14b-qwen3-8b-base",
-   "student": "qwen3-8b-base",
-   "model": "Qwen/Qwen3-8B-Base",
-   "suite": "codecontests",
-   "protocol": "rejection",
-   "config": {
-    "repair": true,
-    "hints": true,
-    "hint_source": "short",
-    "root_max": 512,
-    "max_rollouts": 2048,
-    "ledger": "harmonic",
-    "repair_depth": 4,
-    "max_expansions": 6,
-    "probe_order": "estimate",
-    "select_pool": 8,
-    "rollout_tokens": 640
-   },
-   "config_summary": "hint_source=short, hints=True, ledger=harmonic, max_expansions=6, max_rollouts=2048, probe_order=estimate, repair=True, repair_depth=4, rollout_tokens=640, root_max=512, select_pool=8",
-   "runs": 1,
-   "limit": 0,
-   "shards": 32,
-   "shards_done": 0,
-   "shards_running": 32,
-   "shards_failed": 0,
-   "shards_queued": 0,
-   "status": "running",
-   "created_at": 1790877555.29081,
-   "git_commit": "d29524b875",
-   "snapshot": "a79f5b363753",
    "tokens_generated": 0,
    "tokens_scored": 0,
    "gpu_hours": 0.0,
@@ -4519,32 +4472,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 32,
-   "shards_done": 5,
-   "shards_running": 27,
+   "shards_done": 8,
+   "shards_running": 24,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790877552.7213113,
    "git_commit": "d29524b875",
    "snapshot": "a79f5b363753",
-   "tokens_generated": 393589516,
-   "tokens_scored": 16657,
-   "gpu_hours": 8.5346,
-   "load_hours": 0.0698,
-   "tasks": 31,
-   "records": 31,
-   "success_rate": 1.0,
-   "mean_bits": 231.122037,
-   "median_bits": 201.82107,
-   "mean_forced_bits": 224.746278,
-   "mean_forced_tokens": 130.709677,
+   "tokens_generated": 729794406,
+   "tokens_scored": 29728,
+   "gpu_hours": 14.6093,
+   "load_hours": 0.1113,
+   "tasks": 50,
+   "records": 50,
+   "success_rate": 0.98,
+   "mean_bits": 240.318003,
+   "median_bits": 205.072145,
+   "mean_forced_bits": 234.82758,
+   "mean_forced_tokens": 146.36,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 170.451613,
-   "fallback_rate": 0.645161,
+   "mean_tokens": 181.86,
+   "fallback_rate": 0.72,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 31
+    "check-failed": 1,
+    "success": 49
    }
   },
   {
@@ -14820,20 +14774,20 @@
         "version": "v3\u00b7h2",
         "protocol": "rejection",
         "experiment": "he-v3-h2-qwen3-0.6b-base",
-        "status": "queued",
-        "tasks": 0,
-        "mean_bits": null,
-        "median_bits": null,
-        "success_rate": null,
-        "fallback_rate": null,
-        "mean_forced_bits": null,
-        "mean_select_blocks": null
+        "status": "running",
+        "tasks": 72,
+        "mean_bits": 18.946097,
+        "median_bits": 6.5,
+        "success_rate": 1.0,
+        "fallback_rate": 0.145833,
+        "mean_forced_bits": 13.788723,
+        "mean_select_blocks": 0.0
        },
        {
         "version": "v11\u00b7h2",
         "protocol": "rejection",
         "experiment": "he-v11-h2-qwen3-0.6b-base",
-        "status": "queued",
+        "status": "running",
         "tasks": 0,
         "mean_bits": null,
         "median_bits": null,
@@ -15065,7 +15019,7 @@
         "version": "v14q\u00b7h2",
         "protocol": "rejection",
         "experiment": "he-v14q-h2-smollm2-135m",
-        "status": "queued",
+        "status": "running",
         "tasks": 0,
         "mean_bits": null,
         "median_bits": null,
@@ -15402,7 +15356,7 @@
       "version": "v14",
       "protocol": "rejection",
       "label": "cost-ordered allocation, iterated repair (budgeted)",
-      "note": "max 2048 rollouts/source, 640-token rollouts, repair depth 4, select pool 8; relaunched as cc-v14b on the sandbox-fixed harness"
+      "note": "max 2048 rollouts/source, 640-token rollouts, repair depth 4, select pool 8; relaunched as cc-v14b on the sandbox-fixed harness; qwen3-8b full run stopped at 16:45 (0/32 shards after 2.7 h); see cc-v14{o,q}-h2 on hard30"
      }
     ],
     "students": [
@@ -15453,12 +15407,12 @@
         "protocol": "rejection",
         "experiment": "cc-v14b-qwen3-0.6b-base",
         "status": "running",
-        "tasks": 31,
-        "mean_bits": 231.122037,
-        "median_bits": 201.82107,
-        "success_rate": 1.0,
-        "fallback_rate": 0.645161,
-        "mean_forced_bits": 224.746278,
+        "tasks": 50,
+        "mean_bits": 240.318003,
+        "median_bits": 205.072145,
+        "success_rate": 0.98,
+        "fallback_rate": 0.72,
+        "mean_forced_bits": 234.82758,
         "mean_select_blocks": 0.0
        }
       ],
@@ -15662,19 +15616,6 @@
         "fallback_rate": null,
         "mean_forced_bits": null,
         "mean_select_blocks": null
-       },
-       {
-        "version": "v14",
-        "protocol": "rejection",
-        "experiment": "cc-v14b-qwen3-8b-base",
-        "status": "running",
-        "tasks": 0,
-        "mean_bits": null,
-        "median_bits": null,
-        "success_rate": null,
-        "fallback_rate": null,
-        "mean_forced_bits": null,
-        "mean_select_blocks": null
        }
       ],
       "baselines": {
@@ -15719,18 +15660,18 @@
   "expected_gpus": 80,
   "stale_after_s": 120.0,
   "totals": {
-   "busy": 79,
-   "warm": 1,
+   "busy": 77,
+   "warm": 3,
    "idle": 0,
    "stale": 0,
    "reported": 80,
    "unreported": 0
   },
   "queue": {
-   "pending": 1418,
-   "running": 79,
-   "done": 2323,
-   "failed": 607
+   "pending": 1378,
+   "running": 75,
+   "done": 2357,
+   "failed": 639
   },
   "nodes": [
    {
@@ -15756,9 +15697,9 @@
     "age_s": 0.0,
     "tasks": [
      "cc-v14b-qwen3-0.6b-base-s20",
-     "cc-v14b-qwen3-8b-base-s1",
-     "cc-v14b-qwen3-8b-base-s10",
-     "cc-v14b-qwen3-8b-base-s3",
+     "he-v14q-h2-smollm2-135m-s7",
+     "he-v14q-h2-smollm2-135m-s8",
+     "he-v3-h2-qwen3-0.6b-base-s5",
      "svc-student-qwen3-0.6b-base-1790885176",
      "svc-student-qwen3-8b-base-1790885176",
      "svc-student-smollm2-135m-1790885447",
@@ -15789,12 +15730,12 @@
     "tasks": [
      "cc-v14b-qwen3-0.6b-base-s28",
      "cc-v14b-qwen3-0.6b-base-s3",
-     "cc-v14b-qwen3-8b-base-s26",
-     "cc-v14b-qwen3-8b-base-s29",
-     "cc-v14b-qwen3-8b-base-s30",
-     "cc-v14b-qwen3-8b-base-s5",
      "he-v14o-h2-smollm2-135m-s0",
-     "he-v14o-h2-smollm2-135m-s6"
+     "he-v14o-h2-smollm2-135m-s14",
+     "he-v14o-h2-smollm2-135m-s6",
+     "he-v14q-h2-smollm2-135m-s1",
+     "he-v14q-h2-smollm2-135m-s9",
+     "he-v3-h2-qwen3-0.6b-base-s15"
     ]
    },
    {
@@ -15823,10 +15764,10 @@
      "cc-v14b-qwen3-0.6b-base-s22",
      "cc-v14b-qwen3-0.6b-base-s26",
      "cc-v14b-qwen3-0.6b-base-s29",
-     "cc-v14b-qwen3-8b-base-s0",
-     "cc-v14b-qwen3-8b-base-s8",
-     "cc-v14b-qwen3-8b-base-s9",
-     "he-v14o-h2-smollm2-135m-s8"
+     "he-v14o-h2-smollm2-135m-s12",
+     "he-v14o-h2-smollm2-135m-s8",
+     "he-v14q-h2-smollm2-135m-s12",
+     "he-v14q-h2-smollm2-135m-s5"
     ]
    },
    {
@@ -15855,10 +15796,10 @@
      "cc-v14b-qwen3-0.6b-base-s24",
      "cc-v14b-qwen3-0.6b-base-s25",
      "cc-v14b-qwen3-0.6b-base-s31",
-     "cc-v14b-qwen3-8b-base-s27",
-     "cc-v14b-qwen3-8b-base-s6",
+     "he-v11-h2-qwen3-0.6b-base-s2",
      "he-v14o-h2-smollm2-135m-s4",
-     "he-v14o-h2-smollm2-135m-s7"
+     "he-v14o-h2-smollm2-135m-s7",
+     "he-v3-h2-qwen3-0.6b-base-s10"
     ]
    },
    {
@@ -15883,49 +15824,18 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "cc-v14b-qwen3-0.6b-base-s10",
-     "cc-v14b-qwen3-0.6b-base-s13",
      "cc-v14b-qwen3-0.6b-base-s14",
      "cc-v14b-qwen3-0.6b-base-s17",
      "cc-v14b-qwen3-0.6b-base-s21",
-     "cc-v14b-qwen3-8b-base-s25",
-     "cc-v14b-qwen3-8b-base-s7",
-     "hinteval-1790886514505"
+     "he-v11-h2-qwen3-0.6b-base-s1",
+     "he-v14q-h2-smollm2-135m-s10",
+     "he-v14q-h2-smollm2-135m-s11",
+     "he-v3-h2-qwen3-0.6b-base-s11",
+     "hinteval-1790887271920"
     ]
    },
    {
     "label": "h100-32b \u00b7 2",
-    "kind": "h100",
-    "group": "h100-32b",
-    "gpus": 8,
-    "cells": [
-     "busy",
-     "warm",
-     "busy",
-     "busy",
-     "busy",
-     "busy",
-     "busy",
-     "busy"
-    ],
-    "busy": 7,
-    "warm": 1,
-    "idle": 0,
-    "stale": 0,
-    "heartbeat_stale": false,
-    "age_s": 0.0,
-    "tasks": [
-     "cc-v14b-qwen3-0.6b-base-s4",
-     "cc-v14b-qwen3-0.6b-base-s7",
-     "cc-v14b-qwen3-0.6b-base-s8",
-     "cc-v14b-qwen3-8b-base-s13",
-     "cc-v14b-qwen3-8b-base-s14",
-     "cc-v14b-qwen3-8b-base-s17",
-     "cc-v14b-qwen3-8b-base-s28"
-    ]
-   },
-   {
-    "label": "h100-32b \u00b7 3",
     "kind": "h100",
     "group": "h100-32b",
     "gpus": 8,
@@ -15946,14 +15856,43 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
+     "cc-v14b-qwen3-0.6b-base-s4",
+     "cc-v14b-qwen3-0.6b-base-s7",
+     "cc-v14b-qwen3-0.6b-base-s8",
+     "he-v11-h2-qwen3-0.6b-base-s0",
+     "he-v14o-h2-smollm2-135m-s11",
+     "he-v14o-h2-smollm2-135m-s13",
+     "he-v14q-h2-smollm2-135m-s6",
+     "he-v3-h2-qwen3-0.6b-base-s12"
+    ]
+   },
+   {
+    "label": "h100-32b \u00b7 3",
+    "kind": "h100",
+    "group": "h100-32b",
+    "gpus": 8,
+    "cells": [
+     "busy",
+     "busy",
+     "warm",
+     "warm",
+     "busy",
+     "busy",
+     "busy",
+     "warm"
+    ],
+    "busy": 5,
+    "warm": 3,
+    "idle": 0,
+    "stale": 0,
+    "heartbeat_stale": false,
+    "age_s": 0.0,
+    "tasks": [
      "cc-v14b-qwen3-0.6b-base-s2",
      "cc-v14b-qwen3-0.6b-base-s30",
-     "cc-v14b-qwen3-8b-base-s11",
-     "cc-v14b-qwen3-8b-base-s15",
-     "cc-v14b-qwen3-8b-base-s16",
-     "cc-v14b-qwen3-8b-base-s19",
-     "cc-v14b-qwen3-8b-base-s20",
-     "he-v14o-h2-smollm2-135m-s10"
+     "he-v14o-h2-smollm2-135m-s10",
+     "he-v14q-h2-smollm2-135m-s0",
+     "he-v14q-h2-smollm2-135m-s2"
     ]
    },
    {
@@ -15978,14 +15917,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "cc-v14b-qwen3-0.6b-base-s0",
      "cc-v14b-qwen3-0.6b-base-s27",
-     "cc-v14b-qwen3-8b-base-s18",
-     "cc-v14b-qwen3-8b-base-s23",
-     "cc-v14b-qwen3-8b-base-s4",
      "he-v14o-h2-smollm2-135m-s3",
      "he-v14o-h2-smollm2-135m-s5",
-     "he-v14o-h2-smollm2-135m-s9"
+     "he-v14o-h2-smollm2-135m-s9",
+     "he-v14q-h2-smollm2-135m-s14",
+     "he-v14q-h2-smollm2-135m-s15",
+     "he-v14q-h2-smollm2-135m-s3",
+     "he-v3-h2-qwen3-0.6b-base-s13"
     ]
    },
    {
@@ -16010,10 +15949,10 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "cc-v14b-qwen3-8b-base-s2",
-     "cc-v14b-qwen3-8b-base-s24",
-     "cc-v14b-qwen3-8b-base-s31",
      "he-v14o-h2-smollm2-135m-s1",
+     "he-v14q-h2-smollm2-135m-s13",
+     "he-v3-h2-qwen3-0.6b-base-s14",
+     "he-v3-h2-qwen3-0.6b-base-s6",
      "svc-qwen3-32b-1790844327",
      "svc-qwen3-32b-1790860969"
     ]
@@ -16044,10 +15983,10 @@
      "cc-v14b-qwen3-0.6b-base-s16",
      "cc-v14b-qwen3-0.6b-base-s18",
      "cc-v14b-qwen3-0.6b-base-s19",
-     "cc-v14b-qwen3-8b-base-s12",
-     "cc-v14b-qwen3-8b-base-s21",
-     "cc-v14b-qwen3-8b-base-s22",
-     "he-v14o-h2-smollm2-135m-s2"
+     "he-v14o-h2-smollm2-135m-s15",
+     "he-v14o-h2-smollm2-135m-s2",
+     "he-v14q-h2-smollm2-135m-s4",
+     "he-v3-h2-qwen3-0.6b-base-s1"
     ]
    }
   ]
@@ -16309,5 +16248,5 @@
   ],
   "note": "Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
  },
- "content_digest": "5877f2cf95936ba458a6020268472d19dbe00c7dbb000ca016fd70000f599fbf"
+ "content_digest": "93ca4417bacc819b0041e4539b8178a05eb50188fa5aa1ea1f51bb62ec7e1941"
 }
