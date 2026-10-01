@@ -1,7 +1,7 @@
 {
- "schema": 1,
- "generated_at": 1790826729.995287,
- "generated_label": "2026-09-30 23:52 EDT",
+ "schema": 2,
+ "generated_at": 1790827645.9640775,
+ "generated_label": "2026-10-01 00:07 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -11,6 +11,293 @@
   "llama3.2-1b": 5
  },
  "experiments": [
+  {
+   "name": "he-v6both-qwen3-0.6b-base",
+   "student": "qwen3-0.6b-base",
+   "model": "Qwen/Qwen3-0.6B-Base",
+   "suite": "humanevalplus",
+   "protocol": "rejection",
+   "config": {
+    "repair": true,
+    "hints": true,
+    "root_max": 512
+   },
+   "config_summary": "hints=True, repair=True, root_max=512",
+   "runs": 2,
+   "limit": 0,
+   "shards": 16,
+   "shards_done": 0,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 16,
+   "status": "queued",
+   "created_at": 1790827214.9799678,
+   "git_commit": "4ea969c584",
+   "snapshot": "5e08df96a746",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
+  {
+   "name": "he-v5repair-qwen3-0.6b-base",
+   "student": "qwen3-0.6b-base",
+   "model": "Qwen/Qwen3-0.6B-Base",
+   "suite": "humanevalplus",
+   "protocol": "rejection",
+   "config": {
+    "repair": true,
+    "root_max": 512
+   },
+   "config_summary": "repair=True, root_max=512",
+   "runs": 2,
+   "limit": 0,
+   "shards": 16,
+   "shards_done": 1,
+   "shards_running": 12,
+   "shards_failed": 0,
+   "shards_queued": 3,
+   "status": "running",
+   "created_at": 1790827213.5546696,
+   "git_commit": "4ea969c584",
+   "snapshot": "5e08df96a746",
+   "tokens_generated": 187925,
+   "tokens_scored": 674,
+   "gpu_hours": 0.0146,
+   "load_hours": 0.0098,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 1.0,
+   "mean_bits": 6.084261,
+   "median_bits": 4.5,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 89.15,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 20
+   }
+  },
+  {
+   "name": "he-v3x8k-qwen3-0.6b-base",
+   "student": "qwen3-0.6b-base",
+   "model": "Qwen/Qwen3-0.6B-Base",
+   "suite": "humanevalplus",
+   "protocol": "rejection",
+   "config": {
+    "root_max": 8192,
+    "max_rollouts": 8192
+   },
+   "config_summary": "max_rollouts=8192, root_max=8192",
+   "runs": 1,
+   "limit": 0,
+   "shards": 16,
+   "shards_done": 3,
+   "shards_running": 13,
+   "shards_failed": 0,
+   "shards_queued": 0,
+   "status": "running",
+   "created_at": 1790827059.1798148,
+   "git_commit": "b1c9c863f9",
+   "snapshot": "dc743869c3b7",
+   "tokens_generated": 778023,
+   "tokens_scored": 1316,
+   "gpu_hours": 0.0403,
+   "load_hours": 0.0318,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 5.940961,
+   "median_bits": 5.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 77.2,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
+  },
+  {
+   "name": "he-v4b-qwen3-0.6b-base",
+   "student": "qwen3-0.6b-base",
+   "model": "Qwen/Qwen3-0.6B-Base",
+   "suite": "humanevalplus",
+   "protocol": "rejection",
+   "config": {
+    "hints": true,
+    "root_max": 512
+   },
+   "config_summary": "hints=True, root_max=512",
+   "runs": 2,
+   "limit": 0,
+   "shards": 16,
+   "shards_done": 9,
+   "shards_running": 7,
+   "shards_failed": 0,
+   "shards_queued": 0,
+   "status": "running",
+   "created_at": 1790827057.8221605,
+   "git_commit": "b1c9c863f9",
+   "snapshot": "dc743869c3b7",
+   "tokens_generated": 6387284,
+   "tokens_scored": 20397,
+   "gpu_hours": 0.2976,
+   "load_hours": 0.0903,
+   "tasks": 91,
+   "records": 182,
+   "success_rate": 1.0,
+   "mean_bits": 14.767369,
+   "median_bits": 6.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 89.335165,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 182
+   }
+  },
+  {
+   "name": "he-v2greedy-qwen3-0.6b-base",
+   "student": "qwen3-0.6b-base",
+   "model": "Qwen/Qwen3-0.6B-Base",
+   "suite": "humanevalplus",
+   "protocol": "greedy",
+   "config": {},
+   "config_summary": "defaults",
+   "runs": 2,
+   "limit": 0,
+   "shards": 16,
+   "shards_done": 16,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 0,
+   "status": "complete",
+   "created_at": 1790826744.3134053,
+   "git_commit": "b1c9c863f9",
+   "snapshot": "8685a1f67c93",
+   "tokens_generated": 9785904,
+   "tokens_scored": 321358,
+   "gpu_hours": 0.9248,
+   "load_hours": 0.1302,
+   "tasks": 163,
+   "records": 326,
+   "success_rate": 0.993865,
+   "mean_bits": 76.726179,
+   "median_bits": 84.261044,
+   "mean_forced_bits": 70.067597,
+   "mean_forced_tokens": 148.803681,
+   "mean_select_blocks": 3.530675,
+   "mean_free_blocks": 0.920245,
+   "mean_tokens": 204.484663,
+   "fallback_rate": 0.720859,
+   "mean_restarts": 0.131902,
+   "ends": {
+    "stopped": 2,
+    "success": 324
+   }
+  },
+  {
+   "name": "he-v4hint-qwen3-0.6b-base",
+   "student": "qwen3-0.6b-base",
+   "model": "Qwen/Qwen3-0.6B-Base",
+   "suite": "humanevalplus",
+   "protocol": "rejection",
+   "config": {
+    "hints": true
+   },
+   "config_summary": "hints=True",
+   "runs": 2,
+   "limit": 0,
+   "shards": 16,
+   "shards_done": 12,
+   "shards_running": 4,
+   "shards_failed": 0,
+   "shards_queued": 0,
+   "status": "running",
+   "created_at": 1790826742.894825,
+   "git_commit": "b1c9c863f9",
+   "snapshot": "8685a1f67c93",
+   "tokens_generated": 20598584,
+   "tokens_scored": 78242,
+   "gpu_hours": 0.6924,
+   "load_hours": 0.0984,
+   "tasks": 121,
+   "records": 242,
+   "success_rate": 1.0,
+   "mean_bits": 37.876377,
+   "median_bits": 37.314004,
+   "mean_forced_bits": 2.006998,
+   "mean_forced_tokens": 2.355372,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 85.987603,
+   "fallback_rate": 0.020661,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 242
+   }
+  },
+  {
+   "name": "he-v3rej-qwen3-0.6b-base",
+   "student": "qwen3-0.6b-base",
+   "model": "Qwen/Qwen3-0.6B-Base",
+   "suite": "humanevalplus",
+   "protocol": "rejection",
+   "config": {},
+   "config_summary": "defaults",
+   "runs": 2,
+   "limit": 0,
+   "shards": 16,
+   "shards_done": 16,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 0,
+   "status": "complete",
+   "created_at": 1790826741.552917,
+   "git_commit": "b1c9c863f9",
+   "snapshot": "8685a1f67c93",
+   "tokens_generated": 22739736,
+   "tokens_scored": 17702,
+   "gpu_hours": 0.9971,
+   "load_hours": 0.132,
+   "tasks": 163,
+   "records": 326,
+   "success_rate": 1.0,
+   "mean_bits": 23.681291,
+   "median_bits": 6.5,
+   "mean_forced_bits": 18.934873,
+   "mean_forced_tokens": 16.165644,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 75.236196,
+   "fallback_rate": 0.199387,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 326
+   }
+  },
   {
    "name": "he-mc1-smollm2-1.7b",
    "student": "smollm2-1.7b",
@@ -85,9 +372,10 @@
    "mean_restarts": null,
    "ends": {},
    "alpha": null,
+   "solvable_tasks": 0,
    "zero_success_tasks": 0,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": null
+   "ideal_bits": null,
+   "ideal_lower_bound_bits": null
   },
   {
    "name": "mb-ref-smollm2-1.7b",
@@ -163,9 +451,10 @@
    "mean_restarts": null,
    "ends": {},
    "alpha": null,
+   "solvable_tasks": 0,
    "zero_success_tasks": 0,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": null
+   "ideal_bits": null,
+   "ideal_lower_bound_bits": null
   },
   {
    "name": "he-mc1-smollm2-360m",
@@ -241,9 +530,10 @@
    "mean_restarts": null,
    "ends": {},
    "alpha": null,
+   "solvable_tasks": 0,
    "zero_success_tasks": 0,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": null
+   "ideal_bits": null,
+   "ideal_lower_bound_bits": null
   },
   {
    "name": "mb-ref-smollm2-360m",
@@ -293,35 +583,39 @@
    "runs": 256,
    "limit": 0,
    "shards": 16,
-   "shards_done": 0,
-   "shards_running": 8,
+   "shards_done": 11,
+   "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 8,
+   "shards_queued": 5,
    "status": "running",
    "created_at": 1790826558.718199,
    "git_commit": "b1c9c863f9",
    "snapshot": "1995725ebf33",
-   "tokens_generated": 0,
+   "tokens_generated": 14534167,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {},
-   "alpha": null,
-   "zero_success_tasks": 0,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": null
+   "gpu_hours": 1.4822,
+   "load_hours": 0.0882,
+   "tasks": 113,
+   "records": 28928,
+   "success_rate": 0.001763,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 49.439989,
+   "mean_tokens": 789.656215,
+   "fallback_rate": 0.0,
+   "mean_restarts": 2.387998,
+   "ends": {
+    "horizon": 28877,
+    "success": 51
+   },
+   "alpha": 0.001763,
+   "solvable_tasks": 14,
+   "zero_success_tasks": 99,
+   "ideal_bits": 6.689743,
+   "ideal_lower_bound_bits": 6.458259
   },
   {
    "name": "he-mc1-smollm2-135m",
@@ -334,32 +628,32 @@
    "runs": 4,
    "limit": 0,
    "shards": 16,
-   "shards_done": 2,
-   "shards_running": 2,
+   "shards_done": 4,
+   "shards_running": 0,
    "shards_failed": 12,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790826557.3572626,
    "git_commit": "b1c9c863f9",
    "snapshot": "1995725ebf33",
-   "tokens_generated": 274111,
-   "tokens_scored": 4602,
-   "gpu_hours": 0.0115,
-   "load_hours": 0.0163,
-   "tasks": 20,
-   "records": 80,
+   "tokens_generated": 573532,
+   "tokens_scored": 9226,
+   "gpu_hours": 0.0211,
+   "load_hours": 0.0313,
+   "tasks": 40,
+   "records": 160,
    "success_rate": 1.0,
-   "mean_bits": 80.552211,
-   "median_bits": 79.786123,
-   "mean_forced_bits": 80.502211,
-   "mean_forced_tokens": 57.525,
-   "mean_select_blocks": 0.025,
+   "mean_bits": 83.737643,
+   "median_bits": 78.36953,
+   "mean_forced_bits": 83.712643,
+   "mean_forced_tokens": 57.6625,
+   "mean_select_blocks": 0.0125,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 57.7375,
-   "fallback_rate": 0.9875,
+   "mean_tokens": 57.76875,
+   "fallback_rate": 0.99375,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 80
+    "success": 160
    }
   },
   {
@@ -373,38 +667,39 @@
    "runs": 32,
    "limit": 0,
    "shards": 8,
-   "shards_done": 1,
-   "shards_running": 1,
+   "shards_done": 2,
+   "shards_running": 0,
    "shards_failed": 6,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790826556.4754696,
    "git_commit": "b1c9c863f9",
    "snapshot": "1995725ebf33",
-   "tokens_generated": 838970,
+   "tokens_generated": 1693640,
    "tokens_scored": 0,
-   "gpu_hours": 0.0242,
-   "load_hours": 0.0085,
-   "tasks": 42,
-   "records": 1344,
-   "success_rate": 0.02381,
+   "gpu_hours": 0.065,
+   "load_hours": 0.0158,
+   "tasks": 84,
+   "records": 2688,
+   "success_rate": 0.013021,
    "mean_bits": 0.0,
    "median_bits": 0.0,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 0.0,
    "mean_select_blocks": 0.0,
-   "mean_free_blocks": 54.197917,
-   "mean_tokens": 756.645833,
+   "mean_free_blocks": 54.243304,
+   "mean_tokens": 764.844494,
    "fallback_rate": 0.0,
-   "mean_restarts": 1.918899,
+   "mean_restarts": 1.938988,
    "ends": {
-    "horizon": 1312,
-    "success": 32
+    "horizon": 2653,
+    "success": 35
    },
-   "alpha": 0.02381,
-   "zero_success_tasks": 39,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": 5.392289
+   "alpha": 0.013021,
+   "solvable_tasks": 6,
+   "zero_success_tasks": 78,
+   "ideal_bits": 4.182185,
+   "ideal_lower_bound_bits": 3.533958
   },
   {
    "name": "mb-ref-smollm2-135m",
@@ -457,35 +752,39 @@
    "runs": 256,
    "limit": 0,
    "shards": 16,
-   "shards_done": 0,
-   "shards_running": 7,
+   "shards_done": 7,
+   "shards_running": 0,
    "shards_failed": 9,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790826554.6685774,
    "git_commit": "b1c9c863f9",
    "snapshot": "1995725ebf33",
-   "tokens_generated": 0,
+   "tokens_generated": 9021131,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {},
-   "alpha": null,
-   "zero_success_tasks": 0,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": null
+   "gpu_hours": 0.457,
+   "load_hours": 0.0553,
+   "tasks": 72,
+   "records": 18432,
+   "success_rate": 0.000705,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 45.918294,
+   "mean_tokens": 788.480089,
+   "fallback_rate": 0.0,
+   "mean_restarts": 2.471897,
+   "ends": {
+    "horizon": 18419,
+    "success": 13
+   },
+   "alpha": 0.000705,
+   "solvable_tasks": 3,
+   "zero_success_tasks": 69,
+   "ideal_bits": 6.559357,
+   "ideal_lower_bound_bits": 6.431101
   },
   {
    "name": "he-mc1-qwen3-1.7b-base",
@@ -498,32 +797,32 @@
    "runs": 4,
    "limit": 0,
    "shards": 16,
-   "shards_done": 6,
-   "shards_running": 10,
+   "shards_done": 16,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1790826553.2625344,
    "git_commit": "b1c9c863f9",
    "snapshot": "1995725ebf33",
-   "tokens_generated": 1795535,
-   "tokens_scored": 17592,
-   "gpu_hours": 0.157,
-   "load_hours": 0.0538,
-   "tasks": 62,
-   "records": 248,
+   "tokens_generated": 5514212,
+   "tokens_scored": 46601,
+   "gpu_hours": 0.6984,
+   "load_hours": 0.1439,
+   "tasks": 163,
+   "records": 652,
    "success_rate": 1.0,
-   "mean_bits": 52.336764,
-   "median_bits": 48.419403,
-   "mean_forced_bits": 49.909345,
-   "mean_forced_tokens": 70.935484,
-   "mean_select_blocks": 1.21371,
-   "mean_free_blocks": 1.645161,
-   "mean_tokens": 103.379032,
-   "fallback_rate": 0.665323,
-   "mean_restarts": 0.076613,
+   "mean_bits": 50.500698,
+   "median_bits": 45.7048,
+   "mean_forced_bits": 47.18168,
+   "mean_forced_tokens": 71.473926,
+   "mean_select_blocks": 1.659509,
+   "mean_free_blocks": 1.866564,
+   "mean_tokens": 113.415644,
+   "fallback_rate": 0.615031,
+   "mean_restarts": 0.090491,
    "ends": {
-    "success": 248
+    "success": 652
    }
   },
   {
@@ -537,35 +836,39 @@
    "runs": 32,
    "limit": 0,
    "shards": 8,
-   "shards_done": 0,
-   "shards_running": 8,
+   "shards_done": 2,
+   "shards_running": 6,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790826552.3318167,
    "git_commit": "b1c9c863f9",
    "snapshot": "1995725ebf33",
-   "tokens_generated": 0,
+   "tokens_generated": 1043663,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {},
-   "alpha": null,
-   "zero_success_tasks": 0,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": null
+   "gpu_hours": 0.4567,
+   "load_hours": 0.0198,
+   "tasks": 83,
+   "records": 2656,
+   "success_rate": 0.357304,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 38.143825,
+   "mean_tokens": 532.929217,
+   "fallback_rate": 0.0,
+   "mean_restarts": 2.111069,
+   "ends": {
+    "horizon": 1707,
+    "success": 949
+   },
+   "alpha": 0.357304,
+   "solvable_tasks": 74,
+   "zero_success_tasks": 9,
+   "ideal_bits": 1.811934,
+   "ideal_lower_bound_bits": 1.993253
   },
   {
    "name": "mb-ref-qwen3-1.7b-base",
@@ -618,35 +921,39 @@
    "runs": 256,
    "limit": 0,
    "shards": 16,
-   "shards_done": 0,
-   "shards_running": 16,
+   "shards_done": 1,
+   "shards_running": 15,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790826550.524781,
    "git_commit": "b1c9c863f9",
    "snapshot": "1995725ebf33",
-   "tokens_generated": 0,
+   "tokens_generated": 1124466,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {},
-   "alpha": null,
+   "gpu_hours": 0.2919,
+   "load_hours": 0.0088,
+   "tasks": 10,
+   "records": 2560,
+   "success_rate": 0.234375,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 42.464062,
+   "mean_tokens": 625.983984,
+   "fallback_rate": 0.0,
+   "mean_restarts": 1.380078,
+   "ends": {
+    "horizon": 1960,
+    "success": 600
+   },
+   "alpha": 0.234375,
+   "solvable_tasks": 10,
    "zero_success_tasks": 0,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": null
+   "ideal_bits": 3.200395,
+   "ideal_lower_bound_bits": 3.200395
   },
   {
    "name": "mb-free32-qwen3-0.6b-base",
@@ -659,35 +966,39 @@
    "runs": 32,
    "limit": 0,
    "shards": 8,
-   "shards_done": 0,
-   "shards_running": 8,
+   "shards_done": 2,
+   "shards_running": 6,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790826549.6500869,
    "git_commit": "b1c9c863f9",
    "snapshot": "1995725ebf33",
-   "tokens_generated": 0,
+   "tokens_generated": 1269015,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {},
-   "alpha": null,
-   "zero_success_tasks": 0,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": null
+   "gpu_hours": 0.4176,
+   "load_hours": 0.0187,
+   "tasks": 83,
+   "records": 2656,
+   "success_rate": 0.265437,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 47.859187,
+   "mean_tokens": 591.206325,
+   "fallback_rate": 0.0,
+   "mean_restarts": 1.796687,
+   "ends": {
+    "horizon": 1951,
+    "success": 705
+   },
+   "alpha": 0.265437,
+   "solvable_tasks": 67,
+   "zero_success_tasks": 16,
+   "ideal_bits": 2.204394,
+   "ideal_lower_bound_bits": 2.451083
   },
   {
    "name": "mb-ref-qwen3-0.6b-base",
@@ -740,35 +1051,39 @@
    "runs": 256,
    "limit": 0,
    "shards": 16,
-   "shards_done": 0,
-   "shards_running": 16,
+   "shards_done": 1,
+   "shards_running": 15,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790826547.8993094,
    "git_commit": "b1c9c863f9",
    "snapshot": "1995725ebf33",
-   "tokens_generated": 0,
+   "tokens_generated": 1315197,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {},
-   "alpha": null,
+   "gpu_hours": 0.2326,
+   "load_hours": 0.0083,
+   "tasks": 10,
+   "records": 2560,
+   "success_rate": 0.137109,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 50.521094,
+   "mean_tokens": 683.049609,
+   "fallback_rate": 0.0,
+   "mean_restarts": 1.265625,
+   "ends": {
+    "horizon": 2209,
+    "success": 351
+   },
+   "alpha": 0.137109,
+   "solvable_tasks": 10,
    "zero_success_tasks": 0,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": null
+   "ideal_bits": 5.234941,
+   "ideal_lower_bound_bits": 5.234941
   },
   {
    "name": "smoke-greedy-q06",
@@ -850,9 +1165,10 @@
     "success": 37
    },
    "alpha": 0.007094,
+   "solvable_tasks": 24,
    "zero_success_tasks": 139,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": 7.139185
+   "ideal_bits": 4.55188,
+   "ideal_lower_bound_bits": 3.641315
   },
   {
    "name": "he-ref-smollm2-1.7b-b",
@@ -934,9 +1250,10 @@
     "success": 8
    },
    "alpha": 0.001534,
+   "solvable_tasks": 7,
    "zero_success_tasks": 156,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": 9.348486
+   "ideal_bits": 4.857143,
+   "ideal_lower_bound_bits": 3.54306
   },
   {
    "name": "he-ref-smollm2-360m-b",
@@ -1018,9 +1335,10 @@
     "success": 4
    },
    "alpha": 0.000767,
+   "solvable_tasks": 3,
    "zero_success_tasks": 160,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": 10.348486
+   "ideal_bits": 4.666667,
+   "ideal_lower_bound_bits": 3.50586
   },
   {
    "name": "he-ref-smollm2-135m-b",
@@ -1102,9 +1420,10 @@
     "success": 1064
    },
    "alpha": 0.203988,
+   "solvable_tasks": 122,
    "zero_success_tasks": 41,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": 2.293444
+   "ideal_bits": 2.498244,
+   "ideal_lower_bound_bits": 2.746218
   },
   {
    "name": "he-ref-qwen3-1.7b-base-b",
@@ -1223,9 +1542,10 @@
    "mean_restarts": null,
    "ends": {},
    "alpha": null,
+   "solvable_tasks": 0,
    "zero_success_tasks": 0,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": null
+   "ideal_bits": null,
+   "ideal_lower_bound_bits": null
   },
   {
    "name": "he-ref-llama3.2-1b",
@@ -1301,9 +1621,10 @@
    "mean_restarts": null,
    "ends": {},
    "alpha": null,
+   "solvable_tasks": 0,
    "zero_success_tasks": 0,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": null
+   "ideal_bits": null,
+   "ideal_lower_bound_bits": null
   },
   {
    "name": "he-ref-smollm2-1.7b",
@@ -1379,9 +1700,10 @@
    "mean_restarts": null,
    "ends": {},
    "alpha": null,
+   "solvable_tasks": 0,
    "zero_success_tasks": 0,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": null
+   "ideal_bits": null,
+   "ideal_lower_bound_bits": null
   },
   {
    "name": "he-ref-smollm2-360m",
@@ -1457,9 +1779,10 @@
    "mean_restarts": null,
    "ends": {},
    "alpha": null,
+   "solvable_tasks": 0,
    "zero_success_tasks": 0,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": null
+   "ideal_bits": null,
+   "ideal_lower_bound_bits": null
   },
   {
    "name": "he-ref-smollm2-135m",
@@ -1535,9 +1858,10 @@
    "mean_restarts": null,
    "ends": {},
    "alpha": null,
+   "solvable_tasks": 0,
    "zero_success_tasks": 0,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": null
+   "ideal_bits": null,
+   "ideal_lower_bound_bits": null
   },
   {
    "name": "he-ref-qwen3-1.7b-base",
@@ -1616,9 +1940,10 @@
     "success": 588
    },
    "alpha": 0.11273,
+   "solvable_tasks": 76,
    "zero_success_tasks": 87,
-   "neg_log2_alpha": null,
-   "neg_log2_mean_alpha": 3.149057
+   "ideal_bits": 2.884522,
+   "ideal_lower_bound_bits": 3.204539
   },
   {
    "name": "he-ref-qwen3-0.6b-base",
@@ -1889,11 +2214,393 @@
   }
  ],
  "progress": {
-  "present": false,
+  "present": true,
   "error": null,
   "skipped": 0,
-  "versions": [],
-  "students": []
+  "suites": [
+   {
+    "suite": "humanevalplus",
+    "versions": [
+     {
+      "version": "v1",
+      "protocol": "mc_select",
+      "label": "teacher-free: MC-value monitor, FREE or SELECT(4) per line, fallback when all values are 0",
+      "note": ""
+     },
+     {
+      "version": "v2",
+      "protocol": "greedy",
+      "label": "greedy lookahead per line: SELECT / teacher hint / FINISH with a passing rollout, union-bound accounting",
+      "note": "teacher Qwen3-32B"
+     },
+     {
+      "version": "v3",
+      "protocol": "rejection",
+      "label": "teacher-free trajectory rejection: doubling rollout pools, bits = log2(rollouts drawn)",
+      "note": "max 2048 rollouts"
+     },
+     {
+      "version": "v4a",
+      "protocol": "rejection+hints",
+      "label": "hint ladder probed before enough plain rejection (flawed order: expensive hint hits end the run)",
+      "note": "teacher Qwen3-32B"
+     },
+     {
+      "version": "v4b",
+      "protocol": "rejection+hints",
+      "label": "plain rejection up to 512 rollouts first, then hint ladder from cheapest; budget to min s(h) + log2 1/V(h)",
+      "note": "teacher Qwen3-32B"
+     },
+     {
+      "version": "v5",
+      "protocol": "rejection+repair",
+      "label": "plain rejection up to 512; teacher selects a near-miss among the first 16 attempts and repairs its first wrong line (log2 16 + s), then rejection",
+      "note": "teacher Qwen3-32B"
+     },
+     {
+      "version": "v6",
+      "protocol": "rejection+hints+repair",
+      "label": "v4b hint ladder and v5 repairs as competing sources; budget to min log-multiplicity + log2 1/V",
+      "note": "teacher Qwen3-32B"
+     }
+    ],
+    "students": [
+     {
+      "student": "qwen3-0.6b-base",
+      "points": [
+       {
+        "version": "v1",
+        "protocol": "mc_select",
+        "experiment": "he-mc1-qwen3-0.6b-base",
+        "status": "complete",
+        "tasks": 163,
+        "mean_bits": 62.211435,
+        "median_bits": 61.597131,
+        "success_rate": 0.98773,
+        "fallback_rate": 0.77454,
+        "mean_forced_bits": 60.337202,
+        "mean_select_blocks": 0.937117
+       },
+       {
+        "version": "v2",
+        "protocol": "greedy",
+        "experiment": "he-v2greedy-qwen3-0.6b-base",
+        "status": "complete",
+        "tasks": 163,
+        "mean_bits": 76.726179,
+        "median_bits": 84.261044,
+        "success_rate": 0.993865,
+        "fallback_rate": 0.720859,
+        "mean_forced_bits": 70.067597,
+        "mean_select_blocks": 3.530675
+       },
+       {
+        "version": "v3",
+        "protocol": "rejection",
+        "experiment": "he-v3rej-qwen3-0.6b-base",
+        "status": "complete",
+        "tasks": 163,
+        "mean_bits": 23.681291,
+        "median_bits": 6.5,
+        "success_rate": 1.0,
+        "fallback_rate": 0.199387,
+        "mean_forced_bits": 18.934873,
+        "mean_select_blocks": 0.0
+       },
+       {
+        "version": "v4a",
+        "protocol": "rejection+hints",
+        "experiment": "he-v4hint-qwen3-0.6b-base",
+        "status": "running",
+        "tasks": 121,
+        "mean_bits": 37.876377,
+        "median_bits": 37.314004,
+        "success_rate": 1.0,
+        "fallback_rate": 0.020661,
+        "mean_forced_bits": 2.006998,
+        "mean_select_blocks": 0.0
+       },
+       {
+        "version": "v4b",
+        "protocol": "rejection+hints",
+        "experiment": "he-v4b-qwen3-0.6b-base",
+        "status": "running",
+        "tasks": 91,
+        "mean_bits": 14.767369,
+        "median_bits": 6.0,
+        "success_rate": 1.0,
+        "fallback_rate": 0.0,
+        "mean_forced_bits": 0.0,
+        "mean_select_blocks": 0.0
+       },
+       {
+        "version": "v5",
+        "protocol": "rejection+repair",
+        "experiment": "he-v5repair-qwen3-0.6b-base",
+        "status": "running",
+        "tasks": 10,
+        "mean_bits": 6.084261,
+        "median_bits": 4.5,
+        "success_rate": 1.0,
+        "fallback_rate": 0.0,
+        "mean_forced_bits": 0.0,
+        "mean_select_blocks": 0.0
+       },
+       {
+        "version": "v6",
+        "protocol": "rejection+hints+repair",
+        "experiment": "he-v6both-qwen3-0.6b-base",
+        "status": "queued",
+        "tasks": 0,
+        "mean_bits": null,
+        "median_bits": null,
+        "success_rate": null,
+        "fallback_rate": null,
+        "mean_forced_bits": null,
+        "mean_select_blocks": null
+       }
+      ],
+      "baselines": {
+       "reference": {
+        "experiment": "he-ref-qwen3-0.6b-base",
+        "source": "progress.json",
+        "label": "force the reference solution (teacher-answer likelihood)",
+        "note": "upper reference",
+        "status": "complete",
+        "tasks": 163,
+        "mean_bits": 66.726871,
+        "median_bits": 61.26932,
+        "success_rate": 0.981595,
+        "fallback_rate": 0.0,
+        "mean_forced_bits": 66.726871,
+        "mean_select_blocks": 0.0,
+        "value": 66.726871
+       },
+       "ideal": {
+        "experiments": [
+         "he-free256-qwen3-0.6b-base",
+         "he-free32-qwen3-0.6b-base"
+        ],
+        "source": "all free experiments",
+        "status": "partial",
+        "tasks": 163,
+        "runs": 7776,
+        "alpha": 0.111857,
+        "solvable_tasks": 81,
+        "zero_success_tasks": 82,
+        "ideal_bits": 3.181132,
+        "ideal_lower_bound_bits": 3.333543,
+        "value": 3.181132
+       }
+      }
+     },
+     {
+      "student": "qwen3-1.7b-base",
+      "points": [
+       {
+        "version": "v1",
+        "protocol": "mc_select",
+        "experiment": "he-mc1-qwen3-1.7b-base",
+        "status": "complete",
+        "tasks": 163,
+        "mean_bits": 50.500698,
+        "median_bits": 45.7048,
+        "success_rate": 1.0,
+        "fallback_rate": 0.615031,
+        "mean_forced_bits": 47.18168,
+        "mean_select_blocks": 1.659509
+       }
+      ],
+      "baselines": {
+       "reference": {
+        "experiment": "he-ref-qwen3-1.7b-base-b",
+        "source": "progress.json",
+        "label": "force the reference solution (teacher-answer likelihood)",
+        "note": "upper reference",
+        "status": "complete",
+        "tasks": 163,
+        "mean_bits": 60.981572,
+        "median_bits": 56.338359,
+        "success_rate": 0.981595,
+        "fallback_rate": 0.0,
+        "mean_forced_bits": 60.981572,
+        "mean_select_blocks": 0.0,
+        "value": 60.981572
+       },
+       "ideal": {
+        "experiments": [
+         "he-free256-qwen3-1.7b-base",
+         "he-free32-qwen3-1.7b-base-b"
+        ],
+        "source": "all free experiments",
+        "status": "partial",
+        "tasks": 163,
+        "runs": 7776,
+        "alpha": 0.203817,
+        "solvable_tasks": 124,
+        "zero_success_tasks": 39,
+        "ideal_bits": 2.552838,
+        "ideal_lower_bound_bits": 2.775654,
+        "value": 2.552838
+       }
+      }
+     },
+     {
+      "student": "smollm2-135m",
+      "points": [
+       {
+        "version": "v1",
+        "protocol": "mc_select",
+        "experiment": "he-mc1-smollm2-135m",
+        "status": "failed",
+        "tasks": 40,
+        "mean_bits": 83.737643,
+        "median_bits": 78.36953,
+        "success_rate": 1.0,
+        "fallback_rate": 0.99375,
+        "mean_forced_bits": 83.712643,
+        "mean_select_blocks": 0.0125
+       }
+      ],
+      "baselines": {
+       "reference": {
+        "experiment": "he-ref-smollm2-135m-b",
+        "source": "progress.json",
+        "label": "force the reference solution (teacher-answer likelihood)",
+        "note": "upper reference",
+        "status": "complete",
+        "tasks": 163,
+        "mean_bits": 84.853399,
+        "median_bits": 77.438914,
+        "success_rate": 0.981595,
+        "fallback_rate": 0.0,
+        "mean_forced_bits": 84.853399,
+        "mean_select_blocks": 0.0,
+        "value": 84.853399
+       },
+       "ideal": {
+        "experiments": [
+         "he-free256-smollm2-135m",
+         "he-free32-smollm2-135m-b"
+        ],
+        "source": "all free experiments",
+        "status": "partial",
+        "tasks": 163,
+        "runs": 23648,
+        "alpha": 0.000533,
+        "solvable_tasks": 4,
+        "zero_success_tasks": 159,
+        "ideal_bits": 5.981203,
+        "ideal_lower_bound_bits": 4.862054,
+        "value": 5.981203
+       }
+      }
+     },
+     {
+      "student": "smollm2-360m",
+      "points": [
+       {
+        "version": "v1",
+        "protocol": "mc_select",
+        "experiment": "he-mc1-smollm2-360m",
+        "status": "queued",
+        "tasks": 0,
+        "mean_bits": null,
+        "median_bits": null,
+        "success_rate": null,
+        "fallback_rate": null,
+        "mean_forced_bits": null,
+        "mean_select_blocks": null
+       }
+      ],
+      "baselines": {
+       "reference": {
+        "experiment": "he-ref-smollm2-360m-b",
+        "source": "progress.json",
+        "label": "force the reference solution (teacher-answer likelihood)",
+        "note": "upper reference",
+        "status": "complete",
+        "tasks": 163,
+        "mean_bits": 71.227702,
+        "median_bits": 67.110709,
+        "success_rate": 0.981595,
+        "fallback_rate": 0.0,
+        "mean_forced_bits": 71.227702,
+        "mean_select_blocks": 0.0,
+        "value": 71.227702
+       },
+       "ideal": {
+        "experiments": [
+         "he-free256-smollm2-360m",
+         "he-free32-smollm2-360m-b"
+        ],
+        "source": "all free experiments",
+        "status": "partial",
+        "tasks": 163,
+        "runs": 34144,
+        "alpha": 0.001938,
+        "solvable_tasks": 18,
+        "zero_success_tasks": 145,
+        "ideal_bits": 6.413872,
+        "ideal_lower_bound_bits": 5.696778,
+        "value": 6.413872
+       }
+      }
+     },
+     {
+      "student": "smollm2-1.7b",
+      "points": [
+       {
+        "version": "v1",
+        "protocol": "mc_select",
+        "experiment": "he-mc1-smollm2-1.7b",
+        "status": "queued",
+        "tasks": 0,
+        "mean_bits": null,
+        "median_bits": null,
+        "success_rate": null,
+        "fallback_rate": null,
+        "mean_forced_bits": null,
+        "mean_select_blocks": null
+       }
+      ],
+      "baselines": {
+       "reference": {
+        "experiment": "he-ref-smollm2-1.7b-b",
+        "source": "progress.json",
+        "label": "force the reference solution (teacher-answer likelihood)",
+        "note": "upper reference",
+        "status": "complete",
+        "tasks": 163,
+        "mean_bits": 58.546978,
+        "median_bits": 52.251905,
+        "success_rate": 0.981595,
+        "fallback_rate": 0.0,
+        "mean_forced_bits": 58.546978,
+        "mean_select_blocks": 0.0,
+        "value": 58.546978
+       },
+       "ideal": {
+        "experiments": [
+         "he-free32-smollm2-1.7b-b"
+        ],
+        "source": "all free experiments",
+        "status": "complete",
+        "tasks": 163,
+        "runs": 5216,
+        "alpha": 0.007094,
+        "solvable_tasks": 24,
+        "zero_success_tasks": 139,
+        "ideal_bits": 4.55188,
+        "ideal_lower_bound_bits": 3.641315,
+        "value": 4.55188
+       }
+      }
+     }
+    ],
+    "figure": "figures/progress-humanevalplus.png"
+   }
+  ]
  },
  "fleet": {
   "expected_gpus": 80,
@@ -1907,10 +2614,10 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 75,
+   "pending": 119,
    "running": 79,
-   "done": 81,
-   "failed": 78
+   "done": 180,
+   "failed": 79
   },
   "nodes": [
    {
@@ -1933,16 +2640,16 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 1.0,
+    "age_s": 0.0,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s14",
      "he-free256-qwen3-1.7b-base-s13",
-     "he-free256-qwen3-1.7b-base-s4",
-     "he-free256-smollm2-135m-s4",
-     "he-free256-smollm2-135m-s7",
-     "he-mc1-qwen3-1.7b-base-s10",
-     "he-mc1-qwen3-1.7b-base-s15",
-     "he-mc1-qwen3-1.7b-base-s2"
+     "he-v3x8k-qwen3-0.6b-base-s1",
+     "he-v3x8k-qwen3-0.6b-base-s13",
+     "he-v4hint-qwen3-0.6b-base-s10",
+     "he-v5repair-qwen3-0.6b-base-s11",
+     "he-v5repair-qwen3-0.6b-base-s12",
+     "he-v5repair-qwen3-0.6b-base-s9"
     ]
    },
    {
@@ -1971,10 +2678,10 @@
      "he-free256-qwen3-0.6b-base-s8",
      "he-free256-qwen3-1.7b-base-s1",
      "he-free256-qwen3-1.7b-base-s12",
-     "he-free256-smollm2-135m-s1",
-     "he-mc1-qwen3-1.7b-base-s13",
-     "he-mc1-qwen3-1.7b-base-s8",
-     "he-mc1-smollm2-135m-s10"
+     "he-v3x8k-qwen3-0.6b-base-s10",
+     "he-v4b-qwen3-0.6b-base-s1",
+     "he-v4b-qwen3-0.6b-base-s15",
+     "he-v5repair-qwen3-0.6b-base-s10"
     ]
    },
    {
@@ -1997,16 +2704,16 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 0.7,
+    "age_s": 0.0,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s2",
-     "he-free256-qwen3-0.6b-base-s4",
      "he-free256-qwen3-1.7b-base-s6",
-     "he-free256-smollm2-360m-s4",
-     "he-mc1-smollm2-135m-s13",
+     "he-v3x8k-qwen3-0.6b-base-s2",
+     "he-v3x8k-qwen3-0.6b-base-s9",
+     "he-v4b-qwen3-0.6b-base-s10",
+     "he-v5repair-qwen3-0.6b-base-s0",
      "mb-free32-qwen3-0.6b-base-s4",
-     "mb-free32-qwen3-0.6b-base-s7",
-     "mb-free32-qwen3-1.7b-base-s6"
+     "mb-free32-qwen3-0.6b-base-s7"
     ]
    },
    {
@@ -2029,15 +2736,15 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 1.0,
+    "age_s": 0.0,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s1",
      "he-free256-qwen3-0.6b-base-s5",
      "he-free256-qwen3-1.7b-base-s0",
      "he-free256-qwen3-1.7b-base-s9",
-     "he-free256-smollm2-135m-s12",
-     "he-mc1-qwen3-1.7b-base-s7",
-     "he-mc1-smollm2-135m-s12",
+     "he-v4b-qwen3-0.6b-base-s0",
+     "he-v4hint-qwen3-0.6b-base-s1",
+     "he-v5repair-qwen3-0.6b-base-s1",
      "mb-free32-qwen3-0.6b-base-s5"
     ]
    },
@@ -2061,15 +2768,15 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 1.0,
+    "age_s": 0.0,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s0",
      "he-free256-qwen3-0.6b-base-s3",
      "he-free256-qwen3-1.7b-base-s5",
-     "he-free256-smollm2-360m-s2",
-     "he-mc1-qwen3-1.7b-base-s3",
+     "he-v3x8k-qwen3-0.6b-base-s15",
+     "he-v5repair-qwen3-0.6b-base-s2",
+     "he-v5repair-qwen3-0.6b-base-s8",
      "mb-free32-qwen3-0.6b-base-s3",
-     "mb-free32-qwen3-0.6b-base-s6",
      "mb-free32-qwen3-1.7b-base-s5"
     ]
    },
@@ -2100,9 +2807,9 @@
      "he-free256-qwen3-1.7b-base-s15",
      "he-free256-qwen3-1.7b-base-s2",
      "he-free256-qwen3-1.7b-base-s8",
-     "he-free256-smollm2-360m-s1",
-     "he-free256-smollm2-360m-s7",
-     "he-mc1-qwen3-1.7b-base-s14"
+     "he-v3x8k-qwen3-0.6b-base-s5",
+     "he-v3x8k-qwen3-0.6b-base-s6",
+     "he-v5repair-qwen3-0.6b-base-s3"
     ]
    },
    {
@@ -2125,13 +2832,13 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 1.0,
+    "age_s": 0.0,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s15",
-     "he-free256-smollm2-360m-s6",
+     "he-v3x8k-qwen3-0.6b-base-s12",
+     "he-v4b-qwen3-0.6b-base-s12",
      "mb-free32-qwen3-0.6b-base-s1",
      "mb-free32-qwen3-0.6b-base-s2",
-     "mb-free32-qwen3-1.7b-base-s1",
      "mb-free32-qwen3-1.7b-base-s2",
      "mb-free32-qwen3-1.7b-base-s4",
      "mb-free32-qwen3-1.7b-base-s7"
@@ -2164,9 +2871,9 @@
      "he-free256-qwen3-1.7b-base-s10",
      "he-free256-qwen3-1.7b-base-s14",
      "he-free256-qwen3-1.7b-base-s3",
-     "he-free256-smollm2-360m-s0",
-     "he-free256-smollm2-360m-s5",
-     "he-mc1-qwen3-1.7b-base-s6"
+     "he-v3x8k-qwen3-0.6b-base-s0",
+     "he-v3x8k-qwen3-0.6b-base-s11",
+     "he-v4b-qwen3-0.6b-base-s3"
     ]
    },
    {
@@ -2189,14 +2896,14 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 1.0,
+    "age_s": 0.0,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s12",
      "he-free256-qwen3-1.7b-base-s7",
-     "he-free256-smollm2-360m-s3",
-     "he-mc1-qwen3-1.7b-base-s9",
-     "mb-free32-smollm2-135m-s0",
-     "mb-free32-smollm2-135m-s2",
+     "he-v3x8k-qwen3-0.6b-base-s3",
+     "he-v4b-qwen3-0.6b-base-s11",
+     "he-v4hint-qwen3-0.6b-base-s0",
+     "he-v5repair-qwen3-0.6b-base-s5",
      "svc-qwen3-32b-1790826205"
     ]
    },
@@ -2224,10 +2931,10 @@
     "tasks": [
      "he-free256-qwen3-0.6b-base-s13",
      "he-free256-qwen3-1.7b-base-s11",
-     "he-free256-smollm2-135m-s0",
-     "he-free256-smollm2-135m-s5",
-     "he-free256-smollm2-135m-s6",
-     "mb-free32-qwen3-0.6b-base-s0",
+     "he-v3x8k-qwen3-0.6b-base-s8",
+     "he-v4hint-qwen3-0.6b-base-s15",
+     "he-v5repair-qwen3-0.6b-base-s4",
+     "he-v5repair-qwen3-0.6b-base-s6",
      "mb-free32-qwen3-1.7b-base-s0",
      "mb-free32-qwen3-1.7b-base-s3"
     ]
@@ -2237,6 +2944,5 @@
  "study_b": {
   "status": "pending"
  },
- "content_digest": "0555a0794951d232685dad105afbd007687eabe37e60b46f284b3760f0d1a6fc",
- "has_progress_png": false
+ "content_digest": "41536f19cccb3ad53d47af0d6b18b503099a32820fcb1b3a16edd9e66c1186dc"
 }

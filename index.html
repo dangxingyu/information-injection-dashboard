@@ -32,11 +32,11 @@
 <p class="note" id="fleet-note"></p></section>
 
 <section id="progress"><div class="section-head"><h2>Protocol progress</h2><span class="tag">Study A · lower is better</span></div>
-<div class="panel"><div class="controls"><label>Student <select id="progress-student"><option value="all">all</option></select></label><span class="muted">Mean certified bits per task (log scale) by protocol version. Dashed: <b>reference</b> baseline; dotted: <b>free</b> −log<sub>2</sub> α.</span><a id="progress-png" class="figure-link" href="progress.png" target="_blank" rel="noopener" hidden>static PNG ↗</a></div>
+<div class="panel"><div class="controls"><label>Suite <select id="progress-suite"></select></label><label>Student <select id="progress-student"><option value="all">all</option></select></label><span class="muted">Mean certified bits per task (log scale) by protocol version. Dashed: <b>reference</b>; dotted: <b>ideal</b> = mean −log<sub>2</sub> α over solvable tasks. Hollow points: experiment still running.</span><a id="progress-png" class="figure-link" href="#" target="_blank" rel="noopener" hidden>static PNG ↗</a></div>
 <div class="chart" id="progress-chart"></div>
 <div class="legend chart-legend" id="progress-legend"></div>
-<div class="scroll"><table><thead><tr><th>Student</th><th>Version</th><th>Label</th><th>Protocol</th><th>Experiment</th><th class="num">Mean bits</th><th class="num">Success</th><th class="num">Fallback</th><th class="num">Tasks</th><th>Status</th></tr></thead><tbody id="progress-table"></tbody></table></div></div>
-<p class="note" id="progress-note"></p></section>
+<div class="scroll"><table id="progress-matrix"><thead><tr id="progress-head"></tr></thead><tbody id="progress-table"></tbody></table></div></div>
+<p class="note">Headline per cell: average bits over a task's runs, then the mean over the tasks run (the same rule as the project's analysis module). The ideal pools every free-sampling run of the student on the suite: α<sub>t</sub> is task t's success rate and the line is the mean of −log<sub>2</sub> α<sub>t</sub> over tasks solved at least once; hover it for the all-task lower bound (95% Clopper-Pearson for unsolved tasks). Running and failed experiments show their finished shards only. <span id="progress-note"></span></p></section>
 
 <section id="experiments"><div class="section-head"><h2>Experiments</h2><div id="exp-counts" class="pills"></div></div>
 <div class="panel"><div class="controls"><label>Student <select id="f-student"><option value="all">all</option></select></label><label>Protocol <select id="f-protocol"><option value="all">all</option></select></label><label>Status <select id="f-status"><option value="all">all</option><option>running</option><option>complete</option><option>queued</option><option>failed</option></select></label><input id="f-search" type="search" placeholder="Search name, suite, config" aria-label="Search experiments"></div>

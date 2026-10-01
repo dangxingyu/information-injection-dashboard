@@ -104,3 +104,4 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding-top:18px;font-si
 #progress-chart svg text{font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
 .tall{max-height:600px;overflow:auto}.tall thead th{position:sticky;top:0;background:var(--panel);z-index:1;box-shadow:0 1px 0 var(--line)}
 .radar svg{width:100%;height:auto;display:block}
+#progress-matrix td:nth-child(3){min-width:260px;max-width:420px}#progress-matrix td.num small{white-space:nowrap}#progress-matrix th.num{white-space:nowrap}

@@ -73,89 +73,105 @@ function fillSelects() {
   const set = (id, values) => { const old = keep(id); $(id).innerHTML = '<option value="all">all</option>' + values.map(v => `<option>${esc(v)}</option>`).join(''); if ([...$(id).options].some(o => o.value === old)) $(id).value = old; };
   set('f-student', [...new Set(data.experiments.map(e => e.student))].sort());
   set('f-protocol', [...new Set(data.experiments.map(e => e.protocol))].sort());
-  set('progress-student', data.progress.students.map(s => s.student));
+  const suiteSel = $('progress-suite'), oldSuite = suiteSel.value;
+  suiteSel.innerHTML = data.progress.suites.map(x => `<option>${esc(x.suite)}</option>`).join('');
+  if (data.progress.suites.some(x => x.suite === oldSuite)) suiteSel.value = oldSuite;
+  fillProgressStudents();
   const counts = {};
   data.experiments.forEach(e => counts[e.status] = (counts[e.status] || 0) + 1);
   $('exp-counts').innerHTML = `<span class="pill">${data.experiments.length} experiments</span>` + Object.entries(counts).map(([k, v]) => `<span class="pill">${esc(k)} ${v}</span>`).join('');
 }
 
 /* -------------------------------------------------------------- progress */
+function currentSuite() {
+  const P = data.progress;
+  return P.suites.find(x => x.suite === $('progress-suite').value) || P.suites[0];
+}
+function fillProgressStudents() {
+  const S = currentSuite(), sel = $('progress-student'), old = sel.value;
+  sel.innerHTML = '<option value="all">all</option>' + (S ? S.students : []).map(x => `<option>${esc(x.student)}</option>`).join('');
+  if ([...sel.options].some(o => o.value === old)) sel.value = old;
+}
+function idealTip(student, b) {
+  return `<b>${esc(student)}</b> · ideal: mean −log₂ α over solvable tasks<br>${bits(b.value)} bits · ${b.solvable_tasks} of ${b.tasks} tasks solvable · mean α ${pct(b.alpha)}<br>all-task lower bound (95% Clopper-Pearson for unsolved tasks): ${bits(b.ideal_lower_bound_bits)} bits<br><span class="tip-muted">${b.runs.toLocaleString('en-US')} free-sampling runs pooled from ${b.experiments.map(esc).join(', ')} · ${esc(b.status)} · ${esc(b.source)}</span>`;
+}
+function refTip(student, b) {
+  return `<b>${esc(student)}</b> · reference: force the reference solution<br>${bits(b.value)} bits / task · success ${pct(b.success_rate)} · ${b.tasks ?? '—'} tasks<br><span class="tip-muted">${esc(b.experiment)} · ${esc(b.status)} · ${esc(b.source)}</span>`;
+}
+function pointTip(student, p, v) {
+  return `<b>${esc(student)}</b> · ${esc(p.version)} (${esc(p.protocol)})<br>${bits(p.mean_bits)} bits / task (median ${bits(p.median_bits)})<br>success ${pct(p.success_rate)} · fallback ${pct(p.fallback_rate)} · forced ${bits(p.mean_forced_bits)} bits<br><span class="tip-muted">${esc(p.experiment)} · ${esc(p.status)} · ${p.tasks ?? '—'} tasks${isNum(p.mean_bits) && p.mean_bits < FLOOR ? ' · plotted at the 0.1-bit floor' : ''}</span>${v && v.label ? '<br>' + esc(v.label) : ''}`;
+}
 function renderProgress() {
-  const P = data.progress, chart = $('progress-chart');
+  const P = data.progress, chart = $('progress-chart'), S = currentSuite();
   const sel = $('progress-student').value;
-  const students = P.students.filter(s => sel === 'all' || s.student === sel);
-  $('progress-png').hidden = !data.has_progress_png;
-  $('progress-note').textContent = P.skipped ? `${P.skipped} progress entries were skipped (missing experiment or student).` : '';
-  if (!P.present || P.error || !P.versions.length) {
-    chart.innerHTML = `<div class="empty"><div>${P.error ? `<span class="error">${esc(P.error)}</span>` : !P.present ? 'No protocol versions registered yet.<br>The figure appears once <code>runs/progress.json</code> lists protocol versions and their experiments.' : 'runs/progress.json lists no protocol versions yet.'}</div></div>`;
+  $('progress-png').hidden = !(S && S.figure);
+  if (S && S.figure) $('progress-png').href = S.figure + '?d=' + String(data.content_digest).slice(0, 12);
+  $('progress-note').textContent = P.skipped ? `${P.skipped} progress entries were skipped (no experiment, student or suite).` : '';
+  if (!P.present || P.error || !S || !S.versions.length) {
+    chart.innerHTML = `<div class="empty"><div>${P.error ? `<span class="error">${esc(P.error)}</span>` : !P.present ? 'No protocol versions registered yet.<br>The figure appears once <code>runs/progress.json</code> lists protocol versions and their experiments.' : 'runs/progress.json lists no protocol versions for this suite yet.'}</div></div>`;
     $('progress-legend').innerHTML = '';
-    $('progress-table').innerHTML = progressRows(students);
+    $('progress-head').innerHTML = '';
+    $('progress-table').innerHTML = '';
     return;
   }
-  const versions = P.versions;
-  const series = students.map(s => ({s, pts: s.points.filter(p => isNum(p.mean_bits)).map(p => ({p, i: versions.indexOf(p.version)})).sort((a, b) => a.i - b.i)}));
+  const versions = S.versions.map(v => v.version), vinfo = Object.fromEntries(S.versions.map(v => [v.version, v]));
+  const students = S.students.filter(x => sel === 'all' || x.student === sel);
+  const series = students.map(st => ({st, pts: st.points.filter(p => isNum(p.mean_bits)).map(p => ({p, i: versions.indexOf(p.version)})).sort((a, b) => a.i - b.i)}));
   const lines = [];
-  students.forEach(s => ['reference', 'free'].forEach(kind => { const b = s.baselines[kind]; if (b && isNum(b.value)) lines.push({s, kind, b}); }));
+  students.forEach(st => ['reference', 'ideal'].forEach(kind => { const b = st.baselines[kind]; if (b && isNum(b.value)) lines.push({st, kind, b}); }));
   const values = [...series.flatMap(x => x.pts.map(q => q.p.mean_bits)), ...lines.map(l => l.b.value)].map(v => Math.max(v, FLOOR));
-  if (!values.length) {
-    chart.innerHTML = '<div class="empty">Registered experiments have no finished shards yet.</div>';
-    $('progress-legend').innerHTML = legend(students);
-    $('progress-table').innerHTML = progressRows(students);
-    return;
-  }
+  renderMatrix(S, students);
+  $('progress-legend').innerHTML = students.map(st => `<span><i class="swatch" style="background:${color(st.student)}"></i>${esc(st.student)}</span>`).join('') + '<span><i class="key-line ref"></i>reference (force the reference)</span><span><i class="key-line free"></i>ideal: mean −log₂ α over solvable tasks</span>';
+  if (!values.length) { chart.innerHTML = '<div class="empty"><div>Registered experiments have no finished shards yet.</div></div>'; return; }
   let lo = 10 ** Math.floor(Math.log10(Math.min(...values))), hi = 10 ** Math.ceil(Math.log10(Math.max(...values)));
   if (hi <= lo) hi = lo * 10;
   const W = Math.max(460, Math.round(chart.clientWidth - 36)), H = 360, L = 58, R = 128, T = 14, B = 46;
   const x = i => versions.length === 1 ? L + (W - L - R) / 2 : L + 28 + i * (W - L - R - 56) / (versions.length - 1);
   const y = v => T + (Math.log10(hi) - Math.log10(Math.max(v, FLOOR))) / (Math.log10(hi) - Math.log10(lo)) * (H - T - B);
-  let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Mean certified bits per task by protocol version, log scale"><g font-size="11" fill="var(--muted)" font-family="system-ui">`;
+  let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(S.suite)}: mean certified bits per task by protocol version, log scale"><g font-size="11" fill="var(--muted)" font-family="system-ui">`;
   const decades = Math.round(Math.log10(hi / lo));
   for (let d = lo; d <= hi * 1.0001; d *= 10) {
     if (decades <= 3 && d < hi) for (const m of [2, 5]) svg += `<line x1="${L}" x2="${W - R}" y1="${y(d * m)}" y2="${y(d * m)}" stroke="var(--grid)" stroke-width="0.6"/>`;
     svg += `<line x1="${L}" x2="${W - R}" y1="${y(d)}" y2="${y(d)}" stroke="var(--line)"/><text x="${L - 8}" y="${y(d) + 4}" text-anchor="end">${d >= 1 ? d.toLocaleString('en-US') : d}</text>`;
   }
-  versions.forEach((v, i) => svg += `<text x="${x(i)}" y="${H - B + 18}" text-anchor="middle" fill="var(--ink)">${esc(v)}</text>`);
-  svg += `<text x="${(L + W - R) / 2}" y="${H - 6}" text-anchor="middle">protocol version</text><text transform="translate(14 ${(T + H - B) / 2}) rotate(-90)" text-anchor="middle">certified bits per task</text></g>`;
+  versions.forEach((v, i) => svg += `<text x="${x(i)}" y="${H - B + 18}" text-anchor="middle" fill="var(--ink)" data-tip="${tip(`<b>${esc(v)}</b> · ${esc(vinfo[v].protocol)}<br>${esc(vinfo[v].label)}${vinfo[v].note ? '<br><span class="tip-muted">' + esc(vinfo[v].note) + '</span>' : ''}`)}">${esc(v)}</text>`);
+  svg += `<text x="${(L + W - R) / 2}" y="${H - 6}" text-anchor="middle">protocol version (${esc(S.suite)})</text><text transform="translate(14 ${(T + H - B) / 2}) rotate(-90)" text-anchor="middle">certified bits per task</text></g>`;
   const labels = [];
   for (const l of lines) {
     const yy = y(l.b.value), dash = l.kind === 'reference' ? '7 4' : '2 3';
-    const what = l.kind === 'reference' ? 'reference: force the reference solution' : l.b.lower_bound ? 'free: −log₂ (mean α), a lower bound (some tasks never succeeded alone)' : 'free: mean over tasks of −log₂ α';
-    const extra = l.kind === 'free' ? `<br>α (success alone) ${pct(l.b.alpha)} · tasks with α = 0: ${l.b.zero_success_tasks ?? '—'}` : `<br>success ${pct(l.b.success_rate)}`;
-    const t = tip(`<b>${esc(l.s.student)}</b> · ${what}<br>${bits(l.b.value)} bits${extra}<br><span class="tip-muted">${esc(l.b.experiment)} · ${esc(l.b.status)} · ${l.b.tasks ?? '—'} tasks · ${esc(l.b.source)}</span>`);
-    svg += `<line x1="${L}" x2="${W - R}" y1="${yy}" y2="${yy}" stroke="${color(l.s.student)}" stroke-width="1.6" stroke-dasharray="${dash}"/><line x1="${L}" x2="${W - R}" y1="${yy}" y2="${yy}" stroke="transparent" stroke-width="12" data-tip="${t}"/>`;
-    labels.push({y: yy, text: `${l.kind === 'free' ? '−log₂α' : 'reference'}${l.b.lower_bound ? ' ≥' : ''}`, student: l.s.student});
+    const t = tip(l.kind === 'reference' ? refTip(l.st.student, l.b) : idealTip(l.st.student, l.b));
+    svg += `<line x1="${L}" x2="${W - R}" y1="${yy}" y2="${yy}" stroke="${color(l.st.student)}" stroke-width="1.6" stroke-dasharray="${dash}"/><line x1="${L}" x2="${W - R}" y1="${yy}" y2="${yy}" stroke="transparent" stroke-width="12" data-tip="${t}"/>`;
+    if (students.length <= 2) labels.push({y: yy, text: l.kind, student: l.st.student});
   }
-  for (const {s, pts} of series) {
-    if (pts.length > 1) svg += `<polyline points="${pts.map(q => x(q.i) + ',' + y(q.p.mean_bits)).join(' ')}" fill="none" stroke="${color(s.student)}" stroke-width="2"/>`;
+  for (const {st, pts} of series) {
+    if (pts.length > 1) svg += `<polyline points="${pts.map(q => x(q.i) + ',' + y(q.p.mean_bits)).join(' ')}" fill="none" stroke="${color(st.student)}" stroke-width="2"/>`;
     for (const q of pts) {
-      const p = q.p;
-      const t = tip(`<b>${esc(s.student)}</b> · ${esc(p.version)}${p.label ? ' · ' + esc(p.label) : ''}<br>${bits(p.mean_bits)} bits / task (median ${bits(p.median_bits)})<br>success ${pct(p.success_rate)} · fallback ${pct(p.fallback_rate)} · forced ${bits(p.mean_forced_bits)} bits<br><span class="tip-muted">${esc(p.protocol)} · ${esc(p.experiment)} · ${esc(p.status)} · ${p.tasks ?? '—'} tasks${p.mean_bits < FLOOR ? ' · plotted at the 0.1-bit floor' : ''}</span>${p.note ? '<br>' + esc(p.note) : ''}`);
-      svg += `<circle cx="${x(q.i)}" cy="${y(p.mean_bits)}" r="5" fill="${color(s.student)}" stroke="var(--panel)" stroke-width="2"/><circle cx="${x(q.i)}" cy="${y(p.mean_bits)}" r="12" fill="transparent" data-tip="${t}"/>`;
+      const t = tip(pointTip(st.student, q.p, vinfo[q.p.version]));
+      const open = q.p.status !== 'complete';
+      svg += `<circle cx="${x(q.i)}" cy="${y(q.p.mean_bits)}" r="5" fill="${open ? 'var(--panel)' : color(st.student)}" stroke="${open ? color(st.student) : 'var(--panel)'}" stroke-width="2"/><circle cx="${x(q.i)}" cy="${y(q.p.mean_bits)}" r="12" fill="transparent" data-tip="${t}"/>`;
     }
-    if (pts.length) { const last = pts[pts.length - 1]; labels.push({y: y(last.p.mean_bits), text: s.student, student: s.student, series: true}); }
+    if (pts.length) { const last = pts[pts.length - 1]; labels.push({y: y(last.p.mean_bits), text: st.student, student: st.student, series: true}); }
   }
   labels.sort((a, b) => a.y - b.y);
   for (let i = 1; i < labels.length; i++) labels[i].y = Math.max(labels[i].y, labels[i - 1].y + 13);
   svg += labels.map(l => `<g><rect x="${W - R + 8}" y="${l.y - 4}" width="8" height="8" rx="2" fill="${color(l.student)}"/><text x="${W - R + 20}" y="${l.y + 4}" font-size="11" fill="${l.series ? 'var(--ink)' : 'var(--muted)'}" font-family="system-ui">${esc(l.text)}</text></g>`).join('');
   chart.innerHTML = svg + '</svg>';
-  $('progress-legend').innerHTML = legend(students);
-  $('progress-table').innerHTML = progressRows(students);
 }
-function legend(students) {
-  return students.map(s => { const f = s.baselines.free; return `<span><i class="swatch" style="background:${color(s.student)}"></i>${esc(s.student)}${f && isNum(f.alpha) ? ` <span class="muted">(free α ${pct(f.alpha)})</span>` : ''}</span>`; }).join('') + '<span><i class="key-line ref"></i>reference baseline</span><span><i class="key-line free"></i>free −log₂ α</span>';
-}
-function progressRows(students) {
+function renderMatrix(S, students) {
+  $('progress-head').innerHTML = '<th>Version</th><th>Protocol</th><th>Description</th>' + students.map(st => `<th class="num"><i class="swatch" style="background:${color(st.student)}"></i> ${esc(st.student)}</th>`).join('');
+  const cell = (st, html, small, t) => `<td class="num"${t !== undefined ? ` data-tip="${t}"` : ''}>${html}${small ? `<small>${small}</small>` : ''}</td>`;
+  const link = name => `<a class="exp" href="#tasks" data-exp="${esc(name)}">${esc(name)}</a>`;
   const rows = [];
-  for (const s of students) {
-    for (const p of s.points) rows.push(`<tr><td><i class="swatch" style="background:${color(s.student)}"></i> ${esc(s.student)}</td><td>${esc(p.version)}</td><td>${esc(p.label)}${p.note ? `<small>${esc(p.note)}</small>` : ''}</td><td>${esc(p.protocol)}</td><td><a class="exp" href="#tasks" data-exp="${esc(p.experiment)}">${esc(p.experiment)}</a></td><td class="num">${bits(p.mean_bits)}</td><td class="num">${pct(p.success_rate)}</td><td class="num">${pct(p.fallback_rate)}</td><td class="num">${p.tasks ?? '—'}</td><td class="state ${esc(p.status)}">${esc(p.status)}</td></tr>`);
-    for (const kind of ['reference', 'free']) {
-      const b = s.baselines[kind];
-      if (!b) continue;
-      const value = kind === 'free' ? `${bits(b.value)}${b.lower_bound ? ' ≥' : ''}` : bits(b.value);
-      rows.push(`<tr><td><i class="swatch" style="background:${color(s.student)}"></i> ${esc(s.student)}</td><td class="muted">baseline</td><td>${kind === 'free' ? 'free: −log₂ α' : 'reference: force the reference'}<small>${esc(b.source)}</small></td><td>${kind}</td><td><a class="exp" href="#tasks" data-exp="${esc(b.experiment)}">${esc(b.experiment)}</a></td><td class="num">${value}</td><td class="num">${pct(kind === 'free' ? b.alpha : b.success_rate)}</td><td class="num">—</td><td class="num">${b.tasks ?? '—'}</td><td class="state ${esc(b.status)}">${esc(b.status)}</td></tr>`);
-    }
+  rows.push('<tr><td class="muted">ref</td><td>reference</td><td>force the reference solution (teacher-answer likelihood)</td>' + students.map(st => { const b = st.baselines.reference; return !b ? cell(st, '—') : cell(st, bits(b.value), `${b.experiment ? link(b.experiment) : ''} · ${esc(b.status)}`, tip(b.value != null ? refTip(st.student, b) : 'missing')); }).join('') + '</tr>');
+  rows.push('<tr><td class="muted">ideal</td><td>free</td><td>mean −log₂ α over solvable tasks (student alone)</td>' + students.map(st => { const b = st.baselines.ideal; return !b || b.value == null ? cell(st, '—', b ? esc(b.status) : '') : cell(st, bits(b.value), `${b.solvable_tasks}/${b.tasks} solvable · α ${pct(b.alpha)}`, tip(idealTip(st.student, b))); }).join('') + '</tr>');
+  for (const v of S.versions) {
+    rows.push(`<tr><td><b>${esc(v.version)}</b></td><td>${esc(v.protocol)}</td><td>${esc(v.label)}${v.note ? `<small>${esc(v.note)}</small>` : ''}</td>` + students.map(st => {
+      const p = [...st.points].reverse().find(q => q.version === v.version);
+      if (!p) return cell(st, '<span class="muted">·</span>');
+      return cell(st, isNum(p.mean_bits) ? bits(p.mean_bits) : '—', `<span class="state ${esc(p.status)}">${esc(p.status)}</span>${isNum(p.success_rate) ? ' · ' + pct(p.success_rate) : ''}${p.tasks ? ' · ' + p.tasks + ' tasks' : ''}`, tip(pointTip(st.student, p, v)));
+    }).join('') + '</tr>');
   }
-  return rows.join('') || '<tr><td colspan="10" class="muted">No progress entries.</td></tr>';
+  $('progress-table').innerHTML = rows.join('');
 }
 
 /* ----------------------------------------------------------- experiments */
@@ -176,7 +192,7 @@ function renderExperiments() {
   $('exp-rows').innerHTML = rows.map(e => {
     const shards = `${e.shards_done}/${e.shards} shards${e.shards_running ? ' · ' + e.shards_running + ' running' : ''}${e.shards_failed ? ' · ' + e.shards_failed + ' failed' : ''}${e.shards_queued ? ' · ' + e.shards_queued + ' queued' : ''}`;
     const ends = Object.entries(e.ends || {}).map(([k, v]) => `${k} ${v}`).join(' · ');
-    const extra = e.protocol === 'free' ? `<small>−log₂α ${e.neg_log2_alpha != null ? bits(e.neg_log2_alpha) : e.neg_log2_mean_alpha != null ? '≥ ' + bits(e.neg_log2_mean_alpha) : '—'}</small>` : '';
+    const extra = e.protocol === 'free' && e.tasks ? `<small>ideal ${bits(e.ideal_bits)} · ${e.solvable_tasks}/${e.tasks} solvable</small>` : '';
     return `<tr><td><a class="exp" href="#tasks" data-exp="${esc(e.name)}">${esc(e.name)}</a><small>${esc(date(e.created_at))}${e.snapshot ? ' · src ' + esc(e.snapshot) : ''}</small></td><td><i class="swatch" style="background:${color(e.student)}"></i> ${esc(e.student)}</td><td>${esc(e.suite)}${e.limit ? `<small>limit ${e.limit}</small>` : ''}</td><td>${esc(e.protocol)}</td><td><code>${esc(e.config_summary)}</code></td><td><span class="state ${esc(e.status)}">${esc(e.status)}</span><small>${shards}</small></td><td class="num">${e.tasks}</td><td class="num">${e.runs ?? '—'}</td><td class="num" data-tip="${tip(ends ? 'ends: ' + esc(ends) + `<br>fallback ${pct(e.fallback_rate)} · restarts / run ${dec(e.mean_restarts, 2)}` : 'no records yet')}">${pct(e.success_rate)}${extra}</td><td class="num">${bits(e.mean_bits)}</td><td class="num">${bits(e.median_bits)}</td><td class="num">${bits(e.mean_forced_bits)}</td><td class="num">${dec(e.mean_select_blocks, 2)}</td><td class="num">${dec(e.mean_tokens, 0)}</td><td class="num" data-tip="${tip(`generated ${compact(e.tokens_generated)} · scored ${compact(e.tokens_scored)} tokens`)}">${compact(e.tokens_generated)}</td><td class="num" data-tip="${tip(`run ${dec(e.gpu_hours, 3)} GPU-h · model load ${dec(e.load_hours, 3)} GPU-h`)}">${dec(e.gpu_hours, 2)}</td></tr>`;
   }).join('') || '<tr><td colspan="16" class="muted">No experiments match.</td></tr>';
 }
@@ -204,14 +220,14 @@ async function loadTasks() {
 function renderTasks(e, rows) {
   const free = e.protocol === 'free';
   const cols = [['task_id', 'Task', 0], ['runs', 'Runs', 1], ['success_rate', 'Success', 1], ['mean_bits', 'Mean bits', 1], ['mean_forced_bits', 'Forced bits', 1], ['mean_select_blocks', 'SELECT', 1], ['mean_free_blocks', 'FREE', 1], ['mean_tokens', 'Tokens', 1], ['mean_restarts', 'Restarts', 1], ['fallback_rate', 'Fallback', 1]];
-  if (free) cols.push(['neg_log2_alpha', '−log₂ α', 1]);
+  if (free) cols.push(['ideal_bits', '−log₂ α', 1]);
   cols.push(['ends', 'End', 0]);
   $('task-head').innerHTML = cols.map(([k, label, n]) => k === 'ends' ? `<th>${label}</th>` : `<th class="sortable${n ? ' num' : ''}" data-key="${k}" tabindex="0">${label}</th>`).join('');
   markSort($('task-table'), taskSort);
   const q = $('task-search').value.toLowerCase();
   const max = Math.max(1e-9, ...rows.map(r => r.mean_bits || 0));
   const shown = rows.filter(r => r.task_id.toLowerCase().includes(q)).sort((a, b) => cmp(a, b, taskSort.key, taskSort.dir));
-  $('task-rows').innerHTML = shown.map(r => `<tr><td>${esc(r.task_id)}</td><td class="num">${r.runs}</td><td class="num">${pct(r.success_rate)}</td><td class="num"><div class="bar"><span>${bits(r.mean_bits)}</span><span class="bar-track"><i style="width:${(100 * (r.mean_bits || 0) / max).toFixed(1)}%"></i></span></div></td><td class="num">${bits(r.mean_forced_bits)}</td><td class="num">${dec(r.mean_select_blocks, 2)}</td><td class="num">${dec(r.mean_free_blocks, 1)}</td><td class="num">${dec(r.mean_tokens, 0)}</td><td class="num">${dec(r.mean_restarts, 2)}</td><td class="num">${pct(r.fallback_rate)}</td>${free ? `<td class="num">${bits(r.neg_log2_alpha)}</td>` : ''}<td>${esc(Object.entries(r.ends).map(([k, v]) => `${k} ${v}`).join(' · '))}</td></tr>`).join('') || `<tr><td colspan="${cols.length}" class="muted">${rows.length ? 'No task matches.' : 'No finished shards yet.'}</td></tr>`;
+  $('task-rows').innerHTML = shown.map(r => `<tr><td>${esc(r.task_id)}</td><td class="num">${r.runs}</td><td class="num">${pct(r.success_rate)}</td><td class="num"><div class="bar"><span>${bits(r.mean_bits)}</span><span class="bar-track"><i style="width:${(100 * (r.mean_bits || 0) / max).toFixed(1)}%"></i></span></div></td><td class="num">${bits(r.mean_forced_bits)}</td><td class="num">${dec(r.mean_select_blocks, 2)}</td><td class="num">${dec(r.mean_free_blocks, 1)}</td><td class="num">${dec(r.mean_tokens, 0)}</td><td class="num">${dec(r.mean_restarts, 2)}</td><td class="num">${pct(r.fallback_rate)}</td>${free ? `<td class="num">${r.ideal_bound ? '≥ ' : ''}${bits(r.ideal_bits)}</td>` : ''}<td>${esc(Object.entries(r.ends).map(([k, v]) => `${k} ${v}`).join(' · '))}</td></tr>`).join('') || `<tr><td colspan="${cols.length}" class="muted">${rows.length ? 'No task matches.' : 'No finished shards yet.'}</td></tr>`;
   $('task-table')._rows = rows; $('task-table')._exp = e;
 }
 
@@ -258,6 +274,7 @@ sortable($('exp-table'), expSort, () => data && renderExperiments());
 sortable($('task-table'), taskSort, () => $('task-table')._rows && renderTasks($('task-table')._exp, $('task-table')._rows));
 for (const id of ['f-student', 'f-protocol', 'f-status', 'f-search']) $(id).addEventListener('input', () => data && renderExperiments());
 $('progress-student').addEventListener('change', () => data && renderProgress());
+$('progress-suite').addEventListener('change', () => { if (data) { fillProgressStudents(); renderProgress(); } });
 let resizeTimer = 0, lastWidth = 0;
 addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => { const w = $('progress-chart').clientWidth; if (data && w !== lastWidth) { lastWidth = w; renderProgress(); } }, 150); });
 $('task-exp').addEventListener('change', loadTasks);
