@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790845075.502255,
- "generated_label": "2026-10-01 04:57 EDT",
+ "generated_at": 1790845984.7548633,
+ "generated_label": "2026-10-01 05:13 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -1258,9 +1258,9 @@
    "limit": 0,
    "shards": 16,
    "shards_done": 0,
-   "shards_running": 1,
+   "shards_running": 15,
    "shards_failed": 0,
-   "shards_queued": 15,
+   "shards_queued": 1,
    "status": "running",
    "created_at": 1790831952.8347318,
    "git_commit": "c8bd8474d8",
@@ -1294,39 +1294,39 @@
    "runs": 32,
    "limit": 0,
    "shards": 8,
-   "shards_done": 4,
-   "shards_running": 4,
+   "shards_done": 8,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1790831951.9808898,
    "git_commit": "c8bd8474d8",
    "snapshot": "18d238ccc11d",
-   "tokens_generated": 1852129,
+   "tokens_generated": 3629357,
    "tokens_scored": 0,
-   "gpu_hours": 0.2057,
-   "load_hours": 0.0516,
-   "tasks": 83,
-   "records": 2656,
-   "success_rate": 0.012801,
+   "gpu_hours": 0.5143,
+   "load_hours": 0.105,
+   "tasks": 163,
+   "records": 5216,
+   "success_rate": 0.010736,
    "mean_bits": 0.0,
    "median_bits": 0.0,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 0.0,
    "mean_select_blocks": 0.0,
-   "mean_free_blocks": 58.903991,
-   "mean_tokens": 764.46122,
+   "mean_free_blocks": 59.175422,
+   "mean_tokens": 766.373466,
    "fallback_rate": 0.0,
-   "mean_restarts": 0.558358,
+   "mean_restarts": 0.58263,
    "ends": {
-    "horizon": 2622,
-    "success": 34
+    "horizon": 5160,
+    "success": 56
    },
-   "alpha": 0.012801,
-   "solvable_tasks": 6,
-   "zero_success_tasks": 77,
-   "ideal_bits": 2.993971,
-   "ideal_lower_bound_bits": 3.448664
+   "alpha": 0.010736,
+   "solvable_tasks": 13,
+   "zero_success_tasks": 150,
+   "ideal_bits": 3.500338,
+   "ideal_lower_bound_bits": 3.48539
   },
   {
    "name": "he-ref-olmo2-1b-s1-1993b",
@@ -1471,31 +1471,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 0,
-   "shards_running": 16,
+   "shards_done": 4,
+   "shards_running": 12,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790831948.3820422,
    "git_commit": "c8bd8474d8",
    "snapshot": "18d238ccc11d",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 48336689,
+   "tokens_scored": 34504,
+   "gpu_hours": 1.1693,
+   "load_hours": 0.0464,
+   "tasks": 84,
+   "records": 168,
+   "success_rate": 1.0,
+   "mean_bits": 36.277929,
+   "median_bits": 25.327757,
+   "mean_forced_bits": 9.538992,
+   "mean_forced_tokens": 4.702381,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 59.89881,
+   "fallback_rate": 0.25,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 168
+   }
   },
   {
    "name": "mb-free32-olmo2-1b-s1-504b",
@@ -1598,31 +1600,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 0,
-   "shards_running": 16,
+   "shards_done": 5,
+   "shards_running": 11,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790831945.7932024,
    "git_commit": "c8bd8474d8",
    "snapshot": "18d238ccc11d",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 66231158,
+   "tokens_scored": 27125,
+   "gpu_hours": 1.7176,
+   "load_hours": 0.0781,
+   "tasks": 50,
+   "records": 100,
+   "success_rate": 1.0,
+   "mean_bits": 65.378264,
+   "median_bits": 63.027957,
+   "mean_forced_bits": 16.494365,
+   "mean_forced_tokens": 7.69,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 83.67,
+   "fallback_rate": 0.15,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 100
+   }
   },
   {
    "name": "he-free32-olmo2-1b-s1-504b",
@@ -7514,17 +7518,17 @@
   "expected_gpus": 80,
   "stale_after_s": 120.0,
   "totals": {
-   "busy": 47,
+   "busy": 48,
    "warm": 0,
-   "idle": 1,
+   "idle": 0,
    "stale": 32,
    "reported": 80,
    "unreported": 0
   },
   "queue": {
-   "pending": 645,
-   "running": 46,
-   "done": 1086,
+   "pending": 631,
+   "running": 47,
+   "done": 1099,
    "failed": 313
   },
   "nodes": [
@@ -7548,7 +7552,7 @@
     "idle": 0,
     "stale": 8,
     "heartbeat_stale": true,
-    "age_s": 2561.6,
+    "age_s": 3470.9,
     "tasks": []
    },
    {
@@ -7571,7 +7575,7 @@
     "idle": 0,
     "stale": 8,
     "heartbeat_stale": true,
-    "age_s": 2560.1,
+    "age_s": 3469.3,
     "tasks": []
    },
    {
@@ -7594,7 +7598,7 @@
     "idle": 0,
     "stale": 8,
     "heartbeat_stale": true,
-    "age_s": 2560.5,
+    "age_s": 3469.8,
     "tasks": []
    },
    {
@@ -7617,7 +7621,7 @@
     "idle": 0,
     "stale": 8,
     "heartbeat_stale": true,
-    "age_s": 2560.2,
+    "age_s": 3469.5,
     "tasks": []
    },
    {
@@ -7642,12 +7646,12 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
+     "he-v6-olmo2-1b-s1-1993b-s12",
+     "he-v6-olmo2-1b-s1-1993b-s4",
+     "he-v6-olmo2-1b-s1-1993b-s6",
      "he-v6-olmo2-1b-s1-504b-s1",
      "he-v6-olmo2-1b-s1-504b-s10",
-     "he-v6-olmo2-1b-s1-504b-s13",
      "he-v6-olmo2-1b-s1-504b-s15",
-     "he-v6-olmo2-1b-s1-504b-s4",
-     "he-v6-olmo2-1b-s1-504b-s7",
      "mb-v6-olmo2-1b-s1-105b-s15",
      "mb-v6-olmo2-1b-s1-504b-s9"
     ]
@@ -7674,13 +7678,13 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
+     "he-v6-olmo2-1b-s1-1993b-s11",
+     "he-v6-olmo2-1b-s1-1993b-s7",
      "mb-v6-olmo2-1b-s1-105b-s10",
      "mb-v6-olmo2-1b-s1-105b-s11",
      "mb-v6-olmo2-1b-s1-105b-s14",
      "mb-v6-olmo2-1b-s1-105b-s9",
      "mb-v6-olmo2-1b-s1-504b-s10",
-     "mb-v6-olmo2-1b-s1-504b-s13",
-     "mb-v6-olmo2-1b-s1-504b-s7",
      "mb-v6-olmo2-1b-s1-504b-s8"
     ]
    },
@@ -7706,14 +7710,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
+     "he-v6-olmo2-1b-s1-1993b-s10",
+     "he-v6-olmo2-1b-s1-1993b-s13",
+     "he-v6-olmo2-1b-s1-1993b-s9",
      "he-v6-olmo2-1b-s1-504b-s12",
      "he-v6-olmo2-1b-s1-504b-s14",
      "he-v6-olmo2-1b-s1-504b-s2",
-     "he-v6-olmo2-1b-s1-504b-s5",
      "he-v6-olmo2-1b-s1-504b-s8",
-     "mb-v6-olmo2-1b-s1-105b-s13",
-     "mb-v6-olmo2-1b-s1-504b-s11",
-     "mb-v6-olmo2-1b-s1-504b-s6"
+     "mb-v6-olmo2-1b-s1-105b-s13"
     ]
    },
    {
@@ -7738,11 +7742,11 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
+     "he-v6-olmo2-1b-s1-1993b-s14",
      "he-v6-olmo2-1b-s1-504b-s0",
      "he-v6-olmo2-1b-s1-504b-s11",
      "he-v6-olmo2-1b-s1-504b-s3",
      "he-v6-olmo2-1b-s1-504b-s6",
-     "he-v6-olmo2-1b-s1-504b-s9",
      "mb-v6-olmo2-1b-s1-105b-s12",
      "mb-v6-olmo2-1b-s1-504b-s12",
      "svc-qwen3-4b-instruct-1790844633"
@@ -7760,19 +7764,20 @@
      "busy",
      "busy",
      "busy",
-     "idle",
+     "busy",
      "busy"
     ],
-    "busy": 7,
+    "busy": 8,
     "warm": 0,
-    "idle": 1,
+    "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-free32-olmo2-1b-s1-1993b-s3",
-     "he-free32-olmo2-1b-s1-1993b-s5",
-     "he-free32-olmo2-1b-s1-1993b-s7",
+     "he-v6-olmo2-1b-s1-1993b-s1",
+     "he-v6-olmo2-1b-s1-1993b-s2",
+     "he-v6-olmo2-1b-s1-1993b-s3",
+     "he-v6-olmo2-1b-s1-1993b-s8",
      "mb-v6-olmo2-1b-s1-504b-s14",
      "mb-v6-olmo2-1b-s1-504b-s15",
      "svc-qwen3-32b-1790844327"
@@ -7800,8 +7805,8 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-free32-olmo2-1b-s1-1993b-s6",
      "he-v6-olmo2-1b-s1-1993b-s0",
+     "he-v6-olmo2-1b-s1-1993b-s5",
      "mb-v6-olmo2-1b-s1-504b-s0",
      "mb-v6-olmo2-1b-s1-504b-s1",
      "mb-v6-olmo2-1b-s1-504b-s2",
@@ -7815,5 +7820,5 @@
  "study_b": {
   "status": "pending"
  },
- "content_digest": "d57995e4b12662865a6aba5b1d03e9e663871c5d652fafb3dcb731ba45f992d7"
+ "content_digest": "402059b812ffa708fa97a41be96da3f6f70fa04104e8041a7ef30266cfcca325"
 }
