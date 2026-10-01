@@ -1,0 +1,1 @@
+{"name":"smoke-v15-he","tasks":[{"task_id":"HumanEval_108","runs":2,"successes":2,"success_rate":1.0,"mean_bits":373.183323,"mean_forced_bits":361.69609,"mean_forced_tokens":334.5,"mean_select_blocks":0.0,"mean_free_blocks":15.5,"mean_tokens":842.0,"fallback_rate":1.0,"mean_restarts":0.0,"ends":{"success":2}}]}
