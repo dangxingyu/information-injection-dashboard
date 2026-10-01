@@ -87,7 +87,7 @@ function renderProgress() {
   $('progress-png').hidden = !data.has_progress_png;
   $('progress-note').textContent = P.skipped ? `${P.skipped} progress entries were skipped (missing experiment or student).` : '';
   if (!P.present || P.error || !P.versions.length) {
-    chart.innerHTML = `<div class="empty">${P.error ? `<span class="error">${esc(P.error)}</span>` : !P.present ? 'No protocol versions registered yet.<br>The figure appears once <code>runs/progress.json</code> lists protocol versions and their experiments.' : 'runs/progress.json lists no protocol versions yet.'}</div>`;
+    chart.innerHTML = `<div class="empty"><div>${P.error ? `<span class="error">${esc(P.error)}</span>` : !P.present ? 'No protocol versions registered yet.<br>The figure appears once <code>runs/progress.json</code> lists protocol versions and their experiments.' : 'runs/progress.json lists no protocol versions yet.'}</div></div>`;
     $('progress-legend').innerHTML = '';
     $('progress-table').innerHTML = progressRows(students);
     return;
