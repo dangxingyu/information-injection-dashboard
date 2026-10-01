@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790879555.7358952,
- "generated_label": "2026-10-01 14:32 EDT",
+ "generated_at": 1790880465.846757,
+ "generated_label": "2026-10-01 14:47 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -101,10 +101,10 @@
    "limit": 0,
    "shards": 32,
    "shards_done": 0,
-   "shards_running": 0,
+   "shards_running": 12,
    "shards_failed": 0,
-   "shards_queued": 32,
-   "status": "queued",
+   "shards_queued": 20,
+   "status": "running",
    "created_at": 1790877552.7213113,
    "git_commit": "d29524b875",
    "snapshot": "a79f5b363753",
@@ -292,32 +292,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 24,
-   "shards_done": 5,
+   "shards_done": 13,
    "shards_running": 0,
-   "shards_failed": 19,
+   "shards_failed": 11,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790876356.819437,
    "git_commit": "152ace1063",
    "snapshot": "8d99114f6fb8",
-   "tokens_generated": 7863065,
-   "tokens_scored": 6844,
-   "gpu_hours": 0.5173,
-   "load_hours": 0.0795,
-   "tasks": 35,
-   "records": 70,
+   "tokens_generated": 42392716,
+   "tokens_scored": 23471,
+   "gpu_hours": 2.5572,
+   "load_hours": 0.1986,
+   "tasks": 90,
+   "records": 180,
    "success_rate": 1.0,
-   "mean_bits": 5.891183,
-   "median_bits": 5.22728,
+   "mean_bits": 7.189592,
+   "median_bits": 5.581733,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 0.0,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 74.585714,
+   "mean_tokens": 71.988889,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 70
+    "success": 180
    }
   },
   {
@@ -3147,33 +3147,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 9,
-   "shards_running": 1,
+   "shards_done": 10,
+   "shards_running": 0,
    "shards_failed": 6,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790851559.7439816,
    "git_commit": "28a1b708c4",
    "snapshot": "a789cf6583a7",
-   "tokens_generated": 899822456,
-   "tokens_scored": 39582,
-   "gpu_hours": 23.0608,
-   "load_hours": 0.1285,
-   "tasks": 92,
-   "records": 184,
-   "success_rate": 0.983696,
-   "mean_bits": 46.883273,
-   "median_bits": 41.957816,
-   "mean_forced_bits": 28.3873,
-   "mean_forced_tokens": 21.983696,
+   "tokens_generated": 1078245605,
+   "tokens_scored": 45279,
+   "gpu_hours": 27.6212,
+   "load_hours": 0.1419,
+   "tasks": 103,
+   "records": 206,
+   "success_rate": 0.985437,
+   "mean_bits": 49.174805,
+   "median_bits": 43.385009,
+   "mean_forced_bits": 31.654254,
+   "mean_forced_tokens": 26.587379,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 86.005435,
-   "fallback_rate": 0.347826,
+   "mean_tokens": 88.004854,
+   "fallback_rate": 0.373786,
    "mean_restarts": 0.0,
    "ends": {
     "check-failed": 3,
-    "success": 181
+    "success": 203
    }
   },
   {
@@ -10361,9 +10361,9 @@
         "protocol": "rejection",
         "experiment": "he-v14q-qwen3-0.6b-base",
         "status": "failed",
-        "tasks": 35,
-        "mean_bits": 5.891183,
-        "median_bits": 5.22728,
+        "tasks": 90,
+        "mean_bits": 7.189592,
+        "median_bits": 5.581733,
         "success_rate": 1.0,
         "fallback_rate": 0.0,
         "mean_forced_bits": 0.0,
@@ -10618,12 +10618,12 @@
         "protocol": "rejection+short-hints+repair",
         "experiment": "he-v8-smollm2-360m",
         "status": "failed",
-        "tasks": 92,
-        "mean_bits": 46.883273,
-        "median_bits": 41.957816,
-        "success_rate": 0.983696,
-        "fallback_rate": 0.347826,
-        "mean_forced_bits": 28.3873,
+        "tasks": 103,
+        "mean_bits": 49.174805,
+        "median_bits": 43.385009,
+        "success_rate": 0.985437,
+        "fallback_rate": 0.373786,
+        "mean_forced_bits": 31.654254,
         "mean_select_blocks": 0.0
        }
       ],
@@ -10901,7 +10901,7 @@
         "version": "v14",
         "protocol": "rejection",
         "experiment": "cc-v14b-qwen3-0.6b-base",
-        "status": "queued",
+        "status": "running",
         "tasks": 0,
         "mean_bits": null,
         "median_bits": null,
@@ -11168,18 +11168,18 @@
   "expected_gpus": 80,
   "stale_after_s": 120.0,
   "totals": {
-   "busy": 79,
-   "warm": 1,
+   "busy": 76,
+   "warm": 4,
    "idle": 0,
    "stale": 0,
    "reported": 80,
    "unreported": 0
   },
   "queue": {
-   "pending": 533,
-   "running": 77,
-   "done": 2145,
-   "failed": 547
+   "pending": 522,
+   "running": 74,
+   "done": 2154,
+   "failed": 553
   },
   "nodes": [
    {
@@ -11236,12 +11236,12 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
+     "cc-v14b-qwen3-0.6b-base-s3",
      "he-v12-smollm2-135m-s2-r3",
      "he-v12-smollm2-135m-s6-r3",
      "he-v12-smollm2-135m-s8",
      "he-v13-qwen3-0.6b-base-s15",
      "he-v14q-qwen3-0.6b-base-s0-r3",
-     "he-v14q-qwen3-0.6b-base-s10-r3",
      "he-v14q-smollm2-135m-s2-r3",
      "he-v14q-smollm2-135m-s8-r3"
     ]
@@ -11268,14 +11268,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
+     "cc-v14b-qwen3-0.6b-base-s6",
      "he-v12-smollm2-135m-s14",
      "he-v12-smollm2-135m-s9",
      "he-v14q-qwen3-0.6b-base-s3-r3",
      "he-v14q-qwen3-0.6b-base-s4-r3",
      "he-v14q-qwen3-1.7b-base-s0-r3",
      "he-v14q-smollm2-135m-s3-r3",
-     "he-v8-qwen3-1.7b-base-s15",
-     "tc-q32shortonly-q06-s2-r4"
+     "he-v8-qwen3-1.7b-base-s15"
     ]
    },
    {
@@ -11286,28 +11286,24 @@
     "cells": [
      "busy",
      "busy",
+     "warm",
+     "warm",
      "busy",
      "busy",
-     "busy",
-     "busy",
-     "busy",
-     "busy"
+     "warm",
+     "warm"
     ],
-    "busy": 8,
-    "warm": 0,
+    "busy": 4,
+    "warm": 4,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
      "he-v12-smollm2-135m-s5-r3",
-     "he-v14q-qwen3-0.6b-base-s11-r3",
-     "he-v14q-qwen3-0.6b-base-s23-r3",
-     "he-v14q-qwen3-0.6b-base-s9-r3",
      "he-v14q-qwen3-8b-base-s3-r3",
      "he-v14q-smollm2-135m-s14-r3",
-     "he-v14q-smollm2-135m-s7-r3",
-     "tc-claudeboth-q06-s2-r4"
+     "he-v14q-smollm2-135m-s7-r3"
     ]
    },
    {
@@ -11332,10 +11328,10 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-v14q-qwen3-0.6b-base-s13-r3",
+     "cc-v14b-qwen3-0.6b-base-s10",
+     "cc-v14b-qwen3-0.6b-base-s5",
      "he-v14q-qwen3-0.6b-base-s14-r3",
      "he-v14q-qwen3-0.6b-base-s15-r3",
-     "he-v14q-qwen3-0.6b-base-s16-r3",
      "he-v14q-qwen3-0.6b-base-s18-r3",
      "he-v14q-qwen3-0.6b-base-s19-r3",
      "he-v14q-qwen3-0.6b-base-s20-r3",
@@ -11364,14 +11360,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
+     "cc-v14b-qwen3-0.6b-base-s1",
+     "cc-v14b-qwen3-0.6b-base-s4",
+     "cc-v14b-qwen3-0.6b-base-s7",
+     "cc-v14b-qwen3-0.6b-base-s8",
      "he-v12-smollm2-135m-s0",
      "he-v12-smollm2-135m-s4-r3",
      "he-v14q-qwen3-1.7b-base-s15-r3",
-     "he-v14q-smollm2-135m-s10-r3",
-     "he-v8-smollm2-360m-s0",
-     "tc-claude-q06-s2-r4",
-     "tc-q32rewrite-q06-s2-r4",
-     "tc-q32short-q06-s2-r4"
+     "he-v14q-smollm2-135m-s10-r3"
     ]
    },
    {
@@ -11396,14 +11392,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
+     "cc-v14b-qwen3-0.6b-base-s2",
+     "cc-v14b-qwen3-0.6b-base-s9",
      "he-v12-smollm2-135m-s12-r3",
-     "he-v14q-qwen3-0.6b-base-s12-r3",
      "he-v14q-qwen3-1.7b-base-s10-r3",
      "he-v14q-smollm2-135m-s12-r3",
      "he-v14q-smollm2-135m-s13-r3",
      "he-v14q-smollm2-135m-s9-r3",
-     "he-v6-olmo2-1b-s1-2999b-s15",
-     "tc-q32both-q06-s2-r4"
+     "he-v6-olmo2-1b-s1-2999b-s15"
     ]
    },
    {
@@ -11414,23 +11410,24 @@
     "cells": [
      "busy",
      "busy",
-     "warm",
+     "busy",
      "busy",
      "busy",
      "busy",
      "busy",
      "busy"
     ],
-    "busy": 7,
-    "warm": 1,
+    "busy": 8,
+    "warm": 0,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
+     "cc-v14b-qwen3-0.6b-base-s0",
+     "cc-v14b-qwen3-0.6b-base-s11",
      "he-v12-smollm2-135m-s1-r3",
      "he-v12-smollm2-135m-s7-r3",
-     "he-v14q-qwen3-0.6b-base-s1-r3",
      "he-v14q-qwen3-8b-base-s15-r3",
      "he-v14q-smollm2-135m-s0-r3",
      "he-v14q-smollm2-135m-s11-r3",
@@ -11758,5 +11755,5 @@
   ],
   "note": "Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
  },
- "content_digest": "504a5979cb5cf8b1b232d1af345505a173a631e2668aabc3896fbc6ac29664d6"
+ "content_digest": "541fc0c70e71486b893f120ff7307b5f162f57221467acd583815c21c404f8b2"
 }
