@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790853245.0928464,
- "generated_label": "2026-10-01 07:14 EDT",
+ "generated_at": 1790854145.9335845,
+ "generated_label": "2026-10-01 07:29 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -260,32 +260,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 13,
+   "shards_done": 14,
    "shards_running": 0,
-   "shards_failed": 3,
+   "shards_failed": 2,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790837497.0981255,
    "git_commit": "50e35956ff",
    "snapshot": "e0b010245749",
-   "tokens_generated": 43624937,
-   "tokens_scored": 136174,
-   "gpu_hours": 2.9802,
-   "load_hours": 0.1929,
-   "tasks": 133,
-   "records": 266,
+   "tokens_generated": 45126002,
+   "tokens_scored": 159641,
+   "gpu_hours": 3.2074,
+   "load_hours": 0.2124,
+   "tasks": 143,
+   "records": 286,
    "success_rate": 1.0,
-   "mean_bits": 12.710217,
+   "mean_bits": 13.765745,
    "median_bits": 6.0,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 0.0,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 92.056391,
+   "mean_tokens": 94.884615,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 266
+    "success": 286
    }
   },
   {
@@ -658,33 +658,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 15,
-   "shards_running": 1,
+   "shards_done": 16,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1790831969.3053868,
    "git_commit": "c8bd8474d8",
    "snapshot": "18d238ccc11d",
-   "tokens_generated": 249350129,
-   "tokens_scored": 106849,
-   "gpu_hours": 5.8925,
-   "load_hours": 0.2444,
-   "tasks": 313,
-   "records": 626,
-   "success_rate": 0.974441,
-   "mean_bits": 29.462374,
-   "median_bits": 13.852438,
-   "mean_forced_bits": 12.23943,
-   "mean_forced_tokens": 7.546326,
+   "tokens_generated": 281708552,
+   "tokens_scored": 117026,
+   "gpu_hours": 6.727,
+   "load_hours": 0.258,
+   "tasks": 334,
+   "records": 668,
+   "success_rate": 0.976048,
+   "mean_bits": 29.600358,
+   "median_bits": 14.429288,
+   "mean_forced_bits": 12.663706,
+   "mean_forced_tokens": 8.194611,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 85.640575,
-   "fallback_rate": 0.174121,
+   "mean_tokens": 86.273952,
+   "fallback_rate": 0.179641,
    "mean_restarts": 0.0,
    "ends": {
     "check-failed": 16,
-    "success": 610
+    "success": 652
    }
   },
   {
@@ -788,32 +788,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 13,
-   "shards_running": 3,
+   "shards_done": 14,
+   "shards_running": 2,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790831966.7215023,
    "git_commit": "c8bd8474d8",
    "snapshot": "18d238ccc11d",
-   "tokens_generated": 232836978,
-   "tokens_scored": 76285,
-   "gpu_hours": 5.901,
-   "load_hours": 0.1829,
-   "tasks": 133,
-   "records": 266,
+   "tokens_generated": 270086485,
+   "tokens_scored": 83779,
+   "gpu_hours": 6.9593,
+   "load_hours": 0.2002,
+   "tasks": 143,
+   "records": 286,
    "success_rate": 1.0,
-   "mean_bits": 62.102163,
-   "median_bits": 55.293395,
-   "mean_forced_bits": 20.74689,
-   "mean_forced_tokens": 12.37594,
+   "mean_bits": 64.499085,
+   "median_bits": 56.151717,
+   "mean_forced_bits": 23.189492,
+   "mean_forced_tokens": 14.076923,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 110.432331,
-   "fallback_rate": 0.169173,
+   "mean_tokens": 111.517483,
+   "fallback_rate": 0.174825,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 266
+    "success": 286
    }
   },
   {
@@ -4382,33 +4382,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 9,
+   "shards_done": 14,
    "shards_running": 0,
-   "shards_failed": 7,
+   "shards_failed": 2,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790829742.081293,
    "git_commit": "6c36121e50",
    "snapshot": "95931640074b",
-   "tokens_generated": 67872496,
-   "tokens_scored": 51504,
-   "gpu_hours": 1.964,
-   "load_hours": 0.1127,
-   "tasks": 92,
-   "records": 184,
-   "success_rate": 0.978261,
-   "mean_bits": 37.895971,
-   "median_bits": 31.751924,
-   "mean_forced_bits": 8.664149,
-   "mean_forced_tokens": 8.298913,
+   "tokens_generated": 125901418,
+   "tokens_scored": 80904,
+   "gpu_hours": 3.6535,
+   "load_hours": 0.1773,
+   "tasks": 142,
+   "records": 284,
+   "success_rate": 0.985915,
+   "mean_bits": 38.599973,
+   "median_bits": 33.365082,
+   "mean_forced_bits": 11.676603,
+   "mean_forced_tokens": 11.09507,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 92.891304,
-   "fallback_rate": 0.141304,
+   "mean_tokens": 95.28169,
+   "fallback_rate": 0.183099,
    "mean_restarts": 0.0,
    "ends": {
     "check-failed": 4,
-    "success": 180
+    "success": 280
    }
   },
   {
@@ -4467,33 +4467,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 6,
+   "shards_done": 14,
    "shards_running": 0,
-   "shards_failed": 10,
+   "shards_failed": 2,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790829739.2653275,
    "git_commit": "6c36121e50",
    "snapshot": "95931640074b",
-   "tokens_generated": 85241900,
-   "tokens_scored": 41631,
-   "gpu_hours": 2.1519,
-   "load_hours": 0.0768,
-   "tasks": 61,
-   "records": 122,
-   "success_rate": 0.983607,
-   "mean_bits": 76.138741,
-   "median_bits": 72.842657,
-   "mean_forced_bits": 38.456455,
-   "mean_forced_tokens": 26.131148,
+   "tokens_generated": 244431463,
+   "tokens_scored": 99093,
+   "gpu_hours": 6.8744,
+   "load_hours": 0.1864,
+   "tasks": 143,
+   "records": 286,
+   "success_rate": 0.979021,
+   "mean_bits": 78.21613,
+   "median_bits": 73.437254,
+   "mean_forced_bits": 43.170943,
+   "mean_forced_tokens": 29.744755,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 61.639344,
-   "fallback_rate": 0.434426,
+   "mean_tokens": 67.482517,
+   "fallback_rate": 0.465035,
    "mean_restarts": 0.0,
    "ends": {
-    "check-failed": 2,
-    "success": 120
+    "check-failed": 6,
+    "success": 280
    }
   },
   {
@@ -4511,32 +4511,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 13,
+   "shards_done": 14,
    "shards_running": 0,
-   "shards_failed": 3,
+   "shards_failed": 2,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790829737.91657,
    "git_commit": "6c36121e50",
    "snapshot": "95931640074b",
-   "tokens_generated": 12785542,
-   "tokens_scored": 24119,
-   "gpu_hours": 0.5802,
-   "load_hours": 0.1849,
-   "tasks": 132,
-   "records": 264,
+   "tokens_generated": 19600882,
+   "tokens_scored": 26121,
+   "gpu_hours": 1.3504,
+   "load_hours": 0.1985,
+   "tasks": 143,
+   "records": 286,
    "success_rate": 1.0,
-   "mean_bits": 9.368917,
+   "mean_bits": 9.505955,
    "median_bits": 4.0,
-   "mean_forced_bits": 0.0,
-   "mean_forced_tokens": 0.0,
+   "mean_forced_bits": 0.51157,
+   "mean_forced_tokens": 0.713287,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 78.299242,
-   "fallback_rate": 0.0,
+   "mean_tokens": 77.618881,
+   "fallback_rate": 0.006993,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 264
+    "success": 286
    }
   },
   {
@@ -7164,8 +7164,8 @@
         "protocol": "rejection+rewrite-ladder+repair",
         "experiment": "he-v10-qwen3-0.6b-base",
         "status": "failed",
-        "tasks": 133,
-        "mean_bits": 12.710217,
+        "tasks": 143,
+        "mean_bits": 13.765745,
         "median_bits": 6.0,
         "success_rate": 1.0,
         "fallback_rate": 0.0,
@@ -7228,12 +7228,12 @@
         "protocol": "rejection+hints+repair",
         "experiment": "he-v6-qwen3-1.7b-base",
         "status": "failed",
-        "tasks": 132,
-        "mean_bits": 9.368917,
+        "tasks": 143,
+        "mean_bits": 9.505955,
         "median_bits": 4.0,
         "success_rate": 1.0,
-        "fallback_rate": 0.0,
-        "mean_forced_bits": 0.0,
+        "fallback_rate": 0.006993,
+        "mean_forced_bits": 0.51157,
         "mean_select_blocks": 0.0
        },
        {
@@ -7305,12 +7305,12 @@
         "protocol": "rejection+hints+repair",
         "experiment": "he-v6-smollm2-135m",
         "status": "failed",
-        "tasks": 61,
-        "mean_bits": 76.138741,
-        "median_bits": 72.842657,
-        "success_rate": 0.983607,
-        "fallback_rate": 0.434426,
-        "mean_forced_bits": 38.456455,
+        "tasks": 143,
+        "mean_bits": 78.21613,
+        "median_bits": 73.437254,
+        "success_rate": 0.979021,
+        "fallback_rate": 0.465035,
+        "mean_forced_bits": 43.170943,
         "mean_select_blocks": 0.0
        }
       ],
@@ -7446,12 +7446,12 @@
         "protocol": "rejection+hints+repair",
         "experiment": "he-v6-smollm2-1.7b",
         "status": "failed",
-        "tasks": 92,
-        "mean_bits": 37.895971,
-        "median_bits": 31.751924,
-        "success_rate": 0.978261,
-        "fallback_rate": 0.141304,
-        "mean_forced_bits": 8.664149,
+        "tasks": 142,
+        "mean_bits": 38.599973,
+        "median_bits": 33.365082,
+        "success_rate": 0.985915,
+        "fallback_rate": 0.183099,
+        "mean_forced_bits": 11.676603,
         "mean_select_blocks": 0.0
        }
       ],
@@ -7826,9 +7826,9 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 488,
+   "pending": 470,
    "running": 47,
-   "done": 1310,
+   "done": 1328,
    "failed": 315
   },
   "nodes": [
@@ -7852,7 +7852,7 @@
     "idle": 0,
     "stale": 8,
     "heartbeat_stale": true,
-    "age_s": 10731.2,
+    "age_s": 11632.0,
     "tasks": []
    },
    {
@@ -7875,7 +7875,7 @@
     "idle": 0,
     "stale": 8,
     "heartbeat_stale": true,
-    "age_s": 10729.7,
+    "age_s": 11630.5,
     "tasks": []
    },
    {
@@ -7898,7 +7898,7 @@
     "idle": 0,
     "stale": 8,
     "heartbeat_stale": true,
-    "age_s": 10730.1,
+    "age_s": 11631.0,
     "tasks": []
    },
    {
@@ -7921,7 +7921,7 @@
     "idle": 0,
     "stale": 8,
     "heartbeat_stale": true,
-    "age_s": 10729.8,
+    "age_s": 11630.7,
     "tasks": []
    },
    {
@@ -7948,12 +7948,12 @@
     "tasks": [
      "he-v6-olmo2-1b-main-s15",
      "he-v6-qwen3-1.7b-base-s10-r2",
-     "he-v6-smollm2-135m-s15-r2",
      "he-v7-qwen3-0.6b-base-s15-r4",
-     "mb-v6-olmo2-1b-main-s12",
      "tc-claudeboth-q06-s6-r3",
      "tc-q32both-q06-s2-r3",
-     "tc-q32ladder-q06-s6-r3"
+     "tc-q32ladder-q06-s6-r3",
+     "tc-q32rewrite-q06-s2-r3",
+     "tc-q32rewrite-q06-s4-r3"
     ]
    },
    {
@@ -7978,14 +7978,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-v6-qwen3-1.7b-base-s1-r2",
-     "he-v6-smollm2-135m-s0-r2",
-     "he-v6-smollm2-135m-s9-r2",
+     "he-v6-smollm2-360m-s2-r2",
      "he-v7-qwen3-0.6b-base-s10-r4",
      "he-v8-qwen3-0.6b-base-s15-r4",
      "tc-claude-q06-s6-r3",
      "tc-q32repair-q06-s2-r4",
-     "tc-q32rewrite-q06-s1-r3"
+     "tc-q32rewrite-q06-s1-r3",
+     "tc-q32rewrite-q06-s7-r3",
+     "tc-q32short-q06-s6-r3"
     ]
    },
    {
@@ -8011,13 +8011,13 @@
     "age_s": 0.0,
     "tasks": [
      "he-v6-olmo2-1b-main-s10",
-     "he-v6-smollm2-1.7b-s14-r2",
-     "he-v6-smollm2-1.7b-s15-r2",
      "he-v6-smollm2-135m-s10-r2",
+     "he-v6-smollm2-360m-s1-r2",
      "he-v9-qwen3-0.6b-base-s11-r4",
      "he-v9-qwen3-0.6b-base-s15-r3",
      "tc-claudeboth-q06-s2-r3",
-     "tc-q32ladder-q06-s2-r4"
+     "tc-q32ladder-q06-s2-r4",
+     "tc-q32short-q06-s2-r3"
     ]
    },
    {
@@ -8046,10 +8046,10 @@
      "he-v10-qwen3-0.6b-base-s6-r3",
      "he-v6-olmo2-1b-s1-1993b-s15",
      "he-v6-qwen3-1.7b-base-s15-r2",
-     "he-v6-smollm2-1.7b-s10-r2",
-     "he-v6-smollm2-1.7b-s5-r2",
+     "he-v6-smollm2-360m-s3-r2",
      "svc-qwen3-4b-instruct-1790844633",
-     "tc-claude-q06-s2-r3"
+     "tc-claude-q06-s2-r3",
+     "tc-q32shortonly-q06-s2-r3"
     ]
    },
    {
@@ -8076,11 +8076,11 @@
     "tasks": [
      "he-v6-olmo2-1b-s1-4001b-s15",
      "he-v6-smollm2-1.7b-s0-r2",
-     "he-v6-smollm2-1.7b-s13-r2",
-     "he-v6-smollm2-135m-s1-r2",
-     "he-v6-smollm2-135m-s5-r2",
-     "mb-v6-olmo2-1b-main-s9",
-     "svc-qwen3-32b-1790844327"
+     "svc-qwen3-32b-1790844327",
+     "tc-q32rewrite-q06-s6-r3",
+     "tc-q32short-q06-s4-r3",
+     "tc-q32shortonly-q06-s1-r3",
+     "tc-q32shortonly-q06-s6-r3"
     ]
    },
    {
@@ -8105,14 +8105,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-v10-qwen3-0.6b-base-s11-r3",
-     "he-v6-olmo2-1b-main-s11",
      "he-v6-olmo2-1b-s1-4001b-s10",
      "he-v6-smollm2-1.7b-s11-r2",
      "he-v6-smollm2-135m-s11-r2",
-     "he-v6-smollm2-135m-s12-r2",
-     "he-v6-smollm2-135m-s6-r2",
-     "he-v6-smollm2-135m-s8-r2"
+     "he-v6-smollm2-360m-s0-r2",
+     "he-v6-smollm2-360m-s4-r2",
+     "he-v6-smollm2-360m-s5-r2",
+     "he-v6-smollm2-360m-s6-r2",
+     "tc-q32short-q06-s1-r3"
     ]
    }
   ]
@@ -8374,5 +8374,5 @@
   ],
   "note": "Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
  },
- "content_digest": "7f8568908c3234667ee0d971e2ec3984204e8d50053a0a8bc4456d69850156f4"
+ "content_digest": "8b56c3d8cd115a4aea8c34d2d41ecad49e2c9150186c90bc471aec60a0f6e23e"
 }
