@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": 1790826629.4562943,
- "generated_label": "2026-09-30 23:50 EDT",
+ "generated_at": 1790826675.7146509,
+ "generated_label": "2026-09-30 23:51 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -335,10 +335,10 @@
    "limit": 0,
    "shards": 16,
    "shards_done": 0,
-   "shards_running": 0,
-   "shards_failed": 0,
-   "shards_queued": 16,
-   "status": "queued",
+   "shards_running": 7,
+   "shards_failed": 1,
+   "shards_queued": 8,
+   "status": "failed",
    "created_at": 1790826557.3572626,
    "git_commit": "b1c9c863f9",
    "snapshot": "1995725ebf33",
@@ -372,10 +372,10 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 6,
-   "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "running",
+   "shards_running": 2,
+   "shards_failed": 6,
+   "shards_queued": 0,
+   "status": "failed",
    "created_at": 1790826556.4754696,
    "git_commit": "b1c9c863f9",
    "snapshot": "1995725ebf33",
@@ -412,31 +412,34 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
-   "shards_running": 1,
+   "shards_done": 1,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1790826556.0791357,
    "git_commit": "b1c9c863f9",
    "snapshot": "1995725ebf33",
    "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_scored": 10207,
+   "gpu_hours": 0.0045,
+   "load_hours": 0.009,
+   "tasks": 334,
+   "records": 334,
+   "success_rate": 0.976048,
+   "mean_bits": 58.169777,
+   "median_bits": 46.947067,
+   "mean_forced_bits": 58.169777,
+   "mean_forced_tokens": 30.55988,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 30.55988,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "reference-failed": 8,
+    "success": 326
+   }
   },
   {
    "name": "he-free256-smollm2-135m",
@@ -450,8 +453,8 @@
    "limit": 0,
    "shards": 16,
    "shards_done": 0,
-   "shards_running": 8,
-   "shards_failed": 8,
+   "shards_running": 7,
+   "shards_failed": 9,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790826554.6685774,
@@ -490,31 +493,33 @@
    "runs": 4,
    "limit": 0,
    "shards": 16,
-   "shards_done": 0,
-   "shards_running": 16,
+   "shards_done": 2,
+   "shards_running": 14,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790826553.2625344,
    "git_commit": "b1c9c863f9",
    "snapshot": "1995725ebf33",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 492336,
+   "tokens_scored": 4862,
+   "gpu_hours": 0.0386,
+   "load_hours": 0.0184,
+   "tasks": 20,
+   "records": 80,
+   "success_rate": 1.0,
+   "mean_bits": 49.968594,
+   "median_bits": 50.899919,
+   "mean_forced_bits": 47.843594,
+   "mean_forced_tokens": 60.775,
+   "mean_select_blocks": 1.0625,
+   "mean_free_blocks": 1.3625,
+   "mean_tokens": 89.05,
+   "fallback_rate": 0.6625,
+   "mean_restarts": 0.1,
+   "ends": {
+    "success": 80
+   }
   },
   {
    "name": "mb-free32-qwen3-1.7b-base",
@@ -1897,10 +1902,10 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 100,
+   "pending": 90,
    "running": 79,
-   "done": 73,
-   "failed": 59
+   "done": 76,
+   "failed": 66
   },
   "nodes": [
    {
@@ -1987,7 +1992,7 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 0.6,
+    "age_s": 0.7,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s2",
      "he-free256-qwen3-0.6b-base-s4",
@@ -2019,7 +2024,7 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 0.9,
+    "age_s": 1.0,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s1",
      "he-free256-qwen3-0.6b-base-s5",
@@ -2057,10 +2062,10 @@
      "he-free256-qwen3-0.6b-base-s3",
      "he-free256-qwen3-1.7b-base-s5",
      "he-mc1-qwen3-1.7b-base-s3",
+     "he-mc1-smollm2-135m-s3",
      "mb-free32-qwen3-0.6b-base-s3",
      "mb-free32-qwen3-0.6b-base-s6",
-     "mb-free32-qwen3-1.7b-base-s5",
-     "mb-free32-smollm2-135m-s1"
+     "mb-free32-qwen3-1.7b-base-s5"
     ]
    },
    {
@@ -2091,8 +2096,8 @@
      "he-free256-qwen3-1.7b-base-s2",
      "he-free256-qwen3-1.7b-base-s8",
      "he-mc1-qwen3-1.7b-base-s14",
-     "he-mc1-qwen3-1.7b-base-s5",
-     "mb-free32-smollm2-135m-s5"
+     "he-mc1-smollm2-135m-s1",
+     "he-mc1-smollm2-135m-s5"
     ]
    },
    {
@@ -2118,13 +2123,13 @@
     "age_s": 0.9,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s15",
+     "he-mc1-smollm2-135m-s7",
      "mb-free32-qwen3-0.6b-base-s1",
      "mb-free32-qwen3-0.6b-base-s2",
      "mb-free32-qwen3-1.7b-base-s1",
      "mb-free32-qwen3-1.7b-base-s2",
      "mb-free32-qwen3-1.7b-base-s4",
-     "mb-free32-qwen3-1.7b-base-s7",
-     "mb-free32-smollm2-135m-s3"
+     "mb-free32-qwen3-1.7b-base-s7"
     ]
    },
    {
@@ -2154,9 +2159,9 @@
      "he-free256-qwen3-1.7b-base-s10",
      "he-free256-qwen3-1.7b-base-s14",
      "he-free256-qwen3-1.7b-base-s3",
-     "he-mc1-qwen3-1.7b-base-s12",
      "he-mc1-qwen3-1.7b-base-s6",
-     "mb-free32-smollm2-135m-s4"
+     "he-mc1-smollm2-135m-s2",
+     "he-mc1-smollm2-135m-s6"
     ]
    },
    {
@@ -2179,14 +2184,14 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 0.9,
+    "age_s": 1.0,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s12",
      "he-free256-qwen3-1.7b-base-s7",
      "he-mc1-qwen3-1.7b-base-s9",
+     "he-mc1-smollm2-135m-s4",
      "mb-free32-smollm2-135m-s0",
      "mb-free32-smollm2-135m-s2",
-     "mb-ref-smollm2-135m-s0",
      "svc-qwen3-32b-1790826205"
     ]
    },
@@ -2210,7 +2215,7 @@
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
-    "age_s": 1.1,
+    "age_s": 1.2,
     "tasks": [
      "he-free256-qwen3-0.6b-base-s13",
      "he-free256-qwen3-1.7b-base-s11",
@@ -2227,6 +2232,6 @@
  "study_b": {
   "status": "pending"
  },
- "content_digest": "3e86fe9875d023c2b09665171ba6b3d007abaad8e616fe5948a0dadb50afcfff",
+ "content_digest": "b26945b8ac009c716736bce5bb9407931aac673da07893963221c0eef84acdf7",
  "has_progress_png": false
 }
