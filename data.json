@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790865945.5207472,
- "generated_label": "2026-10-01 10:45 EDT",
+ "generated_at": 1790866855.6430073,
+ "generated_label": "2026-10-01 11:00 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -28,6 +28,55 @@
   "qwen3-8b-base": 6
  },
  "experiments": [
+  {
+   "name": "smoke-v14-he",
+   "student": "qwen3-0.6b-base",
+   "model": "Qwen/Qwen3-0.6B-Base",
+   "suite": "humanevalplus",
+   "protocol": "rejection",
+   "config": {
+    "repair": true,
+    "hints": true,
+    "hint_source": "short+file:/scratch/gpfs/ARORA/xd7812/wuji/projects/information-injection/teachers/frontier_opus_hints_hard39_qwen3-0.6b.json",
+    "root_max": 512,
+    "max_rollouts": 8192,
+    "ledger": "harmonic",
+    "repair_depth": 6,
+    "max_expansions": 10,
+    "probe_order": "estimate"
+   },
+   "config_summary": "hint_source=short+file:/scratch/gpfs/ARORA/xd7812/wuji/projects/information-injection/teachers/frontier_opus_hints_hard39_qwen3-0.6b.json, hints=True, ledger=harmonic, max_expansions=10, max_rollouts=8192, probe_order=estimate, repair=True, repair_depth=6, root_max=512",
+   "runs": 4,
+   "limit": 0,
+   "shards": 4,
+   "shards_done": 1,
+   "shards_running": 3,
+   "shards_failed": 0,
+   "shards_queued": 0,
+   "status": "running",
+   "created_at": 1790865975.0038111,
+   "git_commit": "41ea2e90ce",
+   "snapshot": "eb34ec5aa3d7",
+   "tokens_generated": 175797,
+   "tokens_scored": 739,
+   "gpu_hours": 0.0161,
+   "load_hours": 0.0136,
+   "tasks": 1,
+   "records": 4,
+   "success_rate": 1.0,
+   "mean_bits": 8.71572,
+   "median_bits": 8.71572,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 26.5,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 4
+   }
+  },
   {
    "name": "he-v12-qwen3-8b-base",
    "student": "qwen3-8b-base",
@@ -185,10 +234,10 @@
    "limit": 0,
    "shards": 16,
    "shards_done": 0,
-   "shards_running": 0,
+   "shards_running": 5,
    "shards_failed": 0,
-   "shards_queued": 16,
-   "status": "queued",
+   "shards_queued": 11,
+   "status": "running",
    "created_at": 1790865902.8711426,
    "git_commit": "7f023ab716",
    "snapshot": "ee7de015f04c",
@@ -2058,31 +2107,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 0,
-   "shards_running": 11,
+   "shards_done": 3,
+   "shards_running": 8,
    "shards_failed": 1,
    "shards_queued": 4,
    "status": "failed",
    "created_at": 1790860919.3471506,
    "git_commit": "33bcb45226",
    "snapshot": "0c9b64b0d27b",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 38976454,
+   "tokens_scored": 26049,
+   "gpu_hours": 0.988,
+   "load_hours": 0.0465,
+   "tasks": 63,
+   "records": 126,
+   "success_rate": 1.0,
+   "mean_bits": 34.797492,
+   "median_bits": 26.121325,
+   "mean_forced_bits": 11.723383,
+   "mean_forced_tokens": 5.547619,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 55.698413,
+   "fallback_rate": 0.246032,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 126
+   }
   },
   {
    "name": "mb-free32-olmo2-1b-s1-210b",
@@ -2575,32 +2626,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 11,
-   "shards_running": 5,
+   "shards_done": 12,
+   "shards_running": 4,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790851561.124552,
    "git_commit": "28a1b708c4",
    "snapshot": "a789cf6583a7",
-   "tokens_generated": 10741513,
-   "tokens_scored": 15081,
-   "gpu_hours": 0.549,
-   "load_hours": 0.1669,
-   "tasks": 111,
-   "records": 222,
+   "tokens_generated": 27223914,
+   "tokens_scored": 17190,
+   "gpu_hours": 1.1495,
+   "load_hours": 0.1814,
+   "tasks": 121,
+   "records": 242,
    "success_rate": 1.0,
-   "mean_bits": 5.780379,
+   "mean_bits": 6.01068,
    "median_bits": 4.0,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 0.0,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 81.162162,
+   "mean_tokens": 83.727273,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 222
+    "success": 242
    }
   },
   {
@@ -2715,8 +2766,8 @@
    "limit": 0,
    "shards": 16,
    "shards_done": 0,
-   "shards_running": 12,
-   "shards_failed": 4,
+   "shards_running": 11,
+   "shards_failed": 5,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790851556.9730961,
@@ -2934,32 +2985,32 @@
    "runs": 4,
    "limit": 0,
    "shards": 8,
-   "shards_done": 5,
+   "shards_done": 6,
    "shards_running": 0,
-   "shards_failed": 3,
+   "shards_failed": 2,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790835622.0514412,
    "git_commit": "6ff600db4d",
    "snapshot": "cefe9ae02d67",
-   "tokens_generated": 179622609,
-   "tokens_scored": 29184,
-   "gpu_hours": 6.4855,
-   "load_hours": 0.0701,
-   "tasks": 24,
-   "records": 96,
+   "tokens_generated": 201914014,
+   "tokens_scored": 33969,
+   "gpu_hours": 8.7351,
+   "load_hours": 0.089,
+   "tasks": 29,
+   "records": 116,
    "success_rate": 1.0,
-   "mean_bits": 25.644826,
-   "median_bits": 23.50406,
-   "mean_forced_bits": 6.119395,
-   "mean_forced_tokens": 6.833333,
+   "mean_bits": 25.146321,
+   "median_bits": 23.222482,
+   "mean_forced_bits": 5.064327,
+   "mean_forced_tokens": 5.655172,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 125.604167,
-   "fallback_rate": 0.052083,
+   "mean_tokens": 116.681034,
+   "fallback_rate": 0.043103,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 96
+    "success": 116
    }
   },
   {
@@ -9776,7 +9827,7 @@
         "version": "v11",
         "protocol": "rejection",
         "experiment": "he-v11-qwen3-0.6b-base",
-        "status": "queued",
+        "status": "running",
         "tasks": 0,
         "mean_bits": null,
         "median_bits": null,
@@ -9867,8 +9918,8 @@
         "protocol": "rejection+short-hints+repair",
         "experiment": "he-v8-qwen3-1.7b-base",
         "status": "running",
-        "tasks": 111,
-        "mean_bits": 5.780379,
+        "tasks": 121,
+        "mean_bits": 6.01068,
         "median_bits": 4.0,
         "success_rate": 1.0,
         "fallback_rate": 0.0,
@@ -10534,10 +10585,10 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 620,
+   "pending": 616,
    "running": 71,
-   "done": 1873,
-   "failed": 388
+   "done": 1881,
+   "failed": 389
   },
   "nodes": [
    {
@@ -10587,14 +10638,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-v8-qwen3-1.7b-base-s6",
+     "he-v11-qwen3-0.6b-base-s0",
+     "he-v11-qwen3-0.6b-base-s3",
      "he-v8-smollm2-360m-s6",
      "he-v8-smollm2-360m-s7",
      "he-v8-smollm2-360m-s8",
      "mb-v6-olmo2-1b-s1-210b-s2",
-     "mb-v6-olmo2-1b-s1-210b-s7",
      "mb-v6-olmo2-1b-s1-210b-s9",
-     "pt-studyB2-olmo2-1b-s1-1007b-eval_sft-a0"
+     "smoke-v14-he-s0"
     ]
    },
    {
@@ -10625,7 +10676,7 @@
      "he-v8-smollm2-360m-s5",
      "mb-v6-olmo2-1b-s1-210b-s0",
      "mb-v6-olmo2-1b-s1-210b-s3",
-     "pt-studyB2-olmo2-1b-s1-1007b-eval_sft_tool-a0",
+     "smoke-v14-he-s1",
      "tc-q32shortonly-q06-s2-r4"
     ]
    },
@@ -10748,12 +10799,12 @@
     "age_s": 0.0,
     "tasks": [
      "cc-v8-qwen3-0.6b-base-s14",
+     "he-v11-qwen3-0.6b-base-s1",
      "he-v8-qwen3-0.6b-base-s15-r5",
      "he-v8-smollm2-360m-s1",
      "he-v8-smollm2-360m-s10",
      "he-v8-smollm2-360m-s2",
      "he-v8-smollm2-360m-s3",
-     "mb-v6-olmo2-1b-s1-210b-s8",
      "tc-q32both-q06-s2-r4"
     ]
    },
@@ -10779,13 +10830,13 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "cc-v8-qwen3-0.6b-base-s11",
      "cc-v8-qwen3-0.6b-base-s12",
      "cc-v8-qwen3-0.6b-base-s9",
      "he-v8-qwen3-1.7b-base-s10",
      "he-v8-smollm2-360m-s4",
      "he-v9-qwen3-0.6b-base-s15-r4",
      "smoke-v12b-cc-s1",
+     "smoke-v14-he-s3",
      "tc-q32repair-q06-s2-r5"
     ]
    },
@@ -10842,13 +10893,13 @@
     "age_s": 0.0,
     "tasks": [
      "he-v10-qwen3-0.6b-base-s15-r4",
+     "he-v11-qwen3-0.6b-base-s2",
+     "he-v11-qwen3-0.6b-base-s4",
      "he-v6-olmo2-1b-s1-210b-s14",
      "he-v6-olmo2-1b-s1-210b-s15",
      "he-v7-qwen3-0.6b-base-s15-r5",
      "mb-v6-olmo2-1b-s1-210b-s1",
-     "mb-v6-olmo2-1b-s1-210b-s6",
-     "tc-q32short-q06-s1-r3",
-     "tc-q32short-q06-s6-r4"
+     "tc-q32short-q06-s1-r3"
     ]
    }
   ]
@@ -11110,5 +11161,5 @@
   ],
   "note": "Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
  },
- "content_digest": "6e4283be75f0653bb29d4c31ab8b9893afb13d00d2d2966d9356e826399739b0"
+ "content_digest": "76275e72eefd355b7aabbb0c97b4e6edadc083fc2036c7ddd02a003c4ed6e893"
 }

@@ -1,0 +1,1 @@
+{"name":"smoke-v14-he","tasks":[{"task_id":"HumanEval_122","runs":4,"successes":4,"success_rate":1.0,"mean_bits":8.71572,"mean_forced_bits":0.0,"mean_forced_tokens":0.0,"mean_select_blocks":0.0,"mean_free_blocks":0.0,"mean_tokens":26.5,"fallback_rate":0.0,"mean_restarts":0.0,"ends":{"success":4}}]}
