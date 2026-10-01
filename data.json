@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790837815.7997599,
- "generated_label": "2026-10-01 02:56 EDT",
+ "generated_at": 1790838725.8074539,
+ "generated_label": "2026-10-01 03:12 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -36,10 +36,10 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 0,
+   "shards_running": 7,
    "shards_failed": 0,
-   "shards_queued": 8,
-   "status": "queued",
+   "shards_queued": 1,
+   "status": "running",
    "created_at": 1790837498.5497134,
    "git_commit": "50e35956ff",
    "snapshot": "e0b010245749",
@@ -78,31 +78,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 0,
-   "shards_running": 2,
+   "shards_done": 8,
+   "shards_running": 8,
    "shards_failed": 0,
-   "shards_queued": 14,
+   "shards_queued": 0,
    "status": "running",
    "created_at": 1790837497.0981255,
    "git_commit": "50e35956ff",
    "snapshot": "e0b010245749",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 5487605,
+   "tokens_scored": 60434,
+   "gpu_hours": 0.3478,
+   "load_hours": 0.1122,
+   "tasks": 81,
+   "records": 162,
+   "success_rate": 1.0,
+   "mean_bits": 9.901637,
+   "median_bits": 6.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 85.975309,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 162
+   }
   },
   {
    "name": "tc-root8k-q06",
@@ -118,32 +120,33 @@
    "runs": 4,
    "limit": 0,
    "shards": 8,
-   "shards_done": 2,
-   "shards_running": 6,
+   "shards_done": 7,
+   "shards_running": 1,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790835623.7224603,
    "git_commit": "6ff600db4d",
    "snapshot": "cefe9ae02d67",
-   "tokens_generated": 15911934,
-   "tokens_scored": 3304,
-   "gpu_hours": 0.6555,
-   "load_hours": 0.0283,
-   "tasks": 9,
-   "records": 36,
-   "success_rate": 1.0,
-   "mean_bits": 33.018933,
-   "median_bits": 11.321351,
-   "mean_forced_bits": 25.39943,
-   "mean_forced_tokens": 20.0,
+   "tokens_generated": 79000071,
+   "tokens_scored": 11412,
+   "gpu_hours": 2.903,
+   "load_hours": 0.1023,
+   "tasks": 34,
+   "records": 136,
+   "success_rate": 0.992647,
+   "mean_bits": 49.114238,
+   "median_bits": 44.163723,
+   "mean_forced_bits": 42.984595,
+   "mean_forced_tokens": 38.573529,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 133.972222,
-   "fallback_rate": 0.25,
+   "mean_tokens": 105.110294,
+   "fallback_rate": 0.419118,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 36
+    "check-failed": 1,
+    "success": 135
    }
   },
   {
@@ -2948,32 +2951,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 2,
-   "shards_running": 8,
-   "shards_failed": 0,
+   "shards_done": 6,
+   "shards_running": 2,
+   "shards_failed": 2,
    "shards_queued": 6,
-   "status": "running",
+   "status": "failed",
    "created_at": 1790831848.7672095,
    "git_commit": "c8bd8474d8",
    "snapshot": "8ef3894fa72f",
-   "tokens_generated": 6340794,
-   "tokens_scored": 7995,
-   "gpu_hours": 0.1773,
-   "load_hours": 0.0273,
-   "tasks": 42,
-   "records": 84,
-   "success_rate": 1.0,
-   "mean_bits": 12.598384,
-   "median_bits": 6.0,
-   "mean_forced_bits": 1.538877,
-   "mean_forced_tokens": 0.964286,
+   "tokens_generated": 30404015,
+   "tokens_scored": 26651,
+   "gpu_hours": 1.0207,
+   "load_hours": 0.0898,
+   "tasks": 126,
+   "records": 252,
+   "success_rate": 0.980159,
+   "mean_bits": 14.703648,
+   "median_bits": 6.5,
+   "mean_forced_bits": 3.038448,
+   "mean_forced_tokens": 2.583333,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 79.785714,
-   "fallback_rate": 0.035714,
+   "mean_tokens": 83.75,
+   "fallback_rate": 0.051587,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 84
+    "check-failed": 5,
+    "success": 247
    }
   },
   {
@@ -2992,33 +2996,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 12,
-   "shards_running": 4,
-   "shards_failed": 0,
+   "shards_done": 15,
+   "shards_running": 0,
+   "shards_failed": 1,
    "shards_queued": 0,
-   "status": "running",
+   "status": "failed",
    "created_at": 1790831847.4037898,
    "git_commit": "c8bd8474d8",
    "snapshot": "8ef3894fa72f",
-   "tokens_generated": 112445980,
-   "tokens_scored": 85165,
-   "gpu_hours": 3.2313,
-   "load_hours": 0.1806,
-   "tasks": 251,
-   "records": 502,
-   "success_rate": 0.984064,
-   "mean_bits": 27.57869,
-   "median_bits": 17.196775,
-   "mean_forced_bits": 9.019445,
-   "mean_forced_tokens": 6.260956,
+   "tokens_generated": 152327177,
+   "tokens_scored": 113224,
+   "gpu_hours": 4.2452,
+   "load_hours": 0.2236,
+   "tasks": 313,
+   "records": 626,
+   "success_rate": 0.984026,
+   "mean_bits": 29.781272,
+   "median_bits": 17.745192,
+   "mean_forced_bits": 10.409965,
+   "mean_forced_tokens": 7.364217,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 71.145418,
-   "fallback_rate": 0.151394,
+   "mean_tokens": 74.958466,
+   "fallback_rate": 0.159744,
    "mean_restarts": 0.0,
    "ends": {
-    "check-failed": 8,
-    "success": 494
+    "check-failed": 10,
+    "success": 616
    }
   },
   {
@@ -3522,32 +3526,33 @@
    "runs": 4,
    "limit": 0,
    "shards": 8,
-   "shards_done": 3,
+   "shards_done": 7,
    "shards_running": 1,
-   "shards_failed": 4,
+   "shards_failed": 0,
    "shards_queued": 0,
-   "status": "failed",
+   "status": "running",
    "created_at": 1790830164.564661,
    "git_commit": "ef3f16b39b",
    "snapshot": "87c87bf78150",
-   "tokens_generated": 62136789,
-   "tokens_scored": 19118,
-   "gpu_hours": 1.8952,
-   "load_hours": 0.0423,
-   "tasks": 14,
-   "records": 56,
-   "success_rate": 1.0,
-   "mean_bits": 52.268231,
-   "median_bits": 46.454701,
-   "mean_forced_bits": 16.571176,
-   "mean_forced_tokens": 15.839286,
+   "tokens_generated": 78191102,
+   "tokens_scored": 24746,
+   "gpu_hours": 4.8811,
+   "load_hours": 0.1056,
+   "tasks": 34,
+   "records": 136,
+   "success_rate": 0.941176,
+   "mean_bits": 63.092015,
+   "median_bits": 60.7834,
+   "mean_forced_bits": 46.981531,
+   "mean_forced_tokens": 37.867647,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 150.160714,
-   "fallback_rate": 0.160714,
+   "mean_tokens": 109.698529,
+   "fallback_rate": 0.5,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 56
+    "check-failed": 8,
+    "success": 128
    }
   },
   {
@@ -6842,13 +6847,13 @@
         "protocol": "rejection+rewrite-ladder+repair",
         "experiment": "he-v10-qwen3-0.6b-base",
         "status": "running",
-        "tasks": 0,
-        "mean_bits": null,
-        "median_bits": null,
-        "success_rate": null,
-        "fallback_rate": null,
-        "mean_forced_bits": null,
-        "mean_select_blocks": null
+        "tasks": 81,
+        "mean_bits": 9.901637,
+        "median_bits": 6.0,
+        "success_rate": 1.0,
+        "fallback_rate": 0.0,
+        "mean_forced_bits": 0.0,
+        "mean_select_blocks": 0.0
        }
       ],
       "baselines": {
@@ -7438,18 +7443,18 @@
   "expected_gpus": 80,
   "stale_after_s": 120.0,
   "totals": {
-   "busy": 78,
-   "warm": 2,
+   "busy": 80,
+   "warm": 0,
    "idle": 0,
    "stale": 0,
    "reported": 80,
    "unreported": 0
   },
   "queue": {
-   "pending": 792,
-   "running": 63,
-   "done": 884,
-   "failed": 222
+   "pending": 780,
+   "running": 58,
+   "done": 908,
+   "failed": 225
   },
   "nodes": [
    {
@@ -7524,14 +7529,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-v10-qwen3-0.6b-base-s1",
-     "mb-v6-smollm2-360m-s15",
+     "he-v10-qwen3-0.6b-base-s11",
+     "he-v10-qwen3-0.6b-base-s6",
      "tc-claude-q06-s2",
      "tc-claudeboth-q06-s6",
+     "tc-q32rewrite-q06-s2",
      "tc-q32short-q06-s0",
      "tc-q32short-q06-s1",
-     "tc-q32shortonly-q06-s7",
-     "tc-q4iboth-q06-s6-r3"
+     "tc-q32shortonly-q06-s7"
     ]
    },
    {
@@ -7573,27 +7578,22 @@
     "gpus": 8,
     "cells": [
      "busy",
-     "warm",
      "busy",
      "busy",
      "busy",
-     "warm",
+     "busy",
+     "busy",
      "busy",
      "busy"
     ],
-    "busy": 6,
-    "warm": 2,
+    "busy": 8,
+    "warm": 0,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "mb-v6-smollm2-1.7b-s8",
-     "mb-v6-smollm2-1.7b-s9",
-     "mb-v6-smollm2-360m-s10",
-     "mb-v6-smollm2-360m-s12",
-     "mb-v6-smollm2-360m-s9",
-     "tc-root8k-q06-s6"
+     "pt-studyB-olmo2-1b-s1-504b-sft-a0"
     ]
    },
    {
@@ -7618,14 +7618,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
+     "he-v10-qwen3-0.6b-base-s10",
+     "he-v10-qwen3-0.6b-base-s12",
      "he-v7-qwen3-0.6b-base-s15-r2",
      "he-v9-qwen3-0.6b-base-s0-r2",
-     "mb-v6-smollm2-1.7b-s4",
      "tc-q32short-q06-s2",
      "tc-q32short-q06-s5",
      "tc-q32shortonly-q06-s6",
-     "tc-q4iboth-q06-s4",
-     "tc-root8k-q06-s3"
+     "tc-q4iboth-q06-s4"
     ]
    },
    {
@@ -7651,11 +7651,11 @@
     "age_s": 0.0,
     "tasks": [
      "he-v9-qwen3-0.6b-base-s10-r2",
-     "mb-v6-smollm2-1.7b-s3",
      "mb-v6-smollm2-1.7b-s5",
      "tc-q32repair-q06-s2-r2",
+     "tc-q32rewrite-q06-s1",
+     "tc-q32rewrite-q06-s5",
      "tc-q32shortonly-q06-s0",
-     "tc-q4iboth-q06-s3-r2",
      "tc-q4irepair-q06-s2",
      "tc-root8k-q06-s2"
     ]
@@ -7683,13 +7683,13 @@
     "age_s": 0.0,
     "tasks": [
      "he-v10-qwen3-0.6b-base-s0",
+     "he-v10-qwen3-0.6b-base-s15",
      "he-v7-qwen3-0.6b-base-s10-r2",
      "he-v8-qwen3-0.6b-base-s15-r2",
      "tc-q32both-q06-s6",
-     "tc-q32shortonly-q06-s3",
-     "tc-q4iboth-q06-s2-r2",
-     "tc-root8k-q06-s1",
-     "tc-root8k-q06-s5"
+     "tc-q32rewrite-q06-s3",
+     "tc-q32rewrite-q06-s4",
+     "tc-q32shortonly-q06-s3"
     ]
    },
    {
@@ -7714,14 +7714,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
+     "he-v10-qwen3-0.6b-base-s5",
      "he-v8-qwen3-0.6b-base-s10",
      "he-v8-qwen3-0.6b-base-s11",
      "he-v9-qwen3-0.6b-base-s15",
-     "mb-v6-smollm2-1.7b-s6",
      "tc-q32ladder-q06-s2-r2",
      "tc-q32ladder-q06-s6",
-     "tc-q32shortonly-q06-s1",
-     "tc-q4iboth-q06-s1-r2"
+     "tc-q32rewrite-q06-s6",
+     "tc-q32shortonly-q06-s1"
     ]
    },
    {
@@ -7746,13 +7746,13 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
+     "he-v10-qwen3-0.6b-base-s2",
      "he-v9-qwen3-0.6b-base-s11-r2",
      "he-v9-qwen3-0.6b-base-s12",
-     "mb-v6-smollm2-1.7b-s1",
      "mb-v6-smollm2-1.7b-s7",
      "svc-qwen3-32b-1790829679",
      "tc-q32both-q06-s2",
-     "tc-root8k-q06-s4"
+     "tc-q32rewrite-q06-s0"
     ]
    }
   ]
@@ -7760,5 +7760,5 @@
  "study_b": {
   "status": "pending"
  },
- "content_digest": "cbf09f393cd4738748789f98e00ecf8ab9dbc669543d9b257f2a9e9b0445591a"
+ "content_digest": "3f74022cf205914e7c4f0beea7d8638f681d5c1ba9dd475800e9ae5da23ecb10"
 }
