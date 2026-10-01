@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark">
+<title>Information Injection Dashboard</title>
+<meta name="description" content="Certified bits of teacher assistance a frozen student needs to solve verifiable tasks: protocol progress, experiments and GPU fleet.">
+<link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><div><span class="eyebrow">INFORMATION INJECTION / RESEARCH DASHBOARD</span><h1>Information injection <span>certified bits of assistance</span></h1><p class="subtitle">How many bits of outside help does a frozen pretrained checkpoint need to solve a verifiable task? Live summaries of the protocol search, every experiment, and the GPU fleet that runs them.</p></div><button id="theme" aria-label="Toggle light and dark theme">◐ Theme</button></header>
+<div class="update"><span id="updated">Loading snapshot…</span><span id="freshness"></span><button id="refresh">Reload snapshot ↻</button></div>
+<nav aria-label="Sections"><a href="#idea">Core idea</a><a href="#fleet">GPU fleet</a><a href="#progress">Protocol progress</a><a href="#experiments">Experiments</a><a href="#tasks">Per task</a><a href="#study-b">Study B</a></nav>
+
+<section id="idea"><div class="two">
+<article class="panel pad idea"><span class="eyebrow">CORE IDEA</span>
+<p style="margin-top:6px">A frozen student <i>p</i> generates; an assistance system (teacher, monitor and decoding algorithm) turns it into an effective law <i>Q</i>. The price of assistance is KL(<i>Q</i> ‖ <i>P</i>) in bits. With unlimited control the cheapest always-successful <i>Q</i> is <i>P</i>(· | success), which costs exactly −log<sub>2</sub> α, where α is the student's own success probability. Real teachers are restricted, so we measure the bits that a <b>fixed, auditable</b> assistance protocol needs to make the student succeed: every protocol ends with a guaranteed-success fallback, so each one is summarized by a single number, the expected certified bits per task.</p>
+<ol><li><b>Protocol problem (Study A).</b> For a given student and task, which teacher + monitor + injection algorithm reaches success with the fewest certified bits? Lower is a tighter upper bound on the student's information-injection cost.</li>
+<li><b>Evaluation problem (Study B).</b> Across pretrained checkpoints, does the bit cost measured before post-training predict performance after equal-budget post-training, beyond validation loss, pass@k and teacher-answer likelihood?</li></ol>
+</article>
+<article class="panel"><div class="pad" style="padding-bottom:10px"><span class="eyebrow">CERTIFIED ACCOUNTING</span><p class="muted" style="margin-top:6px;font-size:13px">Generation is split into blocks. Before each block the protocol picks one primitive from the history alone; each primitive has a pointwise bound <i>Q</i>(block | h) ≤ 2<sup>B</sup> <i>p</i>(block | h). A run costs the sum of B, and its expectation upper-bounds KL(<i>Q</i> ‖ <i>P</i>) by the chain rule.</p></div>
+<div class="scroll"><table class="accounting"><thead><tr><th>primitive</th><th>what happens</th><th>certified bits</th></tr></thead><tbody>
+<tr><td>FREE</td><td>sample one block from <i>p</i></td><td>0</td></tr>
+<tr><td>SELECT(K)</td><td>sample K i.i.d. blocks from <i>p</i>; any rule keeps one</td><td>log<sub>2</sub> K</td></tr>
+<tr><td>FORCE(text)</td><td>append teacher-written tokens</td><td>−log<sub>2</sub> <i>p</i>(text | h)</td></tr>
+<tr><td>SELECT_OR_FORCE</td><td>keep a sample, or fall back to the text</td><td>log<sub>2</sub>(K + 1/<i>p</i>(text))</td></tr>
+<tr><td>fallback</td><td>force the reference solution as a fresh attempt; guarantees success</td><td>its exact surprisal</td></tr>
+</tbody></table></div>
+<p class="note pad" style="padding-top:10px">Planning compute (reading the reference, student rollouts for value estimates, drafting hints) is free in bits but counted in compute. Reference points per task: <b>reference</b> = bits to force the whole reference solution (teacher-answer likelihood); <b>free</b> = the student alone, success rate α and the ideal −log<sub>2</sub> α.</p>
+</article></div></section>
+
+<section id="fleet"><div class="section-head"><h2>GPU fleet</h2><div id="queue" class="pills"></div></div>
+<div class="tiles" id="fleet-tiles"></div>
+<div class="nodes" id="nodes"></div>
+<div class="legend"><span><i class="swatch c-busy"></i>busy (running a task)</span><span><i class="swatch c-warm"></i>warm (idle, burner holding the GPU)</span><span><i class="swatch c-idle"></i>idle</span><span><i class="swatch c-stale"></i>stale heartbeat</span></div>
+<p class="note" id="fleet-note"></p></section>
+
+<section id="progress"><div class="section-head"><h2>Protocol progress</h2><span class="tag">Study A · lower is better</span></div>
+<div class="panel"><div class="controls"><label>Student <select id="progress-student"><option value="all">all</option></select></label><span class="muted">Mean certified bits per task (log scale) by protocol version. Dashed: <b>reference</b> baseline; dotted: <b>free</b> −log<sub>2</sub> α.</span><a id="progress-png" class="figure-link" href="progress.png" target="_blank" rel="noopener" hidden>static PNG ↗</a></div>
+<div class="chart" id="progress-chart"></div>
+<div class="legend chart-legend" id="progress-legend"></div>
+<div class="scroll"><table><thead><tr><th>Student</th><th>Version</th><th>Label</th><th>Protocol</th><th>Experiment</th><th class="num">Mean bits</th><th class="num">Success</th><th class="num">Fallback</th><th class="num">Tasks</th><th>Status</th></tr></thead><tbody id="progress-table"></tbody></table></div></div>
+<p class="note" id="progress-note"></p></section>
+
+<section id="experiments"><div class="section-head"><h2>Experiments</h2><div id="exp-counts" class="pills"></div></div>
+<div class="panel"><div class="controls"><label>Student <select id="f-student"><option value="all">all</option></select></label><label>Protocol <select id="f-protocol"><option value="all">all</option></select></label><label>Status <select id="f-status"><option value="all">all</option><option>running</option><option>complete</option><option>queued</option><option>failed</option></select></label><input id="f-search" type="search" placeholder="Search name, suite, config" aria-label="Search experiments"></div>
+<div class="scroll tall"><table id="exp-table"><thead><tr>
+<th class="sortable" data-key="name" tabindex="0">Name</th><th class="sortable" data-key="student" tabindex="0">Student</th><th class="sortable" data-key="suite" tabindex="0">Suite</th><th class="sortable" data-key="protocol" tabindex="0">Protocol</th><th>Config</th><th class="sortable" data-key="status" tabindex="0">Status</th><th class="sortable num" data-key="tasks" tabindex="0">Tasks</th><th class="sortable num" data-key="runs" tabindex="0">Runs</th><th class="sortable num" data-key="success_rate" tabindex="0">Success</th><th class="sortable num" data-key="mean_bits" tabindex="0">Mean bits</th><th class="sortable num" data-key="median_bits" tabindex="0">Median bits</th><th class="sortable num" data-key="mean_forced_bits" tabindex="0">Forced bits</th><th class="sortable num" data-key="mean_select_blocks" tabindex="0">SELECT blocks</th><th class="sortable num" data-key="mean_tokens" tabindex="0">Tokens / run</th><th class="sortable num" data-key="tokens_generated" tabindex="0">Generated</th><th class="sortable num" data-key="gpu_hours" tabindex="0">GPU-h</th></tr></thead><tbody id="exp-rows"></tbody></table></div></div>
+<p class="note">Per-task first: each task's runs are averaged, then tasks are averaged (median: over per-task means). Forced bits and SELECT blocks are per run. Generated = student tokens sampled, including value-estimation rollouts. GPU-h = sum of shard wall time after model load (1 GPU per shard). Status compares finished shard files with the spec's shard count; a running experiment shows aggregates of its finished shards only. Click a name for the per-task view.</p></section>
+
+<section id="tasks"><div class="section-head"><h2>Per task</h2><span class="muted" id="task-summary"></span></div>
+<div class="panel"><div class="controls"><label>Experiment <select id="task-exp"></select></label><input id="task-search" type="search" placeholder="Filter task id" aria-label="Filter tasks"></div>
+<div class="scroll tall"><table id="task-table"><thead><tr id="task-head"></tr></thead><tbody id="task-rows"></tbody></table></div></div></section>
+
+<section id="study-b"><div class="section-head"><h2>Study B: checkpoint radar</h2><span class="tag">bits-based prediction vs post-SFT accuracy</span></div>
+<div id="radar"></div></section>
+
+<footer>Snapshots are exported from the project's run directory every fifteen minutes and republished when they change (at least hourly). Only aggregates are public: no trajectory text, file paths, credentials or hostnames (nodes are labelled by pool group). Status is from file markers, not a scientific verdict; numbers on running experiments are partial. <span id="digest"></span></footer>
+</main>
+<div id="tooltip" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body></html>
