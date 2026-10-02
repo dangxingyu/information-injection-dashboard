@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790923126.16791,
- "generated_label": "2026-10-02 02:38 EDT",
+ "generated_at": 1790924036.352309,
+ "generated_label": "2026-10-02 02:53 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -283,10 +283,10 @@
    "limit": 0,
    "shards": 4,
    "shards_done": 3,
-   "shards_running": 1,
-   "shards_failed": 0,
+   "shards_running": 0,
+   "shards_failed": 1,
    "shards_queued": 0,
-   "status": "running",
+   "status": "failed",
    "created_at": 1790901468.2971907,
    "git_commit": "8749bf0a7a",
    "snapshot": "8f49563ab15f",
@@ -18136,10 +18136,10 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 787,
+   "pending": 788,
    "running": 38,
    "done": 2638,
-   "failed": 693
+   "failed": 695
   },
   "nodes": [
    {
@@ -18198,7 +18198,7 @@
     "tasks": [
      "he-v14o-h2-qwen3-0.6b-base-s8-r3",
      "he-v14o-h2-smollm2-135m-s5-r3",
-     "he-v14q-h2-smollm2-135m-s15-r3",
+     "he-v14q-h2-smollm2-135m-s0-r4",
      "he-v14w-h2-smollm2-135m-s0-r3",
      "he-v14w-h2-smollm2-135m-s13-r3",
      "he-v17-h2-qwen3-0.6b-base-s14",
@@ -18261,13 +18261,13 @@
     "age_s": 0.0,
     "tasks": [
      "he-v14o-h2-qwen3-1.7b-base-s10",
+     "he-v14w-h2-smollm2-135m-s11-r4",
      "he-v14w-h2-smollm2-135m-s2-r3",
      "he-v17-h2-qwen3-0.6b-base-s11",
      "he-v17-h2-qwen3-0.6b-base-s18",
      "he-v17-h2-qwen3-0.6b-base-s4",
      "he-v17-h2-qwen3-0.6b-base-s5",
-     "he-v17-h2-qwen3-0.6b-base-s9",
-     "smoke-v17-he-s3"
+     "he-v17-h2-qwen3-0.6b-base-s9"
     ]
    },
    {
@@ -18320,7 +18320,7 @@
     "idle": 0,
     "stale": 8,
     "heartbeat_stale": true,
-    "age_s": 14052.9,
+    "age_s": 14963.1,
     "tasks": []
    }
   ]
@@ -18582,5 +18582,5 @@
   ],
   "note": "Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
  },
- "content_digest": "e469b0625bc22221f82d0cb54345309b35f671197cf6d60a00044e486f137a6f"
+ "content_digest": "e85be962ee413756ac8554ff360d1848b111cdcf1e2110e2fde5574b3c31f64a"
 }
