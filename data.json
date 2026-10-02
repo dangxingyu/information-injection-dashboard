@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790943996.0329108,
- "generated_label": "2026-10-02 08:26 EDT",
+ "generated_at": 1790944905.777052,
+ "generated_label": "2026-10-02 08:41 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -6236,39 +6236,39 @@
    "runs": 32,
    "limit": 0,
    "shards": 8,
-   "shards_done": 1,
-   "shards_running": 1,
+   "shards_done": 2,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 6,
    "status": "running",
    "created_at": 1790890320.7685742,
    "git_commit": "6b568d1b88",
    "snapshot": "16618a63d36d",
-   "tokens_generated": 342893,
+   "tokens_generated": 652270,
    "tokens_scored": 0,
-   "gpu_hours": 0.0749,
-   "load_hours": 0.0193,
-   "tasks": 21,
-   "records": 672,
-   "success_rate": 0.145833,
+   "gpu_hours": 0.3282,
+   "load_hours": 0.0342,
+   "tasks": 42,
+   "records": 1344,
+   "success_rate": 0.1875,
    "mean_bits": 0.0,
    "median_bits": 0.0,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 0.0,
    "mean_select_blocks": 0.0,
-   "mean_free_blocks": 52.638393,
-   "mean_tokens": 691.375,
+   "mean_free_blocks": 50.89881,
+   "mean_tokens": 659.619792,
    "fallback_rate": 0.0,
-   "mean_restarts": 1.290179,
+   "mean_restarts": 1.364583,
    "ends": {
-    "horizon": 574,
-    "success": 98
+    "horizon": 1092,
+    "success": 252
    },
-   "alpha": 0.145833,
-   "solvable_tasks": 14,
-   "zero_success_tasks": 7,
-   "ideal_bits": 2.729613,
-   "ideal_lower_bound_bits": 2.981107
+   "alpha": 0.1875,
+   "solvable_tasks": 30,
+   "zero_success_tasks": 12,
+   "ideal_bits": 2.514575,
+   "ideal_lower_bound_bits": 2.79158
   },
   {
    "name": "smoke-ref-e2-qwen3-0.6b",
@@ -6516,39 +6516,39 @@
    "runs": 2048,
    "limit": 0,
    "shards": 32,
-   "shards_done": 3,
-   "shards_running": 29,
+   "shards_done": 16,
+   "shards_running": 16,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790884559.5293303,
    "git_commit": "f7b1c8b501",
    "snapshot": "915579d60b19",
-   "tokens_generated": 5891096,
+   "tokens_generated": 23789952,
    "tokens_scored": 0,
-   "gpu_hours": 1.3331,
-   "load_hours": 0.045,
-   "tasks": 5,
-   "records": 10240,
-   "success_rate": 0.000488,
+   "gpu_hours": 4.3327,
+   "load_hours": 0.2922,
+   "tasks": 20,
+   "records": 40960,
+   "success_rate": 0.000366,
    "mean_bits": 0.0,
    "median_bits": 0.0,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 0.0,
    "mean_select_blocks": 0.0,
-   "mean_free_blocks": 56.618066,
-   "mean_tokens": 793.383496,
+   "mean_free_blocks": 57.330664,
+   "mean_tokens": 789.84375,
    "fallback_rate": 0.0,
-   "mean_restarts": 1.246582,
+   "mean_restarts": 1.206421,
    "ends": {
-    "horizon": 10235,
-    "success": 5
+    "horizon": 40945,
+    "success": 15
    },
-   "alpha": 0.000488,
-   "solvable_tasks": 3,
-   "zero_success_tasks": 2,
-   "ideal_bits": 10.471679,
-   "ideal_lower_bound_bits": 10.050266
+   "alpha": 0.000366,
+   "solvable_tasks": 8,
+   "zero_success_tasks": 12,
+   "ideal_bits": 10.353759,
+   "ideal_lower_bound_bits": 9.792392
   },
   {
    "name": "he-v14q-h2-qwen3-8b-base",
@@ -17305,13 +17305,13 @@
         "source": "all free experiments",
         "status": "partial",
         "tasks": 163,
-        "runs": 57184,
-        "alpha": 0.115321,
-        "solvable_tasks": 119,
-        "zero_success_tasks": 44,
-        "ideal_bits": 4.462769,
-        "ideal_lower_bound_bits": 5.075183,
-        "value": 4.462769
+        "runs": 87904,
+        "alpha": 0.115347,
+        "solvable_tasks": 124,
+        "zero_success_tasks": 39,
+        "ideal_bits": 4.70511,
+        "ideal_lower_bound_bits": 5.379016,
+        "value": 4.70511
        }
       }
      },
@@ -18134,14 +18134,14 @@
    "busy": 40,
    "warm": 0,
    "idle": 0,
-   "stale": 32,
-   "reported": 72,
-   "unreported": 0
+   "stale": 0,
+   "reported": 40,
+   "unreported": 8
   },
   "queue": {
-   "pending": 777,
+   "pending": 762,
    "running": 39,
-   "done": 2652,
+   "done": 2667,
    "failed": 750
   },
   "nodes": [
@@ -18151,22 +18151,31 @@
     "group": "h100-32a",
     "gpus": 8,
     "cells": [
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale"
+     "busy",
+     "busy",
+     "busy",
+     "busy",
+     "busy",
+     "busy",
+     "busy",
+     "busy"
     ],
-    "busy": 0,
+    "busy": 8,
     "warm": 0,
     "idle": 0,
-    "stale": 8,
-    "heartbeat_stale": true,
-    "age_s": 566.2,
-    "tasks": []
+    "stale": 0,
+    "heartbeat_stale": false,
+    "age_s": 0.0,
+    "tasks": [
+     "he-free2048-hard-h2-qwen3-0.6b-base-s15",
+     "he-free2048-hard-h2-qwen3-0.6b-base-s3",
+     "he-free2048-hard-h2-qwen3-0.6b-base-s9",
+     "he-v14o-h2-qwen3-0.6b-base-s9-r5",
+     "he-v14o-h2-qwen3-8b-base-s14-r4",
+     "he-v14q-h2-smollm2-135m-s4-r4",
+     "he-v14q-h2-smollm2-135m-s5-r4",
+     "he-v14q-h2-smollm2-135m-s6-r5"
+    ]
    },
    {
     "label": "h100-32a \u00b7 2",
@@ -18190,14 +18199,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-free2048-hard-h2-qwen3-0.6b-base-s12",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s15",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s17",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s20",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s3",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s6",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s9",
-     "he-v14o-h2-qwen3-0.6b-base-s9-r5"
+     "he-free2048-hard-h2-qwen3-0.6b-base-s25",
+     "he-free2048-hard-h2-qwen3-0.6b-base-s30",
+     "he-v14o-h2-qwen3-1.7b-base-s10-r4",
+     "he-v14o-h2-qwen3-1.7b-base-s14-r4",
+     "he-v14o-h2-qwen3-8b-base-s10-r4",
+     "he-v14o-h2-smollm2-135m-s11-r5",
+     "he-v14o-h2-smollm2-135m-s12-r4",
+     "he-v14q-h2-qwen3-0.6b-base-s8-r5"
     ]
    },
    {
@@ -18222,119 +18231,18 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-free2048-hard-h2-qwen3-0.6b-base-s25",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s26",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s27",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s28",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s29",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s30",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s31",
-     "he-v14o-h2-qwen3-1.7b-base-s10-r4"
+     "he-free2048-hard-h2-qwen3-0.6b-base-s10",
+     "he-free2048-hard-h2-qwen3-0.6b-base-s13",
+     "he-free2048-hard-h2-qwen3-0.6b-base-s21",
+     "he-free2048-hard-h2-qwen3-0.6b-base-s24",
+     "he-free2048-hard-h2-qwen3-0.6b-base-s4",
+     "he-free2048-hard-h2-qwen3-0.6b-base-s7",
+     "he-v14o-h2-smollm2-135m-s2-r4",
+     "he-v14o-h2-smollm2-135m-s5-r5"
     ]
    },
    {
     "label": "h100-32a \u00b7 4",
-    "kind": "h100",
-    "group": "h100-32a",
-    "gpus": 8,
-    "cells": [
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale"
-    ],
-    "busy": 0,
-    "warm": 0,
-    "idle": 0,
-    "stale": 8,
-    "heartbeat_stale": true,
-    "age_s": 569.0,
-    "tasks": []
-   },
-   {
-    "label": "h100-32a \u00b7 5",
-    "kind": "h100",
-    "group": "h100-32a",
-    "gpus": 8,
-    "cells": [
-     "busy",
-     "busy",
-     "busy",
-     "busy",
-     "busy",
-     "busy",
-     "busy",
-     "busy"
-    ],
-    "busy": 8,
-    "warm": 0,
-    "idle": 0,
-    "stale": 0,
-    "heartbeat_stale": false,
-    "age_s": 0.0,
-    "tasks": [
-     "he-free2048-hard-h2-qwen3-0.6b-base-s10",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s13",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s16",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s19",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s21",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s24",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s4",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s7"
-    ]
-   },
-   {
-    "label": "h100-32a \u00b7 6",
-    "kind": "h100",
-    "group": "h100-32a",
-    "gpus": 8,
-    "cells": [
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale"
-    ],
-    "busy": 0,
-    "warm": 0,
-    "idle": 0,
-    "stale": 8,
-    "heartbeat_stale": true,
-    "age_s": 568.2,
-    "tasks": []
-   },
-   {
-    "label": "h100-32a \u00b7 7",
-    "kind": "h100",
-    "group": "h100-32a",
-    "gpus": 8,
-    "cells": [
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale"
-    ],
-    "busy": 0,
-    "warm": 0,
-    "idle": 0,
-    "stale": 8,
-    "heartbeat_stale": true,
-    "age_s": 567.4,
-    "tasks": []
-   },
-   {
-    "label": "h100-32a \u00b7 8",
     "kind": "h100",
     "group": "h100-32a",
     "gpus": 8,
@@ -18356,12 +18264,12 @@
     "age_s": 0.0,
     "tasks": [
      "he-free2048-hard-h2-qwen3-0.6b-base-s11",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s14",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s18",
      "he-free2048-hard-h2-qwen3-0.6b-base-s2",
-     "he-free2048-hard-h2-qwen3-0.6b-base-s22",
      "he-free2048-hard-h2-qwen3-0.6b-base-s5",
      "he-free2048-hard-h2-qwen3-0.6b-base-s8",
+     "he-v14q-h2-qwen3-0.6b-base-s19-r5",
+     "he-v14q-h2-smollm2-135m-s0-r5",
+     "he-v14q-h2-smollm2-135m-s10-r5",
      "he-v17-h2-qwen3-0.6b-base-s18-r3"
     ]
    },
@@ -18387,11 +18295,11 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-free32-e2-qwen3-1.7b-base-s1",
      "he-v14o-h2-smollm2-135m-s9-r4",
      "he-v14q-h2-smollm2-135m-s11-r4",
      "he-v14q-h2-smollm2-135m-s15-r4",
      "he-v14q-h2-smollm2-135m-s2-r4",
+     "he-v14q-h2-smollm2-135m-s9-r4",
      "svc-qwen3-32b-1790860969",
      "svc-qwen3-32b-1790933373"
     ]
@@ -18655,5 +18563,5 @@
   ],
   "note": "Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
  },
- "content_digest": "96d5056e6fa7dc0f27deb77f8988bdc130e3b0ed61816ebc54dc8ea0d73b85ee"
+ "content_digest": "6cd6352524c040d011d8f075590157850cf0e7c9383e079d5366892a94f2b72f"
 }
