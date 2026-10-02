@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790924945.0511203,
- "generated_label": "2026-10-02 03:09 EDT",
+ "generated_at": 1790925845.996599,
+ "generated_label": "2026-10-02 03:24 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -2587,32 +2587,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 11,
+   "shards_done": 12,
    "shards_running": 0,
-   "shards_failed": 5,
+   "shards_failed": 4,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790890575.347963,
    "git_commit": "e1d421b075",
    "snapshot": "9b12a354ccf4",
-   "tokens_generated": 1274560414,
-   "tokens_scored": 102459,
-   "gpu_hours": 33.6929,
-   "load_hours": 0.1401,
-   "tasks": 55,
-   "records": 110,
+   "tokens_generated": 1528774758,
+   "tokens_scored": 113327,
+   "gpu_hours": 39.2149,
+   "load_hours": 0.1528,
+   "tasks": 60,
+   "records": 120,
    "success_rate": 1.0,
-   "mean_bits": 53.098563,
-   "median_bits": 52.821482,
-   "mean_forced_bits": 4.591541,
-   "mean_forced_tokens": 2.554545,
+   "mean_bits": 53.919428,
+   "median_bits": 52.098754,
+   "mean_forced_bits": 4.208913,
+   "mean_forced_tokens": 2.341667,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 82.654545,
-   "fallback_rate": 0.090909,
+   "mean_tokens": 82.466667,
+   "fallback_rate": 0.083333,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 110
+    "success": 120
    }
   },
   {
@@ -17501,12 +17501,12 @@
         "protocol": "rejection",
         "experiment": "he-v14w-h2-smollm2-135m",
         "status": "failed",
-        "tasks": 55,
-        "mean_bits": 53.098563,
-        "median_bits": 52.821482,
+        "tasks": 60,
+        "mean_bits": 53.919428,
+        "median_bits": 52.098754,
         "success_rate": 1.0,
-        "fallback_rate": 0.090909,
-        "mean_forced_bits": 4.591541,
+        "fallback_rate": 0.083333,
+        "mean_forced_bits": 4.208913,
         "mean_select_blocks": 0.0
        }
       ],
@@ -18136,10 +18136,10 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 789,
+   "pending": 787,
    "running": 38,
-   "done": 2638,
-   "failed": 695
+   "done": 2639,
+   "failed": 696
   },
   "nodes": [
    {
@@ -18199,8 +18199,8 @@
      "he-v14o-h2-qwen3-0.6b-base-s8-r3",
      "he-v14o-h2-smollm2-135m-s5-r3",
      "he-v14q-h2-smollm2-135m-s0-r4",
+     "he-v14q-h2-smollm2-135m-s4-r3",
      "he-v14w-h2-smollm2-135m-s0-r3",
-     "he-v14w-h2-smollm2-135m-s13-r3",
      "he-v17-h2-qwen3-0.6b-base-s14",
      "he-v17-h2-qwen3-0.6b-base-s15",
      "he-v17-h2-qwen3-0.6b-base-s19"
@@ -18293,7 +18293,7 @@
     "age_s": 0.0,
     "tasks": [
      "he-v14o-h2-qwen3-8b-base-s14",
-     "he-v14w-h2-smollm2-135m-s12-r3",
+     "he-v14q-h2-smollm2-135m-s2-r4",
      "he-v17-h2-qwen3-0.6b-base-s0",
      "he-v17-h2-qwen3-0.6b-base-s21",
      "svc-qwen3-32b-1790844327",
@@ -18320,7 +18320,7 @@
     "idle": 0,
     "stale": 8,
     "heartbeat_stale": true,
-    "age_s": 15871.8,
+    "age_s": 16772.7,
     "tasks": []
    }
   ]
@@ -18582,5 +18582,5 @@
   ],
   "note": "Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
  },
- "content_digest": "94eab3d4a5a081cb9b717b40200ad79263307961ba7544b814b9d1d6bfe9a48f"
+ "content_digest": "061fdd086449a59cd595a042a5189a1de8b7235a9b182c908cb342e5760891e7"
 }
