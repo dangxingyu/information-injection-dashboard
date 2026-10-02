@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790980304.6819742,
- "generated_label": "2026-10-02 18:31 EDT",
+ "generated_at": 1790980554.6320233,
+ "generated_label": "2026-10-02 18:35 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -6402,36 +6402,39 @@
    "runs": 32,
    "limit": 0,
    "shards": 8,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 6,
    "shards_failed": 0,
-   "shards_queued": 2,
+   "shards_queued": 1,
    "status": "running",
    "created_at": 1790890405.6000235,
    "git_commit": "6b568d1b88",
    "snapshot": "16618a63d36d",
-   "tokens_generated": 0,
+   "tokens_generated": 746776,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {},
-   "alpha": null,
-   "solvable_tasks": 0,
-   "zero_success_tasks": 0,
-   "ideal_bits": null,
-   "ideal_lower_bound_bits": null
+   "gpu_hours": 0.1016,
+   "load_hours": 0.0117,
+   "tasks": 42,
+   "records": 1344,
+   "success_rate": 0.099702,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 54.769345,
+   "mean_tokens": 713.524554,
+   "fallback_rate": 0.0,
+   "mean_restarts": 2.389881,
+   "ends": {
+    "horizon": 1210,
+    "success": 134
+   },
+   "alpha": 0.099702,
+   "solvable_tasks": 27,
+   "zero_success_tasks": 15,
+   "ideal_bits": 3.132218,
+   "ideal_lower_bound_bits": 3.257888
   },
   {
    "name": "he-ref-e2-qwen2.5-0.5b",
@@ -21190,9 +21193,9 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 359,
-   "running": 40,
-   "done": 3305,
+   "pending": 358,
+   "running": 39,
+   "done": 3308,
    "failed": 785
   },
   "nodes": [
@@ -21348,10 +21351,10 @@
     "tasks": [
      "mb-free32-e2-qwen2.5-0.5b-s0",
      "mb-free32-e2-qwen2.5-0.5b-s1",
-     "mb-free32-e2-qwen2.5-0.5b-s2",
      "mb-free32-e2-qwen2.5-0.5b-s3",
      "mb-free32-e2-qwen2.5-0.5b-s4",
      "mb-free32-e2-qwen2.5-0.5b-s5",
+     "mb-free32-e2-qwen2.5-0.5b-s6",
      "svc-qwen3-32b-1790933373",
      "svc-qwen3-32b-1790950399"
     ]
@@ -23235,8 +23238,13 @@
    {
     "student": "qwen3-0.6b-base",
     "family": "tau-bench retail",
-    "tasks": 0,
-    "totals": {}
+    "tasks": 4,
+    "totals": {
+     "force benchmark reference": 210.8,
+     "v19d + 32 whole episodes first": 195.9,
+     "force Opus trajectory": 123.9,
+     "v19g per turn on Opus trajectory": 134.2
+    }
    },
    {
     "student": "qwen3-0.6b-base",
@@ -23253,8 +23261,13 @@
    {
     "student": "smollm2-135m",
     "family": "tau-bench retail",
-    "tasks": 0,
-    "totals": {}
+    "tasks": 3,
+    "totals": {
+     "force benchmark reference": 329.6,
+     "v19d + 32 whole episodes first": 297.1,
+     "force Opus trajectory": 207.5,
+     "v19g per turn on Opus trajectory": 209.8
+    }
    },
    {
     "student": "smollm2-135m",
@@ -23271,8 +23284,13 @@
    {
     "student": "qwen3-8b-base",
     "family": "tau-bench retail",
-    "tasks": 0,
-    "totals": {}
+    "tasks": 4,
+    "totals": {
+     "force benchmark reference": 115.0,
+     "v19d + 32 whole episodes first": 66.1,
+     "force Opus trajectory": 86.2,
+     "v19g per turn on Opus trajectory": 46.7
+    }
    },
    {
     "student": "qwen3-8b-base",
@@ -23293,8 +23311,8 @@
     "total": 44
    },
    "ref": {
-    "done": 23,
-    "total": 45
+    "done": 22,
+    "total": 44
    },
    "bm": {
     "done": 8,
@@ -23303,5 +23321,5 @@
   },
   "study_b_sft_checkpoints": 21
  },
- "content_digest": "5d3eb1257516fbc697431d280963a54c7b908c12de6c77b936ede50f69f2dab3"
+ "content_digest": "5c11e1421854f8d18c41a3851810e22a9af2f0dd5997cb6b1816f69e8efc72e8"
 }

@@ -50,14 +50,23 @@ function render() {
   renderProgress();
   renderExperiments();
   renderTaskSelect();
+  renderHeadlines();
   renderLongHorizon();
   renderStudyB();
 }
 
 /* ------------------------------------------------------------------ fleet */
+const tile = (label, value, sw, extra = '') => `<article class="panel tile"><span class="label">${sw ? `<i class="swatch ${sw}"></i>` : ''}${label}</span><strong>${value}<small>${extra}</small></strong></article>`;
+function renderHoldings() {
+  const h = data.fleet.holdings, box = $('holdings');
+  if (!box) return;
+  if (!h) { box.innerHTML = '<span class="muted">Slurm holdings unavailable in this snapshot.</span>'; return; }
+  const t = h.totals || {};
+  box.innerHTML = tile('H100 working', t.h100_working || 0, 'c-busy', 'GPUs') + tile('H100 standby', t.h100_standby || 0, 'c-warm', 'GPUs') + tile('H200 working', t.h200_working || 0, 'c-busy', 'GPUs');
+}
 function renderFleet() {
+  renderHoldings();
   const f = data.fleet, t = f.totals, q = f.queue;
-  const tile = (label, value, sw, extra = '') => `<article class="panel tile"><span class="label">${sw ? `<i class="swatch ${sw}"></i>` : ''}${label}</span><strong>${value}<small>${extra}</small></strong></article>`;
   $('fleet-tiles').innerHTML = tile('Busy', t.busy, 'c-busy', `/ ${f.expected_gpus}`) + tile('Warm', t.warm, 'c-warm', `/ ${f.expected_gpus}`) + tile('Idle', t.idle, 'c-idle', `/ ${f.expected_gpus}`) + tile('Stale', t.stale, 'c-stale', `/ ${f.expected_gpus}`) + tile('Unreported', t.unreported, '', `/ ${f.expected_gpus}`);
   $('queue').innerHTML = ['pending', 'running', 'done', 'failed'].map(k => `<span class="pill">queue ${k} ${q[k]}</span>`).join('');
   $('nodes').innerHTML = f.nodes.map(n => {
@@ -188,7 +197,8 @@ function markSort(table, sort) {
 }
 function renderExperiments() {
   const st = $('f-student').value, pr = $('f-protocol').value, ss = $('f-status').value, q = $('f-search').value.toLowerCase();
-  const rows = data.experiments.filter(e => (st === 'all' || e.student === st) && (pr === 'all' || e.protocol === pr) && (ss === 'all' || e.status === ss) && [e.name, e.suite, e.config_summary, e.student, e.protocol].join(' ').toLowerCase().includes(q)).sort((a, b) => cmp(a, b, expSort.key, expSort.dir));
+  const smoke = $('f-smoke').checked;
+  const rows = data.experiments.filter(e => (smoke || !e.name.startsWith('smoke')) && (st === 'all' || e.student === st) && (pr === 'all' || e.protocol === pr) && (ss === 'all' || e.status === ss) && [e.name, e.suite, e.config_summary, e.student, e.protocol].join(' ').toLowerCase().includes(q)).sort((a, b) => cmp(a, b, expSort.key, expSort.dir));
   markSort($('exp-table'), expSort);
   $('exp-rows').innerHTML = rows.map(e => {
     const shards = `${e.shards_done}/${e.shards} shards${e.shards_running ? ' · ' + e.shards_running + ' running' : ''}${e.shards_failed ? ' · ' + e.shards_failed + ' failed' : ''}${e.shards_queued ? ' · ' + e.shards_queued + ' queued' : ''}`;
@@ -230,6 +240,20 @@ function renderTasks(e, rows) {
   const shown = rows.filter(r => r.task_id.toLowerCase().includes(q)).sort((a, b) => cmp(a, b, taskSort.key, taskSort.dir));
   $('task-rows').innerHTML = shown.map(r => `<tr><td>${esc(r.task_id)}</td><td class="num">${r.runs}</td><td class="num">${pct(r.success_rate)}</td><td class="num"><div class="bar"><span>${bits(r.mean_bits)}</span><span class="bar-track"><i style="width:${(100 * (r.mean_bits || 0) / max).toFixed(1)}%"></i></span></div></td><td class="num">${bits(r.mean_forced_bits)}</td><td class="num">${dec(r.mean_select_blocks, 2)}</td><td class="num">${dec(r.mean_free_blocks, 1)}</td><td class="num">${dec(r.mean_tokens, 0)}</td><td class="num">${dec(r.mean_restarts, 2)}</td><td class="num">${pct(r.fallback_rate)}</td>${free ? `<td class="num">${r.ideal_bound ? '≥ ' : ''}${bits(r.ideal_bits)}</td>` : ''}<td>${esc(Object.entries(r.ends).map(([k, v]) => `${k} ${v}`).join(' · '))}</td></tr>`).join('') || `<tr><td colspan="${cols.length}" class="muted">${rows.length ? 'No task matches.' : 'No finished shards yet.'}</td></tr>`;
   $('task-table')._rows = rows; $('task-table')._exp = e;
+}
+
+/* -------------------------------------------------------------- headlines */
+function hlBars(rows, refLabel) {
+  const max = Math.max(...rows.map(r => r.bits || 0), 1);
+  return rows.map(r => `<div class="hl-row${r.label === refLabel ? ' ref' : ''}"><span>${esc(r.label)}</span><span class="track"><i style="width:${(100 * (r.bits || 0) / max).toFixed(1)}%"></i></span><b>${bits(r.bits)}</b></div>`).join('');
+}
+function renderHeadlines() {
+  const h = data.headlines;
+  if (!h) return;
+  $('hl-code').innerHTML = h.code.map(p => `<h4>${esc(p.title)} <span class="muted">· ${p.tasks} tasks</span></h4>${hlBars(p.rows, 'force reference')}`).join('') || '<p class="muted">No finished runs.</p>';
+  $('hl-lh').innerHTML = h.long_horizon.filter(x => x.tasks).map(x => `<h4>${esc(x.student)} · ${esc(x.family)} <span class="muted">· ${x.tasks} tasks</span></h4>${hlBars(Object.entries(x.totals).map(([label, v]) => ({label, bits: v})), 'force benchmark reference')}`).join('') || '<p class="muted">No finished runs.</p>';
+  const m = h.study_b_measurements, names = {free32: 'unaided success (32 samples)', ref: 'forced reference', bm: 'injection bits'};
+  $('hl-b').innerHTML = `<h4>Post-training</h4><p class="muted" style="font-size:12px">${h.study_b_sft_checkpoints} checkpoints fine-tuned (SFT on the Tulu-3 OLMo-2 mixture) and evaluated; radar below.</p><h4>Re-measurement on the fixed harness (e2)</h4>` + Object.entries(m).map(([k, v]) => `<div class="hl-row"><span>${esc(names[k] || k)}</span><span class="track"><i style="width:${v.total ? (100 * v.done / v.total).toFixed(1) : 0}%"></i></span><b>${v.done}/${v.total}</b></div>`).join('') + '<p class="note">Counts are experiments (one checkpoint × suite) with every shard finished.</p>';
 }
 
 /* ---------------------------------------------------------- long horizon */
@@ -286,7 +310,7 @@ function sortable(table, sort, rerender) {
 }
 sortable($('exp-table'), expSort, () => data && renderExperiments());
 sortable($('task-table'), taskSort, () => $('task-table')._rows && renderTasks($('task-table')._exp, $('task-table')._rows));
-for (const id of ['f-student', 'f-protocol', 'f-status', 'f-search']) $(id).addEventListener('input', () => data && renderExperiments());
+for (const id of ['f-student', 'f-protocol', 'f-status', 'f-search', 'f-smoke']) $(id).addEventListener('input', () => data && renderExperiments());
 $('progress-student').addEventListener('change', () => data && renderProgress());
 $('progress-suite').addEventListener('change', () => { if (data) { fillProgressStudents(); renderProgress(); } });
 let resizeTimer = 0, lastWidth = 0;

@@ -105,3 +105,12 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding-top:18px;font-si
 .tall{max-height:600px;overflow:auto}.tall thead th{position:sticky;top:0;background:var(--panel);z-index:1;box-shadow:0 1px 0 var(--line)}
 .radar svg{width:100%;height:auto;display:block}
 #progress-matrix td:nth-child(3){min-width:260px;max-width:420px}#progress-matrix td.num small{white-space:nowrap}#progress-matrix th.num{white-space:nowrap}
+
+.headline-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+.headline-grid h4 { margin: 12px 0 4px; font-size: 13px; }
+.hl-row { display: grid; grid-template-columns: minmax(120px, 1.4fr) 2fr 56px; align-items: center; gap: 8px; font-size: 12px; margin: 3px 0; }
+.hl-row .track { height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+.hl-row .track i { display: block; height: 100%; background: var(--accent, #3b6fb6); }
+.hl-row.ref .track i { background: var(--muted); }
+.hl-row b { text-align: right; font-variant-numeric: tabular-nums; }
+.holdings { display: flex; flex-wrap: wrap; gap: 10px; margin: 8px 0 12px; }
