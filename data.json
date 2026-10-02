@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790939456.046765,
- "generated_label": "2026-10-02 07:10 EDT",
+ "generated_at": 1790940365.9928403,
+ "generated_label": "2026-10-02 07:26 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -55,8 +55,8 @@
    "limit": 0,
    "shards": 24,
    "shards_done": 11,
-   "shards_running": 7,
-   "shards_failed": 6,
+   "shards_running": 4,
+   "shards_failed": 9,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790912848.5039992,
@@ -426,32 +426,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 13,
+   "shards_done": 14,
    "shards_running": 0,
-   "shards_failed": 3,
+   "shards_failed": 2,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790900374.4609418,
    "git_commit": "87f9dccffb",
    "snapshot": "0be54cb922be",
-   "tokens_generated": 15890945,
-   "tokens_scored": 23403,
-   "gpu_hours": 1.7046,
-   "load_hours": 0.1804,
-   "tasks": 32,
-   "records": 64,
+   "tokens_generated": 21486928,
+   "tokens_scored": 25659,
+   "gpu_hours": 2.5658,
+   "load_hours": 0.1935,
+   "tasks": 35,
+   "records": 70,
    "success_rate": 1.0,
-   "mean_bits": 10.028575,
-   "median_bits": 8.958165,
+   "mean_bits": 10.59019,
+   "median_bits": 8.770917,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 0.0,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 125.828125,
+   "mean_tokens": 122.7,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 64
+    "success": 70
    }
   },
   {
@@ -2587,32 +2587,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 13,
+   "shards_done": 14,
    "shards_running": 0,
-   "shards_failed": 3,
+   "shards_failed": 2,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790890575.347963,
    "git_commit": "e1d421b075",
    "snapshot": "9b12a354ccf4",
-   "tokens_generated": 1618428946,
-   "tokens_scored": 122976,
-   "gpu_hours": 42.8648,
-   "load_hours": 0.165,
-   "tasks": 65,
-   "records": 130,
+   "tokens_generated": 1769758451,
+   "tokens_scored": 132979,
+   "gpu_hours": 47.5281,
+   "load_hours": 0.1771,
+   "tasks": 70,
+   "records": 140,
    "success_rate": 1.0,
-   "mean_bits": 53.997549,
-   "median_bits": 52.821482,
-   "mean_forced_bits": 4.170069,
-   "mean_forced_tokens": 2.307692,
+   "mean_bits": 54.305497,
+   "median_bits": 52.901662,
+   "mean_forced_bits": 3.872207,
+   "mean_forced_tokens": 2.142857,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 81.692308,
-   "fallback_rate": 0.084615,
+   "mean_tokens": 81.821429,
+   "fallback_rate": 0.078571,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 130
+    "success": 140
    }
   },
   {
@@ -17501,12 +17501,12 @@
         "protocol": "rejection",
         "experiment": "he-v14w-h2-smollm2-135m",
         "status": "failed",
-        "tasks": 65,
-        "mean_bits": 53.997549,
-        "median_bits": 52.821482,
+        "tasks": 70,
+        "mean_bits": 54.305497,
+        "median_bits": 52.901662,
         "success_rate": 1.0,
-        "fallback_rate": 0.084615,
-        "mean_forced_bits": 4.170069,
+        "fallback_rate": 0.078571,
+        "mean_forced_bits": 3.872207,
         "mean_select_blocks": 0.0
        }
       ],
@@ -18136,10 +18136,10 @@
    "unreported": 8
   },
   "queue": {
-   "pending": 784,
+   "pending": 781,
    "running": 39,
-   "done": 2648,
-   "failed": 711
+   "done": 2650,
+   "failed": 714
   },
   "nodes": [
    {
@@ -18168,8 +18168,8 @@
      "he-v14q-h2-qwen3-0.6b-base-s19-r4",
      "he-v14q-h2-smollm2-135m-s6-r4",
      "he-v14q-h2-smollm2-135m-s9-r3",
-     "he-v17-h2-qwen3-0.6b-base-s16",
      "he-v17-h2-qwen3-0.6b-base-s20",
+     "he-v17-h2-qwen3-0.6b-base-s9-r3",
      "svc-student-qwen3-0.6b-base-1790885176",
      "svc-student-qwen3-8b-base-1790885176"
     ]
@@ -18201,9 +18201,9 @@
      "he-v14q-h2-smollm2-135m-s13-r3",
      "he-v14q-h2-smollm2-135m-s4-r3",
      "he-v14q-h2-smollm2-135m-s5-r3",
-     "he-v14w-h2-smollm2-135m-s0-r3",
-     "he-v17-h2-qwen3-0.6b-base-s15",
-     "he-v17-h2-qwen3-0.6b-base-s19"
+     "he-v17-h2-qwen3-0.6b-base-s19",
+     "he-v17-h2-qwen3-0.6b-base-s5-r3",
+     "he-v17-h2-qwen3-0.6b-base-s8-r3"
     ]
    },
    {
@@ -18228,14 +18228,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-v14o-h2-qwen3-1.7b-base-s1-r3",
      "he-v14o-h2-qwen3-1.7b-base-s14-r3",
      "he-v14o-h2-smollm2-135m-s11-r4",
      "he-v14o-h2-smollm2-135m-s2-r3",
      "he-v14o-h2-smollm2-135m-s5-r4",
      "he-v14q-h2-smollm2-135m-s10-r4",
      "he-v14q-h2-smollm2-135m-s12-r3",
-     "he-v17-h2-qwen3-0.6b-base-s22"
+     "he-v17-h2-qwen3-0.6b-base-s22",
+     "he-v17-h2-qwen3-0.6b-base-s4-r3"
     ]
    },
    {
@@ -18266,7 +18266,7 @@
      "he-v14q-h2-qwen3-0.6b-base-s8-r4",
      "he-v14w-h2-smollm2-135m-s12-r4",
      "he-v14w-h2-smollm2-135m-s2-r3",
-     "he-v17-h2-qwen3-0.6b-base-s18",
+     "he-v17-h2-qwen3-0.6b-base-s11-r3",
      "he-v17-h2-qwen3-0.6b-base-s3-r3"
     ]
    },
@@ -18560,5 +18560,5 @@
   ],
   "note": "Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
  },
- "content_digest": "e37b72d12826a6ca09141dfaf448096e2e4107fcf5aa4d0ca6994382fdd289ad"
+ "content_digest": "f650f2c3e7400d2527dcd1468c8ec84c558394ce672546bec11cafe345c62a07"
 }
