@@ -50,6 +50,7 @@ function render() {
   renderProgress();
   renderExperiments();
   renderTaskSelect();
+  renderLongHorizon();
   renderStudyB();
 }
 
@@ -229,6 +230,19 @@ function renderTasks(e, rows) {
   const shown = rows.filter(r => r.task_id.toLowerCase().includes(q)).sort((a, b) => cmp(a, b, taskSort.key, taskSort.dir));
   $('task-rows').innerHTML = shown.map(r => `<tr><td>${esc(r.task_id)}</td><td class="num">${r.runs}</td><td class="num">${pct(r.success_rate)}</td><td class="num"><div class="bar"><span>${bits(r.mean_bits)}</span><span class="bar-track"><i style="width:${(100 * (r.mean_bits || 0) / max).toFixed(1)}%"></i></span></div></td><td class="num">${bits(r.mean_forced_bits)}</td><td class="num">${dec(r.mean_select_blocks, 2)}</td><td class="num">${dec(r.mean_free_blocks, 1)}</td><td class="num">${dec(r.mean_tokens, 0)}</td><td class="num">${dec(r.mean_restarts, 2)}</td><td class="num">${pct(r.fallback_rate)}</td>${free ? `<td class="num">${r.ideal_bound ? '≥ ' : ''}${bits(r.ideal_bits)}</td>` : ''}<td>${esc(Object.entries(r.ends).map(([k, v]) => `${k} ${v}`).join(' · '))}</td></tr>`).join('') || `<tr><td colspan="${cols.length}" class="muted">${rows.length ? 'No task matches.' : 'No finished shards yet.'}</td></tr>`;
   $('task-table')._rows = rows; $('task-table')._exp = e;
+}
+
+/* ---------------------------------------------------------- long horizon */
+function renderLongHorizon() {
+  const lh = data.long_horizon, box = $('lh-tables');
+  if (!lh || !lh.students || !lh.students.some(s => s.rows.length)) { box.innerHTML = '<div class="panel pending">No long-horizon runs yet.</div>'; return; }
+  const short = t => t.replace('tau-retail-', 'tau ').replace('tb-', '');
+  box.innerHTML = lh.students.filter(s => s.rows.length).map(s => {
+    const head = `<tr><th>${esc(s.student)}</th>${s.tasks.map(t => `<th class="num">${esc(short(t))}</th>`).join('')}</tr>`;
+    const free = `<tr class="muted"><td>free (successes / runs)</td>${s.tasks.map(t => { const f = s.free[t]; return `<td class="num">${f ? f[0] + '/' + f[1] : '–'}</td>`; }).join('')}</tr>`;
+    const body = s.rows.map(r => `<tr><td>${esc(r.label)}</td>${s.tasks.map(t => { const c = r.cells[t]; return `<td class="num">${c ? bits(c.bits) + (c.success < 1 ? '*' : '') : '–'}</td>`; }).join('')}</tr>`).join('');
+    return `<div class="panel"><div class="scroll"><table><thead>${head}</thead><tbody>${free}${body}</tbody></table></div></div>`;
+  }).join('');
 }
 
 /* ---------------------------------------------------------------- study B */

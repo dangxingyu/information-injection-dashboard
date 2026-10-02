@@ -48,6 +48,10 @@
 <div class="panel"><div class="controls"><label>Experiment <select id="task-exp"></select></label><input id="task-search" type="search" placeholder="Filter task id" aria-label="Filter tasks"></div>
 <div class="scroll tall"><table id="task-table"><thead><tr id="task-head"></tr></thead><tbody id="task-rows"></tbody></table></div></div></section>
 
+<section id="long-horizon"><div class="section-head"><h2>Long-horizon suite</h2><span class="tag">Study A · testbed v3 · lower is better</span></div>
+<p class="note">Seven multi-turn tasks a base model cannot solve alone: tau-bench retail tasks 17, 48, 64 and 20 (customer service with tools, no user simulator) and three terminal-bench tasks (bash in a sandboxed container, graded by the task's own tests). Each cell is the mean certified bits per task over its runs (* = not every run succeeded); "free" is how often the student succeeds unaided. Protocols act per turn: the student proposes actions, a monitor accepts or rejects each, and the teacher injects (part of) the next reference action when none is accepted.</p>
+<div id="lh-tables"></div></section>
+
 <section id="study-b"><div class="section-head"><h2>Study B: checkpoint radar</h2><span class="tag">bits-based prediction vs post-SFT accuracy</span></div>
 <div id="radar"></div></section>
 
