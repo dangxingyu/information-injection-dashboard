@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790959425.8946104,
- "generated_label": "2026-10-02 12:43 EDT",
+ "generated_at": 1790960335.907579,
+ "generated_label": "2026-10-02 12:58 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -29,7 +29,7 @@
  },
  "experiments": [
   {
-   "name": "lh-v19c-qwen3-8b-base",
+   "name": "lh-v19d-qwen3-8b-base",
    "student": "qwen3-8b-base",
    "model": "Qwen/Qwen3-8B-Base",
    "suite": "longhorizon",
@@ -37,21 +37,20 @@
    "config": {
     "monitor": "oracle",
     "cap": true,
-    "rungs": 3,
-    "notes": false
+    "root": 32
    },
-   "config_summary": "cap=True, monitor=oracle, notes=False, rungs=3",
+   "config_summary": "cap=True, monitor=oracle, root=32",
    "runs": 2,
    "limit": 0,
    "shards": 2,
    "shards_done": 0,
-   "shards_running": 0,
+   "shards_running": 2,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
-   "created_at": 1790955636.687046,
-   "git_commit": "f3384510ea",
-   "snapshot": "d6825d00058b",
+   "shards_queued": 0,
+   "status": "running",
+   "created_at": 1790959690.0954812,
+   "git_commit": "85de6e0406",
+   "snapshot": "b8e007ea0709",
    "tokens_generated": 0,
    "tokens_scored": 0,
    "gpu_hours": 0.0,
@@ -71,6 +70,132 @@
    "ends": {}
   },
   {
+   "name": "lh-v19d-smollm2-135m",
+   "student": "smollm2-135m",
+   "model": "HuggingFaceTB/SmolLM2-135M",
+   "suite": "longhorizon",
+   "protocol": "ep-step",
+   "config": {
+    "monitor": "oracle",
+    "cap": true,
+    "root": 32
+   },
+   "config_summary": "cap=True, monitor=oracle, root=32",
+   "runs": 2,
+   "limit": 0,
+   "shards": 2,
+   "shards_done": 0,
+   "shards_running": 2,
+   "shards_failed": 0,
+   "shards_queued": 0,
+   "status": "running",
+   "created_at": 1790959689.6918986,
+   "git_commit": "85de6e0406",
+   "snapshot": "b8e007ea0709",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
+  {
+   "name": "lh-v19d-qwen3-0.6b-base",
+   "student": "qwen3-0.6b-base",
+   "model": "Qwen/Qwen3-0.6B-Base",
+   "suite": "longhorizon",
+   "protocol": "ep-step",
+   "config": {
+    "monitor": "oracle",
+    "cap": true,
+    "root": 32
+   },
+   "config_summary": "cap=True, monitor=oracle, root=32",
+   "runs": 2,
+   "limit": 0,
+   "shards": 2,
+   "shards_done": 0,
+   "shards_running": 2,
+   "shards_failed": 0,
+   "shards_queued": 0,
+   "status": "running",
+   "created_at": 1790959689.2877529,
+   "git_commit": "85de6e0406",
+   "snapshot": "b8e007ea0709",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
+  {
+   "name": "lh-v19c-qwen3-8b-base",
+   "student": "qwen3-8b-base",
+   "model": "Qwen/Qwen3-8B-Base",
+   "suite": "longhorizon",
+   "protocol": "ep-step",
+   "config": {
+    "monitor": "oracle",
+    "cap": true,
+    "rungs": 3,
+    "notes": false
+   },
+   "config_summary": "cap=True, monitor=oracle, notes=False, rungs=3",
+   "runs": 2,
+   "limit": 0,
+   "shards": 2,
+   "shards_done": 2,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 0,
+   "status": "complete",
+   "created_at": 1790955636.687046,
+   "git_commit": "f3384510ea",
+   "snapshot": "d6825d00058b",
+   "tokens_generated": 127962,
+   "tokens_scored": 78643,
+   "gpu_hours": 0.1833,
+   "load_hours": 0.031,
+   "tasks": 7,
+   "records": 14,
+   "success_rate": 1.0,
+   "mean_bits": 100.36706,
+   "median_bits": 37.486667,
+   "mean_forced_bits": 29.45626,
+   "mean_forced_tokens": 75.642857,
+   "mean_select_blocks": 4.642857,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 1738.142857,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 14
+   }
+  },
+  {
    "name": "lh-v19b-qwen3-8b-base",
    "student": "qwen3-8b-base",
    "model": "Qwen/Qwen3-8B-Base",
@@ -85,32 +210,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 1,
-   "shards_running": 1,
+   "shards_done": 2,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1790955636.2815716,
    "git_commit": "f3384510ea",
    "snapshot": "d6825d00058b",
-   "tokens_generated": 25137,
-   "tokens_scored": 6377,
-   "gpu_hours": 0.0379,
-   "load_hours": 0.0204,
-   "tasks": 3,
-   "records": 6,
+   "tokens_generated": 114605,
+   "tokens_scored": 77229,
+   "gpu_hours": 0.1989,
+   "load_hours": 0.0363,
+   "tasks": 7,
+   "records": 14,
    "success_rate": 1.0,
-   "mean_bits": 27.595993,
+   "mean_bits": 110.844214,
    "median_bits": 38.809169,
-   "mean_forced_bits": 11.531474,
-   "mean_forced_tokens": 76.666667,
-   "mean_select_blocks": 9.666667,
+   "mean_forced_bits": 68.405166,
+   "mean_forced_tokens": 117.285714,
+   "mean_select_blocks": 7.928571,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 2638.5,
+   "mean_tokens": 1863.142857,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 6
+    "success": 14
    }
   },
   {
@@ -171,31 +296,34 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
-   "shards_running": 0,
+   "shards_done": 1,
+   "shards_running": 1,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "running",
    "created_at": 1790955635.4764824,
    "git_commit": "f3384510ea",
    "snapshot": "d6825d00058b",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 121776,
+   "tokens_scored": 8839,
+   "gpu_hours": 0.0664,
+   "load_hours": 0.0116,
+   "tasks": 3,
+   "records": 6,
+   "success_rate": 0.666667,
+   "mean_bits": 264.516224,
+   "median_bits": 105.170349,
+   "mean_forced_bits": 242.494928,
+   "mean_forced_tokens": 214.5,
+   "mean_select_blocks": 2.333333,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 2601.333333,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "context": 2,
+    "success": 4
+   }
   },
   {
    "name": "lh-v19b-smollm2-135m",
@@ -212,31 +340,34 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
-   "shards_running": 2,
+   "shards_done": 2,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1790955635.0880823,
    "git_commit": "f3384510ea",
    "snapshot": "d6825d00058b",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 404592,
+   "tokens_scored": 101170,
+   "gpu_hours": 0.2791,
+   "load_hours": 0.0236,
+   "tasks": 7,
+   "records": 14,
+   "success_rate": 0.857143,
+   "mean_bits": 388.42507,
+   "median_bits": 127.199075,
+   "mean_forced_bits": 374.54382,
+   "mean_forced_tokens": 306.785714,
+   "mean_select_blocks": 6.642857,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 2094.071429,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "context": 2,
+    "success": 12
+   }
   },
   {
    "name": "lh-v19a-smollm2-135m",
@@ -297,31 +428,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1790955634.295243,
    "git_commit": "f3384510ea",
    "snapshot": "d6825d00058b",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 235626,
+   "tokens_scored": 80762,
+   "gpu_hours": 0.226,
+   "load_hours": 0.0264,
+   "tasks": 7,
+   "records": 14,
+   "success_rate": 1.0,
+   "mean_bits": 239.163081,
+   "median_bits": 89.880134,
+   "mean_forced_bits": 232.395048,
+   "mean_forced_tokens": 266.428571,
+   "mean_select_blocks": 3.714286,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 1840.642857,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 14
+   }
   },
   {
    "name": "lh-v19b-qwen3-0.6b-base",
@@ -706,31 +839,34 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
-   "shards_running": 2,
+   "shards_done": 1,
+   "shards_running": 1,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790953342.3883305,
    "git_commit": "d94196f7a5",
    "snapshot": "89d2a198a78b",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 81366,
+   "tokens_scored": 3780,
+   "gpu_hours": 0.7912,
+   "load_hours": 0.0126,
+   "tasks": 3,
+   "records": 6,
+   "success_rate": 0.666667,
+   "mean_bits": 282.209806,
+   "median_bits": 108.529888,
+   "mean_forced_bits": 61.794535,
+   "mean_forced_tokens": 110.333333,
+   "mean_select_blocks": 15.666667,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 2821.5,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "context": 2,
+    "success": 4
+   }
   },
   {
    "name": "lh-step-smollm2-135m",
@@ -745,33 +881,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 1,
-   "shards_running": 1,
+   "shards_done": 2,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1790953341.97797,
    "git_commit": "d94196f7a5",
    "snapshot": "89d2a198a78b",
-   "tokens_generated": 104225,
-   "tokens_scored": 1316,
-   "gpu_hours": 0.8839,
-   "load_hours": 0.0119,
-   "tasks": 3,
-   "records": 6,
-   "success_rate": 0.5,
-   "mean_bits": 294.055352,
-   "median_bits": 106.682309,
-   "mean_forced_bits": 67.532531,
-   "mean_forced_tokens": 137.333333,
-   "mean_select_blocks": 15.333333,
+   "tokens_generated": 189904,
+   "tokens_scored": 4311,
+   "gpu_hours": 2.6316,
+   "load_hours": 0.024,
+   "tasks": 7,
+   "records": 14,
+   "success_rate": 0.714286,
+   "mean_bits": 413.913265,
+   "median_bits": 129.489583,
+   "mean_forced_bits": 74.789032,
+   "mean_forced_tokens": 118.285714,
+   "mean_select_blocks": 16.357143,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 2763.5,
+   "mean_tokens": 3110.071429,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "context": 2,
-    "success": 3,
+    "context": 3,
+    "success": 10,
     "unsolved": 1
    }
   },
@@ -950,32 +1086,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 1,
-   "shards_running": 1,
+   "shards_done": 2,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1790953340.0138826,
    "git_commit": "d94196f7a5",
    "snapshot": "89d2a198a78b",
-   "tokens_generated": 59604,
-   "tokens_scored": 4271,
-   "gpu_hours": 0.7696,
-   "load_hours": 0.0134,
-   "tasks": 3,
-   "records": 6,
+   "tokens_generated": 124665,
+   "tokens_scored": 9518,
+   "gpu_hours": 2.3191,
+   "load_hours": 0.0265,
+   "tasks": 7,
+   "records": 14,
    "success_rate": 1.0,
-   "mean_bits": 189.642026,
+   "mean_bits": 264.011886,
    "median_bits": 90.833441,
-   "mean_forced_bits": 31.111742,
-   "mean_forced_tokens": 119.833333,
-   "mean_select_blocks": 17.833333,
+   "mean_forced_bits": 29.290816,
+   "mean_forced_tokens": 79.928571,
+   "mean_select_blocks": 17.928571,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 3147.833333,
+   "mean_tokens": 2381.142857,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 6
+    "success": 14
    }
   },
   {
@@ -991,32 +1127,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 1,
-   "shards_running": 1,
+   "shards_done": 2,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1790953339.604361,
    "git_commit": "d94196f7a5",
    "snapshot": "89d2a198a78b",
-   "tokens_generated": 67227,
-   "tokens_scored": 1052,
-   "gpu_hours": 1.0732,
-   "load_hours": 0.0133,
-   "tasks": 3,
-   "records": 6,
+   "tokens_generated": 131728,
+   "tokens_scored": 3423,
+   "gpu_hours": 2.8648,
+   "load_hours": 0.027,
+   "tasks": 7,
+   "records": 14,
    "success_rate": 1.0,
-   "mean_bits": 202.436046,
+   "mean_bits": 280.633186,
    "median_bits": 99.261675,
-   "mean_forced_bits": 39.357867,
-   "mean_forced_tokens": 105.166667,
-   "mean_select_blocks": 17.333333,
+   "mean_forced_bits": 36.366984,
+   "mean_forced_tokens": 71.285714,
+   "mean_select_blocks": 18.214286,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 3122.5,
+   "mean_tokens": 2629.357143,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 6
+    "success": 14
    }
   },
   {
@@ -1325,32 +1461,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 24,
-   "shards_done": 11,
+   "shards_done": 12,
    "shards_running": 0,
-   "shards_failed": 13,
+   "shards_failed": 12,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790912848.5039992,
    "git_commit": "d960ae1755",
    "snapshot": "bb22e88c8a7e",
-   "tokens_generated": 10361639,
-   "tokens_scored": 20401,
-   "gpu_hours": 31.2549,
-   "load_hours": 0.1458,
-   "tasks": 76,
-   "records": 152,
+   "tokens_generated": 11761320,
+   "tokens_scored": 21607,
+   "gpu_hours": 35.0823,
+   "load_hours": 0.1589,
+   "tasks": 83,
+   "records": 166,
    "success_rate": 1.0,
-   "mean_bits": 6.936255,
-   "median_bits": 5.518031,
+   "mean_bits": 6.898956,
+   "median_bits": 5.366266,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 0.0,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 80.269737,
+   "mean_tokens": 80.228916,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 152
+    "success": 166
    }
   },
   {
@@ -5186,36 +5322,39 @@
    "runs": 32,
    "limit": 0,
    "shards": 8,
-   "shards_done": 0,
+   "shards_done": 8,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 8,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1790890392.7089581,
    "git_commit": "6b568d1b88",
    "snapshot": "16618a63d36d",
-   "tokens_generated": 0,
+   "tokens_generated": 3486917,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {},
-   "alpha": null,
-   "solvable_tasks": 0,
-   "zero_success_tasks": 0,
-   "ideal_bits": null,
-   "ideal_lower_bound_bits": null
+   "gpu_hours": 0.1934,
+   "load_hours": 0.098,
+   "tasks": 163,
+   "records": 5216,
+   "success_rate": 0.002684,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 53.638612,
+   "mean_tokens": 774.268213,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.868482,
+   "ends": {
+    "horizon": 5202,
+    "success": 14
+   },
+   "alpha": 0.002684,
+   "solvable_tasks": 5,
+   "zero_success_tasks": 158,
+   "ideal_bits": 3.883007,
+   "ideal_lower_bound_bits": 3.496331
   },
   {
    "name": "mb-ref-e2-olmo2-1b-s1-210b",
@@ -6016,39 +6155,39 @@
    "runs": 32,
    "limit": 0,
    "shards": 8,
-   "shards_done": 5,
-   "shards_running": 3,
+   "shards_done": 8,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1790890367.0653188,
    "git_commit": "6b568d1b88",
    "snapshot": "16618a63d36d",
-   "tokens_generated": 1705065,
+   "tokens_generated": 2644238,
    "tokens_scored": 0,
-   "gpu_hours": 0.7229,
-   "load_hours": 0.0582,
-   "tasks": 103,
-   "records": 3296,
-   "success_rate": 0.051274,
+   "gpu_hours": 1.017,
+   "load_hours": 0.0919,
+   "tasks": 163,
+   "records": 5216,
+   "success_rate": 0.055023,
    "mean_bits": 0.0,
    "median_bits": 0.0,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 0.0,
    "mean_select_blocks": 0.0,
-   "mean_free_blocks": 56.861347,
-   "mean_tokens": 746.482706,
+   "mean_free_blocks": 55.851035,
+   "mean_tokens": 745.170821,
    "fallback_rate": 0.0,
-   "mean_restarts": 1.946905,
+   "mean_restarts": 1.914494,
    "ends": {
-    "horizon": 3127,
-    "success": 169
+    "horizon": 4929,
+    "success": 287
    },
-   "alpha": 0.051274,
-   "solvable_tasks": 26,
-   "zero_success_tasks": 77,
-   "ideal_bits": 2.946878,
-   "ideal_lower_bound_bits": 3.348487
+   "alpha": 0.055023,
+   "solvable_tasks": 45,
+   "zero_success_tasks": 118,
+   "ideal_bits": 3.085902,
+   "ideal_lower_bound_bits": 3.374164
   },
   {
    "name": "mb-ref-e2-olmo2-1b-s1-21b",
@@ -6351,36 +6490,39 @@
    "runs": 32,
    "limit": 0,
    "shards": 8,
-   "shards_done": 0,
+   "shards_done": 8,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 8,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1790890356.8363848,
    "git_commit": "6b568d1b88",
    "snapshot": "16618a63d36d",
-   "tokens_generated": 0,
+   "tokens_generated": 3622199,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {},
-   "alpha": null,
-   "solvable_tasks": 0,
-   "zero_success_tasks": 0,
-   "ideal_bits": null,
-   "ideal_lower_bound_bits": null
+   "gpu_hours": 0.1607,
+   "load_hours": 0.1001,
+   "tasks": 163,
+   "records": 5216,
+   "success_rate": 0.001342,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 54.423121,
+   "mean_tokens": 772.718367,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.653374,
+   "ends": {
+    "horizon": 5209,
+    "success": 7
+   },
+   "alpha": 0.001342,
+   "solvable_tasks": 3,
+   "zero_success_tasks": 160,
+   "ideal_bits": 4.0,
+   "ideal_lower_bound_bits": 3.49359
   },
   {
    "name": "mb-ref-e2-olmo2-1b-s1-504b",
@@ -6684,10 +6826,10 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 0,
+   "shards_running": 5,
    "shards_failed": 0,
-   "shards_queued": 8,
-   "status": "queued",
+   "shards_queued": 3,
+   "status": "running",
    "created_at": 1790890346.4651043,
    "git_commit": "6b568d1b88",
    "snapshot": "16618a63d36d",
@@ -7015,36 +7157,39 @@
    "runs": 32,
    "limit": 0,
    "shards": 8,
-   "shards_done": 0,
-   "shards_running": 1,
+   "shards_done": 8,
+   "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 7,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1790890336.1912987,
    "git_commit": "6b568d1b88",
    "snapshot": "16618a63d36d",
-   "tokens_generated": 0,
+   "tokens_generated": 3473641,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {},
-   "alpha": null,
-   "solvable_tasks": 0,
-   "zero_success_tasks": 0,
-   "ideal_bits": null,
-   "ideal_lower_bound_bits": null
+   "gpu_hours": 0.2621,
+   "load_hours": 0.0986,
+   "tasks": 163,
+   "records": 5216,
+   "success_rate": 0.005752,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 50.88056,
+   "mean_tokens": 770.834548,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.832822,
+   "ends": {
+    "horizon": 5186,
+    "success": 30
+   },
+   "alpha": 0.005752,
+   "solvable_tasks": 10,
+   "zero_success_tasks": 153,
+   "ideal_bits": 3.766015,
+   "ideal_lower_bound_bits": 3.50139
   },
   {
    "name": "mb-ref-e2-smollm2-1.7b",
@@ -18548,9 +18693,9 @@
         "protocol": "rejection",
         "experiment": "he-v17-h2-qwen3-0.6b-base",
         "status": "failed",
-        "tasks": 76,
-        "mean_bits": 6.936255,
-        "median_bits": 5.518031,
+        "tasks": 83,
+        "mean_bits": 6.898956,
+        "median_bits": 5.366266,
         "success_rate": 1.0,
         "fallback_rate": 0.0,
         "mean_forced_bits": 0.0,
@@ -19416,9 +19561,9 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 737,
+   "pending": 703,
    "running": 40,
-   "done": 2739,
+   "done": 2780,
    "failed": 782
   },
   "nodes": [
@@ -19448,10 +19593,10 @@
      "he-v14o-h2-qwen3-8b-base-s14-r4",
      "he-v17-h2-qwen3-0.6b-base-s21-r3",
      "he-v17-h2-qwen3-0.6b-base-s4-r4",
-     "lh-stepcap-smollm2-135m-s1",
      "lh-strict-qwen3-0.6b-base-s1",
      "lh-strict-qwen3-8b-base-s0",
-     "lh-v19b-smollm2-135m-s1"
+     "lh-v19d-qwen3-0.6b-base-s1",
+     "lh-v19d-smollm2-135m-s0"
     ]
    },
    {
@@ -19482,8 +19627,8 @@
      "he-v14o-h2-smollm2-135m-s12-r4",
      "he-v14q-h2-qwen3-0.6b-base-s8-r5",
      "he-v17-h2-qwen3-0.6b-base-s8-r4",
-     "lh-stepcap-qwen3-0.6b-base-s0",
-     "lh-v19b-qwen3-8b-base-s0"
+     "lh-v19c-smollm2-135m-s0",
+     "lh-v19d-qwen3-8b-base-s0"
     ]
    },
    {
@@ -19515,7 +19660,7 @@
      "he-v17-h2-qwen3-0.6b-base-s3-r4",
      "he-v17-h2-qwen3-0.6b-base-s5-r4",
      "he-v17-h2-qwen3-0.6b-base-s9-r4",
-     "lh-v19b-smollm2-135m-s0"
+     "lh-v19d-qwen3-8b-base-s1"
     ]
    },
    {
@@ -19541,13 +19686,13 @@
     "age_s": 0.0,
     "tasks": [
      "he-v14q-h2-qwen3-0.6b-base-s19-r5",
-     "he-v17-h2-qwen3-0.6b-base-s15-r4",
      "he-v17-h2-qwen3-0.6b-base-s16-r4",
      "he-v17-h2-qwen3-0.6b-base-s18-r3",
      "he-v17-h2-qwen3-0.6b-base-s19-r3",
-     "lh-step-smollm2-135m-s0",
      "lh-stepcap-smollm2-135m-s0",
-     "lh-strict-qwen3-0.6b-base-s0"
+     "lh-strict-qwen3-0.6b-base-s0",
+     "lh-v19d-qwen3-0.6b-base-s0",
+     "lh-v19d-smollm2-135m-s1"
     ]
    },
    {
@@ -19572,12 +19717,12 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-free32-e2-llama3.2-1b-s5",
-     "he-free32-e2-llama3.2-1b-s6",
-     "he-free32-e2-llama3.2-1b-s7",
-     "he-free32-e2-olmo2-1b-main-s0",
+     "he-free32-e2-olmo2-1b-s1-1993b-s0",
+     "he-free32-e2-olmo2-1b-s1-1993b-s1",
+     "he-free32-e2-olmo2-1b-s1-1993b-s2",
+     "he-free32-e2-olmo2-1b-s1-1993b-s3",
+     "he-free32-e2-olmo2-1b-s1-1993b-s4",
      "he-v17-h2-qwen3-0.6b-base-s22-r3",
-     "lh-step-qwen3-0.6b-base-s0",
      "svc-qwen3-32b-1790933373",
      "svc-qwen3-32b-1790950399"
     ]
@@ -19927,6 +20072,22 @@
       "label": "per turn, LLM monitor on terminal",
       "experiment": "lh-step-qwen3-0.6b-base",
       "cells": {
+       "tau-retail-17": {
+        "bits": 33.5,
+        "success": 1.0
+       },
+       "tau-retail-64": {
+        "bits": 42.35,
+        "success": 1.0
+       },
+       "tb-analyze-access-logs": {
+        "bits": 286.16,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 995.11,
+        "success": 1.0
+       },
        "tau-retail-48": {
         "bits": 38.41,
         "success": 1.0
@@ -19938,18 +20099,6 @@
        "tb-recover-obfuscated-files": {
         "bits": 469.63,
         "success": 1.0
-       },
-       "tau-retail-17": {
-        "bits": 33.5,
-        "success": 1.0
-       },
-       "tau-retail-64": {
-        "bits": 42.35,
-        "success": 1.0
-       },
-       "tb-recover-accuracy-log": {
-        "bits": 995.11,
-        "success": 1.0
        }
       }
      },
@@ -19957,6 +20106,22 @@
       "label": "+ cap",
       "experiment": "lh-stepcap-qwen3-0.6b-base",
       "cells": {
+       "tau-retail-17": {
+        "bits": 6.92,
+        "success": 1.0
+       },
+       "tau-retail-64": {
+        "bits": 34.91,
+        "success": 1.0
+       },
+       "tb-analyze-access-logs": {
+        "bits": 316.42,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 920.9,
+        "success": 1.0
+       },
        "tau-retail-48": {
         "bits": 36.16,
         "success": 1.0
@@ -19967,18 +20132,6 @@
        },
        "tb-recover-obfuscated-files": {
         "bits": 441.93,
-        "success": 1.0
-       },
-       "tau-retail-17": {
-        "bits": 6.92,
-        "success": 1.0
-       },
-       "tau-retail-64": {
-        "bits": 34.91,
-        "success": 1.0
-       },
-       "tb-recover-accuracy-log": {
-        "bits": 920.9,
         "success": 1.0
        }
       }
@@ -20076,7 +20229,36 @@
      {
       "label": "v19c + no notes",
       "experiment": "lh-v19c-qwen3-0.6b-base",
-      "cells": {}
+      "cells": {
+       "tau-retail-17": {
+        "bits": 38.35,
+        "success": 1.0
+       },
+       "tau-retail-64": {
+        "bits": 44.64,
+        "success": 1.0
+       },
+       "tb-analyze-access-logs": {
+        "bits": 240.03,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 827.78,
+        "success": 1.0
+       },
+       "tau-retail-48": {
+        "bits": 37.05,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 89.88,
+        "success": 1.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 396.42,
+        "success": 1.0
+       }
+      }
      }
     ],
     "free": {
@@ -20194,18 +20376,6 @@
       "label": "per turn, LLM monitor on terminal",
       "experiment": "lh-step-smollm2-135m",
       "cells": {
-       "tau-retail-48": {
-        "bits": 100.1,
-        "success": 1.0
-       },
-       "tau-retail-20": {
-        "bits": 106.68,
-        "success": 0.0
-       },
-       "tb-recover-obfuscated-files": {
-        "bits": 675.38,
-        "success": 0.5
-       },
        "tau-retail-17": {
         "bits": 91.95,
         "success": 1.0
@@ -20217,6 +20387,22 @@
        "tb-analyze-access-logs": {
         "bits": 277.67,
         "success": 0.5
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 1516.12,
+        "success": 1.0
+       },
+       "tau-retail-48": {
+        "bits": 100.1,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 106.68,
+        "success": 0.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 675.38,
+        "success": 0.5
        }
       }
      },
@@ -20224,6 +20410,18 @@
       "label": "+ cap",
       "experiment": "lh-stepcap-smollm2-135m",
       "cells": {
+       "tau-retail-48": {
+        "bits": 87.18,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 108.53,
+        "success": 0.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 650.92,
+        "success": 1.0
+       },
        "tau-retail-17": {
         "bits": 87.6,
         "success": 1.0
@@ -20232,13 +20430,9 @@
         "bits": 124.55,
         "success": 1.0
        },
-       "tau-retail-48": {
-        "bits": 87.18,
+       "tb-recover-accuracy-log": {
+        "bits": 1455.49,
         "success": 1.0
-       },
-       "tau-retail-20": {
-        "bits": 108.53,
-        "success": 0.0
        }
       }
      },
@@ -20284,12 +20478,62 @@
      {
       "label": "v19b + partial injection",
       "experiment": "lh-v19b-smollm2-135m",
-      "cells": {}
+      "cells": {
+       "tau-retail-17": {
+        "bits": 83.74,
+        "success": 1.0
+       },
+       "tau-retail-64": {
+        "bits": 127.2,
+        "success": 1.0
+       },
+       "tb-analyze-access-logs": {
+        "bits": 381.8,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 1347.13,
+        "success": 1.0
+       },
+       "tau-retail-48": {
+        "bits": 91.85,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 97.98,
+        "success": 0.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 589.28,
+        "success": 1.0
+       }
+      }
      },
      {
       "label": "v19c + no notes",
       "experiment": "lh-v19c-smollm2-135m",
-      "cells": {}
+      "cells": {
+       "tau-retail-48": {
+        "bits": 105.17,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 102.41,
+        "success": 0.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 585.97,
+        "success": 1.0
+       },
+       "tau-retail-17": {
+        "bits": 86.13,
+        "success": 1.0
+       },
+       "tau-retail-64": {
+        "bits": 117.75,
+        "success": 1.0
+       }
+      }
      }
     ],
     "free": {
@@ -20482,6 +20726,10 @@
        "tau-retail-17": {
         "bits": 31.3,
         "success": 1.0
+       },
+       "tb-analyze-access-logs": {
+        "bits": 77.87,
+        "success": 1.0
        }
       }
      },
@@ -20523,18 +20771,6 @@
       "label": "v19b + partial injection",
       "experiment": "lh-v19b-qwen3-8b-base",
       "cells": {
-       "tau-retail-48": {
-        "bits": 3.92,
-        "success": 1.0
-       },
-       "tau-retail-20": {
-        "bits": 40.05,
-        "success": 1.0
-       },
-       "tb-recover-obfuscated-files": {
-        "bits": 38.81,
-        "success": 1.0
-       },
        "tau-retail-17": {
         "bits": 3.61,
         "success": 1.0
@@ -20546,13 +20782,58 @@
        "tb-analyze-access-logs": {
         "bits": 111.15,
         "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 550.63,
+        "success": 1.0
+       },
+       "tau-retail-48": {
+        "bits": 3.92,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 40.05,
+        "success": 1.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 38.81,
+        "success": 1.0
        }
       }
      },
      {
       "label": "v19c + no notes",
       "experiment": "lh-v19c-qwen3-8b-base",
-      "cells": {}
+      "cells": {
+       "tau-retail-17": {
+        "bits": 10.17,
+        "success": 1.0
+       },
+       "tau-retail-64": {
+        "bits": 20.97,
+        "success": 1.0
+       },
+       "tb-analyze-access-logs": {
+        "bits": 146.26,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 394.56,
+        "success": 1.0
+       },
+       "tau-retail-48": {
+        "bits": 12.52,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 37.49,
+        "success": 1.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 80.59,
+        "success": 1.0
+       }
+      }
      }
     ],
     "free": {
@@ -20588,5 +20869,5 @@
    }
   ]
  },
- "content_digest": "0008485ecc467bb2c0544a15c475bc016a7431d217087b197ed8b28f8a566e38"
+ "content_digest": "5abbce7523dc806782469a7dbbd7c7559bbb7bd52ef1808589f9163cbb754552"
 }
