@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790913144.9001112,
- "generated_label": "2026-10-01 23:52 EDT",
+ "generated_at": 1790914045.8331714,
+ "generated_label": "2026-10-02 00:07 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -55,9 +55,9 @@
    "limit": 0,
    "shards": 24,
    "shards_done": 0,
-   "shards_running": 1,
+   "shards_running": 4,
    "shards_failed": 0,
-   "shards_queued": 23,
+   "shards_queued": 20,
    "status": "running",
    "created_at": 1790912848.5039992,
    "git_commit": "d960ae1755",
@@ -375,32 +375,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 13,
-   "shards_running": 3,
+   "shards_done": 14,
+   "shards_running": 2,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790900375.8925722,
    "git_commit": "87f9dccffb",
    "snapshot": "0be54cb922be",
-   "tokens_generated": 1231407,
-   "tokens_scored": 8491,
-   "gpu_hours": 0.2132,
-   "load_hours": 0.2307,
-   "tasks": 32,
-   "records": 64,
+   "tokens_generated": 6747509,
+   "tokens_scored": 10157,
+   "gpu_hours": 0.7523,
+   "load_hours": 0.2463,
+   "tasks": 35,
+   "records": 70,
    "success_rate": 1.0,
-   "mean_bits": 4.726756,
-   "median_bits": 4.328745,
+   "mean_bits": 5.3039,
+   "median_bits": 4.306026,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 0.0,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 109.546875,
+   "mean_tokens": 106.142857,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 64
+    "success": 70
    }
   },
   {
@@ -2585,32 +2585,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 16,
-   "shards_done": 6,
+   "shards_done": 7,
    "shards_running": 2,
-   "shards_failed": 8,
+   "shards_failed": 7,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790890575.347963,
    "git_commit": "e1d421b075",
    "snapshot": "9b12a354ccf4",
-   "tokens_generated": 561062518,
-   "tokens_scored": 50968,
-   "gpu_hours": 15.4849,
-   "load_hours": 0.0771,
-   "tasks": 30,
-   "records": 60,
+   "tokens_generated": 678140274,
+   "tokens_scored": 62983,
+   "gpu_hours": 18.4873,
+   "load_hours": 0.0897,
+   "tasks": 35,
+   "records": 70,
    "success_rate": 1.0,
-   "mean_bits": 49.292845,
-   "median_bits": 49.389716,
-   "mean_forced_bits": 5.015819,
-   "mean_forced_tokens": 2.566667,
+   "mean_bits": 50.399549,
+   "median_bits": 50.948564,
+   "mean_forced_bits": 4.299273,
+   "mean_forced_tokens": 2.2,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 69.966667,
-   "fallback_rate": 0.116667,
+   "mean_tokens": 73.814286,
+   "fallback_rate": 0.1,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 60
+    "success": 70
    }
   },
   {
@@ -6473,8 +6473,8 @@
    "limit": 0,
    "shards": 24,
    "shards_done": 22,
-   "shards_running": 1,
-   "shards_failed": 1,
+   "shards_running": 0,
+   "shards_failed": 2,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790884699.1076117,
@@ -17495,12 +17495,12 @@
         "protocol": "rejection",
         "experiment": "he-v14w-h2-smollm2-135m",
         "status": "failed",
-        "tasks": 30,
-        "mean_bits": 49.292845,
-        "median_bits": 49.389716,
+        "tasks": 35,
+        "mean_bits": 50.399549,
+        "median_bits": 50.948564,
         "success_rate": 1.0,
-        "fallback_rate": 0.116667,
-        "mean_forced_bits": 5.015819,
+        "fallback_rate": 0.1,
+        "mean_forced_bits": 4.299273,
         "mean_select_blocks": 0.0
        }
       ],
@@ -18130,10 +18130,10 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 802,
+   "pending": 799,
    "running": 38,
-   "done": 2618,
-   "failed": 686
+   "done": 2620,
+   "failed": 687
   },
   "nodes": [
    {
@@ -18161,8 +18161,8 @@
      "he-v11-h2-qwen3-0.6b-base-s11-r3",
      "he-v14q-h2-qwen3-0.6b-base-s19-r3",
      "he-v14q-h2-smollm2-135m-s2-r3",
-     "he-v14w-h2-smollm2-135m-s10-r3",
      "he-v14w-h2-smollm2-135m-s4-r3",
+     "he-v17-h2-qwen3-0.6b-base-s3",
      "svc-student-qwen3-0.6b-base-1790885176",
      "svc-student-qwen3-8b-base-1790885176",
      "svc-student-smollm2-135m-1790885447-ml8k"
@@ -18226,10 +18226,10 @@
      "he-free2048-hard-h2-qwen3-0.6b-base-s0",
      "he-v14o-h2-qwen3-0.6b-base-s9-r3",
      "he-v14o-h2-qwen3-1.7b-base-s14",
-     "he-v14o-h2-qwen3-8b-base-s1",
      "he-v14o-h2-qwen3-8b-base-s10",
      "he-v14o-h2-smollm2-135m-s13-r3",
-     "he-v14w-h2-smollm2-135m-s9-r3"
+     "he-v14w-h2-smollm2-135m-s9-r3",
+     "he-v17-h2-qwen3-0.6b-base-s1"
     ]
    },
    {
@@ -18286,10 +18286,10 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-v14o-h2-qwen3-0.6b-base-s8",
      "he-v14o-h2-qwen3-8b-base-s14",
      "he-v14w-h2-smollm2-135m-s12-r3",
      "he-v17-h2-qwen3-0.6b-base-s0",
+     "he-v17-h2-qwen3-0.6b-base-s2",
      "svc-qwen3-32b-1790844327",
      "svc-qwen3-32b-1790860969"
     ]
@@ -18314,7 +18314,7 @@
     "idle": 0,
     "stale": 8,
     "heartbeat_stale": true,
-    "age_s": 4071.6,
+    "age_s": 4972.5,
     "tasks": []
    }
   ]
@@ -18576,5 +18576,5 @@
   ],
   "note": "Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
  },
- "content_digest": "09687503c6dd63144c54689bb59afbe6c01925a9c6b3aa258e15b6222209e25a"
+ "content_digest": "66574a26415e726260963f01a983ba5619e7c5ce7c2a807a4ac37bc6bd243a9e"
 }
