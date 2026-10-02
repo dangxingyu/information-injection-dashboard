@@ -64,7 +64,7 @@ function renderFleet() {
     const tasks = n.tasks.length ? `<br><span class="tip-muted">tasks:</span> ${n.tasks.map(esc).join(', ')}` : '';
     return `<article class="panel node" data-tip="${tip(`<b>${esc(n.label)}</b> (${esc(n.kind.toUpperCase())})<br>busy ${n.busy} · warm ${n.warm} · idle ${n.idle} · stale ${n.stale}<br>heartbeat age at snapshot: ${age(n.age_s)}${tasks}`)}"><div class="node-title"><b>${esc(n.label)}</b><span class="muted">${esc(n.kind.toUpperCase())}</span></div><div class="cells" role="img" aria-label="${esc(n.label)}: ${n.busy} busy, ${n.warm} warm, ${n.idle} idle, ${n.stale} stale">${cells}</div><div class="node-meta ${n.heartbeat_stale ? 'stale' : ''}">busy ${n.busy} · warm ${n.warm} · heartbeat ${age(n.age_s)}${n.heartbeat_stale ? ' · STALE' : ''}</div></article>`;
   }).join('') || '<p class="muted">No lane worker heartbeats found.</p>';
-  $('fleet-note').textContent = `Heartbeats older than ${f.stale_after_s} s at snapshot time count as stale; unreported = expected ${f.expected_gpus} GPUs minus GPUs listed by any heartbeat. Warm GPUs run a matmul burner and are released to the next queued task within seconds.`;
+  $('fleet-note').textContent = `Heartbeats older than ${f.stale_after_s} s at snapshot time count as stale; expected = GPUs we hold now (the PLI slot plus running ailab H200 jobs); unreported = expected minus GPUs listed by any lane heartbeat (a held GPU with no lane worker). Warm GPUs run a matmul burner and are released to the next queued task within seconds.`;
 }
 
 /* --------------------------------------------------------------- selects */
