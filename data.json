@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790921314.9594102,
- "generated_label": "2026-10-02 02:08 EDT",
+ "generated_at": 1790922216.210517,
+ "generated_label": "2026-10-02 02:23 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -29,43 +29,6 @@
  },
  "experiments": [
   {
-   "name": "smoke-partial",
-   "student": "qwen3-0.6b-base",
-   "model": "Qwen/Qwen3-0.6B-Base",
-   "suite": "humanevalplus",
-   "protocol": "reference",
-   "config": {},
-   "config_summary": "defaults",
-   "runs": 2,
-   "limit": 0,
-   "shards": 1,
-   "shards_done": 0,
-   "shards_running": 1,
-   "shards_failed": 0,
-   "shards_queued": 0,
-   "status": "running",
-   "created_at": 1790921108.7994463,
-   "git_commit": "ec8952f128",
-   "snapshot": "b4479dc4aba6",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
-  },
-  {
    "name": "he-v17-h2-qwen3-0.6b-base",
    "student": "qwen3-0.6b-base",
    "model": "Qwen/Qwen3-0.6B-Base",
@@ -92,9 +55,9 @@
    "limit": 0,
    "shards": 24,
    "shards_done": 3,
-   "shards_running": 16,
+   "shards_running": 18,
    "shards_failed": 0,
-   "shards_queued": 5,
+   "shards_queued": 3,
    "status": "running",
    "created_at": 1790912848.5039992,
    "git_commit": "d960ae1755",
@@ -18173,10 +18136,10 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 788,
+   "pending": 786,
    "running": 38,
-   "done": 2634,
-   "failed": 689
+   "done": 2635,
+   "failed": 690
   },
   "nodes": [
    {
@@ -18202,8 +18165,8 @@
     "age_s": 0.0,
     "tasks": [
      "he-v14q-h2-qwen3-0.6b-base-s19-r3",
-     "he-v14q-h2-smollm2-135m-s2-r3",
      "he-v17-h2-qwen3-0.6b-base-s16",
+     "he-v17-h2-qwen3-0.6b-base-s20",
      "he-v17-h2-qwen3-0.6b-base-s3",
      "he-v17-h2-qwen3-0.6b-base-s6",
      "svc-student-qwen3-0.6b-base-1790885176",
@@ -18240,7 +18203,7 @@
      "he-v14w-h2-smollm2-135m-s13-r3",
      "he-v17-h2-qwen3-0.6b-base-s14",
      "he-v17-h2-qwen3-0.6b-base-s15",
-     "smoke-partial-s0"
+     "he-v17-h2-qwen3-0.6b-base-s19"
     ]
    },
    {
@@ -18357,7 +18320,7 @@
     "idle": 0,
     "stale": 8,
     "heartbeat_stale": true,
-    "age_s": 12241.7,
+    "age_s": 13142.9,
     "tasks": []
    }
   ]
@@ -18619,5 +18582,5 @@
   ],
   "note": "Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
  },
- "content_digest": "4674c0d48e96f8b1731e2f9f22e627f93839a78213f4b977901a3a9432ab8ecd"
+ "content_digest": "9a0b557467bfed560830bb3e1dfe06e7c6a0be121dd8c9b847d38b68a9bd2cb9"
 }
