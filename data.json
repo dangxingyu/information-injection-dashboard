@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790968502.4576552,
- "generated_label": "2026-10-02 15:15 EDT",
+ "generated_at": 1790968885.5059319,
+ "generated_label": "2026-10-02 15:21 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -29,6 +29,126 @@
  },
  "experiments": [
   {
+   "name": "lh-v20d-qwen3-8b-base",
+   "student": "qwen3-8b-base",
+   "model": "Qwen/Qwen3-8B-Base",
+   "suite": "longhorizon",
+   "protocol": "ep-subgoal",
+   "config": {
+    "subgoals": "teachers/lh_subgoals_tb.json",
+    "safe": true
+   },
+   "config_summary": "safe=True, subgoals=teachers/lh_subgoals_tb.json",
+   "runs": 2,
+   "limit": 0,
+   "shards": 1,
+   "shards_done": 0,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 1,
+   "status": "queued",
+   "created_at": 1790968816.1364284,
+   "git_commit": "3919176509",
+   "snapshot": "87e28e94c283",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
+  {
+   "name": "lh-v20d-smollm2-135m",
+   "student": "smollm2-135m",
+   "model": "HuggingFaceTB/SmolLM2-135M",
+   "suite": "longhorizon",
+   "protocol": "ep-subgoal",
+   "config": {
+    "subgoals": "teachers/lh_subgoals_tb.json",
+    "safe": true
+   },
+   "config_summary": "safe=True, subgoals=teachers/lh_subgoals_tb.json",
+   "runs": 2,
+   "limit": 0,
+   "shards": 1,
+   "shards_done": 0,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 1,
+   "status": "queued",
+   "created_at": 1790968814.7400756,
+   "git_commit": "3919176509",
+   "snapshot": "87e28e94c283",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
+  {
+   "name": "lh-v20d-qwen3-0.6b-base",
+   "student": "qwen3-0.6b-base",
+   "model": "Qwen/Qwen3-0.6B-Base",
+   "suite": "longhorizon",
+   "protocol": "ep-subgoal",
+   "config": {
+    "subgoals": "teachers/lh_subgoals_tb.json",
+    "safe": true
+   },
+   "config_summary": "safe=True, subgoals=teachers/lh_subgoals_tb.json",
+   "runs": 2,
+   "limit": 0,
+   "shards": 1,
+   "shards_done": 0,
+   "shards_running": 1,
+   "shards_failed": 0,
+   "shards_queued": 0,
+   "status": "running",
+   "created_at": 1790968814.02573,
+   "git_commit": "3919176509",
+   "snapshot": "87e28e94c283",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
+  {
    "name": "lh-v20c-qwen3-8b-base",
    "student": "qwen3-8b-base",
    "model": "Qwen/Qwen3-8B-Base",
@@ -44,10 +164,10 @@
    "limit": 0,
    "shards": 1,
    "shards_done": 0,
-   "shards_running": 0,
+   "shards_running": 1,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "running",
    "created_at": 1790967592.4832394,
    "git_commit": "1a2975d632",
    "snapshot": "6ad6eb7d70f9",
@@ -83,31 +203,34 @@
    "runs": 2,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
-   "shards_running": 1,
+   "shards_done": 1,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1790967591.9284759,
    "git_commit": "1a2975d632",
    "snapshot": "6ad6eb7d70f9",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 69132,
+   "tokens_scored": 1099,
+   "gpu_hours": 0.1465,
+   "load_hours": 0.0151,
+   "tasks": 3,
+   "records": 6,
+   "success_rate": 0.666667,
+   "mean_bits": 121.764959,
+   "median_bits": 101.169835,
+   "mean_forced_bits": 43.875389,
+   "mean_forced_tokens": 153.166667,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 410.833333,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 4,
+    "unsolved": 2
+   }
   },
   {
    "name": "lh-v20a-qwen3-8b-base",
@@ -122,31 +245,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
-   "shards_running": 1,
+   "shards_done": 1,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1790967590.9856617,
    "git_commit": "1a2975d632",
    "snapshot": "6ad6eb7d70f9",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 81433,
+   "tokens_scored": 837,
+   "gpu_hours": 0.1724,
+   "load_hours": 0.0161,
+   "tasks": 3,
+   "records": 6,
+   "success_rate": 1.0,
+   "mean_bits": 51.706231,
+   "median_bits": 31.30057,
+   "mean_forced_bits": 44.488557,
+   "mean_forced_tokens": 139.5,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 352.5,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 6
+   }
   },
   {
    "name": "lh-v20c-smollm2-135m",
@@ -164,10 +289,10 @@
    "limit": 0,
    "shards": 1,
    "shards_done": 0,
-   "shards_running": 0,
+   "shards_running": 1,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "running",
    "created_at": 1790967590.4571338,
    "git_commit": "1a2975d632",
    "snapshot": "6ad6eb7d70f9",
@@ -362,31 +487,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
-   "shards_running": 1,
+   "shards_done": 1,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1790967586.5518367,
    "git_commit": "1a2975d632",
    "snapshot": "6ad6eb7d70f9",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 142166,
+   "tokens_scored": 1489,
+   "gpu_hours": 0.2864,
+   "load_hours": 0.0126,
+   "tasks": 3,
+   "records": 6,
+   "success_rate": 1.0,
+   "mean_bits": 105.697022,
+   "median_bits": 77.904265,
+   "mean_forced_bits": 102.969391,
+   "mean_forced_tokens": 248.166667,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 292.833333,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 6
+   }
   },
   {
    "name": "lh-v19g-otau-qwen3-8b-base",
@@ -5022,32 +5149,32 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 1,
-   "shards_running": 7,
+   "shards_done": 2,
+   "shards_running": 6,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790899145.3913507,
    "git_commit": "b4ae953a8d",
    "snapshot": "0be54cb922be",
-   "tokens_generated": 81988852,
-   "tokens_scored": 5118,
-   "gpu_hours": 1.3821,
-   "load_hours": 0.0155,
-   "tasks": 21,
-   "records": 21,
+   "tokens_generated": 141454754,
+   "tokens_scored": 8682,
+   "gpu_hours": 2.3987,
+   "load_hours": 0.0271,
+   "tasks": 41,
+   "records": 41,
    "success_rate": 1.0,
-   "mean_bits": 73.560989,
-   "median_bits": 74.378368,
-   "mean_forced_bits": 69.720039,
-   "mean_forced_tokens": 56.619048,
+   "mean_bits": 62.294701,
+   "median_bits": 66.031475,
+   "mean_forced_bits": 58.156994,
+   "mean_forced_tokens": 44.121951,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 100.761905,
-   "fallback_rate": 0.666667,
+   "mean_tokens": 84.780488,
+   "fallback_rate": 0.658537,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 21
+    "success": 41
    }
   },
   {
@@ -7188,39 +7315,39 @@
    "runs": 32,
    "limit": 0,
    "shards": 8,
-   "shards_done": 7,
-   "shards_running": 1,
+   "shards_done": 8,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1790890372.1929507,
    "git_commit": "6b568d1b88",
    "snapshot": "16618a63d36d",
-   "tokens_generated": 2451618,
+   "tokens_generated": 2792286,
    "tokens_scored": 0,
-   "gpu_hours": 0.924,
-   "load_hours": 0.1009,
-   "tasks": 143,
-   "records": 4576,
-   "success_rate": 0.113199,
+   "gpu_hours": 1.1888,
+   "load_hours": 0.1159,
+   "tasks": 163,
+   "records": 5216,
+   "success_rate": 0.11158,
    "mean_bits": 0.0,
    "median_bits": 0.0,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 0.0,
    "mean_select_blocks": 0.0,
-   "mean_free_blocks": 56.537587,
-   "mean_tokens": 703.377185,
+   "mean_free_blocks": 56.265146,
+   "mean_tokens": 704.86944,
    "fallback_rate": 0.0,
-   "mean_restarts": 1.309659,
+   "mean_restarts": 1.303873,
    "ends": {
-    "horizon": 4058,
-    "success": 518
+    "horizon": 4634,
+    "success": 582
    },
-   "alpha": 0.113199,
-   "solvable_tasks": 68,
-   "zero_success_tasks": 75,
-   "ideal_bits": 2.847356,
-   "ideal_lower_bound_bits": 3.18131
+   "alpha": 0.11158,
+   "solvable_tasks": 80,
+   "zero_success_tasks": 83,
+   "ideal_bits": 2.993004,
+   "ideal_lower_bound_bits": 3.243068
   },
   {
    "name": "mb-ref-e2-llama3.2-1b",
@@ -8872,39 +8999,39 @@
    "runs": 32,
    "limit": 0,
    "shards": 8,
-   "shards_done": 3,
+   "shards_done": 4,
    "shards_running": 0,
-   "shards_failed": 5,
+   "shards_failed": 4,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790890320.7685742,
    "git_commit": "6b568d1b88",
    "snapshot": "16618a63d36d",
-   "tokens_generated": 994297,
+   "tokens_generated": 1271760,
    "tokens_scored": 0,
-   "gpu_hours": 0.4497,
-   "load_hours": 0.0494,
-   "tasks": 63,
-   "records": 2016,
-   "success_rate": 0.169643,
+   "gpu_hours": 0.5384,
+   "load_hours": 0.0649,
+   "tasks": 83,
+   "records": 2656,
+   "success_rate": 0.192018,
    "mean_bits": 0.0,
    "median_bits": 0.0,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 0.0,
    "mean_select_blocks": 0.0,
-   "mean_free_blocks": 52.612599,
-   "mean_tokens": 671.701389,
+   "mean_free_blocks": 51.285392,
+   "mean_tokens": 656.520331,
    "fallback_rate": 0.0,
-   "mean_restarts": 1.420139,
+   "mean_restarts": 1.394578,
    "ends": {
-    "horizon": 1674,
-    "success": 342
+    "horizon": 2146,
+    "success": 510
    },
-   "alpha": 0.169643,
-   "solvable_tasks": 44,
-   "zero_success_tasks": 19,
-   "ideal_bits": 2.625805,
-   "ideal_lower_bound_bits": 2.884654
+   "alpha": 0.192018,
+   "solvable_tasks": 59,
+   "zero_success_tasks": 24,
+   "ideal_bits": 2.547311,
+   "ideal_lower_bound_bits": 2.818188
   },
   {
    "name": "smoke-ref-e2-qwen3-0.6b",
@@ -20775,9 +20902,9 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 580,
+   "pending": 578,
    "running": 40,
-   "done": 3037,
+   "done": 3045,
    "failed": 785
   },
   "nodes": [
@@ -20842,7 +20969,7 @@
      "he-v14o-h2-qwen3-8b-base-s10-r4",
      "he-v14q-h2-qwen3-0.6b-base-s8-r5",
      "he-v17-h2-qwen3-0.6b-base-s8-r4",
-     "lh-v20a-qwen3-8b-base-s0"
+     "lh-v20d-qwen3-0.6b-base-s0"
     ]
    },
    {
@@ -20872,8 +20999,8 @@
      "he-v17-h2-qwen3-0.6b-base-s20-r3",
      "he-v17-h2-qwen3-0.6b-base-s3-r4",
      "he-v17-h2-qwen3-0.6b-base-s9-r4",
-     "lh-v20a-qwen3-0.6b-base-s0",
-     "lh-v20b-qwen3-8b-base-s0",
+     "lh-v20c-qwen3-8b-base-s0",
+     "lh-v20c-smollm2-135m-s0",
      "svc-student-smollm2-135m-1790960786"
     ]
    },
@@ -20931,9 +21058,9 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-free32-e2-qwen3-0.6b-base-s5",
      "he-free32-e2-qwen3-1.7b-base-s3-r3",
-     "he-free32-e2-qwen3-1.7b-base-s4-r3",
+     "he-free32-e2-qwen3-1.7b-base-s5-r3",
+     "he-free32-e2-qwen3-1.7b-base-s6-r3",
      "he-v17-h2-qwen3-0.6b-base-s22-r3",
      "svc-qwen3-32b-1790933373",
      "svc-qwen3-32b-1790950399",
@@ -21215,7 +21342,7 @@
     ],
     "rows": [
      {
-      "label": "force reference",
+      "label": "force benchmark reference",
       "experiment": "lh-ref-qwen3-0.6b-base",
       "cells": {
        "tau-retail-17": {
@@ -21385,7 +21512,7 @@
       }
      },
      {
-      "label": "v19a oracle + cap",
+      "label": "v19a reference oracle + cap",
       "experiment": "lh-v19a-qwen3-0.6b-base",
       "cells": {
        "tau-retail-17": {
@@ -21485,6 +21612,150 @@
         "success": 1.0
        }
       }
+     },
+     {
+      "label": "v19d + 32 whole episodes first",
+      "experiment": "lh-v19d-qwen3-0.6b-base",
+      "cells": {
+       "tau-retail-17": {
+        "bits": 29.95,
+        "success": 1.0
+       },
+       "tau-retail-64": {
+        "bits": 29.31,
+        "success": 1.0
+       },
+       "tb-analyze-access-logs": {
+        "bits": 211.68,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 831.26,
+        "success": 1.0
+       },
+       "tau-retail-48": {
+        "bits": 41.95,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 94.7,
+        "success": 1.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 401.76,
+        "success": 1.0
+       }
+      }
+     },
+     {
+      "label": "force Opus trajectory",
+      "experiment": "lh-ref-otau-qwen3-0.6b-base + lh-ref-otb-qwen3-0.6b-base",
+      "cells": {
+       "tau-retail-17": {
+        "bits": 14.31,
+        "success": 1.0
+       },
+       "tau-retail-48": {
+        "bits": 26.09,
+        "success": 1.0
+       },
+       "tau-retail-64": {
+        "bits": 24.43,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 59.03,
+        "success": 1.0
+       },
+       "tb-analyze-access-logs": {
+        "bits": 78.51,
+        "success": 1.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 45.54,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 170.94,
+        "success": 1.0
+       }
+      }
+     },
+     {
+      "label": "v19g per turn on Opus trajectory",
+      "experiment": "lh-v19g-otau-qwen3-0.6b-base + lh-v19g-otb-qwen3-0.6b-base",
+      "cells": {
+       "tau-retail-17": {
+        "bits": 14.46,
+        "success": 1.0
+       },
+       "tau-retail-48": {
+        "bits": 28.91,
+        "success": 1.0
+       },
+       "tau-retail-64": {
+        "bits": 25.85,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 64.94,
+        "success": 1.0
+       },
+       "tb-analyze-access-logs": {
+        "bits": 95.87,
+        "success": 1.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 48.1,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 170.94,
+        "success": 1.0
+       }
+      }
+     },
+     {
+      "label": "v20a subgoals, stitched",
+      "experiment": "lh-v20a-qwen3-0.6b-base",
+      "cells": {
+       "tb-analyze-access-logs": {
+        "bits": 77.9,
+        "success": 1.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 44.75,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 194.44,
+        "success": 1.0
+       }
+      }
+     },
+     {
+      "label": "v20b + plan first",
+      "experiment": "lh-v20b-qwen3-0.6b-base",
+      "cells": {
+       "tb-recover-obfuscated-files": {
+        "bits": 145.6,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 297.92,
+        "success": 1.0
+       }
+      }
+     },
+     {
+      "label": "v20c + plan + notes",
+      "experiment": "lh-v20c-qwen3-0.6b-base",
+      "cells": {}
+     },
+     {
+      "label": "v20d subgoals + safety",
+      "experiment": "lh-v20d-qwen3-0.6b-base",
+      "cells": {}
      }
     ],
     "free": {
@@ -21531,7 +21802,7 @@
     ],
     "rows": [
      {
-      "label": "force reference",
+      "label": "force benchmark reference",
       "experiment": "lh-ref-smollm2-135m",
       "cells": {
        "tau-retail-17": {
@@ -21689,7 +21960,7 @@
       }
      },
      {
-      "label": "v19a oracle + cap",
+      "label": "v19a reference oracle + cap",
       "experiment": "lh-v19a-smollm2-135m",
       "cells": {
        "tau-retail-17": {
@@ -21789,6 +22060,128 @@
         "success": 1.0
        }
       }
+     },
+     {
+      "label": "v19d + 32 whole episodes first",
+      "experiment": "lh-v19d-smollm2-135m",
+      "cells": {
+       "tau-retail-17": {
+        "bits": 87.45,
+        "success": 1.0
+       },
+       "tau-retail-64": {
+        "bits": 119.01,
+        "success": 1.0
+       },
+       "tb-analyze-access-logs": {
+        "bits": 381.63,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 1338.95,
+        "success": 1.0
+       },
+       "tau-retail-48": {
+        "bits": 90.6,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 95.19,
+        "success": 0.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 610.13,
+        "success": 1.0
+       }
+      }
+     },
+     {
+      "label": "force Opus trajectory",
+      "experiment": "lh-ref-otau-smollm2-135m + lh-ref-otb-smollm2-135m",
+      "cells": {
+       "tau-retail-17": {
+        "bits": 36.99,
+        "success": 1.0
+       },
+       "tau-retail-48": {
+        "bits": 79.82,
+        "success": 1.0
+       },
+       "tau-retail-64": {
+        "bits": 90.66,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 109.03,
+        "success": 0.0
+       },
+       "tb-analyze-access-logs": {
+        "bits": 206.73,
+        "success": 1.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 116.53,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 386.42,
+        "success": 1.0
+       }
+      }
+     },
+     {
+      "label": "v19g per turn on Opus trajectory",
+      "experiment": "lh-v19g-otau-smollm2-135m + lh-v19g-otb-smollm2-135m",
+      "cells": {
+       "tau-retail-17": {
+        "bits": 36.01,
+        "success": 1.0
+       },
+       "tau-retail-48": {
+        "bits": 81.44,
+        "success": 1.0
+       },
+       "tau-retail-64": {
+        "bits": 92.38,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 224.55,
+        "success": 1.0
+       },
+       "tb-analyze-access-logs": {
+        "bits": 218.94,
+        "success": 1.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 116.61,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 386.42,
+        "success": 1.0
+       }
+      }
+     },
+     {
+      "label": "v20a subgoals, stitched",
+      "experiment": "lh-v20a-smollm2-135m",
+      "cells": {}
+     },
+     {
+      "label": "v20b + plan first",
+      "experiment": "lh-v20b-smollm2-135m",
+      "cells": {}
+     },
+     {
+      "label": "v20c + plan + notes",
+      "experiment": "lh-v20c-smollm2-135m",
+      "cells": {}
+     },
+     {
+      "label": "v20d subgoals + safety",
+      "experiment": "lh-v20d-smollm2-135m",
+      "cells": {}
      }
     ],
     "free": {
@@ -21835,7 +22228,7 @@
     ],
     "rows": [
      {
-      "label": "force reference",
+      "label": "force benchmark reference",
       "experiment": "lh-ref-qwen3-8b-base",
       "cells": {
        "tau-retail-17": {
@@ -22005,7 +22398,7 @@
       }
      },
      {
-      "label": "v19a oracle + cap",
+      "label": "v19a reference oracle + cap",
       "experiment": "lh-v19a-qwen3-8b-base",
       "cells": {
        "tau-retail-17": {
@@ -22105,6 +22498,159 @@
         "success": 1.0
        }
       }
+     },
+     {
+      "label": "v19d + 32 whole episodes first",
+      "experiment": "lh-v19d-qwen3-8b-base",
+      "cells": {
+       "tau-retail-17": {
+        "bits": 0.72,
+        "success": 1.0
+       },
+       "tau-retail-64": {
+        "bits": 12.09,
+        "success": 1.0
+       },
+       "tb-analyze-access-logs": {
+        "bits": 92.71,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 618.32,
+        "success": 1.0
+       },
+       "tau-retail-48": {
+        "bits": 1.8,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 51.53,
+        "success": 1.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 290.46,
+        "success": 1.0
+       }
+      }
+     },
+     {
+      "label": "force Opus trajectory",
+      "experiment": "lh-ref-otau-qwen3-8b-base + lh-ref-otb-qwen3-8b-base",
+      "cells": {
+       "tau-retail-17": {
+        "bits": 11.32,
+        "success": 1.0
+       },
+       "tau-retail-48": {
+        "bits": 11.71,
+        "success": 1.0
+       },
+       "tau-retail-64": {
+        "bits": 18.32,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 44.85,
+        "success": 1.0
+       },
+       "tb-analyze-access-logs": {
+        "bits": 38.68,
+        "success": 1.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 33.23,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 117.88,
+        "success": 1.0
+       }
+      }
+     },
+     {
+      "label": "v19g per turn on Opus trajectory",
+      "experiment": "lh-v19g-otau-qwen3-8b-base + lh-v19g-otb-qwen3-8b-base",
+      "cells": {
+       "tau-retail-17": {
+        "bits": 2.4,
+        "success": 1.0
+       },
+       "tau-retail-48": {
+        "bits": 2.73,
+        "success": 1.0
+       },
+       "tau-retail-64": {
+        "bits": 11.81,
+        "success": 1.0
+       },
+       "tau-retail-20": {
+        "bits": 29.78,
+        "success": 1.0
+       },
+       "tb-analyze-access-logs": {
+        "bits": 32.19,
+        "success": 1.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 14.89,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 117.88,
+        "success": 1.0
+       }
+      }
+     },
+     {
+      "label": "v20a subgoals, stitched",
+      "experiment": "lh-v20a-qwen3-8b-base",
+      "cells": {
+       "tb-analyze-access-logs": {
+        "bits": 11.47,
+        "success": 1.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 31.3,
+        "success": 1.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 112.35,
+        "success": 1.0
+       }
+      }
+     },
+     {
+      "label": "v20b + plan first",
+      "experiment": "lh-v20b-qwen3-8b-base",
+      "cells": {
+       "tb-analyze-access-logs": {
+        "bits": 66.73,
+        "success": 1.0
+       },
+       "tb-recover-obfuscated-files": {
+        "bits": 101.17,
+        "success": 0.0
+       },
+       "tb-recover-accuracy-log": {
+        "bits": 197.39,
+        "success": 1.0
+       }
+      }
+     },
+     {
+      "label": "v20c + plan + notes",
+      "experiment": "lh-v20c-qwen3-8b-base",
+      "cells": {
+       "tb-analyze-access-logs": {
+        "bits": 84.87,
+        "success": 1.0
+       }
+      }
+     },
+     {
+      "label": "v20d subgoals + safety",
+      "experiment": "lh-v20d-qwen3-8b-base",
+      "cells": {}
      }
     ],
     "free": {
@@ -22140,5 +22686,5 @@
    }
   ]
  },
- "content_digest": "1644dde91eced62dd200daf7c2cb0cbdd84bbe751e61c162d39f1d96c7de9b41"
+ "content_digest": "57155e6c1db245233143a3c5a694a64abcb70bc8fd53514e15df63cda11351f4"
 }
