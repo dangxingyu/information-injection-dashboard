@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790931295.958012,
- "generated_label": "2026-10-02 04:54 EDT",
+ "generated_at": 1790932202.9279296,
+ "generated_label": "2026-10-02 05:10 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -427,8 +427,8 @@
    "limit": 0,
    "shards": 16,
    "shards_done": 13,
-   "shards_running": 2,
-   "shards_failed": 1,
+   "shards_running": 1,
+   "shards_failed": 2,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790900374.4609418,
@@ -18139,7 +18139,7 @@
    "pending": 788,
    "running": 39,
    "done": 2642,
-   "failed": 701
+   "failed": 702
   },
   "nodes": [
    {
@@ -18260,8 +18260,8 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-v14o-h2-qwen3-1.7b-base-s10",
      "he-v14w-h2-smollm2-135m-s11-r4",
+     "he-v14w-h2-smollm2-135m-s12-r4",
      "he-v14w-h2-smollm2-135m-s2-r3",
      "he-v17-h2-qwen3-0.6b-base-s11",
      "he-v17-h2-qwen3-0.6b-base-s18",
@@ -18560,5 +18560,5 @@
   ],
   "note": "Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
  },
- "content_digest": "06510a5a0050cdda75d9970fc58c3583e7061b2af01ce27cb7b168b1c55057dd"
+ "content_digest": "5034c8c3fc539a886811a5332c46c0159813ef4dad10e1a80eb61b99c7baffb8"
 }
