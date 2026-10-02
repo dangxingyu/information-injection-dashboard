@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790929476.1457925,
- "generated_label": "2026-10-02 04:24 EDT",
+ "generated_at": 1790931295.958012,
+ "generated_label": "2026-10-02 04:54 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -18136,10 +18136,10 @@
    "unreported": 8
   },
   "queue": {
-   "pending": 790,
-   "running": 38,
+   "pending": 788,
+   "running": 39,
    "done": 2642,
-   "failed": 699
+   "failed": 701
   },
   "nodes": [
    {
@@ -18228,9 +18228,9 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-v14o-h2-qwen3-0.6b-base-s9-r3",
      "he-v14o-h2-qwen3-1.7b-base-s14",
      "he-v14o-h2-qwen3-8b-base-s10",
+     "he-v14q-h2-smollm2-135m-s10-r4",
      "he-v14q-h2-smollm2-135m-s12-r3",
      "he-v17-h2-qwen3-0.6b-base-s12",
      "he-v17-h2-qwen3-0.6b-base-s13",
@@ -18293,10 +18293,11 @@
     "age_s": 0.0,
     "tasks": [
      "he-v14o-h2-qwen3-8b-base-s14",
+     "he-v14q-h2-smollm2-135m-s11-r4",
+     "he-v14q-h2-smollm2-135m-s15-r4",
      "he-v14q-h2-smollm2-135m-s2-r4",
      "he-v17-h2-qwen3-0.6b-base-s0",
      "he-v17-h2-qwen3-0.6b-base-s21",
-     "svc-qwen3-32b-1790844327",
      "svc-qwen3-32b-1790860969"
     ]
    }
@@ -18559,5 +18560,5 @@
   ],
   "note": "Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
  },
- "content_digest": "6b6aeb50a7b4f06a55edb1f679f2811372f1a61c94cd6158d6aa75e45f230f8d"
+ "content_digest": "06510a5a0050cdda75d9970fc58c3583e7061b2af01ce27cb7b168b1c55057dd"
 }
