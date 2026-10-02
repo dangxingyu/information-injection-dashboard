@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790904965.7426913,
- "generated_label": "2026-10-01 21:36 EDT",
+ "generated_at": 1790905875.8133326,
+ "generated_label": "2026-10-01 21:51 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -42,32 +42,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 4,
-   "shards_done": 1,
-   "shards_running": 3,
+   "shards_done": 3,
+   "shards_running": 1,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790903719.2109737,
    "git_commit": "3316ae26cd",
    "snapshot": "f049793af064",
-   "tokens_generated": 371180,
-   "tokens_scored": 458,
-   "gpu_hours": 0.194,
-   "load_hours": 0.0159,
-   "tasks": 1,
-   "records": 2,
+   "tokens_generated": 1200542,
+   "tokens_scored": 1638,
+   "gpu_hours": 0.4393,
+   "load_hours": 0.048,
+   "tasks": 3,
+   "records": 6,
    "success_rate": 1.0,
-   "mean_bits": 367.781376,
+   "mean_bits": 360.081032,
    "median_bits": 367.781376,
-   "mean_forced_bits": 318.048909,
-   "mean_forced_tokens": 229.0,
-   "mean_select_blocks": 32.0,
+   "mean_forced_bits": 325.660679,
+   "mean_forced_tokens": 273.0,
+   "mean_select_blocks": 25.833333,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 1563.5,
+   "mean_tokens": 1693.666667,
    "fallback_rate": 1.0,
    "mean_restarts": 1.0,
    "ends": {
-    "success": 2
+    "success": 6
    }
   },
   {
@@ -83,31 +83,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 4,
-   "shards_done": 0,
-   "shards_running": 2,
+   "shards_done": 1,
+   "shards_running": 3,
    "shards_failed": 0,
-   "shards_queued": 2,
+   "shards_queued": 0,
    "status": "running",
    "created_at": 1790903718.6221795,
    "git_commit": "3316ae26cd",
    "snapshot": "f049793af064",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 97654,
+   "tokens_scored": 278,
+   "gpu_hours": 0.1935,
+   "load_hours": 0.0136,
+   "tasks": 1,
+   "records": 2,
+   "success_rate": 1.0,
+   "mean_bits": 180.396385,
+   "median_bits": 180.396385,
+   "mean_forced_bits": 151.14469,
+   "mean_forced_tokens": 139.0,
+   "mean_select_blocks": 30.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 503.5,
+   "fallback_rate": 0.5,
+   "mean_restarts": 0.5,
+   "ends": {
+    "success": 2
+   }
   },
   {
    "name": "smoke-v17-he",
@@ -6223,32 +6225,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 15,
-   "shards_done": 10,
-   "shards_running": 3,
+   "shards_done": 12,
+   "shards_running": 1,
    "shards_failed": 2,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790885174.4987116,
    "git_commit": "427b323d48",
    "snapshot": "915579d60b19",
-   "tokens_generated": 263385693,
-   "tokens_scored": 13556,
-   "gpu_hours": 8.7991,
-   "load_hours": 0.1806,
-   "tasks": 20,
-   "records": 40,
+   "tokens_generated": 389522213,
+   "tokens_scored": 18974,
+   "gpu_hours": 14.1241,
+   "load_hours": 0.2195,
+   "tasks": 24,
+   "records": 48,
    "success_rate": 1.0,
-   "mean_bits": 79.791579,
-   "median_bits": 12.936612,
-   "mean_forced_bits": 72.87493,
-   "mean_forced_tokens": 45.35,
+   "mean_bits": 84.614422,
+   "median_bits": 19.272478,
+   "mean_forced_bits": 74.633466,
+   "mean_forced_tokens": 48.291667,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 159.5,
-   "fallback_rate": 0.35,
+   "mean_tokens": 163.5625,
+   "fallback_rate": 0.395833,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 40
+    "success": 48
    }
   },
   {
@@ -17962,9 +17964,9 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 831,
+   "pending": 826,
    "running": 46,
-   "done": 2564,
+   "done": 2569,
    "failed": 671
   },
   "nodes": [
@@ -18022,14 +18024,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
+     "he-v14o-h2-smollm2-135m-s5-r3",
      "he-v14q-h2-smollm2-135m-s0-r3",
      "he-v14q-h2-smollm2-135m-s10-r3",
      "he-v14q-h2-smollm2-135m-s11-r3",
      "he-v14q-h2-smollm2-135m-s14-r3",
      "he-v14q-h2-smollm2-135m-s15-r3",
      "he-v14q-h2-smollm2-135m-s9",
-     "smoke-v18-cc8b-s2",
-     "smoke-v18-cc8b-s3"
+     "he-v14w-h2-smollm2-135m-s13-r3"
     ]
    },
    {
@@ -18086,10 +18088,10 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "cc-v14q-h2-qwen3-8b-base-s5",
      "he-v14q-h2-qwen3-8b-base-s1",
      "he-v14q-h2-smollm2-135m-s3-r3",
      "he-v14q-h2-smollm2-135m-s6-r3",
+     "he-v14w-h2-smollm2-135m-s15-r3",
      "he-v14w-h2-smollm2-135m-s2",
      "he-v14w-h2-smollm2-135m-s6",
      "he-v14w-h2-smollm2-135m-s8-r3",
@@ -18149,13 +18151,13 @@
     "age_s": 0.0,
     "tasks": [
      "cc-v14q-h2-qwen3-8b-base-s11",
-     "cc-v14q-h2-qwen3-8b-base-s8",
      "he-v14o-h2-smollm2-135m-s15",
      "he-v14o-h2-smollm2-135m-s2",
      "he-v14q-h2-smollm2-135m-s4",
      "he-v14w-h2-smollm2-135m-s0",
      "he-v14w-h2-smollm2-135m-s11-r3",
-     "smoke-v18-he-s0"
+     "smoke-v18-he-s0",
+     "smoke-v18-he-s3"
     ]
    }
   ]
@@ -18417,5 +18419,5 @@
   ],
   "note": "Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
  },
- "content_digest": "a0e95fd97aa8f6239ac1e5d9323b870bb2bc427b1ca2d6b7d885359b9efb2705"
+ "content_digest": "25fcb004447a0b7bbab2ad117c91289da0f5986668939477f3fbe00834e31bd8"
 }

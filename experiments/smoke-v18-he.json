@@ -1,1 +1,1 @@
-{"name":"smoke-v18-he","tasks":[]}
+{"name":"smoke-v18-he","tasks":[{"task_id":"HumanEval_122","runs":2,"successes":2,"success_rate":1.0,"mean_bits":180.396385,"mean_forced_bits":151.14469,"mean_forced_tokens":139.0,"mean_select_blocks":30.0,"mean_free_blocks":0.0,"mean_tokens":503.5,"fallback_rate":0.5,"mean_restarts":0.5,"ends":{"success":2}}]}
