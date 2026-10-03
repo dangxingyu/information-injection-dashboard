@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791010253.0458558,
- "generated_label": "2026-10-03 02:50 EDT",
+ "generated_at": 1791011154.4451354,
+ "generated_label": "2026-10-03 03:05 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -4195,33 +4195,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 6,
+   "shards_done": 8,
    "shards_running": 0,
-   "shards_failed": 2,
+   "shards_failed": 0,
    "shards_queued": 0,
-   "status": "failed",
+   "status": "complete",
    "created_at": 1790899164.9330652,
    "git_commit": "b4ae953a8d",
    "snapshot": "0be54cb922be",
-   "tokens_generated": 828348574,
-   "tokens_scored": 49621,
-   "gpu_hours": 10.1346,
-   "load_hours": 0.0821,
-   "tasks": 251,
-   "records": 251,
-   "success_rate": 0.976096,
-   "mean_bits": 59.900983,
-   "median_bits": 45.581174,
-   "mean_forced_bits": 50.32286,
-   "mean_forced_tokens": 21.478088,
+   "tokens_generated": 1143667844,
+   "tokens_scored": 67336,
+   "gpu_hours": 13.9862,
+   "load_hours": 0.1083,
+   "tasks": 334,
+   "records": 334,
+   "success_rate": 0.976048,
+   "mean_bits": 62.381199,
+   "median_bits": 47.488433,
+   "mean_forced_bits": 53.5275,
+   "mean_forced_tokens": 22.526946,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 67.517928,
-   "fallback_rate": 0.693227,
+   "mean_tokens": 64.58982,
+   "fallback_rate": 0.715569,
    "mean_restarts": 0.0,
    "ends": {
-    "check-failed": 6,
-    "success": 245
+    "check-failed": 8,
+    "success": 326
    }
   },
   {
@@ -21380,8 +21380,8 @@
   "expected_gpus": 40,
   "stale_after_s": 120.0,
   "totals": {
-   "busy": 4,
-   "warm": 36,
+   "busy": 2,
+   "warm": 38,
    "idle": 0,
    "stale": 0,
    "reported": 40,
@@ -21389,8 +21389,8 @@
   },
   "queue": {
    "pending": 0,
-   "running": 4,
-   "done": 3698,
+   "running": 2,
+   "done": 3700,
    "failed": 822
   },
   "nodes": [
@@ -21404,20 +21404,18 @@
      "warm",
      "warm",
      "warm",
-     "busy",
+     "warm",
      "warm",
      "warm",
      "warm"
     ],
-    "busy": 1,
-    "warm": 7,
+    "busy": 0,
+    "warm": 8,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
     "age_s": 0.0,
-    "tasks": [
-     "mb-bm-e2-olmo2-1b-s1-105b-s7-r3"
-    ]
+    "tasks": []
    },
    {
     "label": "h100-32a \u00b7 2",
@@ -21472,7 +21470,7 @@
     "gpus": 8,
     "cells": [
      "warm",
-     "busy",
+     "warm",
      "warm",
      "warm",
      "warm",
@@ -21480,15 +21478,13 @@
      "warm",
      "warm"
     ],
-    "busy": 1,
-    "warm": 7,
+    "busy": 0,
+    "warm": 8,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
     "age_s": 0.0,
-    "tasks": [
-     "mb-bm-e2-olmo2-1b-s1-105b-s5-r3"
-    ]
+    "tasks": []
    },
    {
     "label": "h200 \u00b7 1",
@@ -23625,11 +23621,11 @@
     "total": 44
    },
    "bm": {
-    "done": 43,
+    "done": 44,
     "total": 44
    }
   },
   "study_b_sft_checkpoints": 21
  },
- "content_digest": "320b2964dfe80e7d8e2a1d4d2167a8aabee717f714b52cba6b8a3da808caf012"
+ "content_digest": "916063bb5b85c4ce0b84016aed8f296b941dcef1470a55667aff78c0782a4567"
 }
