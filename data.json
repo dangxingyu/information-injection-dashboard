@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791067425.9446208,
- "generated_label": "2026-10-03 18:43 EDT",
+ "generated_at": 1791068334.019876,
+ "generated_label": "2026-10-03 18:58 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -1491,9 +1491,9 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 5,
+   "shards_running": 6,
    "shards_failed": 0,
-   "shards_queued": 3,
+   "shards_queued": 2,
    "status": "running",
    "created_at": 1791059328.2629294,
    "git_commit": "da4a42a6c6",
@@ -1682,33 +1682,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 5,
-   "shards_running": 3,
+   "shards_done": 6,
+   "shards_running": 2,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1791059318.4942987,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
-   "tokens_generated": 28102499,
-   "tokens_scored": 5710,
-   "gpu_hours": 3.2457,
-   "load_hours": 0.0649,
-   "tasks": 103,
-   "records": 103,
-   "success_rate": 0.980583,
-   "mean_bits": 84.379164,
-   "median_bits": 81.406566,
-   "mean_forced_bits": 83.229549,
-   "mean_forced_tokens": 52.349515,
+   "tokens_generated": 33788776,
+   "tokens_scored": 6729,
+   "gpu_hours": 3.9046,
+   "load_hours": 0.0761,
+   "tasks": 123,
+   "records": 123,
+   "success_rate": 0.98374,
+   "mean_bits": 83.685711,
+   "median_bits": 80.677985,
+   "mean_forced_bits": 82.607657,
+   "mean_forced_tokens": 51.910569,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 63.747573,
-   "fallback_rate": 0.834951,
+   "mean_tokens": 61.894309,
+   "fallback_rate": 0.845528,
    "mean_restarts": 0.0,
    "ends": {
     "check-failed": 2,
-    "success": 101
+    "success": 121
    }
   },
   {
@@ -24324,9 +24324,9 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 250,
+   "pending": 249,
    "running": 32,
-   "done": 3828,
+   "done": 3829,
    "failed": 833
   },
   "nodes": [
@@ -24416,14 +24416,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-bm-e2r-olmo2-1b-s1-4001b-s5",
      "he-bm-e2r-olmo2-1b-s1-4001b-s6",
      "he-bm-e2r-olmo2-1b-s1-42b-s0",
      "he-bm-e2r-olmo2-1b-s1-42b-s2",
      "he-bm-e2r-olmo2-1b-s1-42b-s3",
      "he-bm-e2r-olmo2-1b-s1-504b-s7",
      "he-bm-e2r-qwen2.5-0.5b-s5",
-     "he-bm-e2r-qwen2.5-1.5b-s4"
+     "he-bm-e2r-qwen2.5-1.5b-s4",
+     "he-bm-e2r-qwen2.5-1.5b-s5"
     ]
    },
    {
@@ -26559,5 +26559,5 @@
   },
   "study_b_sft_checkpoints": 22
  },
- "content_digest": "5a92fc0cab41891dcf5b43c119d7063ecebca60513e1437525ebf6721ed469a3"
+ "content_digest": "32970f4294c583a7ca4306c42392c5d2a27938bd6652fe1bd2a5698c457ff53b"
 }
