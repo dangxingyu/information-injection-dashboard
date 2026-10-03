@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791009346.2033696,
- "generated_label": "2026-10-03 02:35 EDT",
+ "generated_at": 1791010253.0458558,
+ "generated_label": "2026-10-03 02:50 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -4195,33 +4195,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 3,
+   "shards_done": 6,
    "shards_running": 0,
-   "shards_failed": 5,
+   "shards_failed": 2,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1790899164.9330652,
    "git_commit": "b4ae953a8d",
    "snapshot": "0be54cb922be",
-   "tokens_generated": 378524288,
-   "tokens_scored": 24826,
-   "gpu_hours": 4.6452,
-   "load_hours": 0.0402,
-   "tasks": 125,
-   "records": 125,
-   "success_rate": 0.984,
-   "mean_bits": 57.940052,
-   "median_bits": 43.788007,
-   "mean_forced_bits": 47.940522,
-   "mean_forced_tokens": 20.736,
+   "tokens_generated": 828348574,
+   "tokens_scored": 49621,
+   "gpu_hours": 10.1346,
+   "load_hours": 0.0821,
+   "tasks": 251,
+   "records": 251,
+   "success_rate": 0.976096,
+   "mean_bits": 59.900983,
+   "median_bits": 45.581174,
+   "mean_forced_bits": 50.32286,
+   "mean_forced_tokens": 21.478088,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 69.776,
-   "fallback_rate": 0.672,
+   "mean_tokens": 67.517928,
+   "fallback_rate": 0.693227,
    "mean_restarts": 0.0,
    "ends": {
-    "check-failed": 2,
-    "success": 123
+    "check-failed": 6,
+    "success": 245
    }
   },
   {
@@ -21380,8 +21380,8 @@
   "expected_gpus": 40,
   "stale_after_s": 120.0,
   "totals": {
-   "busy": 7,
-   "warm": 33,
+   "busy": 4,
+   "warm": 36,
    "idle": 0,
    "stale": 0,
    "reported": 40,
@@ -21389,8 +21389,8 @@
   },
   "queue": {
    "pending": 0,
-   "running": 7,
-   "done": 3695,
+   "running": 4,
+   "done": 3698,
    "failed": 822
   },
   "nodes": [
@@ -21427,22 +21427,20 @@
     "cells": [
      "warm",
      "warm",
-     "busy",
+     "warm",
      "warm",
      "warm",
      "warm",
      "warm",
      "warm"
     ],
-    "busy": 1,
-    "warm": 7,
+    "busy": 0,
+    "warm": 8,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
     "age_s": 0.0,
-    "tasks": [
-     "mb-bm-e2-olmo2-1b-s1-105b-s4-r3"
-    ]
+    "tasks": []
    },
    {
     "label": "h100-32a \u00b7 3",
@@ -21457,17 +21455,15 @@
      "warm",
      "warm",
      "warm",
-     "busy"
+     "warm"
     ],
-    "busy": 1,
-    "warm": 7,
+    "busy": 0,
+    "warm": 8,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
     "age_s": 0.0,
-    "tasks": [
-     "mb-bm-e2-olmo2-1b-s1-105b-s1-r3"
-    ]
+    "tasks": []
    },
    {
     "label": "h100-32a \u00b7 4",
@@ -21501,7 +21497,7 @@
     "gpus": 8,
     "cells": [
      "warm",
-     "busy",
+     "warm",
      "busy",
      "warm",
      "warm",
@@ -21509,14 +21505,13 @@
      "busy",
      "warm"
     ],
-    "busy": 3,
-    "warm": 5,
+    "busy": 2,
+    "warm": 6,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "mb-bm-e2-olmo2-1b-s1-105b-s3-r3",
      "svc-qwen3-32b-1790933373",
      "svc-qwen3-32b-1790950399"
     ]
@@ -23636,5 +23631,5 @@
   },
   "study_b_sft_checkpoints": 21
  },
- "content_digest": "b74365bc28044d132dc11bc752fd058abc611473f9a989252af1dc8cfd5c4df5"
+ "content_digest": "320b2964dfe80e7d8e2a1d4d2167a8aabee717f714b52cba6b8a3da808caf012"
 }
