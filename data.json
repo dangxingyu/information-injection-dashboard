@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791028403.7458956,
- "generated_label": "2026-10-03 07:53 EDT",
+ "generated_at": 1791029306.2285254,
+ "generated_label": "2026-10-03 08:08 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -21383,8 +21383,8 @@
    "busy": 0,
    "warm": 32,
    "idle": 0,
-   "stale": 8,
-   "reported": 40,
+   "stale": 0,
+   "reported": 32,
    "unreported": 0
   },
   "queue": {
@@ -21484,29 +21484,6 @@
     "stale": 0,
     "heartbeat_stale": false,
     "age_s": 0.0,
-    "tasks": []
-   },
-   {
-    "label": "h200 \u00b7 1",
-    "kind": "h200",
-    "group": "h200",
-    "gpus": 8,
-    "cells": [
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale",
-     "stale"
-    ],
-    "busy": 0,
-    "warm": 0,
-    "idle": 0,
-    "stale": 8,
-    "heartbeat_stale": true,
-    "age_s": 315.5,
     "tasks": []
    }
   ],
@@ -23617,5 +23594,5 @@
   },
   "study_b_sft_checkpoints": 21
  },
- "content_digest": "1b7d805f58760526d12d3e831924d78e4e9e76313cbdd1900bc2feae60ae25c2"
+ "content_digest": "7b9e0d50eb0348bb95c83fb3d3a8ae6b4633d32f50993a36b0786b2c8049436e"
 }
