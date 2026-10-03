@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791027496.1142542,
- "generated_label": "2026-10-03 07:38 EDT",
+ "generated_at": 1791028403.7458956,
+ "generated_label": "2026-10-03 07:53 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -21377,21 +21377,21 @@
   ]
  },
  "fleet": {
-  "expected_gpus": 40,
+  "expected_gpus": 32,
   "stale_after_s": 120.0,
   "totals": {
-   "busy": 2,
-   "warm": 38,
+   "busy": 0,
+   "warm": 32,
    "idle": 0,
-   "stale": 0,
+   "stale": 8,
    "reported": 40,
    "unreported": 0
   },
   "queue": {
-   "pending": 0,
-   "running": 2,
+   "pending": 2,
+   "running": 0,
    "done": 3700,
-   "failed": 823
+   "failed": 825
   },
   "nodes": [
    {
@@ -21492,35 +21492,26 @@
     "group": "h200",
     "gpus": 8,
     "cells": [
-     "busy",
-     "warm",
-     "warm",
-     "warm",
-     "warm",
-     "warm",
-     "busy",
-     "warm"
+     "stale",
+     "stale",
+     "stale",
+     "stale",
+     "stale",
+     "stale",
+     "stale",
+     "stale"
     ],
-    "busy": 2,
-    "warm": 6,
+    "busy": 0,
+    "warm": 0,
     "idle": 0,
-    "stale": 0,
-    "heartbeat_stale": false,
-    "age_s": 0.0,
-    "tasks": [
-     "svc-qwen3-32b-1790950399",
-     "svc-qwen3-32b-1791019918"
-    ]
+    "stale": 8,
+    "heartbeat_stale": true,
+    "age_s": 315.5,
+    "tasks": []
    }
   ],
   "holdings": {
    "allocations": [
-    {
-     "kind": "H200",
-     "gpus": 8,
-     "state": "working",
-     "label": "ailab (ailab-mg-lane)"
-    },
     {
      "kind": "H100",
      "gpus": 32,
@@ -21535,7 +21526,6 @@
     }
    ],
    "totals": {
-    "h200_working": 8,
     "h100_working": 32,
     "h100_standby": 32
    }
@@ -23627,5 +23617,5 @@
   },
   "study_b_sft_checkpoints": 21
  },
- "content_digest": "ec1505438058eafdb58e4f027a6be49619dfcef0735a676a9866414ca766fb11"
+ "content_digest": "1b7d805f58760526d12d3e831924d78e4e9e76313cbdd1900bc2feae60ae25c2"
 }
