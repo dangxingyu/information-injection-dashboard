@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790990285.515143,
- "generated_label": "2026-10-02 21:18 EDT",
+ "generated_at": 1790990455.7068324,
+ "generated_label": "2026-10-02 21:20 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -21246,15 +21246,15 @@
   "totals": {
    "busy": 40,
    "warm": 0,
-   "idle": 32,
+   "idle": 0,
    "stale": 0,
-   "reported": 72,
+   "reported": 40,
    "unreported": 0
   },
   "queue": {
-   "pending": 144,
+   "pending": 175,
    "running": 40,
-   "done": 3485,
+   "done": 3486,
    "failed": 821
   },
   "nodes": [
@@ -21296,52 +21296,6 @@
     "group": "h100-32a",
     "gpus": 8,
     "cells": [
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle"
-    ],
-    "busy": 0,
-    "warm": 0,
-    "idle": 8,
-    "stale": 0,
-    "heartbeat_stale": false,
-    "age_s": 107.5,
-    "tasks": []
-   },
-   {
-    "label": "h100-32a \u00b7 3",
-    "kind": "h100",
-    "group": "h100-32a",
-    "gpus": 8,
-    "cells": [
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle"
-    ],
-    "busy": 0,
-    "warm": 0,
-    "idle": 8,
-    "stale": 0,
-    "heartbeat_stale": false,
-    "age_s": 107.7,
-    "tasks": []
-   },
-   {
-    "label": "h100-32a \u00b7 4",
-    "kind": "h100",
-    "group": "h100-32a",
-    "gpus": 8,
-    "cells": [
      "busy",
      "busy",
      "busy",
@@ -21369,30 +21323,7 @@
     ]
    },
    {
-    "label": "h100-32a \u00b7 5",
-    "kind": "h100",
-    "group": "h100-32a",
-    "gpus": 8,
-    "cells": [
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle"
-    ],
-    "busy": 0,
-    "warm": 0,
-    "idle": 8,
-    "stale": 0,
-    "heartbeat_stale": false,
-    "age_s": 109.8,
-    "tasks": []
-   },
-   {
-    "label": "h100-32a \u00b7 6",
+    "label": "h100-32a \u00b7 3",
     "kind": "h100",
     "group": "h100-32a",
     "gpus": 8,
@@ -21424,7 +21355,7 @@
     ]
    },
    {
-    "label": "h100-32a \u00b7 7",
+    "label": "h100-32a \u00b7 4",
     "kind": "h100",
     "group": "h100-32a",
     "gpus": 8,
@@ -21454,29 +21385,6 @@
      "mb-bm-e2-olmo2-1b-s1-2999b-s6",
      "mb-bm-e2-olmo2-1b-s1-2999b-s7"
     ]
-   },
-   {
-    "label": "h100-32a \u00b7 8",
-    "kind": "h100",
-    "group": "h100-32a",
-    "gpus": 8,
-    "cells": [
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle",
-     "idle"
-    ],
-    "busy": 0,
-    "warm": 0,
-    "idle": 8,
-    "stale": 0,
-    "heartbeat_stale": false,
-    "age_s": 106.0,
-    "tasks": []
    },
    {
     "label": "h200 \u00b7 1",
@@ -21557,28 +21465,45 @@
     "name": "consistency (Spearman with post-SFT accuracy)",
     "values": {
      "injection": [
-      0.9276336570439175,
-      0.9761904761904762,
-      0.8181818181818182,
-      0.8787878787878788
+      0.965306063996628,
+      0.0,
+      0.9228070175438595,
+      0.9421052631578946
      ],
      "free_pass": [
-      0.6912323252351663,
-      0.972027972027972,
-      0.9440559440559441,
-      0.951048951048951
+      0.8415746738919202,
+      0.9690402476780184,
+      0.8155844155844156,
+      0.8675324675324675
      ],
      "ref_bits": [
-      0.8245664793414421,
-      0.9440559440559441,
-      0.2727272727272727,
-      0.11188811188811189
+      0.8680111370309371,
+      0.0,
+      0.7792207792207793,
+      0.8363636363636363
      ],
      "base_acc": [
-      0.8215124035022121,
-      0.9440559440559441,
-      0.972027972027972,
-      0.8441343943477072
+      0.7683901537090237,
+      0.9131719388889451,
+      0.9506493506493506,
+      0.8955441392394433
+     ]
+    }
+   },
+   {
+    "name": "deepseek-coder-1.3b",
+    "values": {
+     "post-SFT accuracy (normalized)": [
+      0.627450980392157,
+      0.857142857142857,
+      0.3520309477756286,
+      0.27814569536423844
+     ],
+     "injection score (normalized, fewer bits = 1)": [
+      0.9432597676966317,
+      null,
+      0.9660438223292487,
+      0.9660438223292487
      ]
     }
    },
@@ -21586,16 +21511,16 @@
     "name": "llama3.2-1b",
     "values": {
      "post-SFT accuracy (normalized)": [
-      0.2736842105263158,
-      0.5627906976744186,
+      0.25490196078431376,
+      0.5401785714285713,
       0.3984526112185687,
       0.27483443708609273
      ],
      "injection score (normalized, fewer bits = 1)": [
-      0.8295351749296891,
-      0.8250830558286731,
-      0.8109790428474893,
-      0.8109790428474893
+      0.8302903641261534,
+      null,
+      0.8302903641261534,
+      0.8302903641261534
      ]
     }
    },
@@ -21603,16 +21528,33 @@
     "name": "olmo2-1b-main",
     "values": {
      "post-SFT accuracy (normalized)": [
-      0.07368421052631578,
-      0.26046511627906976,
+      0.06862745098039215,
+      0.25,
       0.6083172147001934,
       0.228476821192053
      ],
      "injection score (normalized, fewer bits = 1)": [
+      0.4891959864499015,
       null,
-      0.35837235876811135,
-      0.7001676364009817,
-      0.7001676364009817
+      0.4891959864499015,
+      0.4891959864499015
+     ]
+    }
+   },
+   {
+    "name": "olmo2-1b-s1-1007b",
+    "values": {
+     "post-SFT accuracy (normalized)": [
+      0.05882352941176472,
+      0.18749999999999997,
+      0.11605415860735009,
+      0.08609271523178809
+     ],
+     "injection score (normalized, fewer bits = 1)": [
+      0.33601832904999707,
+      null,
+      0.33601832904999707,
+      0.33601832904999707
      ]
     }
    },
@@ -21620,16 +21562,16 @@
     "name": "olmo2-1b-s1-105b",
     "values": {
      "post-SFT accuracy (normalized)": [
-      0.010526315789473684,
-      0.09302325581395347,
+      0.00980392156862745,
+      0.08928571428571426,
       0.031914893617021274,
       0.036423841059602655
      ],
      "injection score (normalized, fewer bits = 1)": [
+      0.19586862920117576,
       null,
-      null,
-      null,
-      null
+      0.19586862920117576,
+      0.19586862920117576
      ]
     }
    },
@@ -21637,16 +21579,33 @@
     "name": "olmo2-1b-s1-1993b",
     "values": {
      "post-SFT accuracy (normalized)": [
-      0.10526315789473685,
-      0.2,
+      0.09803921568627452,
+      0.19196428571428573,
       0.1518375241779497,
       0.09602649006622516
      ],
      "injection score (normalized, fewer bits = 1)": [
-      0.01086220396126758,
-      0.1637186003963872,
-      0.30921021996631637,
-      0.30921021996631637
+      0.3319123532232431,
+      null,
+      0.3319123532232431,
+      0.3319123532232431
+     ]
+    }
+   },
+   {
+    "name": "olmo2-1b-s1-210b",
+    "values": {
+     "post-SFT accuracy (normalized)": [
+      0.0392156862745098,
+      0.0982142857142857,
+      0.05415860735009671,
+      0.02317880794701987
+     ],
+     "injection score (normalized, fewer bits = 1)": [
+      0.26563382139817127,
+      null,
+      0.26563382139817127,
+      0.26563382139817127
      ]
     }
    },
@@ -21660,10 +21619,27 @@
       0.006622516556291391
      ],
      "injection score (normalized, fewer bits = 1)": [
+      0.0,
       null,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   {
+    "name": "olmo2-1b-s1-2999b",
+    "values": {
+     "post-SFT accuracy (normalized)": [
+      0.06862745098039215,
+      0.23660714285714285,
+      0.2234042553191489,
+      0.10596026490066225
+     ],
+     "injection score (normalized, fewer bits = 1)": [
+      0.3559685663737513,
       null,
-      null,
-      null
+      0.3559685663737513,
+      0.3559685663737513
      ]
     }
    },
@@ -21671,16 +21647,33 @@
     "name": "olmo2-1b-s1-4001b",
     "values": {
      "post-SFT accuracy (normalized)": [
-      0.10526315789473685,
-      0.25581395348837205,
+      0.09803921568627452,
+      0.24553571428571425,
       0.2350096711798839,
       0.08940397350993379
      ],
      "injection score (normalized, fewer bits = 1)": [
-      0.12609761985545898,
-      0.2295001968155621,
-      0.3734573200615111,
-      0.3734573200615111
+      0.42250553568851157,
+      null,
+      0.42250553568851157,
+      0.42250553568851157
+     ]
+    }
+   },
+   {
+    "name": "olmo2-1b-s1-42b",
+    "values": {
+     "post-SFT accuracy (normalized)": [
+      0.0392156862745098,
+      0.06696428571428571,
+      0.00967117988394584,
+      0.02649006622516556
+     ],
+     "injection score (normalized, fewer bits = 1)": [
+      0.1400211656877297,
+      null,
+      0.1400211656877297,
+      0.1400211656877297
      ]
     }
    },
@@ -21688,16 +21681,84 @@
     "name": "olmo2-1b-s1-504b",
     "values": {
      "post-SFT accuracy (normalized)": [
-      0.05263157894736842,
-      0.15348837209302324,
+      0.049019607843137254,
+      0.14732142857142855,
       0.08704061895551257,
       0.056291390728476824
      ],
      "injection score (normalized, fewer bits = 1)": [
+      0.2944320890254264,
       null,
-      0.0,
-      0.5327003633706348,
-      0.5327003633706348
+      0.2944320890254264,
+      0.2944320890254264
+     ]
+    }
+   },
+   {
+    "name": "qwen2.5-0.5b",
+    "values": {
+     "post-SFT accuracy (normalized)": [
+      0.4215686274509804,
+      0.6562499999999999,
+      0.5299806576402322,
+      0.46357615894039733
+     ],
+     "injection score (normalized, fewer bits = 1)": [
+      0.8466582428840965,
+      null,
+      0.8466582428840965,
+      0.8466582428840965
+     ]
+    }
+   },
+   {
+    "name": "qwen2.5-1.5b",
+    "values": {
+     "post-SFT accuracy (normalized)": [
+      0.7058823529411765,
+      0.8973214285714285,
+      0.9129593810444874,
+      0.8774834437086093
+     ],
+     "injection score (normalized, fewer bits = 1)": [
+      0.9114618153541636,
+      null,
+      0.9114618153541636,
+      0.9114618153541636
+     ]
+    }
+   },
+   {
+    "name": "qwen2.5-coder-0.5b",
+    "values": {
+     "post-SFT accuracy (normalized)": [
+      0.5588235294117647,
+      0.6874999999999999,
+      0.54642166344294,
+      0.4768211920529801
+     ],
+     "injection score (normalized, fewer bits = 1)": [
+      0.9159234640406376,
+      null,
+      0.9159234640406376,
+      0.9159234640406376
+     ]
+    }
+   },
+   {
+    "name": "qwen2.5-coder-1.5b",
+    "values": {
+     "post-SFT accuracy (normalized)": [
+      1.0,
+      1.0,
+      0.9216634429400387,
+      0.8344370860927153
+     ],
+     "injection score (normalized, fewer bits = 1)": [
+      1.0,
+      null,
+      1.0,
+      1.0
      ]
     }
    },
@@ -21705,16 +21766,16 @@
     "name": "qwen3-0.6b-base",
     "values": {
      "post-SFT accuracy (normalized)": [
-      0.5368421052631579,
-      0.7674418604651163,
+      0.5,
+      0.7366071428571428,
       0.7901353965183753,
       0.728476821192053
      ],
      "injection score (normalized, fewer bits = 1)": [
-      1.0,
-      0.9412742967672124,
-      0.9104299684142577,
-      0.9104299684142577
+      0.9175714647251424,
+      null,
+      0.9175714647251424,
+      0.9175714647251424
      ]
     }
    },
@@ -21722,16 +21783,16 @@
     "name": "qwen3-1.7b-base",
     "values": {
      "post-SFT accuracy (normalized)": [
-      1.0,
-      1.0,
+      0.9313725490196079,
+      0.9598214285714285,
       1.0,
       1.0
      ],
      "injection score (normalized, fewer bits = 1)": [
+      0.9911513045733027,
       null,
-      1.0,
-      1.0,
-      1.0
+      0.9911513045733027,
+      0.9911513045733027
      ]
     }
    },
@@ -21739,16 +21800,16 @@
     "name": "smollm2-1.7b",
     "values": {
      "post-SFT accuracy (normalized)": [
-      0.4,
-      0.7255813953488371,
+      0.37254901960784315,
+      0.6964285714285713,
       0.5319148936170213,
       0.3874172185430464
      ],
      "injection score (normalized, fewer bits = 1)": [
-      0.6454466397307119,
+      0.8887219556368918,
       null,
-      0.5475339571853004,
-      0.5475339571853004
+      0.8887219556368918,
+      0.8887219556368918
      ]
     }
    },
@@ -21757,15 +21818,15 @@
     "values": {
      "post-SFT accuracy (normalized)": [
       0.0,
-      0.14883720930232558,
+      0.14285714285714285,
       0.0,
       0.0
      ],
      "injection score (normalized, fewer bits = 1)": [
-      0.0,
       null,
-      0.0,
-      0.0
+      null,
+      null,
+      null
      ]
     }
    },
@@ -21773,21 +21834,21 @@
     "name": "smollm2-360m",
     "values": {
      "post-SFT accuracy (normalized)": [
-      0.1789473684210526,
-      0.43255813953488365,
+      0.16666666666666666,
+      0.41517857142857134,
       0.13249516441005804,
       0.12582781456953643
      ],
      "injection score (normalized, fewer bits = 1)": [
       null,
-      0.3443907651834698,
-      0.6936340427993792,
-      0.6936340427993792
+      null,
+      null,
+      null
      ]
     }
    }
   ],
-  "note": "Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
+  "note": "Interim (2026-10-02 21:30), fixed harness h2 / environment 2 (e2): injection measured on HumanEval+ only (19 checkpoints with post-SFT results; MBPP+ e2 injection pending). Normalization is min-max across checkpoints per axis. GSM8K and MATH-500 use the mean of the code-suite measurements as predictor. Consistency card: Spearman rho (clipped at 0) of each pre-post-training predictor with post-SFT accuracy."
  },
  "long_horizon": {
   "students": [
@@ -23465,5 +23526,5 @@
   },
   "study_b_sft_checkpoints": 21
  },
- "content_digest": "fe463327a4ce0a463129356e1851c2d131df9f03d1d73a7824156527707566d6"
+ "content_digest": "6872d948af523c30157dfed70f9c80efb9cd4202652699c557592195fd93799b"
 }
