@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791062885.8026054,
- "generated_label": "2026-10-03 17:28 EDT",
+ "generated_at": 1791063795.8611681,
+ "generated_label": "2026-10-03 17:43 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -1827,9 +1827,9 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 5,
+   "shards_running": 6,
    "shards_failed": 0,
-   "shards_queued": 3,
+   "shards_queued": 2,
    "status": "running",
    "created_at": 1791059315.9408205,
    "git_commit": "da4a42a6c6",
@@ -1970,33 +1970,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 3,
-   "shards_running": 3,
+   "shards_done": 4,
+   "shards_running": 2,
    "shards_failed": 2,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1791059313.3792048,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
-   "tokens_generated": 14948486,
-   "tokens_scored": 3048,
-   "gpu_hours": 1.9106,
-   "load_hours": 0.0391,
-   "tasks": 62,
-   "records": 62,
-   "success_rate": 0.983871,
-   "mean_bits": 87.404453,
-   "median_bits": 81.746845,
-   "mean_forced_bits": 86.445354,
-   "mean_forced_tokens": 47.774194,
+   "tokens_generated": 20268307,
+   "tokens_scored": 4067,
+   "gpu_hours": 2.5504,
+   "load_hours": 0.0504,
+   "tasks": 82,
+   "records": 82,
+   "success_rate": 0.987805,
+   "mean_bits": 87.848187,
+   "median_bits": 82.90559,
+   "mean_forced_bits": 86.884173,
+   "mean_forced_tokens": 48.231707,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 62.532258,
-   "fallback_rate": 0.870968,
+   "mean_tokens": 59.95122,
+   "fallback_rate": 0.878049,
    "mean_restarts": 0.0,
    "ends": {
     "check-failed": 1,
-    "success": 61
+    "success": 81
    }
   },
   {
@@ -24306,9 +24306,9 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 306,
+   "pending": 305,
    "running": 25,
-   "done": 3777,
+   "done": 3778,
    "failed": 833
   },
   "nodes": [
@@ -24391,14 +24391,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-bm-e2r-olmo2-1b-s1-1007b-s5",
      "he-bm-e2r-olmo2-1b-s1-1007b-s6",
      "he-bm-e2r-olmo2-1b-s1-105b-s1",
      "he-bm-e2r-olmo2-1b-s1-105b-s2",
      "he-bm-e2r-olmo2-1b-s1-105b-s4",
      "he-bm-e2r-olmo2-1b-s1-1993b-s4",
      "he-bm-e2r-olmo2-1b-s1-1993b-s7",
-     "he-bm-e2r-olmo2-1b-s1-210b-s4"
+     "he-bm-e2r-olmo2-1b-s1-210b-s4",
+     "he-bm-e2r-olmo2-1b-s1-210b-s5"
     ]
    },
    {
@@ -26534,5 +26534,5 @@
   },
   "study_b_sft_checkpoints": 21
  },
- "content_digest": "9d543194bdd10b49fdf076fbd6625e93a0298263f589c9954309686bcd20f867"
+ "content_digest": "dbff549dc03e4ab48951d14751ad483182d646d7bce15aca0dcf4acd5840cbd8"
 }
