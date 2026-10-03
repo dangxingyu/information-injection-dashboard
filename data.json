@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791064703.9804296,
- "generated_label": "2026-10-03 17:58 EDT",
+ "generated_at": 1791065605.7976553,
+ "generated_label": "2026-10-03 18:13 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -1683,9 +1683,9 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 2,
+   "shards_running": 6,
    "shards_failed": 0,
-   "shards_queued": 6,
+   "shards_queued": 2,
    "status": "running",
    "created_at": 1791059318.4942987,
    "git_commit": "da4a42a6c6",
@@ -1826,33 +1826,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 2,
-   "shards_running": 6,
+   "shards_done": 6,
+   "shards_running": 2,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1791059315.9408205,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
-   "tokens_generated": 10292446,
-   "tokens_scored": 2372,
-   "gpu_hours": 1.2731,
-   "load_hours": 0.0262,
-   "tasks": 42,
-   "records": 42,
-   "success_rate": 0.97619,
-   "mean_bits": 92.869004,
-   "median_bits": 87.628485,
-   "mean_forced_bits": 92.164836,
-   "mean_forced_tokens": 53.952381,
+   "tokens_generated": 29659370,
+   "tokens_scored": 6729,
+   "gpu_hours": 3.8005,
+   "load_hours": 0.0752,
+   "tasks": 123,
+   "records": 123,
+   "success_rate": 0.99187,
+   "mean_bits": 99.265729,
+   "median_bits": 89.909247,
+   "mean_forced_bits": 98.507754,
+   "mean_forced_tokens": 53.04065,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 56.285714,
-   "fallback_rate": 0.928571,
+   "mean_tokens": 56.04878,
+   "fallback_rate": 0.910569,
    "mean_restarts": 0.0,
    "ends": {
     "check-failed": 1,
-    "success": 41
+    "success": 122
    }
   },
   {
@@ -24315,9 +24315,9 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 284,
+   "pending": 281,
    "running": 25,
-   "done": 3799,
+   "done": 3802,
    "failed": 833
   },
   "nodes": [
@@ -24400,14 +24400,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-bm-e2r-olmo2-1b-s1-210b-s4",
-     "he-bm-e2r-olmo2-1b-s1-210b-s5",
      "he-bm-e2r-olmo2-1b-s1-210b-s6",
      "he-bm-e2r-olmo2-1b-s1-21b-s1",
      "he-bm-e2r-olmo2-1b-s1-21b-s2",
      "he-bm-e2r-olmo2-1b-s1-21b-s3",
      "he-bm-e2r-olmo2-1b-s1-2999b-s0",
-     "he-bm-e2r-olmo2-1b-s1-2999b-s6"
+     "he-bm-e2r-olmo2-1b-s1-2999b-s6",
+     "he-bm-e2r-olmo2-1b-s1-4001b-s4",
+     "he-bm-e2r-olmo2-1b-s1-4001b-s5"
     ]
    },
    {
@@ -24432,14 +24432,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-bm-e2r-olmo2-1b-s1-210b-s3",
      "he-bm-e2r-olmo2-1b-s1-210b-s7",
      "he-bm-e2r-olmo2-1b-s1-21b-s0",
      "he-bm-e2r-olmo2-1b-s1-21b-s4",
      "he-bm-e2r-olmo2-1b-s1-21b-s7",
      "he-bm-e2r-olmo2-1b-s1-2999b-s5",
      "he-bm-e2r-olmo2-1b-s1-4001b-s0",
-     "he-bm-e2r-olmo2-1b-s1-4001b-s1"
+     "he-bm-e2r-olmo2-1b-s1-4001b-s1",
+     "he-bm-e2r-olmo2-1b-s1-4001b-s3"
     ]
    }
   ],
@@ -26543,5 +26543,5 @@
   },
   "study_b_sft_checkpoints": 21
  },
- "content_digest": "1e13924562b66433abccb4513caba89b59d6e29b3b8d581f48db36be69428fe4"
+ "content_digest": "7dbd4ae40921a6b4c42530ab02f52f3af38e35c5429011616fdd78bc82537a43"
 }
