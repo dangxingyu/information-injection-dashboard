@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791004803.2330334,
- "generated_label": "2026-10-03 01:20 EDT",
+ "generated_at": 1791005716.1793158,
+ "generated_label": "2026-10-03 01:35 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -3379,33 +3379,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 4,
-   "shards_running": 4,
+   "shards_done": 7,
+   "shards_running": 1,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790899178.0652068,
    "git_commit": "b4ae953a8d",
    "snapshot": "0be54cb922be",
-   "tokens_generated": 124266951,
-   "tokens_scored": 31735,
-   "gpu_hours": 2.6595,
-   "load_hours": 0.0518,
-   "tasks": 167,
-   "records": 167,
-   "success_rate": 0.982036,
-   "mean_bits": 33.175694,
-   "median_bits": 17.377002,
-   "mean_forced_bits": 27.311822,
-   "mean_forced_tokens": 19.305389,
+   "tokens_generated": 227134043,
+   "tokens_scored": 58693,
+   "gpu_hours": 6.1376,
+   "load_hours": 0.0918,
+   "tasks": 293,
+   "records": 293,
+   "success_rate": 0.976109,
+   "mean_bits": 33.040049,
+   "median_bits": 17.48576,
+   "mean_forced_bits": 27.066349,
+   "mean_forced_tokens": 19.518771,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 52.826347,
-   "fallback_rate": 0.467066,
+   "mean_tokens": 51.351536,
+   "fallback_rate": 0.464164,
    "mean_restarts": 0.0,
    "ends": {
-    "check-failed": 3,
-    "success": 164
+    "check-failed": 7,
+    "success": 286
    }
   },
   {
@@ -21370,8 +21370,8 @@
   "expected_gpus": 40,
   "stale_after_s": 120.0,
   "totals": {
-   "busy": 35,
-   "warm": 5,
+   "busy": 32,
+   "warm": 8,
    "idle": 0,
    "stale": 0,
    "reported": 40,
@@ -21379,8 +21379,8 @@
   },
   "queue": {
    "pending": 0,
-   "running": 35,
-   "done": 3667,
+   "running": 32,
+   "done": 3670,
    "failed": 822
   },
   "nodes": [
@@ -21396,11 +21396,11 @@
      "busy",
      "busy",
      "busy",
-     "busy",
+     "warm",
      "busy"
     ],
-    "busy": 7,
-    "warm": 1,
+    "busy": 6,
+    "warm": 2,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
@@ -21411,7 +21411,6 @@
      "mb-bm-e2-olmo2-1b-s1-1007b-s5-r3",
      "mb-bm-e2-olmo2-1b-s1-1007b-s7-r3",
      "mb-bm-e2-olmo2-1b-s1-105b-s7-r3",
-     "mb-bm-e2-smollm2-135m-s3",
      "mb-bm-e2-smollm2-135m-s7"
     ]
    },
@@ -21453,7 +21452,7 @@
     "gpus": 8,
     "cells": [
      "busy",
-     "busy",
+     "warm",
      "busy",
      "busy",
      "warm",
@@ -21461,8 +21460,8 @@
      "busy",
      "busy"
     ],
-    "busy": 7,
-    "warm": 1,
+    "busy": 6,
+    "warm": 2,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
@@ -21473,8 +21472,7 @@
      "mb-bm-e2-olmo2-1b-s1-1007b-s4-r3",
      "mb-bm-e2-olmo2-1b-s1-105b-s0-r3",
      "mb-bm-e2-olmo2-1b-s1-105b-s1-r3",
-     "mb-bm-e2-olmo2-1b-s1-105b-s6-r3",
-     "mb-bm-e2-smollm2-135m-s1"
+     "mb-bm-e2-olmo2-1b-s1-105b-s6-r3"
     ]
    },
    {
@@ -21520,10 +21518,10 @@
      "busy",
      "busy",
      "busy",
-     "busy"
+     "warm"
     ],
-    "busy": 8,
-    "warm": 0,
+    "busy": 7,
+    "warm": 1,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
@@ -21533,7 +21531,6 @@
      "mb-bm-e2-olmo2-1b-main-s1-r3",
      "mb-bm-e2-olmo2-1b-s1-1007b-s1-r3",
      "mb-bm-e2-olmo2-1b-s1-105b-s3-r3",
-     "mb-bm-e2-smollm2-135m-s5",
      "mb-bm-e2-smollm2-360m-s7",
      "svc-qwen3-32b-1790933373",
      "svc-qwen3-32b-1790950399"
@@ -23654,5 +23651,5 @@
   },
   "study_b_sft_checkpoints": 21
  },
- "content_digest": "50b7e426ec5606e99d6f226a156a5ed677defbb0f4f2cb956b06b310ee49468e"
+ "content_digest": "c7a680ce6302d2a33bbbece6ae65667aed7a65bb823a37dbeeb9be28f7a14914"
 }
