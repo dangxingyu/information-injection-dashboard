@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791069235.8415408,
- "generated_label": "2026-10-03 19:13 EDT",
+ "generated_at": 1791070145.9784045,
+ "generated_label": "2026-10-03 19:29 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -1251,10 +1251,10 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 0,
+   "shards_running": 2,
    "shards_failed": 0,
-   "shards_queued": 8,
-   "status": "queued",
+   "shards_queued": 6,
+   "status": "running",
    "created_at": 1791059336.202934,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
@@ -1298,31 +1298,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 0,
-   "shards_running": 4,
+   "shards_done": 2,
+   "shards_running": 6,
    "shards_failed": 0,
-   "shards_queued": 4,
+   "shards_queued": 0,
    "status": "running",
    "created_at": 1791059335.353874,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 209064,
+   "tokens_scored": 2337,
+   "gpu_hours": 0.0301,
+   "load_hours": 0.0259,
+   "tasks": 40,
+   "records": 40,
+   "success_rate": 1.0,
+   "mean_bits": 4.035753,
+   "median_bits": 3.921039,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 73.55,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 40
+   }
   },
   {
    "name": "he-bm-e2r-qwen3-0.6b-base",
@@ -1492,33 +1494,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 2,
-   "shards_running": 6,
+   "shards_done": 6,
+   "shards_running": 2,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1791059328.2629294,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
-   "tokens_generated": 912121,
-   "tokens_scored": 2376,
-   "gpu_hours": 1.1587,
-   "load_hours": 0.0269,
-   "tasks": 42,
-   "records": 42,
-   "success_rate": 0.97619,
-   "mean_bits": 17.55923,
-   "median_bits": 8.436775,
-   "mean_forced_bits": 11.901734,
-   "mean_forced_tokens": 14.309524,
+   "tokens_generated": 2848439,
+   "tokens_scored": 6772,
+   "gpu_hours": 3.4839,
+   "load_hours": 0.0782,
+   "tasks": 123,
+   "records": 123,
+   "success_rate": 0.98374,
+   "mean_bits": 24.031882,
+   "median_bits": 8.368023,
+   "mean_forced_bits": 19.211892,
+   "mean_forced_tokens": 18.926829,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 92.214286,
-   "fallback_rate": 0.166667,
+   "mean_tokens": 88.333333,
+   "fallback_rate": 0.252033,
    "mean_restarts": 0.0,
    "ends": {
-    "check-failed": 1,
-    "success": 41
+    "check-failed": 2,
+    "success": 121
    }
   },
   {
@@ -24338,9 +24340,9 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 219,
+   "pending": 213,
    "running": 32,
-   "done": 3859,
+   "done": 3865,
    "failed": 833
   },
   "nodes": [
@@ -24366,14 +24368,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-bm-e2r-qwen2.5-1.5b-s2",
      "he-bm-e2r-qwen2.5-coder-1.5b-s2",
      "he-bm-e2r-qwen3-0.6b-base-s0",
      "he-bm-e2r-qwen3-0.6b-base-s3",
      "he-bm-e2r-qwen3-0.6b-base-s4",
      "he-bm-e2r-qwen3-1.7b-base-s1",
      "he-bm-e2r-qwen3-1.7b-base-s2",
-     "he-bm-e2r-qwen3-1.7b-base-s3"
+     "he-bm-e2r-qwen3-1.7b-base-s3",
+     "he-bm-e2r-qwen3-1.7b-base-s4"
     ]
    },
    {
@@ -24430,14 +24432,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-bm-e2r-qwen2.5-1.5b-s4",
-     "he-bm-e2r-qwen2.5-1.5b-s5",
      "he-bm-e2r-qwen2.5-1.5b-s6",
      "he-bm-e2r-qwen2.5-coder-0.5b-s1",
      "he-bm-e2r-qwen2.5-coder-0.5b-s3",
      "he-bm-e2r-qwen2.5-coder-0.5b-s4",
      "he-bm-e2r-qwen2.5-coder-1.5b-s5",
-     "he-bm-e2r-qwen3-0.6b-base-s6"
+     "he-bm-e2r-qwen3-0.6b-base-s6",
+     "he-bm-e2r-qwen3-4b-base-s0",
+     "he-bm-e2r-qwen3-4b-base-s1"
     ]
    },
    {
@@ -24462,14 +24464,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-bm-e2r-qwen2.5-1.5b-s3",
      "he-bm-e2r-qwen2.5-1.5b-s7",
      "he-bm-e2r-qwen2.5-coder-0.5b-s0",
      "he-bm-e2r-qwen2.5-coder-0.5b-s2",
      "he-bm-e2r-qwen3-0.6b-base-s1",
      "he-bm-e2r-qwen3-0.6b-base-s5",
      "he-bm-e2r-qwen3-0.6b-base-s7",
-     "he-bm-e2r-qwen3-1.7b-base-s0"
+     "he-bm-e2r-qwen3-1.7b-base-s0",
+     "he-bm-e2r-qwen3-1.7b-base-s7"
     ]
    }
   ],
@@ -26573,5 +26575,5 @@
   },
   "study_b_sft_checkpoints": 22
  },
- "content_digest": "8a7e021a89c0d9d94bee6056b64cc0d030047630e02e43478d5482b158caf324"
+ "content_digest": "232fa0ad163f22a5618ab17b9999a519a9330358b4ee4f2b5f1ba78e403377ab"
 }
