@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790993006.0462873,
- "generated_label": "2026-10-02 22:03 EDT",
+ "generated_at": 1790993916.062566,
+ "generated_label": "2026-10-02 22:18 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -7330,36 +7330,39 @@
    "runs": 32,
    "limit": 0,
    "shards": 8,
-   "shards_done": 0,
-   "shards_running": 4,
+   "shards_done": 1,
+   "shards_running": 6,
    "shards_failed": 0,
-   "shards_queued": 4,
+   "shards_queued": 1,
    "status": "running",
    "created_at": 1790890379.9090455,
    "git_commit": "6b568d1b88",
    "snapshot": "16618a63d36d",
-   "tokens_generated": 0,
+   "tokens_generated": 782451,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {},
-   "alpha": null,
-   "solvable_tasks": 0,
-   "zero_success_tasks": 0,
-   "ideal_bits": null,
-   "ideal_lower_bound_bits": null
+   "gpu_hours": 0.289,
+   "load_hours": 0.0138,
+   "tasks": 42,
+   "records": 1344,
+   "success_rate": 0.157738,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 56.165923,
+   "mean_tokens": 682.251488,
+   "fallback_rate": 0.0,
+   "mean_restarts": 1.466518,
+   "ends": {
+    "horizon": 1132,
+    "success": 212
+   },
+   "alpha": 0.157738,
+   "solvable_tasks": 24,
+   "zero_success_tasks": 18,
+   "ideal_bits": 2.76941,
+   "ideal_lower_bound_bits": 3.075704
   },
   {
    "name": "he-ref-e2-smollm2-360m",
@@ -9077,39 +9080,39 @@
    "runs": 32,
    "limit": 0,
    "shards": 8,
-   "shards_done": 6,
-   "shards_running": 2,
+   "shards_done": 8,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1790890328.3985507,
    "git_commit": "6b568d1b88",
    "snapshot": "16618a63d36d",
-   "tokens_generated": 5462317,
+   "tokens_generated": 7237773,
    "tokens_scored": 0,
-   "gpu_hours": 1.3483,
-   "load_hours": 0.0788,
-   "tasks": 252,
-   "records": 8064,
-   "success_rate": 0.025422,
+   "gpu_hours": 1.8986,
+   "load_hours": 0.105,
+   "tasks": 334,
+   "records": 10688,
+   "success_rate": 0.024326,
    "mean_bits": 0.0,
    "median_bits": 0.0,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 0.0,
    "mean_select_blocks": 0.0,
-   "mean_free_blocks": 57.814608,
-   "mean_tokens": 759.343254,
+   "mean_free_blocks": 58.098802,
+   "mean_tokens": 759.69171,
    "fallback_rate": 0.0,
-   "mean_restarts": 1.220734,
+   "mean_restarts": 1.236433,
    "ends": {
-    "horizon": 7859,
-    "success": 205
+    "horizon": 10428,
+    "success": 260
    },
-   "alpha": 0.025422,
-   "solvable_tasks": 52,
-   "zero_success_tasks": 200,
-   "ideal_bits": 3.745866,
-   "ideal_lower_bound_bits": 3.538111
+   "alpha": 0.024326,
+   "solvable_tasks": 69,
+   "zero_success_tasks": 265,
+   "ideal_bits": 3.764216,
+   "ideal_lower_bound_bits": 3.541964
   },
   {
    "name": "he-ref-e2-smollm2-135m",
@@ -21258,9 +21261,9 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 161,
+   "pending": 158,
    "running": 40,
-   "done": 3500,
+   "done": 3503,
    "failed": 821
   },
   "nodes": [
@@ -21414,12 +21417,12 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "mb-free32-e2-smollm2-135m-s6",
-     "mb-free32-e2-smollm2-135m-s7",
      "mb-free32-e2-smollm2-360m-s0",
-     "mb-free32-e2-smollm2-360m-s1",
      "mb-free32-e2-smollm2-360m-s2",
      "mb-free32-e2-smollm2-360m-s3",
+     "mb-free32-e2-smollm2-360m-s4",
+     "mb-free32-e2-smollm2-360m-s5",
+     "mb-free32-e2-smollm2-360m-s6",
      "svc-qwen3-32b-1790933373",
      "svc-qwen3-32b-1790950399"
     ]
@@ -23518,7 +23521,7 @@
   ],
   "study_b_measurements": {
    "free32": {
-    "done": 42,
+    "done": 43,
     "total": 44
    },
    "ref": {
@@ -23532,5 +23535,5 @@
   },
   "study_b_sft_checkpoints": 21
  },
- "content_digest": "bb39f63b61bcf80b928ffb66d0f265c441809a52a16dc06959abc711211f9a70"
+ "content_digest": "b4c9f9ad6efbe233e72ac38e5bfd6a54bee5077d03a4795d73d1f62ba761e6be"
 }
