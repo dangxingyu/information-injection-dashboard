@@ -1,0 +1,1 @@
+{"name":"lh-v19g-otau-r6-qwen3-8b-base","tasks":[{"task_id":"tau-retail-48","runs":6,"successes":6,"success_rate":1.0,"mean_bits":2.509927,"mean_forced_bits":0.0,"mean_forced_tokens":0.0,"mean_select_blocks":0.0,"mean_free_blocks":10.0,"mean_tokens":1927.5,"fallback_rate":0.0,"mean_restarts":0.0,"ends":{"success":6}}]}
