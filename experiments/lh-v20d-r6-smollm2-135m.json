@@ -1,0 +1,1 @@
+{"name":"lh-v20d-r6-smollm2-135m","tasks":[{"task_id":"tb-recover-accuracy-log","runs":6,"successes":6,"success_rate":1.0,"mean_bits":386.416086,"mean_forced_bits":386.416086,"mean_forced_tokens":449.0,"mean_select_blocks":0.0,"mean_free_blocks":0.0,"mean_tokens":451.0,"fallback_rate":0.0,"mean_restarts":0.0,"ends":{"success":6}}]}
