@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791018416.0077922,
- "generated_label": "2026-10-03 05:06 EDT",
+ "generated_at": 1791020236.0639634,
+ "generated_label": "2026-10-03 05:37 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -21391,7 +21391,7 @@
    "pending": 0,
    "running": 2,
    "done": 3700,
-   "failed": 822
+   "failed": 823
   },
   "nodes": [
    {
@@ -21492,9 +21492,9 @@
     "group": "h200",
     "gpus": 8,
     "cells": [
-     "warm",
-     "warm",
      "busy",
+     "warm",
+     "warm",
      "warm",
      "warm",
      "warm",
@@ -21508,8 +21508,8 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "svc-qwen3-32b-1790933373",
-     "svc-qwen3-32b-1790950399"
+     "svc-qwen3-32b-1790950399",
+     "svc-qwen3-32b-1791019918"
     ]
    }
   ],
@@ -23627,5 +23627,5 @@
   },
   "study_b_sft_checkpoints": 21
  },
- "content_digest": "916063bb5b85c4ce0b84016aed8f296b941dcef1470a55667aff78c0782a4567"
+ "content_digest": "ec1505438058eafdb58e4f027a6be49619dfcef0735a676a9866414ca766fb11"
 }
