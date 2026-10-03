@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1790997546.259002,
- "generated_label": "2026-10-02 23:19 EDT",
+ "generated_at": 1790998455.16773,
+ "generated_label": "2026-10-02 23:34 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -3665,10 +3665,10 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 0,
+   "shards_running": 7,
    "shards_failed": 0,
-   "shards_queued": 8,
-   "status": "queued",
+   "shards_queued": 1,
+   "status": "running",
    "created_at": 1790899173.1176748,
    "git_commit": "b4ae953a8d",
    "snapshot": "0be54cb922be",
@@ -3712,31 +3712,34 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 0,
-   "shards_running": 7,
+   "shards_done": 6,
+   "shards_running": 2,
    "shards_failed": 0,
-   "shards_queued": 1,
+   "shards_queued": 0,
    "status": "running",
    "created_at": 1790899172.2909997,
    "git_commit": "b4ae953a8d",
    "snapshot": "0be54cb922be",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 30772086,
+   "tokens_scored": 14565,
+   "gpu_hours": 1.5155,
+   "load_hours": 0.0835,
+   "tasks": 251,
+   "records": 251,
+   "success_rate": 0.976096,
+   "mean_bits": 8.997546,
+   "median_bits": 4.587963,
+   "mean_forced_bits": 3.780942,
+   "mean_forced_tokens": 3.541833,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 55.900398,
+   "fallback_rate": 0.047809,
+   "mean_restarts": 0.0,
+   "ends": {
+    "check-failed": 6,
+    "success": 245
+   }
   },
   {
    "name": "mb-bm-e2-qwen2.5-0.5b",
@@ -3760,32 +3763,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 1,
-   "shards_running": 7,
+   "shards_done": 4,
+   "shards_running": 4,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1790899171.4632463,
    "git_commit": "b4ae953a8d",
    "snapshot": "0be54cb922be",
-   "tokens_generated": 5305769,
-   "tokens_scored": 2876,
-   "gpu_hours": 0.1797,
-   "load_hours": 0.0123,
-   "tasks": 41,
-   "records": 41,
-   "success_rate": 1.0,
-   "mean_bits": 8.649325,
-   "median_bits": 5.190441,
-   "mean_forced_bits": 1.946979,
-   "mean_forced_tokens": 0.878049,
+   "tokens_generated": 43916956,
+   "tokens_scored": 14300,
+   "gpu_hours": 1.4202,
+   "load_hours": 0.0541,
+   "tasks": 167,
+   "records": 167,
+   "success_rate": 0.976048,
+   "mean_bits": 15.590102,
+   "median_bits": 5.941321,
+   "mean_forced_bits": 9.011221,
+   "mean_forced_tokens": 6.718563,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 61.317073,
-   "fallback_rate": 0.04878,
+   "mean_tokens": 61.718563,
+   "fallback_rate": 0.08982,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 41
+    "check-failed": 4,
+    "success": 163
    }
   },
   {
@@ -21341,9 +21345,9 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 96,
+   "pending": 87,
    "running": 40,
-   "done": 3566,
+   "done": 3575,
    "failed": 822
   },
   "nodes": [
@@ -21374,9 +21378,9 @@
      "mb-bm-e2-olmo2-1b-s1-42b-s1",
      "mb-bm-e2-olmo2-1b-s1-42b-s7",
      "mb-bm-e2-olmo2-1b-s1-504b-s7",
-     "mb-bm-e2-qwen2.5-0.5b-s2",
      "mb-bm-e2-qwen2.5-0.5b-s7",
-     "mb-bm-e2-qwen2.5-1.5b-s6"
+     "mb-bm-e2-qwen2.5-coder-0.5b-s0",
+     "mb-bm-e2-qwen2.5-coder-0.5b-s5"
     ]
    },
    {
@@ -21407,8 +21411,8 @@
      "mb-bm-e2-olmo2-1b-s1-504b-s6",
      "mb-bm-e2-qwen2.5-0.5b-s0",
      "mb-bm-e2-qwen2.5-0.5b-s3",
-     "mb-bm-e2-qwen2.5-1.5b-s0",
-     "mb-bm-e2-qwen2.5-1.5b-s4"
+     "mb-bm-e2-qwen2.5-coder-0.5b-s4",
+     "mb-bm-e2-qwen2.5-coder-0.5b-s6"
     ]
    },
    {
@@ -21438,9 +21442,9 @@
      "mb-bm-e2-olmo2-1b-s1-42b-s5",
      "mb-bm-e2-olmo2-1b-s1-504b-s0",
      "mb-bm-e2-olmo2-1b-s1-504b-s5",
-     "mb-bm-e2-qwen2.5-0.5b-s1",
      "mb-bm-e2-qwen2.5-0.5b-s5",
-     "mb-bm-e2-qwen2.5-1.5b-s2"
+     "mb-bm-e2-qwen2.5-1.5b-s7",
+     "mb-bm-e2-qwen2.5-coder-0.5b-s1"
     ]
    },
    {
@@ -21469,10 +21473,10 @@
      "mb-bm-e2-olmo2-1b-s1-42b-s4",
      "mb-bm-e2-olmo2-1b-s1-42b-s6",
      "mb-bm-e2-olmo2-1b-s1-504b-s2",
-     "mb-bm-e2-qwen2.5-0.5b-s4",
-     "mb-bm-e2-qwen2.5-1.5b-s1",
-     "mb-bm-e2-qwen2.5-1.5b-s3",
-     "mb-bm-e2-qwen2.5-1.5b-s5"
+     "mb-bm-e2-qwen2.5-1.5b-s5",
+     "mb-bm-e2-qwen2.5-coder-0.5b-s2",
+     "mb-bm-e2-qwen2.5-coder-0.5b-s3",
+     "mb-bm-e2-qwen2.5-coder-0.5b-s7"
     ]
    },
    {
@@ -23615,5 +23619,5 @@
   },
   "study_b_sft_checkpoints": 21
  },
- "content_digest": "43303961b3f0987507d7d408a5d696f66515b47f9ef2ad3395af661c40ca3a7c"
+ "content_digest": "3104085738090f46d983a88a48ef96eca9061baa8b8ddd767d1a589d77c46626"
 }
