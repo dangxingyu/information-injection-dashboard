@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791089206.0077775,
- "generated_label": "2026-10-04 00:46 EDT",
+ "generated_at": 1791090114.1721094,
+ "generated_label": "2026-10-04 01:01 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -2243,33 +2243,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 7,
+   "shards_done": 8,
    "shards_running": 0,
-   "shards_failed": 1,
+   "shards_failed": 0,
    "shards_queued": 0,
-   "status": "failed",
+   "status": "complete",
    "created_at": 1791059310.6581116,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
-   "tokens_generated": 10735102,
-   "tokens_scored": 9127,
-   "gpu_hours": 4.3505,
-   "load_hours": 0.09,
-   "tasks": 143,
-   "records": 143,
-   "success_rate": 0.979021,
-   "mean_bits": 16.752356,
+   "tokens_generated": 11614878,
+   "tokens_scored": 9638,
+   "gpu_hours": 4.9377,
+   "load_hours": 0.1022,
+   "tasks": 163,
+   "records": 163,
+   "success_rate": 0.981595,
+   "mean_bits": 16.992118,
    "median_bits": 6.136565,
-   "mean_forced_bits": 12.813482,
-   "mean_forced_tokens": 16.538462,
+   "mean_forced_bits": 13.051177,
+   "mean_forced_tokens": 17.644172,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 92.804196,
-   "fallback_rate": 0.188811,
+   "mean_tokens": 99.184049,
+   "fallback_rate": 0.184049,
    "mean_restarts": 0.0,
    "ends": {
     "check-failed": 3,
-    "success": 140
+    "success": 160
    }
   },
   {
@@ -24418,8 +24418,8 @@
   "expected_gpus": 32,
   "stale_after_s": 120.0,
   "totals": {
-   "busy": 7,
-   "warm": 25,
+   "busy": 6,
+   "warm": 26,
    "idle": 0,
    "stale": 0,
    "reported": 32,
@@ -24427,8 +24427,8 @@
   },
   "queue": {
    "pending": 0,
-   "running": 7,
-   "done": 4103,
+   "running": 6,
+   "done": 4104,
    "failed": 866
   },
   "nodes": [
@@ -24469,18 +24469,17 @@
      "busy",
      "warm",
      "warm",
-     "busy",
+     "warm",
      "warm",
      "warm"
     ],
-    "busy": 3,
-    "warm": 5,
+    "busy": 2,
+    "warm": 6,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "he-bm-e2r-deepseek-coder-1.3b-s6-r3",
      "he-bm-e2r-olmo2-1b-s1-1007b-s3-r3",
      "mb-bm-e2r-smollm2-360m-s7-r3"
     ]
@@ -26636,5 +26635,5 @@
   },
   "study_b_sft_checkpoints": 22
  },
- "content_digest": "f31b627b8f66230f9f44bd9d0c3092c6d5571d5f2756114a88597ce2a7987feb"
+ "content_digest": "c958f17310237052e085a3c15e3a17f10c65525e15fecd27464559d0bb116c71"
 }
