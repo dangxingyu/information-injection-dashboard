@@ -51,7 +51,10 @@ function render() {
   renderExperiments();
   renderTaskSelect();
   renderHeadlines();
+  renderFindings();
+  renderLhTotals();
   renderLongHorizon();
+  renderStudyBSummary();
   renderStudyB();
 }
 
@@ -250,10 +253,72 @@ function hlBars(rows, refLabel) {
 function renderHeadlines() {
   const h = data.headlines;
   if (!h) return;
-  $('hl-code').innerHTML = h.code.map(p => `<h4>${esc(p.title)} <span class="muted">· ${p.tasks} tasks</span></h4>${hlBars(p.rows, 'force reference')}`).join('') || '<p class="muted">No finished runs.</p>';
-  $('hl-lh').innerHTML = h.long_horizon.filter(x => x.tasks).map(x => `<h4>${esc(x.student)} · ${esc(x.family)} <span class="muted">· ${x.tasks} tasks</span></h4>${hlBars(Object.entries(x.totals).map(([label, v]) => ({label, bits: v})), 'force benchmark reference')}`).join('') || '<p class="muted">No finished runs.</p>';
-  const m = h.study_b_measurements, names = {free32: 'unaided success (32 samples)', ref: 'forced reference', bm: 'injection bits'};
-  $('hl-b').innerHTML = `<h4>Post-training</h4><p class="muted" style="font-size:12px">${h.study_b_sft_checkpoints} checkpoints fine-tuned (SFT on the Tulu-3 OLMo-2 mixture) and evaluated; radar below.</p><h4>Re-measurement on the fixed harness (e2)</h4>` + Object.entries(m).map(([k, v]) => `<div class="hl-row"><span>${esc(names[k] || k)}</span><span class="track"><i style="width:${v.total ? (100 * v.done / v.total).toFixed(1) : 0}%"></i></span><b>${v.done}/${v.total}</b></div>`).join('') + '<p class="note">Counts are experiments (one checkpoint × suite) with every shard finished.</p>';
+  $('hl-code').innerHTML = h.code.map(p => `<div><h4>${esc(p.title)} <span class="muted">· ${p.tasks} tasks</span></h4>${hlBars(p.rows, 'force reference')}</div>`).join('') || '<p class="muted">No finished runs.</p>';
+}
+
+/* --------------------------------------------------------------- findings */
+function finding(eyebrow, big, unit, text) {
+  return `<article class="panel pad finding"><span class="eyebrow">${eyebrow}</span><div class="big">${big}<small>${unit}</small></div><p>${text}</p></article>`;
+}
+function renderFindings() {
+  const h = data.headlines || {}, cards = [];
+  const he = (h.code || []).find(p => p.title.startsWith('HumanEval+ hard'));
+  if (he && he.rows.length) {
+    const ref = he.rows.find(r => r.label === 'force reference'), best = he.rows.reduce((a, b) => (b.bits < a.bits ? b : a));
+    cards.push(finding('STUDY A · CODE', `${bits(ref.bits)} → ${bits(best.bits)}`, ' bits / task', `Qwen3-0.6B on the 39 hardest HumanEval+ tasks (${he.tasks} matched): forcing the reference vs the best protocol (${esc(best.label)}). Offline hints from Opus 5.5 agents beat a Qwen3-32B teacher on every testbed.`));
+  }
+  const tb = (h.long_horizon || []).find(x => x.student === 'qwen3-0.6b-base' && x.family === 'terminal-bench' && x.tasks);
+  if (tb) {
+    const ref = tb.totals['force benchmark reference'], opus = tb.totals['force Opus trajectory'];
+    const best = Math.min(...Object.values(tb.totals));
+    cards.push(finding('STUDY A · LONG HORIZON', `${bits(ref)} → ${bits(best)}`, ' bits', `Qwen3-0.6B, three terminal-bench tasks: the benchmark's reference vs the cheapest protocol. The trajectory the teacher injects is the main lever (Opus-written: ${bits(opus)}); letting the student act helps only once it can (Qwen3-8B).`));
+  }
+  const sb = data.study_b_summary;
+  if (sb && sb.status === 'ready') {
+    const inj = sb.matched.injection || {}, base = sb.matched.base_acc || {};
+    const rel = sb.reliability.humanevalplus;
+    cards.push(finding('STUDY B · PREDICTION', `ρ ${dec(inj.humanevalplus?.spearman, 2)} / ${dec(inj.mbppplus?.spearman, 2)}`, '', `Injection bits measured before SFT vs post-SFT HumanEval+ / MBPP+ accuracy over ${inj.humanevalplus?.n ?? '–'} checkpoints, the best of four predictors on code (base accuracy: ${dec(base.humanevalplus?.spearman, 2)} / ${dec(base.mbppplus?.spearman, 2)}); test-retest ρ ${dec(rel?.spearman, 3)}.`));
+  }
+  $('findings-cards').innerHTML = cards.join('');
+}
+
+/* -------------------------------------------------------- long-horizon sum */
+function renderLhTotals() {
+  const rows = (data.headlines?.long_horizon || []).filter(x => x.tasks);
+  if (!rows.length) { $('lh-totals').innerHTML = '<tr><td class="muted">No finished runs.</td></tr>'; return; }
+  const labels = [...new Set(rows.flatMap(x => Object.keys(x.totals)))];
+  const free = {};
+  for (const s of data.long_horizon?.students || []) free[s.student] = s.free;
+  const head = `<thead><tr><th>student · family</th>${labels.map(l => `<th class="num">${esc(l)}</th>`).join('')}<th class="num">unaided</th></tr></thead>`;
+  const body = rows.map(x => {
+    const best = Math.min(...Object.values(x.totals));
+    const f = Object.entries(free[x.student] || {}).filter(([t]) => t.startsWith(x.family.startsWith('tau') ? 'tau' : 'tb'));
+    const solved = f.reduce((a, [, v]) => a + v[0], 0), total = f.reduce((a, [, v]) => a + v[1], 0);
+    return `<tr><td>${esc(x.student)} · ${esc(x.family)} <span class="muted">(${x.tasks} tasks)</span></td>${labels.map(l => x.totals[l] === undefined ? '<td class="num muted">–</td>' : `<td class="num${x.totals[l] === best ? ' best' : ''}">${bits(x.totals[l])}${x.se?.[l] ? `<small> ± ${bits(x.se[l])}</small>` : ''}</td>`).join('')}<td class="num">${total ? solved + '/' + total : '–'}</td></tr>`;
+  }).join('');
+  $('lh-totals').innerHTML = head + `<tbody>${body}</tbody>`;
+}
+
+/* ---------------------------------------------------------- study B tables */
+function renderStudyBSummary() {
+  const b = data.study_b_summary;
+  if (!b || b.status !== 'ready') { $('sb-consistency').innerHTML = '<tr><td class="muted">Pending.</td></tr>'; return; }
+  const names = {injection: 'injection bits', free_pass: 'unaided success', ref_bits: 'reference surprisal', base_acc: 'base accuracy'};
+  const outs = {humanevalplus: 'HumanEval+', mbppplus: 'MBPP+', gsm8k: 'GSM8K', math500: 'MATH-500'};
+  const block = (title, table) => {
+    const best = {};
+    for (const o of Object.keys(outs)) best[o] = Math.max(...Object.values(table).map(t => t[o]?.spearman ?? -9));
+    return `<tr class="group"><td colspan="5">${esc(title)}</td></tr>` + Object.keys(names).map(p => `<tr><td>${names[p]}</td>${Object.keys(outs).map(o => { const c = table[p]?.[o]; return c ? `<td class="num${c.spearman === best[o] ? ' best' : ''}" data-tip="${tip(`n = ${c.n} · permutation p = ${dec(c.p, 4)}`)}">${dec(c.spearman, 2)}</td>` : '<td class="num muted">–</td>'; }).join('')}</tr>`).join('');
+  };
+  const n = b.matched.injection?.humanevalplus?.n ?? '–';
+  let html = `<thead><tr><th>predictor (before SFT)</th>${Object.values(outs).map(o => `<th class="num">${o}</th>`).join('')}</tr></thead><tbody>` + block(`all checkpoints (n = ${n})`, b.matched);
+  for (const [g, t] of Object.entries(b.within_family)) html += block(`within ${g} (same model, different pretraining tokens)`, t);
+  $('sb-consistency').innerHTML = html + '</tbody>';
+  $('sb-note').textContent = 'Injection bits and reference surprisal are negated (lower is better). Injection is measured on HumanEval+ and MBPP+ only; for GSM8K and MATH-500 the mean of the code measurements stands in. Highlight = best predictor per column.';
+  $('sb-reliability').innerHTML = Object.entries(b.reliability).map(([s, r]) => `<div class="hl-row"><span>${outs[s] || s}</span><span class="muted">two independent replicates, ${r.n} checkpoints</span><b>ρ ${dec(r.spearman, 3)}</b></div><p class="muted" style="font-size:12px;margin:2px 0 10px">mean |difference| ${dec(r.mean_abs_diff_bits, 1)} bits per task</p>`).join('') + '<p class="note">Each checkpoint\'s injection cost was measured twice with different sampling seeds; the analysis uses their mean.</p>';
+  const cols = [['injection', 'humanevalplus', 'inj HE+', true], ['injection', 'mbppplus', 'inj MBPP+', true], ['free_pass', 'humanevalplus', 'unaided HE+', false], ['ref_bits', 'humanevalplus', 'ref HE+', true]];
+  const pc = (x) => isNum(x) ? (100 * x).toFixed(1) : '–';
+  $('sb-rows').innerHTML = `<thead><tr><th>checkpoint</th>${cols.map(c => `<th class="num">${c[2]}</th>`).join('')}${Object.values(outs).map(o => `<th class="num">${o} base → SFT</th>`).join('')}</tr></thead><tbody>` + b.rows.map(r => `<tr><td>${esc(r.checkpoint)}</td>${cols.map(([p, o, , isBits]) => `<td class="num">${isBits ? bits(r.predictors[p]?.[o]) : pc(r.predictors[p]?.[o])}</td>`).join('')}${Object.keys(outs).map(o => `<td class="num">${pc(r.base[o])} → <b>${pc(r.outcome[o])}</b></td>`).join('')}</tr>`).join('') + '</tbody>';
 }
 
 /* ---------------------------------------------------------- long horizon */

@@ -6,15 +6,35 @@
 <body><main>
 <header><div><span class="eyebrow">INFORMATION INJECTION / RESEARCH DASHBOARD</span><h1>Information injection <span>certified bits of assistance</span></h1><p class="subtitle">How many bits of outside help does a frozen pretrained checkpoint need to solve a verifiable task? Live summaries of the protocol search, every experiment, and the GPU fleet that runs them.</p></div><button id="theme" aria-label="Toggle light and dark theme">◐ Theme</button></header>
 <div class="update"><span id="updated">Loading snapshot…</span><span id="freshness"></span><button id="refresh">Reload snapshot ↻</button></div>
-<nav aria-label="Sections"><a href="#headlines">Results</a><a href="#idea">Core idea</a><a href="#fleet">GPU fleet</a><a href="#progress">Protocol history</a><a href="#long-horizon">Long horizon</a><a href="#study-b">Study B</a><a href="#experiments">Experiments</a><a href="#tasks">Per task</a></nav>
+<nav aria-label="Sections"><a href="#findings">Key findings</a><a href="#code">Code tasks</a><a href="#long-horizon">Long horizon</a><a href="#study-b">Study B</a><a href="#idea">Method</a><a href="#fleet">Compute</a><a href="#explorer">All experiments</a></nav>
 
-<section id="headlines"><div class="section-head"><h2>Current results</h2><span class="tag">certified bits per task · lower is better</span></div>
-<p class="note">Study A asks how few bits of teacher assistance a frozen base model needs; each block compares protocols on the tasks every listed run has finished with success (testbed v3, fixed harness h2). Study B checks whether these bits, measured before post-training, predict post-SFT accuracy across checkpoints.</p>
-<div class="headline-grid">
-<article class="panel pad"><span class="eyebrow">STUDY A · CODE TASKS</span><div id="hl-code"></div></article>
-<article class="panel pad"><span class="eyebrow">STUDY A · LONG-HORIZON (TOTAL BITS)</span><div id="hl-lh"></div></article>
-<article class="panel pad"><span class="eyebrow">STUDY B · CHECKPOINTS</span><div id="hl-b"></div></article>
-</div></section>
+<section id="findings"><div class="section-head"><h2>Key findings</h2><span class="tag">certified bits · lower is better</span></div>
+<div class="finding-grid" id="findings-cards"></div>
+<p class="note">Study A asks how few bits of teacher assistance a frozen base model needs to solve a task (a certified upper bound on KL(Q‖P)). Study B asks whether that cost, measured before post-training, predicts accuracy after equal-budget SFT. Every number on this page comes from the run directory; matched comparisons use only tasks or checkpoints every compared run has finished.</p></section>
+
+<section id="code"><div class="section-head"><h2>Study A · code tasks</h2><span class="tag">testbed v3 · fixed harness h2</span></div>
+<div class="panel pad"><div id="hl-code" class="code-grid"></div></div>
+<p class="note">Bars: mean certified bits per task on the tasks every listed run finished; grey = forcing the reference solution. v14 is cost-ordered allocation over teacher hints; "Opus hints" are written offline by Claude Opus 5.5 agents with white-box access to the student.</p>
+<details class="more"><summary>Protocol history (every version, both harnesses)</summary>
+<div id="progress"><div class="section-head"><h2>Protocol history (HumanEval+ / CodeContests)</h2><span class="tag">Study A · lower is better</span></div>
+<div class="panel"><div class="controls"><label>Suite <select id="progress-suite"></select></label><label>Student <select id="progress-student"><option value="all">all</option></select></label><span class="muted">Mean certified bits per task (log scale) by protocol version. Dashed: <b>reference</b>; dotted: <b>ideal</b> = mean −log<sub>2</sub> α over solvable tasks. Hollow points: experiment still running.</span><a id="progress-png" class="figure-link" href="#" target="_blank" rel="noopener" hidden>static PNG ↗</a></div>
+<div class="chart" id="progress-chart"></div>
+<div class="legend chart-legend" id="progress-legend"></div>
+<div class="scroll"><table id="progress-matrix"><thead><tr id="progress-head"></tr></thead><tbody id="progress-table"></tbody></table></div></div>
+<p class="note">Headline per cell: average bits over a task's runs, then the mean over the tasks run (the same rule as the project's analysis module). The ideal pools every free-sampling run of the student on the suite: α<sub>t</sub> is task t's success rate and the line is the mean of −log<sub>2</sub> α<sub>t</sub> over tasks solved at least once; hover it for the all-task lower bound (95% Clopper-Pearson for unsolved tasks). Running and failed experiments show their finished shards only. <span id="progress-note"></span></p></div>
+</details></section>
+
+<section id="long-horizon"><div class="section-head"><h2>Long-horizon suite</h2><span class="tag">Study A · testbed v3 · lower is better</span></div>
+<p class="note">Seven multi-turn tasks a base model cannot solve alone: tau-bench retail tasks 17, 48, 64 and 20 (customer service with tools, no user simulator) and three terminal-bench tasks (bash in a sandboxed container, graded by the task's own tests). Each cell is the mean certified bits per task over its runs (* = not every run succeeded); "free" is how often the student succeeds unaided. Protocols act per turn: the student proposes actions, a monitor accepts or rejects each, and the teacher injects (part of) the next reference action when none is accepted.</p>
+<div class="panel pad"><div class="scroll"><table id="lh-totals"></table></div></div>
+<p class="note">Total certified bits over each family's tasks (± standard error over runs; replications pooled, up to 8 runs per task), on tasks every listed protocol finished with success in every run. "Unaided" = how often the student solves the task alone (successes / runs).</p>
+<details class="more"><summary>Per task, every protocol tried</summary><div id="lh-tables"></div></details></section>
+
+<section id="study-b"><div class="section-head"><h2>Study B · does the bit cost predict post-training?</h2><span class="tag">22 checkpoints · equal-budget SFT</span></div>
+<div class="two"><article class="panel pad"><span class="eyebrow">SPEARMAN WITH POST-SFT ACCURACY</span><div class="scroll"><table id="sb-consistency"></table></div><p class="note" id="sb-note"></p></article>
+<article class="panel pad"><span class="eyebrow">IS THE MEASUREMENT STABLE?</span><div id="sb-reliability"></div></article></div>
+<details class="more"><summary>Radar per checkpoint</summary><div id="radar"></div></details>
+<details class="more"><summary>Per checkpoint: predictors before SFT and accuracy after</summary><div class="scroll"><table id="sb-rows"></table></div></details></section>
 
 <section id="idea"><div class="two">
 <article class="panel pad idea"><span class="eyebrow">CORE IDEA</span>
@@ -33,41 +53,25 @@
 <p class="note pad" style="padding-top:10px">Planning compute (reading the reference, student rollouts for value estimates, drafting hints) is free in bits but counted in compute. Reference points per task: <b>reference</b> = bits to force the whole reference solution (teacher-answer likelihood); <b>free</b> = the student alone, success rate α and the ideal −log<sub>2</sub> α.</p>
 </article></div></section>
 
-<section id="fleet"><div class="section-head"><h2>GPU fleet</h2><div id="queue" class="pills"></div></div>
+<section id="fleet"><div class="section-head"><h2>Compute</h2><div id="queue" class="pills"></div></div>
 <div class="holdings tiles" id="holdings"></div>
 <p class="note">Held right now, from Slurm: <b>working</b> = allocations whose nodes run our lane workers; <b>standby</b> = an allocation that started early (a slot's successor waiting to take over) and only keeps its GPUs warm. Below: per-GPU state of the working nodes.</p>
-<div class="tiles" id="fleet-tiles"></div>
+<details class="more"><summary>Per-GPU state of the lane workers</summary><div class="tiles" id="fleet-tiles"></div>
 <div class="nodes" id="nodes"></div>
 <div class="legend"><span><i class="swatch c-busy"></i>busy (running a task)</span><span><i class="swatch c-warm"></i>warm (idle, burner holding the GPU)</span><span><i class="swatch c-idle"></i>idle</span><span><i class="swatch c-stale"></i>stale heartbeat</span></div>
-<p class="note" id="fleet-note"></p></section>
+<p class="note" id="fleet-note"></p></details></section>
 
-<section id="progress"><div class="section-head"><h2>Protocol history (HumanEval+ / CodeContests)</h2><span class="tag">Study A · lower is better</span></div>
-<div class="panel"><div class="controls"><label>Suite <select id="progress-suite"></select></label><label>Student <select id="progress-student"><option value="all">all</option></select></label><span class="muted">Mean certified bits per task (log scale) by protocol version. Dashed: <b>reference</b>; dotted: <b>ideal</b> = mean −log<sub>2</sub> α over solvable tasks. Hollow points: experiment still running.</span><a id="progress-png" class="figure-link" href="#" target="_blank" rel="noopener" hidden>static PNG ↗</a></div>
-<div class="chart" id="progress-chart"></div>
-<div class="legend chart-legend" id="progress-legend"></div>
-<div class="scroll"><table id="progress-matrix"><thead><tr id="progress-head"></tr></thead><tbody id="progress-table"></tbody></table></div></div>
-<p class="note">Headline per cell: average bits over a task's runs, then the mean over the tasks run (the same rule as the project's analysis module). The ideal pools every free-sampling run of the student on the suite: α<sub>t</sub> is task t's success rate and the line is the mean of −log<sub>2</sub> α<sub>t</sub> over tasks solved at least once; hover it for the all-task lower bound (95% Clopper-Pearson for unsolved tasks). Running and failed experiments show their finished shards only. <span id="progress-note"></span></p></section>
-
-<section id="long-horizon"><div class="section-head"><h2>Long-horizon suite</h2><span class="tag">Study A · testbed v3 · lower is better</span></div>
-<p class="note">Seven multi-turn tasks a base model cannot solve alone: tau-bench retail tasks 17, 48, 64 and 20 (customer service with tools, no user simulator) and three terminal-bench tasks (bash in a sandboxed container, graded by the task's own tests). Each cell is the mean certified bits per task over its runs (* = not every run succeeded); "free" is how often the student succeeds unaided. Protocols act per turn: the student proposes actions, a monitor accepts or rejects each, and the teacher injects (part of) the next reference action when none is accepted.</p>
-<div id="lh-tables"></div></section>
-
-<section id="study-b"><div class="section-head"><h2>Study B: checkpoint radar</h2><span class="tag">bits-based prediction vs post-SFT accuracy</span></div>
-<div id="radar"></div></section>
-
-<section id="experiments"><div class="section-head"><h2>Experiments</h2><div id="exp-counts" class="pills"></div></div>
+<section id="explorer"><div class="section-head"><h2>All experiments</h2></div>
+<details class="more"><summary>Experiment list and per-task records</summary>
+<div id="experiments"><div class="section-head"><h2>Experiments</h2><div id="exp-counts" class="pills"></div></div>
 <div class="panel"><div class="controls"><label>Student <select id="f-student"><option value="all">all</option></select></label><label>Protocol <select id="f-protocol"><option value="all">all</option></select></label><label>Status <select id="f-status"><option value="all">all</option><option>running</option><option>complete</option><option>queued</option><option>failed</option></select></label><label><input type="checkbox" id="f-smoke"> smoke tests</label><input id="f-search" type="search" placeholder="Search name, suite, config" aria-label="Search experiments"></div>
 <div class="scroll tall"><table id="exp-table"><thead><tr>
 <th class="sortable" data-key="name" tabindex="0">Name</th><th class="sortable" data-key="student" tabindex="0">Student</th><th class="sortable" data-key="suite" tabindex="0">Suite</th><th class="sortable" data-key="protocol" tabindex="0">Protocol</th><th>Config</th><th class="sortable" data-key="status" tabindex="0">Status</th><th class="sortable num" data-key="tasks" tabindex="0">Tasks</th><th class="sortable num" data-key="runs" tabindex="0">Runs</th><th class="sortable num" data-key="success_rate" tabindex="0">Success</th><th class="sortable num" data-key="mean_bits" tabindex="0">Mean bits</th><th class="sortable num" data-key="median_bits" tabindex="0">Median bits</th><th class="sortable num" data-key="mean_forced_bits" tabindex="0">Forced bits</th><th class="sortable num" data-key="mean_select_blocks" tabindex="0">SELECT blocks</th><th class="sortable num" data-key="mean_tokens" tabindex="0">Tokens / run</th><th class="sortable num" data-key="tokens_generated" tabindex="0">Generated</th><th class="sortable num" data-key="gpu_hours" tabindex="0">GPU-h</th></tr></thead><tbody id="exp-rows"></tbody></table></div></div>
-<p class="note">Per-task first: each task's runs are averaged, then tasks are averaged (median: over per-task means). Forced bits and SELECT blocks are per run. Generated = student tokens sampled, including value-estimation rollouts. GPU-h = sum of shard wall time after model load (1 GPU per shard). Status compares finished shard files with the spec's shard count; a running experiment shows aggregates of its finished shards only. Click a name for the per-task view.</p></section>
-
-<section id="tasks"><div class="section-head"><h2>Per task</h2><span class="muted" id="task-summary"></span></div>
+<p class="note">Per-task first: each task's runs are averaged, then tasks are averaged (median: over per-task means). Forced bits and SELECT blocks are per run. Generated = student tokens sampled, including value-estimation rollouts. GPU-h = sum of shard wall time after model load (1 GPU per shard). Status compares finished shard files with the spec's shard count; a running experiment shows aggregates of its finished shards only. Click a name for the per-task view.</p></div>
+<div id="tasks"><div class="section-head"><h2>Per task</h2><span class="muted" id="task-summary"></span></div>
 <div class="panel"><div class="controls"><label>Experiment <select id="task-exp"></select></label><input id="task-search" type="search" placeholder="Filter task id" aria-label="Filter tasks"></div>
-<div class="scroll tall"><table id="task-table"><thead><tr id="task-head"></tr></thead><tbody id="task-rows"></tbody></table></div></div></section>
-
-
-
-
+<div class="scroll tall"><table id="task-table"><thead><tr id="task-head"></tr></thead><tbody id="task-rows"></tbody></table></div></div></div>
+</details></section>
 
 <footer>Snapshots are exported from the project's run directory every fifteen minutes and republished when they change (at least hourly). Only aggregates are public: no trajectory text, file paths, credentials or hostnames (nodes are labelled by pool group). Status is from file markers, not a scientific verdict; numbers on running experiments are partial. <span id="digest"></span></footer>
 </main>
