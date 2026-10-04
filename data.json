@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791109165.9625902,
- "generated_label": "2026-10-04 06:19 EDT",
+ "generated_at": 1791110075.9864655,
+ "generated_label": "2026-10-04 06:34 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -24532,10 +24532,17 @@
      "gpus": 32,
      "state": "working",
      "label": "PLI slot (optimizer-training)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 32,
+     "state": "standby",
+     "label": "PLI slot (optimizer-training)"
     }
    ],
    "totals": {
-    "h100_working": 32
+    "h100_working": 32,
+    "h100_standby": 32
    }
   }
  },
@@ -26625,5 +26632,5 @@
   },
   "study_b_sft_checkpoints": 22
  },
- "content_digest": "87da5890cdeafd3f8720458953d21925e70cb7258d7d85fea09e135549ffb84c"
+ "content_digest": "6f121f0590a0ce1ee46e4a286937ae6ea85a740afab66e845c74f016276342e4"
 }
