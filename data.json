@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791090114.1721094,
- "generated_label": "2026-10-04 01:01 EDT",
+ "generated_at": 1791091016.0259247,
+ "generated_label": "2026-10-04 01:16 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -50,33 +50,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 7,
+   "shards_done": 8,
    "shards_running": 0,
-   "shards_failed": 1,
+   "shards_failed": 0,
    "shards_queued": 0,
-   "status": "failed",
+   "status": "complete",
    "created_at": 1791059363.5991392,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
-   "tokens_generated": 15947757,
-   "tokens_scored": 4977,
-   "gpu_hours": 4.6979,
-   "load_hours": 0.125,
-   "tasks": 293,
-   "records": 293,
-   "success_rate": 0.976109,
-   "mean_bits": 17.468027,
+   "tokens_generated": 18389310,
+   "tokens_scored": 5742,
+   "gpu_hours": 5.4264,
+   "load_hours": 0.1386,
+   "tasks": 334,
+   "records": 334,
+   "success_rate": 0.976048,
+   "mean_bits": 17.903667,
    "median_bits": 6.136565,
-   "mean_forced_bits": 13.660848,
-   "mean_forced_tokens": 12.040956,
+   "mean_forced_bits": 14.057332,
+   "mean_forced_tokens": 12.212575,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 55.027304,
-   "fallback_rate": 0.221843,
+   "mean_tokens": 56.374251,
+   "fallback_rate": 0.221557,
    "mean_restarts": 0.0,
    "ends": {
-    "check-failed": 7,
-    "success": 286
+    "check-failed": 8,
+    "success": 326
    }
   },
   {
@@ -2090,33 +2090,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 6,
+   "shards_done": 8,
    "shards_running": 0,
-   "shards_failed": 2,
+   "shards_failed": 0,
    "shards_queued": 0,
-   "status": "failed",
+   "status": "complete",
    "created_at": 1791059313.3792048,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
-   "tokens_generated": 30542551,
-   "tokens_scored": 6145,
-   "gpu_hours": 3.8127,
-   "load_hours": 0.0738,
-   "tasks": 122,
-   "records": 122,
-   "success_rate": 0.991803,
-   "mean_bits": 88.16709,
-   "median_bits": 80.859275,
-   "mean_forced_bits": 87.196938,
-   "mean_forced_tokens": 48.57377,
+   "tokens_generated": 41590702,
+   "tokens_scored": 8773,
+   "gpu_hours": 5.0845,
+   "load_hours": 0.1056,
+   "tasks": 163,
+   "records": 163,
+   "success_rate": 0.993865,
+   "mean_bits": 91.349006,
+   "median_bits": 82.401022,
+   "mean_forced_bits": 90.400644,
+   "mean_forced_tokens": 52.263804,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 57.336066,
-   "fallback_rate": 0.877049,
+   "mean_tokens": 61.269939,
+   "fallback_rate": 0.883436,
    "mean_restarts": 0.0,
    "ends": {
     "check-failed": 1,
-    "success": 121
+    "success": 162
    }
   },
   {
@@ -2141,33 +2141,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 6,
+   "shards_done": 8,
    "shards_running": 0,
-   "shards_failed": 2,
+   "shards_failed": 0,
    "shards_queued": 0,
-   "status": "failed",
+   "status": "complete",
    "created_at": 1791059312.5301754,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
-   "tokens_generated": 26942678,
-   "tokens_scored": 6759,
-   "gpu_hours": 3.9058,
-   "load_hours": 0.0912,
-   "tasks": 123,
-   "records": 123,
-   "success_rate": 0.99187,
-   "mean_bits": 75.424578,
-   "median_bits": 71.702353,
-   "mean_forced_bits": 74.138643,
-   "mean_forced_tokens": 50.390244,
+   "tokens_generated": 34812703,
+   "tokens_scored": 8751,
+   "gpu_hours": 5.175,
+   "load_hours": 0.121,
+   "tasks": 163,
+   "records": 163,
+   "success_rate": 0.98773,
+   "mean_bits": 74.375151,
+   "median_bits": 69.409972,
+   "mean_forced_bits": 73.001274,
+   "mean_forced_tokens": 49.441718,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 76.853659,
-   "fallback_rate": 0.821138,
+   "mean_tokens": 72.754601,
+   "fallback_rate": 0.809816,
    "mean_restarts": 0.0,
    "ends": {
-    "check-failed": 1,
-    "success": 122
+    "check-failed": 2,
+    "success": 161
    }
   },
   {
@@ -2192,33 +2192,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 7,
+   "shards_done": 8,
    "shards_running": 0,
-   "shards_failed": 1,
+   "shards_failed": 0,
    "shards_queued": 0,
-   "status": "failed",
+   "status": "complete",
    "created_at": 1791059311.6788228,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
-   "tokens_generated": 14457061,
-   "tokens_scored": 7812,
-   "gpu_hours": 4.5604,
-   "load_hours": 0.1293,
-   "tasks": 142,
-   "records": 142,
-   "success_rate": 0.992958,
-   "mean_bits": 35.097741,
+   "tokens_generated": 15890833,
+   "tokens_scored": 8471,
+   "gpu_hours": 5.1761,
+   "load_hours": 0.1415,
+   "tasks": 163,
+   "records": 163,
+   "success_rate": 0.98773,
+   "mean_bits": 33.929136,
    "median_bits": 9.584963,
-   "mean_forced_bits": 31.34772,
-   "mean_forced_tokens": 29.521127,
+   "mean_forced_bits": 30.078649,
+   "mean_forced_tokens": 28.141104,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 67.035211,
-   "fallback_rate": 0.401408,
+   "mean_tokens": 67.079755,
+   "fallback_rate": 0.386503,
    "mean_restarts": 0.0,
    "ends": {
-    "check-failed": 1,
-    "success": 141
+    "check-failed": 2,
+    "success": 161
    }
   },
   {
@@ -24418,8 +24418,8 @@
   "expected_gpus": 32,
   "stale_after_s": 120.0,
   "totals": {
-   "busy": 6,
-   "warm": 26,
+   "busy": 0,
+   "warm": 32,
    "idle": 0,
    "stale": 0,
    "reported": 32,
@@ -24427,8 +24427,8 @@
   },
   "queue": {
    "pending": 0,
-   "running": 6,
-   "done": 4104,
+   "running": 0,
+   "done": 4110,
    "failed": 866
   },
   "nodes": [
@@ -24438,8 +24438,8 @@
     "group": "h100-32a",
     "gpus": 8,
     "cells": [
-     "busy",
-     "busy",
+     "warm",
+     "warm",
      "warm",
      "warm",
      "warm",
@@ -24447,16 +24447,13 @@
      "warm",
      "warm"
     ],
-    "busy": 2,
-    "warm": 6,
+    "busy": 0,
+    "warm": 8,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
     "age_s": 0.0,
-    "tasks": [
-     "he-bm-e2r-llama3.2-1b-s1-r3",
-     "he-bm-e2r-olmo2-1b-main-s3-r3"
-    ]
+    "tasks": []
    },
    {
     "label": "h100-32a \u00b7 2",
@@ -24465,24 +24462,21 @@
     "gpus": 8,
     "cells": [
      "warm",
-     "busy",
-     "busy",
+     "warm",
+     "warm",
      "warm",
      "warm",
      "warm",
      "warm",
      "warm"
     ],
-    "busy": 2,
-    "warm": 6,
+    "busy": 0,
+    "warm": 8,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
     "age_s": 0.0,
-    "tasks": [
-     "he-bm-e2r-olmo2-1b-s1-1007b-s3-r3",
-     "mb-bm-e2r-smollm2-360m-s7-r3"
-    ]
+    "tasks": []
    },
    {
     "label": "h100-32a \u00b7 3",
@@ -24490,7 +24484,7 @@
     "group": "h100-32a",
     "gpus": 8,
     "cells": [
-     "busy",
+     "warm",
      "warm",
      "warm",
      "warm",
@@ -24499,15 +24493,13 @@
      "warm",
      "warm"
     ],
-    "busy": 1,
-    "warm": 7,
+    "busy": 0,
+    "warm": 8,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
     "age_s": 0.0,
-    "tasks": [
-     "he-bm-e2r-olmo2-1b-main-s7-r3"
-    ]
+    "tasks": []
    },
    {
     "label": "h100-32a \u00b7 4",
@@ -24515,7 +24507,7 @@
     "group": "h100-32a",
     "gpus": 8,
     "cells": [
-     "busy",
+     "warm",
      "warm",
      "warm",
      "warm",
@@ -24524,15 +24516,13 @@
      "warm",
      "warm"
     ],
-    "busy": 1,
-    "warm": 7,
+    "busy": 0,
+    "warm": 8,
     "idle": 0,
     "stale": 0,
     "heartbeat_stale": false,
     "age_s": 0.0,
-    "tasks": [
-     "he-bm-e2r-olmo2-1b-s1-1007b-s0-r3"
-    ]
+    "tasks": []
    }
   ],
   "holdings": {
@@ -26635,5 +26625,5 @@
   },
   "study_b_sft_checkpoints": 22
  },
- "content_digest": "c958f17310237052e085a3c15e3a17f10c65525e15fecd27464559d0bb116c71"
+ "content_digest": "87da5890cdeafd3f8720458953d21925e70cb7258d7d85fea09e135549ffb84c"
 }
