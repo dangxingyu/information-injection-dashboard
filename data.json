@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791076495.8730292,
- "generated_label": "2026-10-03 21:14 EDT",
+ "generated_at": 1791077402.8645453,
+ "generated_label": "2026-10-03 21:30 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -675,10 +675,10 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 0,
+   "shards_running": 6,
    "shards_failed": 0,
-   "shards_queued": 8,
-   "status": "queued",
+   "shards_queued": 2,
+   "status": "running",
    "created_at": 1791059350.357623,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
@@ -723,10 +723,10 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 0,
+   "shards_running": 8,
    "shards_failed": 0,
-   "shards_queued": 8,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "running",
    "created_at": 1791059349.5165603,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
@@ -771,9 +771,9 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 7,
+   "shards_running": 8,
    "shards_failed": 0,
-   "shards_queued": 1,
+   "shards_queued": 0,
    "status": "running",
    "created_at": 1791059348.6753356,
    "git_commit": "da4a42a6c6",
@@ -866,31 +866,34 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 0,
-   "shards_running": 8,
+   "shards_done": 6,
+   "shards_running": 2,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1791059346.8477898,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 101621017,
+   "tokens_scored": 7384,
+   "gpu_hours": 4.4913,
+   "load_hours": 0.0685,
+   "tasks": 252,
+   "records": 252,
+   "success_rate": 0.972222,
+   "mean_bits": 67.81517,
+   "median_bits": 53.058532,
+   "mean_forced_bits": 67.24405,
+   "mean_forced_tokens": 28.281746,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 32.888889,
+   "fallback_rate": 0.93254,
+   "mean_restarts": 0.0,
+   "ends": {
+    "check-failed": 7,
+    "success": 245
+   }
   },
   {
    "name": "mb-bm-e2r-olmo2-1b-s1-1007b",
@@ -914,32 +917,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 1,
-   "shards_running": 7,
+   "shards_done": 8,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1791059344.7262228,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
-   "tokens_generated": 9595111,
-   "tokens_scored": 1214,
-   "gpu_hours": 0.6957,
-   "load_hours": 0.0121,
-   "tasks": 42,
-   "records": 42,
-   "success_rate": 1.0,
-   "mean_bits": 47.283398,
-   "median_bits": 37.910279,
-   "mean_forced_bits": 44.738509,
-   "mean_forced_tokens": 21.928571,
+   "tokens_generated": 82531131,
+   "tokens_scored": 9476,
+   "gpu_hours": 5.7019,
+   "load_hours": 0.0962,
+   "tasks": 334,
+   "records": 334,
+   "success_rate": 0.976048,
+   "mean_bits": 50.137621,
+   "median_bits": 40.620621,
+   "mean_forced_bits": 47.805538,
+   "mean_forced_tokens": 22.688623,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 40.285714,
-   "fallback_rate": 0.666667,
+   "mean_tokens": 39.344311,
+   "fallback_rate": 0.700599,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 42
+    "check-failed": 8,
+    "success": 326
    }
   },
   {
@@ -964,33 +968,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 6,
-   "shards_running": 2,
+   "shards_done": 8,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1791059342.7635152,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
-   "tokens_generated": 50586718,
-   "tokens_scored": 7129,
-   "gpu_hours": 4.2215,
-   "load_hours": 0.0705,
-   "tasks": 251,
-   "records": 251,
-   "success_rate": 0.976096,
-   "mean_bits": 37.114063,
-   "median_bits": 24.903168,
-   "mean_forced_bits": 33.494978,
-   "mean_forced_tokens": 19.051793,
+   "tokens_generated": 69834583,
+   "tokens_scored": 9476,
+   "gpu_hours": 5.7315,
+   "load_hours": 0.0942,
+   "tasks": 334,
+   "records": 334,
+   "success_rate": 0.976048,
+   "mean_bits": 39.334365,
+   "median_bits": 27.193205,
+   "mean_forced_bits": 35.779235,
+   "mean_forced_tokens": 19.748503,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 66.131474,
-   "fallback_rate": 0.517928,
+   "mean_tokens": 67.916168,
+   "fallback_rate": 0.535928,
    "mean_restarts": 0.0,
    "ends": {
-    "check-failed": 6,
-    "success": 245
+    "check-failed": 8,
+    "success": 326
    }
   },
   {
@@ -24371,9 +24375,9 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 128,
+   "pending": 113,
    "running": 32,
-   "done": 3950,
+   "done": 3965,
    "failed": 833
   },
   "nodes": [
@@ -24399,14 +24403,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "mb-bm-e2r-olmo2-1b-s1-1007b-s2",
-     "mb-bm-e2r-olmo2-1b-s1-1007b-s4",
-     "mb-bm-e2r-olmo2-1b-s1-105b-s0",
-     "mb-bm-e2r-olmo2-1b-s1-105b-s1",
-     "mb-bm-e2r-olmo2-1b-s1-105b-s5",
      "mb-bm-e2r-olmo2-1b-s1-1993b-s6",
      "mb-bm-e2r-olmo2-1b-s1-210b-s0",
-     "mb-bm-e2r-olmo2-1b-s1-210b-s1"
+     "mb-bm-e2r-olmo2-1b-s1-210b-s1",
+     "mb-bm-e2r-olmo2-1b-s1-210b-s7",
+     "mb-bm-e2r-olmo2-1b-s1-21b-s6",
+     "mb-bm-e2r-olmo2-1b-s1-2999b-s0",
+     "mb-bm-e2r-olmo2-1b-s1-2999b-s1",
+     "mb-bm-e2r-olmo2-1b-s1-2999b-s5"
     ]
    },
    {
@@ -24431,14 +24435,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "mb-bm-e2r-olmo2-1b-s1-1007b-s3",
-     "mb-bm-e2r-olmo2-1b-s1-1007b-s5",
      "mb-bm-e2r-olmo2-1b-s1-1993b-s0",
      "mb-bm-e2r-olmo2-1b-s1-1993b-s1",
      "mb-bm-e2r-olmo2-1b-s1-1993b-s3",
      "mb-bm-e2r-olmo2-1b-s1-1993b-s4",
      "mb-bm-e2r-olmo2-1b-s1-1993b-s7",
-     "mb-bm-e2r-olmo2-1b-s1-210b-s5"
+     "mb-bm-e2r-olmo2-1b-s1-210b-s5",
+     "mb-bm-e2r-olmo2-1b-s1-21b-s0",
+     "mb-bm-e2r-olmo2-1b-s1-21b-s5"
     ]
    },
    {
@@ -24463,14 +24467,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "mb-bm-e2r-olmo2-1b-main-s7",
-     "mb-bm-e2r-olmo2-1b-s1-1007b-s6",
-     "mb-bm-e2r-olmo2-1b-s1-105b-s2",
-     "mb-bm-e2r-olmo2-1b-s1-105b-s4",
      "mb-bm-e2r-olmo2-1b-s1-105b-s6",
      "mb-bm-e2r-olmo2-1b-s1-1993b-s2",
      "mb-bm-e2r-olmo2-1b-s1-210b-s3",
-     "mb-bm-e2r-olmo2-1b-s1-210b-s4"
+     "mb-bm-e2r-olmo2-1b-s1-210b-s4",
+     "mb-bm-e2r-olmo2-1b-s1-21b-s2",
+     "mb-bm-e2r-olmo2-1b-s1-21b-s3",
+     "mb-bm-e2r-olmo2-1b-s1-2999b-s3",
+     "mb-bm-e2r-olmo2-1b-s1-2999b-s4"
     ]
    },
    {
@@ -24495,14 +24499,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "mb-bm-e2r-olmo2-1b-main-s4",
-     "mb-bm-e2r-olmo2-1b-s1-1007b-s1",
-     "mb-bm-e2r-olmo2-1b-s1-1007b-s7",
-     "mb-bm-e2r-olmo2-1b-s1-105b-s3",
      "mb-bm-e2r-olmo2-1b-s1-105b-s7",
      "mb-bm-e2r-olmo2-1b-s1-1993b-s5",
      "mb-bm-e2r-olmo2-1b-s1-210b-s2",
-     "mb-bm-e2r-olmo2-1b-s1-210b-s6"
+     "mb-bm-e2r-olmo2-1b-s1-210b-s6",
+     "mb-bm-e2r-olmo2-1b-s1-21b-s1",
+     "mb-bm-e2r-olmo2-1b-s1-21b-s4",
+     "mb-bm-e2r-olmo2-1b-s1-21b-s7",
+     "mb-bm-e2r-olmo2-1b-s1-2999b-s2"
     ]
    }
   ],
@@ -24511,11 +24515,18 @@
     {
      "kind": "H100",
      "gpus": 32,
+     "state": "standby",
+     "label": "PLI slot (optimizer-training)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 32,
      "state": "working",
      "label": "PLI slot (optimizer-training)"
     }
    ],
    "totals": {
+    "h100_standby": 32,
     "h100_working": 32
    }
   }
@@ -26606,5 +26617,5 @@
   },
   "study_b_sft_checkpoints": 22
  },
- "content_digest": "eaaf576e459203cbe03d7f8d7f181e18866539617ba18c480c20a69e143e1319"
+ "content_digest": "c0fd8a8395df6ecb0fecc1845e1733a84d9189e9c1b6fde71b3499cb2f2cfd72"
 }
