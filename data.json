@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791078316.018942,
- "generated_label": "2026-10-03 21:45 EDT",
+ "generated_at": 1791079223.9787145,
+ "generated_label": "2026-10-03 22:00 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -579,10 +579,10 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 0,
+   "shards_running": 7,
    "shards_failed": 0,
-   "shards_queued": 8,
-   "status": "queued",
+   "shards_queued": 1,
+   "status": "running",
    "created_at": 1791059352.2256353,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
@@ -627,9 +627,9 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 4,
+   "shards_running": 8,
    "shards_failed": 0,
-   "shards_queued": 4,
+   "shards_queued": 0,
    "status": "running",
    "created_at": 1791059351.1984458,
    "git_commit": "da4a42a6c6",
@@ -770,31 +770,34 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 0,
-   "shards_running": 8,
+   "shards_done": 7,
+   "shards_running": 1,
    "shards_failed": 0,
    "shards_queued": 0,
    "status": "running",
    "created_at": 1791059348.6753356,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 90060602,
+   "tokens_scored": 8336,
+   "gpu_hours": 5.0545,
+   "load_hours": 0.0846,
+   "tasks": 293,
+   "records": 293,
+   "success_rate": 0.976109,
+   "mean_bits": 57.111504,
+   "median_bits": 44.511277,
+   "mean_forced_bits": 55.776915,
+   "mean_forced_tokens": 25.982935,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 37.68942,
+   "fallback_rate": 0.846416,
+   "mean_restarts": 0.0,
+   "ends": {
+    "check-failed": 7,
+    "success": 286
+   }
   },
   {
    "name": "mb-bm-e2r-olmo2-1b-s1-1993b",
@@ -818,33 +821,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 8,
-   "shards_done": 4,
-   "shards_running": 4,
+   "shards_done": 8,
+   "shards_running": 0,
    "shards_failed": 0,
    "shards_queued": 0,
-   "status": "running",
+   "status": "complete",
    "created_at": 1791059347.7941017,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
-   "tokens_generated": 45978765,
-   "tokens_scored": 4822,
-   "gpu_hours": 2.8301,
-   "load_hours": 0.0508,
-   "tasks": 168,
-   "records": 168,
-   "success_rate": 0.970238,
-   "mean_bits": 50.459125,
-   "median_bits": 42.85632,
-   "mean_forced_bits": 47.995664,
-   "mean_forced_tokens": 23.279762,
+   "tokens_generated": 94812306,
+   "tokens_scored": 9476,
+   "gpu_hours": 5.7211,
+   "load_hours": 0.095,
+   "tasks": 334,
+   "records": 334,
+   "success_rate": 0.976048,
+   "mean_bits": 52.630648,
+   "median_bits": 43.947322,
+   "mean_forced_bits": 50.427292,
+   "mean_forced_tokens": 23.07485,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 50.767857,
-   "fallback_rate": 0.708333,
+   "mean_tokens": 45.365269,
+   "fallback_rate": 0.745509,
    "mean_restarts": 0.0,
    "ends": {
-    "check-failed": 5,
-    "success": 163
+    "check-failed": 8,
+    "success": 326
    }
   },
   {
@@ -24378,9 +24381,9 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 107,
+   "pending": 96,
    "running": 32,
-   "done": 3971,
+   "done": 3982,
    "failed": 833
   },
   "nodes": [
@@ -24406,14 +24409,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "mb-bm-e2r-olmo2-1b-s1-1993b-s6",
-     "mb-bm-e2r-olmo2-1b-s1-210b-s0",
-     "mb-bm-e2r-olmo2-1b-s1-210b-s1",
      "mb-bm-e2r-olmo2-1b-s1-210b-s7",
      "mb-bm-e2r-olmo2-1b-s1-21b-s6",
      "mb-bm-e2r-olmo2-1b-s1-2999b-s0",
      "mb-bm-e2r-olmo2-1b-s1-2999b-s1",
-     "mb-bm-e2r-olmo2-1b-s1-2999b-s5"
+     "mb-bm-e2r-olmo2-1b-s1-2999b-s5",
+     "mb-bm-e2r-olmo2-1b-s1-4001b-s4",
+     "mb-bm-e2r-olmo2-1b-s1-42b-s0",
+     "mb-bm-e2r-olmo2-1b-s1-42b-s1"
     ]
    },
    {
@@ -24438,14 +24441,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "mb-bm-e2r-olmo2-1b-s1-1993b-s4",
-     "mb-bm-e2r-olmo2-1b-s1-1993b-s7",
-     "mb-bm-e2r-olmo2-1b-s1-210b-s5",
      "mb-bm-e2r-olmo2-1b-s1-21b-s0",
      "mb-bm-e2r-olmo2-1b-s1-21b-s5",
      "mb-bm-e2r-olmo2-1b-s1-4001b-s0",
      "mb-bm-e2r-olmo2-1b-s1-4001b-s1",
-     "mb-bm-e2r-olmo2-1b-s1-4001b-s2"
+     "mb-bm-e2r-olmo2-1b-s1-4001b-s2",
+     "mb-bm-e2r-olmo2-1b-s1-4001b-s6",
+     "mb-bm-e2r-olmo2-1b-s1-4001b-s7",
+     "mb-bm-e2r-olmo2-1b-s1-42b-s5"
     ]
    },
    {
@@ -24470,14 +24473,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "mb-bm-e2r-olmo2-1b-s1-210b-s3",
-     "mb-bm-e2r-olmo2-1b-s1-210b-s4",
      "mb-bm-e2r-olmo2-1b-s1-21b-s2",
      "mb-bm-e2r-olmo2-1b-s1-21b-s3",
      "mb-bm-e2r-olmo2-1b-s1-2999b-s3",
      "mb-bm-e2r-olmo2-1b-s1-2999b-s4",
      "mb-bm-e2r-olmo2-1b-s1-2999b-s6",
-     "mb-bm-e2r-olmo2-1b-s1-4001b-s3"
+     "mb-bm-e2r-olmo2-1b-s1-4001b-s3",
+     "mb-bm-e2r-olmo2-1b-s1-42b-s2",
+     "mb-bm-e2r-olmo2-1b-s1-42b-s6"
     ]
    },
    {
@@ -24502,14 +24505,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "mb-bm-e2r-olmo2-1b-s1-1993b-s5",
-     "mb-bm-e2r-olmo2-1b-s1-210b-s2",
-     "mb-bm-e2r-olmo2-1b-s1-210b-s6",
      "mb-bm-e2r-olmo2-1b-s1-21b-s1",
      "mb-bm-e2r-olmo2-1b-s1-21b-s4",
      "mb-bm-e2r-olmo2-1b-s1-21b-s7",
      "mb-bm-e2r-olmo2-1b-s1-2999b-s2",
-     "mb-bm-e2r-olmo2-1b-s1-2999b-s7"
+     "mb-bm-e2r-olmo2-1b-s1-2999b-s7",
+     "mb-bm-e2r-olmo2-1b-s1-4001b-s5",
+     "mb-bm-e2r-olmo2-1b-s1-42b-s3",
+     "mb-bm-e2r-olmo2-1b-s1-42b-s4"
     ]
    }
   ],
@@ -26620,5 +26623,5 @@
   },
   "study_b_sft_checkpoints": 22
  },
- "content_digest": "592b8a8c020c71ecd07af40a107e6015dac6fd5903c5ed0ac34d77fbda953dea"
+ "content_digest": "5657484144ee11c9d5d85f5a70af4ec9cefcd8bbfa391ba77a8c5df3afaa890b"
 }
