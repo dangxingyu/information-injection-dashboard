@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791085565.3006265,
- "generated_label": "2026-10-03 23:46 EDT",
+ "generated_at": 1791086476.2274854,
+ "generated_label": "2026-10-04 00:01 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -51,10 +51,10 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 8,
-   "shards_failed": 0,
+   "shards_running": 0,
+   "shards_failed": 8,
    "shards_queued": 0,
-   "status": "running",
+   "status": "failed",
    "created_at": 1791059363.5991392,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
@@ -99,8 +99,8 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 7,
-   "shards_failed": 1,
+   "shards_running": 0,
+   "shards_failed": 8,
    "shards_queued": 0,
    "status": "failed",
    "created_at": 1791059362.7500281,
@@ -147,10 +147,10 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 8,
-   "shards_failed": 0,
+   "shards_running": 0,
+   "shards_failed": 8,
    "shards_queued": 0,
-   "status": "running",
+   "status": "failed",
    "created_at": 1791059361.8910398,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
@@ -195,10 +195,10 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 0,
-   "shards_running": 8,
-   "shards_failed": 0,
+   "shards_running": 0,
+   "shards_failed": 8,
    "shards_queued": 0,
-   "status": "running",
+   "status": "failed",
    "created_at": 1791059360.6438766,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
@@ -243,10 +243,10 @@
    "limit": 0,
    "shards": 8,
    "shards_done": 7,
-   "shards_running": 1,
-   "shards_failed": 0,
+   "shards_running": 0,
+   "shards_failed": 1,
    "shards_queued": 0,
-   "status": "running",
+   "status": "failed",
    "created_at": 1791059359.1656687,
    "git_commit": "da4a42a6c6",
    "snapshot": "7df0e5d3b79d",
@@ -24414,10 +24414,10 @@
    "unreported": 0
   },
   "queue": {
-   "pending": 7,
+   "pending": 8,
    "running": 32,
    "done": 4070,
-   "failed": 834
+   "failed": 866
   },
   "nodes": [
    {
@@ -24442,14 +24442,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "mb-bm-e2r-qwen3-1.7b-base-s7",
-     "mb-bm-e2r-qwen3-4b-base-s2",
-     "mb-bm-e2r-qwen3-4b-base-s5",
-     "mb-bm-e2r-smollm2-1.7b-s3",
-     "mb-bm-e2r-smollm2-135m-s1",
-     "mb-bm-e2r-smollm2-135m-s3",
-     "mb-bm-e2r-smollm2-135m-s4",
-     "mb-bm-e2r-smollm2-360m-s4"
+     "mb-bm-e2r-qwen3-4b-base-s1-r3",
+     "mb-bm-e2r-qwen3-4b-base-s5-r3",
+     "mb-bm-e2r-smollm2-1.7b-s0-r3",
+     "mb-bm-e2r-smollm2-135m-s0-r3",
+     "mb-bm-e2r-smollm2-135m-s6-r3",
+     "mb-bm-e2r-smollm2-135m-s7-r3",
+     "mb-bm-e2r-smollm2-360m-s0-r3",
+     "mb-bm-e2r-smollm2-360m-s2-r3"
     ]
    },
    {
@@ -24474,14 +24474,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "mb-bm-e2r-qwen3-4b-base-s3",
-     "mb-bm-e2r-qwen3-4b-base-s7",
-     "mb-bm-e2r-smollm2-1.7b-s0",
-     "mb-bm-e2r-smollm2-1.7b-s4",
-     "mb-bm-e2r-smollm2-360m-s0",
-     "mb-bm-e2r-smollm2-360m-s1",
-     "mb-bm-e2r-smollm2-360m-s3",
-     "mb-bm-e2r-smollm2-360m-s6"
+     "mb-bm-e2r-qwen3-1.7b-base-s7-r3",
+     "mb-bm-e2r-qwen3-4b-base-s2-r3",
+     "mb-bm-e2r-qwen3-4b-base-s6-r3",
+     "mb-bm-e2r-smollm2-1.7b-s2-r3",
+     "mb-bm-e2r-smollm2-1.7b-s4-r3",
+     "mb-bm-e2r-smollm2-1.7b-s6-r3",
+     "mb-bm-e2r-smollm2-135m-s2-r3",
+     "mb-bm-e2r-smollm2-135m-s5-r3"
     ]
    },
    {
@@ -24506,14 +24506,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "mb-bm-e2r-qwen3-4b-base-s0",
-     "mb-bm-e2r-qwen3-4b-base-s1",
-     "mb-bm-e2r-smollm2-1.7b-s1",
-     "mb-bm-e2r-smollm2-1.7b-s5",
-     "mb-bm-e2r-smollm2-1.7b-s7",
-     "mb-bm-e2r-smollm2-135m-s6",
-     "mb-bm-e2r-smollm2-135m-s7",
-     "mb-bm-e2r-smollm2-360m-s5"
+     "mb-bm-e2r-qwen3-4b-base-s3-r3",
+     "mb-bm-e2r-smollm2-1.7b-s3-r3",
+     "mb-bm-e2r-smollm2-135m-s4-r3",
+     "mb-bm-e2r-smollm2-360m-s1-r3",
+     "mb-bm-e2r-smollm2-360m-s3-r3",
+     "mb-bm-e2r-smollm2-360m-s4-r3",
+     "mb-bm-e2r-smollm2-360m-s5-r3",
+     "mb-bm-e2r-smollm2-360m-s6-r3"
     ]
    },
    {
@@ -24538,14 +24538,14 @@
     "heartbeat_stale": false,
     "age_s": 0.0,
     "tasks": [
-     "mb-bm-e2r-qwen3-4b-base-s4",
-     "mb-bm-e2r-qwen3-4b-base-s6",
-     "mb-bm-e2r-smollm2-1.7b-s2",
-     "mb-bm-e2r-smollm2-1.7b-s6",
-     "mb-bm-e2r-smollm2-135m-s0",
-     "mb-bm-e2r-smollm2-135m-s2",
-     "mb-bm-e2r-smollm2-360m-s2",
-     "mb-bm-e2r-smollm2-360m-s7"
+     "mb-bm-e2r-qwen3-4b-base-s0-r3",
+     "mb-bm-e2r-qwen3-4b-base-s4-r3",
+     "mb-bm-e2r-qwen3-4b-base-s7-r3",
+     "mb-bm-e2r-smollm2-1.7b-s1-r3",
+     "mb-bm-e2r-smollm2-1.7b-s5-r3",
+     "mb-bm-e2r-smollm2-1.7b-s7-r3",
+     "mb-bm-e2r-smollm2-135m-s1-r3",
+     "mb-bm-e2r-smollm2-135m-s3-r3"
     ]
    }
   ],
@@ -24554,18 +24554,11 @@
     {
      "kind": "H100",
      "gpus": 32,
-     "state": "standby",
-     "label": "PLI slot (optimizer-training)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 32,
      "state": "working",
      "label": "PLI slot (optimizer-training)"
     }
    ],
    "totals": {
-    "h100_standby": 32,
     "h100_working": 32
    }
   }
@@ -26656,5 +26649,5 @@
   },
   "study_b_sft_checkpoints": 22
  },
- "content_digest": "d0c9c8a74df4e9336741b7ce4389d1e249f8117b7d868b0b4b7fc2ecf53bc23a"
+ "content_digest": "ae5d4f43ea2276a1e228cb7dad1a70e981797b8d94ffb83b7ea6d07729e00255"
 }
