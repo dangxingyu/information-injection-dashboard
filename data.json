@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791179054.018406,
- "generated_label": "2026-10-05 01:44 EDT",
+ "generated_at": 1791179955.853392,
+ "generated_label": "2026-10-05 01:59 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -3328,31 +3328,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 1,
+   "status": "running",
    "created_at": 1791175247.931605,
    "git_commit": "adf4f94474",
    "snapshot": "86d7b4e99d9c",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 5014695,
+   "tokens_scored": 3266,
+   "gpu_hours": 0.0684,
+   "load_hours": 0.0171,
+   "tasks": 200,
+   "records": 200,
+   "success_rate": 1.0,
+   "mean_bits": 45.234842,
+   "median_bits": 53.276707,
+   "mean_forced_bits": 43.994344,
+   "mean_forced_tokens": 12.605,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 169.04,
+   "fallback_rate": 0.705,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 200
+   }
   },
   {
    "name": "fe-lh-free-olmo2-7b",
@@ -3617,32 +3619,32 @@
    "runs": 1,
    "limit": 0,
    "shards": 2,
-   "shards_done": 1,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791175246.1607513,
    "git_commit": "adf4f94474",
    "snapshot": "86d7b4e99d9c",
-   "tokens_generated": 7394825,
-   "tokens_scored": 3006,
-   "gpu_hours": 0.3116,
-   "load_hours": 0.0166,
-   "tasks": 200,
-   "records": 200,
+   "tokens_generated": 14711582,
+   "tokens_scored": 6072,
+   "gpu_hours": 0.6193,
+   "load_hours": 0.0309,
+   "tasks": 400,
+   "records": 400,
    "success_rate": 1.0,
-   "mean_bits": 52.94221,
-   "median_bits": 56.055465,
-   "mean_forced_bits": 51.973933,
-   "mean_forced_tokens": 12.7,
+   "mean_bits": 51.483947,
+   "median_bits": 54.675854,
+   "mean_forced_bits": 50.486839,
+   "mean_forced_tokens": 12.63,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 116.05,
-   "fallback_rate": 0.8,
+   "mean_tokens": 112.7025,
+   "fallback_rate": 0.7925,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 200
+    "success": 400
    }
   },
   {
@@ -35051,10 +35053,22 @@
      "gpus": 1,
      "state": "standby",
      "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
     }
    ],
    "totals": {
-    "h100_standby": 2
+    "h100_standby": 4
    }
   }
  },
@@ -38942,5 +38956,5 @@
    }
   ]
  },
- "content_digest": "b2ec30503dfd5815bba351d9fdb83712f47775b8fe5975cae8595344e0701259"
+ "content_digest": "211a5897839287ae4b588e135ca312977d917fa98d086776d77ad265b214dc5c"
 }
