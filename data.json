@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791180865.9101794,
- "generated_label": "2026-10-05 02:14 EDT",
+ "generated_at": 1791181775.6804562,
+ "generated_label": "2026-10-05 02:29 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -299,11 +299,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -342,11 +340,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -588,11 +584,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -631,11 +625,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -877,11 +869,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -920,11 +910,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -1166,11 +1154,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -1209,11 +1195,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -1455,11 +1439,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -1498,11 +1480,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -1744,11 +1724,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -1787,11 +1765,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -2033,11 +2009,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -2076,11 +2050,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -2322,11 +2294,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -2365,11 +2335,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -2611,11 +2579,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -2654,11 +2620,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -2900,11 +2864,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -2943,11 +2905,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -3039,31 +2999,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 1,
+   "status": "running",
    "created_at": 1791175249.7525756,
    "git_commit": "adf4f94474",
    "snapshot": "86d7b4e99d9c",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 3616296,
+   "tokens_scored": 3006,
+   "gpu_hours": 0.063,
+   "load_hours": 0.0198,
+   "tasks": 200,
+   "records": 200,
+   "success_rate": 1.0,
+   "mean_bits": 51.357312,
+   "median_bits": 54.798805,
+   "mean_forced_bits": 50.352566,
+   "mean_forced_tokens": 12.485,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 79.69,
+   "fallback_rate": 0.78,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 200
+   }
   },
   {
    "name": "fe-lh-free-qwen2.5-7b",
@@ -3189,11 +3151,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -3232,11 +3192,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -3480,11 +3438,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -3523,11 +3479,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -3771,11 +3725,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -3814,11 +3766,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -4060,11 +4010,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -4103,11 +4051,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -4349,11 +4295,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -4392,11 +4336,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -4638,11 +4580,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -4681,11 +4621,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -4927,11 +4865,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -4970,11 +4906,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -5216,11 +5150,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -5259,11 +5191,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -5505,11 +5435,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -5548,11 +5476,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -5794,11 +5720,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -5837,11 +5761,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -6083,11 +6005,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -6126,11 +6046,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -6372,11 +6290,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -6415,11 +6331,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -6661,11 +6575,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -6704,11 +6616,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -6950,11 +6860,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -6993,11 +6901,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -7133,7 +7039,7 @@
    "status": "queued",
    "created_at": 1791174349.8721998,
    "git_commit": "d0ce5df178",
-   "snapshot": "c0a98dbeb5ea",
+   "snapshot": "a5008d41c98c",
    "tokens_generated": 0,
    "tokens_scored": 0,
    "gpu_hours": 0.0,
@@ -7170,7 +7076,7 @@
    "status": "queued",
    "created_at": 1791174349.657679,
    "git_commit": "d0ce5df178",
-   "snapshot": "c0a98dbeb5ea",
+   "snapshot": "a5008d41c98c",
    "tokens_generated": 0,
    "tokens_scored": 0,
    "gpu_hours": 0.0,
@@ -7211,7 +7117,7 @@
    "status": "running",
    "created_at": 1791174349.4418364,
    "git_commit": "d0ce5df178",
-   "snapshot": "c0a98dbeb5ea",
+   "snapshot": "a5008d41c98c",
    "tokens_generated": 242093,
    "tokens_scored": 242911,
    "gpu_hours": 0.2695,
@@ -7241,39 +7147,39 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791174349.2263522,
    "git_commit": "d0ce5df178",
    "snapshot": "c0a98dbeb5ea",
    "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_scored": 381,
+   "gpu_hours": 0.0003,
+   "load_hours": 0.0367,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 42.745877,
+   "median_bits": 42.469017,
+   "mean_forced_bits": 42.745877,
+   "mean_forced_tokens": 12.7,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 12.7,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-imo-ref-qwen3-30b-a3b-base",
@@ -7284,11 +7190,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -7336,31 +7240,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791174348.7926047,
    "git_commit": "d0ce5df178",
    "snapshot": "c0a98dbeb5ea",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 3078747,
+   "tokens_scored": 381,
+   "gpu_hours": 0.0593,
+   "load_hours": 0.0242,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 22.652645,
+   "median_bits": 8.515726,
+   "mean_forced_bits": 19.014157,
+   "mean_forced_tokens": 5.633333,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 468.8,
+   "fallback_rate": 0.433333,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-imo-bm-qwen3-30b-a3b-base",
@@ -7532,11 +7438,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -7575,11 +7479,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -7821,11 +7723,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -7864,11 +7764,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -8075,31 +7973,34 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 1,
+   "status": "running",
    "created_at": 1791174344.9143398,
    "git_commit": "d0ce5df178",
    "snapshot": "c0a98dbeb5ea",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 288674,
+   "tokens_scored": 240023,
+   "gpu_hours": 0.4164,
+   "load_hours": 0.0148,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 0.6,
+   "mean_bits": 377.758942,
+   "median_bits": 73.491841,
+   "mean_forced_bits": 366.669,
+   "mean_forced_tokens": 285.15,
+   "mean_select_blocks": 4.25,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 893.65,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "context": 8,
+    "success": 12
+   }
   },
   {
    "name": "fe-aime-ref-delphi-1e22",
@@ -8110,11 +8011,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -8153,11 +8052,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -8366,33 +8263,34 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 1,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791174343.4268088,
    "git_commit": "d0ce5df178",
    "snapshot": "c0a98dbeb5ea",
-   "tokens_generated": 241769,
-   "tokens_scored": 239844,
-   "gpu_hours": 0.5135,
-   "load_hours": 0.0263,
-   "tasks": 10,
-   "records": 20,
-   "success_rate": 0.65,
-   "mean_bits": 296.874659,
+   "tokens_generated": 458657,
+   "tokens_scored": 649657,
+   "gpu_hours": 1.0025,
+   "load_hours": 0.0456,
+   "tasks": 20,
+   "records": 40,
+   "success_rate": 0.575,
+   "mean_bits": 406.227144,
    "median_bits": 48.734673,
-   "mean_forced_bits": 289.110741,
-   "mean_forced_tokens": 279.0,
-   "mean_select_blocks": 4.65,
+   "mean_forced_bits": 399.600612,
+   "mean_forced_tokens": 315.925,
+   "mean_select_blocks": 4.425,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 885.05,
+   "mean_tokens": 936.775,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "context": 7,
-    "success": 13
+    "context": 15,
+    "success": 23,
+    "unsolved": 2
    }
   },
   {
@@ -8404,11 +8302,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -8447,11 +8343,9 @@
    "config": {
     "environment": 2,
     "horizon": 1024,
-    "rollout_tokens": 1024,
-    "ledger": "harmonic",
-    "pool": 16
+    "rollout_tokens": 1024
    },
-   "config_summary": "environment=2, horizon=1024, ledger=harmonic, pool=16, rollout_tokens=1024",
+   "config_summary": "environment=2, horizon=1024, rollout_tokens=1024",
    "runs": 1,
    "limit": 0,
    "shards": 1,
@@ -35047,6 +34941,12 @@
    "allocations": [
     {
      "kind": "H100",
+     "gpus": 2,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
      "gpus": 1,
      "state": "standby",
      "label": "PLI slot (fe-item)"
@@ -35054,6 +34954,48 @@
     {
      "kind": "H100",
      "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 2,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 2,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 2,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 2,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 2,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 2,
      "state": "standby",
      "label": "PLI slot (fe-item)"
     },
@@ -35065,7 +35007,7 @@
     }
    ],
    "totals": {
-    "h100_standby": 3
+    "h100_standby": 18
    }
   }
  },
@@ -37679,11 +37621,37 @@
    },
    {
     "model": "delphi-1e22",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 56.7491491081864,
+      "reference": null,
+      "unaided": 0.0057421875
+     }
+    }
    },
    {
     "model": "delphi-1e23",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 54.42618610332134,
+      "reference": null,
+      "unaided": 0.0076953125
+     },
+     "tb": {
+      "n": 9,
+      "injection": 686.6042091878754,
+      "reference": null,
+      "unaided": null
+     },
+     "tau": {
+      "n": 2,
+      "injection": 19.85258597582728,
+      "reference": null,
+      "unaided": null
+     }
+    }
    },
    {
     "model": "qwen3-0.6b-base",
@@ -37707,7 +37675,20 @@
    },
    {
     "model": "qwen3-30b-a3b-base",
-    "suites": {}
+    "suites": {
+     "aime25": {
+      "n": 30,
+      "injection": 22.65264456625078,
+      "reference": 42.74587721748772,
+      "unaided": 0.015364583333333333
+     },
+     "imoab": {
+      "n": 400,
+      "injection": 33.765508765230685,
+      "reference": null,
+      "unaided": 0.0473046875
+     }
+    }
    },
    {
     "model": "olmo2-1b-main",
@@ -37715,7 +37696,14 @@
    },
    {
     "model": "olmo2-7b",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 51.483947296725745,
+      "reference": null,
+      "unaided": 0.01125
+     }
+    }
    },
    {
     "model": "qwen2.5-0.5b",
@@ -37731,7 +37719,14 @@
    },
    {
     "model": "qwen2.5-7b",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 43.99738038054393,
+      "reference": null,
+      "unaided": 0.0194921875
+     }
+    }
    },
    {
     "model": "llama3.2-1b",
@@ -37897,7 +37892,7 @@
    "all": {}
   },
   "figures": [],
-  "generated_at": 1791175972.4832573
+  "generated_at": 1791181730.376491
  },
  "headlines": {
   "code": [
@@ -38953,5 +38948,5 @@
    }
   ]
  },
- "content_digest": "f422370779fad167406f083ea43e13c70f1bcf09f286587d0e70fd0c2be853fc"
+ "content_digest": "ae6c42b989f72bc74d152978efffaa2098553006872681950dae0406a8f4d822"
 }
