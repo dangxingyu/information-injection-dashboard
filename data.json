@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791175415.8609948,
- "generated_label": "2026-10-05 00:43 EDT",
+ "generated_at": 1791176325.9082727,
+ "generated_label": "2026-10-05 00:58 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -8487,32 +8487,32 @@
    "runs": 8,
    "limit": 0,
    "shards": 3,
-   "shards_done": 2,
+   "shards_done": 3,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791172497.7927618,
    "git_commit": "080ecd11ca",
    "snapshot": "afc09a56264a",
-   "tokens_generated": 1138688,
-   "tokens_scored": 58458,
-   "gpu_hours": 1.0888,
-   "load_hours": 0.0278,
-   "tasks": 2,
-   "records": 16,
+   "tokens_generated": 1920624,
+   "tokens_scored": 65511,
+   "gpu_hours": 2.0631,
+   "load_hours": 0.0418,
+   "tasks": 3,
+   "records": 24,
    "success_rate": 1.0,
-   "mean_bits": 243.823645,
-   "median_bits": 243.823645,
-   "mean_forced_bits": 242.795917,
-   "mean_forced_tokens": 319.0,
+   "mean_bits": 246.131028,
+   "median_bits": 250.745794,
+   "mean_forced_bits": 226.046706,
+   "mean_forced_tokens": 245.458333,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 372.4375,
+   "mean_tokens": 624.25,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 16
+    "success": 24
    }
   },
   {
@@ -34903,9 +34903,9 @@
    "allocations": [
     {
      "kind": "H100",
-     "gpus": 8,
+     "gpus": 1,
      "state": "standby",
-     "label": "PLI slot (info-injection)"
+     "label": "PLI slot (fe-item)"
     },
     {
      "kind": "H100",
@@ -34915,7 +34915,7 @@
     }
    ],
    "totals": {
-    "h100_standby": 9
+    "h100_standby": 2
    }
   }
  },
@@ -36710,6 +36710,12 @@
       "label": "v20f + partial injection in subgoals",
       "experiment": "lh-v20f-smollm2-135m",
       "cells": {
+       "tb-analyze-access-logs": {
+        "bits": 250.75,
+        "se": 3.71,
+        "runs": 8,
+        "success": 1.0
+       },
        "tb-recover-obfuscated-files": {
         "bits": 97.1,
         "se": 2.43,
@@ -37475,7 +37481,273 @@
   ]
  },
  "final_eval": {
-  "status": "pending"
+  "status": "ready",
+  "suites": [
+   "aime25",
+   "imoab",
+   "tb",
+   "tau"
+  ],
+  "suite_labels": {
+   "aime25": "AIME 2025",
+   "imoab": "IMO-AnswerBench",
+   "tb": "terminal-bench",
+   "tau": "tau-bench"
+  },
+  "base": [
+   {
+    "model": "delphi-3e18",
+    "suites": {}
+   },
+   {
+    "model": "delphi-9e18",
+    "suites": {}
+   },
+   {
+    "model": "delphi-2e19",
+    "suites": {}
+   },
+   {
+    "model": "delphi-3e19",
+    "suites": {}
+   },
+   {
+    "model": "delphi-9e19",
+    "suites": {}
+   },
+   {
+    "model": "delphi-2e20",
+    "suites": {}
+   },
+   {
+    "model": "delphi-3e20",
+    "suites": {}
+   },
+   {
+    "model": "delphi-1e21",
+    "suites": {}
+   },
+   {
+    "model": "delphi-1e22",
+    "suites": {}
+   },
+   {
+    "model": "delphi-1e23",
+    "suites": {}
+   },
+   {
+    "model": "qwen3-0.6b-base",
+    "suites": {}
+   },
+   {
+    "model": "qwen3-1.7b-base",
+    "suites": {}
+   },
+   {
+    "model": "qwen3-4b-base",
+    "suites": {}
+   },
+   {
+    "model": "qwen3-8b-base",
+    "suites": {}
+   },
+   {
+    "model": "qwen3-14b-base",
+    "suites": {}
+   },
+   {
+    "model": "qwen3-30b-a3b-base",
+    "suites": {}
+   },
+   {
+    "model": "olmo2-1b-main",
+    "suites": {}
+   },
+   {
+    "model": "olmo2-7b",
+    "suites": {}
+   },
+   {
+    "model": "qwen2.5-0.5b",
+    "suites": {}
+   },
+   {
+    "model": "qwen2.5-1.5b",
+    "suites": {}
+   },
+   {
+    "model": "qwen2.5-3b",
+    "suites": {}
+   },
+   {
+    "model": "qwen2.5-7b",
+    "suites": {}
+   },
+   {
+    "model": "llama3.2-1b",
+    "suites": {}
+   },
+   {
+    "model": "llama3.2-3b",
+    "suites": {}
+   },
+   {
+    "model": "llama3.1-8b",
+    "suites": {}
+   },
+   {
+    "model": "marin-8b-base",
+    "suites": {}
+   },
+   {
+    "model": "smollm2-135m",
+    "suites": {}
+   },
+   {
+    "model": "smollm2-360m",
+    "suites": {}
+   },
+   {
+    "model": "smollm2-1.7b",
+    "suites": {}
+   }
+  ],
+  "post": [
+   {
+    "model": "qwen3-0.6b",
+    "base": "qwen3-0.6b-base",
+    "suites": {}
+   },
+   {
+    "model": "qwen3-1.7b",
+    "base": "qwen3-1.7b-base",
+    "suites": {}
+   },
+   {
+    "model": "qwen3-4b",
+    "base": "qwen3-4b-base",
+    "suites": {}
+   },
+   {
+    "model": "qwen3-8b",
+    "base": "qwen3-8b-base",
+    "suites": {}
+   },
+   {
+    "model": "qwen3-14b",
+    "base": "qwen3-14b-base",
+    "suites": {}
+   },
+   {
+    "model": "qwen3-30b-a3b",
+    "base": "qwen3-30b-a3b-base",
+    "suites": {}
+   },
+   {
+    "model": "qwen3-4b-instruct-2507",
+    "base": "qwen3-4b-base",
+    "suites": {}
+   },
+   {
+    "model": "qwen3-30b-a3b-instruct-2507",
+    "base": "qwen3-30b-a3b-base",
+    "suites": {}
+   },
+   {
+    "model": "olmo2-1b-sft",
+    "base": "olmo2-1b-main",
+    "suites": {}
+   },
+   {
+    "model": "olmo2-1b-dpo",
+    "base": "olmo2-1b-main",
+    "suites": {}
+   },
+   {
+    "model": "olmo2-1b-instruct",
+    "base": "olmo2-1b-main",
+    "suites": {}
+   },
+   {
+    "model": "olmo2-7b-sft",
+    "base": "olmo2-7b",
+    "suites": {}
+   },
+   {
+    "model": "olmo2-7b-dpo",
+    "base": "olmo2-7b",
+    "suites": {}
+   },
+   {
+    "model": "olmo2-7b-instruct",
+    "base": "olmo2-7b",
+    "suites": {}
+   },
+   {
+    "model": "qwen2.5-0.5b-instruct",
+    "base": "qwen2.5-0.5b",
+    "suites": {}
+   },
+   {
+    "model": "qwen2.5-1.5b-instruct",
+    "base": "qwen2.5-1.5b",
+    "suites": {}
+   },
+   {
+    "model": "qwen2.5-3b-instruct",
+    "base": "qwen2.5-3b",
+    "suites": {}
+   },
+   {
+    "model": "qwen2.5-7b-instruct",
+    "base": "qwen2.5-7b",
+    "suites": {}
+   },
+   {
+    "model": "llama3.2-1b-instruct",
+    "base": "llama3.2-1b",
+    "suites": {}
+   },
+   {
+    "model": "llama3.2-3b-instruct",
+    "base": "llama3.2-3b",
+    "suites": {}
+   },
+   {
+    "model": "llama3.1-8b-instruct",
+    "base": "llama3.1-8b",
+    "suites": {}
+   },
+   {
+    "model": "marin-8b-instruct",
+    "base": "marin-8b-base",
+    "suites": {}
+   },
+   {
+    "model": "smollm2-135m-instruct",
+    "base": "smollm2-135m",
+    "suites": {}
+   },
+   {
+    "model": "smollm2-360m-instruct",
+    "base": "smollm2-360m",
+    "suites": {}
+   },
+   {
+    "model": "smollm2-1.7b-instruct",
+    "base": "smollm2-1.7b",
+    "suites": {}
+   }
+  ],
+  "delphi": {},
+  "pairs": {
+   "hybrid": {},
+   "final": {},
+   "all-qwen": {},
+   "all": {}
+  },
+  "figures": [],
+  "generated_at": 1791175972.4832573
  },
  "headlines": {
   "code": [
@@ -37609,22 +37881,22 @@
    {
     "student": "smollm2-135m",
     "family": "terminal-bench",
-    "tasks": 2,
+    "tasks": 3,
     "totals": {
-     "force benchmark reference": 1990.2,
-     "v19d + 32 whole episodes first": 1946.8,
-     "force Opus trajectory": 503.0,
-     "v19g per turn on Opus trajectory": 500.5,
-     "v20e Opus subgoals + safety": 488.1,
-     "v20f + partial injection in subgoals": 487.6
+     "force benchmark reference": 2325.2,
+     "v19d + 32 whole episodes first": 2330.7,
+     "force Opus trajectory": 709.7,
+     "v19g per turn on Opus trajectory": 706.0,
+     "v20e Opus subgoals + safety": 693.6,
+     "v20f + partial injection in subgoals": 738.4
     },
     "se": {
      "force benchmark reference": 0.0,
-     "v19d + 32 whole episodes first": 14.4,
+     "v19d + 32 whole episodes first": 15.4,
      "force Opus trajectory": 0.0,
-     "v19g per turn on Opus trajectory": 2.0,
-     "v20e Opus subgoals + safety": 2.7,
-     "v20f + partial injection in subgoals": 2.4
+     "v19g per turn on Opus trajectory": 5.0,
+     "v20e Opus subgoals + safety": 3.9,
+     "v20f + partial injection in subgoals": 4.4
     }
    },
    {
@@ -38531,5 +38803,5 @@
    }
   ]
  },
- "content_digest": "3bf6dd811104468946dd1c46b90637c0d62504f440ea27ca5b90ad46a5c18874"
+ "content_digest": "7fe01dca9144b5c54d588a03e568a8dbb3a95cd1b4cbb6a455b50c61b2caaa02"
 }
