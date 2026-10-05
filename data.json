@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791217165.9620864,
- "generated_label": "2026-10-05 12:19 EDT",
+ "generated_at": 1791218076.0295165,
+ "generated_label": "2026-10-05 12:34 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -197,33 +197,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 1,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791208029.9056215,
    "git_commit": "525f9a9df5",
    "snapshot": "42c7fdaec16c",
-   "tokens_generated": 594600,
-   "tokens_scored": 475881,
-   "gpu_hours": 0.3409,
-   "load_hours": 0.0119,
-   "tasks": 10,
-   "records": 20,
-   "success_rate": 0.9,
-   "mean_bits": 840.028164,
-   "median_bits": 315.45695,
-   "mean_forced_bits": 799.710832,
-   "mean_forced_tokens": 519.15,
-   "mean_select_blocks": 5.5,
+   "tokens_generated": 1139284,
+   "tokens_scored": 776225,
+   "gpu_hours": 0.7675,
+   "load_hours": 0.0246,
+   "tasks": 20,
+   "records": 40,
+   "success_rate": 0.95,
+   "mean_bits": 687.996328,
+   "median_bits": 204.386847,
+   "mean_forced_bits": 664.907632,
+   "mean_forced_tokens": 461.025,
+   "mean_select_blocks": 5.3,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 2279.85,
+   "mean_tokens": 1933.875,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
     "context": 2,
-    "success": 18
+    "success": 38
    }
   },
   {
@@ -46114,17 +46114,8 @@
   },
   "nodes": [],
   "holdings": {
-   "allocations": [
-    {
-     "kind": "H100",
-     "gpus": 1,
-     "state": "standby",
-     "label": "PLI slot (fe-item)"
-    }
-   ],
-   "totals": {
-    "h100_standby": 1
-   }
+   "allocations": [],
+   "totals": {}
   }
  },
  "study_b": {
@@ -53144,5 +53135,5 @@
    }
   ]
  },
- "content_digest": "960cd258cf686cbd3e64d5af2c9022f6ae967118317073d9f9557598a3cf2564"
+ "content_digest": "53df15bd2e27df9ab48efc04df05cd57a83d5f92d765ac8209d2da0f1a0909de"
 }
