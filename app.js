@@ -450,6 +450,14 @@ function renderFinalEval() {
     f.base.filter(r => Object.keys(r.suites).length).map(r => `<tr><td>${esc(r.model)}</td>${S.map(s => triple(r.suites[s])).join('')}</tr>`).join('') + '</tbody>';
   $('fe-post').innerHTML = `<thead><tr><th>post-trained model</th><th>base</th>${S.map(s => `<th class="num">${L[s]}</th>`).join('')}</tr></thead><tbody>` +
     f.post.filter(r => Object.keys(r.suites).length).map(r => `<tr><td>${esc(r.model)}</td><td class="muted">${esc(r.base)}</td>${S.map(s => r.suites[s] ? `<td class="num">${pct(r.suites[s].accuracy)} <small>(${r.suites[s].n})</small></td>` : '<td class="num muted">–</td>').join('')}</tr>`).join('') + '</tbody>';
+  const rel = f.reliability || {};
+  const rs = S.filter(s => rel[s]);
+  $('fe-reliability').innerHTML = !rs.length ? '<tr><td class="muted">Replicate runs pending.</td></tr>' :
+    `<thead><tr><th></th>${rs.map(s => `<th class="num">${L[s]}</th>`).join('')}</tr></thead><tbody>` +
+    `<tr><td>Spearman, per (model, task)</td>${rs.map(s => cell(rel[s].task_spearman, 3)).join('')}</tr>` +
+    `<tr><td>Spearman of model means</td>${rs.map(s => cell(rel[s].model_spearman, 3)).join('')}</tr>` +
+    `<tr><td>mean |difference|, bits per task</td>${rs.map(s => `<td class="num">${bits(rel[s].mean_abs_diff)}</td>`).join('')}</tr>` +
+    `<tr class="muted"><td>models · (model, task) pairs</td>${rs.map(s => `<td class="num">${rel[s].models} · ${rel[s].pairs}</td>`).join('')}</tr></tbody>`;
   const con = f.contrast || {};
   const cm = Object.keys(con);
   $('fe-contrast').innerHTML = !cm.length ? '<tr><td class="muted">Running.</td></tr>' :
