@@ -1,1 +1,1 @@
-{"name":"lh-v20g-qwen3-8b-base","tasks":[]}
+{"name":"lh-v20g-qwen3-8b-base","tasks":[{"task_id":"tb-recover-obfuscated-files","runs":8,"successes":8,"success_rate":1.0,"mean_bits":28.010617,"mean_forced_bits":20.226991,"mean_forced_tokens":75.375,"mean_select_blocks":0.0,"mean_free_blocks":0.0,"mean_tokens":260.625,"fallback_rate":0.0,"mean_restarts":0.0,"ends":{"success":8}}]}
