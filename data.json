@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791188119.8178897,
- "generated_label": "2026-10-05 04:15 EDT",
+ "generated_at": 1791189035.8779862,
+ "generated_label": "2026-10-05 04:30 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -981,31 +981,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791175262.7173388,
    "git_commit": "adf4f94474",
    "snapshot": "86d7b4e99d9c",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 3117871,
+   "tokens_scored": 381,
+   "gpu_hours": 0.0385,
+   "load_hours": 0.0134,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 49.572993,
+   "median_bits": 56.292606,
+   "mean_forced_bits": 48.622875,
+   "mean_forced_tokens": 11.1,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 75.233333,
+   "fallback_rate": 0.866667,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-imo-bm-qwen2.5-0.5b",
@@ -1271,31 +1273,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791175260.9166977,
    "git_commit": "adf4f94474",
    "snapshot": "86d7b4e99d9c",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 3275711,
+   "tokens_scored": 330,
+   "gpu_hours": 0.0352,
+   "load_hours": 0.0103,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 47.108295,
+   "median_bits": 54.079754,
+   "mean_forced_bits": 45.899667,
+   "mean_forced_tokens": 9.166667,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 106.166667,
+   "fallback_rate": 0.833333,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-imo-bm-llama3.2-1b",
@@ -1354,31 +1358,36 @@
    "runs": 16,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791175260.3902264,
    "git_commit": "adf4f94474",
    "snapshot": "bbee98e9a347",
-   "tokens_generated": 0,
+   "tokens_generated": 172556,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "gpu_hours": 0.2266,
+   "load_hours": 0.0123,
+   "tasks": 20,
+   "records": 320,
+   "success_rate": 0.0,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 18.03125,
+   "mean_tokens": 1284.325,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "budget": 123,
+    "context": 2,
+    "eos": 83,
+    "finished": 112
+   }
   },
   {
    "name": "fe-lh-ref-qwen2.5-1.5b",
@@ -1561,31 +1570,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791175259.1001966,
    "git_commit": "adf4f94474",
    "snapshot": "86d7b4e99d9c",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 2740976,
+   "tokens_scored": 381,
+   "gpu_hours": 0.0351,
+   "load_hours": 0.0117,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 42.629964,
+   "median_bits": 55.456221,
+   "mean_forced_bits": 40.34149,
+   "mean_forced_tokens": 8.933333,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 128.333333,
+   "fallback_rate": 0.7,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-imo-bm-qwen2.5-1.5b",
@@ -1644,31 +1655,37 @@
    "runs": 16,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791175258.5858183,
    "git_commit": "adf4f94474",
    "snapshot": "bbee98e9a347",
-   "tokens_generated": 0,
+   "tokens_generated": 180898,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "gpu_hours": 0.1598,
+   "load_hours": 0.0128,
+   "tasks": 20,
+   "records": 320,
+   "success_rate": 0.0,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 14.98125,
+   "mean_tokens": 999.203125,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "budget": 102,
+    "context": 2,
+    "empty": 109,
+    "eos": 23,
+    "finished": 84
+   }
   },
   {
    "name": "fe-lh-ref-smollm2-1.7b",
@@ -1852,31 +1869,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791175257.2858472,
    "git_commit": "adf4f94474",
    "snapshot": "86d7b4e99d9c",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 2891039,
+   "tokens_scored": 441,
+   "gpu_hours": 0.0475,
+   "load_hours": 0.0113,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 29.302985,
+   "median_bits": 31.789988,
+   "mean_forced_bits": 28.732464,
+   "mean_forced_tokens": 13.266667,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 65.1,
+   "fallback_rate": 0.9,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-imo-bm-smollm2-1.7b",
@@ -1935,31 +1954,36 @@
    "runs": 16,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791175256.7658107,
    "git_commit": "adf4f94474",
    "snapshot": "bbee98e9a347",
-   "tokens_generated": 0,
+   "tokens_generated": 165880,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "gpu_hours": 0.1848,
+   "load_hours": 0.0124,
+   "tasks": 20,
+   "records": 320,
+   "success_rate": 0.0,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 17.290625,
+   "mean_tokens": 1144.175,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "budget": 127,
+    "empty": 1,
+    "eos": 80,
+    "finished": 112
+   }
   },
   {
    "name": "fe-lh-ref-llama3.2-3b",
@@ -2142,31 +2166,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791175255.4442227,
    "git_commit": "adf4f94474",
    "snapshot": "86d7b4e99d9c",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 2371953,
+   "tokens_scored": 330,
+   "gpu_hours": 0.0321,
+   "load_hours": 0.0123,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 44.561376,
+   "median_bits": 51.80697,
+   "mean_forced_bits": 43.332042,
+   "mean_forced_tokens": 9.166667,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 78.1,
+   "fallback_rate": 0.833333,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-imo-bm-llama3.2-3b",
@@ -2225,31 +2251,38 @@
    "runs": 16,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791175254.930999,
    "git_commit": "adf4f94474",
    "snapshot": "bbee98e9a347",
-   "tokens_generated": 0,
+   "tokens_generated": 189271,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "gpu_hours": 0.2188,
+   "load_hours": 0.0123,
+   "tasks": 20,
+   "records": 320,
+   "success_rate": 0.009375,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 19.609375,
+   "mean_tokens": 1499.4,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "budget": 146,
+    "context": 1,
+    "empty": 1,
+    "eos": 71,
+    "finished": 98,
+    "success": 3
+   }
   },
   {
    "name": "fe-lh-ref-qwen2.5-3b",
@@ -2517,31 +2550,38 @@
    "runs": 16,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791175253.1252697,
    "git_commit": "adf4f94474",
    "snapshot": "bbee98e9a347",
-   "tokens_generated": 0,
+   "tokens_generated": 136107,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "gpu_hours": 0.2211,
+   "load_hours": 0.0151,
+   "tasks": 20,
+   "records": 320,
+   "success_rate": 0.0125,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 15.18125,
+   "mean_tokens": 947.40625,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "budget": 77,
+    "context": 96,
+    "empty": 1,
+    "eos": 83,
+    "finished": 59,
+    "success": 4
+   }
   },
   {
    "name": "fe-lh-ref-marin-8b-base",
@@ -2810,31 +2850,36 @@
    "runs": 16,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791175251.3226554,
    "git_commit": "adf4f94474",
    "snapshot": "bbee98e9a347",
-   "tokens_generated": 0,
+   "tokens_generated": 173995,
    "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "gpu_hours": 0.2644,
+   "load_hours": 0.0178,
+   "tasks": 20,
+   "records": 320,
+   "success_rate": 0.015625,
+   "mean_bits": 0.0,
+   "median_bits": 0.0,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 0.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 19.453125,
+   "mean_tokens": 1404.553125,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "budget": 142,
+    "eos": 63,
+    "finished": 110,
+    "success": 5
+   }
   },
   {
    "name": "fe-lh-ref-llama3.1-8b",
@@ -6074,31 +6119,35 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 1,
+   "status": "running",
    "created_at": 1791174355.4902232,
    "git_commit": "d0ce5df178",
    "snapshot": "bbee98e9a347",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 403766,
+   "tokens_scored": 411505,
+   "gpu_hours": 0.2819,
+   "load_hours": 0.0116,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 0.4,
+   "mean_bits": 970.348129,
+   "median_bits": 367.436287,
+   "mean_forced_bits": 964.187727,
+   "mean_forced_tokens": 399.3,
+   "mean_select_blocks": 2.55,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 964.05,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "context": 10,
+    "success": 8,
+    "unsolved": 2
+   }
   },
   {
    "name": "fe-aime-ref-delphi-9e19",
@@ -6361,31 +6410,35 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 1,
+   "status": "running",
    "created_at": 1791174353.9932673,
    "git_commit": "d0ce5df178",
    "snapshot": "bbee98e9a347",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 414063,
+   "tokens_scored": 411389,
+   "gpu_hours": 0.2973,
+   "load_hours": 0.014,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 0.4,
+   "mean_bits": 905.611731,
+   "median_bits": 341.954858,
+   "mean_forced_bits": 900.126501,
+   "mean_forced_tokens": 391.95,
+   "mean_select_blocks": 3.4,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 948.1,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "context": 10,
+    "success": 8,
+    "unsolved": 2
+   }
   },
   {
    "name": "fe-aime-ref-delphi-2e20",
@@ -6648,31 +6701,35 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 1,
+   "status": "running",
    "created_at": 1791174352.4938405,
    "git_commit": "d0ce5df178",
    "snapshot": "bbee98e9a347",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 375568,
+   "tokens_scored": 411447,
+   "gpu_hours": 0.2714,
+   "load_hours": 0.0125,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 0.4,
+   "mean_bits": 872.256085,
+   "median_bits": 326.269904,
+   "mean_forced_bits": 862.733495,
+   "mean_forced_tokens": 390.75,
+   "mean_select_blocks": 3.45,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 1007.15,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "context": 10,
+    "success": 8,
+    "unsolved": 2
+   }
   },
   {
    "name": "fe-aime-ref-delphi-3e20",
@@ -35136,6 +35193,12 @@
      "kind": "H100",
      "gpus": 1,
      "state": "standby",
+     "label": "PLI slot (plan-setup)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
      "label": "PLI slot (fe-item)"
     },
     {
@@ -35278,7 +35341,7 @@
     }
    ],
    "totals": {
-    "h100_standby": 24
+    "h100_standby": 25
    }
   }
  },
@@ -37860,31 +37923,80 @@
   "base": [
    {
     "model": "delphi-3e18",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 78.06144127914098,
+      "reference": null,
+      "unaided": 0.0008203125
+     }
+    }
    },
    {
     "model": "delphi-9e18",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 77.97378171051072,
+      "reference": null,
+      "unaided": 0.00078125
+     }
+    }
    },
    {
     "model": "delphi-2e19",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 71.34668026591346,
+      "reference": null,
+      "unaided": 0.001328125
+     }
+    }
    },
    {
     "model": "delphi-3e19",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 66.79777776587144,
+      "reference": null,
+      "unaided": 0.00171875
+     }
+    }
    },
    {
     "model": "delphi-9e19",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 67.02411830765675,
+      "reference": null,
+      "unaided": 0.0035546875
+     }
+    }
    },
    {
     "model": "delphi-2e20",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 60.44191419611075,
+      "reference": null,
+      "unaided": 0.00484375
+     }
+    }
    },
    {
     "model": "delphi-3e20",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 59.875021743559174,
+      "reference": null,
+      "unaided": 0.0043359375
+     }
+    }
    },
    {
     "model": "delphi-1e21",
@@ -37957,15 +38069,36 @@
    },
    {
     "model": "qwen3-0.6b-base",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 43.955110175252926,
+      "reference": null,
+      "unaided": 0.00921875
+     }
+    }
    },
    {
     "model": "qwen3-1.7b-base",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 38.57206962417275,
+      "reference": null,
+      "unaided": 0.02296875
+     }
+    }
    },
    {
     "model": "qwen3-4b-base",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 35.74641653234839,
+      "reference": null,
+      "unaided": 0.0267578125
+     }
+    }
    },
    {
     "model": "qwen3-8b-base",
@@ -38056,11 +38189,24 @@
    },
    {
     "model": "olmo2-1b-main",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 58.649232492131496,
+      "reference": null,
+      "unaided": 0.0091015625
+     }
+    }
    },
    {
     "model": "olmo2-7b",
     "suites": {
+     "aime25": {
+      "n": 30,
+      "injection": 46.96550318737668,
+      "reference": null,
+      "unaided": 0.0026041666666666665
+     },
      "imoab": {
       "n": 400,
       "injection": 51.483947296725745,
@@ -38071,13 +38217,13 @@
       "n": 9,
       "injection": 694.1155902764272,
       "reference": null,
-      "unaided": null
+      "unaided": 0
      },
      "tau": {
       "n": 1,
       "injection": 20.09890011009324,
       "reference": null,
-      "unaided": null
+      "unaided": 0
      }
     }
    },
@@ -38089,12 +38235,30 @@
       "injection": 56.03943140747273,
       "reference": null,
       "unaided": 0.0074609375
+     },
+     "tb": {
+      "n": 9,
+      "injection": 748.5868345185887,
+      "reference": null,
+      "unaided": null
+     },
+     "tau": {
+      "n": 10,
+      "injection": 71.7502524107972,
+      "reference": null,
+      "unaided": null
      }
     }
    },
    {
     "model": "qwen2.5-1.5b",
     "suites": {
+     "aime25": {
+      "n": 30,
+      "injection": 42.629964234196,
+      "reference": null,
+      "unaided": 0.0036458333333333334
+     },
      "imoab": {
       "n": 400,
       "injection": 50.008989299992486,
@@ -38118,6 +38282,12 @@
    {
     "model": "qwen2.5-3b",
     "suites": {
+     "aime25": {
+      "n": 30,
+      "injection": 42.957006053379146,
+      "reference": null,
+      "unaided": 0.005598958333333333
+     },
      "imoab": {
       "n": 400,
       "injection": 49.40190040712654,
@@ -38128,19 +38298,25 @@
       "n": 9,
       "injection": 529.4739055973079,
       "reference": null,
-      "unaided": null
+      "unaided": 0
      },
      "tau": {
       "n": 10,
       "injection": 35.3908709530504,
       "reference": null,
-      "unaided": null
+      "unaided": 0.01875
      }
     }
    },
    {
     "model": "qwen2.5-7b",
     "suites": {
+     "aime25": {
+      "n": 30,
+      "injection": 39.72621574201358,
+      "reference": null,
+      "unaided": 0.0036458333333333334
+     },
      "imoab": {
       "n": 400,
       "injection": 43.99738038054393,
@@ -38151,30 +38327,54 @@
       "n": 9,
       "injection": 436.28797213453356,
       "reference": null,
-      "unaided": null
+      "unaided": 0.006944444444444444
      },
      "tau": {
       "n": 10,
       "injection": 31.31817129693323,
       "reference": null,
-      "unaided": null
+      "unaided": 0.03125
      }
     }
    },
    {
     "model": "llama3.2-1b",
     "suites": {
+     "aime25": {
+      "n": 30,
+      "injection": 47.10829536453436,
+      "reference": null,
+      "unaided": 0.002994791666666667
+     },
      "imoab": {
       "n": 400,
       "injection": 56.40564784322316,
       "reference": null,
       "unaided": 0.0065625
+     },
+     "tb": {
+      "n": 9,
+      "injection": 740.410701367906,
+      "reference": null,
+      "unaided": null
+     },
+     "tau": {
+      "n": 10,
+      "injection": 67.21830913180393,
+      "reference": null,
+      "unaided": null
      }
     }
    },
    {
     "model": "llama3.2-3b",
     "suites": {
+     "aime25": {
+      "n": 30,
+      "injection": 44.561375534707125,
+      "reference": null,
+      "unaided": 0.0020833333333333333
+     },
      "imoab": {
       "n": 400,
       "injection": 53.16335743909911,
@@ -38185,19 +38385,25 @@
       "n": 9,
       "injection": 637.8751334490845,
       "reference": null,
-      "unaided": null
+      "unaided": 0
      },
      "tau": {
       "n": 10,
       "injection": 52.01120803332063,
       "reference": null,
-      "unaided": null
+      "unaided": 0
      }
     }
    },
    {
     "model": "llama3.1-8b",
     "suites": {
+     "aime25": {
+      "n": 30,
+      "injection": 48.768147527937295,
+      "reference": null,
+      "unaided": 0.00078125
+     },
      "imoab": {
       "n": 400,
       "injection": 50.37011168358391,
@@ -38208,19 +38414,25 @@
       "n": 9,
       "injection": 475.01624983603375,
       "reference": null,
-      "unaided": null
+      "unaided": 0
      },
      "tau": {
       "n": 10,
       "injection": 37.27366238636347,
       "reference": null,
-      "unaided": null
+      "unaided": 0.03125
      }
     }
    },
    {
     "model": "marin-8b-base",
     "suites": {
+     "aime25": {
+      "n": 30,
+      "injection": 42.25345355993431,
+      "reference": null,
+      "unaided": 0.004427083333333333
+     },
      "imoab": {
       "n": 400,
       "injection": 48.86100416144258,
@@ -38231,13 +38443,13 @@
       "n": 9,
       "injection": 577.9182996084356,
       "reference": null,
-      "unaided": null
+      "unaided": 0
      },
      "tau": {
       "n": 1,
       "injection": 22.510345732853068,
       "reference": null,
-      "unaided": null
+      "unaided": 0
      }
     }
    },
@@ -38249,6 +38461,18 @@
       "injection": 43.97616317224799,
       "reference": null,
       "unaided": 0.00234375
+     },
+     "tb": {
+      "n": 9,
+      "injection": 1074.3427281794661,
+      "reference": null,
+      "unaided": null
+     },
+     "tau": {
+      "n": 9,
+      "injection": 124.45954892565778,
+      "reference": null,
+      "unaided": null
      }
     }
    },
@@ -38260,12 +38484,30 @@
       "injection": 41.6702817537766,
       "reference": null,
       "unaided": 0.00359375
+     },
+     "tb": {
+      "n": 9,
+      "injection": 847.9581237965465,
+      "reference": null,
+      "unaided": null
+     },
+     "tau": {
+      "n": 9,
+      "injection": 87.2575210311471,
+      "reference": null,
+      "unaided": null
      }
     }
    },
    {
     "model": "smollm2-1.7b",
     "suites": {
+     "aime25": {
+      "n": 30,
+      "injection": 29.30298524233585,
+      "reference": null,
+      "unaided": 0.0026041666666666665
+     },
      "imoab": {
       "n": 400,
       "injection": 33.714050760639566,
@@ -38276,13 +38518,13 @@
       "n": 9,
       "injection": 672.4287620663064,
       "reference": null,
-      "unaided": null
+      "unaided": 0
      },
      "tau": {
       "n": 9,
       "injection": 62.08126206876758,
       "reference": null,
-      "unaided": null
+      "unaided": 0
      }
     }
    }
@@ -38292,6 +38534,10 @@
     "model": "qwen3-0.6b",
     "base": "qwen3-0.6b-base",
     "suites": {
+     "aime25": {
+      "accuracy": 0.11666666666666667,
+      "n": 30
+     },
      "tb": {
       "accuracy": 0.0,
       "n": 10
@@ -38306,6 +38552,10 @@
     "model": "qwen3-1.7b",
     "base": "qwen3-1.7b-base",
     "suites": {
+     "aime25": {
+      "accuracy": 0.35,
+      "n": 30
+     },
      "tb": {
       "accuracy": 0.125,
       "n": 10
@@ -38319,17 +38569,56 @@
    {
     "model": "qwen3-4b",
     "base": "qwen3-4b-base",
-    "suites": {}
+    "suites": {
+     "aime25": {
+      "accuracy": 0.6416666666666667,
+      "n": 30
+     },
+     "tb": {
+      "accuracy": 0.2,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.075,
+      "n": 10
+     }
+    }
    },
    {
     "model": "qwen3-8b",
     "base": "qwen3-8b-base",
-    "suites": {}
+    "suites": {
+     "aime25": {
+      "accuracy": 0.6,
+      "n": 30
+     },
+     "tb": {
+      "accuracy": 0.35,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.475,
+      "n": 10
+     }
+    }
    },
    {
     "model": "qwen3-14b",
     "base": "qwen3-14b-base",
-    "suites": {}
+    "suites": {
+     "aime25": {
+      "accuracy": 0.75,
+      "n": 30
+     },
+     "tb": {
+      "accuracy": 0.5,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.625,
+      "n": 10
+     }
+    }
    },
    {
     "model": "qwen3-30b-a3b",
@@ -38338,6 +38627,10 @@
      "aime25": {
       "accuracy": 0.7083333333333334,
       "n": 30
+     },
+     "imoab": {
+      "accuracy": 0.45,
+      "n": 400
      },
      "tb": {
       "accuracy": 0.45,
@@ -38530,15 +38823,573 @@
     "suites": {}
    }
   ],
-  "delphi": {},
-  "pairs": {
-   "hybrid": {},
-   "final": {},
-   "all-qwen": {},
-   "all": {}
+  "delphi": {
+   "imoab": {
+    "n": 400,
+    "points": [
+     {
+      "model": "delphi-3e18",
+      "flops": 3e+18,
+      "params_b": 0.447,
+      "injection": 78.06144127914098,
+      "reference": null,
+      "unaided": 0.0008203125
+     },
+     {
+      "model": "delphi-9e18",
+      "flops": 9e+18,
+      "params_b": 0.55,
+      "injection": 77.97378171051072,
+      "reference": null,
+      "unaided": 0.00078125
+     },
+     {
+      "model": "delphi-2e19",
+      "flops": 2e+19,
+      "params_b": 0.837,
+      "injection": 71.34668026591346,
+      "reference": null,
+      "unaided": 0.001328125
+     },
+     {
+      "model": "delphi-3e19",
+      "flops": 3e+19,
+      "params_b": 0.998,
+      "injection": 66.79777776587144,
+      "reference": null,
+      "unaided": 0.00171875
+     },
+     {
+      "model": "delphi-9e19",
+      "flops": 9e+19,
+      "params_b": 1.4,
+      "injection": 67.02411830765675,
+      "reference": null,
+      "unaided": 0.0035546875
+     },
+     {
+      "model": "delphi-2e20",
+      "flops": 2e+20,
+      "params_b": 1.9,
+      "injection": 60.44191419611075,
+      "reference": null,
+      "unaided": 0.00484375
+     },
+     {
+      "model": "delphi-3e20",
+      "flops": 3e+20,
+      "params_b": 2.5,
+      "injection": 59.875021743559174,
+      "reference": null,
+      "unaided": 0.0043359375
+     },
+     {
+      "model": "delphi-1e21",
+      "flops": 1e+21,
+      "params_b": 3.4,
+      "injection": 59.1462199390284,
+      "reference": null,
+      "unaided": 0.0062109375
+     },
+     {
+      "model": "delphi-1e22",
+      "flops": 1e+22,
+      "params_b": 9.7,
+      "injection": 56.7491491081864,
+      "reference": 63.078510957429096,
+      "unaided": 0.0057421875
+     },
+     {
+      "model": "delphi-1e23",
+      "flops": 1e+23,
+      "params_b": 25.0,
+      "injection": 54.42618610332134,
+      "reference": 61.94086753593165,
+      "unaided": 0.0076953125
+     }
+    ],
+    "spearman_log_flops": -0.9878787878787879
+   }
   },
-  "figures": [],
-  "generated_at": 1791187196.5406995
+  "pairs": {
+   "hybrid": {
+    "aime25": {
+     "models": [
+      "qwen3-8b",
+      "qwen3-14b",
+      "qwen3-30b-a3b"
+     ],
+     "n": 30,
+     "accuracy": [
+      0.6,
+      0.75,
+      0.7083333333333334
+     ],
+     "spearman": {
+      "injection": 0.5,
+      "reference": 0.5,
+      "unaided": 0.5
+     },
+     "per_task": {
+      "injection": {
+       "auroc": 0.6268363239015413,
+       "pairs": 3
+      },
+      "reference": {
+       "auroc": 0.47723544973544973,
+       "pairs": 3
+      },
+      "unaided": {
+       "auroc": 0.6355771221532092,
+       "pairs": 3
+      }
+     }
+    },
+    "tb": {
+     "models": [
+      "qwen3-8b",
+      "qwen3-14b",
+      "qwen3-30b-a3b"
+     ],
+     "n": 9,
+     "accuracy": [
+      0.3888888888888889,
+      0.5555555555555556,
+      0.4722222222222222
+     ],
+     "spearman": {
+      "injection": 1.0,
+      "reference": 0.5,
+      "unaided": -0.8660254037844387
+     },
+     "per_task": {
+      "injection": {
+       "auroc": 0.7333333333333334,
+       "pairs": 3
+      },
+      "reference": {
+       "auroc": 0.6833333333333333,
+       "pairs": 3
+      },
+      "unaided": {
+       "auroc": 0.55,
+       "pairs": 3
+      }
+     }
+    },
+    "tau": {
+     "models": [
+      "qwen3-8b",
+      "qwen3-14b",
+      "qwen3-30b-a3b"
+     ],
+     "n": 10,
+     "accuracy": [
+      0.475,
+      0.625,
+      0.4
+     ],
+     "spearman": {
+      "injection": 0.5,
+      "reference": 1.0,
+      "unaided": 0.5
+     },
+     "per_task": {
+      "injection": {
+       "auroc": 0.6380555555555556,
+       "pairs": 3
+      },
+      "reference": {
+       "auroc": 0.6630555555555555,
+       "pairs": 3
+      },
+      "unaided": {
+       "auroc": 0.6230555555555556,
+       "pairs": 3
+      }
+     }
+    }
+   },
+   "final": {
+    "aime25": {
+     "models": [
+      "qwen3-8b",
+      "qwen3-14b",
+      "qwen3-30b-a3b"
+     ],
+     "n": 30,
+     "accuracy": [
+      0.6,
+      0.75,
+      0.7083333333333334
+     ],
+     "spearman": {
+      "injection": 0.5,
+      "reference": 0.5,
+      "unaided": 0.5
+     },
+     "per_task": {
+      "injection": {
+       "auroc": 0.6268363239015413,
+       "pairs": 3
+      },
+      "reference": {
+       "auroc": 0.47723544973544973,
+       "pairs": 3
+      },
+      "unaided": {
+       "auroc": 0.6355771221532092,
+       "pairs": 3
+      }
+     }
+    },
+    "tb": {
+     "models": [
+      "qwen3-8b",
+      "qwen3-14b",
+      "qwen3-30b-a3b"
+     ],
+     "n": 9,
+     "accuracy": [
+      0.3888888888888889,
+      0.5555555555555556,
+      0.4722222222222222
+     ],
+     "spearman": {
+      "injection": 1.0,
+      "reference": 0.5,
+      "unaided": -0.8660254037844387
+     },
+     "per_task": {
+      "injection": {
+       "auroc": 0.7333333333333334,
+       "pairs": 3
+      },
+      "reference": {
+       "auroc": 0.6833333333333333,
+       "pairs": 3
+      },
+      "unaided": {
+       "auroc": 0.55,
+       "pairs": 3
+      }
+     }
+    },
+    "tau": {
+     "models": [
+      "qwen3-8b",
+      "qwen3-14b",
+      "qwen3-30b-a3b"
+     ],
+     "n": 10,
+     "accuracy": [
+      0.475,
+      0.625,
+      0.4
+     ],
+     "spearman": {
+      "injection": 0.5,
+      "reference": 1.0,
+      "unaided": 0.5
+     },
+     "per_task": {
+      "injection": {
+       "auroc": 0.6380555555555556,
+       "pairs": 3
+      },
+      "reference": {
+       "auroc": 0.6630555555555555,
+       "pairs": 3
+      },
+      "unaided": {
+       "auroc": 0.6230555555555556,
+       "pairs": 3
+      }
+     }
+    }
+   },
+   "all-qwen": {
+    "aime25": {
+     "models": [
+      "qwen3-8b",
+      "qwen3-14b",
+      "qwen3-30b-a3b",
+      "qwen3-30b-a3b-instruct-2507"
+     ],
+     "n": 30,
+     "accuracy": [
+      0.6,
+      0.75,
+      0.7083333333333334,
+      0.65
+     ],
+     "spearman": {
+      "injection": 0.31622776601683794,
+      "reference": 0.31622776601683794,
+      "unaided": 0.31622776601683794
+     },
+     "per_task": {
+      "injection": {
+       "auroc": 0.6414235392224523,
+       "pairs": 4
+      },
+      "reference": {
+       "auroc": 0.49416997354497355,
+       "pairs": 4
+      },
+      "unaided": {
+       "auroc": 0.6559156458477111,
+       "pairs": 4
+      }
+     }
+    },
+    "imoab": {
+     "models": [
+      "qwen3-30b-a3b",
+      "qwen3-4b-instruct-2507",
+      "qwen3-30b-a3b-instruct-2507"
+     ],
+     "n": 400,
+     "accuracy": [
+      0.45,
+      0.3475,
+      0.4825
+     ],
+     "spearman": {
+      "injection": 0.8660254037844387,
+      "unaided": 0.8660254037844387
+     },
+     "per_task": {
+      "injection": {
+       "auroc": 0.7345720278155311,
+       "pairs": 3
+      },
+      "reference": {
+       "auroc": 0.7373090299618656,
+       "pairs": 2
+      },
+      "unaided": {
+       "auroc": 0.6764339390208406,
+       "pairs": 3
+      }
+     }
+    },
+    "tb": {
+     "models": [
+      "qwen3-8b",
+      "qwen3-14b",
+      "qwen3-30b-a3b",
+      "qwen3-30b-a3b-instruct-2507"
+     ],
+     "n": 9,
+     "accuracy": [
+      0.3888888888888889,
+      0.5555555555555556,
+      0.4722222222222222,
+      0.4444444444444444
+     ],
+     "spearman": {
+      "injection": 0.9486832980505138,
+      "reference": 0.31622776601683794,
+      "unaided": -0.7745966692414834
+     },
+     "per_task": {
+      "injection": {
+       "auroc": 0.7125,
+       "pairs": 4
+      },
+      "reference": {
+       "auroc": 0.65,
+       "pairs": 4
+      },
+      "unaided": {
+       "auroc": 0.53125,
+       "pairs": 4
+      }
+     }
+    },
+    "tau": {
+     "models": [
+      "qwen3-8b",
+      "qwen3-14b",
+      "qwen3-30b-a3b",
+      "qwen3-30b-a3b-instruct-2507"
+     ],
+     "n": 10,
+     "accuracy": [
+      0.475,
+      0.625,
+      0.4,
+      0.725
+     ],
+     "spearman": {
+      "injection": 0.31622776601683794,
+      "reference": 0.10540925533894598,
+      "unaided": 0.31622776601683794
+     },
+     "per_task": {
+      "injection": {
+       "auroc": 0.692827380952381,
+       "pairs": 4
+      },
+      "reference": {
+       "auroc": 0.7115773809523809,
+       "pairs": 4
+      },
+      "unaided": {
+       "auroc": 0.6339583333333333,
+       "pairs": 4
+      }
+     }
+    }
+   },
+   "all": {
+    "aime25": {
+     "models": [
+      "qwen3-8b",
+      "qwen3-14b",
+      "qwen3-30b-a3b",
+      "qwen3-30b-a3b-instruct-2507"
+     ],
+     "n": 30,
+     "accuracy": [
+      0.6,
+      0.75,
+      0.7083333333333334,
+      0.65
+     ],
+     "spearman": {
+      "injection": 0.31622776601683794,
+      "reference": 0.31622776601683794,
+      "unaided": 0.31622776601683794
+     },
+     "per_task": {
+      "injection": {
+       "auroc": 0.6414235392224523,
+       "pairs": 4
+      },
+      "reference": {
+       "auroc": 0.49416997354497355,
+       "pairs": 4
+      },
+      "unaided": {
+       "auroc": 0.6559156458477111,
+       "pairs": 4
+      }
+     }
+    },
+    "imoab": {
+     "models": [
+      "qwen3-30b-a3b",
+      "qwen3-4b-instruct-2507",
+      "qwen3-30b-a3b-instruct-2507",
+      "olmo2-1b-sft",
+      "olmo2-1b-dpo",
+      "olmo2-1b-instruct"
+     ],
+     "n": 400,
+     "accuracy": [
+      0.45,
+      0.3475,
+      0.4825,
+      0.0225,
+      0.015,
+      0.035
+     ],
+     "spearman": {
+      "injection": 0.9258200997725515,
+      "unaided": 0.9258200997725515
+     },
+     "per_task": {
+      "injection": {
+       "auroc": 0.7995169924875414,
+       "pairs": 6
+      },
+      "reference": {
+       "auroc": 0.7373090299618656,
+       "pairs": 2
+      },
+      "unaided": {
+       "auroc": 0.7232672431517593,
+       "pairs": 6
+      }
+     }
+    },
+    "tb": {
+     "models": [
+      "qwen3-8b",
+      "qwen3-14b",
+      "qwen3-30b-a3b",
+      "qwen3-30b-a3b-instruct-2507"
+     ],
+     "n": 9,
+     "accuracy": [
+      0.3888888888888889,
+      0.5555555555555556,
+      0.4722222222222222,
+      0.4444444444444444
+     ],
+     "spearman": {
+      "injection": 0.9486832980505138,
+      "reference": 0.31622776601683794,
+      "unaided": -0.7745966692414834
+     },
+     "per_task": {
+      "injection": {
+       "auroc": 0.7125,
+       "pairs": 4
+      },
+      "reference": {
+       "auroc": 0.65,
+       "pairs": 4
+      },
+      "unaided": {
+       "auroc": 0.53125,
+       "pairs": 4
+      }
+     }
+    },
+    "tau": {
+     "models": [
+      "qwen3-8b",
+      "qwen3-14b",
+      "qwen3-30b-a3b",
+      "qwen3-30b-a3b-instruct-2507"
+     ],
+     "n": 10,
+     "accuracy": [
+      0.475,
+      0.625,
+      0.4,
+      0.725
+     ],
+     "spearman": {
+      "injection": 0.31622776601683794,
+      "reference": 0.10540925533894598,
+      "unaided": 0.31622776601683794
+     },
+     "per_task": {
+      "injection": {
+       "auroc": 0.692827380952381,
+       "pairs": 4
+      },
+      "reference": {
+       "auroc": 0.7115773809523809,
+       "pairs": 4
+      },
+      "unaided": {
+       "auroc": 0.6339583333333333,
+       "pairs": 4
+      }
+     }
+    }
+   }
+  },
+  "figures": [
+   "final-delphi.png",
+   "final-pairs.png"
+  ],
+  "generated_at": 1791188693.5789082
  },
  "headlines": {
   "code": [
@@ -39594,5 +40445,5 @@
    }
   ]
  },
- "content_digest": "680dcbaef107a7b4e6e17c5be8e34e2504e7a6db280af3c4dcbd3b8bb055a99b"
+ "content_digest": "c7e592b15a6f75644b0debc34e748ba7d5e111fbb0c15a762bb51033179018c6"
 }
