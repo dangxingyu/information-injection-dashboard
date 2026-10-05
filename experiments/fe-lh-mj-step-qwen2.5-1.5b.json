@@ -1,1 +1,1 @@
-{"name":"fe-lh-mj-step-qwen2.5-1.5b","tasks":[]}
+{"name":"fe-lh-mj-step-qwen2.5-1.5b","tasks":[{"task_id":"tb-mahjong-winninghand","runs":2,"successes":2,"success_rate":1.0,"mean_bits":1724.731877,"mean_forced_bits":1691.050656,"mean_forced_tokens":1365.5,"mean_select_blocks":4.5,"mean_free_blocks":0.0,"mean_tokens":1599.0,"fallback_rate":0.0,"mean_restarts":0.0,"ends":{"success":2}}]}

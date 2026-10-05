@@ -1,1 +1,1 @@
-{"name":"fe-lh-mj-step-llama3.2-1b","tasks":[]}
+{"name":"fe-lh-mj-step-llama3.2-1b","tasks":[{"task_id":"tb-mahjong-winninghand","runs":2,"successes":2,"success_rate":1.0,"mean_bits":2042.874674,"mean_forced_bits":1976.869899,"mean_forced_tokens":1354.0,"mean_select_blocks":4.0,"mean_free_blocks":0.0,"mean_tokens":1612.0,"fallback_rate":0.0,"mean_restarts":0.0,"ends":{"success":2}}]}
