@@ -450,5 +450,10 @@ function renderFinalEval() {
     f.base.filter(r => Object.keys(r.suites).length).map(r => `<tr><td>${esc(r.model)}</td>${S.map(s => triple(r.suites[s])).join('')}</tr>`).join('') + '</tbody>';
   $('fe-post').innerHTML = `<thead><tr><th>post-trained model</th><th>base</th>${S.map(s => `<th class="num">${L[s]}</th>`).join('')}</tr></thead><tbody>` +
     f.post.filter(r => Object.keys(r.suites).length).map(r => `<tr><td>${esc(r.model)}</td><td class="muted">${esc(r.base)}</td>${S.map(s => r.suites[s] ? `<td class="num">${pct(r.suites[s].accuracy)} <small>(${r.suites[s].n})</small></td>` : '<td class="num muted">–</td>').join('')}</tr>`).join('') + '</tbody>';
+  const con = f.contrast || {};
+  const cm = Object.keys(con);
+  $('fe-contrast').innerHTML = !cm.length ? '<tr><td class="muted">Running.</td></tr>' :
+    `<thead><tr><th>base model</th>${['aime25', 'imoab'].map(s => `<th class="num">${L[s]}: all</th><th class="num">unsolved</th>`).join('')}</tr></thead><tbody>` +
+    cm.map(m => `<tr><td>${esc(m)}</td>${['aime25', 'imoab'].map(s => { const c = con[m][s]; return c ? `<td class="num">${pct(c.prefers_gold)} <small>(${c.n})</small></td><td class="num">${pct(c.prefers_gold_unsolved)} <small>(${c.n_unsolved})</small></td>` : '<td class="num muted">–</td><td class="num muted">–</td>'; }).join('')}</tr>`).join('') + '</tbody>';
   $('fe-figures').innerHTML = (f.figures || []).map(n => `<figure class="panel pad"><img src="figures/${esc(n)}" alt="${esc(n)}" style="max-width:100%"></figure>`).join('');
 }
