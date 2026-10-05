@@ -422,13 +422,16 @@ function renderFinalEval() {
     return;
   }
   const S = f.suites, L = f.suite_labels;
-  const pairs = f.pairs?.hybrid || {}, all = f.pairs?.['all-qwen'] || {};
+  const pairs = f.pairs?.hybrid || {}, fin = f.pairs?.final || {}, all = f.pairs?.all || {};
   const pnames = {injection: 'injection bits', reference: 'reference surprisal', unaided: 'unaided success'};
   const cell = (x, d = 2) => isNum(x) ? `<td class="num">${dec(x, d)}</td>` : '<td class="num muted">–</td>';
   let html = `<thead><tr><th>predictor (base model)</th>${S.map(s => `<th class="num">${L[s]}</th>`).join('')}</tr></thead><tbody>`;
   html += `<tr class="group"><td colspan="${S.length + 1}">across models: Spearman with post-trained accuracy (6 Qwen3 sizes)</td></tr>`;
   html += Object.keys(pnames).map(p => `<tr><td>${pnames[p]}</td>${S.map(s => cell(pairs[s]?.spearman?.[p])).join('')}</tr>`).join('');
-  html += `<tr class="group"><td colspan="${S.length + 1}">per task: AUROC for "post-trained model solves it" (mean over Qwen3 pairs incl. 2507)</td></tr>`;
+  html += `<tr class="group"><td colspan="${S.length + 1}">across models: Spearman with accuracy of the final release (all families)</td></tr>`;
+  html += Object.keys(pnames).map(p => `<tr><td>${pnames[p]}</td>${S.map(s => cell(fin[s]?.spearman?.[p])).join('')}</tr>`).join('');
+  html += `<tr class="muted"><td>models</td>${S.map(s => `<td class="num">${fin[s]?.models?.length ?? '–'}</td>`).join('')}</tr>`;
+  html += `<tr class="group"><td colspan="${S.length + 1}">per task: AUROC for "post-trained model solves it" (mean over all base / post-trained pairs)</td></tr>`;
   html += Object.keys(pnames).map(p => `<tr><td>${pnames[p]}</td>${S.map(s => cell(all[s]?.per_task?.[p]?.auroc)).join('')}</tr>`).join('');
   html += `<tr class="muted"><td>matched tasks</td>${S.map(s => `<td class="num">${pairs[s]?.n ?? all[s]?.n ?? '–'}</td>`).join('')}</tr>`;
   $('fe-pairs').innerHTML = html + '</tbody>';
