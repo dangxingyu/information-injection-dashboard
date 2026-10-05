@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791207186.193437,
- "generated_label": "2026-10-05 09:33 EDT",
+ "generated_at": 1791207905.960888,
+ "generated_label": "2026-10-05 09:45 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -42046,41 +42046,8 @@
   },
   "nodes": [],
   "holdings": {
-   "allocations": [
-    {
-     "kind": "H100",
-     "gpus": 1,
-     "state": "standby",
-     "label": "PLI slot (fe-item)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 1,
-     "state": "standby",
-     "label": "PLI slot (fe-item)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 1,
-     "state": "standby",
-     "label": "PLI slot (fe-item)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 1,
-     "state": "standby",
-     "label": "PLI slot (fe-item)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 1,
-     "state": "standby",
-     "label": "PLI slot (fe-item)"
-    }
-   ],
-   "totals": {
-    "h100_standby": 5
-   }
+   "allocations": [],
+   "totals": {}
   }
  },
  "study_b": {
@@ -45352,6 +45319,29 @@
     }
    },
    {
+    "model": "qwen2.5-math-7b",
+    "suites": {
+     "aime25": {
+      "n": 30,
+      "injection": 28.48066382118235,
+      "reference": 38.684133333333335,
+      "unaided": 0.0033854166666666668
+     },
+     "imoab": {
+      "n": 400,
+      "injection": 35.2513818430267,
+      "reference": 43.1773775,
+      "unaided": 0.0167578125
+     },
+     "tb": {
+      "n": 10,
+      "injection": 724.0584113652934,
+      "reference": 728.5688087512877,
+      "unaided": 0
+     }
+    }
+   },
+   {
     "model": "llama3.2-1b",
     "suites": {
      "aime25": {
@@ -46094,6 +46084,138 @@
      },
      "imoab": {
       "accuracy": 0.015,
+      "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
+     }
+    }
+   },
+   {
+    "model": "qwen2.5-math-7b-instruct",
+    "base": "qwen2.5-math-7b",
+    "suites": {
+     "aime25": {
+      "accuracy": 0.1,
+      "n": 30
+     },
+     "imoab": {
+      "accuracy": 0.11375,
+      "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
+     }
+    }
+   },
+   {
+    "model": "qwen2.5-math-7b-simplerl",
+    "base": "qwen2.5-math-7b",
+    "suites": {
+     "aime25": {
+      "accuracy": 0.10833333333333334,
+      "n": 30
+     },
+     "imoab": {
+      "accuracy": 0.06875,
+      "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
+     }
+    }
+   },
+   {
+    "model": "r1-distill-qwen-7b",
+    "base": "qwen2.5-math-7b",
+    "suites": {
+     "aime25": {
+      "accuracy": 0.4,
+      "n": 30
+     },
+     "imoab": {
+      "accuracy": 0.28125,
+      "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
+     }
+    }
+   },
+   {
+    "model": "qwen2.5-0.5b-simplerl",
+    "base": "qwen2.5-0.5b",
+    "suites": {
+     "aime25": {
+      "accuracy": 0.0,
+      "n": 30
+     },
+     "imoab": {
+      "accuracy": 0.02625,
+      "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
+     }
+    }
+   },
+   {
+    "model": "qwen2.5-1.5b-simplerl",
+    "base": "qwen2.5-1.5b",
+    "suites": {
+     "aime25": {
+      "accuracy": 0.0,
+      "n": 30
+     },
+     "imoab": {
+      "accuracy": 0.02875,
+      "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
+     }
+    }
+   },
+   {
+    "model": "qwen2.5-7b-simplerl",
+    "base": "qwen2.5-7b",
+    "suites": {
+     "aime25": {
+      "accuracy": 0.06666666666666667,
+      "n": 30
+     },
+     "imoab": {
+      "accuracy": 0.09125,
       "n": 400
      },
      "tb": {
@@ -46987,7 +47109,13 @@
       "marin-8b-instruct",
       "smollm2-135m-instruct",
       "smollm2-360m-instruct",
-      "smollm2-1.7b-instruct"
+      "smollm2-1.7b-instruct",
+      "qwen2.5-math-7b-instruct",
+      "qwen2.5-math-7b-simplerl",
+      "r1-distill-qwen-7b",
+      "qwen2.5-0.5b-simplerl",
+      "qwen2.5-1.5b-simplerl",
+      "qwen2.5-7b-simplerl"
      ],
      "excluded": [],
      "n": 30,
@@ -47016,25 +47144,31 @@
       0.03333333333333333,
       0.0,
       0.0,
-      0.0
+      0.0,
+      0.1,
+      0.10833333333333334,
+      0.4,
+      0.0,
+      0.0,
+      0.06666666666666667
      ],
      "spearman": {
-      "injection": 0.5728009759951166,
-      "reference": 0.309719108105919,
-      "unaided": 0.8532424233165052
+      "injection": 0.6270754715216159,
+      "reference": 0.45284736540922005,
+      "unaided": 0.8192600676541243
      },
      "per_task": {
       "injection": {
-       "auroc": 0.5969554551947981,
-       "pairs": 11
+       "auroc": 0.614077590219775,
+       "pairs": 15
       },
       "reference": {
-       "auroc": 0.49893734067549567,
-       "pairs": 11
+       "auroc": 0.4916710073809485,
+       "pairs": 15
       },
       "unaided": {
-       "auroc": 0.5704834759043284,
-       "pairs": 11
+       "auroc": 0.6118222499230319,
+       "pairs": 15
       }
      }
     },
@@ -47064,7 +47198,13 @@
       "marin-8b-instruct",
       "smollm2-135m-instruct",
       "smollm2-360m-instruct",
-      "smollm2-1.7b-instruct"
+      "smollm2-1.7b-instruct",
+      "qwen2.5-math-7b-instruct",
+      "qwen2.5-math-7b-simplerl",
+      "r1-distill-qwen-7b",
+      "qwen2.5-0.5b-simplerl",
+      "qwen2.5-1.5b-simplerl",
+      "qwen2.5-7b-simplerl"
      ],
      "excluded": [],
      "n": 400,
@@ -47093,25 +47233,31 @@
       0.0575,
       0.0,
       0.0025,
-      0.015
+      0.015,
+      0.11375,
+      0.06875,
+      0.28125,
+      0.02625,
+      0.02875,
+      0.09125
      ],
      "spearman": {
-      "injection": 0.5142642968437364,
-      "reference": 0.2752509055070673,
-      "unaided": 0.899384261271692
+      "injection": 0.5639840832508246,
+      "reference": 0.40440405969489646,
+      "unaided": 0.8938501319430154
      },
      "per_task": {
       "injection": {
-       "auroc": 0.8294600189441776,
-       "pairs": 24
+       "auroc": 0.8278863047556122,
+       "pairs": 30
       },
       "reference": {
-       "auroc": 0.7845495340345771,
-       "pairs": 24
+       "auroc": 0.7890069178816531,
+       "pairs": 30
       },
       "unaided": {
-       "auroc": 0.7595805219070484,
-       "pairs": 24
+       "auroc": 0.760159012066137,
+       "pairs": 30
       }
      }
     },
@@ -47141,7 +47287,13 @@
       "marin-8b-instruct",
       "smollm2-135m-instruct",
       "smollm2-360m-instruct",
-      "smollm2-1.7b-instruct"
+      "smollm2-1.7b-instruct",
+      "qwen2.5-math-7b-instruct",
+      "qwen2.5-math-7b-simplerl",
+      "r1-distill-qwen-7b",
+      "qwen2.5-0.5b-simplerl",
+      "qwen2.5-1.5b-simplerl",
+      "qwen2.5-7b-simplerl"
      ],
      "excluded": [],
      "n": 9,
@@ -47170,12 +47322,18 @@
       0.0,
       0.0,
       0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
       0.0
      ],
      "spearman": {
-      "injection": 0.8482115061226356,
-      "reference": 0.854939783537675,
-      "unaided": 0.625202290126829
+      "injection": 0.7787799990172489,
+      "reference": 0.7840701106068858,
+      "unaided": 0.544430689157513
      },
      "per_task": {
       "injection": {
@@ -47211,7 +47369,10 @@
       "llama3.1-8b-instruct",
       "smollm2-135m-instruct",
       "smollm2-360m-instruct",
-      "smollm2-1.7b-instruct"
+      "smollm2-1.7b-instruct",
+      "qwen2.5-0.5b-simplerl",
+      "qwen2.5-1.5b-simplerl",
+      "qwen2.5-7b-simplerl"
      ],
      "excluded": [
       "olmo2-1b-sft",
@@ -47241,12 +47402,15 @@
       0.027777777777777776,
       0.0,
       0.0,
+      0.0,
+      0.0,
+      0.0,
       0.0
      ],
      "spearman": {
-      "injection": 0.8323943208419059,
-      "reference": 0.8494166995912291,
-      "unaided": 0.9143586104412578
+      "injection": 0.7531695679507939,
+      "reference": 0.8276302271649109,
+      "unaided": 0.8566611527700673
      },
      "per_task": {
       "injection": {
@@ -47269,7 +47433,7 @@
    "final-delphi.png",
    "final-pairs.png"
   ],
-  "generated_at": 1791205090.5592246,
+  "generated_at": 1791207887.5243874,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -47665,6 +47829,24 @@
      "prefers_gold_unsolved": 0.3939393939393939,
      "chance": 0.20248538011695907,
      "margin_bits": 0.6222280701754387
+    }
+   },
+   "qwen2.5-math-7b": {
+    "aime25": {
+     "n": 30,
+     "prefers_gold": 0.2,
+     "n_unsolved": 20,
+     "prefers_gold_unsolved": 0.1,
+     "chance": 0.2,
+     "margin_bits": -0.5058666666666677
+    },
+    "imoab": {
+     "n": 228,
+     "prefers_gold": 0.4824561403508772,
+     "n_unsolved": 144,
+     "prefers_gold_unsolved": 0.4861111111111111,
+     "chance": 0.20248538011695907,
+     "margin_bits": 0.8226491228070175
     }
    },
    "llama3.2-1b": {
@@ -48855,5 +49037,5 @@
    }
   ]
  },
- "content_digest": "04c487d6f3f83374deaba4dbfd3fc8a819e2b5cadf0c62de20a854108637a30a"
+ "content_digest": "28a9a88fb10332765fdbfc935c44cfdc26b8281bc90526d6853ce778dcd12c90"
 }
