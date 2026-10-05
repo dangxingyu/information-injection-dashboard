@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791195386.0378547,
- "generated_label": "2026-10-05 06:16 EDT",
+ "generated_at": 1791196296.0420759,
+ "generated_label": "2026-10-05 06:31 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -471,31 +471,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791189754.615634,
    "git_commit": "32506e7e41",
    "snapshot": "e524b375b017",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 67789,
+   "tokens_scored": 212148,
+   "gpu_hours": 0.1076,
+   "load_hours": 0.0113,
+   "tasks": 1,
+   "records": 2,
+   "success_rate": 1.0,
+   "mean_bits": 2055.541043,
+   "median_bits": 2055.541043,
+   "mean_forced_bits": 1990.34322,
+   "mean_forced_tokens": 1353.0,
+   "mean_select_blocks": 5.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 1495.0,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 2
+   }
   },
   {
    "name": "fe-lh-mj-step-olmo2-7b",
@@ -512,31 +514,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791189754.256269,
    "git_commit": "32506e7e41",
    "snapshot": "e524b375b017",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 71455,
+   "tokens_scored": 210066,
+   "gpu_hours": 0.1471,
+   "load_hours": 0.0131,
+   "tasks": 1,
+   "records": 2,
+   "success_rate": 1.0,
+   "mean_bits": 1881.248439,
+   "median_bits": 1881.248439,
+   "mean_forced_bits": 1816.459192,
+   "mean_forced_tokens": 1348.5,
+   "mean_select_blocks": 4.5,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 1541.0,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 2
+   }
   },
   {
    "name": "fe-lh-mj-step-olmo2-1b-main",
@@ -553,31 +557,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791189753.8685005,
    "git_commit": "32506e7e41",
    "snapshot": "e524b375b017",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 83551,
+   "tokens_scored": 210080,
+   "gpu_hours": 0.1105,
+   "load_hours": 0.0127,
+   "tasks": 1,
+   "records": 2,
+   "success_rate": 1.0,
+   "mean_bits": 2441.895965,
+   "median_bits": 2441.895965,
+   "mean_forced_bits": 2366.034722,
+   "mean_forced_tokens": 1348.5,
+   "mean_select_blocks": 4.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 1523.0,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 2
+   }
   },
   {
    "name": "fe-lh-mj-step-qwen3-14b-base",
@@ -2279,31 +2285,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791189120.204394,
    "git_commit": "10041db9d6",
    "snapshot": "e524b375b017",
    "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_scored": 32467,
+   "gpu_hours": 0.0029,
+   "load_hours": 0.0102,
+   "tasks": 400,
+   "records": 400,
+   "success_rate": 1.0,
+   "mean_bits": 53.740016,
+   "median_bits": 46.964686,
+   "mean_forced_bits": 53.740016,
+   "mean_forced_tokens": 12.345,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 12.345,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 400
+   }
   },
   {
    "name": "fe-aime-phr-olmo2-1b-main",
@@ -2359,31 +2367,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791189119.6065085,
    "git_commit": "10041db9d6",
    "snapshot": "e524b375b017",
    "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_scored": 35677,
+   "gpu_hours": 0.0156,
+   "load_hours": 0.0212,
+   "tasks": 400,
+   "records": 400,
+   "success_rate": 1.0,
+   "mean_bits": 35.577807,
+   "median_bits": 31.416579,
+   "mean_forced_bits": 35.577807,
+   "mean_forced_tokens": 15.01,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 15.01,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 400
+   }
   },
   {
    "name": "fe-aime-phr-qwen3-14b-base",
@@ -2399,31 +2409,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791189119.3121111,
    "git_commit": "10041db9d6",
    "snapshot": "e524b375b017",
    "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_scored": 2016,
+   "gpu_hours": 0.0015,
+   "load_hours": 0.0166,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 32.697654,
+   "median_bits": 33.043632,
+   "mean_forced_bits": 32.697654,
+   "mean_forced_tokens": 11.3,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 11.3,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-imo-phr-qwen3-8b-base",
@@ -2439,31 +2451,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791189118.9805276,
    "git_commit": "10041db9d6",
    "snapshot": "e524b375b017",
    "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_scored": 35677,
+   "gpu_hours": 0.0093,
+   "load_hours": 0.0208,
+   "tasks": 400,
+   "records": 400,
+   "success_rate": 1.0,
+   "mean_bits": 36.262886,
+   "median_bits": 31.862727,
+   "mean_forced_bits": 36.262886,
+   "mean_forced_tokens": 13.5725,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 13.5725,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 400
+   }
   },
   {
    "name": "fe-aime-phr-qwen3-8b-base",
@@ -2479,31 +2493,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791189118.6806161,
    "git_commit": "10041db9d6",
    "snapshot": "e524b375b017",
    "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_scored": 2016,
+   "gpu_hours": 0.001,
+   "load_hours": 0.0143,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 32.853793,
+   "median_bits": 33.28921,
+   "mean_forced_bits": 32.853793,
+   "mean_forced_tokens": 8.766667,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 8.766667,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-imo-phr-qwen3-4b-base",
@@ -41791,9 +41807,9 @@
       "unaided": 0.0008203125
      },
      "tb": {
-      "n": 9,
-      "injection": 2124.5975998485155,
-      "reference": 2130.016568467919,
+      "n": 10,
+      "injection": 2446.009711763686,
+      "reference": 2451.8423527673335,
       "unaided": 0
      }
     }
@@ -41837,9 +41853,9 @@
       "unaided": 0.001328125
      },
      "tb": {
-      "n": 9,
-      "injection": 1645.9455064221515,
-      "reference": 1642.6690638994337,
+      "n": 10,
+      "injection": 1889.4274415720272,
+      "reference": 1886.636720818682,
       "unaided": 0
      }
     }
@@ -42052,20 +42068,20 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 39.305146295574644,
-      "reference": 45.2363171459408,
+      "injection": 29.475244488664234,
+      "reference": 33.5712,
       "unaided": 0.0036458333333333334
      },
      "imoab": {
       "n": 400,
-      "injection": 43.955110175252926,
-      "reference": 50.740088989376034,
+      "injection": 34.957164302466396,
+      "reference": 39.642985,
       "unaided": 0.00921875
      },
      "tb": {
-      "n": 9,
-      "injection": 682.3892621753578,
-      "reference": 679.2016668879826,
+      "n": 10,
+      "injection": 803.7711042389911,
+      "reference": 800.4857931913657,
       "unaided": 0
      },
      "tau": {
@@ -42081,20 +42097,20 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 35.85515332841308,
-      "reference": 42.977723243280586,
+      "injection": 28.322815039426178,
+      "reference": 33.4741,
       "unaided": 0.0049479166666666664
      },
      "imoab": {
       "n": 400,
-      "injection": 38.57206962417275,
-      "reference": 48.674394608851145,
+      "injection": 31.184921834606225,
+      "reference": 38.2472525,
       "unaided": 0.02296875
      },
      "tb": {
-      "n": 9,
-      "injection": 560.659456393553,
-      "reference": 575.5480949795593,
+      "n": 10,
+      "injection": 666.602013189768,
+      "reference": 679.517903698494,
       "unaided": 0
      },
      "tau": {
@@ -42110,20 +42126,20 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 31.541902118136562,
-      "reference": 43.98110915352675,
+      "injection": 24.56495655153423,
+      "reference": 33.41883333333333,
       "unaided": 0.006119791666666667
      },
      "imoab": {
       "n": 400,
-      "injection": 35.74641653234839,
-      "reference": 47.67274635737776,
+      "injection": 28.853475691637062,
+      "reference": 37.1048275,
       "unaided": 0.0267578125
      },
      "tb": {
-      "n": 9,
-      "injection": 417.34110060138113,
-      "reference": 505.10878998061173,
+      "n": 10,
+      "injection": 522.1850462684772,
+      "reference": 601.3705380465267,
       "unaided": 0
      },
      "tau": {
@@ -42139,21 +42155,21 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 31.331527300661506,
-      "reference": 44.86846832515021,
+      "injection": 23.700119850199087,
+      "reference": 32.8538,
       "unaided": 0.00625
      },
      "imoab": {
       "n": 400,
-      "injection": 35.331472621685855,
-      "reference": 48.70575948379848,
+      "injection": 27.52904997004224,
+      "reference": 36.262885,
       "unaided": 0.0309375
      },
      "tb": {
-      "n": 9,
-      "injection": 377.9531799034493,
-      "reference": 489.5639178645393,
-      "unaided": 0.013888888888888888
+      "n": 10,
+      "injection": 476.61564499578,
+      "reference": 577.4037308654299,
+      "unaided": 0.0125
      },
      "tau": {
       "n": 10,
@@ -42179,9 +42195,9 @@
       "unaided": 0.036484375
      },
      "tb": {
-      "n": 9,
-      "injection": 356.35521027892855,
-      "reference": 466.6906555074971,
+      "n": 10,
+      "injection": 445.6345956326269,
+      "reference": 546.5920099559015,
       "unaided": 0
      },
      "tau": {
@@ -42237,9 +42253,9 @@
       "unaided": 0.0091015625
      },
      "tb": {
-      "n": 9,
-      "injection": 911.7921417955095,
-      "reference": 899.9322679314197,
+      "n": 10,
+      "injection": 1064.8025240752736,
+      "reference": 1052.527735678917,
       "unaided": 0
      },
      "tau": {
@@ -42652,6 +42668,10 @@
       "accuracy": 0.6416666666666667,
       "n": 30
      },
+     "imoab": {
+      "accuracy": 0.4,
+      "n": 400
+     },
      "tb": {
       "accuracy": 0.2,
       "n": 10
@@ -42834,6 +42854,10 @@
     "model": "olmo2-7b-sft",
     "base": "olmo2-7b",
     "suites": {
+     "aime25": {
+      "accuracy": 0.0,
+      "n": 30
+     },
      "imoab": {
       "accuracy": 0.03,
       "n": 400
@@ -42852,6 +42876,10 @@
     "model": "olmo2-7b-dpo",
     "base": "olmo2-7b",
     "suites": {
+     "aime25": {
+      "accuracy": 0.008333333333333333,
+      "n": 30
+     },
      "imoab": {
       "accuracy": 0.0325,
       "n": 400
@@ -42870,6 +42898,10 @@
     "model": "olmo2-7b-instruct",
     "base": "olmo2-7b",
     "suites": {
+     "aime25": {
+      "accuracy": 0.0,
+      "n": 30
+     },
      "imoab": {
       "accuracy": 0.035,
       "n": 400
@@ -42891,6 +42923,14 @@
      "imoab": {
       "accuracy": 0.0275,
       "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
      }
     }
    },
@@ -42901,6 +42941,14 @@
      "imoab": {
       "accuracy": 0.0475,
       "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
      }
     }
    },
@@ -42908,9 +42956,21 @@
     "model": "qwen2.5-3b-instruct",
     "base": "qwen2.5-3b",
     "suites": {
+     "aime25": {
+      "accuracy": 0.016666666666666666,
+      "n": 30
+     },
      "imoab": {
       "accuracy": 0.06,
       "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
      }
     }
    },
@@ -42918,9 +42978,21 @@
     "model": "qwen2.5-7b-instruct",
     "base": "qwen2.5-7b",
     "suites": {
+     "aime25": {
+      "accuracy": 0.075,
+      "n": 30
+     },
      "imoab": {
       "accuracy": 0.0925,
       "n": 400
+     },
+     "tb": {
+      "accuracy": 0.1,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.125,
+      "n": 10
      }
     }
    },
@@ -42931,26 +43003,76 @@
      "imoab": {
       "accuracy": 0.01375,
       "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
      }
     }
    },
    {
     "model": "llama3.2-3b-instruct",
     "base": "llama3.2-3b",
-    "suites": {}
+    "suites": {
+     "aime25": {
+      "accuracy": 0.008333333333333333,
+      "n": 30
+     },
+     "imoab": {
+      "accuracy": 0.0425,
+      "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
+     }
+    }
    },
    {
     "model": "llama3.1-8b-instruct",
     "base": "llama3.1-8b",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "accuracy": 0.01875,
+      "n": 400
+     },
+     "tb": {
+      "accuracy": 0.05,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.025,
+      "n": 10
+     }
+    }
    },
    {
     "model": "marin-8b-instruct",
     "base": "marin-8b-base",
     "suites": {
+     "aime25": {
+      "accuracy": 0.03333333333333333,
+      "n": 30
+     },
      "imoab": {
       "accuracy": 0.0575,
       "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
      }
     }
    },
@@ -42961,6 +43083,14 @@
      "imoab": {
       "accuracy": 0.0,
       "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
      }
     }
    },
@@ -42971,6 +43101,14 @@
      "imoab": {
       "accuracy": 0.0025,
       "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
      }
     }
    },
@@ -42978,9 +43116,21 @@
     "model": "smollm2-1.7b-instruct",
     "base": "smollm2-1.7b",
     "suites": {
+     "aime25": {
+      "accuracy": 0.0,
+      "n": 30
+     },
      "imoab": {
       "accuracy": 0.015,
       "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
      }
     }
    }
@@ -43267,17 +43417,17 @@
       0.7083333333333334
      ],
      "spearman": {
-      "injection": 0.8857142857142857,
-      "reference": 0.42857142857142855,
+      "injection": 0.08571428571428572,
+      "reference": -0.4857142857142857,
       "unaided": 0.8857142857142857
      },
      "per_task": {
       "injection": {
-       "auroc": 0.5823012698861662,
+       "auroc": 0.6044059432326696,
        "pairs": 6
       },
       "reference": {
-       "auroc": 0.4778456205498689,
+       "auroc": 0.5236175301943276,
        "pairs": 6
       },
       "unaided": {
@@ -43290,6 +43440,7 @@
      "models": [
       "qwen3-0.6b",
       "qwen3-1.7b",
+      "qwen3-4b",
       "qwen3-30b-a3b"
      ],
      "excluded": [],
@@ -43297,25 +43448,26 @@
      "accuracy": [
       0.12,
       0.23875,
+      0.4,
       0.45
      ],
      "spearman": {
-      "injection": 1.0,
-      "reference": 1.0,
+      "injection": 0.4,
+      "reference": -0.2,
       "unaided": 1.0
      },
      "per_task": {
       "injection": {
-       "auroc": 0.7649875082843046,
-       "pairs": 3
+       "auroc": 0.7659491580440847,
+       "pairs": 4
       },
       "reference": {
-       "auroc": 0.747620692051074,
-       "pairs": 3
+       "auroc": 0.7508609651118725,
+       "pairs": 4
       },
       "unaided": {
-       "auroc": 0.6798453255466228,
-       "pairs": 3
+       "auroc": 0.6852239130301594,
+       "pairs": 4
       }
      }
     },
@@ -43345,11 +43497,11 @@
      },
      "per_task": {
       "injection": {
-       "auroc": 0.74,
+       "auroc": 0.7737777777777778,
        "pairs": 5
       },
       "reference": {
-       "auroc": 0.71,
+       "auroc": 0.7451111111111111,
        "pairs": 5
       },
       "unaided": {
@@ -43407,7 +43559,13 @@
       "qwen3-8b",
       "qwen3-14b",
       "qwen3-30b-a3b",
-      "olmo2-1b-instruct"
+      "olmo2-1b-instruct",
+      "olmo2-7b-instruct",
+      "qwen2.5-3b-instruct",
+      "qwen2.5-7b-instruct",
+      "llama3.2-3b-instruct",
+      "marin-8b-instruct",
+      "smollm2-1.7b-instruct"
      ],
      "excluded": [],
      "n": 30,
@@ -43418,25 +43576,31 @@
       0.6,
       0.75,
       0.7083333333333334,
+      0.0,
+      0.0,
+      0.016666666666666666,
+      0.075,
+      0.008333333333333333,
+      0.03333333333333333,
       0.0
      ],
      "spearman": {
-      "injection": 0.9285714285714286,
-      "reference": 0.6428571428571429,
-      "unaided": 0.9285714285714286
+      "injection": 0.7348178447460738,
+      "reference": 0.40332107268017586,
+      "unaided": 0.8892000874831887
      },
      "per_task": {
       "injection": {
-       "auroc": 0.5823012698861662,
-       "pairs": 6
+       "auroc": 0.6005104303309061,
+       "pairs": 8
       },
       "reference": {
-       "auroc": 0.4778456205498689,
-       "pairs": 6
+       "auroc": 0.5209459062664353,
+       "pairs": 8
       },
       "unaided": {
-       "auroc": 0.5664388872391857,
-       "pairs": 6
+       "auroc": 0.5816949289761872,
+       "pairs": 8
       }
      }
     },
@@ -43444,6 +43608,7 @@
      "models": [
       "qwen3-0.6b",
       "qwen3-1.7b",
+      "qwen3-4b",
       "qwen3-30b-a3b",
       "olmo2-1b-instruct",
       "olmo2-7b-instruct",
@@ -43452,6 +43617,8 @@
       "qwen2.5-3b-instruct",
       "qwen2.5-7b-instruct",
       "llama3.2-1b-instruct",
+      "llama3.2-3b-instruct",
+      "llama3.1-8b-instruct",
       "marin-8b-instruct",
       "smollm2-135m-instruct",
       "smollm2-360m-instruct",
@@ -43462,6 +43629,7 @@
      "accuracy": [
       0.12,
       0.23875,
+      0.4,
       0.45,
       0.035,
       0.035,
@@ -43470,28 +43638,30 @@
       0.06,
       0.0925,
       0.01375,
+      0.0425,
+      0.01875,
       0.0575,
       0.0,
       0.0025,
       0.015
      ],
      "spearman": {
-      "injection": 0.2728274478219458,
-      "reference": -0.057205755188472505,
-      "unaided": 0.8712876559475043
+      "injection": 0.4414470480258694,
+      "reference": 0.25260581081480304,
+      "unaided": 0.8755366452513076
      },
      "per_task": {
       "injection": {
-       "auroc": 0.8448248795993369,
-       "pairs": 13
+       "auroc": 0.8394223839228301,
+       "pairs": 16
       },
       "reference": {
-       "auroc": 0.7777761135831716,
-       "pairs": 13
+       "auroc": 0.7842606913279832,
+       "pairs": 16
       },
       "unaided": {
-       "auroc": 0.7828640622382388,
-       "pairs": 13
+       "auroc": 0.772297394059831,
+       "pairs": 16
       }
      }
     },
@@ -43504,7 +43674,18 @@
       "qwen3-14b",
       "qwen3-30b-a3b",
       "olmo2-1b-instruct",
-      "olmo2-7b-instruct"
+      "olmo2-7b-instruct",
+      "qwen2.5-0.5b-instruct",
+      "qwen2.5-1.5b-instruct",
+      "qwen2.5-3b-instruct",
+      "qwen2.5-7b-instruct",
+      "llama3.2-1b-instruct",
+      "llama3.2-3b-instruct",
+      "llama3.1-8b-instruct",
+      "marin-8b-instruct",
+      "smollm2-135m-instruct",
+      "smollm2-360m-instruct",
+      "smollm2-1.7b-instruct"
      ],
      "excluded": [],
      "n": 9,
@@ -43516,25 +43697,36 @@
       0.5555555555555556,
       0.4722222222222222,
       0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.1111111111111111,
+      0.0,
+      0.0,
+      0.05555555555555555,
+      0.0,
+      0.0,
+      0.0,
       0.0
      ],
      "spearman": {
-      "injection": 0.9759000729485332,
-      "reference": 0.9515025711248198,
-      "unaided": 0.5163977794943222
+      "injection": 0.8422085825006866,
+      "reference": 0.8574109034844536,
+      "unaided": 0.5877769359103735
      },
      "per_task": {
       "injection": {
-       "auroc": 0.74,
-       "pairs": 5
+       "auroc": 0.8384126984126984,
+       "pairs": 7
       },
       "reference": {
-       "auroc": 0.71,
-       "pairs": 5
+       "auroc": 0.817936507936508,
+       "pairs": 7
       },
       "unaided": {
-       "auroc": 0.53,
-       "pairs": 5
+       "auroc": 0.5928571428571429,
+       "pairs": 7
       }
      }
     },
@@ -43545,38 +43737,59 @@
       "qwen3-4b",
       "qwen3-8b",
       "qwen3-14b",
-      "qwen3-30b-a3b"
+      "qwen3-30b-a3b",
+      "qwen2.5-0.5b-instruct",
+      "qwen2.5-1.5b-instruct",
+      "qwen2.5-3b-instruct",
+      "qwen2.5-7b-instruct",
+      "llama3.2-1b-instruct",
+      "llama3.2-3b-instruct",
+      "llama3.1-8b-instruct",
+      "smollm2-135m-instruct",
+      "smollm2-360m-instruct",
+      "smollm2-1.7b-instruct"
      ],
      "excluded": [
       "olmo2-1b-instruct",
-      "olmo2-7b-instruct"
+      "olmo2-7b-instruct",
+      "marin-8b-instruct"
      ],
-     "n": 10,
+     "n": 9,
      "accuracy": [
       0.0,
       0.0,
-      0.075,
-      0.475,
-      0.625,
-      0.4
+      0.08333333333333333,
+      0.5277777777777778,
+      0.6388888888888888,
+      0.4444444444444444,
+      0.0,
+      0.0,
+      0.0,
+      0.1388888888888889,
+      0.0,
+      0.0,
+      0.027777777777777776,
+      0.0,
+      0.0,
+      0.0
      ],
      "spearman": {
-      "injection": 0.9276336570439175,
-      "reference": 0.9856107606091623,
-      "unaided": 0.9276336570439175
+      "injection": 0.8195654989576291,
+      "reference": 0.8466027112943757,
+      "unaided": 0.9195083660017798
      },
      "per_task": {
       "injection": {
-       "auroc": 0.5896527777777778,
-       "pairs": 4
+       "auroc": 0.6717222222222222,
+       "pairs": 5
       },
       "reference": {
-       "auroc": 0.6084027777777777,
-       "pairs": 4
+       "auroc": 0.6645,
+       "pairs": 5
       },
       "unaided": {
-       "auroc": 0.550625,
-       "pairs": 4
+       "auroc": 0.6293888888888889,
+       "pairs": 5
       }
      }
     }
@@ -43606,17 +43819,17 @@
       0.65
      ],
      "spearman": {
-      "injection": 0.8795819141991807,
-      "reference": 0.3976192214873009,
+      "injection": 0.2771285483093309,
+      "reference": -0.5663061639364588,
       "unaided": 0.8795819141991807
      },
      "per_task": {
       "injection": {
-       "auroc": 0.5934852116738839,
+       "auroc": 0.6228414944615392,
        "pairs": 8
       },
       "reference": {
-       "auroc": 0.4670614640896504,
+       "auroc": 0.5247237296563277,
        "pairs": 8
       },
       "unaided": {
@@ -43629,6 +43842,7 @@
      "models": [
       "qwen3-0.6b",
       "qwen3-1.7b",
+      "qwen3-4b",
       "qwen3-30b-a3b",
       "qwen3-4b-instruct-2507",
       "qwen3-30b-a3b-instruct-2507"
@@ -43638,27 +43852,28 @@
      "accuracy": [
       0.12,
       0.23875,
+      0.4,
       0.45,
       0.3475,
       0.4825
      ],
      "spearman": {
-      "injection": 0.9746794344808964,
-      "reference": 0.6668859288553503,
-      "unaided": 0.9746794344808964
+      "injection": 0.08827348295047495,
+      "reference": -0.44136741475237473,
+      "unaided": 0.9710083124552245
      },
      "per_task": {
       "injection": {
-       "auroc": 0.7467007538243028,
-       "pairs": 5
+       "auroc": 0.7501278927096682,
+       "pairs": 6
       },
       "reference": {
-       "auroc": 0.7303426251689479,
-       "pairs": 5
+       "auroc": 0.7340971270382006,
+       "pairs": 6
       },
       "unaided": {
-       "auroc": 0.676158988241617,
-       "pairs": 5
+       "auroc": 0.6803591027814757,
+       "pairs": 6
       }
      }
     },
@@ -43692,11 +43907,11 @@
      },
      "per_task": {
       "injection": {
-       "auroc": 0.7246031746031746,
+       "auroc": 0.7543990929705215,
        "pairs": 7
       },
       "reference": {
-       "auroc": 0.7047619047619048,
+       "auroc": 0.7332426303854875,
        "pairs": 7
       },
       "unaided": {
@@ -43762,7 +43977,15 @@
       "qwen3-30b-a3b-instruct-2507",
       "olmo2-1b-sft",
       "olmo2-1b-dpo",
-      "olmo2-1b-instruct"
+      "olmo2-1b-instruct",
+      "olmo2-7b-sft",
+      "olmo2-7b-dpo",
+      "olmo2-7b-instruct",
+      "qwen2.5-3b-instruct",
+      "qwen2.5-7b-instruct",
+      "llama3.2-3b-instruct",
+      "marin-8b-instruct",
+      "smollm2-1.7b-instruct"
      ],
      "excluded": [],
      "n": 30,
@@ -43777,25 +44000,33 @@
       0.65,
       0.0,
       0.0,
+      0.0,
+      0.0,
+      0.008333333333333333,
+      0.0,
+      0.016666666666666666,
+      0.075,
+      0.008333333333333333,
+      0.03333333333333333,
       0.0
      ],
      "spearman": {
-      "injection": 0.9534986858176604,
-      "reference": 0.7674501617556779,
-      "unaided": 0.9534986858176604
+      "injection": 0.8344343118254253,
+      "reference": 0.5497238921253338,
+      "unaided": 0.9250448931020927
      },
      "per_task": {
       "injection": {
-       "auroc": 0.5934852116738839,
-       "pairs": 8
+       "auroc": 0.6160379738943546,
+       "pairs": 10
       },
       "reference": {
-       "auroc": 0.4670614640896504,
-       "pairs": 8
+       "auroc": 0.5223651906216139,
+       "pairs": 10
       },
       "unaided": {
-       "auroc": 0.5844455675457914,
-       "pairs": 8
+       "auroc": 0.5930490648740715,
+       "pairs": 10
       }
      }
     },
@@ -43803,6 +44034,7 @@
      "models": [
       "qwen3-0.6b",
       "qwen3-1.7b",
+      "qwen3-4b",
       "qwen3-30b-a3b",
       "qwen3-4b-instruct-2507",
       "qwen3-30b-a3b-instruct-2507",
@@ -43817,6 +44049,8 @@
       "qwen2.5-3b-instruct",
       "qwen2.5-7b-instruct",
       "llama3.2-1b-instruct",
+      "llama3.2-3b-instruct",
+      "llama3.1-8b-instruct",
       "marin-8b-instruct",
       "smollm2-135m-instruct",
       "smollm2-360m-instruct",
@@ -43827,6 +44061,7 @@
      "accuracy": [
       0.12,
       0.23875,
+      0.4,
       0.45,
       0.3475,
       0.4825,
@@ -43841,28 +44076,30 @@
       0.06,
       0.0925,
       0.01375,
+      0.0425,
+      0.01875,
       0.0575,
       0.0,
       0.0025,
       0.015
      ],
      "spearman": {
-      "injection": 0.4590427503169734,
-      "reference": 0.1661009951804838,
-      "unaided": 0.8961903694510648
+      "injection": 0.5391487301094111,
+      "reference": 0.36769150527682265,
+      "unaided": 0.8721523575299297
      },
      "per_task": {
       "injection": {
-       "auroc": 0.8342816256441564,
-       "pairs": 19
+       "auroc": 0.8317188670466338,
+       "pairs": 22
       },
       "reference": {
-       "auroc": 0.7632141542677221,
-       "pairs": 19
+       "auroc": 0.7695653803565189,
+       "pairs": 22
       },
       "unaided": {
-       "auroc": 0.772152895138155,
-       "pairs": 19
+       "auroc": 0.7659286592493244,
+       "pairs": 22
       }
      }
     },
@@ -43881,7 +44118,18 @@
       "olmo2-1b-instruct",
       "olmo2-7b-sft",
       "olmo2-7b-dpo",
-      "olmo2-7b-instruct"
+      "olmo2-7b-instruct",
+      "qwen2.5-0.5b-instruct",
+      "qwen2.5-1.5b-instruct",
+      "qwen2.5-3b-instruct",
+      "qwen2.5-7b-instruct",
+      "llama3.2-1b-instruct",
+      "llama3.2-3b-instruct",
+      "llama3.1-8b-instruct",
+      "marin-8b-instruct",
+      "smollm2-135m-instruct",
+      "smollm2-360m-instruct",
+      "smollm2-1.7b-instruct"
      ],
      "excluded": [],
      "n": 9,
@@ -43899,25 +44147,36 @@
       0.0,
       0.0,
       0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.1111111111111111,
+      0.0,
+      0.0,
+      0.05555555555555555,
+      0.0,
+      0.0,
+      0.0,
       0.0
      ],
      "spearman": {
-      "injection": 0.9433415535520573,
-      "reference": 0.9290845023648726,
-      "unaided": 0.6233246160515306
+      "injection": 0.8482115061226356,
+      "reference": 0.854939783537675,
+      "unaided": 0.625202290126829
      },
      "per_task": {
       "injection": {
-       "auroc": 0.7246031746031746,
-       "pairs": 7
+       "auroc": 0.8089770723104056,
+       "pairs": 9
       },
       "reference": {
-       "auroc": 0.7047619047619048,
-       "pairs": 7
+       "auroc": 0.7925220458553792,
+       "pairs": 9
       },
       "unaided": {
-       "auroc": 0.5178571428571429,
-       "pairs": 7
+       "auroc": 0.5694444444444444,
+       "pairs": 9
       }
      }
     },
@@ -43930,7 +44189,17 @@
       "qwen3-14b",
       "qwen3-30b-a3b",
       "qwen3-4b-instruct-2507",
-      "qwen3-30b-a3b-instruct-2507"
+      "qwen3-30b-a3b-instruct-2507",
+      "qwen2.5-0.5b-instruct",
+      "qwen2.5-1.5b-instruct",
+      "qwen2.5-3b-instruct",
+      "qwen2.5-7b-instruct",
+      "llama3.2-1b-instruct",
+      "llama3.2-3b-instruct",
+      "llama3.1-8b-instruct",
+      "smollm2-135m-instruct",
+      "smollm2-360m-instruct",
+      "smollm2-1.7b-instruct"
      ],
      "excluded": [
       "olmo2-1b-sft",
@@ -43938,36 +44207,47 @@
       "olmo2-1b-instruct",
       "olmo2-7b-sft",
       "olmo2-7b-dpo",
-      "olmo2-7b-instruct"
+      "olmo2-7b-instruct",
+      "marin-8b-instruct"
      ],
-     "n": 10,
+     "n": 9,
      "accuracy": [
       0.0,
       0.0,
-      0.075,
-      0.475,
-      0.625,
-      0.4,
-      0.475,
-      0.725
+      0.08333333333333333,
+      0.5277777777777778,
+      0.6388888888888888,
+      0.4444444444444444,
+      0.5277777777777778,
+      0.8055555555555556,
+      0.0,
+      0.0,
+      0.0,
+      0.1388888888888889,
+      0.0,
+      0.0,
+      0.027777777777777776,
+      0.0,
+      0.0,
+      0.0
      ],
      "spearman": {
-      "injection": 0.823170731707317,
-      "reference": 0.7987804878048781,
-      "unaided": 0.823170731707317
+      "injection": 0.8323943208419059,
+      "reference": 0.8494166995912291,
+      "unaided": 0.9143586104412578
      },
      "per_task": {
       "injection": {
-       "auroc": 0.6679034391534391,
-       "pairs": 6
+       "auroc": 0.7153458049886621,
+       "pairs": 7
       },
       "reference": {
-       "auroc": 0.6526256613756614,
-       "pairs": 6
+       "auroc": 0.6863775510204081,
+       "pairs": 7
       },
       "unaided": {
-       "auroc": 0.6031944444444445,
-       "pairs": 6
+       "auroc": 0.6519444444444444,
+       "pairs": 7
       }
      }
     }
@@ -43977,7 +44257,7 @@
    "final-delphi.png",
    "final-pairs.png"
   ],
-  "generated_at": 1791192195.8761172
+  "generated_at": 1791195812.23503
  },
  "headlines": {
   "code": [
@@ -45039,5 +45319,5 @@
    }
   ]
  },
- "content_digest": "a582d5058d4996e2c8169df6c6b204dfe6f37ed835181fb3f25083029b4180d1"
+ "content_digest": "8b67e3e1a9dd1b6c3bb2d731f1c1913de49b987f4f184ac0595b83a4d0d45f94"
 }

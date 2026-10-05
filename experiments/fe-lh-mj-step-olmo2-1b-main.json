@@ -1,1 +1,1 @@
-{"name":"fe-lh-mj-step-olmo2-1b-main","tasks":[]}
+{"name":"fe-lh-mj-step-olmo2-1b-main","tasks":[{"task_id":"tb-mahjong-winninghand","runs":2,"successes":2,"success_rate":1.0,"mean_bits":2441.895965,"mean_forced_bits":2366.034722,"mean_forced_tokens":1348.5,"mean_select_blocks":4.0,"mean_free_blocks":0.0,"mean_tokens":1523.0,"fallback_rate":0.0,"mean_restarts":0.0,"ends":{"success":2}}]}
