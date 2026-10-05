@@ -1,1 +1,1 @@
-{"name":"fe-lh-mj-step-delphi-9e18","tasks":[]}
+{"name":"fe-lh-mj-step-delphi-9e18","tasks":[{"task_id":"tb-mahjong-winninghand","runs":2,"successes":1,"success_rate":0.5,"mean_bits":2328.451356,"mean_forced_bits":2278.276271,"mean_forced_tokens":689.5,"mean_select_blocks":5.0,"mean_free_blocks":0.0,"mean_tokens":1780.0,"fallback_rate":0.0,"mean_restarts":0.0,"ends":{"context":1,"success":1}}]}
