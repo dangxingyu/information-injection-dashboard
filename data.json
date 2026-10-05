@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791169965.9253492,
- "generated_label": "2026-10-04 23:12 EDT",
+ "generated_at": 1791172694.822474,
+ "generated_label": "2026-10-04 23:58 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -28,6 +28,132 @@
   "qwen3-8b-base": 6
  },
  "experiments": [
+  {
+   "name": "lh-v20f-qwen3-8b-base",
+   "student": "qwen3-8b-base",
+   "model": "Qwen/Qwen3-8B-Base",
+   "suite": "longhorizon",
+   "protocol": "ep-subgoal",
+   "config": {
+    "subgoals": "teachers/lh_subgoals_opus_tb.json",
+    "safe": true,
+    "rungs": 7,
+    "rung_max": 16
+   },
+   "config_summary": "rung_max=16, rungs=7, safe=True, subgoals=teachers/lh_subgoals_opus_tb.json",
+   "runs": 8,
+   "limit": 0,
+   "shards": 3,
+   "shards_done": 0,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 3,
+   "status": "queued",
+   "created_at": 1791172498.00547,
+   "git_commit": "080ecd11ca",
+   "snapshot": "afc09a56264a",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
+  {
+   "name": "lh-v20f-smollm2-135m",
+   "student": "smollm2-135m",
+   "model": "HuggingFaceTB/SmolLM2-135M",
+   "suite": "longhorizon",
+   "protocol": "ep-subgoal",
+   "config": {
+    "subgoals": "teachers/lh_subgoals_opus_tb.json",
+    "safe": true,
+    "rungs": 7,
+    "rung_max": 16
+   },
+   "config_summary": "rung_max=16, rungs=7, safe=True, subgoals=teachers/lh_subgoals_opus_tb.json",
+   "runs": 8,
+   "limit": 0,
+   "shards": 3,
+   "shards_done": 0,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 3,
+   "status": "queued",
+   "created_at": 1791172497.7927618,
+   "git_commit": "080ecd11ca",
+   "snapshot": "afc09a56264a",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
+  {
+   "name": "lh-v20f-qwen3-0.6b-base",
+   "student": "qwen3-0.6b-base",
+   "model": "Qwen/Qwen3-0.6B-Base",
+   "suite": "longhorizon",
+   "protocol": "ep-subgoal",
+   "config": {
+    "subgoals": "teachers/lh_subgoals_opus_tb.json",
+    "safe": true,
+    "rungs": 7,
+    "rung_max": 16
+   },
+   "config_summary": "rung_max=16, rungs=7, safe=True, subgoals=teachers/lh_subgoals_opus_tb.json",
+   "runs": 8,
+   "limit": 0,
+   "shards": 3,
+   "shards_done": 0,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 3,
+   "status": "queued",
+   "created_at": 1791172497.576722,
+   "git_commit": "080ecd11ca",
+   "snapshot": "afc09a56264a",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
   {
    "name": "mb-free256-e2-smollm2-360m",
    "student": "smollm2-360m",
@@ -26369,8 +26495,17 @@
   },
   "nodes": [],
   "holdings": {
-   "allocations": [],
-   "totals": {}
+   "allocations": [
+    {
+     "kind": "H100",
+     "gpus": 8,
+     "state": "standby",
+     "label": "PLI slot (info-injection)"
+    }
+   ],
+   "totals": {
+    "h100_standby": 8
+   }
   }
  },
  "study_b": {
@@ -27461,6 +27596,11 @@
         "success": 1.0
        }
       }
+     },
+     {
+      "label": "v20f + partial injection in subgoals",
+      "experiment": "lh-v20f-qwen3-0.6b-base",
+      "cells": {}
      }
     ],
     "free": {
@@ -28135,6 +28275,11 @@
         "success": 1.0
        }
       }
+     },
+     {
+      "label": "v20f + partial injection in subgoals",
+      "experiment": "lh-v20f-smollm2-135m",
+      "cells": {}
      }
     ],
     "free": {
@@ -28827,6 +28972,11 @@
         "success": 1.0
        }
       }
+     },
+     {
+      "label": "v20f + partial injection in subgoals",
+      "experiment": "lh-v20f-qwen3-8b-base",
+      "cells": {}
      }
     ],
     "free": {
@@ -29910,5 +30060,5 @@
    }
   ]
  },
- "content_digest": "c5331911a589216b40a5fdea10e469760f67caf06b448ba487f99144d732e7da"
+ "content_digest": "70acc622387d0b28dba3af4479808b209a9d2562a2df55fcdced9fa2ef61a030"
 }
