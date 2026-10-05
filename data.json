@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791194476.132472,
- "generated_label": "2026-10-05 06:01 EDT",
+ "generated_at": 1791195386.0378547,
+ "generated_label": "2026-10-05 06:16 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -39108,10 +39108,22 @@
      "gpus": 1,
      "state": "standby",
      "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
     }
    ],
    "totals": {
-    "h100_standby": 10
+    "h100_standby": 12
    }
   }
  },
@@ -45027,5 +45039,5 @@
    }
   ]
  },
- "content_digest": "48ca8ec361e0944703a13ecd81b6a804aac58f54afc6094de0e7ad2bfe7e572e"
+ "content_digest": "a582d5058d4996e2c8169df6c6b204dfe6f37ed835181fb3f25083029b4180d1"
 }
