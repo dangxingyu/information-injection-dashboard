@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791186306.262793,
- "generated_label": "2026-10-05 03:45 EDT",
+ "generated_at": 1791187213.9730687,
+ "generated_label": "2026-10-05 04:00 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -1131,31 +1131,34 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 1,
+   "status": "running",
    "created_at": 1791175261.6849113,
    "git_commit": "adf4f94474",
    "snapshot": "86d7b4e99d9c",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 371422,
+   "tokens_scored": 417008,
+   "gpu_hours": 0.2929,
+   "load_hours": 0.0106,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 0.9,
+   "mean_bits": 582.808505,
+   "median_bits": 194.342871,
+   "mean_forced_bits": 572.480093,
+   "mean_forced_tokens": 416.25,
+   "mean_select_blocks": 6.3,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 1697.05,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 18,
+    "unsolved": 2
+   }
   },
   {
    "name": "fe-aime-ref-llama3.2-1b",
@@ -1418,31 +1421,34 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791175259.874369,
    "git_commit": "adf4f94474",
    "snapshot": "86d7b4e99d9c",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 609075,
+   "tokens_scored": 668081,
+   "gpu_hours": 0.5389,
+   "load_hours": 0.0243,
+   "tasks": 20,
+   "records": 40,
+   "success_rate": 0.95,
+   "mean_bits": 385.465892,
+   "median_bits": 101.3458,
+   "mean_forced_bits": 377.571399,
+   "mean_forced_tokens": 383.525,
+   "mean_select_blocks": 5.7,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 1773.075,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 38,
+    "unsolved": 2
+   }
   },
   {
    "name": "fe-aime-ref-qwen2.5-1.5b",
@@ -1705,31 +1711,35 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791175258.0607424,
    "git_commit": "adf4f94474",
    "snapshot": "86d7b4e99d9c",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 805748,
+   "tokens_scored": 775975,
+   "gpu_hours": 0.6059,
+   "load_hours": 0.0238,
+   "tasks": 20,
+   "records": 40,
+   "success_rate": 0.9,
+   "mean_bits": 426.081449,
+   "median_bits": 110.180437,
+   "mean_forced_bits": 416.359149,
+   "mean_forced_tokens": 440.45,
+   "mean_select_blocks": 5.925,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 1969.575,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "context": 2,
+    "success": 36,
+    "unsolved": 2
+   }
   },
   {
    "name": "fe-aime-ref-smollm2-1.7b",
@@ -1992,31 +2002,34 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791175256.2172954,
    "git_commit": "adf4f94474",
    "snapshot": "86d7b4e99d9c",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 582393,
+   "tokens_scored": 659222,
+   "gpu_hours": 0.6059,
+   "load_hours": 0.0255,
+   "tasks": 20,
+   "records": 40,
+   "success_rate": 0.95,
+   "mean_bits": 398.092013,
+   "median_bits": 103.217899,
+   "mean_forced_bits": 386.832324,
+   "mean_forced_tokens": 357.05,
+   "mean_select_blocks": 5.625,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 1428.4,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 38,
+    "unsolved": 2
+   }
   },
   {
    "name": "fe-aime-ref-llama3.2-3b",
@@ -6751,31 +6764,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 1,
+   "status": "running",
    "created_at": 1791174351.6398687,
    "git_commit": "d0ce5df178",
    "snapshot": "c0a98dbeb5ea",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 4063804,
+   "tokens_scored": 3006,
+   "gpu_hours": 0.0652,
+   "load_hours": 0.0149,
+   "tasks": 200,
+   "records": 200,
+   "success_rate": 1.0,
+   "mean_bits": 61.39618,
+   "median_bits": 60.734448,
+   "mean_forced_bits": 60.716656,
+   "mean_forced_tokens": 13.64,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 50.15,
+   "fallback_rate": 0.875,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 200
+   }
   },
   {
    "name": "fe-lh-free-delphi-1e21",
@@ -7036,31 +7051,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791174350.1370068,
    "git_commit": "d0ce5df178",
    "snapshot": "c0a98dbeb5ea",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 6724191,
+   "tokens_scored": 6072,
+   "gpu_hours": 0.1308,
+   "load_hours": 0.036,
+   "tasks": 400,
+   "records": 400,
+   "success_rate": 1.0,
+   "mean_bits": 59.14622,
+   "median_bits": 58.175628,
+   "mean_forced_bits": 58.509176,
+   "mean_forced_tokens": 13.39,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 60.32,
+   "fallback_rate": 0.8625,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 400
+   }
   },
   {
    "name": "fe-lh-free-qwen3-30b-a3b-base",
@@ -35065,19 +35082,7 @@
      "kind": "H100",
      "gpus": 1,
      "state": "standby",
-     "label": "PLI slot (fe-item)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 1,
-     "state": "standby",
-     "label": "PLI slot (fe-item)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 1,
-     "state": "standby",
-     "label": "PLI slot (fe-item)"
+     "label": "PLI slot (plan-setup)"
     },
     {
      "kind": "H100",
@@ -35210,10 +35215,34 @@
      "gpus": 1,
      "state": "standby",
      "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
     }
    ],
    "totals": {
-    "h100_standby": 26
+    "h100_standby": 28
    }
   }
  },
@@ -37823,7 +37852,14 @@
    },
    {
     "model": "delphi-1e21",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 59.1462199390284,
+      "reference": null,
+      "unaided": 0.0062109375
+     }
+    }
    },
    {
     "model": "delphi-1e22",
@@ -37857,6 +37893,12 @@
    {
     "model": "delphi-1e23",
     "suites": {
+     "aime25": {
+      "n": 30,
+      "injection": 49.92379867834238,
+      "reference": 52.763025584003856,
+      "unaided": 0.00078125
+     },
      "imoab": {
       "n": 400,
       "injection": 54.42618610332134,
@@ -37892,22 +37934,58 @@
    {
     "model": "qwen3-8b-base",
     "suites": {
+     "aime25": {
+      "n": 30,
+      "injection": 31.331527300661506,
+      "reference": 44.86846832515021,
+      "unaided": 0.00625
+     },
      "imoab": {
       "n": 400,
       "injection": 35.331472621685855,
-      "reference": null,
+      "reference": 48.70575948379848,
       "unaided": 0.0309375
+     },
+     "tb": {
+      "n": 9,
+      "injection": 377.9531799034493,
+      "reference": 489.5639178645393,
+      "unaided": 0.013888888888888888
+     },
+     "tau": {
+      "n": 10,
+      "injection": 30.833839307160567,
+      "reference": 30.67086000850486,
+      "unaided": 0.06875
      }
     }
    },
    {
     "model": "qwen3-14b-base",
     "suites": {
+     "aime25": {
+      "n": 30,
+      "injection": 31.191681900407968,
+      "reference": 44.80858491383824,
+      "unaided": 0.009505208333333333
+     },
      "imoab": {
       "n": 400,
       "injection": 34.45768798443452,
-      "reference": null,
+      "reference": 47.59683699288699,
       "unaided": 0.036484375
+     },
+     "tb": {
+      "n": 9,
+      "injection": 356.35521027892855,
+      "reference": 466.6906555074971,
+      "unaided": 0
+     },
+     "tau": {
+      "n": 10,
+      "injection": 27.48549450766039,
+      "reference": 29.474623239333162,
+      "unaided": 0.1
      }
     }
    },
@@ -37952,16 +38030,54 @@
       "injection": 51.483947296725745,
       "reference": null,
       "unaided": 0.01125
+     },
+     "tb": {
+      "n": 9,
+      "injection": 694.1155902764272,
+      "reference": null,
+      "unaided": null
+     },
+     "tau": {
+      "n": 1,
+      "injection": 20.09890011009324,
+      "reference": null,
+      "unaided": null
      }
     }
    },
    {
     "model": "qwen2.5-0.5b",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 56.03943140747273,
+      "reference": null,
+      "unaided": 0.0074609375
+     }
+    }
    },
    {
     "model": "qwen2.5-1.5b",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 50.008989299992486,
+      "reference": null,
+      "unaided": 0.015625
+     },
+     "tb": {
+      "n": 9,
+      "injection": 612.2337630580953,
+      "reference": null,
+      "unaided": null
+     },
+     "tau": {
+      "n": 10,
+      "injection": 50.21095371778947,
+      "reference": null,
+      "unaided": null
+     }
+    }
    },
    {
     "model": "qwen2.5-3b",
@@ -37971,6 +38087,18 @@
       "injection": 49.40190040712654,
       "reference": null,
       "unaided": 0.02015625
+     },
+     "tb": {
+      "n": 9,
+      "injection": 529.4739055973079,
+      "reference": null,
+      "unaided": null
+     },
+     "tau": {
+      "n": 10,
+      "injection": 35.3908709530504,
+      "reference": null,
+      "unaided": null
      }
     }
    },
@@ -37982,12 +38110,31 @@
       "injection": 43.99738038054393,
       "reference": null,
       "unaided": 0.0194921875
+     },
+     "tb": {
+      "n": 9,
+      "injection": 436.28797213453356,
+      "reference": null,
+      "unaided": null
+     },
+     "tau": {
+      "n": 10,
+      "injection": 31.31817129693323,
+      "reference": null,
+      "unaided": null
      }
     }
    },
    {
     "model": "llama3.2-1b",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 56.40564784322316,
+      "reference": null,
+      "unaided": 0.0065625
+     }
+    }
    },
    {
     "model": "llama3.2-3b",
@@ -37997,6 +38144,18 @@
       "injection": 53.16335743909911,
       "reference": null,
       "unaided": 0.00890625
+     },
+     "tb": {
+      "n": 9,
+      "injection": 637.8751334490845,
+      "reference": null,
+      "unaided": null
+     },
+     "tau": {
+      "n": 10,
+      "injection": 52.01120803332063,
+      "reference": null,
+      "unaided": null
      }
     }
    },
@@ -38008,6 +38167,18 @@
       "injection": 50.37011168358391,
       "reference": null,
       "unaided": 0.0091796875
+     },
+     "tb": {
+      "n": 9,
+      "injection": 475.01624983603375,
+      "reference": null,
+      "unaided": null
+     },
+     "tau": {
+      "n": 10,
+      "injection": 37.27366238636347,
+      "reference": null,
+      "unaided": null
      }
     }
    },
@@ -38019,16 +38190,42 @@
       "injection": 48.86100416144258,
       "reference": null,
       "unaided": 0.0155859375
+     },
+     "tb": {
+      "n": 9,
+      "injection": 577.9182996084356,
+      "reference": null,
+      "unaided": null
+     },
+     "tau": {
+      "n": 1,
+      "injection": 22.510345732853068,
+      "reference": null,
+      "unaided": null
      }
     }
    },
    {
     "model": "smollm2-135m",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 43.97616317224799,
+      "reference": null,
+      "unaided": 0.00234375
+     }
+    }
    },
    {
     "model": "smollm2-360m",
-    "suites": {}
+    "suites": {
+     "imoab": {
+      "n": 400,
+      "injection": 41.6702817537766,
+      "reference": null,
+      "unaided": 0.00359375
+     }
+    }
    },
    {
     "model": "smollm2-1.7b",
@@ -38038,6 +38235,18 @@
       "injection": 33.714050760639566,
       "reference": null,
       "unaided": 0.0112109375
+     },
+     "tb": {
+      "n": 9,
+      "injection": 672.4287620663064,
+      "reference": null,
+      "unaided": null
+     },
+     "tau": {
+      "n": 9,
+      "injection": 62.08126206876758,
+      "reference": null,
+      "unaided": null
      }
     }
    }
@@ -38046,12 +38255,30 @@
    {
     "model": "qwen3-0.6b",
     "base": "qwen3-0.6b-base",
-    "suites": {}
+    "suites": {
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
+     }
+    }
    },
    {
     "model": "qwen3-1.7b",
     "base": "qwen3-1.7b-base",
-    "suites": {}
+    "suites": {
+     "tb": {
+      "accuracy": 0.125,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
+     }
+    }
    },
    {
     "model": "qwen3-4b",
@@ -38089,7 +38316,24 @@
    {
     "model": "qwen3-4b-instruct-2507",
     "base": "qwen3-4b-base",
-    "suites": {}
+    "suites": {
+     "aime25": {
+      "accuracy": 0.425,
+      "n": 30
+     },
+     "imoab": {
+      "accuracy": 0.3475,
+      "n": 400
+     },
+     "tb": {
+      "accuracy": 0.2,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.475,
+      "n": 10
+     }
+    }
    },
    {
     "model": "qwen3-30b-a3b-instruct-2507",
@@ -38116,17 +38360,68 @@
    {
     "model": "olmo2-1b-sft",
     "base": "olmo2-1b-main",
-    "suites": {}
+    "suites": {
+     "aime25": {
+      "accuracy": 0.0,
+      "n": 30
+     },
+     "imoab": {
+      "accuracy": 0.0225,
+      "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
+     }
+    }
    },
    {
     "model": "olmo2-1b-dpo",
     "base": "olmo2-1b-main",
-    "suites": {}
+    "suites": {
+     "aime25": {
+      "accuracy": 0.0,
+      "n": 30
+     },
+     "imoab": {
+      "accuracy": 0.015,
+      "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
+     }
+    }
    },
    {
     "model": "olmo2-1b-instruct",
     "base": "olmo2-1b-main",
-    "suites": {}
+    "suites": {
+     "aime25": {
+      "accuracy": 0.0,
+      "n": 30
+     },
+     "imoab": {
+      "accuracy": 0.035,
+      "n": 400
+     },
+     "tb": {
+      "accuracy": 0.0,
+      "n": 10
+     },
+     "tau": {
+      "accuracy": 0.0,
+      "n": 10
+     }
+    }
    },
    {
     "model": "olmo2-7b-sft",
@@ -38207,7 +38502,7 @@
    "all": {}
   },
   "figures": [],
-  "generated_at": 1791183731.3457634
+  "generated_at": 1791187196.5406995
  },
  "headlines": {
   "code": [
@@ -39263,5 +39558,5 @@
    }
   ]
  },
- "content_digest": "4b9da39413bd53a2381c1682b275d020dfe7157f20787c7486686ef02e9a0162"
+ "content_digest": "fbd3b4e0c6bf6954d365b0c661aded6c9615aff36e103d9f542271c102d97732"
 }
