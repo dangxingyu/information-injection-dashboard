@@ -56,6 +56,7 @@ function render() {
   renderLongHorizon();
   renderStudyBSummary();
   renderStudyB();
+  renderFinalEval();
 }
 
 /* ------------------------------------------------------------------ fleet */
@@ -411,3 +412,40 @@ $('theme').onclick = () => {
 load();
 setInterval(load, 600000);
 setInterval(freshness, 30000);
+
+/* ------------------------------------------------------------- final eval */
+function renderFinalEval() {
+  const f = data.final_eval;
+  const ids = ['fe-pairs', 'fe-delphi', 'fe-base', 'fe-post'];
+  if (!f || f.status !== 'ready') {
+    for (const id of ids) $(id).innerHTML = '<tr><td class="muted">Running: results appear as the jobs finish.</td></tr>';
+    return;
+  }
+  const S = f.suites, L = f.suite_labels;
+  const pairs = f.pairs?.hybrid || {}, all = f.pairs?.['all-qwen'] || {};
+  const pnames = {injection: 'injection bits', reference: 'reference surprisal', unaided: 'unaided success'};
+  const cell = (x, d = 2) => isNum(x) ? `<td class="num">${dec(x, d)}</td>` : '<td class="num muted">–</td>';
+  let html = `<thead><tr><th>predictor (base model)</th>${S.map(s => `<th class="num">${L[s]}</th>`).join('')}</tr></thead><tbody>`;
+  html += `<tr class="group"><td colspan="${S.length + 1}">across models: Spearman with post-trained accuracy (6 Qwen3 sizes)</td></tr>`;
+  html += Object.keys(pnames).map(p => `<tr><td>${pnames[p]}</td>${S.map(s => cell(pairs[s]?.spearman?.[p])).join('')}</tr>`).join('');
+  html += `<tr class="group"><td colspan="${S.length + 1}">per task: AUROC for "post-trained model solves it" (mean over Qwen3 pairs incl. 2507)</td></tr>`;
+  html += Object.keys(pnames).map(p => `<tr><td>${pnames[p]}</td>${S.map(s => cell(all[s]?.per_task?.[p]?.auroc)).join('')}</tr>`).join('');
+  html += `<tr class="muted"><td>matched tasks</td>${S.map(s => `<td class="num">${pairs[s]?.n ?? all[s]?.n ?? '–'}</td>`).join('')}</tr>`;
+  $('fe-pairs').innerHTML = html + '</tbody>';
+  $('fe-pairs-note').textContent = 'Costs are negated, so higher = better predictor everywhere (1 = perfect). Solved = at least half of the post-trained model\'s samples correct. Columns fill in as base and post-trained runs finish.';
+  const dl = f.delphi || {};
+  const ds = S.filter(s => dl[s]);
+  if (ds.length) {
+    const pts = dl[ds[0]].points;
+    $('fe-delphi').innerHTML = `<thead><tr><th>FLOPs · params</th>${ds.map(s => `<th class="num">${L[s]} <small>(${dl[s].n})</small></th>`).join('')}</tr></thead><tbody>` +
+      pts.map((p, i) => `<tr><td>${p.flops.toExponential(0)} · ${p.params_b}B</td>${ds.map(s => `<td class="num">${bits(dl[s].points[i].injection)}</td>`).join('')}</tr>`).join('') +
+      `<tr class="muted"><td>Spearman with log FLOPs</td>${ds.map(s => cell(dl[s].spearman_log_flops)).join('')}</tr></tbody>`;
+    $('fe-delphi-note').textContent = 'Mean injection bits per task on tasks every Delphi model finished. Delphi has a 4096-token context: tau episodes that run out of it are not counted.';
+  } else { $('fe-delphi').innerHTML = '<tr><td class="muted">Delphi runs not finished yet.</td></tr>'; }
+  const triple = c => c ? `<td class="num">${bits(c.injection)} <span class="muted">/ ${bits(c.reference)} / ${pct(c.unaided)}</span> <small>(${c.n})</small></td>` : '<td class="num muted">–</td>';
+  $('fe-base').innerHTML = `<thead><tr><th>base model</th>${S.map(s => `<th class="num">${L[s]}</th>`).join('')}</tr></thead><tbody>` +
+    f.base.filter(r => Object.keys(r.suites).length).map(r => `<tr><td>${esc(r.model)}</td>${S.map(s => triple(r.suites[s])).join('')}</tr>`).join('') + '</tbody>';
+  $('fe-post').innerHTML = `<thead><tr><th>post-trained model</th><th>base</th>${S.map(s => `<th class="num">${L[s]}</th>`).join('')}</tr></thead><tbody>` +
+    f.post.filter(r => Object.keys(r.suites).length).map(r => `<tr><td>${esc(r.model)}</td><td class="muted">${esc(r.base)}</td>${S.map(s => r.suites[s] ? `<td class="num">${pct(r.suites[s].accuracy)} <small>(${r.suites[s].n})</small></td>` : '<td class="num muted">–</td>').join('')}</tr>`).join('') + '</tbody>';
+  $('fe-figures').innerHTML = (f.figures || []).map(n => `<figure class="panel pad"><img src="figures/${esc(n)}" alt="${esc(n)}" style="max-width:100%"></figure>`).join('');
+}
