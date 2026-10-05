@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791225336.1939068,
- "generated_label": "2026-10-05 14:35 EDT",
+ "generated_at": 1791227940.0027924,
+ "generated_label": "2026-10-05 15:19 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -51501,7 +51501,7 @@
    "final-delphi.png",
    "final-pairs.png"
   ],
-  "generated_at": 1791215286.6400025,
+  "generated_at": 1791227919.7060943,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -52046,32 +52046,32 @@
   },
   "reliability": {
    "aime25": {
-    "models": 27,
-    "pairs": 810,
-    "task_spearman": 0.7694909544707157,
-    "mean_abs_diff": 5.048668408245092,
-    "model_spearman": 0.8980463980463981
+    "models": 30,
+    "pairs": 900,
+    "task_spearman": 0.7619747075637483,
+    "mean_abs_diff": 4.754831666900164,
+    "model_spearman": 0.9243604004449388
    },
    "imoab": {
-    "models": 26,
-    "pairs": 10399,
-    "task_spearman": 0.9316013801058515,
-    "mean_abs_diff": 3.875204418419322,
-    "model_spearman": 0.9952136752136752
+    "models": 30,
+    "pairs": 11999,
+    "task_spearman": 0.9240389925599141,
+    "mean_abs_diff": 3.71595715657556,
+    "model_spearman": 0.9968854282536151
    },
    "tb": {
-    "models": 21,
-    "pairs": 207,
-    "task_spearman": 0.9969829312378912,
-    "mean_abs_diff": 18.49458014312168,
-    "model_spearman": 0.9974025974025974
+    "models": 30,
+    "pairs": 297,
+    "task_spearman": 0.9970336413289433,
+    "mean_abs_diff": 17.504069478156033,
+    "model_spearman": 0.9991101223581758
    },
    "tau": {
-    "models": 17,
-    "pairs": 90,
-    "task_spearman": 0.8831625303535416,
-    "mean_abs_diff": 6.608673058769332,
-    "model_spearman": 0.8578431372549019
+    "models": 26,
+    "pairs": 168,
+    "task_spearman": 0.93575967407533,
+    "mean_abs_diff": 6.891593482474486,
+    "model_spearman": 0.9425641025641026
    }
   }
  },
@@ -53135,5 +53135,5 @@
    }
   ]
  },
- "content_digest": "53df15bd2e27df9ab48efc04df05cd57a83d5f92d765ac8209d2da0f1a0909de"
+ "content_digest": "6685ca1fb39dd21731cf4ffdcbcaee313cd5fa5e70b10d4bd81c2622cc62b8f9"
 }
