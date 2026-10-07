@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791356015.7343187,
- "generated_label": "2026-10-07 02:53 EDT",
+ "generated_at": 1791356511.6645901,
+ "generated_label": "2026-10-07 03:01 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -539,31 +539,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791349577.7589135,
    "git_commit": "d76eb2f10e",
    "snapshot": "721a796f34c7",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 8531403,
+   "tokens_scored": 31920,
+   "gpu_hours": 0.1207,
+   "load_hours": 0.0122,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 14.59588,
+   "median_bits": 15.220733,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 3.7,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 294.133333,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-aime-sir2k-delphi-1e23",
@@ -668,31 +670,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791349576.7210157,
    "git_commit": "d76eb2f10e",
    "snapshot": "721a796f34c7",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 2848088,
+   "tokens_scored": 7990,
+   "gpu_hours": 0.2153,
+   "load_hours": 0.0152,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 15.388483,
+   "median_bits": 15.543877,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 2.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 165.066667,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-aime-sir1k-delphi-1e22",
@@ -2487,31 +2491,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791349331.3545785,
    "git_commit": "d76eb2f10e",
    "snapshot": "721a796f34c7",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 2512626,
+   "tokens_scored": 758878,
+   "gpu_hours": 0.0501,
+   "load_hours": 0.0158,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 14.924183,
+   "median_bits": 15.630575,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 2.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 253.233333,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-aime-sir-r-llama3.2-1b",
@@ -3820,31 +3826,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791349326.1496744,
    "git_commit": "d76eb2f10e",
    "snapshot": "721a796f34c7",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 3943757,
+   "tokens_scored": 7608,
+   "gpu_hours": 0.0529,
+   "load_hours": 0.0128,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 15.228435,
+   "median_bits": 16.431984,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 2.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 275.766667,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-aime-sirh-olmo2-1b-main",
@@ -4176,31 +4184,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791349324.771886,
    "git_commit": "d76eb2f10e",
    "snapshot": "721a796f34c7",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 3604262,
+   "tokens_scored": 17834,
+   "gpu_hours": 0.1733,
+   "load_hours": 0.0209,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 13.003734,
+   "median_bits": 13.350282,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 3.7,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 484.933333,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-aime-sirh-qwen3-14b-base",
@@ -52932,16 +52942,10 @@
      "gpus": 1,
      "state": "standby",
      "label": "PLI slot (fe-item)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 1,
-     "state": "standby",
-     "label": "PLI slot (fe-item)"
     }
    ],
    "totals": {
-    "h100_standby": 10
+    "h100_standby": 9
    }
   }
  },
@@ -58329,7 +58333,7 @@
    "final-aime-sir.png",
    "final-pairs.png"
   ],
-  "generated_at": 1791354683.2930453,
+  "generated_at": 1791356488.4261863,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -58959,7 +58963,7 @@
     "retest_mad": 4.754831666900164
    },
    "answer_sir": {
-    "models": 18,
+    "models": 30,
     "mean": {
      "delphi-3e18": 22.91648175517325,
      "delphi-9e18": 20.353185971680603,
@@ -58978,7 +58982,19 @@
      "qwen3-14b-base": 12.534959441646235,
      "qwen3-30b-a3b-base": 13.11285536534266,
      "olmo2-1b-main": 14.938182479701732,
-     "qwen2.5-0.5b": 14.924005146320866
+     "olmo2-7b": 14.319631542349907,
+     "qwen2.5-0.5b": 14.924005146320866,
+     "qwen2.5-1.5b": 13.827748445986526,
+     "qwen2.5-3b": 13.799303477538224,
+     "qwen2.5-7b": 13.950893807616678,
+     "qwen2.5-math-7b": 13.790267082057388,
+     "llama3.2-1b": 14.369986134042856,
+     "llama3.2-3b": 14.420822678615728,
+     "llama3.1-8b": 14.415376737636679,
+     "marin-8b-base": 13.834591560534651,
+     "smollm2-135m": 16.452072268451843,
+     "smollm2-360m": 15.956380464724404,
+     "smollm2-1.7b": 16.938821469312764
     },
     "delphi": [
      22.91648175517325,
@@ -58994,13 +59010,15 @@
     ],
     "delphi_spearman": -0.9515151515151515,
     "spearman_hybrid": 0.8285714285714286,
-    "spearman_final": 0.8503146459584139,
-    "spearman_all": 0.8589208916071466,
-    "auroc": 0.5762126646501646,
-    "auroc_pairs": 8
+    "spearman_final": 0.6993545710970651,
+    "spearman_all": 0.6995143973604615,
+    "auroc": 0.6522937583214121,
+    "auroc_pairs": 15,
+    "retest_spearman": 0.9542674284811283,
+    "retest_mad": 0.8474484756156246
    },
    "answer_sir, half from the hinted student": {
-    "models": 16,
+    "models": 25,
     "mean": {
      "delphi-3e18": 24.56123994658189,
      "delphi-9e18": 20.959908988873707,
@@ -59017,7 +59035,16 @@
      "qwen3-4b-base": 13.73784053422594,
      "qwen3-8b-base": 13.288348554641898,
      "qwen3-14b-base": 13.13539836701703,
-     "olmo2-1b-main": 15.28774476801944
+     "qwen3-30b-a3b-base": 13.257997443132767,
+     "olmo2-1b-main": 15.28774476801944,
+     "olmo2-7b": 14.397840128732144,
+     "qwen2.5-0.5b": 14.960558519180367,
+     "qwen2.5-1.5b": 13.711201652695458,
+     "qwen2.5-3b": 14.212247776183952,
+     "qwen2.5-7b": 14.140381677737627,
+     "qwen2.5-math-7b": 14.717764825941684,
+     "llama3.2-1b": 14.47442023687002,
+     "llama3.2-3b": 14.924182779884939
     },
     "delphi": [
      24.56123994658189,
@@ -59032,37 +59059,44 @@
      14.946768040761249
     ],
     "delphi_spearman": -0.9515151515151515,
-    "spearman_hybrid": 0.7,
-    "spearman_final": 0.8285714285714286,
-    "spearman_all": 0.9004413377331422,
-    "auroc": 0.4900277557712198,
-    "auroc_pairs": 6
+    "spearman_hybrid": 0.8285714285714286,
+    "spearman_final": 0.8943939847408411,
+    "spearman_all": 0.7080517421484028,
+    "auroc": 0.6244363459985512,
+    "auroc_pairs": 14
    },
    "answer_sir, M = 1024": {
-    "models": 6,
+    "models": 9,
     "mean": {
      "delphi-3e18": 22.016141470648694,
      "delphi-9e18": 20.42787764692661,
      "delphi-2e19": 19.08236899537492,
      "delphi-3e19": 17.39602457686825,
      "delphi-9e19": 17.034087119917245,
-     "delphi-2e20": 15.831785910199338
+     "delphi-2e20": 15.831785910199338,
+     "delphi-3e20": 15.109240051962079,
+     "delphi-1e21": 15.262998172676717,
+     "qwen3-0.6b-base": 14.595879840775483
     },
-    "auroc": null,
-    "auroc_pairs": 0
+    "auroc": 0.6790123456790124,
+    "auroc_pairs": 1
    },
    "answer_sir, 2048-token solutions": {
-    "models": 6,
+    "models": 10,
     "mean": {
      "delphi-3e18": 23.17985481217827,
      "delphi-9e18": 20.482227397460182,
      "delphi-2e19": 19.05038940668687,
      "delphi-3e19": 17.49914932015926,
      "delphi-9e19": 17.17938465431546,
-     "delphi-2e20": 15.803947263219024
+     "delphi-2e20": 15.803947263219024,
+     "delphi-3e20": 15.140123554703973,
+     "delphi-1e21": 15.338695199830518,
+     "delphi-1e22": 15.38848254026584,
+     "qwen3-0.6b-base": 15.155109621587236
     },
-    "auroc": null,
-    "auroc_pairs": 0
+    "auroc": 0.691358024691358,
+    "auroc_pairs": 1
    }
   }
  },
@@ -60126,5 +60160,5 @@
    }
   ]
  },
- "content_digest": "660e25bac57b908f48fb0d73dee7a1a441aed26d0a6f0af6359eac5ba64ea25f"
+ "content_digest": "e6232ae5154e03d77552037f40be759454ef15f0ef5128aac3df5ffea392a134"
 }
