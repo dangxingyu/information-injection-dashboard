@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791361455.656899,
- "generated_label": "2026-10-07 04:24 EDT",
+ "generated_at": 1791362717.6711967,
+ "generated_label": "2026-10-07 04:45 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -53021,11 +53021,17 @@
      "kind": "H100",
      "gpus": 1,
      "state": "standby",
+     "label": "PLI slot (plan-setup)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
      "label": "PLI slot (fe-item)"
     }
    ],
    "totals": {
-    "h100_standby": 2
+    "h100_standby": 3
    }
   }
  },
@@ -55682,7 +55688,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 42.21440000528493,
+      "injection": 22.91648175517325,
       "reference": 42.2144,
       "unaided": 0.0
      },
@@ -55705,7 +55711,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 37.43020005623509,
+      "injection": 20.353185971680603,
       "reference": 37.4302,
       "unaided": 0.0
      },
@@ -55728,7 +55734,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 38.27506516645464,
+      "injection": 19.09895447098981,
       "reference": 39.153166666666664,
       "unaided": 0.00026041666666666666
      },
@@ -55751,7 +55757,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 34.65602773373053,
+      "injection": 17.492897914299487,
       "reference": 36.2326,
       "unaided": 0.000390625
      },
@@ -55780,7 +55786,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 35.328403299761675,
+      "injection": 17.09362602631443,
       "reference": 38.83253333333333,
       "unaided": 0.0015625
      },
@@ -55809,7 +55815,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 31.26041901082663,
+      "injection": 15.77106847150762,
       "reference": 35.13896666666667,
       "unaided": 0.0010416666666666667
      },
@@ -55838,7 +55844,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 31.32418320316792,
+      "injection": 15.223861933637728,
       "reference": 36.237033333333336,
       "unaided": 0.002734375
      },
@@ -55867,7 +55873,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 33.5539519856479,
+      "injection": 15.326306601954277,
       "reference": 37.86526666666666,
       "unaided": 0.0009114583333333333
      },
@@ -55896,7 +55902,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 36.182162332421846,
+      "injection": 15.420165824366515,
       "reference": 38.717,
       "unaided": 0.00078125
      },
@@ -55925,7 +55931,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 37.20709116933753,
+      "injection": 15.039091471746605,
       "reference": 39.2895,
       "unaided": 0.00078125
      },
@@ -55954,7 +55960,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 29.475244488664234,
+      "injection": 15.559320078350261,
       "reference": 33.5712,
       "unaided": 0.0036458333333333334
      },
@@ -55983,7 +55989,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 28.322815039426178,
+      "injection": 14.095763443734315,
       "reference": 33.4741,
       "unaided": 0.0049479166666666664
      },
@@ -56012,7 +56018,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 24.56495655153423,
+      "injection": 14.135883164562049,
       "reference": 33.41883333333333,
       "unaided": 0.006119791666666667
      },
@@ -56041,7 +56047,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 23.700119850199087,
+      "injection": 14.062986542307383,
       "reference": 32.8538,
       "unaided": 0.00625
      },
@@ -56070,7 +56076,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 23.282285799208225,
+      "injection": 12.534959441646235,
       "reference": 32.6976,
       "unaided": 0.009505208333333333
      },
@@ -56099,7 +56105,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 18.414887379639048,
+      "injection": 13.11285536534266,
       "reference": 33.4348,
       "unaided": 0.015364583333333333
      },
@@ -56128,7 +56134,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 42.20345475306276,
+      "injection": 14.938182479701732,
       "reference": 45.7092,
       "unaided": 0.0015625
      },
@@ -56157,7 +56163,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 35.713765076165515,
+      "injection": 14.319631542349907,
       "reference": 39.95206666666667,
       "unaided": 0.0026041666666666665
      },
@@ -56186,7 +56192,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 42.75755164470139,
+      "injection": 14.924005146320866,
       "reference": 47.557566666666666,
       "unaided": 0.0014322916666666666
      },
@@ -56215,7 +56221,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 35.25657430550196,
+      "injection": 13.827748445986526,
       "reference": 46.409,
       "unaided": 0.0036458333333333334
      },
@@ -56244,7 +56250,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 34.669250937561976,
+      "injection": 13.799303477538224,
       "reference": 46.6279,
       "unaided": 0.005598958333333333
      },
@@ -56273,7 +56279,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 32.49601388956217,
+      "injection": 13.950893807616678,
       "reference": 42.744,
       "unaided": 0.0036458333333333334
      },
@@ -56302,7 +56308,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 28.48066382118235,
+      "injection": 13.790267082057388,
       "reference": 38.684133333333335,
       "unaided": 0.0033854166666666668
      },
@@ -56325,7 +56331,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 36.06149506902766,
+      "injection": 14.369986134042856,
       "reference": 41.24296666666667,
       "unaided": 0.002994791666666667
      },
@@ -56354,7 +56360,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 35.38480046287066,
+      "injection": 14.420822678615728,
       "reference": 41.08996666666667,
       "unaided": 0.0020833333333333333
      },
@@ -56383,7 +56389,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 40.28646286500738,
+      "injection": 14.415376737636679,
       "reference": 43.84863333333333,
       "unaided": 0.00078125
      },
@@ -56412,7 +56418,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 33.43078813220999,
+      "injection": 13.834591560534651,
       "reference": 42.81966666666667,
       "unaided": 0.004427083333333333
      },
@@ -56441,7 +56447,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 22.832040382240265,
+      "injection": 16.452072268451843,
       "reference": 24.132466666666666,
       "unaided": 0.0014322916666666666
      },
@@ -56470,7 +56476,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 20.95290283094048,
+      "injection": 15.956380464724404,
       "reference": 21.790066666666668,
       "unaided": 0.00026041666666666666
      },
@@ -56499,7 +56505,7 @@
     "suites": {
      "aime25": {
       "n": 30,
-      "injection": 19.726146740007835,
+      "injection": 16.938821469312764,
       "reference": 21.181366666666666,
       "unaided": 0.0026041666666666665
      },
@@ -57216,7 +57222,7 @@
       "model": "delphi-3e18",
       "flops": 3e+18,
       "params_b": 0.447,
-      "injection": 42.21440000528493,
+      "injection": 22.91648175517325,
       "reference": 42.2144,
       "unaided": 0.0
      },
@@ -57224,7 +57230,7 @@
       "model": "delphi-9e18",
       "flops": 9e+18,
       "params_b": 0.55,
-      "injection": 37.43020005623509,
+      "injection": 20.353185971680603,
       "reference": 37.4302,
       "unaided": 0.0
      },
@@ -57232,7 +57238,7 @@
       "model": "delphi-2e19",
       "flops": 2e+19,
       "params_b": 0.837,
-      "injection": 38.27506516645464,
+      "injection": 19.09895447098981,
       "reference": 39.153166666666664,
       "unaided": 0.00026041666666666666
      },
@@ -57240,7 +57246,7 @@
       "model": "delphi-3e19",
       "flops": 3e+19,
       "params_b": 0.998,
-      "injection": 34.65602773373053,
+      "injection": 17.492897914299487,
       "reference": 36.2326,
       "unaided": 0.000390625
      },
@@ -57248,7 +57254,7 @@
       "model": "delphi-9e19",
       "flops": 9e+19,
       "params_b": 1.4,
-      "injection": 35.328403299761675,
+      "injection": 17.09362602631443,
       "reference": 38.83253333333333,
       "unaided": 0.0015625
      },
@@ -57256,7 +57262,7 @@
       "model": "delphi-2e20",
       "flops": 2e+20,
       "params_b": 1.9,
-      "injection": 31.26041901082663,
+      "injection": 15.77106847150762,
       "reference": 35.13896666666667,
       "unaided": 0.0010416666666666667
      },
@@ -57264,7 +57270,7 @@
       "model": "delphi-3e20",
       "flops": 3e+20,
       "params_b": 2.5,
-      "injection": 31.32418320316792,
+      "injection": 15.223861933637728,
       "reference": 36.237033333333336,
       "unaided": 0.002734375
      },
@@ -57272,7 +57278,7 @@
       "model": "delphi-1e21",
       "flops": 1e+21,
       "params_b": 3.4,
-      "injection": 33.5539519856479,
+      "injection": 15.326306601954277,
       "reference": 37.86526666666666,
       "unaided": 0.0009114583333333333
      },
@@ -57280,7 +57286,7 @@
       "model": "delphi-1e22",
       "flops": 1e+22,
       "params_b": 9.7,
-      "injection": 36.182162332421846,
+      "injection": 15.420165824366515,
       "reference": 38.717,
       "unaided": 0.00078125
      },
@@ -57288,12 +57294,12 @@
       "model": "delphi-1e23",
       "flops": 1e+23,
       "params_b": 25.0,
-      "injection": 37.20709116933753,
+      "injection": 15.039091471746605,
       "reference": 39.2895,
       "unaided": 0.00078125
      }
     ],
-    "spearman_log_flops": -0.4909090909090909
+    "spearman_log_flops": -0.9515151515151515
    },
    "imoab": {
     "n": 400,
@@ -57490,13 +57496,13 @@
       0.7083333333333334
      ],
      "spearman": {
-      "injection": 0.8857142857142857,
+      "injection": 0.8285714285714286,
       "reference": 0.7714285714285715,
       "unaided": 0.8857142857142857
      },
      "per_task": {
       "injection": {
-       "auroc": 0.585887424714151,
+       "auroc": 0.552692723942724,
        "pairs": 6
       },
       "reference": {
@@ -57674,13 +57680,13 @@
       0.0
      ],
      "spearman": {
-      "injection": 0.4037510925921201,
+      "injection": 0.6993545710970651,
       "reference": 0.1676288018351213,
       "unaided": 0.84397284086475
      },
      "per_task": {
       "injection": {
-       "auroc": 0.5789126345384981,
+       "auroc": 0.6396714492404147,
        "pairs": 9
       },
       "reference": {
@@ -57912,13 +57918,13 @@
       0.65
      ],
      "spearman": {
-      "injection": 0.8795819141991807,
+      "injection": 0.8554837795635868,
       "reference": 0.5904042985720529,
       "unaided": 0.8795819141991807
      },
      "per_task": {
       "injection": {
-       "auroc": 0.6089526055726503,
+       "auroc": 0.5762126646501646,
        "pairs": 8
       },
       "reference": {
@@ -58132,13 +58138,13 @@
       0.06666666666666667
      ],
      "spearman": {
-      "injection": 0.6270754715216159,
+      "injection": 0.6995143973604615,
       "reference": 0.45284736540922005,
       "unaided": 0.8192600676541243
      },
      "per_task": {
       "injection": {
-       "auroc": 0.614077590219775,
+       "auroc": 0.6522937583214121,
        "pairs": 15
       },
       "reference": {
@@ -58413,7 +58419,7 @@
    "final-aime-sir.png",
    "final-pairs.png"
   ],
-  "generated_at": 1791361067.3657722,
+  "generated_at": 1791362648.4823997,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -58960,9 +58966,9 @@
    "aime25": {
     "models": 30,
     "pairs": 900,
-    "task_spearman": 0.7619747075637483,
-    "mean_abs_diff": 4.754831666900164,
-    "model_spearman": 0.9243604004449388
+    "task_spearman": 0.9143487008420175,
+    "mean_abs_diff": 0.9552785778628948,
+    "model_spearman": 0.950166852057842
    },
    "imoab": {
     "models": 30,
@@ -60277,5 +60283,5 @@
    }
   ]
  },
- "content_digest": "4ae5b7410ed71688f043025dc3e0090d9562e4a21d83270b947c939f26021875"
+ "content_digest": "52a9948df182d9ed9f9f81dc796521f0159ceb6cc9a879466450c5a1b69bc41d"
 }
