@@ -456,6 +456,12 @@ function renderFinalEval() {
   $('fe-aime').innerHTML = !ak.length ? '<tr><td class="muted">Running.</td></tr>' :
     `<thead><tr><th>protocol</th><th class="num">models</th>${pick.map(m => `<th class="num">${esc(m)}</th>`).join('')}<th class="num">Delphi ρ</th><th class="num">ρ Qwen3</th><th class="num">ρ all</th><th class="num">AUROC</th><th class="num">retest ρ</th></tr></thead><tbody>` +
     ak.map(k => { const e = am[k]; return `<tr><td>${esc(k)}</td><td class="num">${e.models}</td>${pick.map(m => `<td class="num">${bits(e.mean?.[m])}</td>`).join('')}${cell(e.delphi_spearman)}${cell(e.spearman_hybrid)}${cell(e.spearman_all)}${cell(e.auroc)}${cell(e.retest_spearman)}</tr>`; }).join('') + '</tbody>';
+  const tbp = f.tb || {};
+  const tk = Object.keys(tbp).filter(k => tbp[k].models);
+  const tpick = ['qwen3-0.6b-base', 'qwen3-8b-base', 'qwen3-30b-a3b-base', 'delphi-1e23', 'llama3.1-8b'];
+  $('fe-tb').innerHTML = !tk.length ? '<tr><td class="muted">Running.</td></tr>' :
+    `<thead><tr><th>protocol</th><th class="num">models · tasks</th>${tpick.map(m => `<th class="num">${esc(m)}</th>`).join('')}<th class="num">Delphi ρ</th><th class="num">ρ Qwen3</th><th class="num">ρ all</th><th class="num">AUROC</th><th class="num">retest ρ</th></tr></thead><tbody>` +
+    tk.map(k => { const e = tbp[k]; return `<tr><td>${esc(k)}</td><td class="num">${e.models} · ${e.n}</td>${tpick.map(m => `<td class="num">${bits(e.mean?.[m])}</td>`).join('')}${cell(e.delphi_spearman)}${cell(e.spearman_hybrid)}${cell(e.spearman_all)}${cell(e.auroc)}${cell(e.retest_spearman)}</tr>`; }).join('') + '</tbody>';
   const rel = f.reliability || {};
   const rs = S.filter(s => rel[s]);
   $('fe-reliability').innerHTML = !rs.length ? '<tr><td class="muted">Replicate runs pending.</td></tr>' :
