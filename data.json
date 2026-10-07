@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791356511.6645901,
- "generated_label": "2026-10-07 03:01 EDT",
+ "generated_at": 1791356925.4549952,
+ "generated_label": "2026-10-07 03:08 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -408,31 +408,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791349578.8087513,
    "git_commit": "d76eb2f10e",
    "snapshot": "721a796f34c7",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 4643686,
+   "tokens_scored": 16464,
+   "gpu_hours": 0.0759,
+   "load_hours": 0.0121,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 13.702221,
+   "median_bits": 14.161583,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 3.7,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 672.133333,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-aime-sir1k-qwen3-1.7b-base",
@@ -3470,31 +3472,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791349327.5418146,
    "git_commit": "d76eb2f10e",
    "snapshot": "721a796f34c7",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 3369639,
+   "tokens_scored": 11539,
+   "gpu_hours": 0.0444,
+   "load_hours": 0.0116,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 14.782193,
+   "median_bits": 15.300259,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 3.7,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 398.533333,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-aime-sirh-qwen2.5-0.5b",
@@ -52942,10 +52946,22 @@
      "gpus": 1,
      "state": "standby",
      "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
     }
    ],
    "totals": {
-    "h100_standby": 9
+    "h100_standby": 11
    }
   }
  },
@@ -60160,5 +60176,5 @@
    }
   ]
  },
- "content_digest": "e6232ae5154e03d77552037f40be759454ef15f0ef5128aac3df5ffea392a134"
+ "content_digest": "ae0c59ab931ba70ea59bb7de7c9cd3a29ada7c0e35d0fccf70116fbc5c9094ae"
 }
