@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791404105.7117362,
- "generated_label": "2026-10-07 16:15 EDT",
+ "generated_at": 1791405005.6546874,
+ "generated_label": "2026-10-07 16:30 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -2170,31 +2170,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 1,
+   "status": "running",
    "created_at": 1791401840.014178,
    "git_commit": "0efd235f61",
    "snapshot": "8df6488c641d",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 204990,
+   "tokens_scored": 2652,
+   "gpu_hours": 0.6745,
+   "load_hours": 0.0127,
+   "tasks": 5,
+   "records": 10,
+   "success_rate": 1.0,
+   "mean_bits": 272.084496,
+   "median_bits": 260.750179,
+   "mean_forced_bits": 268.24587,
+   "mean_forced_tokens": 126.4,
+   "mean_select_blocks": 1.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 399.3,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 10
+   }
   },
   {
    "name": "fe-tb-tref-delphi-9e19",
@@ -2254,31 +2256,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791401839.373046,
    "git_commit": "0efd235f61",
    "snapshot": "8df6488c641d",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 385178,
+   "tokens_scored": 5832,
+   "gpu_hours": 1.1659,
+   "load_hours": 0.025,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 1.0,
+   "mean_bits": 400.1508,
+   "median_bits": 296.795505,
+   "mean_forced_bits": 398.886269,
+   "mean_forced_tokens": 142.0,
+   "mean_select_blocks": 0.45,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 277.9,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 20
+   }
   },
   {
    "name": "fe-tb-tref-delphi-3e19",
@@ -2338,31 +2342,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791401838.7237492,
    "git_commit": "0efd235f61",
    "snapshot": "8df6488c641d",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 413865,
+   "tokens_scored": 5881,
+   "gpu_hours": 1.2269,
+   "load_hours": 0.0268,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 1.0,
+   "mean_bits": 430.73722,
+   "median_bits": 342.459937,
+   "mean_forced_bits": 428.79186,
+   "mean_forced_tokens": 144.45,
+   "mean_select_blocks": 0.4,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 325.3,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 20
+   }
   },
   {
    "name": "fe-tb-tref-delphi-2e19",
@@ -2422,32 +2428,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 1,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791401838.0594237,
    "git_commit": "0efd235f61",
    "snapshot": "8df6488c641d",
-   "tokens_generated": 173285,
-   "tokens_scored": 3208,
-   "gpu_hours": 0.4687,
-   "load_hours": 0.0122,
-   "tasks": 5,
-   "records": 10,
+   "tokens_generated": 325419,
+   "tokens_scored": 5878,
+   "gpu_hours": 1.0112,
+   "load_hours": 0.0263,
+   "tasks": 10,
+   "records": 20,
    "success_rate": 1.0,
-   "mean_bits": 536.072267,
-   "median_bits": 498.894606,
-   "mean_forced_bits": 536.072267,
-   "mean_forced_tokens": 160.4,
-   "mean_select_blocks": 0.0,
+   "mean_bits": 474.788914,
+   "median_bits": 415.746082,
+   "mean_forced_bits": 473.604734,
+   "mean_forced_tokens": 144.3,
+   "mean_select_blocks": 0.4,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 360.2,
+   "mean_tokens": 393.7,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 10
+    "success": 20
    }
   },
   {
@@ -58296,16 +58302,10 @@
      "gpus": 1,
      "state": "standby",
      "label": "PLI slot (fe-item)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 1,
-     "state": "standby",
-     "label": "PLI slot (fe-item)"
     }
    ],
    "totals": {
-    "h100_standby": 10
+    "h100_standby": 9
    }
   }
  },
@@ -63694,7 +63694,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791403464.0726447,
+  "generated_at": 1791404972.8136032,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -64683,7 +64683,19 @@
     "auroc_pairs": 2
    },
    "per turn on teacher trajectory (v19g)": {
-    "models": 0
+    "models": 5,
+    "n": 10,
+    "mean": {
+     "delphi-3e18": 569.5118856026181,
+     "delphi-9e18": 474.7889136069164,
+     "delphi-2e19": 430.73721973302224,
+     "delphi-3e19": 400.150800341545,
+     "qwen3-30b-a3b-base": 84.69349576545262
+    },
+    "auroc": 0.7758333333333334,
+    "auroc_pairs": 2,
+    "retest_spearman": 0.9935654261704682,
+    "retest_mad": 6.6295305141313525
    }
   }
  },
@@ -65747,5 +65759,5 @@
    }
   ]
  },
- "content_digest": "d15ff7342178928d2c7d6b15552946a9b1c3fbc82169702461b1452ba43ed6ac"
+ "content_digest": "db2423bb80760f56784ec6f992a5583cd66df8f9b3313857dd5e72751883ec47"
 }
