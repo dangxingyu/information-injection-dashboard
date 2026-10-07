@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791407743.7418003,
- "generated_label": "2026-10-07 17:15 EDT",
+ "generated_at": 1791408645.9136634,
+ "generated_label": "2026-10-07 17:30 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -58316,10 +58316,46 @@
      "gpus": 1,
      "state": "standby",
      "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
     }
    ],
    "totals": {
-    "h100_standby": 10
+    "h100_standby": 16
    }
   }
  },
@@ -63708,7 +63744,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791406481.4871287,
+  "generated_at": 1791408017.7349868,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -64697,7 +64733,7 @@
     "auroc_pairs": 2
    },
    "per turn on teacher trajectory (v19g)": {
-    "models": 7,
+    "models": 10,
     "n": 10,
     "mean": {
      "delphi-3e18": 569.5118856026181,
@@ -64706,12 +64742,15 @@
      "delphi-3e19": 400.150800341545,
      "delphi-9e19": 339.1034367111229,
      "delphi-2e20": 314.8923425226458,
+     "delphi-3e20": 296.3382448091952,
+     "delphi-1e21": 248.27582426097803,
+     "delphi-1e22": 189.86539471854124,
      "qwen3-30b-a3b-base": 84.69349576545262
     },
     "auroc": 0.7758333333333334,
     "auroc_pairs": 2,
-    "retest_spearman": 0.9918817251334091,
-    "retest_mad": 6.224458044905336
+    "retest_spearman": 0.9914551455145515,
+    "retest_mad": 6.4274122064039325
    }
   }
  },
@@ -65775,5 +65814,5 @@
    }
   ]
  },
- "content_digest": "4c4d74e4929ed3815c02f7dff8bed99494f6e59a796c06be99c0f51b64b64646"
+ "content_digest": "17625d60515a1a3170e0c257ec650614a868142f4c74bb7b480757260c25746b"
 }
