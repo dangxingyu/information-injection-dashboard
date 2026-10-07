@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791347846.0346997,
- "generated_label": "2026-10-07 00:37 EDT",
+ "generated_at": 1791349215.229597,
+ "generated_label": "2026-10-07 01:00 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -46114,8 +46114,29 @@
   },
   "nodes": [],
   "holdings": {
-   "allocations": [],
-   "totals": {}
+   "allocations": [
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (plan-setup)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (plan-setup)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (info-injection-test)"
+    }
+   ],
+   "totals": {
+    "h100_standby": 3
+   }
   }
  },
  "study_b": {
@@ -51501,7 +51522,7 @@
    "final-delphi.png",
    "final-pairs.png"
   ],
-  "generated_at": 1791227919.7060943,
+  "generated_at": 1791349197.646077,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -52072,6 +52093,87 @@
     "task_spearman": 0.93575967407533,
     "mean_abs_diff": 6.891593482474486,
     "model_spearman": 0.9425641025641026
+   }
+  },
+  "aime": {
+   "rejection + phrasing": {
+    "models": 30,
+    "mean": {
+     "delphi-3e18": 42.21440000528493,
+     "delphi-9e18": 37.43020005623509,
+     "delphi-2e19": 38.27506516645464,
+     "delphi-3e19": 34.65602773373053,
+     "delphi-9e19": 35.328403299761675,
+     "delphi-2e20": 31.26041901082663,
+     "delphi-3e20": 31.32418320316792,
+     "delphi-1e21": 33.5539519856479,
+     "delphi-1e22": 36.182162332421846,
+     "delphi-1e23": 37.20709116933753,
+     "qwen3-0.6b-base": 29.475244488664234,
+     "qwen3-1.7b-base": 28.322815039426178,
+     "qwen3-4b-base": 24.56495655153423,
+     "qwen3-8b-base": 23.700119850199087,
+     "qwen3-14b-base": 23.282285799208225,
+     "qwen3-30b-a3b-base": 18.414887379639048,
+     "olmo2-1b-main": 42.20345475306276,
+     "olmo2-7b": 35.713765076165515,
+     "qwen2.5-0.5b": 42.75755164470139,
+     "qwen2.5-1.5b": 35.25657430550196,
+     "qwen2.5-3b": 34.669250937561976,
+     "qwen2.5-7b": 32.49601388956217,
+     "qwen2.5-math-7b": 28.48066382118235,
+     "llama3.2-1b": 36.06149506902766,
+     "llama3.2-3b": 35.38480046287066,
+     "llama3.1-8b": 40.28646286500738,
+     "marin-8b-base": 33.43078813220999,
+     "smollm2-135m": 22.832040382240265,
+     "smollm2-360m": 20.95290283094048,
+     "smollm2-1.7b": 19.726146740007835
+    },
+    "delphi": [
+     42.21440000528493,
+     37.43020005623509,
+     38.27506516645464,
+     34.65602773373053,
+     35.328403299761675,
+     31.26041901082663,
+     31.32418320316792,
+     33.5539519856479,
+     36.182162332421846,
+     37.20709116933753
+    ],
+    "delphi_spearman": -0.4909090909090909,
+    "spearman_hybrid": 0.8857142857142857,
+    "spearman_final": 0.4037510925921201,
+    "spearman_all": 0.6270754715216159,
+    "auroc": 0.614077590219775,
+    "auroc_pairs": 15,
+    "retest_spearman": 0.7619747075637483,
+    "retest_mad": 4.754831666900164
+   },
+   "answer_sir": {
+    "models": 0,
+    "mean": {},
+    "auroc": null,
+    "auroc_pairs": 0
+   },
+   "answer_sir, half from the hinted student": {
+    "models": 0,
+    "mean": {},
+    "auroc": null,
+    "auroc_pairs": 0
+   },
+   "answer_sir, M = 1024": {
+    "models": 0,
+    "mean": {},
+    "auroc": null,
+    "auroc_pairs": 0
+   },
+   "answer_sir, 2048-token solutions": {
+    "models": 0,
+    "mean": {},
+    "auroc": null,
+    "auroc_pairs": 0
    }
   }
  },
@@ -53135,5 +53237,5 @@
    }
   ]
  },
- "content_digest": "6685ca1fb39dd21731cf4ffdcbcaee313cd5fa5e70b10d4bd81c2622cc62b8f9"
+ "content_digest": "8f61397db34a0ef70a412ae5edf771cfbfb7e1cf92ff2a6d4bb483fe7d979455"
 }

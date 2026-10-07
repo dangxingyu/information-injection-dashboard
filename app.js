@@ -450,6 +450,12 @@ function renderFinalEval() {
     f.base.filter(r => Object.keys(r.suites).length).map(r => `<tr><td>${esc(r.model)}</td>${S.map(s => triple(r.suites[s])).join('')}</tr>`).join('') + '</tbody>';
   $('fe-post').innerHTML = `<thead><tr><th>post-trained model</th><th>base</th>${S.map(s => `<th class="num">${L[s]}</th>`).join('')}</tr></thead><tbody>` +
     f.post.filter(r => Object.keys(r.suites).length).map(r => `<tr><td>${esc(r.model)}</td><td class="muted">${esc(r.base)}</td>${S.map(s => r.suites[s] ? `<td class="num">${pct(r.suites[s].accuracy)} <small>(${r.suites[s].n})</small></td>` : '<td class="num muted">–</td>').join('')}</tr>`).join('') + '</tbody>';
+  const am = f.aime || {};
+  const ak = Object.keys(am);
+  const pick = ['qwen3-0.6b-base', 'qwen3-8b-base', 'qwen3-30b-a3b-base', 'delphi-1e23', 'llama3.1-8b'];
+  $('fe-aime').innerHTML = !ak.length ? '<tr><td class="muted">Running.</td></tr>' :
+    `<thead><tr><th>protocol</th><th class="num">models</th>${pick.map(m => `<th class="num">${esc(m)}</th>`).join('')}<th class="num">Delphi ρ</th><th class="num">ρ Qwen3</th><th class="num">ρ all</th><th class="num">AUROC</th><th class="num">retest ρ</th></tr></thead><tbody>` +
+    ak.map(k => { const e = am[k]; return `<tr><td>${esc(k)}</td><td class="num">${e.models}</td>${pick.map(m => `<td class="num">${bits(e.mean?.[m])}</td>`).join('')}${cell(e.delphi_spearman)}${cell(e.spearman_hybrid)}${cell(e.spearman_all)}${cell(e.auroc)}${cell(e.retest_spearman)}</tr>`; }).join('') + '</tbody>';
   const rel = f.reliability || {};
   const rs = S.filter(s => rel[s]);
   $('fe-reliability').innerHTML = !rs.length ? '<tr><td class="muted">Replicate runs pending.</td></tr>' :
