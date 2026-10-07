@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791360555.0815647,
- "generated_label": "2026-10-07 04:09 EDT",
+ "generated_at": 1791361455.656899,
+ "generated_label": "2026-10-07 04:24 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -602,31 +602,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791349577.4226913,
    "git_commit": "d76eb2f10e",
    "snapshot": "721a796f34c7",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 3962785,
+   "tokens_scored": 7474,
+   "gpu_hours": 1.3878,
+   "load_hours": 0.0244,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 14.889711,
+   "median_bits": 15.290088,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 2.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 301.033333,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-aime-sir1k-delphi-1e23",
@@ -5139,31 +5141,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791349321.4011261,
    "git_commit": "d76eb2f10e",
    "snapshot": "721a796f34c7",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 3220752,
+   "tokens_scored": 896500,
+   "gpu_hours": 0.817,
+   "load_hours": 0.0261,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 15.198133,
+   "median_bits": 15.508487,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 2.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 272.166667,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-aime-sir-r-delphi-1e23",
@@ -53018,22 +53022,10 @@
      "gpus": 1,
      "state": "standby",
      "label": "PLI slot (fe-item)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 1,
-     "state": "standby",
-     "label": "PLI slot (fe-item)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 1,
-     "state": "standby",
-     "label": "PLI slot (fe-item)"
     }
    ],
    "totals": {
-    "h100_standby": 4
+    "h100_standby": 2
    }
   }
  },
@@ -58421,7 +58413,7 @@
    "final-aime-sir.png",
    "final-pairs.png"
   ],
-  "generated_at": 1791359559.4183273,
+  "generated_at": 1791361067.3657722,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -59157,11 +59149,11 @@
     "spearman_all": 0.7288646517951661,
     "auroc": 0.6264854171848547,
     "auroc_pairs": 15,
-    "retest_spearman": 0.9058143911363657,
-    "retest_mad": 1.2301750506348514
+    "retest_spearman": 0.9001169960292132,
+    "retest_mad": 1.2506106008727402
    },
    "answer_sir, M = 1024": {
-    "models": 13,
+    "models": 14,
     "mean": {
      "delphi-3e18": 22.016141470648694,
      "delphi-9e18": 20.42787764692661,
@@ -59175,16 +59167,17 @@
      "qwen3-0.6b-base": 14.595879840775483,
      "qwen3-1.7b-base": 13.252390182387796,
      "qwen3-4b-base": 12.88990156999534,
-     "qwen3-8b-base": 13.027747011263683
+     "qwen3-8b-base": 13.027747011263683,
+     "qwen3-14b-base": 12.433131896233485
     },
     "spearman_hybrid": 1.0,
     "spearman_final": 1.0,
-    "spearman_all": 0.8207826816681233,
-    "auroc": 0.5650417396691906,
-    "auroc_pairs": 5
+    "spearman_all": 0.898645105261295,
+    "auroc": 0.5704051534280292,
+    "auroc_pairs": 6
    },
    "answer_sir, 2048-token solutions": {
-    "models": 14,
+    "models": 16,
     "mean": {
      "delphi-3e18": 23.17985481217827,
      "delphi-9e18": 20.482227397460182,
@@ -59195,17 +59188,32 @@
      "delphi-3e20": 15.140123554703973,
      "delphi-1e21": 15.338695199830518,
      "delphi-1e22": 15.38848254026584,
+     "delphi-1e23": 14.889711115721676,
      "qwen3-0.6b-base": 15.155109621587236,
      "qwen3-1.7b-base": 13.70222077748555,
      "qwen3-4b-base": 13.507651983090454,
      "qwen3-8b-base": 13.22229248803221,
-     "qwen3-14b-base": 12.18528090857378
+     "qwen3-14b-base": 12.18528090857378,
+     "qwen3-30b-a3b-base": 12.40585808021384
     },
-    "spearman_hybrid": 0.9,
-    "spearman_final": 0.9,
-    "spearman_all": 0.898645105261295,
-    "auroc": 0.5711649086812486,
-    "auroc_pairs": 6
+    "delphi": [
+     23.17985481217827,
+     20.482227397460182,
+     19.05038940668687,
+     17.49914932015926,
+     17.17938465431546,
+     15.803947263219024,
+     15.140123554703973,
+     15.338695199830518,
+     15.38848254026584,
+     14.889711115721676
+    ],
+    "delphi_spearman": -0.9515151515151515,
+    "spearman_hybrid": 0.9428571428571428,
+    "spearman_final": 0.9428571428571428,
+    "spearman_all": 0.9518763181059627,
+    "auroc": 0.6058236470043802,
+    "auroc_pairs": 8
    }
   }
  },
@@ -60269,5 +60277,5 @@
    }
   ]
  },
- "content_digest": "ec9b37e4f0b39ec165cddc082a1722493c4f194b7b95395e696901df22a30b15"
+ "content_digest": "4ae5b7410ed71688f043025dc3e0090d9562e4a21d83270b947c939f26021875"
 }
