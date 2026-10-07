@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791366905.6586685,
- "generated_label": "2026-10-07 05:55 EDT",
+ "generated_at": 1791367813.9164374,
+ "generated_label": "2026-10-07 06:10 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -1864,31 +1864,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791362751.946107,
    "git_commit": "9764fd8328",
    "snapshot": "f507e75ed127",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 4535800,
+   "tokens_scored": 8026,
+   "gpu_hours": 1.2733,
+   "load_hours": 0.0205,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 14.088856,
+   "median_bits": 14.466368,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 2.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 382.0,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-aime-sirenvi-delphi-1e23",
@@ -55712,17 +55714,8 @@
   },
   "nodes": [],
   "holdings": {
-   "allocations": [
-    {
-     "kind": "H100",
-     "gpus": 1,
-     "state": "standby",
-     "label": "PLI slot (fe-item)"
-    }
-   ],
-   "totals": {
-    "h100_standby": 1
-   }
+   "allocations": [],
+   "totals": {}
   }
  },
  "study_b": {
@@ -61109,7 +61102,7 @@
    "final-aime-sir.png",
    "final-pairs.png"
   ],
-  "generated_at": 1791365759.5093272,
+  "generated_at": 1791367266.2758265,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -61927,7 +61920,7 @@
     "auroc_pairs": 8
    },
    "answer_sir, + integer-answer instruction": {
-    "models": 29,
+    "models": 30,
     "mean": {
      "delphi-3e18": 23.357811587899683,
      "delphi-9e18": 20.424003056740197,
@@ -61938,6 +61931,7 @@
      "delphi-3e20": 15.36216809076074,
      "delphi-1e21": 15.537945383849362,
      "delphi-1e22": 14.92356067813265,
+     "delphi-1e23": 14.514041417678206,
      "qwen3-0.6b-base": 15.134642297023698,
      "qwen3-1.7b-base": 13.413698442100278,
      "qwen3-4b-base": 13.778345674062214,
@@ -61959,6 +61953,19 @@
      "smollm2-360m": 15.994111555694806,
      "smollm2-1.7b": 16.509498821521195
     },
+    "delphi": [
+     23.357811587899683,
+     20.424003056740197,
+     19.001284693080347,
+     17.49701315838121,
+     16.84769152990157,
+     15.972680480438239,
+     15.36216809076074,
+     15.537945383849362,
+     14.92356067813265,
+     14.514041417678206
+    ],
+    "delphi_spearman": -0.9878787878787879,
     "spearman_hybrid": 0.7142857142857143,
     "spearman_final": 0.7354037757927901,
     "spearman_all": 0.6878575587197276,
@@ -61966,7 +61973,7 @@
     "auroc_pairs": 15
    },
    "answer_sir, + instruction, Level-5 shots": {
-    "models": 28,
+    "models": 29,
     "mean": {
      "delphi-3e18": 28.317417006626325,
      "delphi-9e18": 21.388133006205873,
@@ -61995,11 +62002,12 @@
      "llama3.1-8b": 14.67530740944669,
      "marin-8b-base": 13.465833385189965,
      "smollm2-135m": 15.97615637840306,
-     "smollm2-360m": 15.93408757880268
+     "smollm2-360m": 15.93408757880268,
+     "smollm2-1.7b": 16.627871358414158
     },
     "spearman_hybrid": 0.7142857142857143,
-    "spearman_final": 0.7542401713452325,
-    "spearman_all": 0.6586224128549456,
+    "spearman_final": 0.7714529804885152,
+    "spearman_all": 0.6743272995831617,
     "auroc": 0.6577353602537402,
     "auroc_pairs": 15
    }
@@ -63065,5 +63073,5 @@
    }
   ]
  },
- "content_digest": "d40f31f3c463f1ae1ca5df81af74469df233aea26178b1bcd4b92d8a4c40b07c"
+ "content_digest": "c4be065743e737d1487be099cc482905a32a9a64fc6bd6e0fa026e0f5652b51e"
 }
