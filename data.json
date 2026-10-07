@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791365995.5024903,
- "generated_label": "2026-10-07 05:39 EDT",
+ "generated_at": 1791366905.6586685,
+ "generated_label": "2026-10-07 05:55 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -1907,31 +1907,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791362751.6303916,
    "git_commit": "9764fd8328",
    "snapshot": "f507e75ed127",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 3398284,
+   "tokens_scored": 7104,
+   "gpu_hours": 0.8034,
+   "load_hours": 0.0242,
+   "tasks": 30,
+   "records": 30,
+   "success_rate": 1.0,
+   "mean_bits": 14.514041,
+   "median_bits": 14.95311,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 2.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 330.233333,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 30
+   }
   },
   {
    "name": "fe-aime-sirenvh-delphi-1e22",
@@ -55716,16 +55718,10 @@
      "gpus": 1,
      "state": "standby",
      "label": "PLI slot (fe-item)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 1,
-     "state": "standby",
-     "label": "PLI slot (fe-item)"
     }
    ],
    "totals": {
-    "h100_standby": 2
+    "h100_standby": 1
    }
   }
  },
@@ -63069,5 +63065,5 @@
    }
   ]
  },
- "content_digest": "f41367ae4696613c08c2085e4941b04c743d676e490510d77cf724633977bcb2"
+ "content_digest": "d40f31f3c463f1ae1ca5df81af74469df233aea26178b1bcd4b92d8a4c40b07c"
 }
