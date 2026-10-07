@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791387776.2483046,
- "generated_label": "2026-10-07 11:42 EDT",
+ "generated_at": 1791390495.8927338,
+ "generated_label": "2026-10-07 12:28 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -55714,8 +55714,17 @@
   },
   "nodes": [],
   "holdings": {
-   "allocations": [],
-   "totals": {}
+   "allocations": [
+    {
+     "kind": "H100",
+     "gpus": 8,
+     "state": "standby",
+     "label": "PLI slot (qb-full-validation)"
+    }
+   ],
+   "totals": {
+    "h100_standby": 8
+   }
   }
  },
  "study_b": {
@@ -63087,5 +63096,5 @@
    }
   ]
  },
- "content_digest": "6b2af0e719fe53376ceeaa5003abf5d8b76258358645b0d5e06b87b4fdff1977"
+ "content_digest": "541cb9b4579fdf789e090e80af7df21b56434f58dbeb29fe5bd556d050d32b64"
 }
