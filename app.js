@@ -469,5 +469,8 @@ function renderFinalEval() {
   $('fe-contrast').innerHTML = !cm.length ? '<tr><td class="muted">Running.</td></tr>' :
     `<thead><tr><th>base model</th>${['aime25', 'imoab'].map(s => `<th class="num">${L[s]}: all</th><th class="num">unsolved</th>`).join('')}</tr></thead><tbody>` +
     cm.map(m => `<tr><td>${esc(m)}</td>${['aime25', 'imoab'].map(s => { const c = con[m][s]; return c ? `<td class="num">${pct(c.prefers_gold)} <small>(${c.n})</small></td><td class="num">${pct(c.prefers_gold_unsolved)} <small>(${c.n_unsolved})</small></td>` : '<td class="num muted">–</td><td class="num muted">–</td>'; }).join('')}</tr>`).join('') + '</tbody>';
-  $('fe-figures').innerHTML = (f.figures || []).map(n => `<figure class="panel pad"><img src="figures/${esc(n)}" alt="${esc(n)}" style="max-width:100%"></figure>`).join('');
+  const v = String(data.content_digest).slice(0, 12);  // new URL per snapshot: no stale cached figure
+  const img = n => `<figure class="panel pad"><img src="figures/${esc(n)}?d=${v}" alt="${esc(n)}" style="max-width:100%"></figure>`;
+  $('fe-figures').innerHTML = (f.figures || []).filter(n => !n.startsWith('progress-')).map(img).join('');
+  $('lh-figure').innerHTML = (f.figures || []).filter(n => n === 'progress-lh-totals.png').map(img).join('');
 }
