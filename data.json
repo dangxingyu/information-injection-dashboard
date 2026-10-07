@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791406836.0402534,
- "generated_label": "2026-10-07 17:00 EDT",
+ "generated_at": 1791407743.7418003,
+ "generated_label": "2026-10-07 17:15 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -1834,31 +1834,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791401842.6038349,
    "git_commit": "0efd235f61",
    "snapshot": "8df6488c641d",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 378423,
+   "tokens_scored": 5684,
+   "gpu_hours": 1.3827,
+   "load_hours": 0.0368,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 1.0,
+   "mean_bits": 189.865395,
+   "median_bits": 144.81325,
+   "mean_forced_bits": 187.221396,
+   "mean_forced_tokens": 134.6,
+   "mean_select_blocks": 0.8,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 526.4,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 20
+   }
   },
   {
    "name": "fe-tb-tref-delphi-1e22",
@@ -1918,31 +1920,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791401841.9647777,
    "git_commit": "0efd235f61",
    "snapshot": "8df6488c641d",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 451900,
+   "tokens_scored": 5691,
+   "gpu_hours": 1.373,
+   "load_hours": 0.0306,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 1.0,
+   "mean_bits": 248.275824,
+   "median_bits": 185.211651,
+   "mean_forced_bits": 244.553805,
+   "mean_forced_tokens": 134.95,
+   "mean_select_blocks": 0.85,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 402.9,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 20
+   }
   },
   {
    "name": "fe-tb-tref-delphi-1e21",
@@ -58306,10 +58310,16 @@
      "gpus": 1,
      "state": "standby",
      "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
     }
    ],
    "totals": {
-    "h100_standby": 9
+    "h100_standby": 10
    }
   }
  },
@@ -65765,5 +65775,5 @@
    }
   ]
  },
- "content_digest": "364b5036d0c6de65a8d64fa6a8a71fd3cddf8a9d9df447c644ba44fbbb676e96"
+ "content_digest": "4c4d74e4929ed3815c02f7dff8bed99494f6e59a796c06be99c0f51b64b64646"
 }
