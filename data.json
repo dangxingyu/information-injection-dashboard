@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791403200.6371763,
- "generated_label": "2026-10-07 16:00 EDT",
+ "generated_at": 1791404105.7117362,
+ "generated_label": "2026-10-07 16:15 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -66,31 +66,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791401856.0788825,
    "git_commit": "0efd235f61",
    "snapshot": "8df6488c641d",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 358365,
+   "tokens_scored": 5047,
+   "gpu_hours": 0.9824,
+   "load_hours": 0.0753,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 1.0,
+   "mean_bits": 84.693496,
+   "median_bits": 84.361811,
+   "mean_forced_bits": 80.603951,
+   "mean_forced_tokens": 114.2,
+   "mean_select_blocks": 1.0,
+   "mean_free_blocks": 0.95,
+   "mean_tokens": 378.5,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 20
+   }
   },
   {
    "name": "fe-tb-tref-qwen3-30b-a3b-base",
@@ -2420,31 +2422,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 1,
+   "status": "running",
    "created_at": 1791401838.0594237,
    "git_commit": "0efd235f61",
    "snapshot": "8df6488c641d",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 173285,
+   "tokens_scored": 3208,
+   "gpu_hours": 0.4687,
+   "load_hours": 0.0122,
+   "tasks": 5,
+   "records": 10,
+   "success_rate": 1.0,
+   "mean_bits": 536.072267,
+   "median_bits": 498.894606,
+   "mean_forced_bits": 536.072267,
+   "mean_forced_tokens": 160.4,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 360.2,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 10
+   }
   },
   {
    "name": "fe-tb-tref-delphi-9e18",
@@ -2504,31 +2508,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791401837.4106386,
    "git_commit": "0efd235f61",
    "snapshot": "8df6488c641d",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 386689,
+   "tokens_scored": 5903,
+   "gpu_hours": 1.1366,
+   "load_hours": 0.023,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 1.0,
+   "mean_bits": 569.511886,
+   "median_bits": 484.470145,
+   "mean_forced_bits": 568.17028,
+   "mean_forced_tokens": 145.55,
+   "mean_select_blocks": 0.35,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 288.2,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 20
+   }
   },
   {
    "name": "fe-tb-tref-delphi-3e18",
@@ -58239,13 +58245,7 @@
    "allocations": [
     {
      "kind": "H100",
-     "gpus": 2,
-     "state": "standby",
-     "label": "PLI slot (fe-item)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 2,
+     "gpus": 1,
      "state": "standby",
      "label": "PLI slot (fe-item)"
     },
@@ -58305,7 +58305,7 @@
     }
    ],
    "totals": {
-    "h100_standby": 13
+    "h100_standby": 10
    }
   }
  },
@@ -63694,7 +63694,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791401955.1545513,
+  "generated_at": 1791403464.0726447,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -64674,7 +64674,13 @@
     "auroc_pairs": 9
    },
    "force teacher trajectory": {
-    "models": 0
+    "models": 1,
+    "n": 10,
+    "mean": {
+     "qwen3-30b-a3b-base": 91.86070982583827
+    },
+    "auroc": 0.8166666666666667,
+    "auroc_pairs": 2
    },
    "per turn on teacher trajectory (v19g)": {
     "models": 0
@@ -65741,5 +65747,5 @@
    }
   ]
  },
- "content_digest": "16382ba4302b4f11bf984ea3e5ae8ff509c9ba46b5357c899eceb0a3f6c8e6ac"
+ "content_digest": "d15ff7342178928d2c7d6b15552946a9b1c3fbc82169702461b1452ba43ed6ac"
 }
