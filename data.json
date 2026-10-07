@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791402295.572487,
- "generated_label": "2026-10-07 15:44 EDT",
+ "generated_at": 1791403200.6371763,
+ "generated_label": "2026-10-07 16:00 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -105,31 +105,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791401855.758167,
    "git_commit": "0efd235f61",
    "snapshot": "8df6488c641d",
    "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_scored": 1552,
+   "gpu_hours": 0.0023,
+   "load_hours": 0.0374,
+   "tasks": 10,
+   "records": 10,
+   "success_rate": 1.0,
+   "mean_bits": 91.86071,
+   "median_bits": 94.747033,
+   "mean_forced_bits": 91.86071,
+   "mean_forced_tokens": 155.2,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 303.1,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 10
+   }
   },
   {
    "name": "fe-tb-v19g-smollm2-1.7b",
@@ -58249,7 +58251,25 @@
     },
     {
      "kind": "H100",
-     "gpus": 2,
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
+     "state": "standby",
+     "label": "PLI slot (fe-item)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 1,
      "state": "standby",
      "label": "PLI slot (fe-item)"
     },
@@ -58285,7 +58305,7 @@
     }
    ],
    "totals": {
-    "h100_standby": 11
+    "h100_standby": 13
    }
   }
  },
@@ -65721,5 +65741,5 @@
    }
   ]
  },
- "content_digest": "b6eae99f0e11ee3c109ca47fe49319e7157e42a0e35d17c6424fd7108300e39e"
+ "content_digest": "16382ba4302b4f11bf984ea3e5ae8ff509c9ba46b5357c899eceb0a3f6c8e6ac"
 }
