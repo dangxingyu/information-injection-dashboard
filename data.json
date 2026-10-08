@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791487073.5591636,
- "generated_label": "2026-10-08 15:17 EDT",
+ "generated_at": 1791487365.194003,
+ "generated_label": "2026-10-08 15:22 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -64305,7 +64305,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791455118.6641562,
+  "generated_at": 1791487203.0741785,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -65227,6 +65227,12 @@
     "spearman_all": 0.6743272995831617,
     "auroc": 0.6577353602537402,
     "auroc_pairs": 15
+   },
+   "answer_sir, M = 4096": {
+    "models": 0,
+    "mean": {},
+    "auroc": null,
+    "auroc_pairs": 0
    }
   },
   "tb": {
@@ -65431,6 +65437,163 @@
     "auroc_pairs": 1,
     "retest_spearman": 0.9994592306326728,
     "retest_mad": 3.7394417528950226
+   },
+   "v21 with 64 proposals per line": {
+    "models": 0
+   },
+   "teacher subgoals (v20f)": {
+    "models": 0
+   },
+   "teacher subgoals + lookahead (v20g)": {
+    "models": 0
+   }
+  },
+  "tau": {
+   "per turn on benchmark actions (v19b)": {
+    "models": 16,
+    "n": 9,
+    "mean": {
+     "qwen3-0.6b-base": 43.02253629457121,
+     "qwen3-1.7b-base": 38.52091275123416,
+     "qwen3-4b-base": 33.90971409681204,
+     "qwen3-8b-base": 28.58161610496027,
+     "qwen3-14b-base": 25.218264733964922,
+     "qwen3-30b-a3b-base": 27.719485511074666,
+     "qwen2.5-0.5b": 65.40468258991966,
+     "qwen2.5-1.5b": 45.69363903949384,
+     "qwen2.5-3b": 31.823609642289547,
+     "qwen2.5-7b": 28.261643758976447,
+     "llama3.2-1b": 58.974112167463076,
+     "llama3.2-3b": 45.539886433848736,
+     "llama3.1-8b": 34.33479854452275,
+     "smollm2-135m": 124.45954892565778,
+     "smollm2-360m": 87.2575210311471,
+     "smollm2-1.7b": 62.08126206876758
+    },
+    "spearman_hybrid": 0.9276336570439175,
+    "spearman_final": 0.8195654989576291,
+    "spearman_all": 0.7531695679507939,
+    "auroc": 0.7153458049886621,
+    "auroc_pairs": 7
+   },
+   "force benchmark actions": {
+    "models": 16,
+    "n": 9,
+    "mean": {
+     "qwen3-0.6b-base": 52.91763238905796,
+     "qwen3-1.7b-base": 47.23559340810384,
+     "qwen3-4b-base": 32.689032884163694,
+     "qwen3-8b-base": 29.62059442616103,
+     "qwen3-14b-base": 28.189894549537602,
+     "qwen3-30b-a3b-base": 31.23306665219193,
+     "qwen2.5-0.5b": 69.41047166107182,
+     "qwen2.5-1.5b": 44.741869995502924,
+     "qwen2.5-3b": 39.092462656073415,
+     "qwen2.5-7b": 33.54798838921022,
+     "llama3.2-1b": 60.39333296737678,
+     "llama3.2-3b": 40.69280370795687,
+     "llama3.1-8b": 30.565204485612565,
+     "smollm2-135m": 128.4543572921009,
+     "smollm2-360m": 94.12683232529301,
+     "smollm2-1.7b": 62.10741605659373
+    },
+    "spearman_hybrid": 0.9856107606091623,
+    "spearman_final": 0.8466027112943757,
+    "spearman_all": 0.8276302271649109,
+    "auroc": 0.6863775510204081,
+    "auroc_pairs": 7
+   },
+   "force lean teacher trajectory": {
+    "models": 0
+   },
+   "force cheapest teacher variant": {
+    "models": 16,
+    "n": 9,
+    "mean": {
+     "qwen3-0.6b-base": 52.91763238905796,
+     "qwen3-1.7b-base": 47.23559340810384,
+     "qwen3-4b-base": 32.689032884163694,
+     "qwen3-8b-base": 29.62059442616103,
+     "qwen3-14b-base": 28.189894549537602,
+     "qwen3-30b-a3b-base": 31.23306665219193,
+     "qwen2.5-0.5b": 69.41047166107182,
+     "qwen2.5-1.5b": 44.741869995502924,
+     "qwen2.5-3b": 39.092462656073415,
+     "qwen2.5-7b": 33.54798838921022,
+     "llama3.2-1b": 60.39333296737678,
+     "llama3.2-3b": 40.69280370795687,
+     "llama3.1-8b": 30.565204485612565,
+     "smollm2-135m": 128.4543572921009,
+     "smollm2-360m": 94.12683232529301,
+     "smollm2-1.7b": 62.10741605659373
+    },
+    "spearman_hybrid": 0.9856107606091623,
+    "spearman_final": 0.8466027112943757,
+    "spearman_all": 0.8276302271649109,
+    "auroc": 0.6863775510204081,
+    "auroc_pairs": 7
+   },
+   "per turn on cheapest teacher variant (v19g)": {
+    "models": 0
+   }
+  },
+  "imo": {
+   "rejection + phrasing": {
+    "models": 30,
+    "n": 400,
+    "mean": {
+     "delphi-3e18": 57.86976675202069,
+     "delphi-9e18": 53.90604849523152,
+     "delphi-2e19": 52.42255795958774,
+     "delphi-3e19": 50.05105299675841,
+     "delphi-9e19": 49.87405148961022,
+     "delphi-2e20": 44.64419491741087,
+     "delphi-3e20": 44.81630089641573,
+     "delphi-1e21": 44.36441370552502,
+     "delphi-1e22": 44.259437144438735,
+     "delphi-1e23": 42.967628672169496,
+     "qwen3-0.6b-base": 34.957164302466396,
+     "qwen3-1.7b-base": 31.184921834606225,
+     "qwen3-4b-base": 28.853475691637062,
+     "qwen3-8b-base": 27.52904997004224,
+     "qwen3-14b-base": 26.971276723372593,
+     "qwen3-30b-a3b-base": 27.049882525927202,
+     "olmo2-1b-main": 47.60116889075639,
+     "olmo2-7b": 41.4918333590787,
+     "qwen2.5-0.5b": 48.60835257579633,
+     "qwen2.5-1.5b": 41.50434270271293,
+     "qwen2.5-3b": 40.779940325970244,
+     "qwen2.5-7b": 36.679190585345665,
+     "qwen2.5-math-7b": 35.2513818430267,
+     "llama3.2-1b": 45.15871917766105,
+     "llama3.2-3b": 43.25104576835103,
+     "llama3.1-8b": 42.55418978390601,
+     "marin-8b-base": 39.88147787642347,
+     "smollm2-135m": 33.4444912965428,
+     "smollm2-360m": 28.741621153711915,
+     "smollm2-1.7b": 24.99615184898555
+    },
+    "delphi": [
+     57.86976675202069,
+     53.90604849523152,
+     52.42255795958774,
+     50.05105299675841,
+     49.87405148961022,
+     44.64419491741087,
+     44.81630089641573,
+     44.36441370552502,
+     44.259437144438735,
+     42.967628672169496
+    ],
+    "delphi_spearman": -0.9878787878787879,
+    "spearman_hybrid": 1.0,
+    "spearman_final": 0.4203598474000136,
+    "spearman_all": 0.5639840832508246,
+    "auroc": 0.8278863047556122,
+    "auroc_pairs": 30
+   },
+   "answer_sir (own correct forms)": {
+    "models": 0
    }
   }
  },
@@ -65456,6 +65619,12 @@
   {
    "idea": "tau-bench on teacher trajectories for all 10 tasks, the cheapest per student",
    "why": "Opus trajectories cut tau costs about 1.7x on the 4 original tasks; the 6 added tasks still use tau-bench's gold actions; two verified variants per task (lean: Opus style; noted: a Thought before each write) plus the benchmark's; each student gets, per task, the one it is cheapest to be forced through (a deterministic choice: free, like the answer phrasings), then per turn (v19g)",
+   "status": "running",
+   "result": ""
+  },
+  {
+   "idea": "Peer trajectories: other base models' own successful episodes as teacher variants",
+   "why": "a trajectory written by a model is in a model's style, so it may be cheaper to force than Opus's or mine for similar students; 12 stronger base models x 32 unaided episodes on all 20 long-horizon tasks, recording every action (records so far kept only the last 3,000 characters); the verified successes join each student's per-task cheapest pick",
    "status": "running",
    "result": ""
   },
@@ -66556,5 +66725,5 @@
    }
   ]
  },
- "content_digest": "ea4088d59e2a7d9877faab8ed11b00d5a5f71a06d1daa96f6904f44a2b2cf7ec"
+ "content_digest": "d6a2ea405f639c30edf17e7a1aeb3cdf808a0d43edd6eb763c8bebc44a1c18b1"
 }
