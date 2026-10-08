@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791486600.1247525,
- "generated_label": "2026-10-08 15:10 EDT",
+ "generated_at": 1791487073.5591636,
+ "generated_label": "2026-10-08 15:17 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -65454,15 +65454,15 @@
    "result": ""
   },
   {
-   "idea": "tau-bench on teacher trajectories for all 10 tasks",
-   "why": "Opus trajectories cut tau costs about 1.7x on the 4 original tasks; the 6 added tasks still use tau-bench's gold actions",
-   "status": "next",
+   "idea": "tau-bench on teacher trajectories for all 10 tasks, the cheapest per student",
+   "why": "Opus trajectories cut tau costs about 1.7x on the 4 original tasks; the 6 added tasks still use tau-bench's gold actions; two verified variants per task (lean: Opus style; noted: a Thought before each write) plus the benchmark's; each student gets, per task, the one it is cheapest to be forced through (a deterministic choice: free, like the answer phrasings), then per turn (v19g)",
+   "status": "running",
    "result": ""
   },
   {
    "idea": "Per-student teacher paraphrases",
    "why": "the teacher writes K verified-equivalent versions of each command and forces the one the student finds cheapest (a deterministic choice, certified like the answer phrasings); teacher text in the student's own style was the largest lever so far (3-5x)",
-   "status": "planned",
+   "status": "running (tau); terminal-bench next",
    "result": ""
   },
   {
@@ -65473,8 +65473,8 @@
   },
   {
    "idea": "Teacher subgoal decompositions for all 10 terminal tasks (v20e/f/g)",
-   "why": "subgoals beat the forced Opus trajectory on the original 3 tasks (Qwen3-8B 190 -> 112 with v20f)",
-   "status": "idea",
+   "why": "subgoals beat the forced Opus trajectory on the original 3 tasks (Qwen3-8B 190 -> 112 with v20f); decompositions for the 7 added tasks split their teacher trajectories where the output shows a fact the rest needs (teachers/lh_subgoals_tb10.json); v20f and v20g on every base model, 2 runs",
+   "status": "running",
    "result": ""
   },
   {
@@ -66556,5 +66556,5 @@
    }
   ]
  },
- "content_digest": "133e36d6e74bc2d32673dfdeb89486f23ce244dc4fe4eee26091ed2a6588821e"
+ "content_digest": "ea4088d59e2a7d9877faab8ed11b00d5a5f71a06d1daa96f6904f44a2b2cf7ec"
 }
