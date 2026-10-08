@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791483056.1115942,
- "generated_label": "2026-10-08 14:10 EDT",
+ "generated_at": 1791486600.1247525,
+ "generated_label": "2026-10-08 15:10 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -65434,6 +65434,68 @@
    }
   }
  },
+ "ideas": [
+  {
+   "idea": "answer_sir on IMO-AnswerBench, counting the student's own correct answer forms",
+   "why": "IMO costs are still the forced answer sentence after \"Solution:\" (as AIME was: 32 -> 15 bits there, Delphi curve no longer turning up, cross-family Spearman 0.40 -> 0.70); IMO answers are expressions written many ways, so a slot also counts the solution's own answer when math_verify says it is right",
+   "status": "running",
+   "result": ""
+  },
+  {
+   "idea": "AIME with 4096 solutions per problem",
+   "why": "measures how close answer_sir at 256 already is to -log2 alpha (1024 gave -0.4 bits)",
+   "status": "running",
+   "result": ""
+  },
+  {
+   "idea": "v21 with 64 proposals per program line",
+   "why": "at 8 proposals Qwen3-8B wrote the cheap lines itself (-4.5%); the expensive lines of logic may be accepted with more samples",
+   "status": "running",
+   "result": ""
+  },
+  {
+   "idea": "tau-bench on teacher trajectories for all 10 tasks",
+   "why": "Opus trajectories cut tau costs about 1.7x on the 4 original tasks; the 6 added tasks still use tau-bench's gold actions",
+   "status": "next",
+   "result": ""
+  },
+  {
+   "idea": "Per-student teacher paraphrases",
+   "why": "the teacher writes K verified-equivalent versions of each command and forces the one the student finds cheapest (a deterministic choice, certified like the answer phrasings); teacher text in the student's own style was the largest lever so far (3-5x)",
+   "status": "planned",
+   "result": ""
+  },
+  {
+   "idea": "Answer-slot injection for terminal tasks whose output is an answer",
+   "why": "countdown, regex, log-summary, assign-seats, mahjong write an answer into a file: inject only the answer inside the student's own echo/printf, importance-weighted over its proposals as answer_sir does",
+   "status": "idea",
+   "result": ""
+  },
+  {
+   "idea": "Teacher subgoal decompositions for all 10 terminal tasks (v20e/f/g)",
+   "why": "subgoals beat the forced Opus trajectory on the original 3 tasks (Qwen3-8B 190 -> 112 with v20f)",
+   "status": "idea",
+   "result": ""
+  },
+  {
+   "idea": "A condensed tau-bench prompt for 4096-token models",
+   "why": "the tau policy prompt alone takes ~2,650 of Delphi's 4096 tokens, so 8 of 10 tau tasks run out of context for Delphi, OLMo-2-7B and Marin-8B (an environment change: needs a decision)",
+   "status": "idea",
+   "result": ""
+  },
+  {
+   "idea": "Student-teacher mixture proposals (v17) in the long-horizon protocols",
+   "why": "the soft mixture was the best code-task source (17.9 bits on HumanEval+ hard tasks); long-horizon protocols only force or accept whole lines",
+   "status": "idea",
+   "result": ""
+  },
+  {
+   "idea": "Replicates for every protocol variant",
+   "why": "test-retest per variant (answer_sir AIME 0.91, terminal v19g 0.985, v21 0.999)",
+   "status": "ongoing",
+   "result": ""
+  }
+ ],
  "headlines": {
   "code": [
    {
@@ -66494,5 +66556,5 @@
    }
   ]
  },
- "content_digest": "db264bfbc0acc2448e2acda75d356b90a1df2815d075e040537bcbd34bc29032"
+ "content_digest": "133e36d6e74bc2d32673dfdeb89486f23ce244dc4fe4eee26091ed2a6588821e"
 }

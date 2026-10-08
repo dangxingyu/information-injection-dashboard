@@ -6,7 +6,7 @@
 <body><main>
 <header><div><span class="eyebrow">INFORMATION INJECTION / RESEARCH DASHBOARD</span><h1>Information injection <span>certified bits of assistance</span></h1><p class="subtitle">How many bits of outside help does a frozen pretrained checkpoint need to solve a verifiable task? Live summaries of the protocol search, every experiment, and the GPU fleet that runs them.</p></div><button id="theme" aria-label="Toggle light and dark theme">◐ Theme</button></header>
 <div class="update"><span id="updated">Loading snapshot…</span><span id="freshness"></span><button id="refresh">Reload snapshot ↻</button></div>
-<nav aria-label="Sections"><a href="#findings">Key findings</a><a href="#code">Code tasks</a><a href="#long-horizon">Long horizon</a><a href="#study-b">Study B</a><a href="#idea">Method</a><a href="#fleet">Compute</a><a href="#explorer">All experiments</a><a href="#final-eval">Final eval</a></nav>
+<nav aria-label="Sections"><a href="#findings">Key findings</a><a href="#code">Code tasks</a><a href="#long-horizon">Long horizon</a><a href="#study-b">Study B</a><a href="#idea">Method</a><a href="#fleet">Compute</a><a href="#explorer">All experiments</a><a href="#final-eval">Final eval</a><a href="#ideas">Ideas</a></nav>
 
 <section id="findings"><div class="section-head"><h2>Key findings</h2><span class="tag">certified bits · lower is better</span></div>
 <div class="finding-grid" id="findings-cards"></div>
@@ -73,6 +73,9 @@
 <div class="panel"><div class="controls"><label>Experiment <select id="task-exp"></select></label><input id="task-search" type="search" placeholder="Filter task id" aria-label="Filter tasks"></div>
 <div class="scroll tall"><table id="task-table"><thead><tr id="task-head"></tr></thead><tbody id="task-rows"></tbody></table></div></div></div>
 </details></section>
+
+<section id="ideas"><div class="section-head"><h2>Ideas to improve the measurement</h2><span class="tag">what runs next · cost is not a constraint</span></div>
+<div class="panel pad"><div class="scroll"><table id="ideas-table"></table></div><p class="note">Maintained in docs/ideas.json. Status: running (jobs in the queue), next, planned, idea (not started), ongoing; results are filled in as runs finish.</p></div></section>
 
 <section id="final-eval"><div class="section-head"><h2>Final eval results</h2><span class="tag">terminal-bench 10 · tau-bench 10 · AIME 2025 · IMO-AnswerBench</span></div>
 <p class="note">The settled testbed: 10 terminal-bench and 10 tau-bench retail tasks (multi-turn), the 30 AIME 2025 problems and the 400 IMO-AnswerBench v2 problems (graded by the final answer). Base models are measured by how many certified bits of teacher assistance they need (math: rejection sampling from the bare prompt, else the answer statement is injected; long horizon: per-turn injection of the benchmark's reference actions). Post-trained releases are measured by accuracy in their own chat format (Qwen3 with thinking). Question: does a base model's cost predict what its post-trained version solves? Design and predictions were written before any result (docs/FINAL_EVAL.md).</p>

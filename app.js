@@ -57,6 +57,15 @@ function render() {
   renderStudyBSummary();
   renderStudyB();
   renderFinalEval();
+  renderIdeas();
+}
+
+function renderIdeas() {
+  const rows = data.ideas || [];
+  const order = {running: 0, next: 1, ongoing: 2, planned: 3, idea: 4, done: 5, negative: 6};
+  $('ideas-table').innerHTML = !rows.length ? '<tr><td class="muted">None listed.</td></tr>' :
+    '<thead><tr><th>idea</th><th>why</th><th>status</th><th>result</th></tr></thead><tbody>' +
+    [...rows].sort((a, b) => (order[a.status] ?? 9) - (order[b.status] ?? 9)).map(r => `<tr><td><b>${esc(r.idea)}</b></td><td class="muted" style="max-width:520px">${esc(r.why)}</td><td>${esc(r.status)}</td><td>${esc(r.result || '–')}</td></tr>`).join('') + '</tbody>';
 }
 
 /* ------------------------------------------------------------------ fleet */
