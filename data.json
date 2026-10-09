@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791505714.6751585,
- "generated_label": "2026-10-08 20:28 EDT",
+ "generated_at": 1791505752.4463415,
+ "generated_label": "2026-10-08 20:29 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -3047,32 +3047,32 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 1,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 3,
+   "shards_queued": 2,
    "status": "running",
    "created_at": 1791498273.4574034,
    "git_commit": "3ac1b26fa8",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 12569177,
-   "tokens_scored": 54158,
-   "gpu_hours": 0.3168,
-   "load_hours": 0.0626,
-   "tasks": 100,
-   "records": 100,
+   "tokens_generated": 25364084,
+   "tokens_scored": 105129,
+   "gpu_hours": 0.6499,
+   "load_hours": 0.163,
+   "tasks": 200,
+   "records": 200,
    "success_rate": 1.0,
-   "mean_bits": 15.895436,
-   "median_bits": 13.267879,
+   "mean_bits": 17.0899,
+   "median_bits": 13.98206,
    "mean_forced_bits": 0.0,
-   "mean_forced_tokens": 6.7,
+   "mean_forced_tokens": 6.64,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 251.13,
+   "mean_tokens": 234.62,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 100
+    "success": 200
    }
   },
   {
@@ -3137,32 +3137,32 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 2,
+   "shards_done": 3,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
+   "shards_queued": 1,
    "status": "running",
    "created_at": 1791498272.6878994,
    "git_commit": "3ac1b26fa8",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 23855459,
-   "tokens_scored": 138472,
-   "gpu_hours": 0.7665,
-   "load_hours": 0.2009,
-   "tasks": 200,
-   "records": 200,
+   "tokens_generated": 35919243,
+   "tokens_scored": 220746,
+   "gpu_hours": 1.1893,
+   "load_hours": 0.3016,
+   "tasks": 300,
+   "records": 300,
    "success_rate": 1.0,
-   "mean_bits": 18.935765,
-   "median_bits": 14.71069,
+   "mean_bits": 18.834098,
+   "median_bits": 13.886429,
    "mean_forced_bits": 0.0,
-   "mean_forced_tokens": 6.995,
+   "mean_forced_tokens": 7.27,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 310.655,
+   "mean_tokens": 305.21,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 200
+    "success": 300
    }
   },
   {
@@ -77436,5 +77436,5 @@
    }
   ]
  },
- "content_digest": "6380f73f118f9f1fcd3b636ba161c439881a372a8daaf3a5b18a375885ede2f7"
+ "content_digest": "5a82ab638a976ee1085ed7ebea33e7d53673aa13260217a639c0d4fcf4214adf"
 }
