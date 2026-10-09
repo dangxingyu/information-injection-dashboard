@@ -1,1 +1,1 @@
-{"name":"fe-tau-v19g2-olmo2-1b-main","tasks":[]}
+{"name":"fe-tau-v19g2-olmo2-1b-main","tasks":[{"task_id":"tau-retail-17","runs":2,"successes":2,"success_rate":1.0,"mean_bits":28.558155,"mean_forced_bits":26.37976,"mean_forced_tokens":94.0,"mean_select_blocks":1.5,"mean_free_blocks":0.0,"mean_tokens":800.0,"fallback_rate":0.0,"mean_restarts":0.0,"ends":{"success":2}}]}

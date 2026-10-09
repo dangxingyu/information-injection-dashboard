@@ -1,1 +1,1 @@
-{"name":"fe-tau-v19g2-smollm2-360m","tasks":[]}
+{"name":"fe-tau-v19g2-smollm2-360m","tasks":[{"task_id":"tau-retail-17","runs":2,"successes":2,"success_rate":1.0,"mean_bits":32.093082,"mean_forced_bits":30.049264,"mean_forced_tokens":139.0,"mean_select_blocks":1.0,"mean_free_blocks":0.0,"mean_tokens":1135.0,"fallback_rate":0.0,"mean_restarts":0.0,"ends":{"success":2}}]}

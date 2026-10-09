@@ -1,1 +1,1 @@
-{"name":"fe-tau-v19g2-qwen2.5-0.5b","tasks":[]}
+{"name":"fe-tau-v19g2-qwen2.5-0.5b","tasks":[{"task_id":"tau-retail-17","runs":2,"successes":2,"success_rate":1.0,"mean_bits":21.673557,"mean_forced_bits":18.480711,"mean_forced_tokens":106.5,"mean_select_blocks":1.5,"mean_free_blocks":0.0,"mean_tokens":1016.0,"fallback_rate":0.0,"mean_restarts":0.0,"ends":{"success":2}}]}
