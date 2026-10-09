@@ -124,3 +124,18 @@ details.more { margin-top: 10px; }
 details.more > summary { cursor: pointer; font-size: 13px; color: var(--muted); padding: 6px 0; }
 td.best { font-weight: 700; }
 tr.group td { font-size: 12px; color: var(--muted); padding-top: 10px; border-bottom: 1px solid var(--line); }
+
+.part{display:flex;gap:16px;align-items:flex-start;border-top:2px solid var(--ink);padding-top:18px;margin:56px 0 4px}
+#part-overview{margin-top:8px}
+.part-num{font:600 28px/1 ui-monospace,monospace;color:var(--accent);min-width:28px}
+.part-title{font-size:21px;letter-spacing:-.2px;margin:0}
+.part .note{margin:4px 0 0;max-width:860px}
+.subnav{display:flex;gap:18px;flex-wrap:wrap;border:0;padding:0;margin:0 0 4px}
+.subnav a{font-size:12px;padding:3px 10px;border:1px solid var(--line);border-radius:999px;background:var(--panel)}
+.subnav a:hover{border-color:var(--accent)}
+.qbar{display:flex;height:9px;min-width:180px;border-radius:5px;overflow:hidden;background:var(--grid)}
+.qbar i{display:block;height:100%}
+.qbar .q-done{background:var(--accent)}.qbar .q-running{background:var(--blue)}.qbar .q-failed{background:var(--red)}
+.qkey{display:inline-flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--muted)}
+.qkey i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+@media (max-width:700px){.part{gap:10px}.part-num{font-size:22px}.part-title{font-size:18px}.qbar{min-width:110px}}

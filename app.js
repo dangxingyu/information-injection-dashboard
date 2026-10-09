@@ -58,6 +58,22 @@ function render() {
   renderStudyB();
   renderFinalEval();
   renderIdeas();
+  renderQueue();
+  renderFeFindings();
+}
+
+function renderQueue() {
+  const q = data.queue || {};
+  const rows = q.rows || [];
+  if (!rows.length) { $('queue-table').innerHTML = '<tr><td class="muted">No work queue right now.</td></tr>'; $('queue-note').textContent = ''; return; }
+  const bar = r => { const n = r.done + r.failed + r.running + r.waiting || 1; const w = k => `${(100 * r[k] / n).toFixed(1)}%`;
+    return `<div class="qbar" role="img" aria-label="${r.done} done, ${r.running} running, ${r.failed} failed, ${r.waiting} waiting"><i class="q-done" style="width:${w('done')}"></i><i class="q-running" style="width:${w('running')}"></i><i class="q-failed" style="width:${w('failed')}"></i></div>`; };
+  $('queue-table').innerHTML = '<thead><tr><th>batch</th><th>progress</th><th class="num">done</th><th class="num">running</th><th class="num">waiting</th><th class="num">failed</th></tr></thead><tbody>' +
+    rows.map(r => `<tr><td>${esc(r.label)}</td><td>${bar(r)}</td><td class="num">${r.done}</td><td class="num">${r.running}</td><td class="num">${r.waiting}</td><td class="num">${r.failed}</td></tr>`).join('') + '</tbody>';
+  const t = q.total || {};
+  const nodes = (q.nodes || []).map(n => `${esc(n.node)}: ${n.running} running`).join(' · ');
+  $('queue-note').innerHTML = `<span class="qkey"><span><i style="background:var(--accent)"></i>done</span><span><i style="background:var(--blue)"></i>running</span><span><i style="background:var(--red)"></i>failed</span><span><i style="background:var(--grid)"></i>waiting</span></span><br>` +
+    `${t.done} of ${t.done + t.running + t.waiting + t.failed} items done, ${t.running} running${nodes ? ' (' + nodes + ')' : ''}. Two students share each H200; items are claimed from a shared queue, a failed one is retried up to three times. Batches start when the setup step that creates them has passed its tests.`;
 }
 
 function renderIdeas() {
@@ -270,6 +286,23 @@ function renderHeadlines() {
 function finding(eyebrow, big, unit, text) {
   return `<article class="panel pad finding"><span class="eyebrow">${eyebrow}</span><div class="big">${big}<small>${unit}</small></div><p>${text}</p></article>`;
 }
+function renderFeFindings() {
+  const f = data.final_eval || {}, cards = [], m = 'qwen3-8b-base';
+  const best = table => Object.entries(table || {}).filter(([, e]) => e.models && e.mean?.[m] != null)
+    .reduce((a, b) => (!a || b[1].mean[m] < a[1].mean[m] ? b : a), null);
+  const card = (eyebrow, table, first, text) => {
+    const e0 = table?.[first], b = best(table);
+    if (!e0?.mean?.[m] || !b) return;
+    cards.push(finding(eyebrow, `${bits(e0.mean[m])} → ${bits(b[1].mean[m])}`, ' bits / task',
+      `Qwen3-8B-Base, ${b[1].n} matched tasks: ${esc(first)} → <b>${esc(b[0])}</b>. ${text} Per-task AUROC for the post-trained release solving the task: ${dec(e0.auroc, 2)} → ${dec(b[1].auroc, 2)}.`));
+  };
+  card('AIME 2025', f.aime, 'rejection + phrasing', 'The answer goes into the student\'s own answer slot instead of a sentence after "Solution:".');
+  card('IMO-ANSWERBENCH', f.imo, 'rejection + phrasing', 'answer_sir as on AIME, with the student\'s own equivalent answer forms counted.');
+  card('TERMINAL-BENCH', f.tb, 'per turn on benchmark solutions', 'Short verified teacher trajectories instead of the benchmark\'s solution scripts.');
+  card('TAU-BENCH', f.tau, 'per turn on benchmark actions (v19b)', 'Per student and task, the teacher trajectory it is cheapest to be forced through.');
+  $('fe-findings').innerHTML = cards.join('') || '<p class="muted">Final-eval results pending.</p>';
+}
+
 function renderFindings() {
   const h = data.headlines || {}, cards = [];
   const he = (h.code || []).find(p => p.title.startsWith('HumanEval+ hard'));
