@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791583796.049462,
- "generated_label": "2026-10-09 18:09 EDT",
+ "generated_at": 1791584704.1436646,
+ "generated_label": "2026-10-09 18:25 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -24149,31 +24149,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 5,
-   "status": "queued",
+   "shards_queued": 4,
+   "status": "running",
    "created_at": 1791497945.8086228,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 164012,
+   "tokens_scored": 3186,
+   "gpu_hours": 0.3551,
+   "load_hours": 0.0131,
+   "tasks": 2,
+   "records": 4,
+   "success_rate": 1.0,
+   "mean_bits": 142.60142,
+   "median_bits": 142.60142,
+   "mean_forced_bits": 134.223486,
+   "mean_forced_tokens": 114.25,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 1357.25,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 4
+   }
   },
   {
    "name": "fe-tb-v20g-llama3.2-1b",
@@ -24192,32 +24194,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 3,
+   "shards_done": 5,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791497945.4529486,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 424066,
-   "tokens_scored": 23081,
-   "gpu_hours": 0.8926,
-   "load_hours": 0.0302,
-   "tasks": 6,
-   "records": 12,
+   "tokens_generated": 1017927,
+   "tokens_scored": 31709,
+   "gpu_hours": 1.7226,
+   "load_hours": 0.0493,
+   "tasks": 10,
+   "records": 20,
    "success_rate": 1.0,
-   "mean_bits": 137.959276,
+   "mean_bits": 145.10992,
    "median_bits": 132.169631,
-   "mean_forced_bits": 121.173929,
-   "mean_forced_tokens": 131.833333,
+   "mean_forced_bits": 122.500679,
+   "mean_forced_tokens": 108.0,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 277.25,
+   "mean_tokens": 368.2,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 12
+    "success": 20
    }
   },
   {
@@ -88189,23 +88191,8 @@
   },
   "nodes": [],
   "holdings": {
-   "allocations": [
-    {
-     "kind": "H100",
-     "gpus": 4,
-     "state": "standby",
-     "label": "PLI slot (ii-pli-worker)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 4,
-     "state": "standby",
-     "label": "PLI slot (ii-pli-worker)"
-    }
-   ],
-   "totals": {
-    "h100_standby": 8
-   }
+   "allocations": [],
+   "totals": {}
   }
  },
  "study_b": {
@@ -96079,28 +96066,19 @@
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
-    "done": 238,
+    "done": 241,
     "failed": 0,
-    "running": 3,
+    "running": 0,
     "waiting": 59
    }
   ],
   "total": {
-   "done": 1394,
+   "done": 1397,
    "failed": 2,
-   "running": 3,
+   "running": 0,
    "waiting": 59
   },
-  "nodes": [
-   {
-    "node": "H200 node 1",
-    "running": 1
-   },
-   {
-    "node": "H200 node 2",
-    "running": 2
-   }
-  ]
+  "nodes": []
  },
  "headlines": {
   "code": [
@@ -97162,5 +97140,5 @@
    }
   ]
  },
- "content_digest": "a3b04902e39bce6004a23040e31e3552a893316e4323cd4e88818939c29d340d"
+ "content_digest": "cf19db794232147d94aa974f3b0d452f9fa11d0d248db8ecfd04b4e59be91a26"
 }
