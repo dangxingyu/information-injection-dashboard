@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791584704.1436646,
- "generated_label": "2026-10-09 18:25 EDT",
+ "generated_at": 1791585606.081638,
+ "generated_label": "2026-10-09 18:40 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -95946,6 +95946,13 @@
     "waiting": 0
    },
    {
+    "label": "00f-tbh-gold-test",
+    "done": 0,
+    "failed": 0,
+    "running": 0,
+    "waiting": 1
+   },
+   {
     "label": "tau-bench \u00b7 force each teacher variant",
     "done": 60,
     "failed": 0,
@@ -96076,7 +96083,7 @@
    "done": 1397,
    "failed": 2,
    "running": 0,
-   "waiting": 59
+   "waiting": 60
   },
   "nodes": []
  },
@@ -97140,5 +97147,5 @@
    }
   ]
  },
- "content_digest": "cf19db794232147d94aa974f3b0d452f9fa11d0d248db8ecfd04b4e59be91a26"
+ "content_digest": "04a82fe6e673119e4383a56927d2751b573649eaf1ac4389112f71671a35d77d"
 }
