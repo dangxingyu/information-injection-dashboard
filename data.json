@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791539325.610461,
- "generated_label": "2026-10-09 05:48 EDT",
+ "generated_at": 1791539775.3623433,
+ "generated_label": "2026-10-09 05:56 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -17702,31 +17702,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
-   "status": "queued",
+   "shards_queued": 2,
+   "status": "running",
    "created_at": 1791498272.3095946,
    "git_commit": "3ac1b26fa8",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 24738602,
+   "tokens_scored": 191704,
+   "gpu_hours": 0.6146,
+   "load_hours": 0.1416,
+   "tasks": 200,
+   "records": 200,
+   "success_rate": 1.0,
+   "mean_bits": 19.91996,
+   "median_bits": 14.225759,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 7.655,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 366.86,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 200
+   }
   },
   {
    "name": "fe-imo-sir-qwen2.5-3b",
@@ -83948,10 +83950,23 @@
      "gpus": 8,
      "state": "standby",
      "label": "ailab (ailab-mg-lane)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 8,
+     "state": "standby",
+     "label": "PLI slot (t3attr)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 8,
+     "state": "standby",
+     "label": "PLI slot (t3attr)"
     }
    ],
    "totals": {
-    "h200_standby": 16
+    "h200_standby": 16,
+    "h100_standby": 16
    }
   }
  },
@@ -89341,7 +89356,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791537893.9813786,
+  "generated_at": 1791539732.5399098,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -90712,7 +90727,7 @@
      "qwen3-4b-base": 71.15849261693329,
      "qwen3-8b-base": 64.79338780119919,
      "qwen3-14b-base": 58.158394202305935,
-     "qwen3-30b-a3b-base": 91.30893001619314,
+     "qwen3-30b-a3b-base": 65.04760975853928,
      "olmo2-1b-main": 127.68931598419684,
      "olmo2-7b": 96.42112028679976,
      "qwen2.5-0.5b": 107.26813947847695,
@@ -90724,9 +90739,9 @@
      "llama3.2-3b": 86.54273039000148,
      "llama3.1-8b": 75.95769252604448,
      "marin-8b-base": 83.15683510375818,
-     "smollm2-135m": 250.99259332312806,
-     "smollm2-360m": 179.39639334151562,
-     "smollm2-1.7b": 126.00427328743694
+     "smollm2-135m": 161.7389642661339,
+     "smollm2-360m": 116.97509139473132,
+     "smollm2-1.7b": 85.42780069324598
     },
     "delphi": [
      384.8465924277947,
@@ -90741,13 +90756,13 @@
      96.93358180365594
     ],
     "delphi_spearman": -1.0,
-    "spearman_hybrid": 0.550782483869826,
-    "spearman_final": 0.6743645062573552,
-    "spearman_all": 0.5667976703182307,
-    "auroc": 0.768641975308642,
+    "spearman_hybrid": 0.898645105261295,
+    "spearman_final": 0.8041669976873423,
+    "spearman_all": 0.7562340472423682,
+    "auroc": 0.7549382716049383,
     "auroc_pairs": 9,
-    "retest_spearman": 0.9786774707638437,
-    "retest_mad": 3.5344901557703805
+    "retest_spearman": 0.9782168750420865,
+    "retest_mad": 3.1197725818579127
    },
    "teacher subgoals (v20f)": {
     "models": 0
@@ -90816,10 +90831,27 @@
     "retest_mad": 3.890954046629107
    },
    "the release's own episodes as the proposal (v25)": {
-    "models": 0
+    "models": 3,
+    "n": 10,
+    "mean": {
+     "qwen3-1.7b-base": 84.85357310682103,
+     "qwen3-4b-base": 72.81786603854036,
+     "qwen3-8b-base": 70.94292860170557
+    },
+    "spearman_hybrid": 1.0,
+    "spearman_final": 1.0,
+    "spearman_all": 1.0,
+    "auroc": 0.8526785714285714,
+    "auroc_pairs": 4
    },
    "v25, Qwen3-4B-Instruct-2507 as the proposal": {
-    "models": 0
+    "models": 1,
+    "n": 10,
+    "mean": {
+     "qwen3-4b-base": 72.84507558369431
+    },
+    "auroc": 0.8095238095238095,
+    "auroc_pairs": 2
    }
   },
   "tau": {
@@ -91067,10 +91099,24 @@
     "retest_mad": 3.544767173161037
    },
    "the release's own episodes as the proposal (v25)": {
-    "models": 0
+    "models": 2,
+    "n": 10,
+    "mean": {
+     "qwen3-1.7b-base": 40.79251334905131,
+     "qwen3-4b-base": 31.09244379729796
+    },
+    "spearman_all": 0.8660254037844387,
+    "auroc": 0.5416666666666666,
+    "auroc_pairs": 2
    },
    "v25, Qwen3-4B-Instruct-2507 as the proposal": {
-    "models": 0
+    "models": 1,
+    "n": 10,
+    "mean": {
+     "qwen3-4b-base": 31.840968195339027
+    },
+    "auroc": 0.5416666666666666,
+    "auroc_pairs": 2
    }
   },
   "imo": {
@@ -91180,8 +91226,8 @@
     "spearman_all": 0.8852148490954105,
     "auroc": 0.8507121964878657,
     "auroc_pairs": 28,
-    "retest_spearman": 0.9766681339699711,
-    "retest_mad": 1.6864940814919709
+    "retest_spearman": 0.9756245655822647,
+    "retest_mad": 1.6980582471116652
    }
   }
  },
@@ -91202,10 +91248,10 @@
   },
   {
    "kind": "new",
-   "status": "next",
+   "status": "done",
    "idea": "The post-trained release as the proposal",
    "why": "Sample episodes and solutions from the release (Instruct / RL model), weight each success by P_base / P_release: an importance-sampling estimate of the base model's own -log2 alpha that needs no teacher text at all, efficient exactly where post-training made the task easy. The weights also say, task by task, how many bits post-training moved the base, which is Study B's question measured directly.",
-   "result": ""
+   "result": "No gain: terminal-bench = forcing + log2 33 (the releases almost never solve a terminal task in the base's raw format); tau worse than v19g (Qwen3-4B 31 vs 19 bits/task) although the release solved 30-40% of its episodes, because the base finds whole release episodes 150-300 bits less likely (KL(release || base) per episode). For Study B: post-training moves the base 150-300 bits per episode, 3-10x what the base needs to succeed with the best injection (20-70 bits)."
   },
   {
    "kind": "new",
@@ -91281,8 +91327,8 @@
   {
    "idea": "Answer-only teacher trajectories for terminal tasks",
    "why": "Most terminal bits go to exploration the teacher does not need: assign-seats spends ~90 bits reading clue files for a ~40-bit answer. A verified variant per task writes the output directly (a simpler regex for regex-log, the recovered values for sqlite), offered to each student's per-task pick next to the teacher, benchmark and peer trajectories; per turn (v19g) reruns where the pick changes.",
-   "status": "running",
-   "result": ""
+   "status": "done",
+   "result": "Forced costs fall by a third over all 10 tasks and 30 bases (Qwen3-4B 96 -> 68 bits/task, Delphi-1e21 246 -> 163; assign-seats 134 -> 49, sqlite 205 -> 101 for Qwen3-4B); Delphi still monotone, Spearman with Qwen3 release accuracy 1.0, AUROC 0.873 -> 0.862. Per turn on top (v19g3) adds nothing (one command left)."
   },
   {
    "idea": "Teacher subgoal decompositions for all 10 terminal tasks (v20e/f/g)",
@@ -91342,9 +91388,9 @@
    {
     "label": "peer trajectories \u00b7 forced on every base model",
     "done": 179,
-    "failed": 1,
+    "failed": 0,
     "running": 0,
-    "waiting": 0
+    "waiting": 1
    },
    {
     "label": "tau + terminal-bench \u00b7 per turn where the pick changed with peers",
@@ -91404,10 +91450,10 @@
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
-    "done": 263,
+    "done": 266,
     "failed": 0,
-    "running": 29,
-    "waiting": 28
+    "running": 30,
+    "waiting": 24
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
@@ -91418,15 +91464,15 @@
    }
   ],
   "total": {
-   "done": 900,
-   "failed": 2,
-   "running": 31,
-   "waiting": 328
+   "done": 903,
+   "failed": 1,
+   "running": 32,
+   "waiting": 325
   },
   "nodes": [
    {
     "node": "H200 node 1",
-    "running": 15
+    "running": 16
    },
    {
     "node": "H200 node 2",
@@ -92494,5 +92540,5 @@
    }
   ]
  },
- "content_digest": "503865687f7cbd699f699e82317f8efc8e9b17eb89b36e5734d11251ca6b8016"
+ "content_digest": "f078e49d5e435229ffe89d96868432803edfb37f3b0f6605c59599c84277b42e"
 }
