@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791567456.2323413,
- "generated_label": "2026-10-09 13:37 EDT",
+ "generated_at": 1791568366.1285467,
+ "generated_label": "2026-10-09 13:52 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -22487,32 +22487,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 2,
+   "shards_done": 4,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 3,
+   "shards_queued": 1,
    "status": "running",
    "created_at": 1791497923.3933544,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 201986,
-   "tokens_scored": 4097,
-   "gpu_hours": 0.718,
-   "load_hours": 0.1963,
-   "tasks": 4,
-   "records": 8,
-   "success_rate": 1.0,
-   "mean_bits": 96.93926,
+   "tokens_generated": 306926,
+   "tokens_scored": 5713,
+   "gpu_hours": 0.9471,
+   "load_hours": 0.2176,
+   "tasks": 8,
+   "records": 16,
+   "success_rate": 0.9375,
+   "mean_bits": 95.933375,
    "median_bits": 71.640664,
-   "mean_forced_bits": 83.514981,
-   "mean_forced_tokens": 78.5,
+   "mean_forced_bits": 79.393165,
+   "mean_forced_tokens": 71.75,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 803.5,
+   "mean_tokens": 528.625,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 8
+    "eos": 1,
+    "success": 15
    }
   },
   {
@@ -22532,32 +22533,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 1,
+   "shards_done": 3,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
+   "shards_queued": 2,
    "status": "running",
    "created_at": 1791497908.3683748,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 31229,
-   "tokens_scored": 1782,
-   "gpu_hours": 0.1844,
-   "load_hours": 0.0657,
-   "tasks": 2,
-   "records": 4,
+   "tokens_generated": 194993,
+   "tokens_scored": 6624,
+   "gpu_hours": 0.9348,
+   "load_hours": 0.1491,
+   "tasks": 6,
+   "records": 12,
    "success_rate": 1.0,
-   "mean_bits": 183.648562,
-   "median_bits": 183.648562,
-   "mean_forced_bits": 183.350264,
-   "mean_forced_tokens": 110.5,
+   "mean_bits": 121.229558,
+   "median_bits": 78.621985,
+   "mean_forced_bits": 97.798209,
+   "mean_forced_tokens": 73.0,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 133.5,
+   "mean_tokens": 242.333333,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 4
+    "success": 12
    }
   },
   {
@@ -22576,32 +22577,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 3,
+   "shards_done": 5,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791497908.0275762,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 211799,
-   "tokens_scored": 14480,
-   "gpu_hours": 0.9565,
-   "load_hours": 0.0871,
-   "tasks": 6,
-   "records": 12,
+   "tokens_generated": 439479,
+   "tokens_scored": 19015,
+   "gpu_hours": 1.9665,
+   "load_hours": 0.1422,
+   "tasks": 10,
+   "records": 20,
    "success_rate": 1.0,
-   "mean_bits": 126.667075,
+   "mean_bits": 129.966872,
    "median_bits": 85.596738,
-   "mean_forced_bits": 118.576319,
-   "mean_forced_tokens": 145.666667,
+   "mean_forced_bits": 113.15294,
+   "mean_forced_tokens": 116.35,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 332.333333,
+   "mean_tokens": 598.7,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 12
+    "success": 20
    }
   },
   {
@@ -93391,17 +93392,17 @@
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
-    "done": 126,
+    "done": 132,
     "failed": 0,
     "running": 8,
-    "waiting": 166
+    "waiting": 160
    }
   ],
   "total": {
-   "done": 1130,
+   "done": 1136,
    "failed": 2,
    "running": 8,
-   "waiting": 166
+   "waiting": 160
   },
   "nodes": [
    {
@@ -94474,5 +94475,5 @@
    }
   ]
  },
- "content_digest": "be02c7d402a9a592879afdcfa0bbf08b2aac82815ea7a3ef924c7b10f1080e3f"
+ "content_digest": "6fc43536f174d95064fb4227a38495ebeed1697b96266a841e6ebafd335dbea8"
 }
