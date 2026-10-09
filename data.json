@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791542955.6201065,
- "generated_label": "2026-10-09 06:49 EDT",
+ "generated_at": 1791543865.6080468,
+ "generated_label": "2026-10-09 07:04 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -18129,31 +18129,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
-   "status": "queued",
+   "shards_queued": 3,
+   "status": "running",
    "created_at": 1791498280.5925486,
    "git_commit": "3e2a97d570",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 15444823,
+   "tokens_scored": 94746,
+   "gpu_hours": 0.3918,
+   "load_hours": 0.0408,
+   "tasks": 100,
+   "records": 100,
+   "success_rate": 1.0,
+   "mean_bits": 19.396033,
+   "median_bits": 14.145684,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 7.49,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 457.5,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 100
+   }
   },
   {
    "name": "fe-imo-sir-r-smollm2-1.7b",
@@ -23221,31 +23223,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 0,
+   "shards_done": 3,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 5,
-   "status": "queued",
+   "shards_queued": 2,
+   "status": "running",
    "created_at": 1791497900.600349,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 306782,
+   "tokens_scored": 9137,
+   "gpu_hours": 0.9426,
+   "load_hours": 0.2066,
+   "tasks": 6,
+   "records": 12,
+   "success_rate": 1.0,
+   "mean_bits": 116.301975,
+   "median_bits": 89.785775,
+   "mean_forced_bits": 97.437044,
+   "mean_forced_tokens": 78.416667,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 237.333333,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 12
+   }
   },
   {
    "name": "fe-tb-v20f-qwen3-0.6b-base",
@@ -23263,33 +23267,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 1,
+   "shards_done": 5,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791497900.2515724,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 21794,
-   "tokens_scored": 616,
-   "gpu_hours": 0.0868,
-   "load_hours": 0.0778,
-   "tasks": 2,
-   "records": 4,
-   "success_rate": 0.75,
-   "mean_bits": 156.969914,
-   "median_bits": 156.969914,
-   "mean_forced_bits": 151.154969,
-   "mean_forced_tokens": 105.25,
+   "tokens_generated": 689773,
+   "tokens_scored": 20324,
+   "gpu_hours": 1.6968,
+   "load_hours": 0.3898,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 0.95,
+   "mean_bits": 133.145514,
+   "median_bits": 118.627621,
+   "mean_forced_bits": 103.787658,
+   "mean_forced_tokens": 115.3,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 211.75,
+   "mean_tokens": 594.7,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
     "eos": 1,
-    "success": 3
+    "success": 19
    }
   },
   {
@@ -23309,32 +23313,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 3,
+   "shards_done": 5,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791497899.922031,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 142422,
-   "tokens_scored": 6108,
-   "gpu_hours": 0.6429,
-   "load_hours": 0.2435,
-   "tasks": 6,
-   "records": 12,
+   "tokens_generated": 467088,
+   "tokens_scored": 26928,
+   "gpu_hours": 1.6033,
+   "load_hours": 0.4509,
+   "tasks": 10,
+   "records": 20,
    "success_rate": 1.0,
-   "mean_bits": 69.381605,
-   "median_bits": 61.216764,
-   "mean_forced_bits": 56.280281,
-   "mean_forced_tokens": 67.0,
+   "mean_bits": 74.049776,
+   "median_bits": 68.247615,
+   "mean_forced_bits": 38.364441,
+   "mean_forced_tokens": 57.5,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 294.75,
+   "mean_tokens": 622.4,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 12
+    "success": 20
    }
   },
   {
@@ -23396,32 +23400,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 4,
+   "shards_done": 5,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791497899.53321,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 353950,
-   "tokens_scored": 15058,
-   "gpu_hours": 1.1983,
-   "load_hours": 0.4072,
-   "tasks": 8,
-   "records": 16,
+   "tokens_generated": 491324,
+   "tokens_scored": 17198,
+   "gpu_hours": 1.7166,
+   "load_hours": 0.5076,
+   "tasks": 10,
+   "records": 20,
    "success_rate": 1.0,
-   "mean_bits": 69.496382,
+   "mean_bits": 74.496757,
    "median_bits": 65.202424,
-   "mean_forced_bits": 47.463434,
-   "mean_forced_tokens": 69.1875,
+   "mean_forced_bits": 38.467581,
+   "mean_forced_tokens": 58.9,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 379.8125,
+   "mean_tokens": 543.85,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 16
+    "success": 20
    }
   },
   {
@@ -90654,7 +90658,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791541716.501474,
+  "generated_at": 1791543531.255424,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -92173,7 +92177,15 @@
     "retest_mad": 3.1193880113821937
    },
    "teacher subgoals (v20f)": {
-    "models": 0
+    "models": 1,
+    "n": 10,
+    "mean": {
+     "qwen3-8b-base": 74.49675672307352
+    },
+    "auroc": 0.75,
+    "auroc_pairs": 1,
+    "retest_spearman": 0.9393939393939394,
+    "retest_mad": 8.876143536697121
    },
    "teacher subgoals + lookahead (v20g)": {
     "models": 0
@@ -92637,8 +92649,8 @@
     "spearman_all": 0.8852148490954105,
     "auroc": 0.8507121964878657,
     "auroc_pairs": 28,
-    "retest_spearman": 0.9720344040112555,
-    "retest_mad": 1.726624130585293
+    "retest_spearman": 0.9721470652964423,
+    "retest_mad": 1.7095845762327908
    }
   }
  },
@@ -92875,33 +92887,33 @@
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
-    "done": 310,
+    "done": 311,
     "failed": 0,
     "running": 5,
-    "waiting": 5
+    "waiting": 4
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
-    "done": 8,
+    "done": 19,
     "failed": 0,
-    "running": 15,
-    "waiting": 277
+    "running": 12,
+    "waiting": 269
    }
   ],
   "total": {
-   "done": 990,
+   "done": 1002,
    "failed": 1,
-   "running": 21,
-   "waiting": 282
+   "running": 18,
+   "waiting": 273
   },
   "nodes": [
    {
     "node": "H200 node 1",
-    "running": 9
+    "running": 7
    },
    {
     "node": "H200 node 2",
-    "running": 12
+    "running": 11
    }
   ]
  },
@@ -93965,5 +93977,5 @@
    }
   ]
  },
- "content_digest": "f4eb6f4fd86c3e7f9b020323d87de11fdc75c965d286787fb3e0b24dc87068a2"
+ "content_digest": "6f7647f0444538b6d040f420b4df3c9b68cc078f1139d49c46f5c5c950494340"
 }
