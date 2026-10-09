@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791544774.7427745,
- "generated_label": "2026-10-09 07:19 EDT",
+ "generated_at": 1791545675.508103,
+ "generated_label": "2026-10-09 07:34 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -51,6 +51,236 @@
   "qwen3-8b-base": 5
  },
  "experiments": [
+  {
+   "name": "fe-tau-pointer-qwen3-14b-base",
+   "student": "qwen3-14b-base",
+   "model": "Qwen/Qwen3-14B-Base",
+   "suite": "longhorizon",
+   "protocol": "ep-pointer",
+   "config": {
+    "gold": "runs/picks/tau10-qwen3-14b-base.json",
+    "monitor": "oracle",
+    "cap": true,
+    "root": 32,
+    "neutral": false,
+    "notes": false,
+    "informative": true,
+    "library_k": 8
+   },
+   "config_summary": "cap=True, gold=runs/picks/tau10-qwen3-14b-base.json, informative=True, library_k=8, monitor=oracle, neutral=False, notes=False, root=32",
+   "runs": 2,
+   "limit": 0,
+   "shards": 2,
+   "shards_done": 0,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 2,
+   "status": "queued",
+   "created_at": 1791545651.569535,
+   "git_commit": "0048258b87",
+   "snapshot": "6b24212a0714",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
+  {
+   "name": "fe-tau-pointer-qwen3-8b-base",
+   "student": "qwen3-8b-base",
+   "model": "Qwen/Qwen3-8B-Base",
+   "suite": "longhorizon",
+   "protocol": "ep-pointer",
+   "config": {
+    "gold": "runs/picks/tau10-qwen3-8b-base.json",
+    "monitor": "oracle",
+    "cap": true,
+    "root": 32,
+    "neutral": false,
+    "notes": false,
+    "informative": true,
+    "library_k": 8
+   },
+   "config_summary": "cap=True, gold=runs/picks/tau10-qwen3-8b-base.json, informative=True, library_k=8, monitor=oracle, neutral=False, notes=False, root=32",
+   "runs": 2,
+   "limit": 0,
+   "shards": 2,
+   "shards_done": 0,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 2,
+   "status": "queued",
+   "created_at": 1791545651.235133,
+   "git_commit": "0048258b87",
+   "snapshot": "6b24212a0714",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
+  {
+   "name": "fe-tau-pointer-qwen3-4b-base",
+   "student": "qwen3-4b-base",
+   "model": "Qwen/Qwen3-4B-Base",
+   "suite": "longhorizon",
+   "protocol": "ep-pointer",
+   "config": {
+    "gold": "runs/picks/tau10-qwen3-4b-base.json",
+    "monitor": "oracle",
+    "cap": true,
+    "root": 32,
+    "neutral": false,
+    "notes": false,
+    "informative": true,
+    "library_k": 8
+   },
+   "config_summary": "cap=True, gold=runs/picks/tau10-qwen3-4b-base.json, informative=True, library_k=8, monitor=oracle, neutral=False, notes=False, root=32",
+   "runs": 2,
+   "limit": 0,
+   "shards": 2,
+   "shards_done": 0,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 2,
+   "status": "queued",
+   "created_at": 1791545650.8129964,
+   "git_commit": "0048258b87",
+   "snapshot": "6b24212a0714",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
+  {
+   "name": "fe-tau-pointer-qwen3-1.7b-base",
+   "student": "qwen3-1.7b-base",
+   "model": "Qwen/Qwen3-1.7B-Base",
+   "suite": "longhorizon",
+   "protocol": "ep-pointer",
+   "config": {
+    "gold": "runs/picks/tau10-qwen3-1.7b-base.json",
+    "monitor": "oracle",
+    "cap": true,
+    "root": 32,
+    "neutral": false,
+    "notes": false,
+    "informative": true,
+    "library_k": 8
+   },
+   "config_summary": "cap=True, gold=runs/picks/tau10-qwen3-1.7b-base.json, informative=True, library_k=8, monitor=oracle, neutral=False, notes=False, root=32",
+   "runs": 2,
+   "limit": 0,
+   "shards": 2,
+   "shards_done": 0,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 2,
+   "status": "queued",
+   "created_at": 1791545650.5034683,
+   "git_commit": "0048258b87",
+   "snapshot": "6b24212a0714",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
+  {
+   "name": "fe-tau-pointer-qwen3-0.6b-base",
+   "student": "qwen3-0.6b-base",
+   "model": "Qwen/Qwen3-0.6B-Base",
+   "suite": "longhorizon",
+   "protocol": "ep-pointer",
+   "config": {
+    "gold": "runs/picks/tau10-qwen3-0.6b-base.json",
+    "monitor": "oracle",
+    "cap": true,
+    "root": 32,
+    "neutral": false,
+    "notes": false,
+    "informative": true,
+    "library_k": 8
+   },
+   "config_summary": "cap=True, gold=runs/picks/tau10-qwen3-0.6b-base.json, informative=True, library_k=8, monitor=oracle, neutral=False, notes=False, root=32",
+   "runs": 2,
+   "limit": 0,
+   "shards": 2,
+   "shards_done": 0,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 2,
+   "status": "queued",
+   "created_at": 1791545650.1489196,
+   "git_commit": "0048258b87",
+   "snapshot": "6b24212a0714",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
   {
    "name": "fe-tb-v19g4-delphi-3e18",
    "student": "delphi-3e18",
@@ -18085,32 +18315,32 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 1,
+   "shards_done": 3,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 3,
+   "shards_queued": 1,
    "status": "running",
    "created_at": 1791498281.0563912,
    "git_commit": "3e2a97d570",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 15304159,
-   "tokens_scored": 95281,
-   "gpu_hours": 0.3821,
-   "load_hours": 0.0373,
-   "tasks": 100,
-   "records": 100,
+   "tokens_generated": 45473093,
+   "tokens_scored": 293185,
+   "gpu_hours": 1.1515,
+   "load_hours": 0.1084,
+   "tasks": 300,
+   "records": 300,
    "success_rate": 1.0,
-   "mean_bits": 19.378253,
-   "median_bits": 13.357409,
+   "mean_bits": 17.571978,
+   "median_bits": 12.683029,
    "mean_forced_bits": 0.0,
-   "mean_forced_tokens": 7.51,
+   "mean_forced_tokens": 7.343333,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 495.39,
+   "mean_tokens": 482.233333,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 100
+    "success": 300
    }
   },
   {
@@ -18131,32 +18361,32 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 2,
+   "shards_done": 4,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791498280.5925486,
    "git_commit": "3e2a97d570",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 30703527,
-   "tokens_scored": 202991,
-   "gpu_hours": 0.6799,
-   "load_hours": 0.076,
-   "tasks": 200,
-   "records": 200,
+   "tokens_generated": 60852830,
+   "tokens_scored": 386094,
+   "gpu_hours": 1.4419,
+   "load_hours": 0.1458,
+   "tasks": 400,
+   "records": 400,
    "success_rate": 1.0,
-   "mean_bits": 18.224432,
-   "median_bits": 13.759343,
+   "mean_bits": 16.923526,
+   "median_bits": 12.756145,
    "mean_forced_bits": 0.0,
-   "mean_forced_tokens": 7.72,
+   "mean_forced_tokens": 7.1825,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 465.945,
+   "mean_tokens": 456.6525,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 200
+    "success": 400
    }
   },
   {
@@ -23097,31 +23327,34 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 5,
-   "status": "queued",
+   "shards_queued": 4,
+   "status": "running",
    "created_at": 1791497901.6050508,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 43190,
+   "tokens_scored": 647,
+   "gpu_hours": 0.1957,
+   "load_hours": 0.1007,
+   "tasks": 2,
+   "records": 4,
+   "success_rate": 0.75,
+   "mean_bits": 314.721662,
+   "median_bits": 314.721662,
+   "mean_forced_bits": 308.206157,
+   "mean_forced_tokens": 101.25,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 140.5,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "eos": 1,
+    "success": 3
+   }
   },
   {
    "name": "fe-tb-v20g-smollm2-135m",
@@ -23140,32 +23373,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 1,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
+   "shards_queued": 3,
    "status": "running",
    "created_at": 1791497901.2744293,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 35783,
-   "tokens_scored": 2292,
-   "gpu_hours": 0.1299,
-   "load_hours": 0.011,
-   "tasks": 2,
-   "records": 4,
+   "tokens_generated": 237679,
+   "tokens_scored": 4456,
+   "gpu_hours": 0.3927,
+   "load_hours": 0.1079,
+   "tasks": 4,
+   "records": 8,
    "success_rate": 1.0,
-   "mean_bits": 278.89474,
-   "median_bits": 278.89474,
-   "mean_forced_bits": 278.364897,
-   "mean_forced_tokens": 139.5,
+   "mean_bits": 231.543416,
+   "median_bits": 193.26733,
+   "mean_forced_bits": 231.278495,
+   "mean_forced_tokens": 114.25,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 166.5,
+   "mean_tokens": 253.75,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 4
+    "success": 8
    }
   },
   {
@@ -23184,33 +23417,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 2,
+   "shards_done": 5,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 3,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791497900.9394088,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 213760,
-   "tokens_scored": 2630,
-   "gpu_hours": 0.5065,
-   "load_hours": 0.1207,
-   "tasks": 4,
-   "records": 8,
-   "success_rate": 0.875,
-   "mean_bits": 200.564091,
-   "median_bits": 134.054968,
-   "mean_forced_bits": 190.937824,
-   "mean_forced_tokens": 116.625,
+   "tokens_generated": 1425875,
+   "tokens_scored": 25160,
+   "gpu_hours": 2.0335,
+   "load_hours": 0.4097,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 0.95,
+   "mean_bits": 248.436635,
+   "median_bits": 221.248347,
+   "mean_forced_bits": 236.031955,
+   "mean_forced_tokens": 160.4,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 406.0,
+   "mean_tokens": 643.95,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
     "eos": 1,
-    "success": 7
+    "success": 19
    }
   },
   {
@@ -85272,17 +85505,10 @@
      "gpus": 8,
      "state": "standby",
      "label": "ailab (ailab-mg-lane)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 8,
-     "state": "standby",
-     "label": "PLI slot (t3attr)"
     }
    ],
    "totals": {
-    "h200_standby": 16,
-    "h100_standby": 8
+    "h200_standby": 16
    }
   }
  },
@@ -90672,7 +90898,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791543531.255424,
+  "generated_at": 1791545376.2067404,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -92191,18 +92417,28 @@
     "retest_mad": 3.1193880113821937
    },
    "teacher subgoals (v20f)": {
-    "models": 1,
-    "n": 10,
+    "models": 2,
+    "n": 9,
     "mean": {
-     "qwen3-8b-base": 74.49675672307352
+     "qwen3-0.6b-base": 145.55648220683338,
+     "qwen3-8b-base": 80.63074877372038
     },
     "auroc": 0.75,
     "auroc_pairs": 1,
-    "retest_spearman": 0.9393939393939394,
-    "retest_mad": 8.876143536697121
+    "retest_spearman": 0.9596491228070175,
+    "retest_mad": 11.941378482673807
    },
    "teacher subgoals + lookahead (v20g)": {
-    "models": 0
+    "models": 2,
+    "n": 10,
+    "mean": {
+     "qwen3-0.6b-base": 128.28592052297412,
+     "qwen3-8b-base": 74.04977637626811
+    },
+    "auroc": 0.75,
+    "auroc_pairs": 1,
+    "retest_spearman": 0.9789473684210527,
+    "retest_mad": 7.693284318497925
    },
    "privileged-proposal importance sampling (v22)": {
     "models": 7,
@@ -92663,8 +92899,8 @@
     "spearman_all": 0.8852148490954105,
     "auroc": 0.8507121964878657,
     "auroc_pairs": 28,
-    "retest_spearman": 0.9721470652964423,
-    "retest_mad": 1.7095845762327908
+    "retest_spearman": 0.971875683376766,
+    "retest_mad": 1.708939179420377
    }
   }
  },
@@ -92682,6 +92918,13 @@
    "idea": "Per-turn importance sampling (v23) and forcing the cheapest privileged variant (v24)",
    "why": "v23: v22 turn by turn (student, privileged student and the teacher's action as one mixture). v24: v19g, but the forced action is the cheapest accepted variant the privileged student writes.",
    "result": "Within +-5% of v19g for the mid-size students (v23 worse: its fixed teacher share costs ~1 bit a turn). The per-turn protocols have saturated: what remains is a few lines of knowledge (a regex, a binary record format), so the next gains have to come from what is injected."
+  },
+  {
+   "kind": "new",
+   "status": "done",
+   "idea": "Single-program teacher trajectories for data-derived terminal outputs",
+   "why": "Where answer-only loses (the output is computed from data the student must read), one command that computes and writes the output, instead of exploring step by step.",
+   "result": "Never picked: costlier than the step-by-step teacher for every student (Qwen3-4B analyze-access-logs 91 vs 39 bits). Exploration puts the data in context for the next command to copy; the per-task pick keeps both answer-only and step-by-step where each is cheaper."
   },
   {
    "kind": "new",
@@ -92706,9 +92949,9 @@
   },
   {
    "kind": "new",
-   "status": "idea",
+   "status": "running",
    "idea": "Pointer injection into a public library",
-   "why": "The teacher's message is an index into a fixed library of solved tasks (tau-bench's train split with gold actions, AoPS/MATH solutions, the other terminal-bench tasks): log2 |library| bits buy a complete worked example in context. Cheap whenever the student can transfer a pattern (tau exchange/return flows, file-recovery scripts).",
+   "why": "The teacher's message is an index into a fixed library of solved tasks (tau-bench's train split with gold actions, AoPS/MATH solutions, the other terminal-bench tasks): log2 |library| bits buy a complete worked example in context. Cheap whenever the student can transfer a pattern (tau exchange/return flows, file-recovery scripts). First on tau-bench (v26): 295 train-split sessions, a pointer costs 8.2 bits; the teacher points at the shortlisted example that makes its own trajectory cheapest for the student, then v19g.",
    "result": ""
   },
   {
@@ -92796,7 +93039,7 @@
   "rows": [
    {
     "label": "setup steps",
-    "done": 16,
+    "done": 17,
     "failed": 1,
     "running": 0,
     "waiting": 0
@@ -92900,34 +93143,41 @@
     "waiting": 0
    },
    {
-    "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
-    "done": 315,
+    "label": "23m-pointer",
+    "done": 0,
     "failed": 0,
-    "running": 5,
+    "running": 2,
+    "waiting": 8
+   },
+   {
+    "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
+    "done": 318,
+    "failed": 0,
+    "running": 2,
     "waiting": 0
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
-    "done": 23,
+    "done": 28,
     "failed": 0,
-    "running": 14,
-    "waiting": 263
+    "running": 18,
+    "waiting": 254
    }
   ],
   "total": {
-   "done": 1010,
+   "done": 1019,
    "failed": 1,
-   "running": 20,
-   "waiting": 263
+   "running": 23,
+   "waiting": 262
   },
   "nodes": [
    {
     "node": "H200 node 1",
-    "running": 9
+    "running": 10
    },
    {
     "node": "H200 node 2",
-    "running": 11
+    "running": 13
    }
   ]
  },
@@ -93991,5 +94241,5 @@
    }
   ]
  },
- "content_digest": "872f354542fd5ab0d6f90244873feb388f7a42b0fce82b66ee7b39ef8e559f5e"
+ "content_digest": "65a29d5c7ab6adaaecbca51eafe8af4916213f788410dff66640a5ef36d7bd15"
 }
