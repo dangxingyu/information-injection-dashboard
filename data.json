@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791566552.9723706,
- "generated_label": "2026-10-09 13:22 EDT",
+ "generated_at": 1791567456.2323413,
+ "generated_label": "2026-10-09 13:37 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -22532,31 +22532,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 5,
-   "status": "queued",
+   "shards_queued": 4,
+   "status": "running",
    "created_at": 1791497908.3683748,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 31229,
+   "tokens_scored": 1782,
+   "gpu_hours": 0.1844,
+   "load_hours": 0.0657,
+   "tasks": 2,
+   "records": 4,
+   "success_rate": 1.0,
+   "mean_bits": 183.648562,
+   "median_bits": 183.648562,
+   "mean_forced_bits": 183.350264,
+   "mean_forced_tokens": 110.5,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 133.5,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 4
+   }
   },
   {
    "name": "fe-tb-v20f-delphi-1e23",
@@ -22574,32 +22576,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 1,
+   "shards_done": 3,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
+   "shards_queued": 2,
    "status": "running",
    "created_at": 1791497908.0275762,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 22536,
-   "tokens_scored": 738,
-   "gpu_hours": 0.1115,
-   "load_hours": 0.0178,
-   "tasks": 2,
-   "records": 4,
+   "tokens_generated": 211799,
+   "tokens_scored": 14480,
+   "gpu_hours": 0.9565,
+   "load_hours": 0.0871,
+   "tasks": 6,
+   "records": 12,
    "success_rate": 1.0,
-   "mean_bits": 183.595481,
-   "median_bits": 183.595481,
-   "mean_forced_bits": 179.17121,
-   "mean_forced_tokens": 107.5,
+   "mean_bits": 126.667075,
+   "median_bits": 85.596738,
+   "mean_forced_bits": 118.576319,
+   "mean_forced_tokens": 145.666667,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 136.5,
+   "mean_tokens": 332.333333,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 4
+    "success": 12
    }
   },
   {
@@ -91061,7 +91063,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791562399.5939975,
+  "generated_at": 1791567299.9538045,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -91615,9 +91617,9 @@
    "imoab": {
     "models": 30,
     "pairs": 12000,
-    "task_spearman": 0.9553165968997975,
-    "mean_abs_diff": 2.2887818035211334,
-    "model_spearman": 0.989321468298109
+    "task_spearman": 0.9715834878859965,
+    "mean_abs_diff": 1.6986021549347974,
+    "model_spearman": 0.9959955506117909
    },
    "tb": {
     "models": 30,
@@ -93123,8 +93125,8 @@
     "spearman_all": 0.9053641336426204,
     "auroc": 0.8447757309976057,
     "auroc_pairs": 30,
-    "retest_spearman": 0.9707326426592107,
-    "retest_mad": 1.72054013702256
+    "retest_spearman": 0.971587217094729,
+    "retest_mad": 1.6962306162996856
    }
   }
  },
@@ -93389,17 +93391,17 @@
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
-    "done": 123,
+    "done": 126,
     "failed": 0,
     "running": 8,
-    "waiting": 169
+    "waiting": 166
    }
   ],
   "total": {
-   "done": 1127,
+   "done": 1130,
    "failed": 2,
    "running": 8,
-   "waiting": 169
+   "waiting": 166
   },
   "nodes": [
    {
@@ -94472,5 +94474,5 @@
    }
   ]
  },
- "content_digest": "b28d113470adb829e7f9bd1c8942393c9ec127f306987325e0d857c5200b23d3"
+ "content_digest": "be02c7d402a9a592879afdcfa0bbf08b2aac82815ea7a3ef924c7b10f1080e3f"
 }
