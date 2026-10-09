@@ -1,1 +1,1 @@
-{"name":"fe-tb-v19g2-qwen3-1.7b-base","tasks":[]}
+{"name":"fe-tb-v19g2-qwen3-1.7b-base","tasks":[{"task_id":"tb-regex-log","runs":2,"successes":2,"success_rate":1.0,"mean_bits":182.579017,"mean_forced_bits":182.579017,"mean_forced_tokens":208.0,"mean_select_blocks":0.0,"mean_free_blocks":0.0,"mean_tokens":210.0,"fallback_rate":0.0,"mean_restarts":0.0,"ends":{"success":2}}]}
