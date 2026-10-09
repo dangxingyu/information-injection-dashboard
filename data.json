@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791550213.9360983,
- "generated_label": "2026-10-09 08:50 EDT",
+ "generated_at": 1791551125.5031667,
+ "generated_label": "2026-10-09 09:05 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -22912,31 +22912,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 5,
-   "status": "queued",
+   "shards_queued": 4,
+   "status": "running",
    "created_at": 1791497904.850784,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 31692,
+   "tokens_scored": 750,
+   "gpu_hours": 0.1926,
+   "load_hours": 0.1009,
+   "tasks": 2,
+   "records": 4,
+   "success_rate": 1.0,
+   "mean_bits": 397.215014,
+   "median_bits": 397.215014,
+   "mean_forced_bits": 394.765849,
+   "mean_forced_tokens": 110.5,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 141.0,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 4
+   }
   },
   {
    "name": "fe-tb-v20g-delphi-3e19",
@@ -22955,32 +22957,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 1,
+   "shards_done": 4,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
+   "shards_queued": 1,
    "status": "running",
    "created_at": 1791497904.507423,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 34872,
-   "tokens_scored": 1745,
-   "gpu_hours": 0.2342,
-   "load_hours": 0.0998,
-   "tasks": 2,
-   "records": 4,
+   "tokens_generated": 797999,
+   "tokens_scored": 24350,
+   "gpu_hours": 1.812,
+   "load_hours": 0.2442,
+   "tasks": 8,
+   "records": 16,
    "success_rate": 1.0,
-   "mean_bits": 442.375715,
-   "median_bits": 442.375715,
-   "mean_forced_bits": 441.669148,
-   "mean_forced_tokens": 113.5,
+   "mean_bits": 449.476305,
+   "median_bits": 368.453011,
+   "mean_forced_bits": 448.834696,
+   "mean_forced_tokens": 156.8125,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 133.5,
+   "mean_tokens": 289.9375,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 4
+    "success": 16
    }
   },
   {
@@ -22999,32 +23001,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 3,
+   "shards_done": 4,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
+   "shards_queued": 1,
    "status": "running",
    "created_at": 1791497904.182556,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 442070,
-   "tokens_scored": 14834,
-   "gpu_hours": 0.87,
-   "load_hours": 0.3031,
-   "tasks": 6,
-   "records": 12,
+   "tokens_generated": 675728,
+   "tokens_scored": 16738,
+   "gpu_hours": 1.7103,
+   "load_hours": 0.4026,
+   "tasks": 8,
+   "records": 16,
    "success_rate": 1.0,
-   "mean_bits": 418.548025,
-   "median_bits": 355.260624,
-   "mean_forced_bits": 404.939438,
-   "mean_forced_tokens": 140.25,
+   "mean_bits": 377.074094,
+   "median_bits": 304.935436,
+   "mean_forced_bits": 366.819639,
+   "mean_forced_tokens": 134.5625,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 310.166667,
+   "mean_tokens": 288.75,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 12
+    "success": 16
    }
   },
   {
@@ -23177,32 +23179,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 4,
+   "shards_done": 5,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791497902.878758,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 687900,
-   "tokens_scored": 17005,
-   "gpu_hours": 2.2183,
-   "load_hours": 0.2195,
-   "tasks": 8,
-   "records": 16,
+   "tokens_generated": 1040006,
+   "tokens_scored": 21744,
+   "gpu_hours": 3.2439,
+   "load_hours": 0.3167,
+   "tasks": 10,
+   "records": 20,
    "success_rate": 1.0,
-   "mean_bits": 445.794916,
-   "median_bits": 387.973632,
-   "mean_forced_bits": 442.166025,
-   "mean_forced_tokens": 145.125,
+   "mean_bits": 483.018056,
+   "median_bits": 427.953811,
+   "mean_forced_bits": 469.833685,
+   "mean_forced_tokens": 145.85,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 287.25,
+   "mean_tokens": 371.15,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 16
+    "success": 20
    }
   },
   {
@@ -90927,7 +90929,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791549169.1928875,
+  "generated_at": 1791551127.2253757,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -92446,9 +92448,12 @@
     "retest_mad": 3.1193880113821937
    },
    "teacher subgoals (v20f)": {
-    "models": 4,
+    "models": 7,
     "n": 9,
     "mean": {
+     "delphi-3e18": 618.8214620618181,
+     "delphi-9e18": 516.08090727941,
+     "delphi-2e19": 467.3314338454976,
      "delphi-1e21": 266.23811731996557,
      "qwen3-0.6b-base": 145.55648220683338,
      "qwen3-8b-base": 80.63074877372038,
@@ -92458,13 +92463,16 @@
     "spearman_all": 0.8660254037844387,
     "auroc": 0.75,
     "auroc_pairs": 1,
-    "retest_spearman": 0.9770033191085823,
-    "retest_mad": 11.408502280022828
+    "retest_spearman": 0.9923181296315625,
+    "retest_mad": 7.775049019852548
    },
    "teacher subgoals + lookahead (v20g)": {
-    "models": 4,
+    "models": 7,
     "n": 10,
     "mean": {
+     "delphi-3e18": 577.4570545867629,
+     "delphi-9e18": 481.5040969544835,
+     "delphi-2e19": 435.5965351235614,
      "delphi-1e21": 244.2202777923225,
      "qwen3-0.6b-base": 128.28592052297412,
      "qwen3-8b-base": 74.04977637626811,
@@ -92474,8 +92482,8 @@
     "spearman_all": 0.8660254037844387,
     "auroc": 0.75,
     "auroc_pairs": 1,
-    "retest_spearman": 0.9938086303939963,
-    "retest_mad": 7.704499159381365
+    "retest_spearman": 0.9966757064123873,
+    "retest_mad": 5.3958967594015785
    },
    "privileged-proposal importance sampling (v22)": {
     "models": 7,
@@ -92845,6 +92853,24 @@
     "auroc_pairs": 4,
     "retest_spearman": 0.8574279964358689,
     "retest_mad": 4.093032632123645
+   },
+   "v26 only where forcing says the example pays (+1 bit)": {
+    "models": 5,
+    "n": 10,
+    "mean": {
+     "qwen3-0.6b-base": 28.654660239618334,
+     "qwen3-1.7b-base": 28.997935583052534,
+     "qwen3-4b-base": 21.134310331866264,
+     "qwen3-8b-base": 16.007910097221064,
+     "qwen3-14b-base": 15.966011177271392
+    },
+    "spearman_hybrid": 0.9746794344808964,
+    "spearman_final": 0.9746794344808964,
+    "spearman_all": 0.9404032585917882,
+    "auroc": 0.5358333333333334,
+    "auroc_pairs": 4,
+    "retest_spearman": 0.8374075497070407,
+    "retest_mad": 4.968585395127784
    }
   },
   "imo": {
@@ -93005,10 +93031,10 @@
   },
   {
    "kind": "new",
-   "status": "running",
+   "status": "done",
    "idea": "Pointer injection into a public library",
    "why": "The teacher's message is an index into a fixed library of solved tasks (tau-bench's train split with gold actions, AoPS/MATH solutions, the other terminal-bench tasks): log2 |library| bits buy a complete worked example in context. Cheap whenever the student can transfer a pattern (tau exchange/return flows, file-recovery scripts). First on tau-bench (v26): 295 train-split sessions, a pointer costs 8.2 bits; the teacher points at the shortlisted example that makes its own trajectory cheapest for the student, then v19g.",
-   "result": ""
+   "result": "tau (v26): Qwen3-0.6B 35.4 -> 27.7 bits/task, 1.7B 34.1 -> 28.8; 4B unchanged; 8B and 14B worse (14.9 -> 18.6): the pointer costs 8.2 bits and a worked session saves more only for students below ~4B. Sending it only where forcing says it pays (+1 bit) keeps most of the gain for weak students and narrows the loss for strong ones."
   },
   {
    "kind": "new",
@@ -93138,8 +93164,8 @@
    {
     "label": "23d-mid",
     "done": 61,
-    "failed": 0,
-    "running": 1,
+    "failed": 1,
+    "running": 0,
     "waiting": 0
    },
    {
@@ -93214,26 +93240,22 @@
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
-    "done": 73,
+    "done": 79,
     "failed": 0,
-    "running": 16,
-    "waiting": 211
+    "running": 15,
+    "waiting": 206
    }
   ],
   "total": {
-   "done": 1075,
-   "failed": 1,
-   "running": 18,
-   "waiting": 211
+   "done": 1081,
+   "failed": 2,
+   "running": 16,
+   "waiting": 206
   },
   "nodes": [
    {
     "node": "H200 node 1",
-    "running": 1
-   },
-   {
-    "node": "H200 node 2",
-    "running": 17
+    "running": 16
    }
   ]
  },
@@ -94297,5 +94319,5 @@
    }
   ]
  },
- "content_digest": "b40c922018d8b77fccb1c107fbbd7efd104a177a35af3e4a6ad9de577fbcd419"
+ "content_digest": "4f364039f4c1e354d199f014860c0c79c713c00789725344bacee92b71a788a1"
 }
