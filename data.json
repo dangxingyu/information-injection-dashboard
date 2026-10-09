@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791576535.7415278,
- "generated_label": "2026-10-09 16:08 EDT",
+ "generated_at": 1791577443.8735058,
+ "generated_label": "2026-10-09 16:24 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -24574,31 +24574,34 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 5,
-   "status": "queued",
+   "shards_queued": 4,
+   "status": "running",
    "created_at": 1791497942.26289,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 19688,
+   "tokens_scored": 616,
+   "gpu_hours": 0.0753,
+   "load_hours": 0.0128,
+   "tasks": 2,
+   "records": 4,
+   "success_rate": 0.75,
+   "mean_bits": 126.002752,
+   "median_bits": 126.002752,
+   "mean_forced_bits": 120.377531,
+   "mean_forced_tokens": 105.25,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 130.25,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "eos": 1,
+    "success": 3
+   }
   },
   {
    "name": "fe-tb-v20g-qwen2.5-0.5b",
@@ -24617,31 +24620,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 0,
+   "shards_done": 3,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 5,
-   "status": "queued",
+   "shards_queued": 2,
+   "status": "running",
    "created_at": 1791497941.8950534,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 293521,
+   "tokens_scored": 7052,
+   "gpu_hours": 0.6053,
+   "load_hours": 0.0312,
+   "tasks": 6,
+   "records": 12,
+   "success_rate": 1.0,
+   "mean_bits": 124.630513,
+   "median_bits": 94.77997,
+   "mean_forced_bits": 104.935873,
+   "mean_forced_tokens": 79.333333,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 276.166667,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 12
+   }
   },
   {
    "name": "fe-tb-v20f-qwen2.5-0.5b",
@@ -24659,32 +24664,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 2,
+   "shards_done": 5,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 3,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791497941.4501944,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 146721,
-   "tokens_scored": 1837,
-   "gpu_hours": 0.3254,
-   "load_hours": 0.0208,
-   "tasks": 4,
-   "records": 8,
+   "tokens_generated": 822213,
+   "tokens_scored": 19966,
+   "gpu_hours": 1.3823,
+   "load_hours": 0.0516,
+   "tasks": 10,
+   "records": 20,
    "success_rate": 1.0,
-   "mean_bits": 137.060857,
-   "median_bits": 90.619236,
-   "mean_forced_bits": 124.283148,
-   "mean_forced_tokens": 89.75,
+   "mean_bits": 152.742567,
+   "median_bits": 133.232545,
+   "mean_forced_bits": 133.356801,
+   "mean_forced_tokens": 124.6,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 284.0,
+   "mean_tokens": 696.75,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 8
+    "success": 20
    }
   },
   {
@@ -95913,6 +95918,13 @@
     "waiting": 0
    },
    {
+    "label": "00c-tbhard-verify1",
+    "done": 1,
+    "failed": 0,
+    "running": 0,
+    "waiting": 0
+   },
+   {
     "label": "tau-bench \u00b7 force each teacher variant",
     "done": 60,
     "failed": 0,
@@ -96033,17 +96045,17 @@
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
-    "done": 182,
+    "done": 189,
     "failed": 0,
     "running": 8,
-    "waiting": 110
+    "waiting": 103
    }
   ],
   "total": {
-   "done": 1307,
+   "done": 1315,
    "failed": 2,
    "running": 8,
-   "waiting": 110
+   "waiting": 103
   },
   "nodes": [
    {
@@ -97116,5 +97128,5 @@
    }
   ]
  },
- "content_digest": "7c9f3f735cb77dec0ae4c7f4b456465b93e05f59c2e1a436a6fb32a68f2e53f1"
+ "content_digest": "3aed8cff9ee6c08440bc8bd43ca0ec6e4eb58b7cf546b249d14863d23771edf3"
 }
