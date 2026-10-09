@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791531152.4163415,
- "generated_label": "2026-10-09 03:32 EDT",
+ "generated_at": 1791532975.532778,
+ "generated_label": "2026-10-09 04:02 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -1306,31 +1306,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 1,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791528209.2117133,
    "git_commit": "da3e794612",
    "snapshot": "d581cf0535e7",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 254385,
+   "tokens_scored": 2216,
+   "gpu_hours": 1.0612,
+   "load_hours": 0.0126,
+   "tasks": 7,
+   "records": 14,
+   "success_rate": 1.0,
+   "mean_bits": 154.275854,
+   "median_bits": 129.616044,
+   "mean_forced_bits": 154.275854,
+   "mean_forced_tokens": 79.142857,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 81.142857,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 14
+   }
   },
   {
    "name": "fe-tb-v19g3-delphi-9e19",
@@ -18194,31 +18196,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
-   "status": "queued",
+   "shards_queued": 2,
+   "status": "running",
    "created_at": 1791498263.9504802,
    "git_commit": "3ac1b26fa8",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 20412626,
+   "tokens_scored": 99052,
+   "gpu_hours": 2.521,
+   "load_hours": 0.0494,
+   "tasks": 200,
+   "records": 200,
+   "success_rate": 1.0,
+   "mean_bits": 22.697909,
+   "median_bits": 17.596795,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 5.69,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 199.73,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 200
+   }
   },
   {
    "name": "fe-imo-sir-delphi-1e23",
@@ -88917,7 +88921,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791530899.02915,
+  "generated_at": 1791532709.9985952,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -90277,7 +90281,7 @@
      "delphi-2e19": 431.4347651813664,
      "delphi-3e19": 400.27858093718,
      "delphi-9e19": 343.73043964919367,
-     "delphi-2e20": 322.9002754024173,
+     "delphi-2e20": 211.07464375094588,
      "delphi-3e20": 297.33444021548473,
      "delphi-1e21": 250.95295775963456,
      "delphi-1e22": 187.70673560481558,
@@ -90309,20 +90313,20 @@
      431.4347651813664,
      400.27858093718,
      343.73043964919367,
-     322.9002754024173,
+     211.07464375094588,
      297.33444021548473,
      250.95295775963456,
      187.70673560481558,
      141.23415793108362
     ],
-    "delphi_spearman": -1.0,
+    "delphi_spearman": -0.9636363636363636,
     "spearman_hybrid": 0.9856107606091623,
     "spearman_final": 0.841688030366323,
     "spearman_all": 0.7784021339037035,
     "auroc": 0.8193121693121693,
     "auroc_pairs": 9,
-    "retest_spearman": 0.9843949630760253,
-    "retest_mad": 6.286404630209425
+    "retest_spearman": 0.98463738187695,
+    "retest_mad": 6.0002729280076945
    },
    "teacher subgoals (v20f)": {
     "models": 0
@@ -90958,10 +90962,10 @@
    },
    {
     "label": "23h-answer-step",
-    "done": 0,
+    "done": 1,
     "failed": 0,
-    "running": 21,
-    "waiting": 9
+    "running": 25,
+    "waiting": 4
    },
    {
     "label": "23i-rel-sample",
@@ -90972,9 +90976,9 @@
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
-    "done": 245,
+    "done": 247,
     "failed": 0,
-    "running": 6,
+    "running": 4,
     "waiting": 69
    },
    {
@@ -90986,10 +90990,10 @@
    }
   ],
   "total": {
-   "done": 828,
+   "done": 831,
    "failed": 2,
-   "running": 28,
-   "waiting": 395
+   "running": 30,
+   "waiting": 390
   },
   "nodes": [
    {
@@ -90998,7 +91002,7 @@
    },
    {
     "node": "H200 node 2",
-    "running": 14
+    "running": 16
    }
   ]
  },
@@ -92062,5 +92066,5 @@
    }
   ]
  },
- "content_digest": "035d494de7a1050de43d0111e5ded09c8fb87933f8712c3ef48de062530b9687"
+ "content_digest": "c51c0170d27eb523ba8dad031eb3f2ceb47ec5620aacc35c1825e6c8c42b9b52"
 }
