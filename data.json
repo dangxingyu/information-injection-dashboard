@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791561106.1032476,
- "generated_label": "2026-10-09 11:51 EDT",
+ "generated_at": 1791562016.1441805,
+ "generated_label": "2026-10-09 12:06 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -85523,7 +85523,7 @@
   ]
  },
  "fleet": {
-  "expected_gpus": 40,
+  "expected_gpus": 32,
   "stale_after_s": 120.0,
   "totals": {
    "busy": 0,
@@ -85531,7 +85531,7 @@
    "idle": 0,
    "stale": 0,
    "reported": 0,
-   "unreported": 40
+   "unreported": 32
   },
   "queue": {
    "pending": 0,
@@ -85541,17 +85541,8 @@
   },
   "nodes": [],
   "holdings": {
-   "allocations": [
-    {
-     "kind": "H200",
-     "gpus": 8,
-     "state": "standby",
-     "label": "ailab (ailab-mg-lane)"
-    }
-   ],
-   "totals": {
-    "h200_standby": 8
-   }
+   "allocations": [],
+   "totals": {}
   }
  },
  "study_b": {
@@ -94453,5 +94444,5 @@
    }
   ]
  },
- "content_digest": "f0604b6b22d8deb6db2fd1747f2570b4decead3b0a2379f1bc618bc2cfd3d123"
+ "content_digest": "f72266caa45bf7843c31b33f7efc9f09c92a7c799600cd69dd4d144a73325734"
 }
