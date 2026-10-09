@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791532975.532778,
- "generated_label": "2026-10-09 04:02 EDT",
+ "generated_at": 1791533884.8167703,
+ "generated_label": "2026-10-09 04:18 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -18196,32 +18196,32 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 2,
+   "shards_done": 4,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791498263.9504802,
    "git_commit": "3ac1b26fa8",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 20412626,
-   "tokens_scored": 99052,
-   "gpu_hours": 2.521,
-   "load_hours": 0.0494,
-   "tasks": 200,
-   "records": 200,
+   "tokens_generated": 41150935,
+   "tokens_scored": 199600,
+   "gpu_hours": 5.462,
+   "load_hours": 0.1012,
+   "tasks": 400,
+   "records": 400,
    "success_rate": 1.0,
-   "mean_bits": 22.697909,
-   "median_bits": 17.596795,
+   "mean_bits": 22.009097,
+   "median_bits": 16.618814,
    "mean_forced_bits": 0.0,
-   "mean_forced_tokens": 5.69,
+   "mean_forced_tokens": 5.7575,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 199.73,
+   "mean_tokens": 193.4375,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 200
+    "success": 400
    }
   },
   {
@@ -90964,8 +90964,8 @@
     "label": "23h-answer-step",
     "done": 1,
     "failed": 0,
-    "running": 25,
-    "waiting": 4
+    "running": 28,
+    "waiting": 1
    },
    {
     "label": "23i-rel-sample",
@@ -90976,9 +90976,9 @@
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
-    "done": 247,
+    "done": 249,
     "failed": 0,
-    "running": 4,
+    "running": 2,
     "waiting": 69
    },
    {
@@ -90990,15 +90990,15 @@
    }
   ],
   "total": {
-   "done": 831,
+   "done": 833,
    "failed": 2,
-   "running": 30,
-   "waiting": 390
+   "running": 31,
+   "waiting": 387
   },
   "nodes": [
    {
     "node": "H200 node 1",
-    "running": 14
+    "running": 15
    },
    {
     "node": "H200 node 2",
@@ -92066,5 +92066,5 @@
    }
   ]
  },
- "content_digest": "c51c0170d27eb523ba8dad031eb3f2ceb47ec5620aacc35c1825e6c8c42b9b52"
+ "content_digest": "1842408a374dc4ed886a9914aa779ef5646410a3344490585e763e88e4fd0420"
 }
