@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791522994.8928907,
- "generated_label": "2026-10-09 01:16 EDT",
+ "generated_at": 1791523896.047568,
+ "generated_label": "2026-10-09 01:31 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -389,31 +389,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791522189.616524,
    "git_commit": "b9ab6345ab",
    "snapshot": "a651553941c8",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 339777,
+   "tokens_scored": 7859,
+   "gpu_hours": 0.115,
+   "load_hours": 0.2036,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 1.0,
+   "mean_bits": 23.492026,
+   "median_bits": 24.612222,
+   "mean_forced_bits": 17.192912,
+   "mean_forced_tokens": 106.6,
+   "mean_select_blocks": 2.75,
+   "mean_free_blocks": 2.65,
+   "mean_tokens": 2492.7,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 20
+   }
   },
   {
    "name": "fe-tb-v24-qwen3-4b-base",
@@ -623,32 +625,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 4,
+   "shards_done": 5,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791515727.3991196,
    "git_commit": "907adaef48",
    "snapshot": "edd1e6c6bf50",
-   "tokens_generated": 320271,
-   "tokens_scored": 5915,
-   "gpu_hours": 2.0688,
-   "load_hours": 0.2729,
-   "tasks": 8,
-   "records": 16,
+   "tokens_generated": 429272,
+   "tokens_scored": 8598,
+   "gpu_hours": 2.5307,
+   "load_hours": 0.3246,
+   "tasks": 10,
+   "records": 20,
    "success_rate": 1.0,
-   "mean_bits": 94.746967,
+   "mean_bits": 93.120296,
    "median_bits": 102.24533,
-   "mean_forced_bits": 0.186393,
-   "mean_forced_tokens": 6.0625,
+   "mean_forced_bits": 0.154218,
+   "mean_forced_tokens": 6.05,
    "mean_select_blocks": 0.0,
-   "mean_free_blocks": 2.25,
-   "mean_tokens": 387.0625,
+   "mean_free_blocks": 2.0,
+   "mean_tokens": 340.6,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 16
+    "success": 20
    }
   },
   {
@@ -86137,7 +86139,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791521088.44889,
+  "generated_at": 1791523349.3062487,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -87291,18 +87293,24 @@
     "retest_mad": 3.7034760308067285
    },
    "v21 with 64 proposals per line": {
-    "models": 3,
+    "models": 7,
     "n": 10,
     "mean": {
      "delphi-2e20": 304.59000910143646,
+     "delphi-1e21": 242.712798453767,
+     "qwen3-0.6b-base": 135.42325802620917,
      "qwen3-1.7b-base": 110.8640795252271,
-     "qwen3-4b-base": 94.71519867780478
+     "qwen3-4b-base": 94.71519867780478,
+     "qwen3-8b-base": 93.05241201151922,
+     "smollm2-135m": 249.31134370023398
     },
-    "spearman_all": 1.0,
-    "auroc": 0.8783068783068783,
-    "auroc_pairs": 3,
-    "retest_spearman": 0.9995550611790879,
-    "retest_mad": 3.553049465437475
+    "spearman_hybrid": 1.0,
+    "spearman_final": 0.9746794344808964,
+    "spearman_all": 0.985184366143778,
+    "auroc": 0.8670634920634921,
+    "auroc_pairs": 4,
+    "retest_spearman": 0.9981104015396728,
+    "retest_mad": 3.4648932817678073
    },
    "force cheapest of teacher, benchmark, peers": {
     "models": 30,
@@ -87441,17 +87449,27 @@
     "retest_mad": 6.623877266828017
    },
    "per-turn importance sampling (v23)": {
-    "models": 2,
+    "models": 7,
     "n": 10,
     "mean": {
+     "delphi-2e20": 311.912101408869,
+     "delphi-3e20": 302.1180469136036,
+     "delphi-1e21": 250.6779363285977,
+     "qwen3-0.6b-base": 140.7140437085818,
      "qwen3-1.7b-base": 115.82526823186774,
-     "qwen3-4b-base": 102.3232530245407
+     "qwen3-4b-base": 102.3232530245407,
+     "qwen3-8b-base": 93.12029593245944
     },
+    "spearman_hybrid": 1.0,
+    "spearman_final": 1.0,
     "spearman_all": 1.0,
-    "auroc": 0.8095238095238095,
-    "auroc_pairs": 3,
-    "retest_spearman": 0.9654135338345865,
-    "retest_mad": 5.705266910310833
+    "auroc": 0.8258928571428571,
+    "auroc_pairs": 4,
+    "retest_spearman": 0.9890123348788382,
+    "retest_mad": 6.86754847854017
+   },
+   "v19g, forcing the cheapest privileged variant (v24)": {
+    "models": 0
    }
   },
   "tau": {
@@ -87665,20 +87683,34 @@
     "retest_mad": 4.18256776820787
    },
    "per-turn importance sampling (v23)": {
-    "models": 3,
+    "models": 4,
     "n": 10,
     "mean": {
      "qwen3-0.6b-base": 36.52938721088451,
      "qwen3-1.7b-base": 35.41963193112185,
-     "qwen3-4b-base": 24.873212004003975
+     "qwen3-4b-base": 24.873212004003975,
+     "qwen3-8b-base": 16.200123704719353
     },
-    "spearman_hybrid": 0.8660254037844387,
-    "spearman_final": 0.8660254037844387,
-    "spearman_all": 0.8888888888888888,
-    "auroc": 0.5,
+    "spearman_hybrid": 0.9486832980505138,
+    "spearman_final": 0.9486832980505138,
+    "spearman_all": 0.8922178162191939,
+    "auroc": 0.56,
+    "auroc_pairs": 3,
+    "retest_spearman": 0.9205723759957897,
+    "retest_mad": 3.7038645033950424
+   },
+   "v19g, forcing the cheapest privileged variant (v24)": {
+    "models": 2,
+    "n": 10,
+    "mean": {
+     "qwen3-1.7b-base": 35.03015712469506,
+     "qwen3-4b-base": 23.49202635012672
+    },
+    "spearman_all": 0.8660254037844387,
+    "auroc": 0.5208333333333334,
     "auroc_pairs": 2,
-    "retest_spearman": 0.9506117908787541,
-    "retest_mad": 3.175173345865663
+    "retest_spearman": 0.8917293233082707,
+    "retest_mad": 3.2591152543658515
    }
   },
   "imo": {
@@ -87787,7 +87819,9 @@
     "spearman_final": 0.9127517994887299,
     "spearman_all": 0.8852148490954105,
     "auroc": 0.8507121964878657,
-    "auroc_pairs": 28
+    "auroc_pairs": 28,
+    "retest_spearman": 0.9599350077109495,
+    "retest_mad": 2.4950474782171406
    }
   }
  },
@@ -87961,16 +87995,16 @@
    },
    {
     "label": "23e-sirturn",
-    "done": 42,
+    "done": 43,
     "failed": 0,
-    "running": 1,
+    "running": 0,
     "waiting": 0
    },
    {
     "label": "23f-v24",
-    "done": 2,
+    "done": 4,
     "failed": 0,
-    "running": 29,
+    "running": 27,
     "waiting": 12
    },
    {
@@ -87989,19 +88023,19 @@
    }
   ],
   "total": {
-   "done": 713,
+   "done": 716,
    "failed": 2,
-   "running": 36,
+   "running": 33,
    "waiting": 422
   },
   "nodes": [
    {
     "node": "H200 node 1",
-    "running": 17
+    "running": 16
    },
    {
     "node": "H200 node 2",
-    "running": 19
+    "running": 17
    }
   ]
  },
@@ -89065,5 +89099,5 @@
    }
   ]
  },
- "content_digest": "4d89f0194e387c2e89ebb180a4fcf3b87934061588455cc91b7b06080b711068"
+ "content_digest": "72ea5b2913cc5aca4736bec82625bebda163f6be7e0387d3c36001a8d5105ce0"
 }
