@@ -81,7 +81,7 @@ function renderIdeas() {
   const order = {running: 0, next: 1, ongoing: 2, planned: 3, idea: 4, done: 5, negative: 6};
   $('ideas-table').innerHTML = !rows.length ? '<tr><td class="muted">None listed.</td></tr>' :
     '<thead><tr><th>idea</th><th>why</th><th>status</th><th>result</th></tr></thead><tbody>' +
-    [...rows].sort((a, b) => (order[a.status] ?? 9) - (order[b.status] ?? 9)).map(r => `<tr><td><b>${esc(r.idea)}</b></td><td class="muted" style="max-width:520px">${esc(r.why)}</td><td>${esc(r.status)}</td><td>${esc(r.result || '–')}</td></tr>`).join('') + '</tbody>';
+    [...rows].sort((a, b) => (b.kind === 'new') - (a.kind === 'new') || (order[a.status] ?? 9) - (order[b.status] ?? 9)).map(r => `<tr><td>${r.kind === 'new' ? '<span class="pill">new direction</span><br>' : ''}<b>${esc(r.idea)}</b></td><td class="muted" style="max-width:520px">${esc(r.why)}</td><td>${esc(r.status)}</td><td>${esc(r.result || '–')}</td></tr>`).join('') + '</tbody>';
 }
 
 /* ------------------------------------------------------------------ fleet */
@@ -523,6 +523,7 @@ function renderFinalEval() {
     cm.map(m => `<tr><td>${esc(m)}</td>${['aime25', 'imoab'].map(s => { const c = con[m][s]; return c ? `<td class="num">${pct(c.prefers_gold)} <small>(${c.n})</small></td><td class="num">${pct(c.prefers_gold_unsolved)} <small>(${c.n_unsolved})</small></td>` : '<td class="num muted">–</td><td class="num muted">–</td>'; }).join('')}</tr>`).join('') + '</tbody>';
   const v = String(data.content_digest).slice(0, 12);  // new URL per snapshot: no stale cached figure
   const img = n => `<figure class="panel pad"><img src="figures/${esc(n)}?d=${v}" alt="${esc(n)}" style="max-width:100%"></figure>`;
-  $('fe-figures').innerHTML = (f.figures || []).filter(n => !n.startsWith('progress-')).map(img).join('');
+  $('fe-figures').innerHTML = (f.figures || []).filter(n => !n.startsWith('progress-') && n !== 'final-progress.png').map(img).join('');
+  $('progress-fig').innerHTML = (f.figures || []).filter(n => n === 'final-progress.png').map(img).join('') || '<p class="muted">Figure pending.</p>';
   $('lh-figure').innerHTML = (f.figures || []).filter(n => n === 'progress-lh-totals.png').map(img).join('');
 }

@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791508474.761863,
- "generated_label": "2026-10-08 21:14 EDT",
+ "generated_at": 1791508947.8080997,
+ "generated_label": "2026-10-08 21:22 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -1821,31 +1821,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
-   "status": "queued",
+   "shards_queued": 3,
+   "status": "running",
    "created_at": 1791498285.6105716,
    "git_commit": "3e2a97d570",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 8253158,
+   "tokens_scored": 37273,
+   "gpu_hours": 0.1516,
+   "load_hours": 0.0147,
+   "tasks": 8,
+   "records": 8,
+   "success_rate": 1.0,
+   "mean_bits": 14.290808,
+   "median_bits": 13.983601,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 3.625,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 260.75,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 8
+   }
   },
   {
    "name": "fe-aime-sir4k-delphi-1e23",
@@ -1950,31 +1952,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
-   "status": "queued",
+   "shards_queued": 2,
+   "status": "running",
    "created_at": 1791498284.4235086,
    "git_commit": "3e2a97d570",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 17337338,
+   "tokens_scored": 63168,
+   "gpu_hours": 0.5258,
+   "load_hours": 0.0533,
+   "tasks": 15,
+   "records": 15,
+   "success_rate": 1.0,
+   "mean_bits": 15.539732,
+   "median_bits": 16.024278,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 2.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 157.2,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 15
+   }
   },
   {
    "name": "fe-aime-sir4k-delphi-3e20",
@@ -1993,32 +1997,32 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 1,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 3,
+   "shards_queued": 2,
    "status": "running",
    "created_at": 1791498284.0386672,
    "git_commit": "3e2a97d570",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 10079388,
-   "tokens_scored": 35540,
-   "gpu_hours": 0.2388,
-   "load_hours": 0.0269,
-   "tasks": 8,
-   "records": 8,
+   "tokens_generated": 19831075,
+   "tokens_scored": 66594,
+   "gpu_hours": 0.4589,
+   "load_hours": 0.1267,
+   "tasks": 15,
+   "records": 15,
    "success_rate": 1.0,
-   "mean_bits": 14.451101,
-   "median_bits": 13.743895,
+   "mean_bits": 15.291582,
+   "median_bits": 16.134148,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 2.0,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 138.0,
+   "mean_tokens": 140.6,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 8
+    "success": 15
    }
   },
   {
@@ -7506,36 +7510,36 @@
    "runs": 32,
    "limit": 0,
    "shards": 4,
-   "shards_done": 2,
+   "shards_done": 3,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
+   "shards_queued": 1,
    "status": "running",
    "created_at": 1791497899.7341552,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 141236,
+   "tokens_generated": 201702,
    "tokens_scored": 0,
-   "gpu_hours": 0.2336,
-   "load_hours": 0.0818,
-   "tasks": 10,
-   "records": 320,
-   "success_rate": 0.05625,
+   "gpu_hours": 0.3703,
+   "load_hours": 0.1236,
+   "tasks": 15,
+   "records": 480,
+   "success_rate": 0.041667,
    "mean_bits": 0.0,
    "median_bits": 0.0,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 0.0,
    "mean_select_blocks": 0.0,
-   "mean_free_blocks": 15.325,
-   "mean_tokens": 1130.39375,
+   "mean_free_blocks": 15.454167,
+   "mean_tokens": 1145.01875,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "budget": 102,
-    "empty": 31,
-    "eos": 112,
-    "finished": 57,
-    "success": 18
+    "budget": 160,
+    "empty": 48,
+    "eos": 167,
+    "finished": 85,
+    "success": 20
    }
   },
   {
@@ -74804,12 +74808,13 @@
    }
   },
   "figures": [
+   "final-progress.png",
    "final-delphi.png",
    "final-aime-sir.png",
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791507561.8727422,
+  "generated_at": 1791508942.882425,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -75733,10 +75738,14 @@
     "auroc_pairs": 15
    },
    "answer_sir, M = 4096": {
-    "models": 2,
+    "models": 6,
     "mean": {
      "delphi-3e18": 22.057828243311874,
-     "delphi-9e18": 20.4177132725842
+     "delphi-9e18": 20.4177132725842,
+     "delphi-2e19": 19.065112115927814,
+     "delphi-3e19": 17.416150103684878,
+     "delphi-9e19": 17.013715671819288,
+     "delphi-2e20": 15.767558587479032
     },
     "auroc": null,
     "auroc_pairs": 0
@@ -76063,6 +76072,9 @@
    },
    "teacher subgoals + lookahead (v20g)": {
     "models": 0
+   },
+   "privileged-proposal importance sampling (v22)": {
+    "models": 0
    }
   },
   "tau": {
@@ -76256,6 +76268,9 @@
     "auroc_pairs": 5,
     "retest_spearman": 0.9432653855397777,
     "retest_mad": 4.866049967020254
+   },
+   "privileged-proposal importance sampling (v22)": {
+    "models": 0
    }
   },
   "imo": {
@@ -76314,7 +76329,7 @@
     "auroc_pairs": 30
    },
    "answer_sir (own correct forms)": {
-    "models": 26,
+    "models": 28,
     "n": 400,
     "mean": {
      "delphi-3e18": 39.05499353803727,
@@ -76332,6 +76347,7 @@
      "qwen3-8b-base": 17.38837187649715,
      "qwen3-14b-base": 16.41320447563316,
      "olmo2-1b-main": 22.62031918402506,
+     "olmo2-7b": 21.367269352143268,
      "qwen2.5-0.5b": 21.662673356904275,
      "qwen2.5-1.5b": 18.835077980027386,
      "qwen2.5-3b": 18.209560526431797,
@@ -76342,17 +76358,67 @@
      "llama3.1-8b": 20.81441059682903,
      "marin-8b-base": 19.304515101190713,
      "smollm2-135m": 26.63827020637224,
-     "smollm2-360m": 24.345107585920022
+     "smollm2-360m": 24.345107585920022,
+     "smollm2-1.7b": 23.114441553022182
     },
     "spearman_hybrid": 1.0,
-    "spearman_final": 0.9,
-    "spearman_all": 0.8750987171923909,
-    "auroc": 0.8462229330304577,
-    "auroc_pairs": 24
+    "spearman_final": 0.9127517994887299,
+    "spearman_all": 0.8852148490954105,
+    "auroc": 0.8507121964878657,
+    "auroc_pairs": 28
    }
   }
  },
  "ideas": [
+  {
+   "kind": "new",
+   "status": "running",
+   "idea": "Sum over solutions, not one solution: privileged-proposal importance sampling (v22)",
+   "why": "The cost to certify is -log2 alpha, alpha = the total probability of the student's successful trajectories; forcing a teacher trajectory certifies one of them, and every long program has many equivalent ones (names, formatting, order). Here the teacher never writes in the transcript: the student sees the teacher's trajectory as a private reference and writes 32 whole episodes of its own; each successful one is weighted P(actions)/q(actions) (scored with and without the reference) and the cost is -log2 of the mean weight, plus one forced-teacher particle as a floor. Certified by the auxiliary-variable bound (as answer_sir); tends to -log2 alpha itself as the proposal covers the student's successes. Running on the mid-size students.",
+   "result": ""
+  },
+  {
+   "kind": "new",
+   "status": "next",
+   "idea": "The post-trained release as the proposal",
+   "why": "Sample episodes and solutions from the release (Instruct / RL model), weight each success by P_base / P_release: an importance-sampling estimate of the base model's own -log2 alpha that needs no teacher text at all, efficient exactly where post-training made the task easy. The weights also say, task by task, how many bits post-training moved the base, which is Study B's question measured directly.",
+   "result": ""
+  },
+  {
+   "kind": "new",
+   "status": "idea",
+   "idea": "Twisted SMC per turn with a learned success probe",
+   "why": "v22 weights whole episodes, so weights collapse on long ones. Resampling particles after every turn (sequential Monte Carlo) keeps them alive; the twist is a value probe on the student's own hidden states, trained on its rollouts of other tasks, predicting success. Any twist keeps the estimate certified; a good one makes it approach -log2 alpha with few particles.",
+   "result": ""
+  },
+  {
+   "kind": "new",
+   "status": "idea",
+   "idea": "Two-level self-search: the student writes its own plans",
+   "why": "The student drafts K plans ('Plan:'), the oracle picks the plan under which it succeeds most (log2 K bits), then rejection sampling under that plan. Costs log2 K - log2 alpha_plan instead of -log2 alpha: knowledge the student can state but rarely acts on becomes cheap.",
+   "result": ""
+  },
+  {
+   "kind": "new",
+   "status": "idea",
+   "idea": "Pointer injection into a public library",
+   "why": "The teacher's message is an index into a fixed library of solved tasks (tau-bench's train split with gold actions, AoPS/MATH solutions, the other terminal-bench tasks): log2 |library| bits buy a complete worked example in context. Cheap whenever the student can transfer a pattern (tau exchange/return flows, file-recovery scripts).",
+   "result": ""
+  },
+  {
+   "kind": "new",
+   "status": "idea",
+   "idea": "Paid decoding reshaping",
+   "why": "Sample from a tilted law (temperature below 1, min-p) and pay its exact log-ratio per token. Strong students solve far more often at low temperature, so the tilt's price plus rejection can undercut -log2 alpha at temperature 1, and the trade-off itself is a measurement of how peaked the student's competence is.",
+   "result": ""
+  },
+  {
+   "kind": "new",
+   "status": "idea",
+   "idea": "A learned injector",
+   "why": "Train a small policy, by RL across many tasks, that decides when to intervene and what to inject so as to minimize certified bits; the protocols so far are hand-designed rules.",
+   "result": ""
+  },
   {
    "idea": "answer_sir on IMO-AnswerBench, counting the student's own correct answer forms",
    "why": "IMO costs are still the forced answer sentence after \"Solution:\" (as AIME was: 32 -> 15 bits there, Delphi curve no longer turning up, cross-family Spearman 0.40 -> 0.70); IMO answers are expressions written many ways, so a slot also counts the solution's own answer when math_verify says it is right",
@@ -76426,7 +76492,7 @@
     "label": "setup steps",
     "done": 5,
     "failed": 1,
-    "running": 0,
+    "running": 1,
     "waiting": 2
    },
    {
@@ -76438,10 +76504,10 @@
    },
    {
     "label": "peer episodes \u00b7 12 stronger bases unaided, 32 runs on all 20 tasks",
-    "done": 46,
+    "done": 47,
     "failed": 0,
     "running": 1,
-    "waiting": 1
+    "waiting": 0
    },
    {
     "label": "tau-bench \u00b7 per turn on each student's cheapest variant (v19g)",
@@ -76452,10 +76518,10 @@
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
-    "done": 137,
+    "done": 141,
     "failed": 0,
     "running": 22,
-    "waiting": 161
+    "waiting": 157
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
@@ -76466,15 +76532,15 @@
    }
   ],
   "total": {
-   "done": 306,
+   "done": 311,
    "failed": 1,
-   "running": 23,
-   "waiting": 466
+   "running": 24,
+   "waiting": 461
   },
   "nodes": [
    {
     "node": "H200 node 1",
-    "running": 10
+    "running": 11
    },
    {
     "node": "H200 node 2",
@@ -77542,5 +77608,5 @@
    }
   ]
  },
- "content_digest": "74fb20b86dcb9421691e61ce6413428a89c00de90b096e0264345244a97bb584"
+ "content_digest": "614abbb40517d2e6aa9344635c00578f4f205851959aa8fd42b8b7f38b7fc287"
 }
