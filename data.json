@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791519364.691495,
- "generated_label": "2026-10-09 00:16 EDT",
+ "generated_at": 1791520265.8491364,
+ "generated_label": "2026-10-09 00:31 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -531,31 +531,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 0,
+   "shards_done": 5,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 5,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791515723.8241642,
    "git_commit": "907adaef48",
    "snapshot": "edd1e6c6bf50",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 340736,
+   "tokens_scored": 10381,
+   "gpu_hours": 2.1853,
+   "load_hours": 0.3291,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 1.0,
+   "mean_bits": 115.825268,
+   "median_bits": 108.947094,
+   "mean_forced_bits": 0.162275,
+   "mean_forced_tokens": 8.2,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 380.45,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 20
+   }
   },
   {
    "name": "fe-tb-v19g2-qwen3-30b-a3b-base",
@@ -14936,32 +14938,32 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 3,
+   "shards_done": 4,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791498263.5241923,
    "git_commit": "3ac1b26fa8",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 30942461,
-   "tokens_scored": 154406,
-   "gpu_hours": 12.3259,
-   "load_hours": 0.288,
-   "tasks": 300,
-   "records": 300,
+   "tokens_generated": 41146849,
+   "tokens_scored": 198937,
+   "gpu_hours": 17.2839,
+   "load_hours": 0.4004,
+   "tasks": 400,
+   "records": 400,
    "success_rate": 1.0,
-   "mean_bits": 22.851519,
-   "median_bits": 17.489054,
+   "mean_bits": 22.077378,
+   "median_bits": 16.728991,
    "mean_forced_bits": 0.0,
-   "mean_forced_tokens": 5.89,
+   "mean_forced_tokens": 5.775,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 209.726667,
+   "mean_tokens": 209.3675,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 300
+    "success": 400
    }
   },
   {
@@ -80204,10 +80206,17 @@
      "gpus": 8,
      "state": "standby",
      "label": "ailab (ailab-mg-lane)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 8,
+     "state": "standby",
+     "label": "PLI slot (t3attr)"
     }
    ],
    "totals": {
-    "h200_standby": 16
+    "h200_standby": 16,
+    "h100_standby": 8
    }
   }
  },
@@ -87394,16 +87403,16 @@
    },
    {
     "label": "23e-sirturn",
-    "done": 4,
+    "done": 9,
     "failed": 0,
     "running": 25,
-    "waiting": 14
+    "waiting": 9
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
-    "done": 171,
+    "done": 172,
     "failed": 0,
-    "running": 8,
+    "running": 7,
     "waiting": 141
    },
    {
@@ -87415,15 +87424,15 @@
    }
   ],
   "total": {
-   "done": 638,
+   "done": 644,
    "failed": 2,
-   "running": 34,
-   "waiting": 455
+   "running": 33,
+   "waiting": 450
   },
   "nodes": [
    {
     "node": "H200 node 1",
-    "running": 17
+    "running": 16
    },
    {
     "node": "H200 node 2",
@@ -88491,5 +88500,5 @@
    }
   ]
  },
- "content_digest": "85cb5febefb11da763422b1243b4933c6a5902fb4825e23552787a4f457d5613"
+ "content_digest": "f5c6abe8ddba1b6e70ca71a336a593403d27f812c48562a1df45399891648cf6"
 }
