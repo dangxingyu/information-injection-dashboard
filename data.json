@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791528292.6132696,
- "generated_label": "2026-10-09 02:44 EDT",
+ "generated_at": 1791528435.487854,
+ "generated_label": "2026-10-09 02:47 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -2695,32 +2695,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 4,
+   "shards_done": 5,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791522192.3445258,
    "git_commit": "b9ab6345ab",
    "snapshot": "a651553941c8",
-   "tokens_generated": 417421,
-   "tokens_scored": 6904,
-   "gpu_hours": 2.2349,
-   "load_hours": 0.3809,
-   "tasks": 8,
-   "records": 16,
+   "tokens_generated": 522610,
+   "tokens_scored": 7490,
+   "gpu_hours": 2.9494,
+   "load_hours": 0.4856,
+   "tasks": 10,
+   "records": 20,
    "success_rate": 1.0,
-   "mean_bits": 96.301771,
+   "mean_bits": 91.358477,
    "median_bits": 101.951177,
-   "mean_forced_bits": 93.00095,
-   "mean_forced_tokens": 138.125,
-   "mean_select_blocks": 0.6875,
-   "mean_free_blocks": 1.5,
-   "mean_tokens": 417.4375,
+   "mean_forced_bits": 87.239668,
+   "mean_forced_tokens": 118.6,
+   "mean_select_blocks": 0.85,
+   "mean_free_blocks": 2.2,
+   "mean_tokens": 405.5,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 16
+    "success": 20
    }
   },
   {
@@ -83356,17 +83356,10 @@
      "gpus": 8,
      "state": "standby",
      "label": "ailab (ailab-mg-lane)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 8,
-     "state": "standby",
-     "label": "PLI slot (t3attr)"
     }
    ],
    "totals": {
-    "h200_standby": 16,
-    "h100_standby": 8
+    "h200_standby": 16
    }
   }
  },
@@ -90756,9 +90749,9 @@
    },
    {
     "label": "23f-v24",
-    "done": 42,
+    "done": 43,
     "failed": 0,
-    "running": 1,
+    "running": 0,
     "waiting": 0
    },
    {
@@ -90772,14 +90765,14 @@
     "label": "23h-answer-step",
     "done": 0,
     "failed": 0,
-    "running": 3,
-    "waiting": 27
+    "running": 6,
+    "waiting": 24
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
-    "done": 227,
+    "done": 228,
     "failed": 0,
-    "running": 24,
+    "running": 23,
     "waiting": 69
    },
    {
@@ -90791,15 +90784,15 @@
    }
   ],
   "total": {
-   "done": 808,
+   "done": 810,
    "failed": 2,
-   "running": 29,
-   "waiting": 396
+   "running": 30,
+   "waiting": 393
   },
   "nodes": [
    {
     "node": "H200 node 1",
-    "running": 14
+    "running": 15
    },
    {
     "node": "H200 node 2",
@@ -91867,5 +91860,5 @@
    }
   ]
  },
- "content_digest": "7d51750e1e98b9ece100b0e90d0204d185379c350007ecef775c72ab35f065b2"
+ "content_digest": "24fbf1f77ac28a4e4221250a63cc06e032a62c0830dc3b1597c9d671d79eaea9"
 }
