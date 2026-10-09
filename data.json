@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791581073.8934655,
- "generated_label": "2026-10-09 17:24 EDT",
+ "generated_at": 1791581976.084845,
+ "generated_label": "2026-10-09 17:39 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -24277,31 +24277,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 5,
-   "status": "queued",
+   "shards_queued": 4,
+   "status": "running",
    "created_at": 1791497944.730564,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 21412,
+   "tokens_scored": 1462,
+   "gpu_hours": 0.0816,
+   "load_hours": 0.0163,
+   "tasks": 2,
+   "records": 4,
+   "success_rate": 1.0,
+   "mean_bits": 188.584475,
+   "median_bits": 188.584475,
+   "mean_forced_bits": 185.973607,
+   "mean_forced_tokens": 105.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 155.25,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 4
+   }
   },
   {
    "name": "fe-tb-v20f-qwen2.5-math-7b",
@@ -24319,32 +24321,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 1,
+   "shards_done": 5,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791497944.3953078,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 21558,
-   "tokens_scored": 598,
-   "gpu_hours": 0.0731,
-   "load_hours": 0.0116,
-   "tasks": 2,
-   "records": 4,
-   "success_rate": 1.0,
-   "mean_bits": 188.178967,
-   "median_bits": 188.178967,
-   "mean_forced_bits": 186.098406,
-   "mean_forced_tokens": 105.0,
+   "tokens_generated": 507882,
+   "tokens_scored": 19332,
+   "gpu_hours": 1.2999,
+   "load_hours": 0.0716,
+   "tasks": 10,
+   "records": 20,
+   "success_rate": 0.95,
+   "mean_bits": 125.625083,
+   "median_bits": 98.792482,
+   "mean_forced_bits": 105.134352,
+   "mean_forced_tokens": 109.15,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 147.0,
+   "mean_tokens": 514.2,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 4
+    "eos": 1,
+    "success": 19
    }
   },
   {
@@ -24364,32 +24367,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 4,
+   "shards_done": 5,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791497944.0545566,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 213598,
-   "tokens_scored": 11694,
-   "gpu_hours": 0.7063,
-   "load_hours": 0.0502,
-   "tasks": 8,
-   "records": 16,
+   "tokens_generated": 383978,
+   "tokens_scored": 25944,
+   "gpu_hours": 1.025,
+   "load_hours": 0.0652,
+   "tasks": 10,
+   "records": 20,
    "success_rate": 1.0,
-   "mean_bits": 80.925649,
-   "median_bits": 63.453888,
-   "mean_forced_bits": 46.198676,
-   "mean_forced_tokens": 42.0,
+   "mean_bits": 81.105485,
+   "median_bits": 72.196792,
+   "mean_forced_bits": 42.619516,
+   "mean_forced_tokens": 50.9,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 603.6875,
+   "mean_tokens": 588.0,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 16
+    "success": 20
    }
   },
   {
@@ -88185,6 +88188,12 @@
    "allocations": [
     {
      "kind": "H100",
+     "gpus": 8,
+     "state": "standby",
+     "label": "PLI slot (t3attr)"
+    },
+    {
+     "kind": "H100",
      "gpus": 4,
      "state": "standby",
      "label": "PLI slot (ii-pli-worker)"
@@ -88197,7 +88206,7 @@
     }
    ],
    "totals": {
-    "h100_standby": 8
+    "h100_standby": 16
    }
   }
  },
@@ -96065,17 +96074,17 @@
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
-    "done": 220,
+    "done": 226,
     "failed": 0,
     "running": 8,
-    "waiting": 72
+    "waiting": 66
    }
   ],
   "total": {
-   "done": 1366,
+   "done": 1372,
    "failed": 2,
    "running": 8,
-   "waiting": 72
+   "waiting": 66
   },
   "nodes": [
    {
@@ -97148,5 +97157,5 @@
    }
   ]
  },
- "content_digest": "f31d424e3e20a749372f99270845f2e15d7bb71d748f86817d1481815e45c404"
+ "content_digest": "897bcca940350b6bed77dc9c6890be265780e310be3c7b3b2694f7bee17602a1"
 }
