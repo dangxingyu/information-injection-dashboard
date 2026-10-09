@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791565646.1210668,
- "generated_label": "2026-10-09 13:07 EDT",
+ "generated_at": 1791566552.9723706,
+ "generated_label": "2026-10-09 13:22 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -20534,32 +20534,32 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 3,
+   "shards_done": 4,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791498260.6729941,
    "git_commit": "3ac1b26fa8",
    "snapshot": "084fd81b2a58",
-   "tokens_generated": 21596661,
-   "tokens_scored": 187226,
-   "gpu_hours": 0.5931,
-   "load_hours": 0.3176,
-   "tasks": 300,
-   "records": 300,
+   "tokens_generated": 28839360,
+   "tokens_scored": 240714,
+   "gpu_hours": 0.7273,
+   "load_hours": 0.3353,
+   "tasks": 400,
+   "records": 400,
    "success_rate": 1.0,
-   "mean_bits": 27.629191,
-   "median_bits": 21.294385,
+   "mean_bits": 26.651244,
+   "median_bits": 19.560555,
    "mean_forced_bits": 0.0,
-   "mean_forced_tokens": 5.863333,
+   "mean_forced_tokens": 5.765,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 96.25,
+   "mean_tokens": 99.35,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 300
+    "success": 400
    }
   },
   {
@@ -22574,31 +22574,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 5,
-   "status": "queued",
+   "shards_queued": 4,
+   "status": "running",
    "created_at": 1791497908.0275762,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 22536,
+   "tokens_scored": 738,
+   "gpu_hours": 0.1115,
+   "load_hours": 0.0178,
+   "tasks": 2,
+   "records": 4,
+   "success_rate": 1.0,
+   "mean_bits": 183.595481,
+   "median_bits": 183.595481,
+   "mean_forced_bits": 179.17121,
+   "mean_forced_tokens": 107.5,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 136.5,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 4
+   }
   },
   {
    "name": "fe-tb-v20g-delphi-1e22",
@@ -85547,10 +85549,16 @@
      "gpus": 4,
      "state": "standby",
      "label": "PLI slot (ii-pli-worker)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 4,
+     "state": "standby",
+     "label": "PLI slot (ii-pli-worker)"
     }
    ],
    "totals": {
-    "h100_standby": 4
+    "h100_standby": 8
    }
   }
  },
@@ -93374,28 +93382,32 @@
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
-    "done": 319,
+    "done": 320,
     "failed": 0,
-    "running": 1,
+    "running": 0,
     "waiting": 0
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
-    "done": 122,
+    "done": 123,
     "failed": 0,
-    "running": 3,
-    "waiting": 175
+    "running": 8,
+    "waiting": 169
    }
   ],
   "total": {
-   "done": 1125,
+   "done": 1127,
    "failed": 2,
-   "running": 4,
-   "waiting": 175
+   "running": 8,
+   "waiting": 169
   },
   "nodes": [
    {
     "node": "H200 node 1",
+    "running": 4
+   },
+   {
+    "node": "H200 node 2",
     "running": 4
    }
   ]
@@ -94460,5 +94472,5 @@
    }
   ]
  },
- "content_digest": "776c9be8e51320849d71bf80c98e897311475037cd50231d88048e204372dd74"
+ "content_digest": "b28d113470adb829e7f9bd1c8942393c9ec127f306987325e0d857c5200b23d3"
 }
