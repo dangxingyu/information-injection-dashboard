@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791562016.1441805,
- "generated_label": "2026-10-09 12:06 EDT",
+ "generated_at": 1791562923.2485378,
+ "generated_label": "2026-10-09 12:22 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -91044,7 +91044,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791560572.383824,
+  "generated_at": 1791562399.5939975,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -93252,6 +93252,13 @@
     "waiting": 0
    },
    {
+    "label": "00a-tests",
+    "done": 0,
+    "failed": 0,
+    "running": 0,
+    "waiting": 1
+   },
+   {
     "label": "tau-bench \u00b7 force each teacher variant",
     "done": 60,
     "failed": 0,
@@ -93360,8 +93367,8 @@
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
     "done": 319,
     "failed": 0,
-    "running": 1,
-    "waiting": 0
+    "running": 0,
+    "waiting": 1
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
@@ -93374,15 +93381,10 @@
   "total": {
    "done": 1124,
    "failed": 2,
-   "running": 1,
-   "waiting": 178
+   "running": 0,
+   "waiting": 180
   },
-  "nodes": [
-   {
-    "node": "H200 node 1",
-    "running": 1
-   }
-  ]
+  "nodes": []
  },
  "headlines": {
   "code": [
@@ -94444,5 +94446,5 @@
    }
   ]
  },
- "content_digest": "f72266caa45bf7843c31b33f7efc9f09c92a7c799600cd69dd4d144a73325734"
+ "content_digest": "4f7b014bc7420a34b22cf2b4a2a7b98ca97351c6b35078dbe1e8fd5e7294b51e"
 }
