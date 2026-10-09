@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791559294.108515,
- "generated_label": "2026-10-09 11:21 EDT",
+ "generated_at": 1791561106.1032476,
+ "generated_label": "2026-10-09 11:51 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -91053,7 +91053,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791558730.3764932,
+  "generated_at": 1791560572.383824,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -92596,7 +92596,7 @@
     "retest_mad": 7.962882778647273
    },
    "teacher subgoals + lookahead (v20g)": {
-    "models": 11,
+    "models": 12,
     "n": 10,
     "mean": {
      "delphi-3e18": 577.4570545867629,
@@ -92607,6 +92607,7 @@
      "delphi-2e20": 313.39013629342367,
      "delphi-3e20": 301.25183010435524,
      "delphi-1e21": 244.2202777923225,
+     "delphi-1e22": 183.04515308116885,
      "qwen3-0.6b-base": 128.28592052297412,
      "qwen3-8b-base": 74.04977637626811,
      "smollm2-135m": 247.3648258442754
@@ -92615,8 +92616,8 @@
     "spearman_all": 0.8660254037844387,
     "auroc": 0.75,
     "auroc_pairs": 1,
-    "retest_spearman": 0.9979622658521741,
-    "retest_mad": 3.97793263986157
+    "retest_spearman": 0.99667338009584,
+    "retest_mad": 4.683367930014025
    },
    "privileged-proposal importance sampling (v22)": {
     "models": 7,
@@ -94452,5 +94453,5 @@
    }
   ]
  },
- "content_digest": "8d04840b8a508a260a656ce797d6c9c67df4331f48d4f61b15a7c9c44eff7d17"
+ "content_digest": "f0604b6b22d8deb6db2fd1747f2570b4decead3b0a2379f1bc618bc2cfd3d123"
 }
