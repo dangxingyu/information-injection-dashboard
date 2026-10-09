@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791528435.487854,
- "generated_label": "2026-10-09 02:47 EDT",
+ "generated_at": 1791529340.8387477,
+ "generated_label": "2026-10-09 03:02 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -41,12 +41,172 @@
   "qwen2.5-coder-0.5b": 3,
   "qwen2.5-coder-1.5b": 4,
   "qwen2.5-math-7b": 5,
-  "qwen3-14b-base": 6,
-  "qwen3-30b-a3b-base": 7,
-  "qwen3-4b-base": 0,
-  "qwen3-8b-base": 1
+  "qwen3-1.7b": 6,
+  "qwen3-14b-base": 7,
+  "qwen3-30b-a3b-base": 0,
+  "qwen3-4b": 1,
+  "qwen3-4b-base": 2,
+  "qwen3-4b-instruct-2507": 3,
+  "qwen3-8b": 4,
+  "qwen3-8b-base": 5
  },
  "experiments": [
+  {
+   "name": "fe-relfree-qwen3-8b",
+   "student": "qwen3-8b",
+   "model": "Qwen/Qwen3-8B",
+   "suite": "longhorizon",
+   "protocol": "ep-free",
+   "config": {
+    "keep_segments": true
+   },
+   "config_summary": "keep_segments=True",
+   "runs": 32,
+   "limit": 0,
+   "shards": 4,
+   "shards_done": 0,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 4,
+   "status": "queued",
+   "created_at": 1791528983.711769,
+   "git_commit": "883a50863a",
+   "snapshot": "6effea8e8017",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
+  {
+   "name": "fe-relfree-qwen3-4b-instruct-2507",
+   "student": "qwen3-4b-instruct-2507",
+   "model": "Qwen/Qwen3-4B-Instruct-2507",
+   "suite": "longhorizon",
+   "protocol": "ep-free",
+   "config": {
+    "keep_segments": true
+   },
+   "config_summary": "keep_segments=True",
+   "runs": 32,
+   "limit": 0,
+   "shards": 4,
+   "shards_done": 0,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 4,
+   "status": "queued",
+   "created_at": 1791528983.1764688,
+   "git_commit": "883a50863a",
+   "snapshot": "6effea8e8017",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
+  {
+   "name": "fe-relfree-qwen3-4b",
+   "student": "qwen3-4b",
+   "model": "Qwen/Qwen3-4B",
+   "suite": "longhorizon",
+   "protocol": "ep-free",
+   "config": {
+    "keep_segments": true
+   },
+   "config_summary": "keep_segments=True",
+   "runs": 32,
+   "limit": 0,
+   "shards": 4,
+   "shards_done": 0,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 4,
+   "status": "queued",
+   "created_at": 1791528982.7368066,
+   "git_commit": "883a50863a",
+   "snapshot": "6effea8e8017",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
+  {
+   "name": "fe-relfree-qwen3-1.7b",
+   "student": "qwen3-1.7b",
+   "model": "Qwen/Qwen3-1.7B",
+   "suite": "longhorizon",
+   "protocol": "ep-free",
+   "config": {
+    "keep_segments": true
+   },
+   "config_summary": "keep_segments=True",
+   "runs": 32,
+   "limit": 0,
+   "shards": 4,
+   "shards_done": 0,
+   "shards_running": 0,
+   "shards_failed": 0,
+   "shards_queued": 4,
+   "status": "queued",
+   "created_at": 1791528982.2329776,
+   "git_commit": "883a50863a",
+   "snapshot": "6effea8e8017",
+   "tokens_generated": 0,
+   "tokens_scored": 0,
+   "gpu_hours": 0.0,
+   "load_hours": 0.0,
+   "tasks": 0,
+   "records": 0,
+   "success_rate": null,
+   "mean_bits": null,
+   "median_bits": null,
+   "mean_forced_bits": null,
+   "mean_forced_tokens": null,
+   "mean_select_blocks": null,
+   "mean_free_blocks": null,
+   "mean_tokens": null,
+   "fallback_rate": null,
+   "mean_restarts": null,
+   "ends": {}
+  },
   {
    "name": "fe-tb-v19g3-qwen3-30b-a3b-base",
    "student": "qwen3-30b-a3b-base",
@@ -15777,32 +15937,32 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 3,
+   "shards_done": 4,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791498285.2251115,
    "git_commit": "3e2a97d570",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 36423498,
-   "tokens_scored": 91204,
-   "gpu_hours": 14.5352,
-   "load_hours": 0.2741,
-   "tasks": 23,
-   "records": 23,
+   "tokens_generated": 49557012,
+   "tokens_scored": 115662,
+   "gpu_hours": 20.2389,
+   "load_hours": 0.3831,
+   "tasks": 30,
+   "records": 30,
    "success_rate": 1.0,
-   "mean_bits": 14.613721,
-   "median_bits": 14.66449,
+   "mean_bits": 14.70521,
+   "median_bits": 14.878848,
    "mean_forced_bits": 0.0,
    "mean_forced_tokens": 2.0,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 253.869565,
+   "mean_tokens": 255.033333,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 23
+    "success": 30
    }
   },
   {
@@ -17756,31 +17916,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
-   "status": "queued",
+   "shards_queued": 3,
+   "status": "running",
    "created_at": 1791498266.4977837,
    "git_commit": "3ac1b26fa8",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 11156238,
+   "tokens_scored": 81378,
+   "gpu_hours": 0.3165,
+   "load_hours": 0.037,
+   "tasks": 100,
+   "records": 100,
+   "success_rate": 1.0,
+   "mean_bits": 20.147722,
+   "median_bits": 13.410232,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 7.58,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 349.39,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 100
+   }
   },
   {
    "name": "fe-imo-sir-qwen3-4b-base",
@@ -17846,31 +18008,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 0,
+   "shards_done": 3,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
-   "status": "queued",
+   "shards_queued": 1,
+   "status": "running",
    "created_at": 1791498265.5770059,
    "git_commit": "3ac1b26fa8",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 35244107,
+   "tokens_scored": 243368,
+   "gpu_hours": 0.7623,
+   "load_hours": 0.2048,
+   "tasks": 300,
+   "records": 300,
+   "success_rate": 1.0,
+   "mean_bits": 19.758137,
+   "median_bits": 14.783214,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 7.333333,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 394.66,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 300
+   }
   },
   {
    "name": "fe-imo-sir-qwen3-1.7b-base",
@@ -17936,32 +18100,32 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 3,
+   "shards_done": 4,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791498264.7838855,
    "git_commit": "3ac1b26fa8",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 21745599,
-   "tokens_scored": 116242,
-   "gpu_hours": 0.4041,
-   "load_hours": 0.2931,
-   "tasks": 300,
-   "records": 300,
+   "tokens_generated": 29157630,
+   "tokens_scored": 153831,
+   "gpu_hours": 0.5242,
+   "load_hours": 0.3173,
+   "tasks": 400,
+   "records": 400,
    "success_rate": 1.0,
-   "mean_bits": 22.248473,
-   "median_bits": 16.187089,
+   "mean_bits": 21.268458,
+   "median_bits": 15.566178,
    "mean_forced_bits": 0.0,
-   "mean_forced_tokens": 7.393333,
+   "mean_forced_tokens": 7.2025,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 296.713333,
+   "mean_tokens": 314.48,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 300
+    "success": 400
    }
   },
   {
@@ -18118,31 +18282,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
-   "status": "queued",
+   "shards_queued": 2,
+   "status": "running",
    "created_at": 1791498263.1401927,
    "git_commit": "3ac1b26fa8",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 15360130,
+   "tokens_scored": 133942,
+   "gpu_hours": 0.9404,
+   "load_hours": 0.1606,
+   "tasks": 200,
+   "records": 200,
+   "success_rate": 1.0,
+   "mean_bits": 24.361945,
+   "median_bits": 19.314543,
+   "mean_forced_bits": 0.0,
+   "mean_forced_tokens": 5.695,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 107.01,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 200
+   }
   },
   {
    "name": "fe-imo-sir-delphi-1e22",
@@ -83356,10 +83522,23 @@
      "gpus": 8,
      "state": "standby",
      "label": "ailab (ailab-mg-lane)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 8,
+     "state": "standby",
+     "label": "PLI slot (t3attr)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 8,
+     "state": "standby",
+     "label": "PLI slot (t3attr)"
     }
    ],
    "totals": {
-    "h200_standby": 16
+    "h200_standby": 16,
+    "h100_standby": 16
    }
   }
  },
@@ -88749,7 +88928,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791528270.0102172,
+  "generated_at": 1791529087.1573594,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -89673,7 +89852,7 @@
     "auroc_pairs": 15
    },
    "answer_sir, M = 4096": {
-    "models": 13,
+    "models": 14,
     "mean": {
      "delphi-3e18": 22.057828243311874,
      "delphi-9e18": 20.4177132725842,
@@ -89684,11 +89863,25 @@
      "delphi-3e20": 15.07979605302714,
      "delphi-1e21": 15.273111450494955,
      "delphi-1e22": 15.22818352265844,
+     "delphi-1e23": 14.705210240450004,
      "qwen3-0.6b-base": 14.530094320856957,
      "qwen3-1.7b-base": 13.23536667540707,
      "qwen3-4b-base": 12.629577367877882,
      "qwen3-8b-base": 12.65225521079078
     },
+    "delphi": [
+     22.057828243311874,
+     20.4177132725842,
+     19.065112115927814,
+     17.416150103684878,
+     17.013715671819288,
+     15.767558587479032,
+     15.07979605302714,
+     15.273111450494955,
+     15.22818352265844,
+     14.705210240450004
+    ],
+    "delphi_spearman": -0.9636363636363636,
     "spearman_hybrid": 1.0,
     "spearman_final": 1.0,
     "spearman_all": 0.8207826816681233,
@@ -90189,7 +90382,7 @@
     "retest_mad": 6.86754847854017
    },
    "v19g, forcing the cheapest privileged variant (v24)": {
-    "models": 6,
+    "models": 7,
     "n": 10,
     "mean": {
      "delphi-2e20": 310.5213429016502,
@@ -90197,15 +90390,22 @@
      "delphi-1e21": 247.11127054883502,
      "qwen3-0.6b-base": 144.20377349948595,
      "qwen3-1.7b-base": 113.95504268657238,
-     "qwen3-4b-base": 99.24352807022474
+     "qwen3-4b-base": 99.24352807022474,
+     "qwen3-8b-base": 91.35847704169105
     },
     "spearman_hybrid": 1.0,
     "spearman_final": 1.0,
     "spearman_all": 1.0,
-    "auroc": 0.8095238095238095,
-    "auroc_pairs": 3,
-    "retest_spearman": 0.9885523756599055,
-    "retest_mad": 3.807490885687616
+    "auroc": 0.8258928571428571,
+    "auroc_pairs": 4,
+    "retest_spearman": 0.9911118887236462,
+    "retest_mad": 3.890954046629107
+   },
+   "the release's own episodes as the proposal (v25)": {
+    "models": 0
+   },
+   "v25, Qwen3-4B-Instruct-2507 as the proposal": {
+    "models": 0
    }
   },
   "tau": {
@@ -90451,6 +90651,12 @@
     "auroc_pairs": 3,
     "retest_spearman": 0.9214279013040623,
     "retest_mad": 3.544767173161037
+   },
+   "the release's own episodes as the proposal (v25)": {
+    "models": 0
+   },
+   "v25, Qwen3-4B-Instruct-2507 as the proposal": {
+    "models": 0
    }
   },
   "imo": {
@@ -90560,8 +90766,8 @@
     "spearman_all": 0.8852148490954105,
     "auroc": 0.8507121964878657,
     "auroc_pairs": 28,
-    "retest_spearman": 0.9746898263350393,
-    "retest_mad": 1.8566987131958934
+    "retest_spearman": 0.9740425212882224,
+    "retest_mad": 1.9054516998276494
    }
   }
  },
@@ -90693,10 +90899,10 @@
   "rows": [
    {
     "label": "setup steps",
-    "done": 12,
+    "done": 13,
     "failed": 1,
     "running": 0,
-    "waiting": 0
+    "waiting": 1
    },
    {
     "label": "tau-bench \u00b7 force each teacher variant",
@@ -90765,14 +90971,21 @@
     "label": "23h-answer-step",
     "done": 0,
     "failed": 0,
-    "running": 6,
-    "waiting": 24
+    "running": 10,
+    "waiting": 20
+   },
+   {
+    "label": "23i-rel-sample",
+    "done": 0,
+    "failed": 0,
+    "running": 0,
+    "waiting": 16
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
-    "done": 228,
+    "done": 235,
     "failed": 0,
-    "running": 23,
+    "running": 16,
     "waiting": 69
    },
    {
@@ -90784,19 +90997,19 @@
    }
   ],
   "total": {
-   "done": 810,
+   "done": 818,
    "failed": 2,
-   "running": 30,
-   "waiting": 393
+   "running": 27,
+   "waiting": 406
   },
   "nodes": [
    {
     "node": "H200 node 1",
-    "running": 15
+    "running": 13
    },
    {
     "node": "H200 node 2",
-    "running": 15
+    "running": 14
    }
   ]
  },
@@ -91860,5 +92073,5 @@
    }
   ]
  },
- "content_digest": "24fbf1f77ac28a4e4221250a63cc06e032a62c0830dc3b1597c9d671d79eaea9"
+ "content_digest": "38211deb25bba065c35ab41f2e6322f1c415a7b6dc363c880e678875027d96f9"
 }
