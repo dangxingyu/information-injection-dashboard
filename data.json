@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791506583.4625459,
- "generated_label": "2026-10-08 20:43 EDT",
+ "generated_at": 1791506655.454024,
+ "generated_label": "2026-10-08 20:44 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -2603,32 +2603,32 @@
    "runs": 1,
    "limit": 0,
    "shards": 4,
-   "shards_done": 1,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 3,
+   "shards_queued": 2,
    "status": "running",
    "created_at": 1791498277.8552227,
    "git_commit": "3e2a97d570",
    "snapshot": "6c0525fc6765",
-   "tokens_generated": 10005795,
-   "tokens_scored": 55724,
-   "gpu_hours": 0.1748,
-   "load_hours": 0.0134,
-   "tasks": 100,
-   "records": 100,
+   "tokens_generated": 19725063,
+   "tokens_scored": 109796,
+   "gpu_hours": 0.3687,
+   "load_hours": 0.1108,
+   "tasks": 200,
+   "records": 200,
    "success_rate": 1.0,
-   "mean_bits": 28.824955,
-   "median_bits": 19.920457,
+   "mean_bits": 29.050878,
+   "median_bits": 21.042562,
    "mean_forced_bits": 0.0,
-   "mean_forced_tokens": 8.13,
+   "mean_forced_tokens": 7.925,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 185.05,
+   "mean_tokens": 184.915,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 100
+    "success": 200
    }
   },
   {
@@ -76418,10 +76418,10 @@
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
-    "done": 92,
+    "done": 93,
     "failed": 0,
-    "running": 36,
-    "waiting": 192
+    "running": 37,
+    "waiting": 190
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
@@ -76432,10 +76432,10 @@
    }
   ],
   "total": {
-   "done": 259,
+   "done": 260,
    "failed": 1,
-   "running": 36,
-   "waiting": 500
+   "running": 37,
+   "waiting": 498
   },
   "nodes": [
    {
@@ -76444,7 +76444,7 @@
    },
    {
     "node": "H200 node 2",
-    "running": 20
+    "running": 21
    }
   ]
  },
@@ -77508,5 +77508,5 @@
    }
   ]
  },
- "content_digest": "5733a75dd6b6646ef15ab362559e762c0d4b80c982db3f1486fd78e1051a2b64"
+ "content_digest": "6737b0252224cc41e82ce1b567a21dfc2ac98464e7fd21539dada22cd61181cf"
 }
