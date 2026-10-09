@@ -1,1 +1,1 @@
-{"name":"fe-tb-v19g2-delphi-1e23","tasks":[]}
+{"name":"fe-tb-v19g2-delphi-1e23","tasks":[{"task_id":"tb-regex-log","runs":2,"successes":2,"success_rate":1.0,"mean_bits":225.21874,"mean_forced_bits":225.21874,"mean_forced_tokens":190.0,"mean_select_blocks":0.0,"mean_free_blocks":0.0,"mean_tokens":192.0,"fallback_rate":0.0,"mean_restarts":0.0,"ends":{"success":2}}]}
