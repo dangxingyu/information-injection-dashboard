@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791546585.6166677,
- "generated_label": "2026-10-09 07:49 EDT",
+ "generated_at": 1791547495.5778832,
+ "generated_label": "2026-10-09 08:04 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -71,32 +71,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 2,
-   "shards_done": 1,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791545651.569535,
    "git_commit": "0048258b87",
    "snapshot": "6b24212a0714",
-   "tokens_generated": 82534,
-   "tokens_scored": 14878,
-   "gpu_hours": 0.0652,
-   "load_hours": 0.1048,
-   "tasks": 5,
-   "records": 10,
+   "tokens_generated": 261147,
+   "tokens_scored": 41884,
+   "gpu_hours": 0.2169,
+   "load_hours": 0.1278,
+   "tasks": 10,
+   "records": 20,
    "success_rate": 1.0,
-   "mean_bits": 12.039291,
-   "median_bits": 10.933669,
-   "mean_forced_bits": 0.594625,
-   "mean_forced_tokens": 5.0,
-   "mean_select_blocks": 0.3,
-   "mean_free_blocks": 11.0,
-   "mean_tokens": 2156.4,
+   "mean_bits": 18.903494,
+   "median_bits": 12.311403,
+   "mean_forced_bits": 5.687448,
+   "mean_forced_tokens": 43.3,
+   "mean_select_blocks": 2.0,
+   "mean_free_blocks": 7.8,
+   "mean_tokens": 2738.15,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 10
+    "success": 20
    }
   },
   {
@@ -23252,33 +23252,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 1,
+   "shards_done": 3,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
+   "shards_queued": 2,
    "status": "running",
    "created_at": 1791497902.2358792,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 53720,
-   "tokens_scored": 720,
-   "gpu_hours": 0.2211,
-   "load_hours": 0.0143,
-   "tasks": 2,
-   "records": 4,
-   "success_rate": 0.75,
-   "mean_bits": 538.086025,
-   "median_bits": 538.086025,
-   "mean_forced_bits": 534.263594,
-   "mean_forced_tokens": 107.25,
+   "tokens_generated": 527661,
+   "tokens_scored": 15022,
+   "gpu_hours": 1.0329,
+   "load_hours": 0.0413,
+   "tasks": 6,
+   "records": 12,
+   "success_rate": 0.916667,
+   "mean_bits": 598.136529,
+   "median_bits": 520.071698,
+   "mean_forced_bits": 596.862229,
+   "mean_forced_tokens": 153.25,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 374.75,
+   "mean_tokens": 356.25,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
     "eos": 1,
-    "success": 3
+    "success": 11
    }
   },
   {
@@ -23298,32 +23298,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 1,
+   "shards_done": 3,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
+   "shards_queued": 2,
    "status": "running",
    "created_at": 1791497901.936268,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 57773,
-   "tokens_scored": 1684,
-   "gpu_hours": 0.2171,
-   "load_hours": 0.1003,
-   "tasks": 2,
-   "records": 4,
+   "tokens_generated": 337656,
+   "tokens_scored": 6529,
+   "gpu_hours": 1.1962,
+   "load_hours": 0.2463,
+   "tasks": 6,
+   "records": 12,
    "success_rate": 1.0,
-   "mean_bits": 330.188603,
-   "median_bits": 330.188603,
-   "mean_forced_bits": 330.18075,
-   "mean_forced_tokens": 110.5,
+   "mean_bits": 214.544099,
+   "median_bits": 152.982905,
+   "mean_forced_bits": 184.231211,
+   "mean_forced_tokens": 80.0,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 133.5,
+   "mean_tokens": 198.333333,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 4
+    "success": 12
    }
   },
   {
@@ -23342,33 +23342,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 3,
+   "shards_done": 4,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
+   "shards_queued": 1,
    "status": "running",
    "created_at": 1791497901.6050508,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 309721,
-   "tokens_scored": 2973,
-   "gpu_hours": 1.086,
-   "load_hours": 0.3025,
-   "tasks": 6,
-   "records": 12,
-   "success_rate": 0.916667,
-   "mean_bits": 210.329323,
-   "median_bits": 151.954676,
-   "mean_forced_bits": 176.8698,
-   "mean_forced_tokens": 70.666667,
+   "tokens_generated": 550347,
+   "tokens_scored": 15993,
+   "gpu_hours": 1.636,
+   "load_hours": 0.4021,
+   "tasks": 8,
+   "records": 16,
+   "success_rate": 0.9375,
+   "mean_bits": 228.054084,
+   "median_bits": 196.371006,
+   "mean_forced_bits": 202.953373,
+   "mean_forced_tokens": 123.75,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 219.333333,
+   "mean_tokens": 278.0,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
     "eos": 1,
-    "success": 11
+    "success": 15
    }
   },
   {
@@ -23388,32 +23388,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 4,
+   "shards_done": 5,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791497901.2744293,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 847892,
-   "tokens_scored": 26516,
-   "gpu_hours": 1.4315,
-   "load_hours": 0.2789,
-   "tasks": 8,
-   "records": 16,
+   "tokens_generated": 1369437,
+   "tokens_scored": 36354,
+   "gpu_hours": 2.312,
+   "load_hours": 0.3757,
+   "tasks": 10,
+   "records": 20,
    "success_rate": 1.0,
-   "mean_bits": 226.784603,
-   "median_bits": 202.73209,
-   "mean_forced_bits": 221.483303,
-   "mean_forced_tokens": 173.125,
+   "mean_bits": 247.364826,
+   "median_bits": 204.103939,
+   "mean_forced_bits": 240.705578,
+   "mean_forced_tokens": 170.95,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 340.75,
+   "mean_tokens": 450.8,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 16
+    "success": 20
    }
   },
   {
@@ -85520,10 +85520,23 @@
      "gpus": 8,
      "state": "standby",
      "label": "ailab (ailab-mg-lane)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 8,
+     "state": "standby",
+     "label": "PLI slot (t3attr)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 8,
+     "state": "standby",
+     "label": "PLI slot (t3attr)"
     }
    ],
    "totals": {
-    "h200_standby": 16
+    "h200_standby": 16,
+    "h100_standby": 16
    }
   }
  },
@@ -90913,7 +90926,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791545376.2067404,
+  "generated_at": 1791547356.3449895,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -92432,28 +92445,34 @@
     "retest_mad": 3.1193880113821937
    },
    "teacher subgoals (v20f)": {
-    "models": 2,
+    "models": 3,
     "n": 9,
     "mean": {
      "qwen3-0.6b-base": 145.55648220683338,
-     "qwen3-8b-base": 80.63074877372038
+     "qwen3-8b-base": 80.63074877372038,
+     "smollm2-135m": 268.2237697264747
     },
+    "spearman_final": 0.8660254037844387,
+    "spearman_all": 0.8660254037844387,
     "auroc": 0.75,
     "auroc_pairs": 1,
-    "retest_spearman": 0.9596491228070175,
-    "retest_mad": 11.941378482673807
+    "retest_spearman": 0.9709906951286261,
+    "retest_mad": 10.791399220268115
    },
    "teacher subgoals + lookahead (v20g)": {
-    "models": 2,
+    "models": 3,
     "n": 10,
     "mean": {
      "qwen3-0.6b-base": 128.28592052297412,
-     "qwen3-8b-base": 74.04977637626811
+     "qwen3-8b-base": 74.04977637626811,
+     "smollm2-135m": 247.3648258442754
     },
+    "spearman_final": 0.8660254037844387,
+    "spearman_all": 0.8660254037844387,
     "auroc": 0.75,
     "auroc_pairs": 1,
-    "retest_spearman": 0.9789473684210527,
-    "retest_mad": 7.693284318497925
+    "retest_spearman": 0.9924360400444939,
+    "retest_mad": 6.863435877380982
    },
    "privileged-proposal importance sampling (v22)": {
     "models": 7,
@@ -92805,6 +92824,24 @@
     },
     "auroc": 0.5416666666666666,
     "auroc_pairs": 2
+   },
+   "pointer into the train-split library + v19g (v26)": {
+    "models": 5,
+    "n": 10,
+    "mean": {
+     "qwen3-0.6b-base": 27.74907488664782,
+     "qwen3-1.7b-base": 28.84870722178952,
+     "qwen3-4b-base": 20.179530247008362,
+     "qwen3-8b-base": 18.602239243941987,
+     "qwen3-14b-base": 18.9034944024139
+    },
+    "spearman_hybrid": 0.872081599272381,
+    "spearman_final": 0.872081599272381,
+    "spearman_all": 0.8508410434878083,
+    "auroc": 0.6227083333333333,
+    "auroc_pairs": 4,
+    "retest_spearman": 0.8574279964358689,
+    "retest_mad": 4.093032632123645
    }
   },
   "imo": {
@@ -92863,7 +92900,7 @@
     "auroc_pairs": 30
    },
    "answer_sir (own correct forms)": {
-    "models": 29,
+    "models": 30,
     "n": 400,
     "mean": {
      "delphi-3e18": 39.05499353803727,
@@ -92881,6 +92918,7 @@
      "qwen3-4b-base": 18.089361554438835,
      "qwen3-8b-base": 17.38837187649715,
      "qwen3-14b-base": 16.41320447563316,
+     "qwen3-30b-a3b-base": 16.92352602601003,
      "olmo2-1b-main": 22.62031918402506,
      "olmo2-7b": 21.367269352143268,
      "qwen2.5-0.5b": 21.662673356904275,
@@ -92910,12 +92948,12 @@
     ],
     "delphi_spearman": -1.0,
     "spearman_hybrid": 1.0,
-    "spearman_final": 0.9127517994887299,
-    "spearman_all": 0.8852148490954105,
-    "auroc": 0.8507121964878657,
-    "auroc_pairs": 28,
-    "retest_spearman": 0.971875683376766,
-    "retest_mad": 1.708939179420377
+    "spearman_final": 0.9258447578434538,
+    "spearman_all": 0.9053641336426204,
+    "auroc": 0.8447757309976057,
+    "auroc_pairs": 30,
+    "retest_spearman": 0.9707326426592107,
+    "retest_mad": 1.72054013702256
    }
   }
  },
@@ -93159,9 +93197,9 @@
    },
    {
     "label": "23m-pointer",
-    "done": 9,
+    "done": 10,
     "failed": 0,
-    "running": 1,
+    "running": 0,
     "waiting": 0
    },
    {
@@ -93173,17 +93211,17 @@
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
-    "done": 34,
+    "done": 40,
     "failed": 0,
-    "running": 30,
-    "waiting": 236
+    "running": 31,
+    "waiting": 229
    }
   ],
   "total": {
-   "done": 1035,
+   "done": 1042,
    "failed": 1,
    "running": 33,
-   "waiting": 236
+   "waiting": 229
   },
   "nodes": [
    {
@@ -94256,5 +94294,5 @@
    }
   ]
  },
- "content_digest": "6071fca81381c27f4730f0267823ec47c4e0675c332803c26b42017ac4d72ff2"
+ "content_digest": "8eb86ae61b527cff931425b7bfa28433c4b39e11cb5124932f744c3cc1f2a686"
 }
