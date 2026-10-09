@@ -1,1 +1,1 @@
-{"name":"fe-tb-tref-peer3-delphi-1e21","tasks":[]}
+{"name":"fe-tb-tref-peer3-delphi-1e21","tasks":[{"task_id":"tb-log-summary","runs":1,"successes":1,"success_rate":1.0,"mean_bits":280.428626,"mean_forced_bits":280.428626,"mean_forced_tokens":183.0,"mean_select_blocks":0.0,"mean_free_blocks":0.0,"mean_tokens":521.0,"fallback_rate":0.0,"mean_restarts":0.0,"ends":{"success":1}}]}

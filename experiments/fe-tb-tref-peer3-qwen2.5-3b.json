@@ -1,1 +1,1 @@
-{"name":"fe-tb-tref-peer3-qwen2.5-3b","tasks":[]}
+{"name":"fe-tb-tref-peer3-qwen2.5-3b","tasks":[{"task_id":"tb-log-summary","runs":1,"successes":1,"success_rate":1.0,"mean_bits":164.94504,"mean_forced_bits":164.94504,"mean_forced_tokens":183.0,"mean_select_blocks":0.0,"mean_free_blocks":0.0,"mean_tokens":585.0,"fallback_rate":0.0,"mean_restarts":0.0,"ends":{"success":1}}]}
