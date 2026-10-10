@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791598315.8015966,
- "generated_label": "2026-10-09 22:11 EDT",
+ "generated_at": 1791599223.9487529,
+ "generated_label": "2026-10-09 22:27 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -24149,32 +24149,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 1,
+   "shards_done": 3,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
+   "shards_queued": 2,
    "status": "running",
    "created_at": 1791497945.8086228,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 164012,
-   "tokens_scored": 3186,
-   "gpu_hours": 0.3551,
-   "load_hours": 0.0131,
-   "tasks": 2,
-   "records": 4,
+   "tokens_generated": 244120,
+   "tokens_scored": 4846,
+   "gpu_hours": 0.763,
+   "load_hours": 0.0452,
+   "tasks": 6,
+   "records": 12,
    "success_rate": 1.0,
-   "mean_bits": 142.60142,
-   "median_bits": 142.60142,
-   "mean_forced_bits": 134.223486,
-   "mean_forced_tokens": 114.25,
+   "mean_bits": 113.825837,
+   "median_bits": 80.503524,
+   "mean_forced_bits": 106.0888,
+   "mean_forced_tokens": 94.833333,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 1357.25,
+   "mean_tokens": 611.75,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 4
+    "success": 12
    }
   },
   {
@@ -88197,10 +88197,16 @@
      "gpus": 4,
      "state": "standby",
      "label": "PLI slot (ii-pli-worker)"
+    },
+    {
+     "kind": "H100",
+     "gpus": 4,
+     "state": "standby",
+     "label": "PLI slot (ii-pli-worker)"
     }
    ],
    "totals": {
-    "h100_standby": 4
+    "h100_standby": 8
    }
   }
  },
@@ -96082,21 +96088,25 @@
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
-    "done": 241,
+    "done": 243,
     "failed": 0,
-    "running": 3,
-    "waiting": 56
+    "running": 7,
+    "waiting": 50
    }
   ],
   "total": {
-   "done": 1397,
+   "done": 1399,
    "failed": 2,
-   "running": 4,
-   "waiting": 56
+   "running": 8,
+   "waiting": 50
   },
   "nodes": [
    {
     "node": "H200 node 1",
+    "running": 4
+   },
+   {
+    "node": "H200 node 2",
     "running": 4
    }
   ]
@@ -97161,5 +97171,5 @@
    }
   ]
  },
- "content_digest": "e1fa11b0f68f4f748b0031f0d3392695858fe469b113f41ec641db9410e71513"
+ "content_digest": "615f2b7d57c162c1a372ec0b6f959c541c6396a147bcdfecda795982ad3f6036"
 }
