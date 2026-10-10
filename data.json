@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791597405.906731,
- "generated_label": "2026-10-09 21:56 EDT",
+ "generated_at": 1791598315.8015966,
+ "generated_label": "2026-10-09 22:11 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -88194,13 +88194,13 @@
    "allocations": [
     {
      "kind": "H100",
-     "gpus": 8,
+     "gpus": 4,
      "state": "standby",
-     "label": "PLI slot (t3attr)"
+     "label": "PLI slot (ii-pli-worker)"
     }
    ],
    "totals": {
-    "h100_standby": 8
+    "h100_standby": 4
    }
   }
  },
@@ -95958,8 +95958,8 @@
     "label": "00f-tbh-gold-test",
     "done": 0,
     "failed": 0,
-    "running": 0,
-    "waiting": 1
+    "running": 1,
+    "waiting": 0
    },
    {
     "label": "tau-bench \u00b7 force each teacher variant",
@@ -96084,17 +96084,22 @@
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
     "done": 241,
     "failed": 0,
-    "running": 0,
-    "waiting": 59
+    "running": 3,
+    "waiting": 56
    }
   ],
   "total": {
    "done": 1397,
    "failed": 2,
-   "running": 0,
-   "waiting": 60
+   "running": 4,
+   "waiting": 56
   },
-  "nodes": []
+  "nodes": [
+   {
+    "node": "H200 node 1",
+    "running": 4
+   }
+  ]
  },
  "headlines": {
   "code": [
@@ -97156,5 +97161,5 @@
    }
   ]
  },
- "content_digest": "4992664d7eafbe200b7b9ea475c352760516776a58f5201d4b788caae92f7638"
+ "content_digest": "e1fa11b0f68f4f748b0031f0d3392695858fe469b113f41ec641db9410e71513"
 }
