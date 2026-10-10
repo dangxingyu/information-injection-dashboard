@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791602846.224113,
- "generated_label": "2026-10-09 23:27 EDT",
+ "generated_at": 1791603752.715719,
+ "generated_label": "2026-10-09 23:42 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -23809,31 +23809,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 5,
-   "status": "queued",
+   "shards_queued": 4,
+   "status": "running",
    "created_at": 1791497948.6496365,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 22196,
+   "tokens_scored": 790,
+   "gpu_hours": 0.0616,
+   "load_hours": 0.0147,
+   "tasks": 2,
+   "records": 4,
+   "success_rate": 1.0,
+   "mean_bits": 125.386943,
+   "median_bits": 125.386943,
+   "mean_forced_bits": 121.660317,
+   "mean_forced_tokens": 131.0,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 253.0,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 4
+   }
   },
   {
    "name": "fe-tb-v20g-smollm2-360m",
@@ -23852,31 +23854,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 5,
-   "status": "queued",
+   "shards_queued": 4,
+   "status": "running",
    "created_at": 1791497948.2866712,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 36398,
+   "tokens_scored": 2097,
+   "gpu_hours": 0.1011,
+   "load_hours": 0.0102,
+   "tasks": 2,
+   "records": 4,
+   "success_rate": 1.0,
+   "mean_bits": 183.606341,
+   "median_bits": 183.606341,
+   "mean_forced_bits": 183.340219,
+   "mean_forced_tokens": 139.5,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 166.5,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 4
+   }
   },
   {
    "name": "fe-tb-v20f-smollm2-360m",
@@ -23894,32 +23898,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 1,
+   "shards_done": 4,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 4,
+   "shards_queued": 1,
    "status": "running",
    "created_at": 1791497947.926692,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 34049,
-   "tokens_scored": 935,
-   "gpu_hours": 0.08,
-   "load_hours": 0.01,
-   "tasks": 2,
-   "records": 4,
+   "tokens_generated": 683262,
+   "tokens_scored": 19680,
+   "gpu_hours": 0.8847,
+   "load_hours": 0.0408,
+   "tasks": 8,
+   "records": 16,
    "success_rate": 1.0,
-   "mean_bits": 182.912207,
-   "median_bits": 182.912207,
-   "mean_forced_bits": 178.44664,
-   "mean_forced_tokens": 135.25,
+   "mean_bits": 147.685724,
+   "median_bits": 127.486258,
+   "mean_forced_bits": 128.588915,
+   "mean_forced_tokens": 148.375,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 186.75,
+   "mean_tokens": 356.8125,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 4
+    "success": 16
    }
   },
   {
@@ -23939,32 +23943,32 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 3,
+   "shards_done": 5,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791497947.5503774,
    "git_commit": "6dae2f0877",
    "snapshot": "19c35dc0dc8e",
-   "tokens_generated": 195366,
-   "tokens_scored": 12520,
-   "gpu_hours": 0.6993,
-   "load_hours": 0.0375,
-   "tasks": 6,
-   "records": 12,
+   "tokens_generated": 490007,
+   "tokens_scored": 28449,
+   "gpu_hours": 1.3714,
+   "load_hours": 0.0625,
+   "tasks": 10,
+   "records": 20,
    "success_rate": 1.0,
-   "mean_bits": 109.061174,
-   "median_bits": 73.200706,
-   "mean_forced_bits": 99.352204,
-   "mean_forced_tokens": 87.75,
+   "mean_bits": 102.130301,
+   "median_bits": 75.741928,
+   "mean_forced_bits": 86.561692,
+   "mean_forced_tokens": 110.6,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 667.416667,
+   "mean_tokens": 552.35,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "success": 12
+    "success": 20
    }
   },
   {
@@ -88207,9 +88211,9 @@
    "allocations": [
     {
      "kind": "H100",
-     "gpus": 8,
+     "gpus": 4,
      "state": "standby",
-     "label": "PLI slot (t3attr)"
+     "label": "PLI slot (ii-pli-worker)"
     },
     {
      "kind": "H100",
@@ -88225,7 +88229,7 @@
     }
    ],
    "totals": {
-    "h100_standby": 16
+    "h100_standby": 12
    }
   }
  },
@@ -96107,17 +96111,17 @@
    },
    {
     "label": "terminal-bench \u00b7 teacher subgoals (v20f, v20g), every base model",
-    "done": 269,
+    "done": 276,
     "failed": 0,
-    "running": 8,
-    "waiting": 23
+    "running": 12,
+    "waiting": 12
    }
   ],
   "total": {
-   "done": 1426,
+   "done": 1433,
    "failed": 2,
-   "running": 8,
-   "waiting": 23
+   "running": 12,
+   "waiting": 12
   },
   "nodes": [
    {
@@ -96126,6 +96130,10 @@
    },
    {
     "node": "H200 node 2",
+    "running": 4
+   },
+   {
+    "node": "H200 node 3",
     "running": 4
    }
   ]
@@ -97190,5 +97198,5 @@
    }
   ]
  },
- "content_digest": "0bb22c7df1fa3a1a6ee49a282669ae0921801476c2e350073d3555e3f0b5413d"
+ "content_digest": "0c8a5bbc10b97ee5576c733a34e1cdd5cd201e1683e2cca7329a9b06a578bc6c"
 }
