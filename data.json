@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791608295.8285189,
- "generated_label": "2026-10-10 00:58 EDT",
+ "generated_at": 1791609206.1286716,
+ "generated_label": "2026-10-10 01:13 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -88226,22 +88226,10 @@
      "gpus": 4,
      "state": "standby",
      "label": "PLI slot (qb-cpu-backend-ep4-bf16_pilot)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 4,
-     "state": "standby",
-     "label": "PLI slot (ii-pli-worker)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 4,
-     "state": "standby",
-     "label": "PLI slot (ii-pli-worker)"
     }
    ],
    "totals": {
-    "h100_standby": 16
+    "h100_standby": 8
    }
   }
  },
@@ -97197,5 +97185,5 @@
    }
   ]
  },
- "content_digest": "cf31306b63ddf54d62ffa1c490d7f7cbf01da2a7d9c9f97532df5d16daadcb01"
+ "content_digest": "e3c05bb87f0ee68c2eead025bb45993902d1792a7e974a452cef112c8f94c51b"
 }
