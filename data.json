@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791758057.6425283,
- "generated_label": "2026-10-11 18:34 EDT",
+ "generated_at": 1791758965.858907,
+ "generated_label": "2026-10-11 18:49 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -92160,22 +92160,10 @@
      "gpus": 4,
      "state": "standby",
      "label": "PLI slot (ii-pli-worker)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 4,
-     "state": "standby",
-     "label": "PLI slot (ii-pli-worker)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 4,
-     "state": "standby",
-     "label": "PLI slot (ii-pli-worker)"
     }
    ],
    "totals": {
-    "h100_standby": 12
+    "h100_standby": 4
    }
   }
  },
@@ -100448,6 +100436,13 @@
     "waiting": 0
    },
    {
+    "label": "00l-agenteval-finalize-test",
+    "done": 1,
+    "failed": 0,
+    "running": 0,
+    "waiting": 0
+   },
+   {
     "label": "tau-bench \u00b7 force each teacher variant",
     "done": 60,
     "failed": 0,
@@ -100575,9 +100570,9 @@
    },
    {
     "label": "23u-tbh-wait180",
-    "done": 40,
+    "done": 41,
     "failed": 0,
-    "running": 2,
+    "running": 1,
     "waiting": 0
    },
    {
@@ -100596,18 +100591,14 @@
    }
   ],
   "total": {
-   "done": 1638,
+   "done": 1640,
    "failed": 2,
-   "running": 2,
+   "running": 1,
    "waiting": 0
   },
   "nodes": [
    {
-    "node": "della-k12g1",
-    "running": 1
-   },
-   {
-    "node": "della-k13g3",
+    "node": "della-j12g2",
     "running": 1
    }
   ]
@@ -101672,5 +101663,5 @@
    }
   ]
  },
- "content_digest": "588f4579d5b34a1ec46218651e6368994664ffdd4c5d0988dc33f504fda58550"
+ "content_digest": "1bfad0ccbab84407e1908f74a04ce90f80bf7bfd4213f70d1090db1afaca68b3"
 }
