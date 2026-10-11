@@ -508,6 +508,8 @@ function renderFinalEval() {
   protocolTable('fe-tb', f.tb);
   protocolTable('fe-tau', f.tau);
   protocolTable('fe-imo', f.imo);
+  protocolTable('fe-tbh', f.tbh?.all);
+  protocolTable('fe-tbh-long', f.tbh?.long);
   const rel = f.reliability || {};
   const rs = S.filter(s => rel[s]);
   $('fe-reliability').innerHTML = !rs.length ? '<tr><td class="muted">Replicate runs pending.</td></tr>' :

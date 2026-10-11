@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791738095.9621632,
- "generated_label": "2026-10-11 13:01 EDT",
+ "generated_at": 1791738421.5424807,
+ "generated_label": "2026-10-11 13:07 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -92158,16 +92158,10 @@
      "gpus": 4,
      "state": "standby",
      "label": "PLI slot (ii-pli-worker)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 4,
-     "state": "standby",
-     "label": "PLI slot (ii-pli-worker)"
     }
    ],
    "totals": {
-    "h100_standby": 8
+    "h100_standby": 4
    }
   }
  },
@@ -97670,7 +97664,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791738123.6138167,
+  "generated_at": 1791738389.827481,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -99880,6 +99874,318 @@
     "retest_spearman": 0.971587217094729,
     "retest_mad": 1.6962306162996856
    }
+  },
+  "tbh": {
+   "all": {
+    "force teacher trajectory": {
+     "models": 29,
+     "n": 7,
+     "mean": {
+      "delphi-3e18": 5192.63637969676,
+      "delphi-9e18": 4591.067834806191,
+      "delphi-2e19": 4330.147251014979,
+      "delphi-3e19": 4166.96752968542,
+      "delphi-9e19": 3709.4028537093873,
+      "delphi-2e20": 3519.4999350670364,
+      "delphi-3e20": 3403.489896233534,
+      "delphi-1e21": 3032.820310963921,
+      "delphi-1e22": 2486.8798554362124,
+      "delphi-1e23": 2069.014583154184,
+      "qwen3-0.6b-base": 2159.4748832054593,
+      "qwen3-1.7b-base": 1863.965946163672,
+      "qwen3-4b-base": 1607.1191802597752,
+      "qwen3-8b-base": 1517.5736922218873,
+      "qwen3-14b-base": 1421.4774205368417,
+      "qwen3-30b-a3b-base": 1430.1756800012204,
+      "olmo2-1b-main": 2604.4571044780505,
+      "olmo2-7b": 2048.9302510278294,
+      "qwen2.5-0.5b": 2332.972901330198,
+      "qwen2.5-1.5b": 1956.0243349601233,
+      "qwen2.5-3b": 1779.8573887649916,
+      "qwen2.5-7b": 1604.1855398160685,
+      "llama3.2-1b": 2237.0858592372674,
+      "llama3.2-3b": 1903.3104443170373,
+      "llama3.1-8b": 1649.511240186338,
+      "marin-8b-base": 1767.5235179242793,
+      "smollm2-135m": 3110.0960862143806,
+      "smollm2-360m": 2482.987408735421,
+      "smollm2-1.7b": 2001.657814309437
+     },
+     "delphi": [
+      5192.63637969676,
+      4591.067834806191,
+      4330.147251014979,
+      4166.96752968542,
+      3709.4028537093873,
+      3519.4999350670364,
+      3403.489896233534,
+      3032.820310963921,
+      2486.8798554362124,
+      2069.014583154184
+     ],
+     "delphi_spearman": -1.0,
+     "auroc": null,
+     "auroc_pairs": 0
+    },
+    "decisive action only (forced bits)": {
+     "models": 29,
+     "n": 7,
+     "mean": {
+      "delphi-3e18": 300.13228571428573,
+      "delphi-9e18": 256.4225714285714,
+      "delphi-2e19": 247.93328571428572,
+      "delphi-3e19": 228.44371428571426,
+      "delphi-9e19": 188.04628571428572,
+      "delphi-2e20": 178.424,
+      "delphi-3e20": 173.90742857142857,
+      "delphi-1e21": 149.9497142857143,
+      "delphi-1e22": 109.91014285714286,
+      "delphi-1e23": 88.21414285714286,
+      "qwen3-0.6b-base": 99.43557142857142,
+      "qwen3-1.7b-base": 79.29328571428572,
+      "qwen3-4b-base": 68.12528571428571,
+      "qwen3-8b-base": 66.81114285714285,
+      "qwen3-14b-base": 64.00942857142857,
+      "qwen3-30b-a3b-base": 63.52957142857143,
+      "olmo2-1b-main": 126.622,
+      "olmo2-7b": 92.72757142857144,
+      "qwen2.5-0.5b": 111.82371428571429,
+      "qwen2.5-1.5b": 88.37742857142857,
+      "qwen2.5-3b": 80.58771428571428,
+      "qwen2.5-7b": 72.94200000000001,
+      "llama3.2-1b": 101.404,
+      "llama3.2-3b": 80.93642857142858,
+      "llama3.1-8b": 72.50542857142857,
+      "marin-8b-base": 79.31257142857143,
+      "smollm2-135m": 159.34671428571428,
+      "smollm2-360m": 123.66642857142857,
+      "smollm2-1.7b": 91.048
+     },
+     "delphi": [
+      300.13228571428573,
+      256.4225714285714,
+      247.93328571428572,
+      228.44371428571426,
+      188.04628571428572,
+      178.424,
+      173.90742857142857,
+      149.9497142857143,
+      109.91014285714286,
+      88.21414285714286
+     ],
+     "delphi_spearman": -1.0,
+     "auroc": null,
+     "auroc_pairs": 0
+    },
+    "decisive action, bits per byte (their BPB)": {
+     "models": 29,
+     "n": 7,
+     "mean": {
+      "delphi-3e18": 2.9212479068550494,
+      "delphi-9e18": 2.4862399049363337,
+      "delphi-2e19": 2.3885207395778822,
+      "delphi-3e19": 2.2194678745857317,
+      "delphi-9e19": 1.8094938077795222,
+      "delphi-2e20": 1.7045474358974357,
+      "delphi-3e20": 1.7142376373626373,
+      "delphi-1e21": 1.435473975231118,
+      "delphi-1e22": 1.0679068594104308,
+      "delphi-1e23": 0.8162055904413047,
+      "qwen3-0.6b-base": 0.9422816195709053,
+      "qwen3-1.7b-base": 0.7343247296354439,
+      "qwen3-4b-base": 0.6248641941391941,
+      "qwen3-8b-base": 0.605124210709925,
+      "qwen3-14b-base": 0.5845104308390022,
+      "qwen3-30b-a3b-base": 0.5813832722832724,
+      "olmo2-1b-main": 1.1761227891156463,
+      "olmo2-7b": 0.8653441784406071,
+      "qwen2.5-0.5b": 1.080920290423862,
+      "qwen2.5-1.5b": 0.8482560003488575,
+      "qwen2.5-3b": 0.7509336255014827,
+      "qwen2.5-7b": 0.6582049145299146,
+      "llama3.2-1b": 0.9649834379905808,
+      "llama3.2-3b": 0.7775064800279086,
+      "llama3.1-8b": 0.6718157683586256,
+      "marin-8b-base": 0.7445886054421769,
+      "smollm2-135m": 1.5511635487528346,
+      "smollm2-360m": 1.169116095412524,
+      "smollm2-1.7b": 0.8532196188731903
+     },
+     "delphi": [
+      2.9212479068550494,
+      2.4862399049363337,
+      2.3885207395778822,
+      2.2194678745857317,
+      1.8094938077795222,
+      1.7045474358974357,
+      1.7142376373626373,
+      1.435473975231118,
+      1.0679068594104308,
+      0.8162055904413047
+     ],
+     "delphi_spearman": -0.9878787878787879,
+     "auroc": null,
+     "auroc_pairs": 0
+    },
+    "prefix pass@16 at the decisive step (predictor)": {
+     "models": 29,
+     "n": 7,
+     "mean": {
+      "delphi-3e18": 5.0,
+      "delphi-9e18": 4.857142857142857,
+      "delphi-2e19": 5.0,
+      "delphi-3e19": 5.0,
+      "delphi-9e19": 5.0,
+      "delphi-2e20": 5.0,
+      "delphi-3e20": 5.0,
+      "delphi-1e21": 5.0,
+      "delphi-1e22": 5.0,
+      "delphi-1e23": 3.630714285714286,
+      "qwen3-0.6b-base": 4.571428571428571,
+      "qwen3-1.7b-base": 3.5228571428571427,
+      "qwen3-4b-base": 2.330285714285714,
+      "qwen3-8b-base": 2.111285714285714,
+      "qwen3-14b-base": 1.9287142857142858,
+      "qwen3-30b-a3b-base": 1.8324285714285715,
+      "olmo2-1b-main": 4.857142857142857,
+      "olmo2-7b": 3.9757142857142855,
+      "qwen2.5-0.5b": 5.0,
+      "qwen2.5-1.5b": 4.428571428571429,
+      "qwen2.5-3b": 2.8265714285714285,
+      "qwen2.5-7b": 2.4504285714285716,
+      "llama3.2-1b": 4.428571428571429,
+      "llama3.2-3b": 3.6958571428571427,
+      "llama3.1-8b": 2.5784285714285713,
+      "marin-8b-base": 3.3042857142857143,
+      "smollm2-135m": 5.0,
+      "smollm2-360m": 5.0,
+      "smollm2-1.7b": 4.345
+     },
+     "delphi": [
+      5.0,
+      4.857142857142857,
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      3.630714285714286
+     ],
+     "delphi_spearman": -0.1556997888323046,
+     "auroc": null,
+     "auroc_pairs": 0
+    },
+    "per turn on teacher trajectory (v19)": {
+     "models": 1,
+     "n": 10,
+     "mean": {
+      "qwen3-8b-base": 1472.0091846661721
+     },
+     "auroc": null,
+     "auroc_pairs": 0,
+     "retest_spearman": 0.9878787878787879,
+     "retest_mad": 37.38028815553328
+    }
+   },
+   "long": {
+    "force teacher trajectory": {
+     "models": 13,
+     "n": 10,
+     "mean": {
+      "qwen3-0.6b-base": 2399.156842075533,
+      "qwen3-1.7b-base": 2034.5844267226037,
+      "qwen3-4b-base": 1736.4727196478423,
+      "qwen3-8b-base": 1631.3716240683336,
+      "qwen3-14b-base": 1534.9145675211641,
+      "qwen3-30b-a3b-base": 1525.7668362486597,
+      "qwen2.5-0.5b": 2609.5441635796415,
+      "qwen2.5-1.5b": 2153.046891007696,
+      "qwen2.5-3b": 1938.6287196098967,
+      "qwen2.5-7b": 1734.4325478951143,
+      "llama3.2-1b": 2481.249941798153,
+      "llama3.2-3b": 2093.9380760762315,
+      "llama3.1-8b": 1801.772793896407
+     },
+     "auroc": null,
+     "auroc_pairs": 0
+    },
+    "decisive action only (forced bits)": {
+     "models": 13,
+     "n": 10,
+     "mean": {
+      "qwen3-0.6b-base": 87.4616,
+      "qwen3-1.7b-base": 72.0423,
+      "qwen3-4b-base": 62.3469,
+      "qwen3-8b-base": 59.61109999999999,
+      "qwen3-14b-base": 56.6187,
+      "qwen3-30b-a3b-base": 56.1073,
+      "qwen2.5-0.5b": 96.37870000000001,
+      "qwen2.5-1.5b": 79.78229999999999,
+      "qwen2.5-3b": 72.0342,
+      "qwen2.5-7b": 66.4298,
+      "llama3.2-1b": 88.629,
+      "llama3.2-3b": 72.3904,
+      "llama3.1-8b": 65.1005
+     },
+     "auroc": null,
+     "auroc_pairs": 0
+    },
+    "decisive action, bits per byte (their BPB)": {
+     "models": 13,
+     "n": 10,
+     "mean": {
+      "qwen3-0.6b-base": 0.8328151104879385,
+      "qwen3-1.7b-base": 0.6745615401834895,
+      "qwen3-4b-base": 0.5801478504717021,
+      "qwen3-8b-base": 0.5487276932284506,
+      "qwen3-14b-base": 0.52278088712463,
+      "qwen3-30b-a3b-base": 0.5212918719508183,
+      "qwen2.5-0.5b": 0.9376661824284966,
+      "qwen2.5-1.5b": 0.7699484478170158,
+      "qwen2.5-3b": 0.6779349913718502,
+      "qwen2.5-7b": 0.609025011982122,
+      "llama3.2-1b": 0.8486344148514134,
+      "llama3.2-3b": 0.6981734566199155,
+      "llama3.1-8b": 0.6085881500594967
+     },
+     "auroc": null,
+     "auroc_pairs": 0
+    },
+    "prefix pass@16 at the decisive step (predictor)": {
+     "models": 13,
+     "n": 10,
+     "mean": {
+      "qwen3-0.6b-base": 4.7,
+      "qwen3-1.7b-base": 3.866,
+      "qwen3-4b-base": 2.7312,
+      "qwen3-8b-base": 2.6779,
+      "qwen3-14b-base": 2.2694,
+      "qwen3-30b-a3b-base": 2.2242,
+      "qwen2.5-0.5b": 5.0,
+      "qwen2.5-1.5b": 4.6,
+      "qwen2.5-3b": 3.2786,
+      "qwen2.5-7b": 2.8568,
+      "llama3.2-1b": 4.6,
+      "llama3.2-3b": 4.0871,
+      "llama3.1-8b": 3.3049
+     },
+     "auroc": null,
+     "auroc_pairs": 0
+    },
+    "per turn on teacher trajectory (v19)": {
+     "models": 1,
+     "n": 10,
+     "mean": {
+      "qwen3-8b-base": 1472.0091846661721
+     },
+     "auroc": null,
+     "auroc_pairs": 0,
+     "retest_spearman": 0.9878787878787879,
+     "retest_mad": 37.38028815553328
+    }
+   }
   }
  },
  "ideas": [
@@ -100031,7 +100337,7 @@
   "rows": [
    {
     "label": "setup steps",
-    "done": 20,
+    "done": 21,
     "failed": 1,
     "running": 0,
     "waiting": 0
@@ -100077,6 +100383,13 @@
     "failed": 0,
     "running": 0,
     "waiting": 0
+   },
+   {
+    "label": "00h-wq-test",
+    "done": 0,
+    "failed": 0,
+    "running": 0,
+    "waiting": 1
    },
    {
     "label": "tau-bench \u00b7 force each teacher variant",
@@ -100201,8 +100514,15 @@
     "label": "hard terminal tasks \u00b7 post-trained releases' accuracy",
     "done": 2,
     "failed": 0,
-    "running": 6,
-    "waiting": 13
+    "running": 0,
+    "waiting": 0
+   },
+   {
+    "label": "23r-tbh-post",
+    "done": 0,
+    "failed": 0,
+    "running": 1,
+    "waiting": 189
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
@@ -100222,20 +100542,20 @@
     "label": "hard terminal tasks \u00b7 per turn (v19), every base model",
     "done": 0,
     "failed": 0,
-    "running": 0,
-    "waiting": 141
+    "running": 3,
+    "waiting": 138
    }
   ],
   "total": {
-   "done": 1591,
+   "done": 1592,
    "failed": 2,
-   "running": 6,
-   "waiting": 154
+   "running": 4,
+   "waiting": 328
   },
   "nodes": [
    {
     "node": "della-k12g1",
-    "running": 6
+    "running": 4
    }
   ]
  },
@@ -101299,5 +101619,5 @@
    }
   ]
  },
- "content_digest": "853c4d13934854fb59d48261a120feacbc3fb096d784f10aadc9b0b0713f8366"
+ "content_digest": "2efc131b15cbea7e196d4420eb40701065aa6bf75ae0b8e0e8603f4b99c1c121"
 }
