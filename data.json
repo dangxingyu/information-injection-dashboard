@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791745354.5223877,
- "generated_label": "2026-10-11 15:02 EDT",
+ "generated_at": 1791746265.9033487,
+ "generated_label": "2026-10-11 15:17 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -97684,7 +97684,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791743812.8875132,
+  "generated_at": 1791745641.9081833,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -100414,6 +100414,13 @@
     "waiting": 0
    },
    {
+    "label": "00i-wq-guard-test",
+    "done": 1,
+    "failed": 0,
+    "running": 0,
+    "waiting": 0
+   },
+   {
     "label": "tau-bench \u00b7 force each teacher variant",
     "done": 60,
     "failed": 0,
@@ -100541,10 +100548,10 @@
    },
    {
     "label": "23s-tbh-budget",
-    "done": 20,
-    "failed": 0,
-    "running": 5,
-    "waiting": 185
+    "done": 22,
+    "failed": 2,
+    "running": 8,
+    "waiting": 178
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
@@ -100559,20 +100566,13 @@
     "failed": 0,
     "running": 0,
     "waiting": 0
-   },
-   {
-    "label": "hard terminal tasks \u00b7 per turn (v19), every base model",
-    "done": 3,
-    "failed": 0,
-    "running": 3,
-    "waiting": 15
    }
   ],
   "total": {
    "done": 1617,
-   "failed": 2,
+   "failed": 4,
    "running": 8,
-   "waiting": 200
+   "waiting": 178
   },
   "nodes": [
    {
@@ -101645,5 +101645,5 @@
    }
   ]
  },
- "content_digest": "65cd7e48de1af895dc129477c8b28e13020701fc4f7c1bc88fd6505d27645327"
+ "content_digest": "6b4fa4aba5d9f334cf2822d34424d478c58252f3771734ae8a9b082a8a7d81a7"
 }
