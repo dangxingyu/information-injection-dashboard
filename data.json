@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791753525.818016,
- "generated_label": "2026-10-11 17:18 EDT",
+ "generated_at": 1791754435.9567175,
+ "generated_label": "2026-10-11 17:33 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -97678,7 +97678,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791752148.0560093,
+  "generated_at": 1791754094.092647,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -99938,8 +99938,6 @@
       2069.014583154184
      ],
      "delphi_spearman": -1.0,
-     "spearman_final": null,
-     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -99990,8 +99988,6 @@
       88.21414285714286
      ],
      "delphi_spearman": -1.0,
-     "spearman_final": null,
-     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100042,8 +100038,6 @@
       0.8162055904413047
      ],
      "delphi_spearman": -0.9878787878787879,
-     "spearman_final": null,
-     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100094,8 +100088,6 @@
       3.630714285714286
      ],
      "delphi_spearman": -0.1556997888323046,
-     "spearman_final": null,
-     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100131,8 +100123,6 @@
       "llama3.2-3b": 2093.9380760762315,
       "llama3.1-8b": 1801.772793896407
      },
-     "spearman_final": null,
-     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100154,8 +100144,6 @@
       "llama3.2-3b": 72.3904,
       "llama3.1-8b": 65.1005
      },
-     "spearman_final": null,
-     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100177,8 +100165,6 @@
       "llama3.2-3b": 0.6981734566199155,
       "llama3.1-8b": 0.6085881500594967
      },
-     "spearman_final": null,
-     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100200,8 +100186,6 @@
       "llama3.2-3b": 4.0871,
       "llama3.1-8b": 3.3049
      },
-     "spearman_final": null,
-     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100369,9 +100353,9 @@
   "rows": [
    {
     "label": "setup steps",
-    "done": 23,
+    "done": 24,
     "failed": 1,
-    "running": 1,
+    "running": 0,
     "waiting": 0
    },
    {
@@ -100557,6 +100541,13 @@
     "waiting": 0
    },
    {
+    "label": "23u-tbh-wait180",
+    "done": 4,
+    "failed": 0,
+    "running": 10,
+    "waiting": 28
+   },
+   {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
     "done": 320,
     "failed": 0,
@@ -100572,15 +100563,23 @@
    }
   ],
   "total": {
-   "done": 1596,
+   "done": 1601,
    "failed": 2,
-   "running": 1,
-   "waiting": 0
+   "running": 10,
+   "waiting": 28
   },
   "nodes": [
    {
+    "node": "della-j12g2",
+    "running": 3
+   },
+   {
     "node": "della-k12g1",
-    "running": 1
+    "running": 4
+   },
+   {
+    "node": "della-k13g3",
+    "running": 3
    }
   ]
  },
@@ -101644,5 +101643,5 @@
    }
   ]
  },
- "content_digest": "683f47d73f4c23f4a5d5a8d87e5ff067d11f8dc3514ff60879e512608e18cc29"
+ "content_digest": "cc145db2cbc3cd33095161c6a3faad060dcf788b4002b4cae5fe0c5972641d34"
 }
