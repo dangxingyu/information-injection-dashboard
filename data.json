@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791725375.8822818,
- "generated_label": "2026-10-11 09:29 EDT",
+ "generated_at": 1791726285.8176184,
+ "generated_label": "2026-10-11 09:44 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -3640,31 +3640,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791719418.1707513,
    "git_commit": "6b21800ecd",
    "snapshot": "c77bd4ff7aee",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 41016,
+   "tokens_scored": 14666,
+   "gpu_hours": 0.4788,
+   "load_hours": 0.0293,
+   "tasks": 10,
+   "records": 10,
+   "success_rate": 1.0,
+   "mean_bits": 1676.44002,
+   "median_bits": 1786.14522,
+   "mean_forced_bits": 1673.708845,
+   "mean_forced_tokens": 1466.6,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 2949.1,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "measured": 10
+   }
   },
   {
    "name": "fe-tbh-tref-qwen3-4b-base",
@@ -97520,7 +97522,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791724585.3224297,
+  "generated_at": 1791725810.782815,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -100042,10 +100044,10 @@
    },
    {
     "label": "23p-tbh",
-    "done": 8,
+    "done": 10,
     "failed": 0,
     "running": 7,
-    "waiting": 255
+    "waiting": 253
    },
    {
     "label": "23q-tbh-post",
@@ -100070,10 +100072,10 @@
    }
   ],
   "total": {
-   "done": 1470,
+   "done": 1472,
    "failed": 2,
    "running": 8,
-   "waiting": 273
+   "waiting": 271
   },
   "nodes": [
    {
@@ -101142,5 +101144,5 @@
    }
   ]
  },
- "content_digest": "6333f9c5954293c55538468c3cfdc0741a568c08285246a49be1186e48ecbe65"
+ "content_digest": "7842581b895e6002f6f6124ac5dd997cbb7aac731c75b14cf448b77de3c2a1e0"
 }
