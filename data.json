@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791747175.8888545,
- "generated_label": "2026-10-11 15:32 EDT",
+ "generated_at": 1791748083.7404397,
+ "generated_label": "2026-10-11 15:48 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -92169,13 +92169,19 @@
     },
     {
      "kind": "H100",
+     "gpus": 4,
+     "state": "standby",
+     "label": "PLI slot (ii-pli-worker)"
+    },
+    {
+     "kind": "H100",
      "gpus": 8,
      "state": "standby",
      "label": "PLI slot (t3attr)"
     }
    ],
    "totals": {
-    "h100_standby": 16
+    "h100_standby": 20
    }
   }
  },
@@ -97678,7 +97684,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791745641.9081833,
+  "generated_at": 1791748072.6802113,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -100542,10 +100548,10 @@
    },
    {
     "label": "23s-tbh-budget",
-    "done": 28,
-    "failed": 2,
-    "running": 8,
-    "waiting": 172
+    "done": 31,
+    "failed": 3,
+    "running": 12,
+    "waiting": 164
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
@@ -100563,10 +100569,10 @@
    }
   ],
   "total": {
-   "done": 1623,
-   "failed": 4,
-   "running": 8,
-   "waiting": 172
+   "done": 1626,
+   "failed": 5,
+   "running": 12,
+   "waiting": 164
   },
   "nodes": [
    {
@@ -100575,6 +100581,10 @@
    },
    {
     "node": "della-k12g1",
+    "running": 4
+   },
+   {
+    "node": "della-k13g3",
     "running": 4
    }
   ]
@@ -101639,5 +101649,5 @@
    }
   ]
  },
- "content_digest": "71576c4cec32eccde3f3dc044b6a8a02b66dd6d702ed5a58132507decf024e03"
+ "content_digest": "4ca833ab9163479cf19857f7858ad8cf59907a58993f07287f5c9770224ff525"
 }
