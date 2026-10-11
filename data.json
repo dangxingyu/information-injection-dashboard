@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791735365.9215682,
- "generated_label": "2026-10-11 12:16 EDT",
+ "generated_at": 1791736274.863172,
+ "generated_label": "2026-10-11 12:31 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -112,31 +112,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791719450.570299,
    "git_commit": "6b21800ecd",
    "snapshot": "c77bd4ff7aee",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 33675,
+   "tokens_scored": 14666,
+   "gpu_hours": 0.3104,
+   "load_hours": 0.0437,
+   "tasks": 10,
+   "records": 10,
+   "success_rate": 1.0,
+   "mean_bits": 1471.898318,
+   "median_bits": 1590.220024,
+   "mean_forced_bits": 1469.674182,
+   "mean_forced_tokens": 1466.6,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 2949.2,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "measured": 10
+   }
   },
   {
    "name": "fe-tbh-tref-qwen3-30b-a3b-base",
@@ -372,31 +374,34 @@
    "runs": 1,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791719448.2401762,
    "git_commit": "6b21800ecd",
    "snapshot": "c77bd4ff7aee",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 65138,
+   "tokens_scored": 16972,
+   "gpu_hours": 0.4449,
+   "load_hours": 0.0199,
+   "tasks": 10,
+   "records": 10,
+   "success_rate": 0.9,
+   "mean_bits": 2713.972657,
+   "median_bits": 2790.701415,
+   "mean_forced_bits": 2709.472657,
+   "mean_forced_tokens": 1697.2,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 3235.4,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "context": 1,
+    "measured": 9
+   }
   },
   {
    "name": "fe-tbh-tref-smollm2-360m",
@@ -97665,7 +97670,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791734472.858774,
+  "generated_at": 1791736298.709554,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -100187,17 +100192,17 @@
    },
    {
     "label": "hard terminal tasks \u00b7 forcing the teacher, prefix pass@16, every base model",
-    "done": 126,
+    "done": 129,
     "failed": 0,
-    "running": 3,
+    "running": 0,
     "waiting": 0
    },
    {
     "label": "hard terminal tasks \u00b7 post-trained releases' accuracy",
     "done": 2,
     "failed": 0,
-    "running": 3,
-    "waiting": 16
+    "running": 6,
+    "waiting": 13
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
@@ -100222,10 +100227,10 @@
    }
   ],
   "total": {
-   "done": 1588,
+   "done": 1591,
    "failed": 2,
    "running": 6,
-   "waiting": 157
+   "waiting": 154
   },
   "nodes": [
    {
@@ -101294,5 +101299,5 @@
    }
   ]
  },
- "content_digest": "adb487abc53ddb60d1d77ead4819f5ae4c0a3d9c9296d14203344c4bd0d22a10"
+ "content_digest": "a7f1defdeed96ae92aeaf1e3dfbb92435398dd425eeb861f550ae55e6d1b715b"
 }
