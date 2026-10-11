@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791755336.0998745,
- "generated_label": "2026-10-11 17:48 EDT",
+ "generated_at": 1791756238.3904402,
+ "generated_label": "2026-10-11 18:03 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -97678,7 +97678,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791754094.092647,
+  "generated_at": 1791756089.0521863,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -99938,6 +99938,7 @@
       2069.014583154184
      ],
      "delphi_spearman": -1.0,
+     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -99988,6 +99989,7 @@
       88.21414285714286
      ],
      "delphi_spearman": -1.0,
+     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100038,6 +100040,7 @@
       0.8162055904413047
      ],
      "delphi_spearman": -0.9878787878787879,
+     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100088,6 +100091,7 @@
       3.630714285714286
      ],
      "delphi_spearman": -0.1556997888323046,
+     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100123,6 +100127,7 @@
       "llama3.2-3b": 2093.9380760762315,
       "llama3.1-8b": 1801.772793896407
      },
+     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100144,6 +100149,7 @@
       "llama3.2-3b": 72.3904,
       "llama3.1-8b": 65.1005
      },
+     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100165,6 +100171,7 @@
       "llama3.2-3b": 0.6981734566199155,
       "llama3.1-8b": 0.6085881500594967
      },
+     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100186,6 +100193,7 @@
       "llama3.2-3b": 4.0871,
       "llama3.1-8b": 3.3049
      },
+     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100542,10 +100550,10 @@
    },
    {
     "label": "23u-tbh-wait180",
-    "done": 6,
+    "done": 14,
     "failed": 0,
-    "running": 9,
-    "waiting": 27
+    "running": 10,
+    "waiting": 18
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
@@ -100563,15 +100571,15 @@
    }
   ],
   "total": {
-   "done": 1603,
+   "done": 1611,
    "failed": 2,
-   "running": 9,
-   "waiting": 27
+   "running": 10,
+   "waiting": 18
   },
   "nodes": [
    {
     "node": "della-j12g2",
-    "running": 2
+    "running": 3
    },
    {
     "node": "della-k12g1",
@@ -101643,5 +101651,5 @@
    }
   ]
  },
- "content_digest": "83b6285bbd894590398180e26c9d9526af8366eb866a8f035145a9bd57942ec1"
+ "content_digest": "5e5d3b597aafc63c0a1f5d4d2626dcc4c7f418aa53cecb25b0bead454094f3de"
 }
