@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791736274.863172,
- "generated_label": "2026-10-11 12:31 EDT",
+ "generated_at": 1791738095.9621632,
+ "generated_label": "2026-10-11 13:01 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -97670,7 +97670,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791736298.709554,
+  "generated_at": 1791738123.6138167,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -101299,5 +101299,5 @@
    }
   ]
  },
- "content_digest": "a7f1defdeed96ae92aeaf1e3dfbb92435398dd425eeb861f550ae55e6d1b715b"
+ "content_digest": "853c4d13934854fb59d48261a120feacbc3fb096d784f10aadc9b0b0713f8366"
 }
