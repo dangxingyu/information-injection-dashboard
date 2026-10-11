@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791719935.83118,
- "generated_label": "2026-10-11 07:58 EDT",
+ "generated_at": 1791720843.8820314,
+ "generated_label": "2026-10-11 08:14 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -3766,31 +3766,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 1,
+   "status": "running",
    "created_at": 1791719417.1313534,
    "git_commit": "6b21800ecd",
    "snapshot": "c77bd4ff7aee",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 11437,
+   "tokens_scored": 7532,
+   "gpu_hours": 0.0525,
+   "load_hours": 0.0132,
+   "tasks": 5,
+   "records": 5,
+   "success_rate": 1.0,
+   "mean_bits": 1864.566219,
+   "median_bits": 1985.907859,
+   "mean_forced_bits": 1861.887685,
+   "mean_forced_tokens": 1506.4,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 3122.8,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "measured": 5
+   }
   },
   {
    "name": "fe-tbh-tref-qwen3-8b-base",
@@ -100030,16 +100032,16 @@
    },
    {
     "label": "23p-tbh",
-    "done": 2,
+    "done": 3,
     "failed": 0,
-    "running": 1,
-    "waiting": 267
+    "running": 3,
+    "waiting": 264
    },
    {
     "label": "23q-tbh-post",
-    "done": 0,
+    "done": 2,
     "failed": 0,
-    "running": 3,
+    "running": 1,
     "waiting": 18
    },
    {
@@ -100058,10 +100060,10 @@
    }
   ],
   "total": {
-   "done": 1462,
+   "done": 1465,
    "failed": 2,
    "running": 4,
-   "waiting": 285
+   "waiting": 282
   },
   "nodes": [
    {
@@ -101130,5 +101132,5 @@
    }
   ]
  },
- "content_digest": "c1d3d8fe014038c00f33129337f7b862e8809f7f14920335c910fa6ba48e7d45"
+ "content_digest": "5f441d53303ed5d3c8b3d96ffd108c3498c3643857159c75986ef37bc5a6c096"
 }
