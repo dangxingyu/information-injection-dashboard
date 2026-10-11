@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791757155.8660388,
- "generated_label": "2026-10-11 18:19 EDT",
+ "generated_at": 1791758057.6425283,
+ "generated_label": "2026-10-11 18:34 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -97678,7 +97678,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791756089.0521863,
+  "generated_at": 1791758010.2609904,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -99938,6 +99938,8 @@
       2069.014583154184
      ],
      "delphi_spearman": -1.0,
+     "spearman_hybrid": null,
+     "spearman_final": null,
      "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
@@ -99989,6 +99991,8 @@
       88.21414285714286
      ],
      "delphi_spearman": -1.0,
+     "spearman_hybrid": null,
+     "spearman_final": null,
      "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
@@ -100040,6 +100044,8 @@
       0.8162055904413047
      ],
      "delphi_spearman": -0.9878787878787879,
+     "spearman_hybrid": null,
+     "spearman_final": null,
      "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
@@ -100091,6 +100097,8 @@
       3.630714285714286
      ],
      "delphi_spearman": -0.1556997888323046,
+     "spearman_hybrid": null,
+     "spearman_final": null,
      "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
@@ -100102,6 +100110,7 @@
       "qwen3-4b-base": 1590.364171604514,
       "qwen3-8b-base": 1472.0091846661721
      },
+     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0,
      "retest_spearman": 0.9864661654135338,
@@ -100127,6 +100136,8 @@
       "llama3.2-3b": 2093.9380760762315,
       "llama3.1-8b": 1801.772793896407
      },
+     "spearman_hybrid": null,
+     "spearman_final": null,
      "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
@@ -100149,6 +100160,8 @@
       "llama3.2-3b": 72.3904,
       "llama3.1-8b": 65.1005
      },
+     "spearman_hybrid": null,
+     "spearman_final": null,
      "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
@@ -100171,6 +100184,8 @@
       "llama3.2-3b": 0.6981734566199155,
       "llama3.1-8b": 0.6085881500594967
      },
+     "spearman_hybrid": null,
+     "spearman_final": null,
      "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
@@ -100193,6 +100208,8 @@
       "llama3.2-3b": 4.0871,
       "llama3.1-8b": 3.3049
      },
+     "spearman_hybrid": null,
+     "spearman_final": null,
      "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0
@@ -100204,6 +100221,7 @@
       "qwen3-4b-base": 1590.364171604514,
       "qwen3-8b-base": 1472.0091846661721
      },
+     "spearman_all": null,
      "auroc": null,
      "auroc_pairs": 0,
      "retest_spearman": 0.9864661654135338,
@@ -100423,6 +100441,13 @@
     "waiting": 0
    },
    {
+    "label": "00k-wq-release-test",
+    "done": 1,
+    "failed": 0,
+    "running": 0,
+    "waiting": 0
+   },
+   {
     "label": "tau-bench \u00b7 force each teacher variant",
     "done": 60,
     "failed": 0,
@@ -100550,9 +100575,9 @@
    },
    {
     "label": "23u-tbh-wait180",
-    "done": 33,
+    "done": 40,
     "failed": 0,
-    "running": 9,
+    "running": 2,
     "waiting": 0
    },
    {
@@ -100571,23 +100596,19 @@
    }
   ],
   "total": {
-   "done": 1630,
+   "done": 1638,
    "failed": 2,
-   "running": 9,
+   "running": 2,
    "waiting": 0
   },
   "nodes": [
    {
-    "node": "della-j12g2",
-    "running": 3
-   },
-   {
     "node": "della-k12g1",
-    "running": 3
+    "running": 1
    },
    {
     "node": "della-k13g3",
-    "running": 3
+    "running": 1
    }
   ]
  },
@@ -101651,5 +101672,5 @@
    }
   ]
  },
- "content_digest": "236c05d338bf9467c9446d089557c463fa2c570799bed0d6a3940d7f207d9d14"
+ "content_digest": "588f4579d5b34a1ec46218651e6368994664ffdd4c5d0988dc33f504fda58550"
 }
