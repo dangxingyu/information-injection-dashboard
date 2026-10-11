@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791746265.9033487,
- "generated_label": "2026-10-11 15:17 EDT",
+ "generated_at": 1791747175.8888545,
+ "generated_label": "2026-10-11 15:32 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -92157,12 +92157,6 @@
    "allocations": [
     {
      "kind": "H100",
-     "gpus": 8,
-     "state": "standby",
-     "label": "PLI slot (klsoapw-kp)"
-    },
-    {
-     "kind": "H100",
      "gpus": 4,
      "state": "standby",
      "label": "PLI slot (ii-pli-worker)"
@@ -92177,11 +92171,11 @@
      "kind": "H100",
      "gpus": 8,
      "state": "standby",
-     "label": "PLI slot (klsoapw-ka)"
+     "label": "PLI slot (t3attr)"
     }
    ],
    "totals": {
-    "h100_standby": 24
+    "h100_standby": 16
    }
   }
  },
@@ -100548,10 +100542,10 @@
    },
    {
     "label": "23s-tbh-budget",
-    "done": 22,
+    "done": 28,
     "failed": 2,
     "running": 8,
-    "waiting": 178
+    "waiting": 172
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
@@ -100569,10 +100563,10 @@
    }
   ],
   "total": {
-   "done": 1617,
+   "done": 1623,
    "failed": 4,
    "running": 8,
-   "waiting": 178
+   "waiting": 172
   },
   "nodes": [
    {
@@ -101645,5 +101639,5 @@
    }
   ]
  },
- "content_digest": "6b4fa4aba5d9f334cf2822d34424d478c58252f3771734ae8a9b082a8a7d81a7"
+ "content_digest": "71576c4cec32eccde3f3dc044b6a8a02b66dd6d702ed5a58132507decf024e03"
 }
