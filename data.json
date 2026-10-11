@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791758965.858907,
- "generated_label": "2026-10-11 18:49 EDT",
+ "generated_at": 1791759876.1395707,
+ "generated_label": "2026-10-11 19:04 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -92154,17 +92154,8 @@
   },
   "nodes": [],
   "holdings": {
-   "allocations": [
-    {
-     "kind": "H100",
-     "gpus": 4,
-     "state": "standby",
-     "label": "PLI slot (ii-pli-worker)"
-    }
-   ],
-   "totals": {
-    "h100_standby": 4
-   }
+   "allocations": [],
+   "totals": {}
   }
  },
  "study_b": {
@@ -97666,7 +97657,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791758010.2609904,
+  "generated_at": 1791759356.6643178,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -99928,7 +99919,7 @@
      "delphi_spearman": -1.0,
      "spearman_hybrid": null,
      "spearman_final": null,
-     "spearman_all": null,
+     "spearman_all": 0.314087321064662,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -99981,7 +99972,7 @@
      "delphi_spearman": -1.0,
      "spearman_hybrid": null,
      "spearman_final": null,
-     "spearman_all": null,
+     "spearman_all": 0.35103877060168104,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100034,7 +100025,7 @@
      "delphi_spearman": -0.9878787878787879,
      "spearman_hybrid": null,
      "spearman_final": null,
-     "spearman_all": null,
+     "spearman_all": 0.35103877060168104,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100087,7 +100078,7 @@
      "delphi_spearman": -0.1556997888323046,
      "spearman_hybrid": null,
      "spearman_final": null,
-     "spearman_all": null,
+     "spearman_all": 0.3516107748438625,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100126,7 +100117,7 @@
      },
      "spearman_hybrid": null,
      "spearman_final": null,
-     "spearman_all": null,
+     "spearman_all": 0.40280315791286636,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100150,7 +100141,7 @@
      },
      "spearman_hybrid": null,
      "spearman_final": null,
-     "spearman_all": null,
+     "spearman_all": 0.40280315791286636,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100174,7 +100165,7 @@
      },
      "spearman_hybrid": null,
      "spearman_final": null,
-     "spearman_all": null,
+     "spearman_all": 0.40280315791286636,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100198,7 +100189,7 @@
      },
      "spearman_hybrid": null,
      "spearman_final": null,
-     "spearman_all": null,
+     "spearman_all": 0.4031645784951444,
      "auroc": null,
      "auroc_pairs": 0
     },
@@ -100570,9 +100561,9 @@
    },
    {
     "label": "23u-tbh-wait180",
-    "done": 41,
+    "done": 42,
     "failed": 0,
-    "running": 1,
+    "running": 0,
     "waiting": 0
    },
    {
@@ -100591,17 +100582,12 @@
    }
   ],
   "total": {
-   "done": 1640,
+   "done": 1641,
    "failed": 2,
-   "running": 1,
+   "running": 0,
    "waiting": 0
   },
-  "nodes": [
-   {
-    "node": "della-j12g2",
-    "running": 1
-   }
-  ]
+  "nodes": []
  },
  "headlines": {
   "code": [
@@ -101663,5 +101649,5 @@
    }
   ]
  },
- "content_digest": "1bfad0ccbab84407e1908f74a04ce90f80bf7bfd4213f70d1090db1afaca68b3"
+ "content_digest": "d27650367ad7a390a5e339efeff647716513dbf0124b5d035b41d7e971376e18"
 }
