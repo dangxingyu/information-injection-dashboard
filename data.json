@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791726285.8176184,
- "generated_label": "2026-10-11 09:44 EDT",
+ "generated_at": 1791727195.487631,
+ "generated_label": "2026-10-11 09:59 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -97522,7 +97522,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791725810.782815,
+  "generated_at": 1791727037.3285525,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -99966,91 +99966,91 @@
     "waiting": 0
    },
    {
-    "label": "23d-mid",
+    "label": "mid-size students \u00b7 v22 privileged-proposal importance sampling",
     "done": 61,
     "failed": 1,
     "running": 0,
     "waiting": 0
    },
    {
-    "label": "23e-sirturn",
+    "label": "per-turn importance sampling (v23)",
     "done": 43,
     "failed": 0,
     "running": 0,
     "waiting": 0
    },
    {
-    "label": "23f-v24",
+    "label": "v19g forcing the cheapest privileged variant (v24)",
     "done": 43,
     "failed": 0,
     "running": 0,
     "waiting": 0
    },
    {
-    "label": "23g-answer-ref",
+    "label": "terminal-bench \u00b7 force answer-only teacher variants",
     "done": 30,
     "failed": 0,
     "running": 0,
     "waiting": 0
    },
    {
-    "label": "23h-answer-step",
+    "label": "terminal-bench \u00b7 per turn where answer-only is cheapest",
     "done": 30,
     "failed": 0,
     "running": 0,
     "waiting": 0
    },
    {
-    "label": "23i-rel-sample",
+    "label": "release as the proposal (v25) \u00b7 sample the releases' episodes",
     "done": 16,
     "failed": 0,
     "running": 0,
     "waiting": 0
    },
    {
-    "label": "23j-rel-score",
+    "label": "release as the proposal (v25) \u00b7 score them under the bases",
     "done": 8,
     "failed": 0,
     "running": 0,
     "waiting": 0
    },
    {
-    "label": "23k-program-ref",
+    "label": "terminal-bench \u00b7 force single-program teacher variants",
     "done": 30,
     "failed": 0,
     "running": 0,
     "waiting": 0
    },
    {
-    "label": "23l-program-step",
+    "label": "terminal-bench \u00b7 per turn where single-program is cheapest",
     "done": 1,
     "failed": 0,
     "running": 0,
     "waiting": 0
    },
    {
-    "label": "23m-pointer",
+    "label": "tau-bench \u00b7 pointer into the train-split library (v26)",
     "done": 10,
     "failed": 0,
     "running": 0,
     "waiting": 0
    },
    {
-    "label": "23o-prefix",
+    "label": "prefix pass@16 at the decisive step (arXiv 2610.10478), every base model",
     "done": 120,
     "failed": 0,
     "running": 0,
     "waiting": 0
    },
    {
-    "label": "23p-tbh",
+    "label": "hard terminal tasks \u00b7 forcing the teacher, prefix pass@16, every base model",
     "done": 10,
     "failed": 0,
     "running": 7,
-    "waiting": 253
+    "waiting": 112
    },
    {
-    "label": "23q-tbh-post",
+    "label": "hard terminal tasks \u00b7 post-trained releases' accuracy",
     "done": 2,
     "failed": 0,
     "running": 1,
@@ -100069,6 +100069,13 @@
     "failed": 0,
     "running": 0,
     "waiting": 0
+   },
+   {
+    "label": "hard terminal tasks \u00b7 per turn (v19), every base model",
+    "done": 0,
+    "failed": 0,
+    "running": 0,
+    "waiting": 141
    }
   ],
   "total": {
@@ -100079,7 +100086,7 @@
   },
   "nodes": [
    {
-    "node": "H200 node 1",
+    "node": "della-k12g1",
     "running": 8
    }
   ]
@@ -101144,5 +101151,5 @@
    }
   ]
  },
- "content_digest": "7842581b895e6002f6f6124ac5dd997cbb7aac731c75b14cf448b77de3c2a1e0"
+ "content_digest": "82d93ed4232c5850fe3c2c8e929c410db20123b87d09a7aba4b9e0313beb2e17"
 }
