@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791721745.8833668,
- "generated_label": "2026-10-11 08:29 EDT",
+ "generated_at": 1791722655.8322394,
+ "generated_label": "2026-10-11 08:44 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -3766,32 +3766,32 @@
    "runs": 1,
    "limit": 0,
    "shards": 2,
-   "shards_done": 1,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 1,
-   "status": "running",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791719417.1313534,
    "git_commit": "6b21800ecd",
    "snapshot": "c77bd4ff7aee",
-   "tokens_generated": 11437,
-   "tokens_scored": 7532,
-   "gpu_hours": 0.0525,
-   "load_hours": 0.0132,
-   "tasks": 5,
-   "records": 5,
+   "tokens_generated": 30467,
+   "tokens_scored": 14666,
+   "gpu_hours": 0.6376,
+   "load_hours": 0.0265,
+   "tasks": 10,
+   "records": 10,
    "success_rate": 1.0,
-   "mean_bits": 1864.566219,
-   "median_bits": 1985.907859,
-   "mean_forced_bits": 1861.887685,
-   "mean_forced_tokens": 1506.4,
+   "mean_bits": 1574.720172,
+   "median_bits": 1672.257546,
+   "mean_forced_bits": 1572.042376,
+   "mean_forced_tokens": 1466.6,
    "mean_select_blocks": 0.0,
    "mean_free_blocks": 0.0,
-   "mean_tokens": 3122.8,
+   "mean_tokens": 2949.1,
    "fallback_rate": 0.0,
    "mean_restarts": 0.0,
    "ends": {
-    "measured": 5
+    "measured": 10
    }
   },
   {
@@ -97510,7 +97510,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791720909.9093235,
+  "generated_at": 1791722135.607732,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -100032,10 +100032,10 @@
    },
    {
     "label": "23p-tbh",
-    "done": 3,
+    "done": 4,
     "failed": 0,
     "running": 3,
-    "waiting": 264
+    "waiting": 263
    },
    {
     "label": "23q-tbh-post",
@@ -100060,10 +100060,10 @@
    }
   ],
   "total": {
-   "done": 1465,
+   "done": 1466,
    "failed": 2,
    "running": 4,
-   "waiting": 282
+   "waiting": 281
   },
   "nodes": [
    {
@@ -101132,5 +101132,5 @@
    }
   ]
  },
- "content_digest": "19c69dfa77c82627be5d0d142f921a448842fb3b96bf9bf61ad1a0a2960e52bd"
+ "content_digest": "5acd6d597536ee332c9e499bc1b7ff64e79d8c0db6521a8cbbfe40ed49e9d48c"
 }
