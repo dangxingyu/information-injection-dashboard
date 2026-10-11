@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791749896.1661515,
- "generated_label": "2026-10-11 16:18 EDT",
+ "generated_at": 1791750805.7659736,
+ "generated_label": "2026-10-11 16:33 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -97678,7 +97678,7 @@
    "final-pairs.png",
    "progress-lh-totals.png"
   ],
-  "generated_at": 1791748072.6802113,
+  "generated_at": 1791750164.075713,
   "contrast": {
    "delphi-3e18": {
     "aime25": {
@@ -100542,10 +100542,10 @@
    },
    {
     "label": "23t-tbh-final",
-    "done": 1,
+    "done": 5,
     "failed": 0,
-    "running": 10,
-    "waiting": 31
+    "running": 9,
+    "waiting": 28
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
@@ -100563,10 +100563,10 @@
    }
   ],
   "total": {
-   "done": 1597,
+   "done": 1601,
    "failed": 2,
-   "running": 10,
-   "waiting": 31
+   "running": 9,
+   "waiting": 28
   },
   "nodes": [
    {
@@ -100575,7 +100575,7 @@
    },
    {
     "node": "della-k12g1",
-    "running": 3
+    "running": 2
    },
    {
     "node": "della-k13g3",
@@ -101643,5 +101643,5 @@
    }
   ]
  },
- "content_digest": "772978cbdefa674cc7c3fe7aa44849b5483f9632ab1662be49c4dc7b78ae0be7"
+ "content_digest": "fb8ee5060af59b6d8ef5e4fe172233f9ff3b8aaa0cdbc146d9abe1d88e847d23"
 }
