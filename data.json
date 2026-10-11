@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791756238.3904402,
- "generated_label": "2026-10-11 18:03 EDT",
+ "generated_at": 1791757155.8660388,
+ "generated_label": "2026-10-11 18:19 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -100550,10 +100550,10 @@
    },
    {
     "label": "23u-tbh-wait180",
-    "done": 14,
+    "done": 33,
     "failed": 0,
-    "running": 10,
-    "waiting": 18
+    "running": 9,
+    "waiting": 0
    },
    {
     "label": "IMO answer_sir \u00b7 AIME with 4096 solutions \u00b7 v21 with 64 proposals",
@@ -100571,10 +100571,10 @@
    }
   ],
   "total": {
-   "done": 1611,
+   "done": 1630,
    "failed": 2,
-   "running": 10,
-   "waiting": 18
+   "running": 9,
+   "waiting": 0
   },
   "nodes": [
    {
@@ -100583,7 +100583,7 @@
    },
    {
     "node": "della-k12g1",
-    "running": 4
+    "running": 3
    },
    {
     "node": "della-k13g3",
@@ -101651,5 +101651,5 @@
    }
   ]
  },
- "content_digest": "5e5d3b597aafc63c0a1f5d4d2626dcc4c7f418aa53cecb25b0bead454094f3de"
+ "content_digest": "236c05d338bf9467c9446d089557c463fa2c570799bed0d6a3940d7f207d9d14"
 }
