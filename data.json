@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791727195.487631,
- "generated_label": "2026-10-11 09:59 EDT",
+ "generated_at": 1791728103.8901782,
+ "generated_label": "2026-10-11 10:15 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -3553,31 +3553,33 @@
    "runs": 1,
    "limit": 0,
    "shards": 2,
-   "shards_done": 0,
+   "shards_done": 2,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 2,
-   "status": "queued",
+   "shards_queued": 0,
+   "status": "complete",
    "created_at": 1791719418.9917302,
    "git_commit": "6b21800ecd",
    "snapshot": "c77bd4ff7aee",
    "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_scored": 15405,
+   "gpu_hours": 0.0487,
+   "load_hours": 0.0231,
+   "tasks": 10,
+   "records": 10,
+   "success_rate": 1.0,
+   "mean_bits": 2034.584427,
+   "median_bits": 2251.537729,
+   "mean_forced_bits": 2034.584427,
+   "mean_forced_tokens": 1540.5,
+   "mean_select_blocks": 0.0,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 3193.5,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 10
+   }
   },
   {
    "name": "fe-tbh-v19-qwen3-4b-base",
@@ -3599,31 +3601,33 @@
    "runs": 2,
    "limit": 0,
    "shards": 5,
-   "shards_done": 0,
+   "shards_done": 1,
    "shards_running": 0,
    "shards_failed": 0,
-   "shards_queued": 5,
-   "status": "queued",
+   "shards_queued": 4,
+   "status": "running",
    "created_at": 1791719418.5548272,
    "git_commit": "6b21800ecd",
    "snapshot": "c77bd4ff7aee",
-   "tokens_generated": 0,
-   "tokens_scored": 0,
-   "gpu_hours": 0.0,
-   "load_hours": 0.0,
-   "tasks": 0,
-   "records": 0,
-   "success_rate": null,
-   "mean_bits": null,
-   "median_bits": null,
-   "mean_forced_bits": null,
-   "mean_forced_tokens": null,
-   "mean_select_blocks": null,
-   "mean_free_blocks": null,
-   "mean_tokens": null,
-   "fallback_rate": null,
-   "mean_restarts": null,
-   "ends": {}
+   "tokens_generated": 41971,
+   "tokens_scored": 7492,
+   "gpu_hours": 0.6572,
+   "load_hours": 0.0128,
+   "tasks": 2,
+   "records": 4,
+   "success_rate": 1.0,
+   "mean_bits": 1248.564687,
+   "median_bits": 1248.564687,
+   "mean_forced_bits": 1246.400644,
+   "mean_forced_tokens": 920.0,
+   "mean_select_blocks": 1.5,
+   "mean_free_blocks": 0.0,
+   "mean_tokens": 1926.75,
+   "fallback_rate": 0.0,
+   "mean_restarts": 0.0,
+   "ends": {
+    "success": 4
+   }
   },
   {
    "name": "fe-tbh-prefix-qwen3-4b-base",
@@ -92007,6 +92011,12 @@
    "allocations": [
     {
      "kind": "H100",
+     "gpus": 8,
+     "state": "standby",
+     "label": "PLI slot (t3attr)"
+    },
+    {
+     "kind": "H100",
      "gpus": 4,
      "state": "standby",
      "label": "PLI slot (ii-pli-worker)"
@@ -92019,7 +92029,7 @@
     }
    ],
    "totals": {
-    "h100_standby": 8
+    "h100_standby": 16
    }
   }
  },
@@ -100044,10 +100054,10 @@
    },
    {
     "label": "hard terminal tasks \u00b7 forcing the teacher, prefix pass@16, every base model",
-    "done": 10,
+    "done": 13,
     "failed": 0,
     "running": 7,
-    "waiting": 112
+    "waiting": 109
    },
    {
     "label": "hard terminal tasks \u00b7 post-trained releases' accuracy",
@@ -100079,10 +100089,10 @@
    }
   ],
   "total": {
-   "done": 1472,
+   "done": 1475,
    "failed": 2,
    "running": 8,
-   "waiting": 271
+   "waiting": 268
   },
   "nodes": [
    {
@@ -101151,5 +101161,5 @@
    }
   ]
  },
- "content_digest": "82d93ed4232c5850fe3c2c8e929c410db20123b87d09a7aba4b9e0313beb2e17"
+ "content_digest": "5b4179a7820a330dba5e6a5f2610751726464c4f6daff9edd58d10ff59d20fd0"
 }
