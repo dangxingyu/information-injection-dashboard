@@ -458,7 +458,7 @@ setInterval(freshness, 30000);
 /* ------------------------------------------------------------- final eval */
 function renderFinalEval() {
   const f = data.final_eval;
-  const ids = ['fe-pairs', 'fe-delphi', 'fe-base', 'fe-post'];
+  const ids = ['fe-pairs', 'fe-delphi', 'fe-scaling', 'fe-base', 'fe-post'];
   if (!f || f.status !== 'ready') {
     for (const id of ids) $(id).innerHTML = '<tr><td class="muted">Running: results appear as the jobs finish.</td></tr>';
     return;
@@ -510,6 +510,12 @@ function renderFinalEval() {
   protocolTable('fe-imo', f.imo);
   protocolTable('fe-tbh', f.tbh?.all);
   protocolTable('fe-tbh-long', f.tbh?.long);
+  const sc = f.scaling || {};
+  const sk = Object.keys(sc);
+  const held = e => e.holdout.map(h => `${bits(h.predicted)} / ${bits(h.measured)} <small>(${h.predicted >= h.measured ? '+' : ''}${dec(100 * (h.predicted / h.measured - 1), 0)}%)</small>`).join('<br>');
+  $('fe-scaling').innerHTML = !sk.length ? '<tr><td class="muted">Fits pending.</td></tr>' :
+    `<thead><tr><th>ladder · suite · cost</th><th class="num">tasks</th><th class="num">α (power)</th><th class="num">fit error</th><th class="num">held out (power)</th><th class="num">α (floor)</th><th class="num">E bits</th><th class="num">held out (floor)</th></tr></thead><tbody>` +
+    sk.map(k => { const e = sc[k]; return `<tr><td>${esc(k)}${e.moe ? ` <small class="muted">(30B-A3B ≈ ${dec(e.moe.effective_params_b, 1)}B dense)</small>` : ''}</td><td class="num">${e.n}</td>${cell(e.power.alpha, 3)}<td class="num">${dec(100 * e.power.rms, 1)}%</td><td class="num">${held(e.power)}</td>${cell(e.floor.alpha, 3)}<td class="num">${bits(e.floor.E)}${e.floor.floor_at_bound ? ' <small class="muted">at bound</small>' : ''}</td><td class="num">${held(e.floor)}</td></tr>`; }).join('') + '</tbody>';
   const rel = f.reliability || {};
   const rs = S.filter(s => rel[s]);
   $('fe-reliability').innerHTML = !rs.length ? '<tr><td class="muted">Replicate runs pending.</td></tr>' :
