@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1791909725.8196638,
- "generated_label": "2026-10-13 12:42 EDT",
+ "generated_at": 1791910633.903121,
+ "generated_label": "2026-10-13 12:57 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -100216,7 +100216,8 @@
      "retest_mad": 26.44493907839461
     }
    }
-  }
+  },
+  "scaling": null
  },
  "ideas": [
   {
@@ -101658,5 +101659,5 @@
    }
   ]
  },
- "content_digest": "4026a449ab17e4e7c8bf20c3a961297d79db6ea8e16ed590776e05740c144076"
+ "content_digest": "a351b9643582d568c9522ca9e7a8b8b736eb853f1595fc70a2a72fd65e1938f1"
 }
