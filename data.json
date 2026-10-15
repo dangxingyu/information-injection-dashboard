@@ -1,7 +1,7 @@
 {
  "schema": 2,
- "generated_at": 1792089396.2782855,
- "generated_label": "2026-10-15 14:36 EDT",
+ "generated_at": 1792091067.72562,
+ "generated_label": "2026-10-15 15:04 EDT",
  "student_slots": {
   "qwen3-0.6b-base": 0,
   "smollm2-135m": 1,
@@ -92154,47 +92154,8 @@
   },
   "nodes": [],
   "holdings": {
-   "allocations": [
-    {
-     "kind": "H100",
-     "gpus": 8,
-     "state": "standby",
-     "label": "PLI slot (pk-rlentk-p3-B)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 8,
-     "state": "standby",
-     "label": "PLI slot (pk-rlentk-p3-A)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 16,
-     "state": "standby",
-     "label": "PLI slot (scale-p3-4b-lin)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 8,
-     "state": "standby",
-     "label": "PLI slot (pk-rlentk-p3-C)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 8,
-     "state": "standby",
-     "label": "PLI slot (pk-rlentk-p3-D)"
-    },
-    {
-     "kind": "H100",
-     "gpus": 16,
-     "state": "standby",
-     "label": "PLI slot (scale-p3-8b-lin)"
-    }
-   ],
-   "totals": {
-    "h100_standby": 64
-   }
+   "allocations": [],
+   "totals": {}
   }
  },
  "study_b": {
@@ -97689,7 +97650,17 @@
     }
    }
   },
-  "figures": null,
+  "figures": [
+   "fig-resolution.png",
+   "fig-scaling.png",
+   "fig-predict.png",
+   "fig-predictors.png",
+   "fig-retest.png",
+   "fig-bits.png",
+   "fig-protocols.png",
+   "final-aime-sir.png",
+   "progress-lh-totals.png"
+  ],
   "generated_at": 1792063580.1135435,
   "contrast": {
    "delphi-3e18": {
@@ -101953,8 +101924,24 @@
     }
    }
   },
-  "figure_captions": null,
-  "figure_sections": null
+  "figure_captions": {
+   "fig-resolution.png": "Qwen3 base models (x: parameters; open square: 30B-A3B, 3B of them active) on terminal-bench and on the ten hard terminal tasks. a: success rate of each base's post-trained release (thinking mode, 4 episodes per task). b: prefix pass@16 at the decisive step, the sampled probe of arXiv 2610.10478 (the teacher trajectory forced up to its solving action, 16 continuations of at most 3 actions). c: certified bits per task (terminal-bench: per turn on each student's cheapest teacher variant; hard tasks: forcing the teacher trajectory). Bars: one standard error over tasks. On the hard tasks the releases solve almost nothing (over all 21 releases, 1 of 839 episodes) and the decisive-step probe measures only the cheap last action, while the cost falls smoothly with size.",
+   "fig-scaling.png": "a, b: mean cost per task relative to the smallest model of each ladder (log-log), one colour per suite (hard terminal: forcing the teacher trajectory; the others: the main certified protocol). Filled points were fitted with a power law (dashed, E = 0), open points were held out: Delphi 1e22 and 1e23 (10x and 100x beyond the fit), Qwen3-14B. c: error of the extrapolation for each held-out model, with 68% (thick) and 95% (thin) intervals from resampling tasks; grey band: within 10%. The hard terminal tasks extrapolate within 4%; the math suites flatten for the largest Delphi models, where the cost approaches the price of stating the answer. Fitted after the results were in.",
+   "fig-predict.png": "Each point is one base model (x: mean certified bits per task, log scale) and its final post-trained release (y: accuracy), on the tasks every compared base certified; lines join a family in order of size. \u03c1: Spearman correlation of the negated cost with accuracy, over all releases and within Qwen3 (thinking releases).",
+   "fig-predictors.png": "How well each base-model measurement ranks the final releases by accuracy: Spearman correlation (costs negated, so higher is better), dot = estimate, bar = 95% interval from resampling releases. Certified cost: the injection protocol; forced reference: the bits of the reference solution forced; base unaided success: the base model's own success rate; prefix pass@16: the sampled probe of arXiv 2610.10478 (multi-turn suites). Where base models succeed on their own, their success rate ranks the releases about as well as the certified cost (certified vs unaided: AIME 0.70 vs 0.84, IMO-AnswerBench 0.93 vs 0.91, tau-bench 0.87 vs 0.92); the cost is ahead on terminal-bench (0.80 vs 0.59), where most bases rarely succeed alone. The forced answer (answer likelihood) does not rank the math releases.",
+   "fig-retest.png": "Certified cost of each (base model, task) in two independent runs, log-log; line: y = x (math: two experiments with different seeds; multi-turn: the two per-turn runs). \u03c1: Spearman over (model, task) pairs and over the models' mean costs.",
+   "fig-bits.png": "a: forced bits of each action of the teacher trajectory for qwen3-8b, in order (alternating shades; orange: the decisive last action; number: actions). The three most expensive actions carry 54% of a task's bits and the decisive action 2.6% (medians over tasks; at most 14%). b, c: the bits of every action for a small and a large model of one ladder (log-log); grey: y = x; dashed: the ratio of the totals; slope: of a line fitted in log-log. Slope 1 means scale removes the same fraction of every action's bits, as for a language model's per-token loss.",
+   "fig-protocols.png": "How the certified cost fell as protocol versions were tried, for five mid-size students: the step line is the best version so far relative to the first version (log scale), dots are each version's own cost, on the tasks every version of that student certified. The versions that cut the cost most are named with their largest drop."
+  },
+  "figure_sections": {
+   "fig-resolution.png": "headline",
+   "fig-scaling.png": "scaling",
+   "fig-predict.png": "main",
+   "fig-predictors.png": "main",
+   "fig-retest.png": "reliability",
+   "fig-bits.png": "hard",
+   "fig-protocols.png": "protocols"
+  }
  },
  "ideas": [
   {
@@ -103396,5 +103383,5 @@
    }
   ]
  },
- "content_digest": "2d47a92a6cf2571b2909333af808cc033dc256bce18b1fc6f6ef747a8fc644b6"
+ "content_digest": "1c32d631cf534dd6d24173b830ab894f686c1e38bb5be5e2c75d658f9801518f"
 }
