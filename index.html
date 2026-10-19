@@ -23,7 +23,9 @@
 <div class="two"><article class="panel pad"><span class="eyebrow">BASE COST VS POST-TRAINED ACCURACY</span><div class="scroll"><table id="fe-pairs"></table></div><p class="note" id="fe-pairs-note"></p></article>
 <article class="panel pad"><span class="eyebrow">DELPHI LADDER · MEAN BITS VS PRETRAINING COMPUTE</span><div class="scroll"><table id="fe-delphi"></table></div><p class="note" id="fe-delphi-note"></p></article></div>
 <div id="fig-scaling"></div>
+<details class="more"><summary>Scaling fits: every series, with and without a floor</summary>
 <div class="panel pad"><span class="eyebrow">SCALING · COST AGAINST MODEL SCALE, EXTRAPOLATED FROM THE SMALLER MODELS</span><div class="scroll"><table id="fe-scaling"></table></div><p class="note">A certified cost is a code length in bits, like a language model's loss, so it should follow a power law in scale: cost = E + A·x<sup>−α</sup> (power: E = 0; floor: E fitted). Delphi against pretraining FLOPs with its 1e22 and 1e23 models held out; dense Qwen3 bases against parameters with 14B held out (Qwen3-30B-A3B is placed on the dense curve as an effective size). Held-out columns: predicted from the smaller models / measured. Fitted after the results were in (not preregistered); the held-out points were not used in the fits. AIME and IMO-AnswerBench flatten for the largest Delphi models: the cost approaches the price of stating the answer, whatever the model's size.</p></div>
+</details>
 <div class="panel pad"><span class="eyebrow">IS THE MEASUREMENT STABLE? (TWO INDEPENDENT RUNS PER BASE MODEL)</span><div class="scroll"><table id="fe-reliability"></table></div></div>
 <div id="fig-reliability"></div>
 <div id="fe-figures"></div>
