@@ -288,7 +288,7 @@ function finding(eyebrow, big, unit, text) {
 }
 function renderFeFindings() {
   const f = data.final_eval || {}, cards = [], m = 'qwen3-8b-base';
-  const best = table => Object.entries(table || {}).filter(([, e]) => e.models && e.mean?.[m] != null)
+  const best = table => Object.entries(table || {}).filter(([, e]) => e.models && e.cost !== false && e.mean?.[m] != null)
     .reduce((a, b) => (!a || b[1].mean[m] < a[1].mean[m] ? b : a), null);
   const card = (eyebrow, table, first, text) => {
     const e0 = table?.[first], b = best(table);
@@ -501,9 +501,12 @@ function renderFinalEval() {
   const tpick = ['qwen3-0.6b-base', 'qwen3-8b-base', 'qwen3-30b-a3b-base', 'delphi-1e23', 'llama3.1-8b'];
   const protocolTable = (id, table) => {
     const tk = Object.keys(table || {}).filter(k => table[k].models);
+    const row = k => { const e = table[k]; return `<tr><td>${esc(k)}</td><td class="num">${e.models} · ${e.n}</td>${tpick.map(m => `<td class="num">${bits(e.mean?.[m])}</td>`).join('')}${cell(e.delphi_spearman)}${cell(e.spearman_hybrid)}${cell(e.spearman_all)}${cell(e.auroc)}${cell(e.retest_spearman)}</tr>`; };
+    const probes = tk.filter(k => table[k].cost === false);
     $(id).innerHTML = !tk.length ? '<tr><td class="muted">Running.</td></tr>' :
       `<thead><tr><th>protocol</th><th class="num">models · tasks</th>${tpick.map(m => `<th class="num">${esc(m)}</th>`).join('')}<th class="num">Delphi ρ</th><th class="num">ρ Qwen3</th><th class="num">ρ all</th><th class="num">AUROC</th><th class="num">retest ρ</th></tr></thead><tbody>` +
-      tk.map(k => { const e = table[k]; return `<tr><td>${esc(k)}</td><td class="num">${e.models} · ${e.n}</td>${tpick.map(m => `<td class="num">${bits(e.mean?.[m])}</td>`).join('')}${cell(e.delphi_spearman)}${cell(e.spearman_hybrid)}${cell(e.spearman_all)}${cell(e.auroc)}${cell(e.retest_spearman)}</tr>`; }).join('') + '</tbody>';
+      tk.filter(k => table[k].cost !== false).map(row).join('') +
+      (probes.length ? `<tr class="group"><td colspan="${tpick.length + 7}">Predictors, not injection costs: they see only the decisive (last) action, and prefix pass@16 is at most 5 bits (−log2 of 0.5 passes in 16)</td></tr>` + probes.map(row).join('') : '') + '</tbody>';
   };
   protocolTable('fe-tb', f.tb);
   protocolTable('fe-tau', f.tau);
