@@ -140,3 +140,4 @@ tr.group td { font-size: 12px; color: var(--muted); padding-top: 10px; border-bo
 .qkey i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px;vertical-align:-1px}
 @media (max-width:700px){.part{gap:10px}.part-num{font-size:22px}.part-title{font-size:18px}.qbar{min-width:110px}}
 figure{margin:0 0 12px}figure figcaption{margin-top:6px;max-width:72ch}
+#fe-tb td:first-child,#fe-tau td:first-child,#fe-imo td:first-child,#fe-tbh td:first-child,#fe-tbh-long td:first-child{min-width:30ch}
